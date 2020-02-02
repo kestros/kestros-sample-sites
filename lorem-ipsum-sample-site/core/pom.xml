@@ -6,13 +6,13 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.loremipsumsamplesite</groupId>
-    <artifactId>lorem-ipsum-sample-site</artifactId>
+    <groupId>io.kestros.cms</groupId>
+    <artifactId>kestros-sample-sites</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
 
-  <groupId>com.loremipsumsamplesite.lorem-ipsum-sample-site</groupId>
-  <artifactId>lorem-ipsum-sample-site-core</artifactId>
+  <groupId>io.kestros.cms.sample-sites</groupId>
+  <artifactId>lorem-ipsum</artifactId>
 
   <name>Lorem Ipsum Sample Site Core Bundle</name>
 

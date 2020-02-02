@@ -6,7 +6,6 @@
           jcr:title="Lorem Ipsum Sample Site"
           kes:theme="/etc/ui-frameworks/lorem-ipsum-sample-site-framework/themes/default"
           sling:resourceType="lorem-ipsum-sample-site/components/pages/lorem-ipsum-sample-site-base-page"
-          displayDescription="  ">
     <header
             jcr:primaryType="nt:unstructured"
             sling:resourceType="kestros/commons/components/content-area"/>

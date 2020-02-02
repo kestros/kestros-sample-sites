@@ -4,4 +4,4 @@
   jcr:primaryType="kes:UiFramework"
   jcr:title="Lorem Ipsum Sample Site Framework"
   kes:uiFrameworkCode="lorem-ipsum-sample-site-ui"
-  kes:vendorLibraries="[lorem-ipsum-sample-site-vendor-library]"/>
+  kes:vendorLibraries="[lorem-ipsum-generic-library]"/>
