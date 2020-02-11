@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+
+  <filter root="/apps/lorem-ipsum-site"/>
+
+  <filter root="/apps/lorem-ipsum-site/install" mode="update">
+    <include pattern=".*lorem-ipsum-site-core-bundle.*\.jar"/>
+  </filter>
+
+  <filter root="/etc/ui-frameworks/lorem-ipsum-site-framework"/>
+  <filter root="/etc/vendor-libraries/lorem-ipsum-site-vendor-library"/>
+
+</workspaceFilter>
