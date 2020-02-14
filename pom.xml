@@ -5,8 +5,8 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>io.kestros.cms</groupId>
-    <artifactId>kestros-cms-foundation</artifactId>
+    <groupId>io.kestros.commons</groupId>
+    <artifactId>kestros-parent-strict</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <relativePath/>
   </parent>
