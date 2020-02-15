@@ -1,26 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>io.kestros.commons</groupId>
-    <artifactId>kestros-parent-strict</artifactId>
+    <groupId>io.kestros.cms</groupId>
+    <artifactId>kestros-cms-foundation</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <relativePath/>
   </parent>
 
-  <groupId>io.kestros.cms</groupId>
-  <artifactId>kestros-sample-sites</artifactId>
+  <groupId>io.kestros.cms.sample-sites</groupId>
+  <artifactId>lorem-ipsum-site</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-
-  <name>Kestros Sample Sites</name>
-  <description></description>
   <packaging>pom</packaging>
 
+  <name>Lorem Ipsum Site</name>
+  <description>Lorem Ipsum Site</description>
+
   <modules>
-    <module>lorem-ipsum-site</module>
+    <module>core</module>
+    <module>frontend</module>
+    <module>content</module>
   </modules>
 
   <dependencyManagement>
@@ -32,4 +33,5 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+
 </project>
