@@ -11,7 +11,7 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
 
-  <artifactId>lorem-ipsum-site-core</artifactId>
+  <artifactId>lorem-ipsum-site-frontend</artifactId>
 
   <name>Lorem Ipsum Site - Core Bundle</name>
 
