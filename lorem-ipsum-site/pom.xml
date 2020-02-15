@@ -4,9 +4,9 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>io.kestros.cms</groupId>
-    <artifactId>kestros-sample-sites</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <groupId>io.kestros.commons</groupId>
+    <artifactId>kestros-parent</artifactId>
+    <version>0.0.2-SNAPSHOT</version>
     <relativePath/>
   </parent>
 
