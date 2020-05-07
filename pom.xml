@@ -44,6 +44,13 @@
     </license>
   </licenses>
 
+  <scm>
+    <connection>scm:git:git://github.com/kestros/kestros-sample-sites.git</connection>
+    <developerConnection>scm:git:ssh://github.com:kestros/kestros-sample-sites.git
+    </developerConnection>
+    <url>https://github.com/kestros/kestros-sample-sites/tree/master</url>
+  </scm>
+
   <modules>
     <module>lorem-ipsum-site</module>
   </modules>
