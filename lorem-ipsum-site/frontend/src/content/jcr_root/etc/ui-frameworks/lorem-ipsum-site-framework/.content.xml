@@ -21,5 +21,6 @@
   xmlns:kes="http://kestros.io/kes/1.0"
   jcr:primaryType="kes:UiFramework"
   jcr:title="Lorem Ipsum Site Framework"
+  jcr:description="Styleless UiFramework. Black text on a white background. That's it."
   kes:uiFrameworkCode="lorem-ipsum-site-ui"
   kes:vendorLibraries="[lorem-ipsum-site-vendor-library]"/>

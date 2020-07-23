@@ -25,7 +25,7 @@
     jcr:primaryType="nt:unstructured"
     jcr:title="Lorem Ipsum Site"
     kes:theme="/etc/ui-frameworks/lorem-ipsum-site-framework/themes/default"
-    sling:resourceType="lorem-ipsum-site/components/pages/lorem-ipsum-site-base-page"
+    sling:resourceType="kestros/commons/components/kestros-base-page"
     fontAwesomeIcon="fa fa-sitemap">
     <header
       jcr:primaryType="nt:unstructured"
