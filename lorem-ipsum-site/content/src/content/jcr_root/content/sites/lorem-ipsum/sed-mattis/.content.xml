@@ -24,6 +24,7 @@
   <jcr:content
     jcr:primaryType="nt:unstructured"
     jcr:title="Sed Mattis"
+    jcr:description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper ut velit at sodales. Morbi."
     sling:resourceType="kestros/commons/components/kestros-base-page">
     <header
       jcr:primaryType="nt:unstructured"
