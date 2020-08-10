@@ -25,83 +25,71 @@
   <parent>
     <groupId>io.kestros.cms.sample-sites</groupId>
     <artifactId>lorem-ipsum-site</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.1.0-SNAPSHOT</version>
   </parent>
 
   <artifactId>lorem-ipsum-site-frontend</artifactId>
 
   <name>Lorem Ipsum Site - Frontend Package</name>
+  <packaging>bundle</packaging>
+
+  <properties>
+    <bundleCategory>kestros</bundleCategory>
+  </properties>
 
   <build>
     <resources>
       <resource>
-        <directory>src/content/jcr_root</directory>
+        <directory>src/main/resources</directory>
       </resource>
     </resources>
 
     <plugins>
-      <!-- Builds the content package -->
       <plugin>
-        <groupId>org.apache.jackrabbit</groupId>
-        <artifactId>filevault-package-maven-plugin</artifactId>
-        <version>1.0.3</version>
-        <extensions>true</extensions>
+        <groupId>org.apache.rat</groupId>
+        <artifactId>apache-rat-plugin</artifactId>
+        <version>0.13</version>
+        <configuration>
+          <excludes>
+            <!-- don't check anything in target -->
+            <exclude>target/*</exclude>
+            <!-- Fixing issues with deleted modules -->
+            <exclude>**/target/*</exclude>
+            <exclude>**/target/**/*</exclude>
+            <exclude>**/*.json</exclude>
+            <exclude>node/**/*</exclude>
+            <exclude>node_modules/**/*</exclude>
+            <exclude>**/README.md</exclude>
+            <exclude>package.json</exclude>
+            <exclude>package-lock.json</exclude>
+            <exclude>*-maven-settings.xml</exclude>
+            <exclude>src/main/resources/content/ROOT.json</exclude>
+            <exclude>src/main/resources/startup/favicon.svg</exclude>
+          </excludes>
+        </configuration>
         <executions>
           <execution>
+            <phase>verify</phase>
             <goals>
-              <goal>generate-metadata</goal>
-              <goal>package</goal>
-              <goal>analyze-classes</goal>
+              <goal>check</goal>
             </goals>
           </execution>
         </executions>
-        <configuration>
-          <packageType>mixed</packageType>
-          <failOnMissingEmbed>true</failOnMissingEmbed>
-          <accessControlHandling>merge</accessControlHandling>
-          <allowIndexDefinitions>true</allowIndexDefinitions>
-          <filterSource>${basedir}/src/content/META-INF/vault/filter.xml</filterSource>
-        </configuration>
       </plugin>
       <plugin>
-        <groupId>org.apache.sling</groupId>
-        <artifactId>htl-maven-plugin</artifactId>
-        <version>1.2.2-1.4.0</version>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <extensions>true</extensions>
         <configuration>
-          <failOnWarnings>true</failOnWarnings>
+          <instructions>
+            <Sling-Initial-Content>
+              /etc/vendor-libraries;overwrite:=true;path:=/etc/vendor-libraries,
+              /etc/ui-frameworks;overwrite:=true;path:=/etc/ui-frameworks
+            </Sling-Initial-Content>
+          </instructions>
         </configuration>
       </plugin>
     </plugins>
   </build>
-
-  <profiles>
-    <profile>
-      <id>installPackage</id>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>io.wcm.maven.plugins</groupId>
-            <artifactId>wcmio-content-package-maven-plugin</artifactId>
-            <executions>
-              <execution>
-                <goals>
-                  <goal>install</goal>
-                </goals>
-              </execution>
-            </executions>
-            <configuration>
-              <serviceURL>
-                ${sling.protocol}://${sling.host}:${sling.port}/bin/cpm/package.service.html
-              </serviceURL>
-              <userId>${sling.username}</userId>
-              <password>${sling.password}</password>
-              <packageFile>target/${project.artifactId}-${project.version}.zip</packageFile>
-            </configuration>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-  </profiles>
-
 
 </project>

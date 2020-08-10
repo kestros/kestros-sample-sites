@@ -30,7 +30,7 @@
 
   <groupId>io.kestros.cms.sample-sites</groupId>
   <artifactId>lorem-ipsum-site</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Lorem Ipsum Site</name>
