@@ -1,0 +1,10 @@
+<sly data-sly-use.component="${'io.kestros.cms.foundation.content.BaseComponent'}"/>
+<sly data-sly-use.templates="${component.containingPage.theme.uiFramework.templatesPath}"/>
+
+
+<div class="dynamic-content" data-path="${component.path}/content.html">
+  <sly data-sly-call="${templates.dynamiccontentarea @
+          loaderSize='x-large',
+          loaderPosition='center',
+          additionalClasses=''}"/>
+</div>
