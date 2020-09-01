@@ -1,4 +1,0 @@
-{
-  "jcr:primaryType": "sling:OrderedFolder",
-  "include": ["application.js"]
-}
