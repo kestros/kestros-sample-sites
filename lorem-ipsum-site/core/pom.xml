@@ -26,7 +26,7 @@
   <parent>
     <groupId>io.kestros.cms.sample-sites</groupId>
     <artifactId>lorem-ipsum-site</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.1.0</version>
   </parent>
 
   <artifactId>lorem-ipsum-site-core</artifactId>

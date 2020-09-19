@@ -1,0 +1,5 @@
+{
+  "jcr:primaryType": "kes:Theme",
+  "jcr:title": "Default Theme",
+  "jcr:description": "Styleless Theme. Black text on a white background. That's it."
+}

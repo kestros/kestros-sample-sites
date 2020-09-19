@@ -1,0 +1,124 @@
+{
+  "jcr:primaryType": "kes:Page",
+  "jcr:content": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Pellentesque Sodales",
+    "jcr:description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper ut velit at sodales. Morbi.",
+    "sling:resourceType": "kestros/commons/components/kestros-base-page",
+    "header": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/inherited-content-area"
+    },
+    "main": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/content-area",
+      "container": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "/libs/kestros/commons/components/structure/container",
+        "content": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content-area",
+          "heading": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "kestros/commons/components/content/heading",
+            "text": "Pellentesque Sodales",
+            "level": "h2"
+          },
+          "text": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "kestros/commons/components/content/text",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet condimentum orci."
+          },
+          "text-1": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "kestros/commons/components/content/text",
+            "text": "Mauris congue arcu dolor, vel interdum felis maximus et. Proin ac maximus lacus, vel tempus tellus. Suspendisse porttitor laoreet nunc."
+          }
+        }
+      },
+      "container-1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/commons/components/structure/container",
+        "content": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content-area",
+          "grid": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "kestros/commons/components/structure/grid",
+            "columns": "3",
+            "column-1": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content-area",
+              "heading": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "kestros/commons/components/content/heading",
+                "level": "h2",
+                "text": "Lorem Ipsum",
+                "variations": "center"
+              },
+              "text": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "kestros/commons/components/content/text",
+                "text": "Vestibulum ut risus auctor."
+              },
+              "button": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "kestros/commons/components/content/button",
+                "text": "Maecenas sapien",
+                "link": "https://kestros.io"
+              }
+            },
+            "column-2": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content-area",
+              "heading": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "kestros/commons/components/content/heading",
+                "level": "h2",
+                "text": "Morbi eu",
+                "variations": "center"
+              },
+              "text": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "kestros/commons/components/content/text",
+                "text": "Morbi commodo massa fermentum"
+              },
+              "button": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "kestros/commons/components/content/button",
+                "text": "Nam tincidunt.",
+                "link": "https://kestros.io"
+              }
+            },
+            "column-3": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content-area",
+              "heading": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "kestros/commons/components/content/heading",
+                "level": "h2",
+                "text": "Quis non nisi",
+                "variations": "center"
+              },
+              "text": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "kestros/commons/components/content/text",
+                "text": "Suspendisse malesuada ligula lacus."
+              },
+              "button": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "kestros/commons/components/content/button",
+                "text": "Nullam in",
+                "link": "https://kestros.io"
+              }
+            }
+          }
+        }
+      }
+    },
+    "footer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/inherited-content-area"
+    }
+  }
+}

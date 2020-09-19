@@ -1,0 +1,6 @@
+{
+  "jcr:primaryType": "kes:VendorLibrary",
+  "jcr:title": "Lorem Ipsum Generic Library",
+  "jcr:description": "Styleless library. Black text on a white background. That's it.",
+  "documentationUrl": "https://kestros.io"
+}

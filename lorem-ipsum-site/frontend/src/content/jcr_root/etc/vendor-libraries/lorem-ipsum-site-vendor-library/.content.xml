@@ -21,6 +21,7 @@
   xmlns:jcr="http://www.jcp.org/jcr/1.0"
   jcr:primaryType="kes:VendorLibrary"
   jcr:title="Lorem Ipsum Generic Library"
-  description="Lorem Ipsum Site baseline library.">
+  jcr:description="Styleless library. Black text on a white background. That's it."
+  documentationUrl="https://kestros.io">
 
 </jcr:root>
