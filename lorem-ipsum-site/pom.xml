@@ -24,7 +24,7 @@
   <parent>
     <groupId>io.kestros.commons</groupId>
     <artifactId>kestros-parent-strict</artifactId>
-    <version>0.1.1</version>
+    <version>0.1.2</version>
     <relativePath/>
   </parent>
 
