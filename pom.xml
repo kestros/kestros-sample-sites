@@ -25,7 +25,7 @@
   <parent>
     <groupId>io.kestros.commons</groupId>
     <artifactId>kestros-parent-strict</artifactId>
-    <version>0.1.2</version>
+    <version>0.1.3-SNAPSHOT</version>
     <relativePath/>
   </parent>
 
@@ -56,12 +56,5 @@
   </modules>
 
   <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>io.kestros.cms</groupId>
-        <artifactId>kestros-cms-foundation-core</artifactId>
-        <version>0.1.1-SNAPSHOT</version>
-      </dependency>
-    </dependencies>
   </dependencyManagement>
 </project>

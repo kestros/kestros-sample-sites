@@ -44,7 +44,11 @@
     <!-- Kestros Dependencies -->
     <dependency>
       <groupId>io.kestros.cms</groupId>
-      <artifactId>kestros-cms-foundation-core</artifactId>
+      <artifactId>kestros-component-types-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.kestros.cms</groupId>
+      <artifactId>kestros-site-building-api</artifactId>
     </dependency>
   </dependencies>
 
