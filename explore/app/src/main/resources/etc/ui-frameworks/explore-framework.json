@@ -1,0 +1,6 @@
+{
+  "jcr:primaryType": "kes:ManagedUiFramework",
+  "jcr:title": "Explore",
+  "jcr:description": "",
+  "kes:uiFrameworkCode": "explore"
+}

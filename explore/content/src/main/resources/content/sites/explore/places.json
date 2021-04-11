@@ -1,0 +1,229 @@
+{
+  "jcr:primaryType": "kes:Page",
+  "jcr:content": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "kestros/commons/components/kestros-base-page",
+    "jcr:title": "Places",
+    "header": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/inherited-content-area"
+    },
+    "main": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/content-area",
+      "container": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/commons/components/structure/container",
+        "content": {
+          "content": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "kestros/commons/components/content-area",
+            "top-navigation": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/structure/top-navigation"
+            },
+            "heading": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content/heading",
+              "level": "h1",
+              "text": "Explore"
+            }
+          }
+        }
+      },
+      "container-1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/commons/components/structure/container",
+        "content": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content-area",
+          "container": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "kestros/commons/components/structure/container",
+            "content": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content-area",
+              "header": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "kestros/commons/components/content/heading",
+                "level": "h1",
+                "text": "Travel Options"
+              },
+              "text": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "kestros/commons/components/content/text",
+                "text": "Find out what mode of transportation best suits your plans. A road trip gives you the freedom to make impromptu stops to appreciate unique attractions while flying gives you the fastest travel options."
+              }
+            }
+          },
+          "container-1": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "kestros/commons/components/structure/container",
+            "content": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content-area",
+              "grid": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "kestros/commons/components/structure/grid",
+                "column-1": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "sling:resourceType": "kestros/commons/components/content-area",
+                  "card": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "sling:resourceType": "kestros/commons/components/content/card",
+                    "jcr:title": "Road",
+                    "callToActionText": "Plan your trip",
+                    "link": "https://kestros.io",
+                    "content": {
+                      "jcr:primaryType": "nt:unstructured",
+                      "sling:resourceType": "kestros/commons/components/content-area",
+                      "heading": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "sling:resourceType": "kestros/commons/components/content/heading",
+                        "level": "h4",
+                        "text": "$"
+                      },
+                      "richtext": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "sling:resourceType": "kestros/commons/components/content/richtext",
+                        "text": "<ul><li>Lowest Cost</li><li>Frequent stops</li><li>Better for sight-seeing</li><li>Time consuming and tiring</li></ul>"
+                      }
+                    }
+                  }
+                },
+                "column-2": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "sling:resourceType": "kestros/commons/components/content-area",
+                  "card": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "sling:resourceType": "kestros/commons/components/content/card",
+                    "jcr:title": "Rail",
+                    "callToActionText": "Book a Ticket",
+                    "link": "https://kestros.io",
+                    "content": {
+                      "jcr:primaryType": "nt:unstructured",
+                      "sling:resourceType": "kestros/commons/components/content-area",
+                      "heading": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "sling:resourceType": "kestros/commons/components/content/heading",
+                        "level": "h4",
+                        "text": "$$"
+                      },
+                      "richtext": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "sling:resourceType": "kestros/commons/components/content/richtext",
+                        "text": "<ul><li>Great scenery</li><li>No traffic to deal with</li><li>Someone else does the driving</li><li>Takes longer than an airplane</li></ul>"
+                      }
+                    }
+                  }
+                },
+                "column-3": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "sling:resourceType": "kestros/commons/components/content-area",
+                  "card": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "sling:resourceType": "kestros/commons/components/content/card",
+                    "jcr:title": "Air",
+                    "callToActionText": "Find a Flight",
+                    "link": "https://kestros.io",
+                    "content": {
+                      "jcr:primaryType": "nt:unstructured",
+                      "sling:resourceType": "kestros/commons/components/content-area",
+                      "heading": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "sling:resourceType": "kestros/commons/components/content/heading",
+                        "level": "h4",
+                        "text": "$$$"
+                      },
+                      "richtext": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "sling:resourceType": "kestros/commons/components/content/richtext",
+                        "text": "<ul><li>Fastest way to get there</li><li>Package deals are good value</li><li>Pack light or pay extra</li><li>Those awful security checks</li></ul>"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "container-2": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "kestros/commons/components/structure/container",
+            "content": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content-area",
+              "grid-1": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "kestros/commons/components/structure/grid",
+                "column-1": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "sling:resourceType": "kestros/commons/components/content-area",
+                  "card": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "sling:resourceType": "kestros/commons/components/content/card",
+                    "content": {
+                      "jcr:primaryType": "nt:unstructured",
+                      "sling:resourceType": "kestros/commons/components/content-area",
+                      "text": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "sling:resourceType": "kestros/commons/components/content/text",
+                        "text": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+                      }
+                    }
+                  }
+                },
+                "column-2": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "sling:resourceType": "kestros/commons/components/content-area",
+                  "card": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "sling:resourceType": "kestros/commons/components/content/card",
+                    "content": {
+                      "jcr:primaryType": "nt:unstructured",
+                      "sling:resourceType": "kestros/commons/components/content-area",
+                      "text": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "sling:resourceType": "kestros/commons/components/content/text",
+                        "text": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+                      }
+                    }
+                  }
+                },
+                "column-3": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "sling:resourceType": "kestros/commons/components/content-area",
+                  "card": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "sling:resourceType": "kestros/commons/components/content/card",
+                    "content": {
+                      "jcr:primaryType": "nt:unstructured",
+                      "sling:resourceType": "kestros/commons/components/content-area",
+                      "text": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "sling:resourceType": "kestros/commons/components/content/text",
+                        "text": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "footer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/inherited-content-area",
+      "container": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/commons/components/structure/container",
+        "content": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content-area"
+        }
+      }
+    }
+  }
+}
+
