@@ -1,0 +1,231 @@
+{
+  "jcr:primaryType": "kes:Site",
+  "jcr:content": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "kestros/commons/components/kestros-base-page",
+    "kes:theme": "/etc/ui-frameworks/resolve-framework/versions/0.0.1/themes/default",
+    "jcr:title": "ReSolve 2021",
+    "header": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/inherited-content-area",
+      "content": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/commons/components/content-area",
+        "top-navigation": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/structure/top-navigation"
+        }
+      }
+    },
+    "main": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/content-area",
+      "container": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/commons/components/structure/container",
+        "variations": [
+        ],
+        "content": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content-area",
+          "container": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "kestros/commons/components/structure/container",
+            "variations": [
+            ],
+            "content": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content-area",
+              "header": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "kestros/commons/components/content/heading",
+                "level": "h1",
+                "text": "A showcase of projects and solutions built with Apache Sling"
+              }
+            }
+          }
+        }
+      },
+      "container-1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/commons/components/structure/container",
+        "content": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content-area",
+          "container": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "kestros/commons/components/structure/container",
+            "content": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content-area",
+              "header": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "kestros/commons/components/content/heading",
+                "level": "h2",
+                "text": "Join Us"
+              },
+              "header-1": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "kestros/commons/components/content/heading",
+                "level": "h3",
+                "text": "Join us and learn more about the Apache Sling Eco System"
+              },
+              "text": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "kestros/commons/components/content/richtext",
+                "text": "<p>Apache Sling™ is a framework for RESTful web-applications based on an extensible content tree.</p>"
+              }
+            }
+          }
+        }
+      },
+      "container-2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/commons/components/structure/container",
+        "content": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content-area",
+          "container": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "kestros/commons/components/structure/container",
+            "content": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content-area",
+              "grid": {
+                "jcr:primaryType": "nt:unstructured",
+                "id": "",
+                "class": "",
+                "columns": "2",
+                "sling:resourceType": "/libs/kestros/commons/components/structure/grid",
+                "column-1": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "sling:resourceType": "kestros/commons/components/content-area",
+                  "image": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "class": "",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/image"
+                  },
+                  "text": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "text": "Mark your Calendar - Join us on June-15 2021 for a day to get to know Apache Sling based projects better and to bring the Apache Sling community closer together.",
+                    "class": "",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/text"
+                  },
+                  "text-1": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "text": "Exploring Sling?",
+                    "class": "",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/text"
+                  },
+                  "text-2": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "text": "Hear about how others use Apache Sling",
+                    "class": "",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/text"
+                  },
+                  "text-3": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "text": "Working on a Sling Project?",
+                    "class": "",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/text"
+                  },
+                  "text-4": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "text": "Collaborate with your fellow projects, learn about their approaches and successes",
+                    "class": "",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/text"
+                  },
+                  "text-5": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "text": "Working on Apache Sling?",
+                    "class": "",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/text"
+                  },
+                  "text-6": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "text": "Showcase your next innovation",
+                    "class": "",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/text"
+                  }
+                },
+                "column-2": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "sling:resourceType": "kestros/commons/components/content-area",
+                  "heading": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "class": "",
+                    "level": "h2",
+                    "text": "I want to Attend",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/heading"
+                  },
+                  "heading-1": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "class": "",
+                    "level": "h2",
+                    "text": "Add my Project / Let me Speak",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/heading"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "footer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/inherited-content-area",
+      "container": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/commons/components/structure/container",
+        "content": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content-area",
+          "logo": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "kestros/commons/components/content/image"
+          },
+          "text": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "kestros/commons/components/content/richtext",
+            "text": "<p>A showcase of projects and solutions built with Apache Sling.<br />Bundled as a conference for people with a passion for Sling.</p>"
+          },
+          "text-1": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "kestros/commons/components/content/richtext",
+            "text": "<p>© 2021 resolve conference</p>"
+          }
+        }
+      },
+      "container-1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/commons/components/structure/container",
+        "content": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content-area",
+          "text": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "kestros/commons/components/content/richtext",
+            "text": "<p>Apache Sling, Sling and Apache are either registered trademarks or trademarks of the Apache Software Foundation in the United States and/or other countries, and are used with permission. The Apache Software Foundation has no affiliation with and does not endorse, or review the materials provided at this event, which is managed by its founding members.</p>"
+          },
+          "text-1": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "kestros/commons/components/content/richtext",
+            "text": "<p>ReSolve2021 is dedicated to a harassment-free experience for everyone. Our anti-harassment policy can be found at <a href=\"www.resolveconf.com/anti-harassment-policy.html\">www.resolveconf.com/anti-harassment-policy.html</a></p>"
+          }
+        }
+      }
+    }
+  }
+}
+

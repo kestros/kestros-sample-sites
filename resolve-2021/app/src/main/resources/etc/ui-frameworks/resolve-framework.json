@@ -1,0 +1,6 @@
+{
+  "jcr:primaryType": "kes:ManagedUiFramework",
+  "jcr:title": "Resolve Framework",
+  "jcr:description": "",
+  "kes:uiFrameworkCode": "resolve"
+}

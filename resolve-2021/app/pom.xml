@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~      Copyright (C) 2020  Kestros, Inc.
+  ~
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, either version 3 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>io.kestros.cms.sample-sites</groupId>
+    <artifactId>resolve-2021-site</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>resolve-2021-site-app</artifactId>
+
+  <name>resolve-2021 Site - Application</name>
+  <packaging>bundle</packaging>
+
+  <properties>
+    <bundleCategory>kestros</bundleCategory>
+  </properties>
+
+  <build>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+      </resource>
+    </resources>
+
+    <plugins>
+      <plugin>
+        <groupId>org.apache.rat</groupId>
+        <artifactId>apache-rat-plugin</artifactId>
+        <version>0.13</version>
+        <configuration>
+          <excludes>
+            <!-- don't check anything in target -->
+            <exclude>target/*</exclude>
+            <!-- Fixing issues with deleted modules -->
+            <exclude>**/target/*</exclude>
+            <exclude>**/target/**/*</exclude>
+            <exclude>**/*.json</exclude>
+            <exclude>node/**/*</exclude>
+            <exclude>node_modules/**/*</exclude>
+            <exclude>**/README.md</exclude>
+            <exclude>package.json</exclude>
+            <exclude>package-lock.json</exclude>
+            <exclude>*-maven-settings.xml</exclude>
+            <exclude>src/main/resources/content/ROOT.json</exclude>
+            <exclude>src/main/resources/startup/favicon.svg</exclude>
+          </excludes>
+        </configuration>
+        <executions>
+          <execution>
+            <phase>verify</phase>
+            <goals>
+              <goal>check</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <extensions>true</extensions>
+        <configuration>
+          <instructions>
+            <Sling-Initial-Content>
+              /etc/ui-frameworks/;overwrite:=true;path:=/etc/ui-frameworks
+            </Sling-Initial-Content>
+          </instructions>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

@@ -1,0 +1,10 @@
+{
+  "jcr:primaryType": "kes:UiFramework",
+  "jcr:title": "Resolve 0.0.1",
+  "jcr:description": "",
+  "kes:uiFrameworkCode": "resolve",
+  "kes:vendorLibraries": [
+    "bootstrap/5.0.0",
+    "font-awesome/5.11.2"
+  ]
+}

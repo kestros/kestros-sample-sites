@@ -1,0 +1,539 @@
+{
+  "jcr:primaryType": "kes:Page",
+  "jcr:content": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Awesome Sling",
+    "kes:theme": "/etc/ui-frameworks/resolve-framework/versions/0.0.1/themes/default",
+    "sling:resourceType": "kestros/commons/components/kestros-base-page",
+    "header": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/inherited-content-area"
+    },
+    "main": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/content-area",
+      "container": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/commons/components/structure/container",
+        "variations": [
+          "text-center"
+        ],
+        "content": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content-area",
+          "header": {
+            "jcr:primaryType": "nt:unstructured",
+            "text": "Content Management Systems",
+            "level": "h1",
+            "sling:resourceType": "kestros/commons/components/content/heading"
+          }
+        }
+      },
+      "container-1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "/libs/kestros/commons/components/structure/container",
+        "variations": [
+          "container-fluid",
+          "bg-transparent",
+          "pb-5",
+          "pt-5"
+        ],
+        "content": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content-area",
+          "container": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "/libs/kestros/commons/components/structure/container",
+            "variations": [
+              "container",
+              "text-center"
+            ],
+            "content": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content-area",
+              "grid": {
+                "jcr:primaryType": "nt:unstructured",
+                "id": "",
+                "class": "",
+                "columns": "2",
+                "sling:resourceType": "/libs/kestros/commons/components/structure/grid",
+                "column-1": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "sling:resourceType": "kestros/commons/components/content-area",
+                  "heading": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "text": "Composum Pages",
+                    "class": "",
+                    "level": "h2",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/heading"
+                  },
+                  "heading-1": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "text": "Bring back the fun to content management",
+                    "class": "",
+                    "level": "h3",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/heading"
+                  },
+                  "button": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "link": "#",
+                    "text": "Learn about Composum",
+                    "class": "",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/button",
+                    "variations": [
+                      "btn-dark"
+                    ]
+                  },
+                  "button-1": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "link": "#",
+                    "text": "Try It!",
+                    "class": "",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/button",
+                    "variations": [
+                      "btn-dark"
+                    ]
+                  }
+                },
+                "column-2": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "sling:resourceType": "kestros/commons/components/content-area",
+                  "image": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/image"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "container-2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "/libs/kestros/commons/components/structure/container",
+        "variations": [
+          "bg-light",
+          "pb-5",
+          "pt-5",
+          "text-center",
+          "container-fluid"
+        ],
+        "content": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content-area",
+          "container": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "/libs/kestros/commons/components/structure/container",
+            "variations": [
+              "container"
+            ],
+            "content": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content-area",
+              "grid-1": {
+                "jcr:primaryType": "nt:unstructured",
+                "id": "",
+                "class": "",
+                "columns": "2",
+                "sling:resourceType": "/libs/kestros/commons/components/structure/grid",
+                "column-1": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "sling:resourceType": "kestros/commons/components/content-area",
+                  "image": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/image"
+                  }
+                },
+                "column-2": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "sling:resourceType": "kestros/commons/components/content-area",
+                  "heading": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "text": "Kestros",
+                    "class": "",
+                    "level": "h2",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/heading"
+                  },
+                  "heading-1": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "text": "A Hybrid Web Experience Platform",
+                    "class": "",
+                    "level": "h3",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/heading"
+                  },
+                  "richtext": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "text": "<p>A hybrid and modular web platform that enables rapid development of modern, high-performance websites and digital experiences.</p><p>Intuitive, approachable and easy to use, Kestros provides a great starting point for content creators, creative professionals, and developers.</p> ",
+                    "class": "",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/richtext"
+                  },
+                  "button": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "link": "#",
+                    "text": "Learn about Kestros",
+                    "class": "",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/button",
+                    "variations": [
+                      "btn-dark"
+                    ]
+                  },
+                  "button-1": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "link": "#",
+                    "text": "Try It!",
+                    "class": "",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/button",
+                    "variations": [
+                      "btn-dark"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "container-3": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "/libs/kestros/commons/components/structure/container",
+        "variations": [
+          "pb-5",
+          "pt-5",
+          "text-center"
+        ],
+        "content": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content-area",
+          "container": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "/libs/kestros/commons/components/structure/container",
+            "content": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content-area",
+              "grid-2": {
+                "jcr:primaryType": "nt:unstructured",
+                "id": "",
+                "class": "",
+                "columns": "2",
+                "sling:resourceType": "/libs/kestros/commons/components/structure/grid",
+                "column-1": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "sling:resourceType": "kestros/commons/components/content-area",
+                  "heading": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "text": "Peregrine-CMS",
+                    "class": "",
+                    "level": "h2",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/heading"
+                  },
+                  "heading-1": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "text": "Fast Websites, Open Community",
+                    "class": "",
+                    "level": "h3",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/heading"
+                  },
+                  "richtext": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "text": "<p>Peregrine-CMS is a Head Optional, API First Content Management System based on Apache Sling and VueJS. We strive to serve websites faster than nobody else.</p> ",
+                    "class": "",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/richtext"
+                  },
+                  "button": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "link": "#",
+                    "text": "Learn about Peregrine-CMS",
+                    "class": "",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/button",
+                    "variations": [
+                      "btn-dark"
+                    ]
+                  },
+                  "button-1": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "link": "#",
+                    "text": "Try It!",
+                    "class": "",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/button",
+                    "variations": [
+                      "btn-dark"
+                    ]
+                  },
+                  "button-2": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "link": "#",
+                    "text": "GitHub",
+                    "class": "",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/button",
+                    "variations": [
+                      "btn-dark"
+                    ]
+                  }
+                },
+                "column-2": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "sling:resourceType": "kestros/commons/components/content-area",
+                  "image": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/image"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "container-4": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "/libs/kestros/commons/components/structure/container",
+        "variations": [
+          "pt-5",
+          "pb-5",
+          "text-center",
+          "bg-light",
+          "container-fluid"
+        ],
+        "content": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content-area",
+          "container": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "/libs/kestros/commons/components/structure/container",
+            "variations": [
+              "text-center"
+            ],
+            "content": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content-area",
+              "grid-3": {
+                "jcr:primaryType": "nt:unstructured",
+                "id": "",
+                "class": "",
+                "columns": "2",
+                "sling:resourceType": "/libs/kestros/commons/components/structure/grid",
+                "column-1": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "sling:resourceType": "kestros/commons/components/content-area",
+                  "image": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/image"
+                  }
+                },
+                "column-2": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "sling:resourceType": "kestros/commons/components/content-area",
+                  "heading": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "text": "Apache Sling CMS",
+                    "class": "",
+                    "level": "h2",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/heading"
+                  },
+                  "heading-1": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "text": "The Reference",
+                    "class": "",
+                    "level": "h3",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/heading"
+                  },
+                  "richtext": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "text": "<p>The Apache Sling CMS is a reference implementation of a fully-featured Content Management System built in Apache Sling. Sling CMS is an open source solution for web and document management including in context editing, a powerful configuration system, document metadata extraction and versioning support. </p> ",
+                    "class": "",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/richtext"
+                  },
+                  "button": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "link": "#",
+                    "text": "Learn about Apache Sling CMS",
+                    "class": "",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/button",
+                    "variations": [
+                      "btn-dark"
+                    ]
+                  },
+                  "button-1": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "link": "#",
+                    "text": "Try It!",
+                    "class": "",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/button",
+                    "variations": [
+                      "btn-dark"
+                    ]
+                  },
+                  "button-2": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "link": "#",
+                    "text": "GitHub",
+                    "class": "",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/button",
+                    "variations": [
+                      "btn-dark"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "container-5": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "/libs/kestros/commons/components/structure/container",
+        "variations": [
+          "text-center",
+          "pb-5",
+          "pt-5"
+        ],
+        "content": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content-area",
+          "container": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "/libs/kestros/commons/components/structure/container",
+            "content": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content-area",
+              "grid-4": {
+                "jcr:primaryType": "nt:unstructured",
+                "id": "",
+                "class": "",
+                "columns": "2",
+                "sling:resourceType": "/libs/kestros/commons/components/structure/grid",
+                "column-1": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "sling:resourceType": "kestros/commons/components/content-area",
+                  "heading": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "text": "WebSight Admin",
+                    "class": "",
+                    "level": "h2",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/heading"
+                  },
+                  "heading-1": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "text": "Modern Sling tool suite",
+                    "class": "",
+                    "level": "h3",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/heading"
+                  },
+                  "richtext": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "text": "<p>A  tool suite that makes the daily AEM / Sling administrative tasks quick and painless. With its slick, ergonomic and robust UI, achieving an increase in productivity and efficiency is 100% certain.</p><p>It includes 4 modules: Package Manager, Groovy Console, User Manager and Resource Browser. They all provide a simple, clean, and well-documented RESTful API for use by CI/CD tools.</p>",
+                    "class": "",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/richtext"
+                  },
+                  "button": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "link": "#",
+                    "text": "Learn about WebSight",
+                    "class": "",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/button",
+                    "variations": [
+                      "btn-dark"
+                    ]
+                  },
+                  "button-1": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "link": "#",
+                    "text": "Try It!",
+                    "class": "",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/button",
+                    "variations": [
+                      "btn-dark"
+                    ]
+                  },
+                  "button-2": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "id": "",
+                    "link": "#",
+                    "text": "GitHub",
+                    "class": "",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/button",
+                    "variations": [
+                      "btn-dark"
+                    ]
+                  }
+                },
+                "column-2": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "sling:resourceType": "kestros/commons/components/content-area",
+                  "image": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "sling:resourceType": "/libs/kestros/commons/components/content/image"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "container-6": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "/libs/kestros/commons/components/structure/container",
+        "variations": [
+          "bg-dark",
+          "text-light"
+        ],
+        "content": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content-area",
+          "container": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "/libs/kestros/commons/components/structure/container",
+            "content": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content-area",
+              "heading": {
+                "jcr:primaryType": "nt:unstructured",
+                "id": "",
+                "text": "Want to be listed?",
+                "class": "",
+                "level": "h1",
+                "sling:resourceType": "/libs/kestros/commons/components/content/heading"
+              },
+              "text": {
+                "jcr:primaryType": "nt:unstructured",
+                "id": "",
+                "text": "Send us your Project Information",
+                "class": "",
+                "sling:resourceType": "/libs/kestros/commons/components/content/text"
+              }
+            }
+          }
+        }
+      }
+    },
+    "footer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/inherited-content-area"
+    }
+  }
+}

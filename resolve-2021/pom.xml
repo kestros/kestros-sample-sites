@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!--
   ~      Copyright (C) 2020  Kestros, Inc.
   ~
@@ -29,13 +28,13 @@
     <relativePath/>
   </parent>
 
-  <groupId>io.kestros.cms</groupId>
-  <artifactId>kestros-sample-sites</artifactId>
-  <version>0.1.1-SNAPSHOT</version>
-
-  <name>Kestros Sample Sites</name>
-  <description></description>
+  <groupId>io.kestros.cms.sample-sites</groupId>
+  <artifactId>resolve-2021-site</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
+
+  <name>resolve-2021 Site Site</name>
+  <description>resolve-2021 Sample Site</description>
 
   <licenses>
     <license>
@@ -52,11 +51,24 @@
   </scm>
 
   <modules>
-    <module>lorem-ipsum-site</module>
-    <module>explore</module>
-    <module>resolve-2021</module>
+    <module>core</module>
+    <module>app</module>
+    <module>content</module>
   </modules>
 
   <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>io.kestros.cms</groupId>
+        <artifactId>kestros-component-types-api</artifactId>
+        <version>0.0.2-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>io.kestros.cms</groupId>
+        <artifactId>kestros-site-building-api</artifactId>
+        <version>0.0.2-SNAPSHOT</version>
+      </dependency>
+    </dependencies>
   </dependencyManagement>
+
 </project>
