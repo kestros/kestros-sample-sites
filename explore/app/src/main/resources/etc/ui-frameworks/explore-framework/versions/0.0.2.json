@@ -1,6 +1,6 @@
 {
   "jcr:primaryType": "kes:UiFramework",
-  "jcr:title": "Explore 0.0.1",
+  "jcr:title": "Explore 0.0.2",
   "jcr:description": "",
   "kes:uiFrameworkCode": "explore",
   "kes:vendorLibraries": [
@@ -8,6 +8,6 @@
     "popper",
     "bootstrap/4.2.1",
     "font-awesome/5.11.2",
-    "explore-vendor-library/0.0.1"
+    "explore-vendor-library/0.0.2"
   ]
 }

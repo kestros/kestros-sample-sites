@@ -1,6 +1,6 @@
 {
   "jcr:primaryType": "kes:ManagedUiFramework",
   "jcr:title": "Explore",
-  "jcr:description": "",
+  "jcr:description": "UI Framework for Explore Sample Site",
   "kes:uiFrameworkCode": "explore"
 }

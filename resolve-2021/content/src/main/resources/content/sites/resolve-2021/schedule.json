@@ -1,0 +1,68 @@
+{
+  "jcr:primaryType": "kes:Page",
+  "jcr:content": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Schedule",
+    "kes:theme": "/etc/ui-frameworks/resolve-framework/versions/0.0.1/themes/default",
+    "sling:resourceType": "kestros/commons/components/kestros-base-page",
+    "header": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/inherited-content-area"
+    },
+    "main": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/content-area",
+      "container": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/commons/components/structure/container",
+        "variations": [
+          "text-center"
+        ],
+        "content": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content-area",
+          "header": {
+            "jcr:primaryType": "nt:unstructured",
+            "text": "Conference Schedule",
+            "level": "h1",
+            "sling:resourceType": "kestros/commons/components/content/heading"
+          }
+        }
+      },
+      "container-1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "/libs/kestros/commons/components/structure/container",
+        "variations": [
+          "container-fluid",
+          "bg-transparent",
+          "pb-5",
+          "pt-5"
+        ],
+        "content": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content-area",
+
+          "heading-1": {
+            "jcr:primaryType": "nt:unstructured",
+            "id": "",
+            "text": "Schedule",
+            "class": "",
+            "level": "h3",
+            "sling:resourceType": "/libs/kestros/commons/components/content/heading"
+          },
+          "richtext": {
+            "jcr:primaryType": "nt:unstructured",
+            "id": "",
+            "text": "<dl><dt>10:30 AM - 11:00 AM</dt><dd>Opening + Welcome Message</dd><dt>11:30 AM - 12:00 PM</dt><dd>Web Sight Admin DS</dd><dt>12:30 PM - 01:00 PM</dt><dd>Breakout Session</dd><dt>01:30 PM - 02:00 PM</dt><dd>Open Source Enterprise Cris Rockwell</dd><dt>02:30 PM - 03:00 PM</dt><dd>Kestros Danny Moulton, Kevin O’Brien</dd><dt>03:30 PM - 04:00 PM</dt><dd>Breakout Session</dd><dt>04:30 PM - 05:00 PM</dt><dd>Enterprise Commerce with JECIS eCommerce Framework Giancarlo Berner</dd><dt>05:30 PM - 06:00 PM</dt><dd>Perigrine CMS Headwire</dd><dt>06:30 PM - 07:00 PM</dt><dd>Round Table + Closing</dd></dl>",
+            "class": "",
+            "sling:resourceType": "/libs/kestros/commons/components/content/richtext"
+          }
+        }
+      }
+    },
+    "footer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/inherited-content-area"
+    }
+  }
+}

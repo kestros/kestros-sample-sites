@@ -83,7 +83,9 @@
         <configuration>
           <instructions>
             <Sling-Initial-Content>
-              /etc/ui-frameworks/;overwrite:=true;path:=/etc/ui-frameworks
+              /etc/ui-frameworks/;overwrite:=true;path:=/etc/ui-frameworks,
+              /etc/vendor-libraries/;overwrite:=true;path:=/etc/vendor-libraries,
+              /apps/explore/;overwrite:=true;path:=/apps/explore
             </Sling-Initial-Content>
           </instructions>
         </configuration>

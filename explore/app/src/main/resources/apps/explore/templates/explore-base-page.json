@@ -1,0 +1,11 @@
+{
+  "jcr:primaryType": "kes:Template",
+  "jcr:content": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Explore Base Page",
+    "sling:resourceType": "kestros/commons/components/kestros-base-page",
+    "allowedUiFrameworks": [
+      "/etc/ui-frameworks/explore-framework"
+    ]
+  }
+}

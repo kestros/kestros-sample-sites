@@ -1,0 +1,6 @@
+{
+  "jcr:primaryType": "kes:ManagedVendorLibrary",
+  "jcr:title": "Explore Vendor Library",
+  "jcr:description": "Vendor Library for the Explore Sample Site",
+  "documentationUrl": "https://kestros.io"
+}
