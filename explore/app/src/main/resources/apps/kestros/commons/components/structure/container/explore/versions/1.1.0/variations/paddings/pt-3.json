@@ -1,0 +1,6 @@
+{
+  "jcr:primaryType": "kes:ComponentVariation",
+  "jcr:title": "Padding Top 3",
+  "inline": true,
+  "default": false
+}

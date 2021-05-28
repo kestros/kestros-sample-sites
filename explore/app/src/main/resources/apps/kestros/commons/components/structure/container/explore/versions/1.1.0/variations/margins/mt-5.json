@@ -1,0 +1,6 @@
+{
+  "jcr:primaryType": "kes:ComponentVariation",
+  "jcr:title": "Margin Top 5",
+  "inline": true,
+  "default": false
+}

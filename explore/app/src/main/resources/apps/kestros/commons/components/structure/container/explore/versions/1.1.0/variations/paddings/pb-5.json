@@ -1,0 +1,6 @@
+{
+  "jcr:primaryType": "kes:ComponentVariation",
+  "jcr:title": "Padding Bottom 5",
+  "inline": true,
+  "default": false
+}

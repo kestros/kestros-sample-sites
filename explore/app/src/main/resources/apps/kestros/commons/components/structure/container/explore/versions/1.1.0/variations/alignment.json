@@ -1,0 +1,5 @@
+{
+  "jcr:primaryType": "kes:ComponentVariationGroup",
+  "jcr:title": "Alignment",
+  "fontAwesomeIcon": "fas fa-align-left"
+}

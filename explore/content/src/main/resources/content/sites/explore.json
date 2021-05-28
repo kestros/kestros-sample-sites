@@ -3,7 +3,7 @@
   "jcr:content": {
     "jcr:primaryType": "nt:unstructured",
     "sling:resourceType": "kestros/commons/components/kestros-base-page",
-    "kes:theme": "/etc/ui-frameworks/explore-framework/versions/0.0.1/themes/default",
+    "kes:theme": "/etc/ui-frameworks/explore-framework/versions/1.0.0/themes/default",
     "jcr:title": "Explore",
     "header": {
       "jcr:primaryType": "nt:unstructured",
@@ -16,150 +16,45 @@
         "jcr:primaryType": "nt:unstructured",
         "sling:resourceType": "kestros/commons/components/structure/container",
         "variations": [
-          "container-fluid",
-          "vh-100",
-          "bg-dark",
-          "d-flex"
         ],
         "content": {
           "jcr:primaryType": "nt:unstructured",
           "sling:resourceType": "kestros/commons/components/content-area",
-          "top-navigation": {
-            "jcr:primaryType": "nt:unstructured",
-            "sling:resourceType": "kestros/commons/components/structure/top-navigation"
-          },
           "container": {
             "jcr:primaryType": "nt:unstructured",
             "sling:resourceType": "kestros/commons/components/structure/container",
             "variations": [
               "container-fluid",
-              "bg-transparent",
-              "d-flex",
-              "justify-content-center",
-              "align-self-center",
-              "text-light"
+              "vh-100",
+              "d-flex"
             ],
             "content": {
               "jcr:primaryType": "nt:unstructured",
               "sling:resourceType": "kestros/commons/components/content-area",
-              "header": {
+              "top-navigation": {
                 "jcr:primaryType": "nt:unstructured",
-                "sling:resourceType": "kestros/commons/components/content/heading",
-                "level": "h1",
-                "text": "Explore"
-              }
-            }
-          }
-        }
-      },
-      "container-1": {
-        "jcr:primaryType": "nt:unstructured",
-        "sling:resourceType": "kestros/commons/components/structure/container",
-        "content": {
-          "jcr:primaryType": "nt:unstructured",
-          "sling:resourceType": "kestros/commons/components/content-area",
-          "container": {
-            "jcr:primaryType": "nt:unstructured",
-            "sling:resourceType": "kestros/commons/components/structure/container",
-            "content": {
-              "jcr:primaryType": "nt:unstructured",
-              "sling:resourceType": "kestros/commons/components/content-area",
-              "header": {
-                "jcr:primaryType": "nt:unstructured",
-                "sling:resourceType": "kestros/commons/components/content/heading",
-                "level": "h1",
-                "text": "Travel Options"
+                "sling:resourceType": "kestros/commons/components/structure/top-navigation"
               },
-              "text": {
+              "container": {
                 "jcr:primaryType": "nt:unstructured",
-                "sling:resourceType": "kestros/commons/components/content/text",
-                "text": "Find out what mode of transportation best suits your plans. A road trip gives you the freedom to make impromptu stops to appreciate unique attractions while flying gives you the fastest travel options."
-              }
-            }
-          },
-          "container-1": {
-            "jcr:primaryType": "nt:unstructured",
-            "sling:resourceType": "kestros/commons/components/structure/container",
-            "content": {
-              "jcr:primaryType": "nt:unstructured",
-              "sling:resourceType": "kestros/commons/components/content-area",
-              "grid": {
-                "jcr:primaryType": "nt:unstructured",
-                "sling:resourceType": "kestros/commons/components/structure/grid",
-                "column-1": {
+                "sling:resourceType": "kestros/commons/components/structure/container",
+                "variations": [
+                  "container-fluid"
+                ],
+                "content": {
                   "jcr:primaryType": "nt:unstructured",
                   "sling:resourceType": "kestros/commons/components/content-area",
-                  "card": {
+                  "container": {
                     "jcr:primaryType": "nt:unstructured",
-                    "sling:resourceType": "kestros/commons/components/content/card",
-                    "jcr:title": "Road",
-                    "callToActionText": "Plan your trip",
-                    "link": "https://kestros.io",
+                    "sling:resourceType": "kestros/commons/components/structure/container",
                     "content": {
                       "jcr:primaryType": "nt:unstructured",
                       "sling:resourceType": "kestros/commons/components/content-area",
-                      "heading": {
+                      "header": {
                         "jcr:primaryType": "nt:unstructured",
                         "sling:resourceType": "kestros/commons/components/content/heading",
-                        "level": "h4",
-                        "text": "$"
-                      },
-                      "richtext": {
-                        "jcr:primaryType": "nt:unstructured",
-                        "sling:resourceType": "kestros/commons/components/content/richtext",
-                        "text": "<ul><li>Lowest Cost</li><li>Frequent stops</li><li>Better for sight-seeing</li><li>Time consuming and tiring</li></ul>"
-                      }
-                    }
-                  }
-                },
-                "column-2": {
-                  "jcr:primaryType": "nt:unstructured",
-                  "sling:resourceType": "kestros/commons/components/content-area",
-                  "card": {
-                    "jcr:primaryType": "nt:unstructured",
-                    "sling:resourceType": "kestros/commons/components/content/card",
-                    "jcr:title": "Rail",
-                    "callToActionText": "Book a Ticket",
-                    "link": "https://kestros.io",
-                    "content": {
-                      "jcr:primaryType": "nt:unstructured",
-                      "sling:resourceType": "kestros/commons/components/content-area",
-                      "heading": {
-                        "jcr:primaryType": "nt:unstructured",
-                        "sling:resourceType": "kestros/commons/components/content/heading",
-                        "level": "h4",
-                        "text": "$$"
-                      },
-                      "richtext": {
-                        "jcr:primaryType": "nt:unstructured",
-                        "sling:resourceType": "kestros/commons/components/content/richtext",
-                        "text": "<ul><li>Great scenery</li><li>No traffic to deal with</li><li>Someone else does the driving</li><li>Takes longer than an airplane</li></ul>"
-                      }
-                    }
-                  }
-                },
-                "column-3": {
-                  "jcr:primaryType": "nt:unstructured",
-                  "sling:resourceType": "kestros/commons/components/content-area",
-                  "card": {
-                    "jcr:primaryType": "nt:unstructured",
-                    "sling:resourceType": "kestros/commons/components/content/card",
-                    "jcr:title": "Air",
-                    "callToActionText": "Find a Flight",
-                    "link": "https://kestros.io",
-                    "content": {
-                      "jcr:primaryType": "nt:unstructured",
-                      "sling:resourceType": "kestros/commons/components/content-area",
-                      "heading": {
-                        "jcr:primaryType": "nt:unstructured",
-                        "sling:resourceType": "kestros/commons/components/content/heading",
-                        "level": "h4",
-                        "text": "$$$"
-                      },
-                      "richtext": {
-                        "jcr:primaryType": "nt:unstructured",
-                        "sling:resourceType": "kestros/commons/components/content/richtext",
-                        "text": "<ul><li>Fastest way to get there</li><li>Package deals are good value</li><li>Pack light or pay extra</li><li>Those awful security checks</li></ul>"
+                        "level": "h1",
+                        "text": "EXPLORE"
                       }
                     }
                   }
@@ -167,62 +62,321 @@
               }
             }
           },
-          "container-2": {
+          "container--1": {
             "jcr:primaryType": "nt:unstructured",
             "sling:resourceType": "kestros/commons/components/structure/container",
+            "variations": [
+              "container-fluid"
+            ],
             "content": {
               "jcr:primaryType": "nt:unstructured",
               "sling:resourceType": "kestros/commons/components/content-area",
-              "grid-1": {
+              "container": {
                 "jcr:primaryType": "nt:unstructured",
-                "sling:resourceType": "kestros/commons/components/structure/grid",
-                "column-1": {
+                "sling:resourceType": "kestros/commons/components/structure/container",
+                "content": {
                   "jcr:primaryType": "nt:unstructured",
                   "sling:resourceType": "kestros/commons/components/content-area",
-                  "card": {
+                  "grid": {
                     "jcr:primaryType": "nt:unstructured",
-                    "sling:resourceType": "kestros/commons/components/content/card",
-                    "content": {
+                    "sling:resourceType": "kestros/commons/components/structure/grid",
+                    "columns": 2,
+                    "column-1": {
                       "jcr:primaryType": "nt:unstructured",
                       "sling:resourceType": "kestros/commons/components/content-area",
-                      "text": {
+                      "content": {
                         "jcr:primaryType": "nt:unstructured",
-                        "sling:resourceType": "kestros/commons/components/content/text",
-                        "text": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+                        "sling:resourceType": "kestros/commons/components/content-area",
+                        "container": {
+                          "jcr:primaryType": "nt:unstructured",
+                          "sling:resourceType": "kestros/commons/components/structure/container",
+                          "content": {
+                            "jcr:primaryType": "nt:unstructured",
+                            "sling:resourceType": "kestros/commons/components/content-area",
+                            "header": {
+                              "jcr:primaryType": "nt:unstructured",
+                              "sling:resourceType": "kestros/commons/components/content/heading",
+                              "level": "h1",
+                              "text": "Start the Journey"
+                            },
+                            "text": {
+                              "jcr:primaryType": "nt:unstructured",
+                              "sling:resourceType": "kestros/commons/components/content/text",
+                              "text": "Intuitive, approachable and easy to use, it is the perfect starting point for content creators, creative professionals, and developers."
+                            },
+                            "text-1": {
+                              "jcr:primaryType": "nt:unstructured",
+                              "sling:resourceType": "kestros/commons/components/content/text",
+                              "text": "With the built-in security features, open API and flexibility, it is one of the best solutions for any size business or organization."
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "column-2": {
+                      "jcr:primaryType": "nt:unstructured",
+                      "sling:resourceType": "kestros/commons/components/content-area",
+                      "content": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "sling:resourceType": "kestros/commons/components/content-area",
+                        "container": {
+                          "jcr:primaryType": "nt:unstructured",
+                          "sling:resourceType": "kestros/commons/components/structure/container",
+                          "content": {
+                            "jcr:primaryType": "nt:unstructured",
+                            "sling:resourceType": "kestros/commons/components/content-area",
+                            "map": {
+                              "jcr:primaryType": "nt:unstructured",
+                              "sling:resourceType": "kestros/commons/components/content/map",
+                              "id": "explore-map"
+                            }
+                          }
+                        }
                       }
                     }
                   }
-                },
-                "column-2": {
+                }
+              },
+              "container--2": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "kestros/commons/components/structure/container",
+                "variations": [
+                  "container-fluid"
+                ],
+                "content": {
                   "jcr:primaryType": "nt:unstructured",
                   "sling:resourceType": "kestros/commons/components/content-area",
-                  "card": {
+                  "container": {
                     "jcr:primaryType": "nt:unstructured",
-                    "sling:resourceType": "kestros/commons/components/content/card",
+                    "sling:resourceType": "kestros/commons/components/structure/container",
                     "content": {
                       "jcr:primaryType": "nt:unstructured",
                       "sling:resourceType": "kestros/commons/components/content-area",
-                      "text": {
+                      "tabs": {
                         "jcr:primaryType": "nt:unstructured",
-                        "sling:resourceType": "kestros/commons/components/content/text",
-                        "text": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+                        "sling:resourceType": "kestros/commons/components/structure/tabs",
+                        "content": {
+                          "jcr:primaryType": "nt:unstructured",
+                          "sling:resourceType": "kestros/commons/components/content-area",
+                          "section": {
+                            "jcr:primaryType": "nt:unstructured",
+                            "sling:resourceType": "kestros/commons/components/structure/section",
+                            "heading": "Transportation",
+                            "content": {
+                              "jcr:primaryType": "nt:unstructured",
+                              "sling:resourceType": "kestros/commons/components/content-area",
+                              "grid": {
+                                "jcr:primaryType": "nt:unstructured",
+                                "sling:resourceType": "kestros/commons/components/structure/grid",
+                                "columns": 2,
+                                "column-1": {
+                                  "jcr:primaryType": "nt:unstructured",
+                                  "sling:resourceType": "kestros/commons/components/content-area",
+                                  "content": {
+                                    "jcr:primaryType": "nt:unstructured",
+                                    "sling:resourceType": "kestros/commons/components/content-area",
+                                    "container": {
+                                      "jcr:primaryType": "nt:unstructured",
+                                      "sling:resourceType": "kestros/commons/components/structure/container",
+                                      "content": {
+                                        "jcr:primaryType": "nt:unstructured",
+                                        "sling:resourceType": "kestros/commons/components/content-area",
+                                        "image": {
+                                          "jcr:primaryType": "nt:unstructured",
+                                          "sling:resourceType": "kestros/commons/components/content/image"
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "column-2": {
+                                  "jcr:primaryType": "nt:unstructured",
+                                  "sling:resourceType": "kestros/commons/components/content-area",
+                                  "content": {
+                                    "jcr:primaryType": "nt:unstructured",
+                                    "sling:resourceType": "kestros/commons/components/content-area",
+                                    "container": {
+                                      "jcr:primaryType": "nt:unstructured",
+                                      "sling:resourceType": "kestros/commons/components/structure/container",
+                                      "content": {
+                                        "jcr:primaryType": "nt:unstructured",
+                                        "sling:resourceType": "kestros/commons/components/content-area",
+                                        "text": {
+                                          "jcr:primaryType": "nt:unstructured",
+                                          "sling:resourceType": "kestros/commons/components/content/text",
+                                          "text": "Ease the pace by taking the train to Italy as it celebrates a year of Slow Tourism. The tour takes the Eurostar to Paris and then a TGV for an overnight in Turin, before skirting the Tuscan coast to reach the base for six nights at the Relais dei Molini."
+                                        },
+                                        "text-1": {
+                                          "jcr:primaryType": "nt:unstructured",
+                                          "sling:resourceType": "kestros/commons/components/content/text",
+                                          "text": "Car hire is included so travellers can explore and taste local wines, visit thermal springs, have a cookery lesson in the charmin walled city of Lucca and try cheese making outside the town of Volterra. Return is by plane from Pisa."
+                                        },
+                                        "button": {
+                                          "jcr:primaryType": "nt:unstructured",
+                                          "sling:resourceType": "kestros/commons/components/content/text",
+                                          "text": "Continue"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "section-1": {
+                            "jcr:primaryType": "nt:unstructured",
+                            "sling:resourceType": "kestros/commons/components/structure/section",
+                            "heading": "Lodging",
+                            "content": {
+                              "jcr:primaryType": "nt:unstructured",
+                              "sling:resourceType": "kestros/commons/components/content-area",
+                              "grid": {
+                                "jcr:primaryType": "nt:unstructured",
+                                "sling:resourceType": "kestros/commons/components/structure/grid",
+                                "columns": 2,
+                                "column-1": {
+                                  "jcr:primaryType": "nt:unstructured",
+                                  "sling:resourceType": "kestros/commons/components/content-area",
+                                  "content": {
+                                    "jcr:primaryType": "nt:unstructured",
+                                    "sling:resourceType": "kestros/commons/components/content-area",
+                                    "container": {
+                                      "jcr:primaryType": "nt:unstructured",
+                                      "sling:resourceType": "kestros/commons/components/structure/container",
+                                      "content": {
+                                        "jcr:primaryType": "nt:unstructured",
+                                        "sling:resourceType": "kestros/commons/components/content-area",
+                                        "image": {
+                                          "jcr:primaryType": "nt:unstructured",
+                                          "sling:resourceType": "kestros/commons/components/content/image"
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "column-2": {
+                                  "jcr:primaryType": "nt:unstructured",
+                                  "sling:resourceType": "kestros/commons/components/content-area",
+                                  "content": {
+                                    "jcr:primaryType": "nt:unstructured",
+                                    "sling:resourceType": "kestros/commons/components/content-area",
+                                    "container": {
+                                      "jcr:primaryType": "nt:unstructured",
+                                      "sling:resourceType": "kestros/commons/components/structure/container",
+                                      "content": {
+                                        "jcr:primaryType": "nt:unstructured",
+                                        "sling:resourceType": "kestros/commons/components/content-area",
+                                        "text": {
+                                          "jcr:primaryType": "nt:unstructured",
+                                          "sling:resourceType": "kestros/commons/components/content/text",
+                                          "text": "Ease the pace by taking the train to Italy as it celebrates a year of Slow Tourism. The tour takes the Eurostar to Paris and then a TGV for an overnight in Turin, before skirting the Tuscan coast to reach the base for six nights at the Relais dei Molini."
+                                        },
+                                        "text-1": {
+                                          "jcr:primaryType": "nt:unstructured",
+                                          "sling:resourceType": "kestros/commons/components/content/text",
+                                          "text": "Car hire is included so travellers can explore and taste local wines, visit thermal springs, have a cookery lesson in the charmin walled city of Lucca and try cheese making outside the town of Volterra. Return is by plane from Pisa."
+                                        },
+                                        "button": {
+                                          "jcr:primaryType": "nt:unstructured",
+                                          "sling:resourceType": "kestros/commons/components/content/text",
+                                          "text": "Continue"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "section-2": {
+                            "jcr:primaryType": "nt:unstructured",
+                            "sling:resourceType": "kestros/commons/components/structure/section",
+                            "heading": "Cuisine",
+                            "content": {
+                              "jcr:primaryType": "nt:unstructured",
+                              "sling:resourceType": "kestros/commons/components/content-area",
+                              "grid": {
+                                "jcr:primaryType": "nt:unstructured",
+                                "sling:resourceType": "kestros/commons/components/structure/grid",
+                                "columns": 2,
+                                "column-1": {
+                                  "jcr:primaryType": "nt:unstructured",
+                                  "sling:resourceType": "kestros/commons/components/content-area",
+                                  "content": {
+                                    "jcr:primaryType": "nt:unstructured",
+                                    "sling:resourceType": "kestros/commons/components/content-area",
+                                    "container": {
+                                      "jcr:primaryType": "nt:unstructured",
+                                      "sling:resourceType": "kestros/commons/components/structure/container",
+                                      "content": {
+                                        "jcr:primaryType": "nt:unstructured",
+                                        "sling:resourceType": "kestros/commons/components/content-area",
+                                        "image": {
+                                          "jcr:primaryType": "nt:unstructured",
+                                          "sling:resourceType": "kestros/commons/components/content/image"
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "column-2": {
+                                  "jcr:primaryType": "nt:unstructured",
+                                  "sling:resourceType": "kestros/commons/components/content-area",
+                                  "content": {
+                                    "jcr:primaryType": "nt:unstructured",
+                                    "sling:resourceType": "kestros/commons/components/content-area",
+                                    "container": {
+                                      "jcr:primaryType": "nt:unstructured",
+                                      "sling:resourceType": "kestros/commons/components/structure/container",
+                                      "content": {
+                                        "jcr:primaryType": "nt:unstructured",
+                                        "sling:resourceType": "kestros/commons/components/content-area",
+                                        "text": {
+                                          "jcr:primaryType": "nt:unstructured",
+                                          "sling:resourceType": "kestros/commons/components/content/text",
+                                          "text": "Ease the pace by taking the train to Italy as it celebrates a year of Slow Tourism. The tour takes the Eurostar to Paris and then a TGV for an overnight in Turin, before skirting the Tuscan coast to reach the base for six nights at the Relais dei Molini."
+                                        },
+                                        "text-1": {
+                                          "jcr:primaryType": "nt:unstructured",
+                                          "sling:resourceType": "kestros/commons/components/content/text",
+                                          "text": "Car hire is included so travellers can explore and taste local wines, visit thermal springs, have a cookery lesson in the charmin walled city of Lucca and try cheese making outside the town of Volterra. Return is by plane from Pisa."
+                                        },
+                                        "button": {
+                                          "jcr:primaryType": "nt:unstructured",
+                                          "sling:resourceType": "kestros/commons/components/content/text",
+                                          "text": "Continue"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
                       }
                     }
                   }
-                },
-                "column-3": {
+                }
+              },
+              "container--3": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "kestros/commons/components/structure/container",
+                "variations": [
+                  "container-fluid"
+                ],
+                "content": {
                   "jcr:primaryType": "nt:unstructured",
                   "sling:resourceType": "kestros/commons/components/content-area",
-                  "card": {
+                  "container": {
                     "jcr:primaryType": "nt:unstructured",
-                    "sling:resourceType": "kestros/commons/components/content/card",
+                    "sling:resourceType": "kestros/commons/components/structure/container",
                     "content": {
                       "jcr:primaryType": "nt:unstructured",
                       "sling:resourceType": "kestros/commons/components/content-area",
-                      "text": {
+                      "gallery": {
                         "jcr:primaryType": "nt:unstructured",
-                        "sling:resourceType": "kestros/commons/components/content/text",
-                        "text": "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
+                        "sling:resourceType": "kestros/commons/components/content/gallery"
                       }
                     }
                   }

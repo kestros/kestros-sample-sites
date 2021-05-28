@@ -1,0 +1,6 @@
+{
+  "jcr:primaryType": "kes:ComponentVariationGroup",
+  "jcr:title": "Text Colors",
+  "fontAwesomeIcon": "fas fa-pen-alt",
+  "mutuallyExclusive": true
+}

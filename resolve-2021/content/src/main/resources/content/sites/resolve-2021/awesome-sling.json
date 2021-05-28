@@ -21,11 +21,22 @@
         "content": {
           "jcr:primaryType": "nt:unstructured",
           "sling:resourceType": "kestros/commons/components/content-area",
-          "header": {
+          "container": {
             "jcr:primaryType": "nt:unstructured",
-            "text": "Content Management Systems",
-            "level": "h1",
-            "sling:resourceType": "kestros/commons/components/content/heading"
+            "sling:resourceType": "kestros/commons/components/structure/container",
+            "variations": [
+              "text-center"
+            ],
+            "content": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content-area",
+              "header": {
+                "jcr:primaryType": "nt:unstructured",
+                "text": "Content Management Systems",
+                "level": "h1",
+                "sling:resourceType": "kestros/commons/components/content/heading"
+              }
+            }
           }
         }
       },
@@ -60,51 +71,71 @@
                 "column-1": {
                   "jcr:primaryType": "nt:unstructured",
                   "sling:resourceType": "kestros/commons/components/content-area",
-                  "heading": {
+                  "container": {
                     "jcr:primaryType": "nt:unstructured",
-                    "id": "",
-                    "text": "Composum Pages",
-                    "class": "",
-                    "level": "h2",
-                    "sling:resourceType": "/libs/kestros/commons/components/content/heading"
-                  },
-                  "heading-1": {
-                    "jcr:primaryType": "nt:unstructured",
-                    "id": "",
-                    "text": "Bring back the fun to content management",
-                    "class": "",
-                    "level": "h3",
-                    "sling:resourceType": "/libs/kestros/commons/components/content/heading"
-                  },
-                  "button": {
-                    "jcr:primaryType": "nt:unstructured",
-                    "id": "",
-                    "link": "#",
-                    "text": "Learn about Composum",
-                    "class": "",
-                    "sling:resourceType": "/libs/kestros/commons/components/content/button",
+                    "sling:resourceType": "/libs/kestros/commons/components/structure/container",
                     "variations": [
-                      "btn-dark"
-                    ]
-                  },
-                  "button-1": {
-                    "jcr:primaryType": "nt:unstructured",
-                    "id": "",
-                    "link": "#",
-                    "text": "Try It!",
-                    "class": "",
-                    "sling:resourceType": "/libs/kestros/commons/components/content/button",
-                    "variations": [
-                      "btn-dark"
-                    ]
+                    ],
+                    "content": {
+                      "jcr:primaryType": "nt:unstructured",
+                      "sling:resourceType": "kestros/commons/components/content-area",
+                      "heading": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "id": "",
+                        "text": "Composum Pages",
+                        "class": "",
+                        "level": "h2",
+                        "sling:resourceType": "/libs/kestros/commons/components/content/heading"
+                      },
+                      "heading-1": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "id": "",
+                        "text": "Bring back the fun to content management",
+                        "class": "",
+                        "level": "h3",
+                        "sling:resourceType": "/libs/kestros/commons/components/content/heading"
+                      },
+                      "button": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "id": "",
+                        "link": "#",
+                        "text": "Learn about Composum",
+                        "class": "",
+                        "sling:resourceType": "/libs/kestros/commons/components/content/button",
+                        "variations": [
+                          "btn-dark"
+                        ]
+                      },
+                      "button-1": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "id": "",
+                        "link": "#",
+                        "text": "Try It!",
+                        "class": "",
+                        "sling:resourceType": "/libs/kestros/commons/components/content/button",
+                        "variations": [
+                          "btn-dark"
+                        ]
+                      }
+                    }
                   }
                 },
                 "column-2": {
                   "jcr:primaryType": "nt:unstructured",
                   "sling:resourceType": "kestros/commons/components/content-area",
-                  "image": {
+                  "container": {
                     "jcr:primaryType": "nt:unstructured",
-                    "sling:resourceType": "/libs/kestros/commons/components/content/image"
+                    "sling:resourceType": "/libs/kestros/commons/components/structure/container",
+                    "variations": [
+                    ],
+                    "content": {
+                      "jcr:primaryType": "nt:unstructured",
+                      "sling:resourceType": "kestros/commons/components/content-area",
+                      "image": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "sling:resourceType": "/libs/kestros/commons/components/content/image"
+                      }
+                    }
                   }
                 }
               }
@@ -143,58 +174,78 @@
                 "column-1": {
                   "jcr:primaryType": "nt:unstructured",
                   "sling:resourceType": "kestros/commons/components/content-area",
-                  "image": {
+                  "container": {
                     "jcr:primaryType": "nt:unstructured",
-                    "sling:resourceType": "/libs/kestros/commons/components/content/image"
+                    "sling:resourceType": "/libs/kestros/commons/components/structure/container",
+                    "variations": [
+                    ],
+                    "content": {
+                      "jcr:primaryType": "nt:unstructured",
+                      "sling:resourceType": "kestros/commons/components/content-area",
+                      "image": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "sling:resourceType": "/libs/kestros/commons/components/content/image"
+                      }
+                    }
                   }
                 },
                 "column-2": {
                   "jcr:primaryType": "nt:unstructured",
                   "sling:resourceType": "kestros/commons/components/content-area",
-                  "heading": {
+                  "container": {
                     "jcr:primaryType": "nt:unstructured",
-                    "id": "",
-                    "text": "Kestros",
-                    "class": "",
-                    "level": "h2",
-                    "sling:resourceType": "/libs/kestros/commons/components/content/heading"
-                  },
-                  "heading-1": {
-                    "jcr:primaryType": "nt:unstructured",
-                    "id": "",
-                    "text": "A Hybrid Web Experience Platform",
-                    "class": "",
-                    "level": "h3",
-                    "sling:resourceType": "/libs/kestros/commons/components/content/heading"
-                  },
-                  "richtext": {
-                    "jcr:primaryType": "nt:unstructured",
-                    "id": "",
-                    "text": "<p>A hybrid and modular web platform that enables rapid development of modern, high-performance websites and digital experiences.</p><p>Intuitive, approachable and easy to use, Kestros provides a great starting point for content creators, creative professionals, and developers.</p> ",
-                    "class": "",
-                    "sling:resourceType": "/libs/kestros/commons/components/content/richtext"
-                  },
-                  "button": {
-                    "jcr:primaryType": "nt:unstructured",
-                    "id": "",
-                    "link": "#",
-                    "text": "Learn about Kestros",
-                    "class": "",
-                    "sling:resourceType": "/libs/kestros/commons/components/content/button",
+                    "sling:resourceType": "/libs/kestros/commons/components/structure/container",
                     "variations": [
-                      "btn-dark"
-                    ]
-                  },
-                  "button-1": {
-                    "jcr:primaryType": "nt:unstructured",
-                    "id": "",
-                    "link": "#",
-                    "text": "Try It!",
-                    "class": "",
-                    "sling:resourceType": "/libs/kestros/commons/components/content/button",
-                    "variations": [
-                      "btn-dark"
-                    ]
+                    ],
+                    "content": {
+                      "jcr:primaryType": "nt:unstructured",
+                      "sling:resourceType": "kestros/commons/components/content-area",
+                      "heading": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "id": "",
+                        "text": "Kestros",
+                        "class": "",
+                        "level": "h2",
+                        "sling:resourceType": "/libs/kestros/commons/components/content/heading"
+                      },
+                      "heading-1": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "id": "",
+                        "text": "A Hybrid Web Experience Platform",
+                        "class": "",
+                        "level": "h3",
+                        "sling:resourceType": "/libs/kestros/commons/components/content/heading"
+                      },
+                      "richtext": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "id": "",
+                        "text": "<p>A hybrid and modular web platform that enables rapid development of modern, high-performance websites and digital experiences.</p><p>Intuitive, approachable and easy to use, Kestros provides a great starting point for content creators, creative professionals, and developers.</p> ",
+                        "class": "",
+                        "sling:resourceType": "/libs/kestros/commons/components/content/richtext"
+                      },
+                      "button": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "id": "",
+                        "link": "#",
+                        "text": "Learn about Kestros",
+                        "class": "",
+                        "sling:resourceType": "/libs/kestros/commons/components/content/button",
+                        "variations": [
+                          "btn-dark"
+                        ]
+                      },
+                      "button-1": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "id": "",
+                        "link": "#",
+                        "text": "Try It!",
+                        "class": "",
+                        "sling:resourceType": "/libs/kestros/commons/components/content/button",
+                        "variations": [
+                          "btn-dark"
+                        ]
+                      }
+                    }
                   }
                 }
               }

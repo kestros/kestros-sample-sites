@@ -1,0 +1,6 @@
+{
+  "jcr:primaryType": "kes:ComponentVariation",
+  "jcr:title": "Fixed Width",
+  "inline": true,
+  "default": true
+}

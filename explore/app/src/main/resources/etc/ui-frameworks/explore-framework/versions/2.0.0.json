@@ -1,13 +1,14 @@
 {
   "jcr:primaryType": "kes:UiFramework",
-  "jcr:title": "Explore 0.0.1",
+  "jcr:title": "Explore 2.0.0",
   "jcr:description": "",
   "kes:uiFrameworkCode": "explore",
   "kes:vendorLibraries": [
-    "jquery/3.3.1",
-    "popper",
-    "bootstrap/4.2.1",
+    "bootstrap/5.0.0",
     "font-awesome/5.11.2",
-    "explore-vendor-library/0.0.1"
+    "explore-vendor-library/0.0.2",
+    "rellax/1.0.0",
+    "animate-on-scroll/2.3.1",
+    "leaflet/1.7.1"
   ]
 }

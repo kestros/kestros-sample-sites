@@ -1,0 +1,6 @@
+{
+  "jcr:primaryType": "kes:ComponentVariationGroup",
+  "jcr:title": "Parallax",
+  "fontAwesomeIcon": "fas fa-align-left",
+  "mutuallyExclusive": "true"
+}

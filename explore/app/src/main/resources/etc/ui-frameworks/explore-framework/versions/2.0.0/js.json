@@ -1,0 +1,7 @@
+{
+  "jcr:primaryType": "sling:OrderedFolder",
+  "include": [
+    "rellax-impl.js",
+    "leaflet-impl.js"
+  ]
+}

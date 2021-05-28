@@ -1,0 +1,6 @@
+{
+  "jcr:primaryType": "kes:ComponentVariation",
+  "jcr:title": "Transparent",
+  "inline": true,
+  "default": true
+}
