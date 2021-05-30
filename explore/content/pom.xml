@@ -85,6 +85,8 @@
             <Sling-Initial-Content>
               /content/sites/explore.json;overwrite:=true;path:=/content/sites,
               /content/sites/explore/places.json;overwrite:=true;path:=/content/sites/explore,
+              /content/sites/explore/resources.json;overwrite:=true;path:=/content/sites/explore,
+              /content/sites/explore/activities.json;overwrite:=true;path:=/content/sites/explore,
               /content/sites/explore/jcr:content/main/container/content/container/backgroundImage;overwrite:=true;path:=/content/sites/explore/jcr:content/main/container/content/container
             </Sling-Initial-Content>
           </instructions>

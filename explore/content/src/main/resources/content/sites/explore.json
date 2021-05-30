@@ -3,7 +3,7 @@
   "jcr:content": {
     "jcr:primaryType": "nt:unstructured",
     "sling:resourceType": "kestros/commons/components/kestros-base-page",
-    "kes:theme": "/etc/ui-frameworks/explore-framework/versions/1.0.0/themes/default",
+    "kes:theme": "/etc/ui-frameworks/explore-framework/versions/0.0.1/themes/default",
     "jcr:title": "Explore",
     "header": {
       "jcr:primaryType": "nt:unstructured",
@@ -15,32 +15,30 @@
       "container": {
         "jcr:primaryType": "nt:unstructured",
         "sling:resourceType": "kestros/commons/components/structure/container",
-        "variations": [
-        ],
         "content": {
           "jcr:primaryType": "nt:unstructured",
           "sling:resourceType": "kestros/commons/components/content-area",
           "container": {
             "jcr:primaryType": "nt:unstructured",
             "sling:resourceType": "kestros/commons/components/structure/container",
-            "variations": [
-              "container-fluid",
-              "vh-100",
-              "d-flex"
-            ],
             "content": {
               "jcr:primaryType": "nt:unstructured",
               "sling:resourceType": "kestros/commons/components/content-area",
-              "top-navigation": {
-                "jcr:primaryType": "nt:unstructured",
-                "sling:resourceType": "kestros/commons/components/structure/top-navigation"
-              },
               "container": {
                 "jcr:primaryType": "nt:unstructured",
                 "sling:resourceType": "kestros/commons/components/structure/container",
-                "variations": [
-                  "container-fluid"
-                ],
+                "content": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "sling:resourceType": "kestros/commons/components/content-area",
+                  "top-navigation": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "sling:resourceType": "kestros/commons/components/structure/top-navigation"
+                  }
+                }
+              },
+              "container-1": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "kestros/commons/components/structure/container",
                 "content": {
                   "jcr:primaryType": "nt:unstructured",
                   "sling:resourceType": "kestros/commons/components/content-area",
@@ -65,9 +63,6 @@
           "container--1": {
             "jcr:primaryType": "nt:unstructured",
             "sling:resourceType": "kestros/commons/components/structure/container",
-            "variations": [
-              "container-fluid"
-            ],
             "content": {
               "jcr:primaryType": "nt:unstructured",
               "sling:resourceType": "kestros/commons/components/content-area",
@@ -140,9 +135,6 @@
               "container--2": {
                 "jcr:primaryType": "nt:unstructured",
                 "sling:resourceType": "kestros/commons/components/structure/container",
-                "variations": [
-                  "container-fluid"
-                ],
                 "content": {
                   "jcr:primaryType": "nt:unstructured",
                   "sling:resourceType": "kestros/commons/components/content-area",
@@ -213,8 +205,9 @@
                                         },
                                         "button": {
                                           "jcr:primaryType": "nt:unstructured",
-                                          "sling:resourceType": "kestros/commons/components/content/text",
-                                          "text": "Continue"
+                                          "sling:resourceType": "kestros/commons/components/content/button",
+                                          "text": "Continue",
+                                          "link": "https://kestros.io"
                                         }
                                       }
                                     }
@@ -278,8 +271,9 @@
                                         },
                                         "button": {
                                           "jcr:primaryType": "nt:unstructured",
-                                          "sling:resourceType": "kestros/commons/components/content/text",
-                                          "text": "Continue"
+                                          "sling:resourceType": "kestros/commons/components/content/button",
+                                          "text": "Continue",
+                                          "link": "https://kestros.io"
                                         }
                                       }
                                     }
@@ -343,8 +337,9 @@
                                         },
                                         "button": {
                                           "jcr:primaryType": "nt:unstructured",
-                                          "sling:resourceType": "kestros/commons/components/content/text",
-                                          "text": "Continue"
+                                          "sling:resourceType": "kestros/commons/components/content/button",
+                                          "text": "Continue",
+                                          "link": "https://kestros.io"
                                         }
                                       }
                                     }
@@ -362,9 +357,6 @@
               "container--3": {
                 "jcr:primaryType": "nt:unstructured",
                 "sling:resourceType": "kestros/commons/components/structure/container",
-                "variations": [
-                  "container-fluid"
-                ],
                 "content": {
                   "jcr:primaryType": "nt:unstructured",
                   "sling:resourceType": "kestros/commons/components/content-area",
@@ -374,9 +366,82 @@
                     "content": {
                       "jcr:primaryType": "nt:unstructured",
                       "sling:resourceType": "kestros/commons/components/content-area",
+                      "heading": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "sling:resourceType": "kestros/commons/components/content/heading",
+                        "level": "h2",
+                        "text": "Media"
+                      },
                       "gallery": {
                         "jcr:primaryType": "nt:unstructured",
                         "sling:resourceType": "kestros/commons/components/content/gallery"
+                      }
+                    }
+                  }
+                }
+              },
+              "container--4": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "kestros/commons/components/structure/container",
+                "content": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "sling:resourceType": "kestros/commons/components/content-area",
+                  "container": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "sling:resourceType": "kestros/commons/components/structure/container",
+                    "content": {
+                      "jcr:primaryType": "nt:unstructured",
+                      "sling:resourceType": "kestros/commons/components/content-area",
+                      "grid": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "sling:resourceType": "kestros/commons/components/structure/grid",
+                        "columns": 2,
+                        "column-1": {
+                          "jcr:primaryType": "nt:unstructured",
+                          "sling:resourceType": "kestros/commons/components/content-area",
+                          "content": {
+                            "jcr:primaryType": "nt:unstructured",
+                            "sling:resourceType": "kestros/commons/components/content-area",
+                            "heading": {
+                              "jcr:primaryType": "nt:unstructured",
+                              "sling:resourceType": "kestros/commons/components/content/heading",
+                              "level": "h4",
+                              "text": "EXPLORE"
+                            },
+                            "text": {
+                              "jcr:primaryType": "nt:unstructured",
+                              "sling:resourceType": "kestros/commons/components/content/text",
+                              "text": "A Basic Sample Site"
+                            },
+                            "page-list": {
+                              "jcr:primaryType": "nt:unstructured",
+                              "sling:resourceType": "kestros/commons/components/content/page-list"
+                            }
+                          }
+                        },
+                        "column-2": {
+                          "jcr:primaryType": "nt:unstructured",
+                          "sling:resourceType": "kestros/commons/components/content-area",
+                          "content": {
+                            "jcr:primaryType": "nt:unstructured",
+                            "sling:resourceType": "kestros/commons/components/content-area",
+                            "richtext": {
+                              "jcr:primaryType": "nt:unstructured",
+                              "sling:resourceType": "kestros/commons/components/content/richtext",
+                              "text": "<p><b>© Kestros</b></p>"
+                            },
+                            "button": {
+                              "jcr:primaryType": "nt:unstructured",
+                              "sling:resourceType": "kestros/commons/components/content/button",
+                              "text": "kestros.io",
+                              "link": "https://kestros.io"
+                            },
+                            "image": {
+                              "jcr:primaryType": "nt:unstructured",
+                              "sling:resourceType": "kestros/commons/components/content/image"
+                            }
+                          }
+                        }
                       }
                     }
                   }
@@ -390,14 +455,7 @@
     "footer": {
       "jcr:primaryType": "nt:unstructured",
       "sling:resourceType": "kestros/commons/components/inherited-content-area",
-      "container": {
-        "jcr:primaryType": "nt:unstructured",
-        "sling:resourceType": "kestros/commons/components/structure/container",
-        "content": {
-          "jcr:primaryType": "nt:unstructured",
-          "sling:resourceType": "kestros/commons/components/content-area"
-        }
-      }
+      "reset": true
     }
   }
 }

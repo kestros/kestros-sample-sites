@@ -1,0 +1,6 @@
+{
+  "jcr:primaryType": "sling:OrderedFolder",
+  "include": [
+    "bg-bottom.less"
+  ]
+}

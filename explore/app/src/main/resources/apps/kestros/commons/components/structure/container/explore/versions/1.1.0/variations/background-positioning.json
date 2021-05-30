@@ -1,0 +1,6 @@
+{
+  "jcr:primaryType": "kes:ComponentVariationGroup",
+  "jcr:title": "Background Positioning",
+  "fontAwesomeIcon": "far fa-image",
+  "mutuallyExclusive": true
+}

@@ -5,7 +5,7 @@
   "kes:uiFrameworkCode": "explore",
   "kes:vendorLibraries": [
     "jquery/3.3.1",
-    "popper",
+    "popper/1.14.6",
     "bootstrap/4.2.1",
     "font-awesome/5.11.2",
     "explore-vendor-library/0.0.2"

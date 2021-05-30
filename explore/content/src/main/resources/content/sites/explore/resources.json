@@ -3,7 +3,7 @@
   "jcr:content": {
     "jcr:primaryType": "nt:unstructured",
     "sling:resourceType": "kestros/commons/components/kestros-base-page",
-    "jcr:title": "Places",
+    "jcr:title": "Resources",
     "header": {
       "jcr:primaryType": "nt:unstructured",
       "sling:resourceType": "kestros/commons/components/inherited-content-area"
