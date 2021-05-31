@@ -1,0 +1,12 @@
+
+<sly data-sly-use.component="${'io.kestros.cms.sitebuilding.api.models.BaseComponent'}"
+     data-sly-use.button="${'io.kestros.cms.components.basic.content.button.Button'}"
+     data-sly-use.context="${'io.kestros.cms.sitebuilding.api.models.ComponentRequestContext'}"/>
+<sly data-sly-test="${component.componentUiFrameworkView.templatesPath}"
+     data-sly-use.templates="${component.componentUiFrameworkView.templatesPath}"/>
+
+
+<sly data-sly-call="${templates.buttonbase @
+     text=button.text,
+     url=button.link,
+     additionalClasses=context.inlineVariations}"/>

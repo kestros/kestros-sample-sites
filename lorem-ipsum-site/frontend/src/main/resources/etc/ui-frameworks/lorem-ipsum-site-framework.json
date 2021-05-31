@@ -4,6 +4,7 @@
   "jcr:description": "Styleless UiFramework. Black text on a white background. That's it.",
   "kes:uiFrameworkCode": "lorem-ipsum-site-ui",
   "kes:vendorLibraries": [
-    "lorem-ipsum-site-vendor-library"
+    "lorem-ipsum-site-vendor-library",
+    "leaflet/1.7.1"
   ]
 }

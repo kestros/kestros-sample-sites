@@ -87,7 +87,11 @@
               /content/sites/explore/places.json;overwrite:=true;path:=/content/sites/explore,
               /content/sites/explore/resources.json;overwrite:=true;path:=/content/sites/explore,
               /content/sites/explore/activities.json;overwrite:=true;path:=/content/sites/explore,
-              /content/sites/explore/jcr:content/main/container/content/container/backgroundImage;overwrite:=true;path:=/content/sites/explore/jcr:content/main/container/content/container
+              /content/sites/explore/jcr:content/main/container/content/container/backgroundImage;overwrite:=true;path:=/content/sites/explore/jcr:content/main/container/content/container,
+              /content/sites/explore/jcr:content/main/container/content/container--1/content/container--4/content/container/content/grid/column-2/content/image/image;overwrite:=true;path:=/content/sites/explore/jcr:content/main/container/content/container--1/content/container--4/content/container/content/grid/column-2/content/image,
+              content/sites/explore/jcr:content/main/container/content/container--1/content/container--2/content/container/content/tabs/content/section/content/grid/column-1/content/container/content/image/image;overwrite:=true;path:=content/sites/explore/jcr:content/main/container/content/container--1/content/container--2/content/container/content/tabs/content/section/content/grid/column-1/content/container/content/image,
+              content/sites/explore/jcr:content/main/container/content/container--1/content/container--2/content/container/content/tabs/content/section-1/content/grid/column-1/content/container/content/image/image;overwrite:=true;path:=content/sites/explore/jcr:content/main/container/content/container--1/content/container--2/content/container/content/tabs/content/section-1/content/grid/column-1/content/container/content/image,
+              content/sites/explore/jcr:content/main/container/content/container--1/content/container--2/content/container/content/tabs/content/section-2/content/grid/column-1/content/container/content/image/image;overwrite:=true;path:=content/sites/explore/jcr:content/main/container/content/container--1/content/container--2/content/container/content/tabs/content/section-2/content/grid/column-1/content/container/content/image
             </Sling-Initial-Content>
           </instructions>
         </configuration>

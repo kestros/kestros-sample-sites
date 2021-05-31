@@ -1,5 +1,5 @@
 {
   "jcr:primaryType": "kes:ComponentVariationGroup",
   "jcr:title": "Paddings",
-  "fontAwesomeIcon": "fas fa-align-left"
+  "fontAwesomeIcon": "fas fa-compress-arrows-alt"
 }
