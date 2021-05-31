@@ -1,0 +1,70 @@
+// -- Custom Styles for Explore Sample Site -- //
+
+h1, h2, h3 {
+  font-family: Serif;
+}
+
+h1 {
+
+  .hero {
+    font-size: 6em;
+    color: white;
+  }
+}
+
+.navbar {
+
+  a.navbar-brand {
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+
+    &:hover {
+      color: white;
+      border-bottom: 3px solid transparent;
+    }
+  }
+
+  a {
+    color: #ff8822;
+    border-bottom: 3px solid transparent;
+
+    &:hover {
+      color: white;
+      border-bottom-color: white;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+  }
+}
+
+a {
+  color: #2971e1;
+
+  &:hover {
+    color: #ff8822;
+  }
+}
+
+.button-standard {
+  font-weight: bold;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #2971e1;
+  //border: 1px solid transparent;
+  //border-radius: 0;
+  padding: 0.4em;
+  margin: 0.2em 0;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #2971e1;
+    //border-color: #2971e1;
+  }
+}
