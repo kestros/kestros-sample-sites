@@ -85,6 +85,7 @@
             <Sling-Initial-Content>
               /apps/kestros/commons/components/structure/container/explore/;overwrite:=true;path:=/apps/kestros/commons/components/structure/container/explore,
               /apps/kestros/commons/components/content/gallery/explore/;overwrite:=true;path:=/apps/kestros/commons/components/content/gallery/explore,
+              /apps/kestros/commons/components/content/button/explore/;overwrite:=true;path:=/apps/kestros/commons/components/content/button/explore,
               /etc/ui-frameworks/;overwrite:=true;path:=/etc/ui-frameworks,
               /etc/vendor-libraries/;overwrite:=true;path:=/etc/vendor-libraries,
               /apps/explore/;overwrite:=true;path:=/apps/explore

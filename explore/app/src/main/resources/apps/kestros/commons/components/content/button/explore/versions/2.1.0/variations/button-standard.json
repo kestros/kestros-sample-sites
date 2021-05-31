@@ -1,0 +1,7 @@
+{
+  "jcr:primaryType": "kes:ComponentVariation",
+  "jcr:title": "Standard (Default)",
+  "jcr:description": "Standard button",
+  "inline": true,
+  "default": true
+}
