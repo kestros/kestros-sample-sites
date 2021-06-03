@@ -1,0 +1,36 @@
+// -- Tab styling for Explore sample site -- //
+
+.nav-tabs {
+  margin: 1.5em 0;
+  border-bottom: 1px solid #dddddd;
+
+  .nav-link:hover {
+    &:hover {
+      border-color: transparent;
+    }
+  }
+}
+
+.tab-content {
+  padding: 0 0 1em;
+}
+
+button.nav-link {
+  background-color: transparent;
+}
+.nav-link {
+
+  &.active {
+    outline: none;
+    box-shadow: none;
+  }
+}
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+  background-color: transparent;
+  border: none;
+  color: #2971e1;
+  font-weight: bold;
+  border-bottom: 3px solid #2971e1;
+}
+
+
