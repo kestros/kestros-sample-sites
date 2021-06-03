@@ -1,6 +1,6 @@
 {
   "jcr:primaryType": "kes:UiFramework",
-  "jcr:title": "Explore 2.0.0",
+  "jcr:title": "Explore 2.1.0",
   "jcr:description": "",
   "kes:uiFrameworkCode": "explore",
   "kes:vendorLibraries": [
