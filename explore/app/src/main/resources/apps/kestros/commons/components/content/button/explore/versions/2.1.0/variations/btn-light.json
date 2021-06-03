@@ -1,0 +1,6 @@
+{
+  "jcr:primaryType": "kes:ComponentVariation",
+  "jcr:title": "Light",
+  "jcr:description": "Light styling.",
+  "inline": true
+}

@@ -1,0 +1,6 @@
+{
+  "jcr:primaryType": "kes:ComponentVariation",
+  "jcr:title": "Danger",
+  "jcr:description": "Danger styling.",
+  "inline": true
+}

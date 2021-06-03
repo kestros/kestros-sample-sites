@@ -1,0 +1,6 @@
+{
+  "jcr:primaryType": "kes:ComponentVariation",
+  "jcr:title": "Info",
+  "jcr:description": "Info styling.",
+  "inline": true
+}

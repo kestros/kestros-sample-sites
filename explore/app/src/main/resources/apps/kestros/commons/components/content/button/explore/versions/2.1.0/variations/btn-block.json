@@ -1,0 +1,6 @@
+{
+  "jcr:primaryType": "kes:ComponentVariation",
+  "jcr:title": "Full Width",
+  "jcr:description": "Button will stretch to fit its container.",
+  "inline": true
+}

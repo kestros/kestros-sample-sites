@@ -1,0 +1,6 @@
+{
+  "jcr:primaryType": "kes:ComponentVariation",
+  "jcr:title": "Large",
+  "jcr:description": "Increases button font size.",
+  "inline": true
+}
