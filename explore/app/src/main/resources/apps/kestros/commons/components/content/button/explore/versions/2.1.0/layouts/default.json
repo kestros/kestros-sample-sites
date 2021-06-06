@@ -1,4 +1,5 @@
 {
   "jcr:primaryType": "kes:Layout",
-  "jcr:title": "Default"
+  "jcr:title": "Default",
+  "default": true
 }
