@@ -26,12 +26,13 @@
   <parent>
     <groupId>io.kestros.cms.sample-sites</groupId>
     <artifactId>lorem-ipsum-site</artifactId>
-    <version>0.1.1-SNAPSHOT</version>
+    <version>0.1.1</version>
   </parent>
 
   <artifactId>lorem-ipsum-site-core</artifactId>
 
   <name>Lorem Ipsum Site - Core Bundle</name>
+  <version>0.1.1</version>
 
   <packaging>bundle</packaging>
 

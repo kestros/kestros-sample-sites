@@ -1,0 +1,6 @@
+{
+  "jcr:primaryType": "kes:ComponentVariation",
+  "jcr:title": "Warning",
+  "jcr:description": "Warning styling.",
+  "inline": true
+}

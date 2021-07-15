@@ -1,0 +1,6 @@
+{
+  "jcr:primaryType": "kes:ComponentVariation",
+  "jcr:title": "Link",
+  "jcr:description": "Shows button as a standard link.",
+  "inline": true
+}

@@ -1,0 +1,7 @@
+{
+  "jcr:primaryType": "kes:ComponentVariation",
+  "jcr:title": "Primary (Default)",
+  "jcr:description": "Primary styling.",
+  "inline": true,
+  "default": false
+}
