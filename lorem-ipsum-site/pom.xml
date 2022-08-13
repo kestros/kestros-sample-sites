@@ -24,7 +24,7 @@
   <parent>
     <groupId>io.kestros.cms</groupId>
     <artifactId>kestros-site-parent</artifactId>
-    <version>0.0.3</version>
+    <version>0.0.7-SNAPSHOT</version>
     <relativePath/>
   </parent>
 
