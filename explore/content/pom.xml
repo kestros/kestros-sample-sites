@@ -83,10 +83,10 @@
                 <configuration>
                     <instructions>
                         <Sling-Initial-Content>
-                            /content/sites/explore.json;overwrite:=true;path:=/content/sites,
-                            /content/sites/explore/places.json;overwrite:=true;path:=/content/sites/explore,
-                            /content/sites/explore/resources.json;overwrite:=true;path:=/content/sites/explore,
-                            /content/sites/explore/activities.json;overwrite:=true;path:=/content/sites/explore
+                            /content/sites/explore.json;overwrite:=true;path:=/content/sites/explore,
+                            /content/sites/explore/places.json;overwrite:=true;path:=/content/sites/explore/places,
+                            /content/sites/explore/resources.json;overwrite:=true;path:=/content/sites/explore/resources,
+                            /content/sites/explore/activities.json;overwrite:=true;path:=/content/sites/explore/activities
                             <!--              /content/sites/explore/jcr:content/main/container/content/container/backgroundImage;overwrite:=true;path:=/content/sites/explore/jcr:content/main/container/content/container,-->
                             <!--              /content/sites/explore/jcr:content/main/container/content/container&#45;&#45;1/content/container&#45;&#45;4/content/container/content/grid/column-2/content/image/image;overwrite:=true;path:=/content/sites/explore/jcr:content/main/container/content/container&#45;&#45;1/content/container&#45;&#45;4/content/container/content/grid/column-2/content/image,-->
                             <!--              content/sites/explore/jcr:content/main/container/content/container&#45;&#45;1/content/container&#45;&#45;2/content/container/content/tabs/content/section/content/grid/column-1/content/container/content/image/image;overwrite:=true;path:=content/sites/explore/jcr:content/main/container/content/container&#45;&#45;1/content/container&#45;&#45;2/content/container/content/tabs/content/section/content/grid/column-1/content/container/content/image,-->
