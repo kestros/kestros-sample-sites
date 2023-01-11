@@ -1,11 +1,18 @@
 {
-  "jcr:primaryType": "kes:Template",
+  "jcr:primaryType": "kes:PageTemplate",
   "jcr:content": {
     "jcr:primaryType": "nt:unstructured",
     "jcr:title": "Explore Base Page",
     "sling:resourceType": "kestros/commons/components/kestros-base-page",
     "allowedUiFrameworks": [
       "/etc/ui-frameworks/explore-framework"
-    ]
+    ],
+    "main" : {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/content-area",
+        "kes:allowedComponents": [
+            "/libs/kstros/commons/components/content/button"
+        ]
+    }
   }
 }
