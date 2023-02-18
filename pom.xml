@@ -55,7 +55,6 @@
     <module>lorem-ipsum-site</module>
     <module>explore</module>
     <module>resolve-2021</module>
-    <module>kestros-design-storybook</module>
   </modules>
 
   <dependencyManagement>
