@@ -1,0 +1,11 @@
+{
+  "jcr:primaryType": "kes:UiFramework",
+  "jcr:title": "Kestros Design Framework 0.0.1",
+  "jcr:description": "",
+  "kes:uiFrameworkCode": "kdf",
+  "kes:vendorLibraries": [
+    "kestros-resets/0.0.1",
+    "kestros-typography/0.0.1",
+    "kestros-foundation-organisms/0.0.1"
+  ]
+}

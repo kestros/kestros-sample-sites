@@ -1,0 +1,6 @@
+{
+  "jcr:primaryType": "kes:ManagedUiFramework",
+  "jcr:title": "Kestros Design Framework",
+  "jcr:description": "UI Framework for Explore Sample Site",
+  "kes:uiFrameworkCode": "kdf"
+}

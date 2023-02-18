@@ -1,0 +1,49 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "sling:resourceType": "kestros/cms/dialog",
+  "jcr:title": "Edit",
+  "content-area": {
+    "jcr:primaryType": "nt:unstructured",
+    "tabs": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/cms/general/tabs",
+      "container": true,
+      "general": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/cms/general/container",
+        "jcr:title": "General",
+        "container": true,
+        "htl-template": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/cms/fields/selectfield",
+          "label": "HTL Template",
+          "propertyName": "htlTemplate",
+          "optionsEndpoint": "/bin/kestros/actions/htl-templates.json"
+        },
+        "interface": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/cms/fields/selectfield",
+          "label": "Interface",
+          "propertyName": "element",
+          "optionsEndpoint": "/bin/kestros/actions/element-interfaces.json"
+        },
+        "jsonData": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/cms/fields/textarea",
+          "label": "JSON Data",
+          "propertyName": "jsonData"
+        },
+        "debug": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/cms/fields/checkbox",
+          "label": "Debug",
+          "propertyName": "debug"
+        }
+      },
+      "styles": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/cms/general/container"
+      }
+    }
+  }
+}

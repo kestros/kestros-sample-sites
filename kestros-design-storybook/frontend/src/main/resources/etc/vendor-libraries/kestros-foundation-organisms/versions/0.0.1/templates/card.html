@@ -1,0 +1,8 @@
+<template data-sly-template.card="${ @ item }">
+        <div class="card">
+        <div class="card-content">
+            <sly data-sly-test="${item.title}" data-sly-call="${title @ item=item.title}"/>
+            <sly data-sly-test="${item.cta}" data-sly-call="${anchor @ item=item.cta}"/>
+        </div>
+    </div>
+</template>

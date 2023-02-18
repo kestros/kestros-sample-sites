@@ -1,0 +1,19 @@
+<sly data-sly-use.component="${'io.kestros.cms.sitebuilding.api.models.BaseComponent'}"
+     data-sly-use.context="${'io.kestros.cms.sitebuilding.api.models.ComponentRequestContext'}"/>
+<sly data-sly-test="${component.componentUiFrameworkView.templatesPath}"
+     data-sly-use.templates="${context.componentUiFrameworkView.templatesPath}"/>
+
+<sly data-sly-use.jsonDataComponent="${'io.kestros.storybook.application.components.JsonDataComponent'}"/>
+
+<sly data-sly-test="${jsonDataComponent.jsonData && jsonDataComponent.htlTemplate}">
+    <sly data-sly-test.templateName="${jsonDataComponent.templateName}"/>
+
+    <sly data-sly-call="${templates[templateName] @ item = jsonDataComponent.dataObject}"/>
+</sly>
+
+
+<sly data-sly-test="${!jsonDataComponent.jsonData && jsonDataComponent.elementInterfaceName}">
+    <pre>${jsonDataComponent.emptyJsonConfiguration}</pre>
+</sly>
+
+<pre data-sly-test="${jsonDataComponent.debug}">${jsonDataComponent.debugJsonConfiguration}</pre>

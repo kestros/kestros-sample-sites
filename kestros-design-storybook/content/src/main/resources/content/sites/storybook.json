@@ -1,0 +1,22 @@
+{
+  "jcr:primaryType": "kes:Site",
+  "jcr:content": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "kestros/commons/components/kestros-base-page",
+    "kes:theme": "/etc/ui-frameworks/kestros-design-framework/versions/0.0.1/themes/default",
+    "jcr:title": "Kestros Design Storybook",
+    "header": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/inherited-content-area"
+    },
+    "main": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/content-area"
+    },
+    "footer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/inherited-content-area"
+    }
+  }
+}
+

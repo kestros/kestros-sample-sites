@@ -1,0 +1,6 @@
+{
+  "jcr:primaryType": "kes:ComponentType",
+  "jcr:title": "JSON Element Mocker",
+  "componentGroup": "Content Components",
+  "sling:resourceSuperType": "kestros/commons/components/kestros-parent"
+}
