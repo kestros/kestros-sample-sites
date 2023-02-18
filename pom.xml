@@ -52,7 +52,6 @@
   </scm>
 
   <modules>
-    <module>test</module>
     <module>lorem-ipsum-site</module>
     <module>explore</module>
     <module>resolve-2021</module>
