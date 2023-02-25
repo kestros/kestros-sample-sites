@@ -5,6 +5,7 @@
     "sling:resourceType": "kestros/commons/components/kestros-base-page",
     "kes:theme": "/etc/ui-frameworks/explore-framework/versions/0.0.1/themes/default",
     "jcr:title": "Explore",
+    "publicationStrategy": "kestros-single-instance",
     "header": {
       "jcr:primaryType": "nt:unstructured",
       "sling:resourceType": "kestros/commons/components/inherited-content-area"
