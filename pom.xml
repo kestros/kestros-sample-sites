@@ -52,9 +52,9 @@
   </scm>
 
   <modules>
-    <module>lorem-ipsum-site</module>
+<!--    <module>lorem-ipsum-site</module>-->
     <module>explore</module>
-    <module>resolve-2021</module>
+<!--    <module>resolve-2021</module>-->
   </modules>
 
   <dependencyManagement>
