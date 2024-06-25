@@ -24,7 +24,7 @@
   <parent>
     <groupId>io.kestros.cms</groupId>
     <artifactId>kestros-site-parent</artifactId>
-    <version>0.1.0</version>
+    <version>0.1.1</version>
     <relativePath/>
   </parent>
 
@@ -51,7 +51,7 @@
   </scm>
 
   <modules>
-    <module>core</module>
+<!--    <module>core</module>-->
     <module>app</module>
     <module>content</module>
   </modules>

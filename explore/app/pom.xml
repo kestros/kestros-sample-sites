@@ -28,7 +28,9 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
 
+  <groupId>io.kestros.cms.sample-sites</groupId>
   <artifactId>explore-site-app</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
 
   <name>Explore Site - Application</name>
   <packaging>bundle</packaging>
