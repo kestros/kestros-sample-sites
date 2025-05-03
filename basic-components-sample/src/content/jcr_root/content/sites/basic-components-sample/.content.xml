@@ -6,7 +6,7 @@
             jcr:primaryType="nt:unstructured"
             sling:resourceType="kestros/commons/components/kestros-base-page"
             jcr:title="Basic Components Sample"
-            jcr:description="A sample site to demonstrate the basic components of Kestros.">
-
+            jcr:description="A sample site to demonstrate the basic components of Kestros."
+            kes:theme="/etc/ui-frameworks/empty-framework/versions/0.0.1/themes/default">
     </jcr:content>
 </jcr:root>
