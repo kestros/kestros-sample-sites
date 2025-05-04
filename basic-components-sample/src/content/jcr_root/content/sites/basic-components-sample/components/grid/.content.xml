@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:kes="http://kestros.io/kes/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+        jcr:primaryType="kes:Page"
+>
+    <jcr:content
+        jcr:description=""
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Grid"
+        kes:template="/libs/kestros/commons/base-page-template"
+        sling:resourceType="kestros/commons/components/kestros-base-page">
+        <header
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="kestros/commons/components/inherited-content-area"/>
+        <main
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="kestros/commons/components/content-area"/>
+        <footer
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="kestros/commons/components/inherited-content-area"/>
+    </jcr:content>
+</jcr:root>

@@ -1,12 +1,43 @@
-<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
-          xmlns:kes="http://kestros.io/kes/1.0"
-          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
-          jcr:primaryType="kes:Site">
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:kes="http://kestros.io/kes/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:primaryType="kes:Site"
+    jcr:uuid="bdac2542-00b8-4170-82c6-fafaf650d18a">
     <jcr:content
+        jcr:description="A sample site to demonstrate the basic components of Kestros."
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Basic Components Sample"
+        kes:theme="/etc/ui-frameworks/ui-kit/versions/0.0.1/themes/default"
+        sling:resourceType="kestros/commons/components/kestros-base-page"
+        displayDescription="    &#xd;&#xa;  "
+        publicationStrategy="kestros-single-instance">
+        <header
+            jcr:mixinTypes="[mix:lockable]"
             jcr:primaryType="nt:unstructured"
-            sling:resourceType="kestros/commons/components/kestros-base-page"
-            jcr:title="Basic Components Sample"
-            jcr:description="A sample site to demonstrate the basic components of Kestros."
-            kes:theme="/etc/ui-frameworks/empty-framework/versions/0.0.1/themes/default">
+            sling:resourceType="kestros/commons/components/inherited-content-area">
+            <page-title
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="/libs/kestros/commons/components/content/page-title"
+                layout="line-center"
+                level="h1"
+                variations="[uk-heading-small]"/>
+        </header>
+        <main
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="kestros/commons/components/content-area">
+            <text
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="/libs/kestros/commons/components/content/text"
+                text="asdfasdfasdf"
+                variations="[uk-text-large]"/>
+            <text-1
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="/libs/kestros/commons/components/content/text"
+                text="aaaaaa"/>
+        </main>
+        <footer
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="kestros/commons/components/inherited-content-area"/>
     </jcr:content>
+    <components/>
 </jcr:root>
