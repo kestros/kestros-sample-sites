@@ -5,7 +5,7 @@
             jcr:description="A sample site to demonstrate the basic components of Kestros."
             jcr:primaryType="nt:unstructured"
             jcr:title="Basic Components Sample"
-            kes:theme="/etc/ui-frameworks/ui-kit/versions/0.0.1/themes/default"
+            kes:theme="/etc/ui-frameworks/empty-framework/versions/0.0.1/themes/default"
             sling:resourceType="kestros/commons/components/kestros-base-page"
             displayDescription=""
             publicationStrategy="kestros-single-instance">
@@ -44,34 +44,43 @@
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="/libs/kestros/commons/components/structure/section"
                     variations="[]">
-                <breadcrumbs
+                <inherited-content-area
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="/libs/kestros/commons/components/structure/breadcrumbs"
-                        variations="[]"/>
+                        sling:resourceType="/libs/kestros/commons/components/inherited-content-area">
+                    <breadcrumbs
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/breadcrumbs"
+                            variations="[]"/>
+                </inherited-content-area>
                 <container
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/structure/container"
                         elementType="main"
                         variations="[]">
                     <grid
-                            jcr:mixinTypes="[mix:lockable]"
                             jcr:primaryType="nt:unstructured"
-                            sling:resourceType="/libs/kestros/commons/components/structure/grid">
+                            sling:resourceType="/libs/kestros/commons/components/structure/grid"
+                            variations="[]">
                         <column-1
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="kestros/commons/components/content-area">
-                            <navigation
+                            <inherited-content-area
                                     jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="/libs/kestros/commons/components/structure/navigation"
-                                    rootPage="/content/sites/basic-components-sample/components"
-                                    variations="[]"/>
+                                    sling:resourceType="/libs/kestros/commons/components/inherited-content-area">
+                                <navigation
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/libs/kestros/commons/components/structure/navigation"
+                                        rootPage="/content/sites/basic-components-sample/components"
+                                        variations="[]"/>
+                            </inherited-content-area>
                         </column-1>
                         <column-3
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="kestros/commons/components/content-area"/>
                         <column-2
                                 jcr:primaryType="nt:unstructured"
-                                sling:resourceType="kestros/commons/components/content-area"/>
+                                sling:resourceType="kestros/commons/components/content-area">
+                        </column-2>
                     </grid>
                 </container>
             </section>
@@ -102,13 +111,19 @@
                             <button
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/button"
+                                    href="https://kestros.io"
+                                    label="Kestros IO"
                                     link="https://kestros.io"
-                                    text="Kestros IO"/>
+                                    text="Kestros IO"
+                                    variations="[]"/>
                             <button-1
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/button"
+                                    href="https://github.com/kestros"
+                                    label="Github"
                                     link="https://github.com/kestros"
-                                    text="Github"/>
+                                    text="Github"
+                                    variations="[]"/>
                         </column-1>
                         <column-2
                                 jcr:primaryType="nt:unstructured"
