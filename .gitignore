@@ -1,6 +1,7 @@
 
 \.target/
 \.idea/
+\.vscode/
 
 \pom.xml.versionsBackup
 
