@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="kes:Page">
+    <jcr:content
+            jcr:description="Learn about the real, responsibly sourced ingredients we use in every Bark &amp; Bowl recipe."
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Our Ingredients"
+            kes:template="/libs/kestros/commons/base-page-template"
+            sling:resourceType="kestros/commons/components/kestros-base-page">
+        <header
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"/>
+        <main
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/content-area">
+            <section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        variations="[]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h2"
+                            text="Our Ingredients"
+                            variations="[]"/>
+                    <text
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="We believe you should be able to read and understand every ingredient on the label. No by-products, no mystery meals, no artificial anything. Here is what goes into every Bark &amp; Bowl recipe."
+                            variations="[]"/>
+                    <image
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/image"
+                            altText="Fresh ingredients laid out on a cutting board"
+                            imagePath="TODO: Ingredient hero - top-down photo of raw ingredients (chicken breast, sweet potatoes, green beans, carrots, blueberries, salmon fillet) arranged on a large wooden cutting board"
+                            variations="[]"/>
+                </container>
+            </section>
+            <section-1
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        variations="[]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h3"
+                            text="Proteins"
+                            variations="[]"/>
+                    <richtext
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                            text="&lt;p&gt;Every recipe starts with a named, single-source animal protein. You will never see vague terms like &amp;quot;meat meal&amp;quot; or &amp;quot;animal by-products&amp;quot; on our labels.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Chicken:&lt;/strong&gt; Free-range, USDA-inspected chicken breast and liver&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Beef:&lt;/strong&gt; Grass-fed, pasture-raised USDA beef&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Turkey:&lt;/strong&gt; Humanely raised ground turkey&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Salmon:&lt;/strong&gt; Wild-caught Alaskan salmon&lt;/li&gt;&lt;li&gt;&lt;strong&gt;Lamb:&lt;/strong&gt; Pasture-raised New Zealand lamb&lt;/li&gt;&lt;/ul&gt;"
+                            variations="[]"/>
+                </container>
+            </section-1>
+            <section-2
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        variations="[]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h3"
+                            text="Fruits &amp; Vegetables"
+                            variations="[]"/>
+                    <text
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="We use whole fruits and vegetables - not powders or extracts - to provide natural vitamins, minerals, and fiber. Sweet potatoes for sustained energy and beta-carotene. Green beans and peas for fiber and plant-based protein. Carrots for vitamin A and crunch. Blueberries and cranberries for antioxidants. Pumpkin for digestive health. Spinach and kale for iron and calcium."
+                            variations="[]"/>
+                </container>
+            </section-2>
+            <section-3
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        variations="[]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h3"
+                            text="What You Will Never Find in Our Food"
+                            variations="[]"/>
+                    <grid
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/grid"
+                            variations="[]">
+                        <column-1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Corn, wheat, or soy"
+                                    variations="[]"/>
+                            <text-1
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Artificial colors or flavors"
+                                    variations="[]"/>
+                            <text-2
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="BHA, BHT, or ethoxyquin"
+                                    variations="[]"/>
+                        </column-1>
+                        <column-2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Meat by-products or rendered fats"
+                                    variations="[]"/>
+                            <text-1
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Carrageenan or xanthan gum"
+                                    variations="[]"/>
+                            <text-2
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Added sugars or salt"
+                                    variations="[]"/>
+                        </column-2>
+                    </grid>
+                </container>
+            </section-3>
+            <section-4
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        variations="[]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h3"
+                            text="Our Kitchen"
+                            variations="[]"/>
+                    <image
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/image"
+                            altText="Bark and Bowl USDA kitchen"
+                            imagePath="TODO: Kitchen photo - clean, bright commercial kitchen with stainless steel equipment, a worker in white coat and hairnet portioning food"
+                            variations="[]"/>
+                    <text
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="All Bark &amp; Bowl food is prepared in our USDA-inspected kitchen in Portland, Oregon. We follow the same food safety standards as human food manufacturers, because we believe your dog's food should be held to the same bar."
+                            variations="[]"/>
+                </container>
+            </section-4>
+        </main>
+        <footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"/>
+    </jcr:content>
+</jcr:root>

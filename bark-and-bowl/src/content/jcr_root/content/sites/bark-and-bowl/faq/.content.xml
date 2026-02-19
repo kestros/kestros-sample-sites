@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="kes:Page">
+    <jcr:content
+            jcr:description="Frequently asked questions about Bark &amp; Bowl orders, shipping, subscriptions, and more."
+            jcr:primaryType="nt:unstructured"
+            jcr:title="FAQ"
+            kes:template="/libs/kestros/commons/base-page-template"
+            sling:resourceType="kestros/commons/components/kestros-base-page">
+        <header
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"/>
+        <main
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/content-area">
+            <section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        variations="[]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h2"
+                            text="Frequently Asked Questions"
+                            variations="[]"/>
+                </container>
+            </section>
+            <section-1
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        variations="[]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h3"
+                            text="Orders &amp; Shipping"
+                            variations="[]"/>
+                    <accordion
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/accordion"
+                            variations="[]">
+                        <panel-1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/accordion-panel"
+                                title="How long does shipping take?"
+                                variations="[]">
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Fresh meals ship Monday through Wednesday via insulated packaging with dry ice and typically arrive within 1-3 business days. Dry kibble and treats ship via standard ground and arrive within 3-5 business days. Free shipping on orders over $49."
+                                    variations="[]"/>
+                        </panel-1>
+                        <panel-2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/accordion-panel"
+                                title="Do you ship to all 50 states?"
+                                variations="[]">
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="We currently ship dry kibble and treats to all 50 states. Fresh meal delivery is available in the contiguous 48 states. We are working on expanding fresh delivery to Alaska and Hawaii."
+                                    variations="[]"/>
+                        </panel-2>
+                        <panel-3
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/accordion-panel"
+                                title="What if my order arrives damaged?"
+                                variations="[]">
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="We will make it right. Contact us within 48 hours of delivery with a photo of the damage and we will send a replacement or issue a full refund - your choice."
+                                    variations="[]"/>
+                        </panel-3>
+                    </accordion>
+                </container>
+            </section-1>
+            <section-2
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        variations="[]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h3"
+                            text="Subscriptions"
+                            variations="[]"/>
+                    <accordion
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/accordion"
+                            variations="[]">
+                        <panel-1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/accordion-panel"
+                                title="How does the subscription work?"
+                                variations="[]">
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Tell us about your dog (breed, weight, age, activity level) and pick your preferred recipes. We will calculate the right portion size and deliver on a schedule that works for you - every 1, 2, 3, or 4 weeks. Subscribers save 20% on every order."
+                                    variations="[]"/>
+                        </panel-1>
+                        <panel-2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/accordion-panel"
+                                title="Can I pause or cancel my subscription?"
+                                variations="[]">
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Absolutely. You can pause, skip a delivery, change recipes, adjust portions, or cancel anytime from your account dashboard. No commitments, no cancellation fees. We want you to stay because your dog loves the food, not because you are locked in."
+                                    variations="[]"/>
+                        </panel-2>
+                        <panel-3
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/accordion-panel"
+                                title="Can I order one-time without subscribing?"
+                                variations="[]">
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Yes. All of our products are available as one-time purchases. The subscription just gets you 20% off and the convenience of automatic delivery."
+                                    variations="[]"/>
+                        </panel-3>
+                    </accordion>
+                </container>
+            </section-2>
+            <section-3
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        variations="[]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h3"
+                            text="Product &amp; Safety"
+                            variations="[]"/>
+                    <accordion
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/accordion"
+                            variations="[]">
+                        <panel-1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/accordion-panel"
+                                title="How should I store fresh meals?"
+                                variations="[]">
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Fresh meals arrive frozen. Store them in your freezer and move each day's portion to the refrigerator the night before to thaw. Once thawed, meals stay fresh in the fridge for up to 5 days. Do not refreeze after thawing."
+                                    variations="[]"/>
+                        </panel-1>
+                        <panel-2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/accordion-panel"
+                                title="Is Bark &amp; Bowl safe for puppies?"
+                                variations="[]">
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Yes. All of our recipes meet AAFCO nutritional standards for all life stages, including growth. Our fresh meal plans automatically adjust portions based on your puppy's age and expected adult weight. For puppies under 12 weeks, we recommend consulting your vet before switching foods."
+                                    variations="[]"/>
+                        </panel-2>
+                        <panel-3
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/accordion-panel"
+                                title="Do you have a satisfaction guarantee?"
+                                variations="[]">
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="We sure do. If your dog does not love their food, contact us and we will either send a different recipe to try or give you a full refund. We call it our Tail-Wagging Guarantee."
+                                    variations="[]"/>
+                        </panel-3>
+                    </accordion>
+                </container>
+            </section-3>
+            <section-4
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        variations="[]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h3"
+                            text="Did not find your answer?"
+                            variations="[]"/>
+                    <text
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Our team is always happy to help."
+                            variations="[]"/>
+                    <button
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/button"
+                            label="Contact Us"
+                            text="Contact Us"
+                            href="/content/sites/bark-and-bowl/contact"
+                            link="/content/sites/bark-and-bowl/contact"
+                            variations="[]"/>
+                </container>
+            </section-4>
+        </main>
+        <footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"/>
+    </jcr:content>
+</jcr:root>

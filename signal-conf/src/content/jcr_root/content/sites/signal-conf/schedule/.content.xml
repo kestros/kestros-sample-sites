@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="kes:Page">
+    <jcr:content
+            jcr:description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Schedule"
+            kes:template="/libs/kestros/commons/base-page-template"
+            sling:resourceType="kestros/commons/components/kestros-base-page">
+        <header
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"/>
+        <main
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/content-area">
+            <!-- Day 1 Schedule -->
+            <section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[/apps/kestros/commons/components/structure/section/ui-kit-lib/3.23.6/variations/style/uk-section-default]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        layout="/apps/kestros/commons/components/structure/container/ui-kit-lib/3.23.6/layouts/default"
+                        variations="[]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h2"
+                            text="Day 1"
+                            variations="[]"/>
+                    <!-- TODO: Create a dynamic schedule datasource that queries session pages
+                         tagged with /content/tags/signal-conf/days/day-1 and renders them
+                         as table rows with time, title, and presenter columns. For now this
+                         is a static table. -->
+                    <table
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/table"
+                            layout="/apps/kestros/commons/components/content/table/ui-kit-lib/3.23.6/layouts/default"
+                            variations="[/apps/kestros/commons/components/content/table/ui-kit-lib/3.23.6/variations/style/uk-table-divider,/apps/kestros/commons/components/content/table/ui-kit-lib/3.23.6/variations/modifiers/uk-table-hover,/apps/kestros/commons/components/content/table/ui-kit-lib/3.23.6/variations/modifiers/uk-table-responsive]">
+                        <table-header
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/table-header"
+                                text="Time"/>
+                        <table-header-1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/table-header"
+                                text="Session"/>
+                        <table-header-2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/table-header"
+                                text="Presenter"/>
+                        <table-row
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/table-row">
+                            <table-cell
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/table-cell"
+                                    text="9:00 AM"/>
+                            <table-cell-1
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/table-cell"
+                                    text="Opening Keynote"/>
+                            <table-cell-2
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/table-cell"
+                                    text="Jane Chen"/>
+                        </table-row>
+                        <table-row-1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/table-row">
+                            <table-cell
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/table-cell"
+                                    text="11:00 AM"/>
+                            <table-cell-1
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/table-cell"
+                                    text="Building with AI"/>
+                            <table-cell-2
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/table-cell"
+                                    text="Marcus Rivera"/>
+                        </table-row-1>
+                        <table-row-2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/table-row">
+                            <table-cell
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/table-cell"
+                                    text="2:00 PM"/>
+                            <table-cell-1
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/table-cell"
+                                    text="Lorem Ipsum Workshop"/>
+                            <table-cell-2
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/table-cell"
+                                    text="Lorem Ipsum"/>
+                        </table-row-2>
+                    </table>
+                </container>
+            </section>
+            <!-- Day 2 Schedule -->
+            <section-1
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[/apps/kestros/commons/components/structure/section/ui-kit-lib/3.23.6/variations/style/uk-section-muted]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        layout="/apps/kestros/commons/components/structure/container/ui-kit-lib/3.23.6/layouts/default"
+                        variations="[]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h2"
+                            text="Day 2"
+                            variations="[]"/>
+                    <!-- TODO: Create a dynamic schedule datasource that queries session pages
+                         tagged with /content/tags/signal-conf/days/day-2 and renders them
+                         as table rows with time, title, and presenter columns. For now this
+                         is a static table. -->
+                    <table
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/table"
+                            layout="/apps/kestros/commons/components/content/table/ui-kit-lib/3.23.6/layouts/default"
+                            variations="[/apps/kestros/commons/components/content/table/ui-kit-lib/3.23.6/variations/style/uk-table-divider,/apps/kestros/commons/components/content/table/ui-kit-lib/3.23.6/variations/modifiers/uk-table-hover,/apps/kestros/commons/components/content/table/ui-kit-lib/3.23.6/variations/modifiers/uk-table-responsive]">
+                        <table-header
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/table-header"
+                                text="Time"/>
+                        <table-header-1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/table-header"
+                                text="Session"/>
+                        <table-header-2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/table-header"
+                                text="Presenter"/>
+                        <table-row
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/table-row">
+                            <table-cell
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/table-cell"
+                                    text="9:00 AM"/>
+                            <table-cell-1
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/table-cell"
+                                    text="Securing the Cloud"/>
+                            <table-cell-2
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/table-cell"
+                                    text="Sarah Okonkwo"/>
+                        </table-row>
+                        <table-row-1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/table-row">
+                            <table-cell
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/table-cell"
+                                    text="11:00 AM"/>
+                            <table-cell-1
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/table-cell"
+                                    text="Lorem Ipsum Panel"/>
+                            <table-cell-2
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/table-cell"
+                                    text="Lorem Ipsum"/>
+                        </table-row-1>
+                        <table-row-2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/table-row">
+                            <table-cell
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/table-cell"
+                                    text="2:00 PM"/>
+                            <table-cell-1
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/table-cell"
+                                    text="Lorem Ipsum Lightning Talks"/>
+                            <table-cell-2
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/table-cell"
+                                    text="Lorem Ipsum"/>
+                        </table-row-2>
+                    </table>
+                </container>
+            </section-1>
+        </main>
+        <footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"/>
+    </jcr:content>
+</jcr:root>

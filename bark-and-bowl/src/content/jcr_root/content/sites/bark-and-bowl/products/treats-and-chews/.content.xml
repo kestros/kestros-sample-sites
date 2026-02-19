@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="kes:Page">
+    <jcr:content
+            jcr:description="Single-ingredient treats and long-lasting natural chews for dogs of all sizes."
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Treats &amp; Chews"
+            kes:template="/libs/kestros/commons/base-page-template"
+            sling:resourceType="kestros/commons/components/kestros-base-page">
+        <header
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"/>
+        <main
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/content-area">
+            <section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        variations="[]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h2"
+                            text="Treats &amp; Chews"
+                            variations="[]"/>
+                    <text
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Good dogs deserve good treats. Our treats are made from one or two real ingredients - no additives, no fillers, no mystery. Perfect for training, rewarding, or just showing your pup some love."
+                            variations="[]"/>
+                </container>
+            </section>
+            <section-1
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        variations="[]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h3"
+                            text="Training Treats"
+                            variations="[]"/>
+                    <grid
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/grid"
+                            variations="[]">
+                        <column-1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h4"
+                                    text="Freeze-Dried Chicken Hearts"
+                                    variations="[]"/>
+                            <image
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/image"
+                                    altText="Freeze-dried chicken heart treats"
+                                    imagePath="TODO: Product photo - bag of freeze-dried chicken heart treats, a few pieces scattered in front, clean background"
+                                    variations="[]"/>
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="One ingredient: chicken hearts. High-value, low-calorie, and easy to break into small pieces for training."
+                                    variations="[]"/>
+                            <button
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/button"
+                                    label="Add to Cart"
+                                    text="Add to Cart"
+                                    href="#checkout"
+                                    link="#checkout"
+                                    variations="[]"/>
+                        </column-1>
+                        <column-2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h4"
+                                    text="Sweet Potato Crisps"
+                                    variations="[]"/>
+                            <image
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/image"
+                                    altText="Sweet potato crisp treats"
+                                    imagePath="TODO: Product photo - bag of sweet potato crisps dog treats, orange crispy slices visible, warm tones"
+                                    variations="[]"/>
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="One ingredient: sweet potato. Slowly dehydrated for a satisfying crunch. Great for pups with protein allergies."
+                                    variations="[]"/>
+                            <button
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/button"
+                                    label="Add to Cart"
+                                    text="Add to Cart"
+                                    href="#checkout"
+                                    link="#checkout"
+                                    variations="[]"/>
+                        </column-2>
+                    </grid>
+                </container>
+            </section-1>
+            <section-2
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        variations="[]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h3"
+                            text="Long-Lasting Chews"
+                            variations="[]"/>
+                    <grid
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/grid"
+                            variations="[]">
+                        <column-1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h4"
+                                    text="Bully Sticks"
+                                    variations="[]"/>
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Free-range, grass-fed beef pizzle. Available in 6-inch and 12-inch sizes. Odor-free and long-lasting."
+                                    variations="[]"/>
+                            <button
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/button"
+                                    label="Add to Cart"
+                                    text="Add to Cart"
+                                    href="#checkout"
+                                    link="#checkout"
+                                    variations="[]"/>
+                        </column-1>
+                        <column-2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h4"
+                                    text="Yak Cheese Chews"
+                                    variations="[]"/>
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Traditional Himalayan recipe made from yak and cow milk. Extremely hard and long-lasting. Available in small, medium, and large sizes."
+                                    variations="[]"/>
+                            <button
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/button"
+                                    label="Add to Cart"
+                                    text="Add to Cart"
+                                    href="#checkout"
+                                    link="#checkout"
+                                    variations="[]"/>
+                        </column-2>
+                    </grid>
+                </container>
+            </section-2>
+        </main>
+        <footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"/>
+    </jcr:content>
+</jcr:root>

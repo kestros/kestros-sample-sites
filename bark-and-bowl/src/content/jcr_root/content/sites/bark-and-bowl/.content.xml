@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="kes:Site">
+    <jcr:content
+            jcr:description="Bark &amp; Bowl - Premium dog food made with real, wholesome ingredients your best friend deserves."
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Bark &amp; Bowl"
+            kes:theme="/etc/ui-frameworks/empty-framework/versions/0.0.1/themes/default"
+            sling:resourceType="kestros/commons/components/kestros-base-page"
+            displayDescription=""
+            publicationStrategy="kestros-single-instance">
+        <header
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area">
+            <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    elementType="header">
+                <section
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                        variations="[]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h1"
+                            text="Bark &amp; Bowl"
+                            variations="[]"/>
+                    <text
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Premium Dog Food"
+                            variations="[]"/>
+                </section>
+                <section-1
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                        variations="[]">
+                    <navigation
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/navigation"
+                            rootPage="/content/sites/bark-and-bowl"
+                            variations="[]"/>
+                </section-1>
+            </container>
+        </header>
+        <main
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/content-area">
+            <!-- Hero Section -->
+            <section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        variations="[]">
+                    <image
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/image"
+                            altText="Happy dog eating from a bowl of fresh food"
+                            imagePath="TODO: Hero image - wide shot of a happy golden retriever eating from a ceramic bowl filled with colorful fresh food, warm kitchen background"
+                            variations="[]"/>
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h2"
+                            text="Real Food for Real Good Dogs"
+                            variations="[]"/>
+                    <text
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Fresh, human-grade recipes crafted by veterinary nutritionists. Because your best friend deserves better than mystery kibble."
+                            variations="[]"/>
+                    <button-group
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/button-group"
+                            variations="[]">
+                        <button
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/button"
+                                label="Shop Now"
+                                text="Shop Now"
+                                href="/content/sites/bark-and-bowl/products"
+                                link="/content/sites/bark-and-bowl/products"
+                                variations="[]"/>
+                        <button-1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/button"
+                                label="Learn More"
+                                text="Learn More"
+                                href="/content/sites/bark-and-bowl/about"
+                                link="/content/sites/bark-and-bowl/about"
+                                variations="[]"/>
+                    </button-group>
+                </container>
+            </section>
+            <!-- Featured Products Section -->
+            <section-1
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        variations="[]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h2"
+                            text="Our Product Lines"
+                            variations="[]"/>
+                    <grid
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/grid"
+                            variations="[]">
+                        <column-1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h3"
+                                    text="Fresh Recipes"
+                                    variations="[]"/>
+                            <image
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/image"
+                                    altText="Fresh dog food in a bowl"
+                                    imagePath="TODO: Product image - overhead shot of a fresh dog food meal with visible chicken, sweet potato, and green beans in a stainless steel bowl"
+                                    variations="[]"/>
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Human-grade, gently cooked meals delivered to your door."
+                                    variations="[]"/>
+                            <button
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/button"
+                                    label="View Fresh Recipes"
+                                    text="View Fresh Recipes"
+                                    href="/content/sites/bark-and-bowl/products/fresh-recipes"
+                                    link="/content/sites/bark-and-bowl/products/fresh-recipes"
+                                    variations="[]"/>
+                        </column-1>
+                        <column-2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h3"
+                                    text="Dry Kibble"
+                                    variations="[]"/>
+                            <image
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/image"
+                                    altText="Premium dry kibble"
+                                    imagePath="TODO: Product image - close-up of premium kibble pieces spilling from a craft paper bag, rustic wooden surface"
+                                    variations="[]"/>
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Oven-baked, single-source protein kibble with no fillers."
+                                    variations="[]"/>
+                            <button
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/button"
+                                    label="View Dry Kibble"
+                                    text="View Dry Kibble"
+                                    href="/content/sites/bark-and-bowl/products/dry-kibble"
+                                    link="/content/sites/bark-and-bowl/products/dry-kibble"
+                                    variations="[]"/>
+                        </column-2>
+                        <column-3
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h3"
+                                    text="Treats &amp; Chews"
+                                    variations="[]"/>
+                            <image
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/image"
+                                    altText="Natural dog treats"
+                                    imagePath="TODO: Product image - assortment of natural dog treats and bully sticks arranged on a wooden cutting board"
+                                    variations="[]"/>
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Single-ingredient treats and long-lasting natural chews."
+                                    variations="[]"/>
+                            <button
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/button"
+                                    label="View Treats"
+                                    text="View Treats"
+                                    href="/content/sites/bark-and-bowl/products/treats-and-chews"
+                                    link="/content/sites/bark-and-bowl/products/treats-and-chews"
+                                    variations="[]"/>
+                        </column-3>
+                    </grid>
+                </container>
+            </section-1>
+            <!-- Why Bark & Bowl Section -->
+            <section-2
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        variations="[]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h2"
+                            text="Why Bark &amp; Bowl?"
+                            variations="[]"/>
+                    <grid
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/grid"
+                            variations="[]">
+                        <column-1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h4"
+                                    text="Vet-Formulated"
+                                    variations="[]"/>
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Every recipe is developed and approved by board-certified veterinary nutritionists."
+                                    variations="[]"/>
+                        </column-1>
+                        <column-2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h4"
+                                    text="Sourced Responsibly"
+                                    variations="[]"/>
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="We partner with family farms and sustainable fisheries across North America."
+                                    variations="[]"/>
+                        </column-2>
+                        <column-3
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h4"
+                                    text="Tail-Wagging Guarantee"
+                                    variations="[]"/>
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="If your pup does not love it, we will make it right. No questions asked."
+                                    variations="[]"/>
+                        </column-3>
+                    </grid>
+                </container>
+            </section-2>
+        </main>
+        <footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area">
+            <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    elementType="footer">
+                <section
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                        variations="[]">
+                    <grid
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/grid"
+                            variations="[]">
+                        <column-1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h3"
+                                    text="Shop"
+                                    variations="[]"/>
+                            <button
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/button"
+                                    label="Fresh Recipes"
+                                    text="Fresh Recipes"
+                                    href="/content/sites/bark-and-bowl/products/fresh-recipes"
+                                    link="/content/sites/bark-and-bowl/products/fresh-recipes"
+                                    variations="[]"/>
+                            <button-1
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/button"
+                                    label="Dry Kibble"
+                                    text="Dry Kibble"
+                                    href="/content/sites/bark-and-bowl/products/dry-kibble"
+                                    link="/content/sites/bark-and-bowl/products/dry-kibble"
+                                    variations="[]"/>
+                            <button-2
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/button"
+                                    label="Treats &amp; Chews"
+                                    text="Treats &amp; Chews"
+                                    href="/content/sites/bark-and-bowl/products/treats-and-chews"
+                                    link="/content/sites/bark-and-bowl/products/treats-and-chews"
+                                    variations="[]"/>
+                        </column-1>
+                        <column-2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h3"
+                                    text="Learn"
+                                    variations="[]"/>
+                            <button
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/button"
+                                    label="Our Ingredients"
+                                    text="Our Ingredients"
+                                    href="/content/sites/bark-and-bowl/our-ingredients"
+                                    link="/content/sites/bark-and-bowl/our-ingredients"
+                                    variations="[]"/>
+                            <button-1
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/button"
+                                    label="Nutrition Guide"
+                                    text="Nutrition Guide"
+                                    href="/content/sites/bark-and-bowl/nutrition-guide"
+                                    link="/content/sites/bark-and-bowl/nutrition-guide"
+                                    variations="[]"/>
+                            <button-2
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/button"
+                                    label="FAQ"
+                                    text="FAQ"
+                                    href="/content/sites/bark-and-bowl/faq"
+                                    link="/content/sites/bark-and-bowl/faq"
+                                    variations="[]"/>
+                        </column-2>
+                        <column-3
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h3"
+                                    text="Contact"
+                                    variations="[]"/>
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="hello@barkandbowl.com"
+                                    variations="[]"/>
+                            <text-1
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="1-800-BARK-BOWL"
+                                    variations="[]"/>
+                            <text-2
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Copyright 2026 Bark &amp; Bowl. All rights reserved."
+                                    variations="[]"/>
+                        </column-3>
+                    </grid>
+                </section>
+            </container>
+        </footer>
+    </jcr:content>
+    <about/>
+    <products/>
+    <nutrition-guide/>
+    <our-ingredients/>
+    <contact/>
+    <faq/>
+</jcr:root>

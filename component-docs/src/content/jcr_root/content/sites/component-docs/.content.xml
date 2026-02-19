@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="kes:Site">
+    <jcr:content
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Component Docs"
+        kes:template="/libs/kestros/commons/base-site-template"
+        kes:theme="/etc/ui-frameworks/ui-kit/versions/0.0.1/themes/default"
+        kes:uiFramework="/etc/ui-frameworks/ui-kit--managed"
+        kes:uiFrameworkVersion="/etc/ui-frameworks/ui-kit/versions/0.0.1"
+        sling:resourceType="kestros/commons/components/kestros-base-page">
+        <header jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area">
+            <top-navigation
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation"
+                brandName="Component Docs"
+                layout="/apps/kestros/commons/components/navigation/top-navigation/ui-kit-lib/3.23.6/layouts/default"
+                variations="[/apps/kestros/commons/components/navigation/top-navigation/ui-kit-lib/3.23.6/variations/style/uk-section-primary]">
+                <datasource-api
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation-item"
+                    href="/content/sites/component-docs/datasource-api"
+                    text="Datasource API"/>
+                <ui-libraries
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation-item"
+                    href="/content/sites/component-docs/ui-libraries"
+                    text="UI Libraries"/>
+            </top-navigation>
+        </header>
+        <main jcr:primaryType="nt:unstructured"
+              sling:resourceType="kestros/commons/components/content-area"/>
+        <footer jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area">
+            <section
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="/libs/kestros/commons/components/structure/section"
+                variations="[/apps/kestros/commons/components/structure/section/ui-kit-lib/3.23.6/variations/style/uk-section-secondary,/apps/kestros/commons/components/structure/section/ui-kit-lib/3.23.6/variations/size/uk-section-small]">
+                <richtext
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                    layout="/apps/kestros/commons/components/content/richtext/ui-kit-lib/3.23.6/layouts/default"
+                    variations="[/apps/kestros/commons/components/content/richtext/ui-kit-lib/3.23.6/variations/text-alignment/uk-text-center,/apps/kestros/commons/components/content/richtext/ui-kit-lib/3.23.6/variations/font-size/uk-text-small,/apps/kestros/commons/components/content/richtext/ui-kit-lib/3.23.6/variations/text-color/uk-text-muted]"
+                    text="&lt;p&gt;Kestros CMS - Component Documentation&lt;/p&gt;"/>
+            </section>
+        </footer>
+    </jcr:content>
+    <datasource-api/>
+    <ui-libraries/>
+</jcr:root>

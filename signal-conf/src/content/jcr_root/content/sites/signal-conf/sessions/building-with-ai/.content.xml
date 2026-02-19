@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="kes:Page">
+    <jcr:content
+            jcr:description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Building with AI"
+            kes:tags="[/content/tags/signal-conf/session-types/workshop,/content/tags/signal-conf/days/day-1,/content/tags/signal-conf/topics/ai]"
+            kes:template="/libs/kestros/commons/base-page-template"
+            sling:resourceType="kestros/commons/components/kestros-base-page"
+            cardImage="TODO: Session card image - Marcus Rivera leading a hands-on workshop, laptop screens visible, collaborative setting">
+        <header
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"/>
+        <main
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/content-area">
+            <section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[/apps/kestros/commons/components/structure/section/ui-kit-lib/3.23.6/variations/style/uk-section-default,/apps/kestros/commons/components/structure/section/ui-kit-lib/3.23.6/variations/size/uk-section-large]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        layout="/apps/kestros/commons/components/structure/container/ui-kit-lib/3.23.6/layouts/default"
+                        variations="[]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h2"
+                            text="Building with AI"
+                            variations="[]"/>
+                    <text
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Presenter: Marcus Rivera | Day 1 - 11:00 AM | Workshop"
+                            variations="[/apps/kestros/commons/components/content/text/ui-kit-lib/3.23.6/variations/text-color/uk-text-muted]"/>
+                    <video-embed
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/video-embed"
+                            allowFullScreen="true"
+                            youtubeVideo="https://www.youtube.com/watch?v=dQw4w9WgXcQ"/>
+                    <text-1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                            variations="[]"/>
+                    <!-- TODO: Related sessions — add a card-list here using a tag-search datasource
+                         (CardListTagSearchDataSource) that queries session pages sharing the same tags
+                         (e.g., /content/tags/signal-conf/topics/ai) and excludes the current page.
+                         Datasource name: "tag-search", property: searchTags. -->
+                </container>
+            </section>
+        </main>
+        <footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"/>
+    </jcr:content>
+</jcr:root>

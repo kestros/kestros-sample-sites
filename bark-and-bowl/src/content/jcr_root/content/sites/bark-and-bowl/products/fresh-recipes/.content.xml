@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="kes:Page">
+    <jcr:content
+            jcr:description="Human-grade, gently cooked dog food recipes made with real meat, vegetables, and superfoods."
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Fresh Recipes"
+            kes:template="/libs/kestros/commons/base-page-template"
+            sling:resourceType="kestros/commons/components/kestros-base-page">
+        <header
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"/>
+        <main
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/content-area">
+            <section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        variations="[]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h2"
+                            text="Fresh Recipes"
+                            variations="[]"/>
+                    <text
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Our fresh meals are gently cooked at low temperatures to lock in nutrients and flavor. Each recipe meets AAFCO standards for complete and balanced nutrition. Just thaw, scoop, and serve."
+                            variations="[]"/>
+                </container>
+            </section>
+            <section-1
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        variations="[]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h3"
+                            text="Chicken &amp; Sweet Potato"
+                            variations="[]"/>
+                    <image
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/image"
+                            altText="Chicken and sweet potato recipe"
+                            imagePath="TODO: Recipe photo - bowl of chicken and sweet potato dog food, garnished with parsley, overhead shot on light wood surface"
+                            variations="[]"/>
+                    <text
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Our most popular recipe. Free-range chicken breast, sweet potato, green beans, carrots, and a blend of vitamins and minerals. Great for dogs of all ages and breeds."
+                            variations="[]"/>
+                    <heading-1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h4"
+                            text="Key Ingredients"
+                            variations="[]"/>
+                    <text-1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Chicken breast, sweet potato, green beans, carrots, chicken liver, flaxseed oil, fish oil, vitamin and mineral supplement"
+                            variations="[]"/>
+                </container>
+            </section-1>
+            <section-2
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        variations="[]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h3"
+                            text="Beef &amp; Brown Rice"
+                            variations="[]"/>
+                    <image
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/image"
+                            altText="Beef and brown rice recipe"
+                            imagePath="TODO: Recipe photo - bowl of beef and brown rice dog food with visible peas and carrots, rustic ceramic bowl"
+                            variations="[]"/>
+                    <text
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Hearty and satisfying. USDA grass-fed beef, brown rice, peas, carrots, and spinach. Perfect for active dogs who need sustained energy."
+                            variations="[]"/>
+                </container>
+            </section-2>
+            <section-3
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        variations="[]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h3"
+                            text="Turkey &amp; Quinoa"
+                            variations="[]"/>
+                    <image
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/image"
+                            altText="Turkey and quinoa recipe"
+                            imagePath="TODO: Recipe photo - bowl of turkey and quinoa dog food with cranberries and kale visible, bright natural lighting"
+                            variations="[]"/>
+                    <text
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="A lean, grain-friendly option. Ground turkey, quinoa, cranberries, kale, and pumpkin. Ideal for dogs with sensitive stomachs or poultry preferences beyond chicken."
+                            variations="[]"/>
+                </container>
+            </section-3>
+            <section-4
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        variations="[]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h3"
+                            text="Salmon &amp; Lentil"
+                            variations="[]"/>
+                    <image
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/image"
+                            altText="Salmon and lentil recipe"
+                            imagePath="TODO: Recipe photo - bowl of salmon and lentil dog food with visible flaked fish and green lentils, slate background"
+                            variations="[]"/>
+                    <text
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Rich in omega-3 fatty acids for a healthy coat and joints. Wild-caught salmon, lentils, sweet potato, broccoli, and blueberries. Our grain-free option."
+                            variations="[]"/>
+                </container>
+            </section-4>
+            <section-5
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        variations="[]">
+                    <alert
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/alert"
+                            heading="How It Works"
+                            text="Tell us about your dog, pick your recipes, and we will deliver pre-portioned meals on your schedule. Cancel or adjust anytime."
+                            variations="[]"/>
+                    <button
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/button"
+                            label="Build Your Plan"
+                            text="Build Your Plan"
+                            href="#checkout"
+                            link="#checkout"
+                            variations="[]"/>
+                </container>
+            </section-5>
+        </main>
+        <footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"/>
+    </jcr:content>
+</jcr:root>

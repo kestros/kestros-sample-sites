@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="kes:Page">
+    <jcr:content
+            jcr:description="Browse our full line of premium dog food products - fresh recipes, dry kibble, and natural treats."
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Products"
+            kes:template="/libs/kestros/commons/base-page-template"
+            sling:resourceType="kestros/commons/components/kestros-base-page">
+        <header
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"/>
+        <main
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/content-area">
+            <section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        variations="[]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h2"
+                            text="Our Products"
+                            variations="[]"/>
+                    <text
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Whether your pup prefers fresh meals, crunchy kibble, or something to chew on between walks, we have something they will love. Every product is made with real ingredients and zero compromise."
+                            variations="[]"/>
+                </container>
+            </section>
+            <section-1
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        variations="[]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h3"
+                            text="Fresh Recipes"
+                            variations="[]"/>
+                    <image
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/image"
+                            altText="Fresh dog food recipes"
+                            imagePath="TODO: Banner image - line of fresh food containers with different recipes visible, clean white background, lifestyle photography"
+                            variations="[]"/>
+                    <text
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Gently cooked, human-grade meals portioned for your dog's size and delivered fresh to your door. Choose from chicken, beef, turkey, or fish-based recipes."
+                            variations="[]"/>
+                    <button
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/button"
+                            label="Explore Fresh Recipes"
+                            text="Explore Fresh Recipes"
+                            href="/content/sites/bark-and-bowl/products/fresh-recipes"
+                            link="/content/sites/bark-and-bowl/products/fresh-recipes"
+                            variations="[]"/>
+                </container>
+            </section-1>
+            <section-2
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        variations="[]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h3"
+                            text="Dry Kibble"
+                            variations="[]"/>
+                    <image
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/image"
+                            altText="Premium dry kibble bags"
+                            imagePath="TODO: Banner image - three bags of Bark and Bowl kibble varieties standing side by side, clean product photography"
+                            variations="[]"/>
+                    <text
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Slow-baked in small batches with single-source proteins and wholesome grains. No corn, wheat, soy, or artificial anything."
+                            variations="[]"/>
+                    <button
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/button"
+                            label="Explore Dry Kibble"
+                            text="Explore Dry Kibble"
+                            href="/content/sites/bark-and-bowl/products/dry-kibble"
+                            link="/content/sites/bark-and-bowl/products/dry-kibble"
+                            variations="[]"/>
+                </container>
+            </section-2>
+            <section-3
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        variations="[]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h3"
+                            text="Treats &amp; Chews"
+                            variations="[]"/>
+                    <image
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/image"
+                            altText="Natural treats and chews"
+                            imagePath="TODO: Banner image - spread of natural treats including jerky strips, dental chews, and training treats in small bowls"
+                            variations="[]"/>
+                    <text
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Reward your pup with treats made from one or two ingredients. Perfect for training, dental health, or just because they are a good dog."
+                            variations="[]"/>
+                    <button
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/button"
+                            label="Explore Treats"
+                            text="Explore Treats"
+                            href="/content/sites/bark-and-bowl/products/treats-and-chews"
+                            link="/content/sites/bark-and-bowl/products/treats-and-chews"
+                            variations="[]"/>
+                </container>
+            </section-3>
+            <section-4
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        variations="[]">
+                    <alert
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/alert"
+                            heading="Free Shipping"
+                            text="Orders over $49 ship free. Subscribe and save 20% on every delivery."
+                            variations="[]"/>
+                </container>
+            </section-4>
+        </main>
+        <footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"/>
+    </jcr:content>
+    <fresh-recipes/>
+    <dry-kibble/>
+    <treats-and-chews/>
+</jcr:root>
