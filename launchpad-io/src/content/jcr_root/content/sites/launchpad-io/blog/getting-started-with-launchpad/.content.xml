@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="kes:Page">
+    <jcr:content
+            jcr:description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Getting Started with Launchpad"
+            kes:template="/libs/kestros/commons/base-page-template"
+            sling:resourceType="kestros/commons/components/kestros-base-page">
+        <header
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"/>
+        <main
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/content-area">
+            <section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[/apps/kestros/commons/components/structure/section/ui-kit-lib/3.23.6/variations/style/uk-section-default]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        layout="/apps/kestros/commons/components/structure/container/ui-kit-lib/3.23.6/layouts/default"
+                        variations="[/apps/kestros/commons/components/structure/container/ui-kit-lib/3.23.6/variations/size/uk-container-small]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h1"
+                            text="Getting Started with Launchpad"
+                            layout="/apps/kestros/commons/components/content/heading/ui-kit-lib/3.23.6/layouts/default"
+                            variations="[/apps/kestros/commons/components/content/heading/ui-kit-lib/3.23.6/variations/font-size/uk-heading-small]"/>
+                    <text
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="January 15, 2026"
+                            variations="[/apps/kestros/commons/components/content/text/ui-kit-lib/3.23.6/variations/text-color/uk-text-muted,/apps/kestros/commons/components/content/text/ui-kit-lib/3.23.6/variations/font-size/uk-text-small]"/>
+                    <image
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/image"
+                            imagePath="TODO: Blog hero - screenshot of a clean dashboard interface with charts and project cards"
+                            altText="Launchpad dashboard"
+                            layout="/apps/kestros/commons/components/content/image/ui-kit-lib/3.23.6/layouts/default"
+                            variations="[]"/>
+                    <richtext
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                            text="&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;&lt;h2&gt;Step 1: Create Your Project&lt;/h2&gt;&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;&lt;h2&gt;Step 2: Configure Your Pipeline&lt;/h2&gt;&lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.&lt;/p&gt;&lt;h2&gt;Step 3: Deploy&lt;/h2&gt;&lt;p&gt;Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.&lt;/p&gt;"
+                            layout="/apps/kestros/commons/components/content/richtext/ui-kit-lib/3.23.6/layouts/default"
+                            variations="[]"/>
+                </container>
+            </section>
+        </main>
+        <footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"/>
+    </jcr:content>
+</jcr:root>

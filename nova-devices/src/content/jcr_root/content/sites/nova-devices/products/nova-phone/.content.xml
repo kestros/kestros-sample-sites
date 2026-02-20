@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="kes:Page">
+    <jcr:content
+            jcr:description="The most advanced Nova Phone ever. A17 chip, titanium design, 48MP camera system."
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Nova Phone"
+            kes:template="/libs/kestros/commons/base-page-template"
+            sling:resourceType="kestros/commons/components/kestros-base-page">
+        <header
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"/>
+        <main
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/content-area">
+            <!-- Hero -->
+            <section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[/apps/kestros/commons/components/structure/section/nova-css-lib/0.1.0/variations/style/nova-section-dark,/apps/kestros/commons/components/structure/section/nova-css-lib/0.1.0/variations/size/nova-section-xlarge]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        layout="/apps/kestros/commons/components/structure/container/nova-css-lib/0.1.0/layouts/default"
+                        variations="[/apps/kestros/commons/components/structure/container/nova-css-lib/0.1.0/variations/size/nova-container-narrow]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h1"
+                            text="Nova Phone"
+                            layout="/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/layouts/default"
+                            variations="[/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/variations/font-size/nova-heading-hero,/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/variations/text-color/nova-text-light,/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/variations/text-align/nova-text-center]"/>
+                    <text
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Brilliance in every detail."
+                            variations="[/apps/kestros/commons/components/content/text/nova-css-lib/0.1.0/variations/font-size/nova-text-lead,/apps/kestros/commons/components/content/text/nova-css-lib/0.1.0/variations/text-color/nova-text-light,/apps/kestros/commons/components/content/text/nova-css-lib/0.1.0/variations/text-align/nova-text-center]"/>
+                </container>
+            </section>
+            <!-- Features -->
+            <section-1
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[/apps/kestros/commons/components/structure/section/nova-css-lib/0.1.0/variations/style/nova-section-default,/apps/kestros/commons/components/structure/section/nova-css-lib/0.1.0/variations/size/nova-section-large]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        layout="/apps/kestros/commons/components/structure/container/nova-css-lib/0.1.0/layouts/default"
+                        variations="[]">
+                    <grid
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/grid"
+                            layout="/apps/kestros/commons/components/structure/grid/nova-css-lib/0.2.0/layouts/66-33"
+                            variations="[/apps/kestros/commons/components/structure/grid/nova-css-lib/0.2.0/variations/alignment/nova-grid-align-center,/apps/kestros/commons/components/structure/grid/nova-css-lib/0.2.0/variations/gap/nova-grid-gap-large]">
+                        <column-1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h2"
+                                    text="A17 Chip"
+                                    layout="/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/layouts/default"
+                                    variations="[/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/variations/font-size/nova-heading-xlarge]"/>
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="The fastest chip ever in a smartphone. Breakthrough performance for everything you do."
+                                    variations="[/apps/kestros/commons/components/content/text/nova-css-lib/0.1.0/variations/font-size/nova-text-lead,/apps/kestros/commons/components/content/text/nova-css-lib/0.1.0/variations/text-color/nova-text-muted]"/>
+                        </column-1>
+                        <column-2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <image
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/image"
+                                    altText="A17 chip illustration"
+                                    imagePath="TODO: Close-up render of A17 chip with circuit traces"
+                                    layout="/apps/kestros/commons/components/content/image/nova-css-lib/0.2.0/layouts/default"
+                                    variations="[/apps/kestros/commons/components/content/image/nova-css-lib/0.2.0/variations/border-radius/nova-image-rounded]"/>
+                        </column-2>
+                    </grid>
+                </container>
+            </section-1>
+            <!-- Camera -->
+            <section-2
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[/apps/kestros/commons/components/structure/section/nova-css-lib/0.1.0/variations/style/nova-section-dark,/apps/kestros/commons/components/structure/section/nova-css-lib/0.1.0/variations/size/nova-section-large]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        layout="/apps/kestros/commons/components/structure/container/nova-css-lib/0.1.0/layouts/default"
+                        variations="[]">
+                    <grid
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/grid"
+                            layout="/apps/kestros/commons/components/structure/grid/nova-css-lib/0.2.0/layouts/50-50"
+                            variations="[/apps/kestros/commons/components/structure/grid/nova-css-lib/0.2.0/variations/alignment/nova-grid-align-center,/apps/kestros/commons/components/structure/grid/nova-css-lib/0.2.0/variations/gap/nova-grid-gap-large]">
+                        <column-1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <image
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/image"
+                                    altText="Nova Phone camera system"
+                                    imagePath="TODO: Close-up of triple camera module on titanium back"
+                                    layout="/apps/kestros/commons/components/content/image/nova-css-lib/0.2.0/layouts/default"
+                                    variations="[/apps/kestros/commons/components/content/image/nova-css-lib/0.2.0/variations/border-radius/nova-image-rounded]"/>
+                        </column-1>
+                        <column-2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h2"
+                                    text="48MP Camera System"
+                                    layout="/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/layouts/default"
+                                    variations="[/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/variations/font-size/nova-heading-large,/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/variations/text-color/nova-text-light]"/>
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Capture life in stunning detail with our most advanced camera system. Computational photography meets hardware excellence."
+                                    variations="[/apps/kestros/commons/components/content/text/nova-css-lib/0.1.0/variations/text-color/nova-text-muted]"/>
+                        </column-2>
+                    </grid>
+                </container>
+            </section-2>
+            <!-- Video -->
+            <section-3
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[/apps/kestros/commons/components/structure/section/nova-css-lib/0.1.0/variations/style/nova-section-default,/apps/kestros/commons/components/structure/section/nova-css-lib/0.1.0/variations/size/nova-section-large]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        layout="/apps/kestros/commons/components/structure/container/nova-css-lib/0.1.0/layouts/default"
+                        variations="[/apps/kestros/commons/components/structure/container/nova-css-lib/0.1.0/variations/size/nova-container-narrow]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h2"
+                            text="See it in action"
+                            layout="/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/layouts/default"
+                            variations="[/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/variations/font-size/nova-heading-large,/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/variations/text-align/nova-text-center]"/>
+                    <video-embed
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/video-embed"
+                            videoEmbedCode="&lt;p&gt;[Nova Phone product video placeholder]&lt;/p&gt;"
+                            layout="/apps/kestros/commons/components/content/video-embed/nova-css-lib/0.3.0/layouts/default"
+                            variations="[]"/>
+                </container>
+            </section-3>
+        </main>
+        <footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"/>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="kes:Page">
+    <jcr:content
+            jcr:description="Power meets portability. M4 chip, Liquid Retina XDR display, all-day battery life."
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Nova Book"
+            kes:template="/libs/kestros/commons/base-page-template"
+            sling:resourceType="kestros/commons/components/kestros-base-page">
+        <header
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"/>
+        <main
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/content-area">
+            <!-- Hero -->
+            <section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[/apps/kestros/commons/components/structure/section/nova-css-lib/0.1.0/variations/style/nova-section-dark,/apps/kestros/commons/components/structure/section/nova-css-lib/0.1.0/variations/size/nova-section-xlarge]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        layout="/apps/kestros/commons/components/structure/container/nova-css-lib/0.1.0/layouts/default"
+                        variations="[/apps/kestros/commons/components/structure/container/nova-css-lib/0.1.0/variations/size/nova-container-narrow]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h1"
+                            text="Nova Book"
+                            layout="/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/layouts/default"
+                            variations="[/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/variations/font-size/nova-heading-hero,/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/variations/text-color/nova-text-light,/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/variations/text-align/nova-text-center]"/>
+                    <text
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Supercharged for pros."
+                            variations="[/apps/kestros/commons/components/content/text/nova-css-lib/0.1.0/variations/font-size/nova-text-lead,/apps/kestros/commons/components/content/text/nova-css-lib/0.1.0/variations/text-color/nova-text-light,/apps/kestros/commons/components/content/text/nova-css-lib/0.1.0/variations/text-align/nova-text-center]"/>
+                </container>
+            </section>
+            <!-- Performance -->
+            <section-1
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[/apps/kestros/commons/components/structure/section/nova-css-lib/0.1.0/variations/style/nova-section-default,/apps/kestros/commons/components/structure/section/nova-css-lib/0.1.0/variations/size/nova-section-large]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        layout="/apps/kestros/commons/components/structure/container/nova-css-lib/0.1.0/layouts/default"
+                        variations="[]">
+                    <grid
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/grid"
+                            layout="/apps/kestros/commons/components/structure/grid/nova-css-lib/0.2.0/layouts/50-50"
+                            variations="[/apps/kestros/commons/components/structure/grid/nova-css-lib/0.2.0/variations/alignment/nova-grid-align-center,/apps/kestros/commons/components/structure/grid/nova-css-lib/0.2.0/variations/gap/nova-grid-gap-large]">
+                        <column-1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h2"
+                                    text="M4 Chip"
+                                    layout="/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/layouts/default"
+                                    variations="[/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/variations/font-size/nova-heading-xlarge]"/>
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Up to 22 hours of battery life. Blazing-fast performance for the most demanding workflows."
+                                    variations="[/apps/kestros/commons/components/content/text/nova-css-lib/0.1.0/variations/font-size/nova-text-lead,/apps/kestros/commons/components/content/text/nova-css-lib/0.1.0/variations/text-color/nova-text-muted]"/>
+                        </column-1>
+                        <column-2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <image
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/image"
+                                    altText="Nova Book open showing display"
+                                    imagePath="TODO: Angled view of Nova Book with colorful screen content"
+                                    layout="/apps/kestros/commons/components/content/image/nova-css-lib/0.2.0/layouts/default"
+                                    variations="[/apps/kestros/commons/components/content/image/nova-css-lib/0.2.0/variations/border-radius/nova-image-rounded]"/>
+                        </column-2>
+                    </grid>
+                </container>
+            </section-1>
+            <!-- Display -->
+            <section-2
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[/apps/kestros/commons/components/structure/section/nova-css-lib/0.1.0/variations/style/nova-section-dark,/apps/kestros/commons/components/structure/section/nova-css-lib/0.1.0/variations/size/nova-section-large]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        layout="/apps/kestros/commons/components/structure/container/nova-css-lib/0.1.0/layouts/default"
+                        variations="[/apps/kestros/commons/components/structure/container/nova-css-lib/0.1.0/variations/size/nova-container-narrow]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h2"
+                            text="Liquid Retina XDR"
+                            layout="/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/layouts/default"
+                            variations="[/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/variations/font-size/nova-heading-xlarge,/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/variations/text-color/nova-text-light,/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/variations/text-align/nova-text-center]"/>
+                    <text
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Extreme dynamic range. Incredible contrast. Phenomenal color accuracy. The best display ever on a laptop."
+                            variations="[/apps/kestros/commons/components/content/text/nova-css-lib/0.1.0/variations/text-color/nova-text-muted,/apps/kestros/commons/components/content/text/nova-css-lib/0.1.0/variations/text-align/nova-text-center]"/>
+                    <image
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/image"
+                            altText="Nova Book display close-up"
+                            imagePath="TODO: Close-up of Liquid Retina XDR display with vibrant colors"
+                            layout="/apps/kestros/commons/components/content/image/nova-css-lib/0.2.0/layouts/default"
+                            variations="[/apps/kestros/commons/components/content/image/nova-css-lib/0.2.0/variations/border-radius/nova-image-rounded]"/>
+                </container>
+            </section-2>
+        </main>
+        <footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"/>
+    </jcr:content>
+</jcr:root>

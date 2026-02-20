@@ -58,6 +58,9 @@
     <module>basic-components-sample</module>
     <module>bark-and-bowl</module>
     <module>signal-conf</module>
+    <module>haven-architecture</module>
+    <module>nova-devices</module>
+    <module>launchpad-io</module>
   </modules>
 
   <dependencyManagement>

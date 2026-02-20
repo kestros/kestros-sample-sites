@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="kes:Site">
+    <jcr:content
+            jcr:description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Launchpad"
+            kes:theme="/etc/ui-frameworks/ui-kit/versions/0.0.1/themes/default"
+            sling:resourceType="kestros/commons/components/kestros-base-page"
+            displayDescription=""
+            publicationStrategy="kestros-single-instance">
+        <!-- HEADER -->
+        <header
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area">
+            <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    elementType="header"
+                    layout="/apps/kestros/commons/components/structure/container/ui-kit-lib/3.23.6/layouts/default">
+                <section
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                        variations="[/apps/kestros/commons/components/structure/section/ui-kit-lib/3.23.6/variations/style/uk-section-default,/apps/kestros/commons/components/structure/section/ui-kit-lib/3.23.6/variations/modifiers/uk-padding-remove-vertical]">
+                    <grid
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/grid"
+                            layout="/apps/kestros/commons/components/structure/grid/ui-kit-lib/3.23.6/layouts/25-75"
+                            variations="[/apps/kestros/commons/components/structure/grid/ui-kit-lib/3.23.6/variations/gap-modifiers/uk-grid-small]">
+                        <column-1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h1"
+                                    text="Launchpad"
+                                    variations="[/apps/kestros/commons/components/content/heading/ui-kit-lib/3.23.6/variations/text-transform/uk-text-uppercase,/apps/kestros/commons/components/content/heading/ui-kit-lib/3.23.6/variations/font-size/uk-heading-small]"/>
+                        </column-1>
+                        <column-2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <navigation
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/structure/navigation"
+                                    rootPage="/content/sites/launchpad-io"
+                                    layout="/apps/kestros/commons/components/navigation/navigation/ui-kit-lib/3.23.6/layouts/default"
+                                    variations="[]"/>
+                        </column-2>
+                    </grid>
+                </section>
+            </container>
+        </header>
+        <!-- MAIN CONTENT (HOME PAGE) -->
+        <main
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/content-area">
+            <!-- Hero Section -->
+            <section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[/apps/kestros/commons/components/structure/section/ui-kit-lib/3.23.6/variations/style/uk-section-primary,/apps/kestros/commons/components/structure/section/ui-kit-lib/3.23.6/variations/text/uk-light,/apps/kestros/commons/components/structure/section/ui-kit-lib/3.23.6/variations/size/uk-section-xlarge]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        layout="/apps/kestros/commons/components/structure/container/ui-kit-lib/3.23.6/layouts/default"
+                        variations="[/apps/kestros/commons/components/structure/container/ui-kit-lib/3.23.6/variations/size/uk-container-small]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h2"
+                            text="Launch Your Product Faster"
+                            layout="/apps/kestros/commons/components/content/heading/ui-kit-lib/3.23.6/layouts/default"
+                            variations="[/apps/kestros/commons/components/content/heading/ui-kit-lib/3.23.6/variations/font-size/uk-heading-large,/apps/kestros/commons/components/content/heading/ui-kit-lib/3.23.6/variations/text-align/uk-text-center]"/>
+                    <text
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                            variations="[/apps/kestros/commons/components/content/text/ui-kit-lib/3.23.6/variations/font-size/uk-text-lead,/apps/kestros/commons/components/content/text/ui-kit-lib/3.23.6/variations/text-align/uk-text-center]"/>
+                    <button-group
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/button-group"
+                            variations="[]">
+                        <button
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/button"
+                                text="Get Started"
+                                href="/content/sites/launchpad-io/pricing"
+                                link="/content/sites/launchpad-io/pricing"
+                                variations="[/apps/kestros/commons/components/content/button/ui-kit-lib/3.23.6/variations/style/uk-button-default,/apps/kestros/commons/components/content/button/ui-kit-lib/3.23.6/variations/size/uk-button-large]"/>
+                        <button-1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/button"
+                                text="Learn More"
+                                href="/content/sites/launchpad-io/features"
+                                link="/content/sites/launchpad-io/features"
+                                variations="[/apps/kestros/commons/components/content/button/ui-kit-lib/3.23.6/variations/style/uk-button-text,/apps/kestros/commons/components/content/button/ui-kit-lib/3.23.6/variations/size/uk-button-large]"/>
+                    </button-group>
+                </container>
+            </section>
+            <!-- Features Overview -->
+            <section-1
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[/apps/kestros/commons/components/structure/section/ui-kit-lib/3.23.6/variations/style/uk-section-default,/apps/kestros/commons/components/structure/section/ui-kit-lib/3.23.6/variations/size/uk-section-large]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        layout="/apps/kestros/commons/components/structure/container/ui-kit-lib/3.23.6/layouts/default"
+                        variations="[]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h2"
+                            text="Why Launchpad"
+                            layout="/apps/kestros/commons/components/content/heading/ui-kit-lib/3.23.6/layouts/line-left"
+                            variations="[/apps/kestros/commons/components/content/heading/ui-kit-lib/3.23.6/variations/text-transform/uk-text-uppercase]"/>
+                    <grid
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/grid"
+                            layout="/apps/kestros/commons/components/structure/grid/ui-kit-lib/3.23.6/layouts/default"
+                            variations="[/apps/kestros/commons/components/structure/grid/ui-kit-lib/3.23.6/variations/gap-modifiers/uk-grid-medium,/apps/kestros/commons/components/structure/grid/ui-kit-lib/3.23.6/variations/modifiers/uk-grid-match]">
+                        <column-1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h3"
+                                    text="One-Click Deploy"
+                                    variations="[]"/>
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                                    variations="[/apps/kestros/commons/components/content/text/ui-kit-lib/3.23.6/variations/text-color/uk-text-muted]"/>
+                        </column-1>
+                        <column-2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h3"
+                                    text="Real-Time Analytics"
+                                    variations="[]"/>
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Sed do eiusmod tempor incididunt ut labore et dolore."
+                                    variations="[/apps/kestros/commons/components/content/text/ui-kit-lib/3.23.6/variations/text-color/uk-text-muted]"/>
+                        </column-2>
+                        <column-3
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h3"
+                                    text="Team Collaboration"
+                                    variations="[]"/>
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Ut enim ad minim veniam, quis nostrud exercitation."
+                                    variations="[/apps/kestros/commons/components/content/text/ui-kit-lib/3.23.6/variations/text-color/uk-text-muted]"/>
+                        </column-3>
+                    </grid>
+                    <button
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/button"
+                            text="All Features"
+                            href="/content/sites/launchpad-io/features"
+                            link="/content/sites/launchpad-io/features"
+                            variations="[/apps/kestros/commons/components/content/button/ui-kit-lib/3.23.6/variations/style/uk-button-default]"/>
+                </container>
+            </section-1>
+            <!-- Testimonials -->
+            <section-2
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[/apps/kestros/commons/components/structure/section/ui-kit-lib/3.23.6/variations/style/uk-section-muted,/apps/kestros/commons/components/structure/section/ui-kit-lib/3.23.6/variations/size/uk-section-large]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        layout="/apps/kestros/commons/components/structure/container/ui-kit-lib/3.23.6/layouts/default"
+                        variations="[]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h2"
+                            text="What Our Customers Say"
+                            layout="/apps/kestros/commons/components/content/heading/ui-kit-lib/3.23.6/layouts/line-left"
+                            variations="[/apps/kestros/commons/components/content/heading/ui-kit-lib/3.23.6/variations/text-transform/uk-text-uppercase]"/>
+                    <!-- TODO: Create "testimonials" datasource for card-list.
+                         Should query testimonial content stored elsewhere in the CMS
+                         and return name, quote, and avatar for each.
+                         Content authors can toggle between this and the default static datasource. -->
+                    <card-list
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/lists/card-list"
+                            layout="/apps/kestros/commons/components/lists/card-list/ui-kit-lib/3.23.6/layouts/default"
+                            cardLayout="/apps/kestros/commons/components/content/card/ui-kit-lib/3.23.6/layouts/avatar-image"
+                            cardVariations="[/apps/kestros/commons/components/content/card/ui-kit-lib/3.23.6/variations/style/uk-card-default]"
+                            variations="[/apps/kestros/commons/components/lists/card-list/ui-kit-lib/3.23.6/variations/modifiers/uk-grid-match]">
+                        <card
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/card"
+                                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
+                            <title
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h4"
+                                    text="Jordan Lee"/>
+                            <image
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/image"
+                                    imagePath="TODO: Avatar - professional headshot of a startup founder"
+                                    altText="Jordan Lee"/>
+                        </card>
+                        <card-1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/card"
+                                description="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.">
+                            <title
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h4"
+                                    text="Taylor Singh"/>
+                            <image
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/image"
+                                    imagePath="TODO: Avatar - professional headshot of a CTO"
+                                    altText="Taylor Singh"/>
+                        </card-1>
+                        <card-2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/card"
+                                description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.">
+                            <title
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h4"
+                                    text="Morgan Zhang"/>
+                            <image
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/image"
+                                    imagePath="TODO: Avatar - professional headshot of a product manager"
+                                    altText="Morgan Zhang"/>
+                        </card-2>
+                    </card-list>
+                </container>
+            </section-2>
+            <!-- CTA Section -->
+            <section-3
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[/apps/kestros/commons/components/structure/section/ui-kit-lib/3.23.6/variations/style/uk-section-secondary,/apps/kestros/commons/components/structure/section/ui-kit-lib/3.23.6/variations/text/uk-light,/apps/kestros/commons/components/structure/section/ui-kit-lib/3.23.6/variations/size/uk-section-large]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        layout="/apps/kestros/commons/components/structure/container/ui-kit-lib/3.23.6/layouts/default"
+                        variations="[/apps/kestros/commons/components/structure/container/ui-kit-lib/3.23.6/variations/size/uk-container-small]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h2"
+                            text="Ready to Launch?"
+                            variations="[/apps/kestros/commons/components/content/heading/ui-kit-lib/3.23.6/variations/text-align/uk-text-center]"/>
+                    <text
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                            variations="[/apps/kestros/commons/components/content/text/ui-kit-lib/3.23.6/variations/text-align/uk-text-center]"/>
+                    <button-group
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/button-group"
+                            variations="[]">
+                        <button
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/button"
+                                text="Start Free Trial"
+                                href="/content/sites/launchpad-io/pricing"
+                                link="/content/sites/launchpad-io/pricing"
+                                variations="[/apps/kestros/commons/components/content/button/ui-kit-lib/3.23.6/variations/style/uk-button-primary,/apps/kestros/commons/components/content/button/ui-kit-lib/3.23.6/variations/size/uk-button-large]"/>
+                        <button-1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/button"
+                                text="Contact Sales"
+                                href="/content/sites/launchpad-io/contact"
+                                link="/content/sites/launchpad-io/contact"
+                                variations="[/apps/kestros/commons/components/content/button/ui-kit-lib/3.23.6/variations/style/uk-button-default,/apps/kestros/commons/components/content/button/ui-kit-lib/3.23.6/variations/size/uk-button-large]"/>
+                    </button-group>
+                </container>
+            </section-3>
+        </main>
+        <!-- FOOTER -->
+        <footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area">
+            <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    elementType="footer"
+                    layout="/apps/kestros/commons/components/structure/container/ui-kit-lib/3.23.6/layouts/default">
+                <section
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                        variations="[/apps/kestros/commons/components/structure/section/ui-kit-lib/3.23.6/variations/style/uk-section-secondary,/apps/kestros/commons/components/structure/section/ui-kit-lib/3.23.6/variations/modifiers/uk-preserve-color]">
+                    <grid
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/grid"
+                            layout="/apps/kestros/commons/components/structure/grid/ui-kit-lib/3.23.6/layouts/default"
+                            variations="[/apps/kestros/commons/components/structure/grid/ui-kit-lib/3.23.6/variations/gap-modifiers/uk-grid-medium]">
+                        <column-1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h3"
+                                    text="Launchpad"
+                                    variations="[/apps/kestros/commons/components/content/heading/ui-kit-lib/3.23.6/variations/text-transform/uk-text-uppercase]"/>
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt."
+                                    variations="[/apps/kestros/commons/components/content/text/ui-kit-lib/3.23.6/variations/font-size/uk-text-small]"/>
+                        </column-1>
+                        <column-2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h3"
+                                    text="Product"
+                                    variations="[]"/>
+                            <button
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/button"
+                                    text="Features"
+                                    href="/content/sites/launchpad-io/features"
+                                    link="/content/sites/launchpad-io/features"
+                                    variations="[/apps/kestros/commons/components/content/button/ui-kit-lib/3.23.6/variations/style/uk-button-text]"/>
+                            <button-1
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/button"
+                                    text="Pricing"
+                                    href="/content/sites/launchpad-io/pricing"
+                                    link="/content/sites/launchpad-io/pricing"
+                                    variations="[/apps/kestros/commons/components/content/button/ui-kit-lib/3.23.6/variations/style/uk-button-text]"/>
+                            <button-2
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/button"
+                                    text="Blog"
+                                    href="/content/sites/launchpad-io/blog"
+                                    link="/content/sites/launchpad-io/blog"
+                                    variations="[/apps/kestros/commons/components/content/button/ui-kit-lib/3.23.6/variations/style/uk-button-text]"/>
+                        </column-2>
+                        <column-3
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h3"
+                                    text="Support"
+                                    variations="[]"/>
+                            <button
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/button"
+                                    text="FAQ"
+                                    href="/content/sites/launchpad-io/faq"
+                                    link="/content/sites/launchpad-io/faq"
+                                    variations="[/apps/kestros/commons/components/content/button/ui-kit-lib/3.23.6/variations/style/uk-button-text]"/>
+                            <button-1
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/button"
+                                    text="Contact"
+                                    href="/content/sites/launchpad-io/contact"
+                                    link="/content/sites/launchpad-io/contact"
+                                    variations="[/apps/kestros/commons/components/content/button/ui-kit-lib/3.23.6/variations/style/uk-button-text]"/>
+                            <button-2
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/button"
+                                    text="About"
+                                    href="/content/sites/launchpad-io/about"
+                                    link="/content/sites/launchpad-io/about"
+                                    variations="[/apps/kestros/commons/components/content/button/ui-kit-lib/3.23.6/variations/style/uk-button-text]"/>
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Copyright 2026 Launchpad IO. All rights reserved."
+                                    variations="[/apps/kestros/commons/components/content/text/ui-kit-lib/3.23.6/variations/font-size/uk-text-small]"/>
+                        </column-3>
+                    </grid>
+                </section>
+            </container>
+        </footer>
+    </jcr:content>
+    <features/>
+    <pricing/>
+    <about/>
+    <blog/>
+    <faq/>
+    <contact/>
+</jcr:root>

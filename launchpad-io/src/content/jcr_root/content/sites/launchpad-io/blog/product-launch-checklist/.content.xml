@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="kes:Page">
+    <jcr:content
+            jcr:description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit."
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Product Launch Checklist"
+            kes:template="/libs/kestros/commons/base-page-template"
+            sling:resourceType="kestros/commons/components/kestros-base-page">
+        <header
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"/>
+        <main
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/content-area">
+            <section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[/apps/kestros/commons/components/structure/section/ui-kit-lib/3.23.6/variations/style/uk-section-default]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        layout="/apps/kestros/commons/components/structure/container/ui-kit-lib/3.23.6/layouts/default"
+                        variations="[/apps/kestros/commons/components/structure/container/ui-kit-lib/3.23.6/variations/size/uk-container-small]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h1"
+                            text="Product Launch Checklist"
+                            layout="/apps/kestros/commons/components/content/heading/ui-kit-lib/3.23.6/layouts/default"
+                            variations="[/apps/kestros/commons/components/content/heading/ui-kit-lib/3.23.6/variations/font-size/uk-heading-small]"/>
+                    <text
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="February 10, 2026"
+                            variations="[/apps/kestros/commons/components/content/text/ui-kit-lib/3.23.6/variations/text-color/uk-text-muted,/apps/kestros/commons/components/content/text/ui-kit-lib/3.23.6/variations/font-size/uk-text-small]"/>
+                    <image
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/image"
+                            imagePath="TODO: Blog hero - rocket launch or countdown timer illustration, flat design style"
+                            altText="Product launch"
+                            layout="/apps/kestros/commons/components/content/image/ui-kit-lib/3.23.6/layouts/default"
+                            variations="[]"/>
+                    <richtext
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                            text="&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;&lt;h2&gt;Pre-Launch&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;&lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;&lt;li&gt;Sed do eiusmod tempor incididunt&lt;/li&gt;&lt;/ul&gt;&lt;h2&gt;Launch Day&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Ut enim ad minim veniam&lt;/li&gt;&lt;li&gt;Quis nostrud exercitation ullamco&lt;/li&gt;&lt;li&gt;Laboris nisi ut aliquip ex ea&lt;/li&gt;&lt;/ul&gt;&lt;h2&gt;Post-Launch&lt;/h2&gt;&lt;ul&gt;&lt;li&gt;Duis aute irure dolor in reprehenderit&lt;/li&gt;&lt;li&gt;Excepteur sint occaecat cupidatat&lt;/li&gt;&lt;li&gt;Sunt in culpa qui officia deserunt&lt;/li&gt;&lt;/ul&gt;"
+                            layout="/apps/kestros/commons/components/content/richtext/ui-kit-lib/3.23.6/layouts/default"
+                            variations="[]"/>
+                </container>
+            </section>
+        </main>
+        <footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"/>
+    </jcr:content>
+</jcr:root>

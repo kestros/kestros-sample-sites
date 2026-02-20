@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="kes:Page">
+    <jcr:content
+            jcr:description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Atwater Residence"
+            kes:tags="[/content/tags/haven-architecture/project-types/residential]"
+            kes:template="/libs/kestros/commons/base-page-template"
+            sling:resourceType="kestros/commons/components/kestros-base-page"
+            cardImage="TODO: Modern residential home exterior, flat roof with cantilevered upper floor, floor-to-ceiling windows, mature landscaping, twilight shot with interior lights on">
+        <header
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"/>
+        <main
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/content-area">
+            <!-- Hero Image Section -->
+            <section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    backgroundImage="TODO: Hero shot of Atwater Residence from garden approach - clean horizontal lines, natural materials, large glass walls blending indoor and outdoor spaces"
+                    variations="[/apps/kestros/commons/components/structure/section/ui-kit-lib/3.23.6/variations/style/uk-section-secondary,/apps/kestros/commons/components/structure/section/ui-kit-lib/3.23.6/variations/text/uk-light,/apps/kestros/commons/components/structure/section/ui-kit-lib/3.23.6/variations/size/uk-section-xlarge]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        layout="/apps/kestros/commons/components/structure/container/ui-kit-lib/3.23.6/layouts/default"
+                        variations="[]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h2"
+                            text="Atwater Residence"
+                            layout="/apps/kestros/commons/components/content/heading/ui-kit-lib/3.23.6/layouts/default"
+                            variations="[/apps/kestros/commons/components/content/heading/ui-kit-lib/3.23.6/variations/font-size/uk-heading-xlarge,/apps/kestros/commons/components/content/heading/ui-kit-lib/3.23.6/variations/text-transform/uk-text-uppercase]"/>
+                    <text
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Residential"
+                            variations="[/apps/kestros/commons/components/content/text/ui-kit-lib/3.23.6/variations/text-transform/uk-text-uppercase,/apps/kestros/commons/components/content/text/ui-kit-lib/3.23.6/variations/font-size/uk-text-small]"/>
+                </container>
+            </section>
+            <!-- Project Info: 66-33 grid -->
+            <section-1
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[/apps/kestros/commons/components/structure/section/ui-kit-lib/3.23.6/variations/style/uk-section-default,/apps/kestros/commons/components/structure/section/ui-kit-lib/3.23.6/variations/size/uk-section-large]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        layout="/apps/kestros/commons/components/structure/container/ui-kit-lib/3.23.6/layouts/default"
+                        variations="[]">
+                    <grid
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/grid"
+                            layout="/apps/kestros/commons/components/structure/grid/ui-kit-lib/3.23.6/layouts/66-33"
+                            variations="[/apps/kestros/commons/components/structure/grid/ui-kit-lib/3.23.6/variations/gap-modifiers/uk-grid-large]">
+                        <column-1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h3"
+                                    text="Overview"
+                                    variations="[/apps/kestros/commons/components/content/heading/ui-kit-lib/3.23.6/variations/text-transform/uk-text-uppercase]"/>
+                            <richtext
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text="&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;&lt;p&gt;Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.&lt;/p&gt;"
+                                    variations="[]"/>
+                        </column-1>
+                        <column-2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h4"
+                                    text="Project Details"
+                                    variations="[/apps/kestros/commons/components/content/heading/ui-kit-lib/3.23.6/variations/text-transform/uk-text-uppercase]"/>
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Location"
+                                    variations="[/apps/kestros/commons/components/content/text/ui-kit-lib/3.23.6/variations/text-color/uk-text-muted,/apps/kestros/commons/components/content/text/ui-kit-lib/3.23.6/variations/font-size/uk-text-small]"/>
+                            <text-1
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Lake Oswego, Oregon"
+                                    variations="[]"/>
+                            <text-2
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Year"
+                                    variations="[/apps/kestros/commons/components/content/text/ui-kit-lib/3.23.6/variations/text-color/uk-text-muted,/apps/kestros/commons/components/content/text/ui-kit-lib/3.23.6/variations/font-size/uk-text-small]"/>
+                            <text-3
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="2025"
+                                    variations="[]"/>
+                            <text-4
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Type"
+                                    variations="[/apps/kestros/commons/components/content/text/ui-kit-lib/3.23.6/variations/text-color/uk-text-muted,/apps/kestros/commons/components/content/text/ui-kit-lib/3.23.6/variations/font-size/uk-text-small]"/>
+                            <text-5
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Single-Family Residence"
+                                    variations="[]"/>
+                            <text-6
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Size"
+                                    variations="[/apps/kestros/commons/components/content/text/ui-kit-lib/3.23.6/variations/text-color/uk-text-muted,/apps/kestros/commons/components/content/text/ui-kit-lib/3.23.6/variations/font-size/uk-text-small]"/>
+                            <text-7
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="4,200 sq ft"
+                                    variations="[]"/>
+                        </column-2>
+                    </grid>
+                </container>
+            </section-1>
+            <!-- Image Gallery -->
+            <section-2
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[/apps/kestros/commons/components/structure/section/ui-kit-lib/3.23.6/variations/style/uk-section-muted]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        layout="/apps/kestros/commons/components/structure/container/ui-kit-lib/3.23.6/layouts/default"
+                        variations="[/apps/kestros/commons/components/structure/container/ui-kit-lib/3.23.6/variations/size/uk-container-expand]">
+                    <grid
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/grid"
+                            layout="/apps/kestros/commons/components/structure/grid/ui-kit-lib/3.23.6/layouts/default"
+                            variations="[/apps/kestros/commons/components/structure/grid/ui-kit-lib/3.23.6/variations/gap-modifiers/uk-grid-small]">
+                        <column-1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <image
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/image"
+                                    altText="Atwater Residence living room"
+                                    imagePath="TODO: Atwater Residence living room - open plan, double-height ceiling, concrete fireplace, floor-to-ceiling windows overlooking lake"
+                                    variations="[]"/>
+                        </column-1>
+                        <column-2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <image
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/image"
+                                    altText="Atwater Residence kitchen"
+                                    imagePath="TODO: Atwater Residence kitchen - minimalist cabinetry, marble island, integrated appliances, pendant lighting"
+                                    variations="[]"/>
+                        </column-2>
+                        <column-3
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <image
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/image"
+                                    altText="Atwater Residence exterior deck"
+                                    imagePath="TODO: Atwater Residence exterior deck - cantilevered timber deck overlooking lake, built-in seating, evening ambiance"
+                                    variations="[]"/>
+                        </column-3>
+                    </grid>
+                </container>
+            </section-2>
+            <!-- Full-width feature image -->
+            <section-3
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[/apps/kestros/commons/components/structure/section/ui-kit-lib/3.23.6/variations/modifiers/uk-padding-remove-vertical]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        layout="/apps/kestros/commons/components/structure/container/ui-kit-lib/3.23.6/layouts/default"
+                        variations="[/apps/kestros/commons/components/structure/container/ui-kit-lib/3.23.6/variations/size/uk-container-expand]">
+                    <image
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/image"
+                            altText="Atwater Residence from across the lake"
+                            imagePath="TODO: Atwater Residence wide shot from across the lake, showing full elevation reflected in water, trees framing the composition"
+                            variations="[]"/>
+                </container>
+            </section-3>
+            <!-- Back to Projects -->
+            <section-4
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[/apps/kestros/commons/components/structure/section/ui-kit-lib/3.23.6/variations/style/uk-section-default]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        layout="/apps/kestros/commons/components/structure/container/ui-kit-lib/3.23.6/layouts/default"
+                        variations="[]">
+                    <button
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/button"
+                            text="All Projects"
+                            href="/content/sites/haven-architecture/projects"
+                            link="/content/sites/haven-architecture/projects"
+                            variations="[/apps/kestros/commons/components/content/button/ui-kit-lib/3.23.6/variations/style/uk-button-text]"/>
+                </container>
+            </section-4>
+        </main>
+        <footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"/>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="kes:Page">
+    <jcr:content
+            jcr:description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Retirement Planning"
+            kes:template="/libs/kestros/commons/base-page-template"
+            sling:resourceType="kestros/commons/components/kestros-base-page">
+        <header
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"/>
+        <main
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/content-area">
+            <!-- Hero -->
+            <section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[/apps/kestros/commons/components/structure/section/ui-kit-lib/3.23.6/variations/style/uk-section-muted,/apps/kestros/commons/components/structure/section/ui-kit-lib/3.23.6/variations/size/uk-section-large]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        layout="/apps/kestros/commons/components/structure/container/ui-kit-lib/3.23.6/layouts/default"
+                        variations="[/apps/kestros/commons/components/structure/container/ui-kit-lib/3.23.6/variations/size/uk-container-small]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h1"
+                            text="Retirement Planning"
+                            layout="/apps/kestros/commons/components/content/heading/ui-kit-lib/3.23.6/layouts/default"
+                            variations="[/apps/kestros/commons/components/content/heading/ui-kit-lib/3.23.6/variations/font-size/uk-heading-small]"/>
+                    <text
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation."
+                            variations="[/apps/kestros/commons/components/content/text/ui-kit-lib/3.23.6/variations/font-size/uk-text-lead]"/>
+                </container>
+            </section>
+            <!-- Planning Process Accordion -->
+            <section-1
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[/apps/kestros/commons/components/structure/section/ui-kit-lib/3.23.6/variations/style/uk-section-default]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        layout="/apps/kestros/commons/components/structure/container/ui-kit-lib/3.23.6/layouts/default"
+                        variations="[/apps/kestros/commons/components/structure/container/ui-kit-lib/3.23.6/variations/size/uk-container-small]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h2"
+                            text="Our Planning Process"
+                            layout="/apps/kestros/commons/components/content/heading/ui-kit-lib/3.23.6/layouts/line-left"
+                            variations="[/apps/kestros/commons/components/content/heading/ui-kit-lib/3.23.6/variations/text-transform/uk-text-uppercase]"/>
+                    <accordion
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/accordion"
+                            layout="/apps/kestros/commons/components/structure/accordion/ui-kit-lib/3.23.6/layouts/default"
+                            variations="[]">
+                        <panel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/accordion-panel"
+                                title="Goals Assessment"
+                                expanded="{Boolean}true">
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                                    variations="[]"/>
+                        </panel>
+                        <panel-1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/accordion-panel"
+                                title="Income Projection">
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                                    variations="[]"/>
+                        </panel-1>
+                        <panel-2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/accordion-panel"
+                                title="Tax Strategy">
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                    variations="[]"/>
+                        </panel-2>
+                        <panel-3
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/accordion-panel"
+                                title="Annual Review">
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+                                    variations="[]"/>
+                        </panel-3>
+                    </accordion>
+                </container>
+            </section-1>
+            <!-- Fee Schedule -->
+            <section-2
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[/apps/kestros/commons/components/structure/section/ui-kit-lib/3.23.6/variations/style/uk-section-muted]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        layout="/apps/kestros/commons/components/structure/container/ui-kit-lib/3.23.6/layouts/default"
+                        variations="[]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h2"
+                            text="Fee Schedule"
+                            layout="/apps/kestros/commons/components/content/heading/ui-kit-lib/3.23.6/layouts/line-left"
+                            variations="[/apps/kestros/commons/components/content/heading/ui-kit-lib/3.23.6/variations/text-transform/uk-text-uppercase]"/>
+                    <table
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/table"
+                            layout="/apps/kestros/commons/components/content/table/ui-kit-lib/3.23.6/layouts/default"
+                            variations="[/apps/kestros/commons/components/content/table/ui-kit-lib/3.23.6/variations/style/uk-table-divider,/apps/kestros/commons/components/content/table/ui-kit-lib/3.23.6/variations/modifiers/uk-table-hover,/apps/kestros/commons/components/content/table/ui-kit-lib/3.23.6/variations/modifiers/uk-table-responsive]">
+                        <table-header
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/table-header"
+                                text="Service"/>
+                        <table-header-1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/table-header"
+                                text="Fee"/>
+                        <table-row
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/table-row">
+                            <table-cell
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/table-cell"
+                                    text="Comprehensive Retirement Plan"/>
+                            <table-cell-1
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/table-cell"
+                                    text="$2,500"/>
+                        </table-row>
+                        <table-row-1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/table-row">
+                            <table-cell
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/table-cell"
+                                    text="Annual Plan Review"/>
+                            <table-cell-1
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/table-cell"
+                                    text="$750"/>
+                        </table-row-1>
+                        <table-row-2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/table-row">
+                            <table-cell
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/table-cell"
+                                    text="Social Security Optimization"/>
+                            <table-cell-1
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/table-cell"
+                                    text="$500"/>
+                        </table-row-2>
+                    </table>
+                </container>
+            </section-2>
+        </main>
+        <footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"/>
+    </jcr:content>
+</jcr:root>

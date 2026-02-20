@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="kes:Page">
+    <jcr:content
+            jcr:description="Your health companion. Advanced sensors, always-on display, carbon-neutral design."
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Nova Watch"
+            kes:template="/libs/kestros/commons/base-page-template"
+            sling:resourceType="kestros/commons/components/kestros-base-page">
+        <header
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"/>
+        <main
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/content-area">
+            <!-- Hero -->
+            <section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[/apps/kestros/commons/components/structure/section/nova-css-lib/0.1.0/variations/style/nova-section-dark,/apps/kestros/commons/components/structure/section/nova-css-lib/0.1.0/variations/size/nova-section-xlarge]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        layout="/apps/kestros/commons/components/structure/container/nova-css-lib/0.1.0/layouts/default"
+                        variations="[/apps/kestros/commons/components/structure/container/nova-css-lib/0.1.0/variations/size/nova-container-narrow]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h1"
+                            text="Nova Watch"
+                            layout="/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/layouts/default"
+                            variations="[/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/variations/font-size/nova-heading-hero,/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/variations/text-color/nova-text-light,/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/variations/text-align/nova-text-center]"/>
+                    <text
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="A healthier future. On your wrist."
+                            variations="[/apps/kestros/commons/components/content/text/nova-css-lib/0.1.0/variations/font-size/nova-text-lead,/apps/kestros/commons/components/content/text/nova-css-lib/0.1.0/variations/text-color/nova-text-light,/apps/kestros/commons/components/content/text/nova-css-lib/0.1.0/variations/text-align/nova-text-center]"/>
+                </container>
+            </section>
+            <!-- Health Features -->
+            <section-1
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[/apps/kestros/commons/components/structure/section/nova-css-lib/0.1.0/variations/style/nova-section-default,/apps/kestros/commons/components/structure/section/nova-css-lib/0.1.0/variations/size/nova-section-large]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        layout="/apps/kestros/commons/components/structure/container/nova-css-lib/0.1.0/layouts/default"
+                        variations="[]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h2"
+                            text="Health Sensors"
+                            layout="/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/layouts/default"
+                            variations="[/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/variations/font-size/nova-heading-large,/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/variations/text-align/nova-text-center]"/>
+                    <grid
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/grid"
+                            layout="/apps/kestros/commons/components/structure/grid/nova-css-lib/0.2.0/layouts/default"
+                            variations="[/apps/kestros/commons/components/structure/grid/nova-css-lib/0.2.0/variations/gap/nova-grid-gap-large]">
+                        <column-1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h3"
+                                    text="Blood Oxygen"
+                                    layout="/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/layouts/default"
+                                    variations="[/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/variations/text-align/nova-text-center]"/>
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Monitor your blood oxygen levels right from your wrist."
+                                    variations="[/apps/kestros/commons/components/content/text/nova-css-lib/0.1.0/variations/text-color/nova-text-muted,/apps/kestros/commons/components/content/text/nova-css-lib/0.1.0/variations/text-align/nova-text-center]"/>
+                        </column-1>
+                        <column-2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h3"
+                                    text="Heart Rate"
+                                    layout="/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/layouts/default"
+                                    variations="[/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/variations/text-align/nova-text-center]"/>
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Advanced sensors track your heart rhythm throughout the day."
+                                    variations="[/apps/kestros/commons/components/content/text/nova-css-lib/0.1.0/variations/text-color/nova-text-muted,/apps/kestros/commons/components/content/text/nova-css-lib/0.1.0/variations/text-align/nova-text-center]"/>
+                        </column-2>
+                        <column-3
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h3"
+                                    text="Temperature"
+                                    layout="/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/layouts/default"
+                                    variations="[/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/variations/text-align/nova-text-center]"/>
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Wrist temperature sensing provides insights into your overall wellness."
+                                    variations="[/apps/kestros/commons/components/content/text/nova-css-lib/0.1.0/variations/text-color/nova-text-muted,/apps/kestros/commons/components/content/text/nova-css-lib/0.1.0/variations/text-align/nova-text-center]"/>
+                        </column-3>
+                    </grid>
+                </container>
+            </section-1>
+            <!-- Design -->
+            <section-2
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[/apps/kestros/commons/components/structure/section/nova-css-lib/0.1.0/variations/style/nova-section-dark,/apps/kestros/commons/components/structure/section/nova-css-lib/0.1.0/variations/size/nova-section-large]">
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        layout="/apps/kestros/commons/components/structure/container/nova-css-lib/0.1.0/layouts/default"
+                        variations="[]">
+                    <grid
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/grid"
+                            layout="/apps/kestros/commons/components/structure/grid/nova-css-lib/0.2.0/layouts/50-50"
+                            variations="[/apps/kestros/commons/components/structure/grid/nova-css-lib/0.2.0/variations/alignment/nova-grid-align-center,/apps/kestros/commons/components/structure/grid/nova-css-lib/0.2.0/variations/gap/nova-grid-gap-large]">
+                        <column-1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <image
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/image"
+                                    altText="Nova Watch titanium case"
+                                    imagePath="TODO: Side profile of Nova Watch showing titanium case and Digital Crown"
+                                    layout="/apps/kestros/commons/components/content/image/nova-css-lib/0.2.0/layouts/default"
+                                    variations="[]"/>
+                        </column-1>
+                        <column-2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h2"
+                                    text="Carbon Neutral"
+                                    layout="/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/layouts/default"
+                                    variations="[/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/variations/font-size/nova-heading-large,/apps/kestros/commons/components/content/heading/nova-css-lib/0.1.0/variations/text-color/nova-text-light]"/>
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Crafted with 100% recycled titanium. Our first carbon-neutral product."
+                                    variations="[/apps/kestros/commons/components/content/text/nova-css-lib/0.1.0/variations/text-color/nova-text-muted]"/>
+                        </column-2>
+                    </grid>
+                </container>
+            </section-2>
+        </main>
+        <footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"/>
+    </jcr:content>
+</jcr:root>
