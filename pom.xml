@@ -34,7 +34,7 @@
   <version>0.1.1-SNAPSHOT</version>
 
   <name>Kestros Sample Sites</name>
-  <description></description>
+  <description>Sample sites and demo applications for the Kestros CMS platform</description>
   <packaging>pom</packaging>
 
   <licenses>

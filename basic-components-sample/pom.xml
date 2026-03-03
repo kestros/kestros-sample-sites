@@ -16,6 +16,7 @@
     <version>0.0.3</version>
 
     <name>Basic Components Sample Site</name>
+    <description>Sample site demonstrating Kestros basic components</description>
 
     <packaging>bundle</packaging>
 
