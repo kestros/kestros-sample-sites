@@ -33,6 +33,7 @@
   <version>0.0.1-SNAPSHOT</version>
 
   <name>Explore Site - Application</name>
+  <description>Application bundle for the Explore sample site</description>
   <packaging>bundle</packaging>
 
   <properties>
