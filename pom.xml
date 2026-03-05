@@ -56,6 +56,7 @@
     <module>explore</module>
 <!--    <module>resolve-2021</module>-->
     <module>basic-components-sample</module>
+    <module>signal-conf</module>
   </modules>
 
   <dependencyManagement>

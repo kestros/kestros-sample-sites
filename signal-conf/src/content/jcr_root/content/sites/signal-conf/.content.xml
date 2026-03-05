@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:kes="http://kestros.io"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="kes:Site"
+          jcr:title="Signal Conf"
+          jcr:description="Signal Conference sample site demonstrating custom datasources">
+    <jcr:content
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Signal Conf"
+            jcr:description="Signal Conference sample site"/>
+    <presenters
+            jcr:primaryType="kes:Page"
+            jcr:title="Presenters">
+        <jcr:content
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Presenters"
+                jcr:description="Conference presenters">
+            <card-list
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/lists/card-list"
+                    kes:datasource="presenters"
+                    pagesPath="/content/sites/signal-conf/presenters"
+                    readMoreText="View Sessions"/>
+        </jcr:content>
+        <alice-smith
+                jcr:primaryType="kes:Page"
+                jcr:title="Alice Smith">
+            <jcr:content
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Alice Smith"
+                    jcr:description="Senior Developer">
+                <button-group
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/button-group"
+                        kes:datasource="presenter-sessions"
+                        sessionsPath="/content/sites/signal-conf/sessions"/>
+            </jcr:content>
+        </alice-smith>
+        <bob-jones
+                jcr:primaryType="kes:Page"
+                jcr:title="Bob Jones">
+            <jcr:content
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Bob Jones"
+                    jcr:description="Lead Architect">
+                <button-group
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/button-group"
+                        kes:datasource="presenter-sessions"
+                        sessionsPath="/content/sites/signal-conf/sessions"/>
+            </jcr:content>
+        </bob-jones>
+    </presenters>
+    <sessions
+            jcr:primaryType="kes:Page"
+            jcr:title="Sessions">
+        <jcr:content
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Sessions"
+                jcr:description="Conference sessions"/>
+        <intro-to-sling
+                jcr:primaryType="kes:Page"
+                jcr:title="Introduction to Sling">
+            <jcr:content
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Introduction to Sling"
+                    jcr:description="Learn the basics of Apache Sling"
+                    sessionTime="9:00 AM"
+                    presenterName="Alice Smith"
+                    presenterPath="/content/sites/signal-conf/presenters/alice-smith"
+                    kes:tags="[/etc/tags/signal-conf/day-1,/etc/tags/signal-conf/topic/sling]">
+                <related-sessions
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/lists/card-list"
+                        kes:datasource="tag-search"
+                        pagesPath="/content/sites/signal-conf/sessions"
+                        readMoreText="View Session"/>
+            </jcr:content>
+        </intro-to-sling>
+        <advanced-htl
+                jcr:primaryType="kes:Page"
+                jcr:title="Advanced HTL Techniques">
+            <jcr:content
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Advanced HTL Techniques"
+                    jcr:description="Deep dive into HTL templating"
+                    sessionTime="11:00 AM"
+                    presenterName="Bob Jones"
+                    presenterPath="/content/sites/signal-conf/presenters/bob-jones"
+                    kes:tags="[/etc/tags/signal-conf/day-1,/etc/tags/signal-conf/topic/htl]">
+                <related-sessions
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/lists/card-list"
+                        kes:datasource="tag-search"
+                        pagesPath="/content/sites/signal-conf/sessions"
+                        readMoreText="View Session"/>
+            </jcr:content>
+        </advanced-htl>
+        <osgi-services
+                jcr:primaryType="kes:Page"
+                jcr:title="OSGi Services Deep Dive">
+            <jcr:content
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="OSGi Services Deep Dive"
+                    jcr:description="Understanding OSGi service patterns"
+                    sessionTime="2:00 PM"
+                    presenterName="Alice Smith"
+                    presenterPath="/content/sites/signal-conf/presenters/alice-smith"
+                    kes:tags="[/etc/tags/signal-conf/day-2,/etc/tags/signal-conf/topic/sling]">
+                <related-sessions
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/lists/card-list"
+                        kes:datasource="tag-search"
+                        pagesPath="/content/sites/signal-conf/sessions"
+                        readMoreText="View Session"/>
+            </jcr:content>
+        </osgi-services>
+    </sessions>
+    <schedule
+            jcr:primaryType="kes:Page"
+            jcr:title="Schedule">
+        <jcr:content
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Schedule"
+                jcr:description="Conference schedule">
+            <day-1-table
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/content/table"
+                    kes:datasource="schedule"
+                    sessionsPath="/content/sites/signal-conf/sessions"
+                    dayTag="/etc/tags/signal-conf/day-1"/>
+            <day-2-table
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/content/table"
+                    kes:datasource="schedule"
+                    sessionsPath="/content/sites/signal-conf/sessions"
+                    dayTag="/etc/tags/signal-conf/day-2"/>
+        </jcr:content>
+    </schedule>
+</jcr:root>
