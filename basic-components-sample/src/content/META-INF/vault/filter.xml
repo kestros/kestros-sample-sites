@@ -2,5 +2,6 @@
 <workspaceFilter version="1.0">
 
   <filter root="/content/sites/basic-components-sample"/>
+  <filter root="/libs/kestros/samples/components/content"/>
 
 </workspaceFilter>

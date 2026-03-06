@@ -1,0 +1,8 @@
+{
+  "jcr:primaryType": "kes:ComponentType",
+  "jcr:title": "Dialog Field Test",
+  "jcr:description": "Sample component that exercises every available KDF dialog field type. Renders authored values in a debug/diagnostic table.",
+  "componentGroup": "Sample Components",
+  "sling:resourceSuperType": "kestros/commons/components/kestros-parent",
+  "fontAwesomeIcon": "fa fa-th-list"
+}

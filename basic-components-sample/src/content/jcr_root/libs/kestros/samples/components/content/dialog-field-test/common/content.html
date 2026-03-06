@@ -1,0 +1,86 @@
+<sly data-sly-use.component="${'io.kestros.samples.content.dialogfieldtest.DialogFieldTestDataSourceComponent'}"/>
+
+<div class="dialog-field-test">
+    <h3>Dialog Field Test - Debug Output</h3>
+    <table border="1" cellpadding="4" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+        <thead>
+            <tr>
+                <th>Field Label</th>
+                <th>Field Type</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Text Field</td>
+                <td>textfield</td>
+                <td>${component.sampleText}</td>
+            </tr>
+            <tr>
+                <td>Textarea</td>
+                <td>textarea</td>
+                <td>${component.sampleTextarea}</td>
+            </tr>
+            <tr>
+                <td>Rich Text</td>
+                <td>richtext</td>
+                <td>${component.sampleRichtext @ context='html'}</td>
+            </tr>
+            <tr>
+                <td>Checkbox</td>
+                <td>checkbox</td>
+                <td>${component.sampleCheckbox}</td>
+            </tr>
+            <tr>
+                <td>Path Field</td>
+                <td>pathfield</td>
+                <td>${component.samplePath}</td>
+            </tr>
+            <tr>
+                <td>Select Field</td>
+                <td>selectfield</td>
+                <td>${component.sampleSelect}</td>
+            </tr>
+            <tr>
+                <td>Tag Field</td>
+                <td>tagfield</td>
+                <td>${component.sampleTag}</td>
+            </tr>
+            <tr>
+                <td>Number Field</td>
+                <td>numberfield</td>
+                <td>${component.sampleNumber}</td>
+            </tr>
+            <tr>
+                <td>Date Field</td>
+                <td>datefield</td>
+                <td>${component.sampleDate}</td>
+            </tr>
+            <tr>
+                <td>DateTime Field</td>
+                <td>datetimefield</td>
+                <td>${component.sampleDatetime}</td>
+            </tr>
+            <tr>
+                <td>Toggle Field</td>
+                <td>togglefield</td>
+                <td>${component.sampleToggle}</td>
+            </tr>
+            <tr>
+                <td>Radio Group</td>
+                <td>radiogroup</td>
+                <td>${component.sampleRadio}</td>
+            </tr>
+            <tr>
+                <td>Hidden Field</td>
+                <td>hiddenfield</td>
+                <td>${component.sampleHidden}</td>
+            </tr>
+            <tr>
+                <td>Image/Asset Picker</td>
+                <td>imageassetpicker</td>
+                <td>${component.sampleImage}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
