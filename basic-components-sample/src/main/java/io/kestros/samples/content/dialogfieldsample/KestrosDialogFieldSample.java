@@ -1,15 +1,15 @@
-package io.kestros.samples.content.dialogfieldtest;
+package io.kestros.samples.content.dialogfieldsample;
 
 import io.kestros.cms.components.basic.api.KestrosBasicComponentElement;
 import javax.annotation.Nullable;
 
 /**
- * API interface for the Dialog Field Test sample component.
+ * API interface for the Dialog Field Sample component.
  * Provides getter methods for each dialog field value.
  */
-public interface KestrosDialogFieldTest extends KestrosBasicComponentElement {
+public interface KestrosDialogFieldSample extends KestrosBasicComponentElement {
 
-  String RESOURCE_TYPE = "/libs/kestros/samples/components/content/dialog-field-test";
+  String RESOURCE_TYPE = "/libs/kestros/samples/components/content/dialog-field-sample";
 
   @Override
   default String getComponentResourceType() {

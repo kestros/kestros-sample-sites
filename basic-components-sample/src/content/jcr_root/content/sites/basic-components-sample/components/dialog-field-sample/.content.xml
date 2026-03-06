@@ -4,7 +4,7 @@
     <jcr:content
         jcr:description=""
         jcr:primaryType="nt:unstructured"
-        jcr:title="Dialog Field Test"
+        jcr:title="Dialog Field Sample"
         kes:template="/libs/kestros/commons/base-page-template"
         sling:resourceType="kestros/commons/components/kestros-base-page">
         <header
@@ -40,10 +40,10 @@
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/heading"
                                     level="h2"
-                                    text="Dialog Field Test Component"/>
-                            <dialog-field-test
+                                    text="Dialog Field Sample Component"/>
+                            <dialog-field-sample
                                     jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="/libs/kestros/samples/components/content/dialog-field-test"
+                                    sling:resourceType="/libs/kestros/samples/components/content/dialog-field-sample"
                                     sampleText="Hello World"
                                     sampleTextarea="This is a multi-line text area value.\nLine two of the textarea."
                                     sampleRichtext="&lt;p&gt;This is &lt;strong&gt;rich text&lt;/strong&gt; content.&lt;/p&gt;"

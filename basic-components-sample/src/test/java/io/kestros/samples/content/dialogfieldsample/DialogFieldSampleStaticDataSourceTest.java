@@ -1,4 +1,4 @@
-package io.kestros.samples.content.dialogfieldtest;
+package io.kestros.samples.content.dialogfieldsample;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -26,14 +26,14 @@ import org.junit.Rule;
 import org.junit.Test;
 
 /**
- * Unit tests for DialogFieldTestStaticDataSource.
+ * Unit tests for DialogFieldSampleStaticDataSource.
  */
-public class DialogFieldTestStaticDataSourceTest {
+public class DialogFieldSampleStaticDataSourceTest {
 
   @Rule
   public SlingContext context = new SlingContext();
 
-  private DialogFieldTestStaticDataSource dataSource;
+  private DialogFieldSampleStaticDataSource dataSource;
   private Map<String, Object> properties;
 
   @Before
@@ -64,13 +64,13 @@ public class DialogFieldTestStaticDataSourceTest {
     context.registerService(ThemeRetrievalService.class, themeRetrievalService);
 
     properties = new HashMap<>();
-    properties.put("sling:resourceType", KestrosDialogFieldTest.RESOURCE_TYPE);
+    properties.put("sling:resourceType", KestrosDialogFieldSample.RESOURCE_TYPE);
   }
 
-  private DialogFieldTestStaticDataSource adaptResource(Map<String, Object> props) {
-    Resource resource = context.create().resource("/content/dialog-field-test", props);
+  private DialogFieldSampleStaticDataSource adaptResource(Map<String, Object> props) {
+    Resource resource = context.create().resource("/content/dialog-field-sample", props);
     context.request().setResource(resource);
-    return context.request().adaptTo(DialogFieldTestStaticDataSource.class);
+    return context.request().adaptTo(DialogFieldSampleStaticDataSource.class);
   }
 
   @Test

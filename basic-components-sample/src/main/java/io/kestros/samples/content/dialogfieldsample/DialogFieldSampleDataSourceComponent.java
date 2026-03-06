@@ -1,4 +1,4 @@
-package io.kestros.samples.content.dialogfieldtest;
+package io.kestros.samples.content.dialogfieldsample;
 
 import io.kestros.cms.components.basic.core.BaseDataSourceComponent;
 import javax.annotation.Nullable;
@@ -6,13 +6,13 @@ import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.models.annotations.Model;
 
 /**
- * Rendering context class for the Dialog Field Test component.
+ * Rendering context class for the Dialog Field Sample component.
  * Delegates to the datasource for each field value.
  */
 @Model(adaptables = SlingHttpServletRequest.class)
-public class DialogFieldTestDataSourceComponent
-    extends BaseDataSourceComponent<KestrosDialogFieldTest>
-    implements KestrosDialogFieldTest {
+public class DialogFieldSampleDataSourceComponent
+    extends BaseDataSourceComponent<KestrosDialogFieldSample>
+    implements KestrosDialogFieldSample {
 
   @Override
   @Nullable
