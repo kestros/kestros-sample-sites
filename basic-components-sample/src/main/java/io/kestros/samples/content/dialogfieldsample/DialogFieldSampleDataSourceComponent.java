@@ -1,15 +1,17 @@
 package io.kestros.samples.content.dialogfieldsample;
 
 import io.kestros.cms.components.basic.core.BaseDataSourceComponent;
+import java.util.List;
 import javax.annotation.Nullable;
 import org.apache.sling.api.SlingHttpServletRequest;
+import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 
 /**
  * Rendering context class for the Dialog Field Sample component.
  * Delegates to the datasource for each field value.
  */
-@Model(adaptables = SlingHttpServletRequest.class)
+@Model(adaptables = {SlingHttpServletRequest.class, Resource.class})
 public class DialogFieldSampleDataSourceComponent
     extends BaseDataSourceComponent<KestrosDialogFieldSample>
     implements KestrosDialogFieldSample {
@@ -48,6 +50,12 @@ public class DialogFieldSampleDataSourceComponent
   @Nullable
   public String getSampleSelect() {
     return getComponentData().getSampleSelect();
+  }
+
+  @Override
+  @Nullable
+  public List<String> getSampleMultifield() {
+    return getComponentData().getSampleMultifield();
   }
 
   @Override

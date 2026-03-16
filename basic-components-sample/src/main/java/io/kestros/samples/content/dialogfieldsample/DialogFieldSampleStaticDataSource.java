@@ -1,15 +1,18 @@
 package io.kestros.samples.content.dialogfieldsample;
 
 import io.kestros.cms.components.basic.core.BaseSlingModelDataSource;
+import java.util.ArrayList;
+import java.util.List;
 import javax.annotation.Nullable;
 import org.apache.sling.api.SlingHttpServletRequest;
+import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 
 /**
  * Static datasource for the Dialog Field Sample component.
  * Reads property values from the resource ValueMap.
  */
-@Model(adaptables = SlingHttpServletRequest.class)
+@Model(adaptables = {SlingHttpServletRequest.class, Resource.class})
 public class DialogFieldSampleStaticDataSource extends BaseSlingModelDataSource
     implements KestrosDialogFieldSample {
 
@@ -47,6 +50,23 @@ public class DialogFieldSampleStaticDataSource extends BaseSlingModelDataSource
   @Nullable
   public String getSampleSelect() {
     return getResource().getValueMap().get("sampleSelect", String.class);
+  }
+
+  @Override
+  @Nullable
+  public List<String> getSampleMultifield() {
+    Resource multifieldResource = getResource().getChild("sampleMultifield");
+    if (multifieldResource == null) {
+      return new ArrayList<>();
+    }
+    List<String> items = new ArrayList<>();
+    for (Resource child : multifieldResource.getChildren()) {
+      String item = child.getValueMap().get("item", String.class);
+      if (item != null) {
+        items.add(item);
+      }
+    }
+    return items;
   }
 
   @Override

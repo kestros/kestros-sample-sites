@@ -57,7 +57,16 @@
                                     sampleToggle="{Boolean}true"
                                     sampleRadio="radio2"
                                     sampleHidden="hidden-value-123"
-                                    sampleImage="/content/assets/sample-image.png"/>
+                                    sampleImage="/content/assets/sample-image.png">
+                                <sampleMultifield jcr:primaryType="nt:unstructured">
+                                    <item0
+                                            jcr:primaryType="nt:unstructured"
+                                            item="First multifield item"/>
+                                    <item1
+                                            jcr:primaryType="nt:unstructured"
+                                            item="Second multifield item"/>
+                                </sampleMultifield>
+                            </dialog-field-sample>
                         </column-2>
                         <column-3
                                 jcr:primaryType="nt:unstructured"

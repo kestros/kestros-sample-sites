@@ -121,6 +121,8 @@
                     sling:resourceType="kestros/cms2/fields/general/imageassetpicker"
                     label="Image/Asset Picker"
                     name="sampleImage"/>
+            <!-- TODO: Add sampleFileUpload field (kestros/cms2/fields/general/fileupload) once TASK-033 (file upload field type) is complete -->
+            <!-- TODO: Add sampleColorPicker field (kestros/cms2/fields/general/colorpicker) once TASK-034 (color picker field type) is complete -->
         </content>
     </edit>
 </jcr:root>

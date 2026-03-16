@@ -18,6 +18,7 @@ import io.kestros.cms.uiframeworks.api.models.UiFramework;
 import io.kestros.cms.uiframeworks.api.services.ThemeRetrievalService;
 import io.kestros.cms.uiframeworks.api.services.UiFrameworkRetrievalService;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.testing.mock.sling.junit.SlingContext;
@@ -131,6 +132,34 @@ public class DialogFieldSampleStaticDataSourceTest {
   }
 
   @Test
+  public void testGetSampleMultifieldEmpty() {
+    dataSource = adaptResource(properties);
+    assertNotNull(dataSource);
+    List<String> result = dataSource.getSampleMultifield();
+    assertNotNull(result);
+    assertEquals(0, result.size());
+  }
+
+  @Test
+  public void testGetSampleMultifieldWithItems() {
+    Resource resource = context.create().resource("/content/dialog-field-sample-multi", properties);
+    Map<String, Object> item0Props = new HashMap<>();
+    item0Props.put("item", "First Item");
+    context.create().resource("/content/dialog-field-sample-multi/sampleMultifield/item0", item0Props);
+    Map<String, Object> item1Props = new HashMap<>();
+    item1Props.put("item", "Second Item");
+    context.create().resource("/content/dialog-field-sample-multi/sampleMultifield/item1", item1Props);
+    context.request().setResource(resource);
+    dataSource = context.request().adaptTo(DialogFieldSampleStaticDataSource.class);
+    assertNotNull(dataSource);
+    List<String> result = dataSource.getSampleMultifield();
+    assertNotNull(result);
+    assertEquals(2, result.size());
+    assertEquals("First Item", result.get(0));
+    assertEquals("Second Item", result.get(1));
+  }
+
+  @Test
   public void testGetSampleTag() {
     properties.put("sampleTag", "sample-tag");
     dataSource = adaptResource(properties);
@@ -211,6 +240,7 @@ public class DialogFieldSampleStaticDataSourceTest {
     assertTrue(dataSource.getSampleCheckbox());
     assertEquals("/content/test", dataSource.getSamplePath());
     assertEquals("optionA", dataSource.getSampleSelect());
+    assertNotNull(dataSource.getSampleMultifield());
     assertEquals("tag-value", dataSource.getSampleTag());
     assertEquals("99", dataSource.getSampleNumber());
     assertEquals("2026-01-01", dataSource.getSampleDate());

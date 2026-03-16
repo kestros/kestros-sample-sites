@@ -1,6 +1,7 @@
 package io.kestros.samples.content.dialogfieldsample;
 
 import io.kestros.cms.components.basic.api.KestrosBasicComponentElement;
+import java.util.List;
 import javax.annotation.Nullable;
 
 /**
@@ -33,6 +34,9 @@ public interface KestrosDialogFieldSample extends KestrosBasicComponentElement {
 
   @Nullable
   String getSampleSelect();
+
+  @Nullable
+  List<String> getSampleMultifield();
 
   @Nullable
   String getSampleTag();
