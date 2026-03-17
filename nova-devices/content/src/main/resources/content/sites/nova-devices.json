@@ -1,0 +1,60 @@
+{
+  "jcr:primaryType": "kes:Site",
+  "jcr:content": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "kestros/commons/components/kestros-base-page",
+    "kes:theme": "/etc/ui-frameworks/nova-framework/versions/0.1.0/themes/default",
+    "jcr:title": "Nova Devices",
+    "publicationStrategy": "kestros-single-instance",
+    "header": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/inherited-content-area"
+    },
+    "main": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/content-area",
+      "hero-section": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/commons/components/structure/section",
+        "kes:layout": "parallax",
+        "heading": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/heading",
+          "level": "h1",
+          "text": "Nova Devices"
+        },
+        "subheading": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/text",
+          "text": "Engineered for Excellence. Designed for Life."
+        },
+        "cta": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/button-group",
+          "button-1": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "kestros/commons/components/content/button",
+            "text": "Shop Now",
+            "link": "https://example.com"
+          },
+          "button-2": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "kestros/commons/components/content/button",
+            "text": "Learn More",
+            "link": "https://example.com"
+          }
+        },
+        "hero-image": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/image",
+          "src": "TODO: [nova-devices hero banner product lineup]"
+        }
+      }
+    },
+    "footer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/inherited-content-area",
+      "reset": true
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "jcr:primaryType": "kes:Page",
+  "jcr:content": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "kestros/commons/components/kestros-base-page",
+    "jcr:title": "About",
+    "kes:template": "/apps/nova-devices/templates/nova-devices-base-page",
+    "header": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/inherited-content-area"
+    },
+    "main": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/content-area",
+      "page-intro": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/commons/components/structure/section",
+        "page-heading": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/heading",
+          "level": "h1",
+          "text": "About Nova Devices"
+        },
+        "intro-text": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/text",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis molestie pretium placerat."
+        }
+      },
+      "mission-section": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/commons/components/structure/section",
+        "mission-heading": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/heading",
+          "level": "h2",
+          "text": "Our Mission"
+        },
+        "mission-text": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/text",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis."
+        },
+        "mission-text-2": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/text",
+          "text": "Ut consequat semper viverra. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus."
+        }
+      },
+      "values-section": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/commons/components/structure/section",
+        "values-heading": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/heading",
+          "level": "h2",
+          "text": "What We Stand For"
+        },
+        "values-text": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/text",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti."
+        },
+        "learn-more-link": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/link",
+          "text": "Learn More About Nova",
+          "href": "https://example.com"
+        }
+      }
+    },
+    "footer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/inherited-content-area",
+      "reset": true
+    }
+  }
+}

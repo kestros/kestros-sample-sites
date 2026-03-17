@@ -1,0 +1,90 @@
+{
+  "jcr:primaryType": "kes:Page",
+  "jcr:content": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "kestros/commons/components/kestros-base-page",
+    "jcr:title": "Nova S2",
+    "kes:template": "/apps/nova-devices/templates/nova-devices-base-page",
+    "header": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/inherited-content-area"
+    },
+    "main": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/content-area",
+      "hero-section": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/commons/components/structure/section",
+        "hero-heading": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/heading",
+          "level": "h1",
+          "text": "Nova S2"
+        },
+        "hero-tagline": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/heading",
+          "level": "h2",
+          "text": "Compact. Powerful. Yours."
+        },
+        "hero-image": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/image",
+          "src": "TODO: [nova-s2 hero product shot sleek compact design]"
+        }
+      },
+      "legacy-layout-section": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/commons/components/structure/section",
+        "kes:vendorLibraryVersion": "nova-css/0.1.0",
+        "section-heading": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/heading",
+          "level": "h2",
+          "text": "Everything You Need"
+        },
+        "section-text": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/text",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        },
+        "product-image": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/image",
+          "src": "TODO: [nova-s2 features detail shot in hand]"
+        }
+      },
+      "details-section": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/commons/components/structure/section",
+        "details-heading": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/heading",
+          "level": "h2",
+          "text": "Made to Last"
+        },
+        "details-text": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/text",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet."
+        },
+        "details-text-2": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/text",
+          "text": "Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla."
+        },
+        "buy-button": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/button",
+          "text": "Buy Nova S2",
+          "link": "https://example.com"
+        }
+      }
+    },
+    "footer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/inherited-content-area",
+      "reset": true
+    }
+  }
+}
