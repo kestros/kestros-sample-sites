@@ -89,9 +89,9 @@
                 <configuration>
                     <instructions>
                         <Sling-Initial-Content>
-                            /libs/kestros/samples/signal-conf;overwrite:=true;path:=/libs/kestros/samples/signal-conf,
-                            /content/sites;overwrite:=true;path:=/content/sites
+                            /libs/kestros/samples/signal-conf;overwrite:=true;path:=/libs/kestros/samples/signal-conf
                         </Sling-Initial-Content>
+                        <Sling-Model-Packages>io.kestros.samples.signalconf</Sling-Model-Packages>
                     </instructions>
                 </configuration>
             </plugin>
