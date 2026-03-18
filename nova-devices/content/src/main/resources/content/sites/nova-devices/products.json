@@ -18,8 +18,8 @@
         "page-heading": {
           "jcr:primaryType": "nt:unstructured",
           "sling:resourceType": "kestros/commons/components/content/heading",
-          "level": "h1",
-          "text": "Our Products"
+          "headingType": "h1",
+          "headingText": "Our Products"
         },
         "page-intro-text": {
           "jcr:primaryType": "nt:unstructured",

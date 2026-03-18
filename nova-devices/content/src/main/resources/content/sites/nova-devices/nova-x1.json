@@ -18,14 +18,14 @@
         "hero-heading": {
           "jcr:primaryType": "nt:unstructured",
           "sling:resourceType": "kestros/commons/components/content/heading",
-          "level": "h1",
-          "text": "Nova X1"
+          "headingType": "h1",
+          "headingText": "Nova X1"
         },
         "hero-tagline": {
           "jcr:primaryType": "nt:unstructured",
           "sling:resourceType": "kestros/commons/components/content/heading",
-          "level": "h2",
-          "text": "Engineered for Excellence"
+          "headingType": "h2",
+          "headingText": "Engineered for Excellence"
         },
         "hero-image": {
           "jcr:primaryType": "nt:unstructured",
@@ -55,8 +55,8 @@
             "overview-heading": {
               "jcr:primaryType": "nt:unstructured",
               "sling:resourceType": "kestros/commons/components/content/heading",
-              "level": "h3",
-              "text": "Pro-Grade. Every Day."
+              "headingType": "h3",
+              "headingText": "Pro-Grade. Every Day."
             },
             "overview-text": {
               "jcr:primaryType": "nt:unstructured",
@@ -72,7 +72,7 @@
               "jcr:primaryType": "nt:unstructured",
               "sling:resourceType": "kestros/commons/components/content/button",
               "text": "Buy Nova X1",
-              "link": "https://example.com"
+              "href": "https://example.com"
             }
           }
         }
@@ -83,8 +83,8 @@
         "video-heading": {
           "jcr:primaryType": "nt:unstructured",
           "sling:resourceType": "kestros/commons/components/content/heading",
-          "level": "h2",
-          "text": "See It in Action"
+          "headingType": "h2",
+          "headingText": "See It in Action"
         },
         "product-video": {
           "jcr:primaryType": "nt:unstructured",
@@ -99,8 +99,8 @@
         "specs-heading": {
           "jcr:primaryType": "nt:unstructured",
           "sling:resourceType": "kestros/commons/components/content/heading",
-          "level": "h2",
-          "text": "Technical Specifications"
+          "headingType": "h2",
+          "headingText": "Technical Specifications"
         },
         "specs-grid": {
           "jcr:primaryType": "nt:unstructured",
@@ -112,8 +112,8 @@
             "spec-heading": {
               "jcr:primaryType": "nt:unstructured",
               "sling:resourceType": "kestros/commons/components/content/heading",
-              "level": "h4",
-              "text": "Display"
+              "headingType": "h4",
+              "headingText": "Display"
             },
             "spec-text": {
               "jcr:primaryType": "nt:unstructured",
@@ -127,8 +127,8 @@
             "spec-heading": {
               "jcr:primaryType": "nt:unstructured",
               "sling:resourceType": "kestros/commons/components/content/heading",
-              "level": "h4",
-              "text": "Camera"
+              "headingType": "h4",
+              "headingText": "Camera"
             },
             "spec-text": {
               "jcr:primaryType": "nt:unstructured",
@@ -142,8 +142,8 @@
             "spec-heading": {
               "jcr:primaryType": "nt:unstructured",
               "sling:resourceType": "kestros/commons/components/content/heading",
-              "level": "h4",
-              "text": "Battery"
+              "headingType": "h4",
+              "headingText": "Battery"
             },
             "spec-text": {
               "jcr:primaryType": "nt:unstructured",
