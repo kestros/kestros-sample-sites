@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    sling:resourceType="kestros/cms2/dialog">
+    <content
+        jcr:primaryType="nt:unstructured">
+
+        <text-required
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="kestros/cms2/fields/general/textfield"
+            label="Text (Required)"
+            name="textRequired"
+            required="{Boolean}true"/>
+        <text-optional
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="kestros/cms2/fields/general/textfield"
+            label="Text (Optional)"
+            name="textOptional"
+            required="{Boolean}false"/>
+        <text-disabled
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="kestros/cms2/fields/general/textfield"
+            label="Text (Disabled)"
+            name="textDisabled"
+            required="{Boolean}false"
+            disabled="{Boolean}true"/>
+
+        <textarea-standard
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="kestros/cms2/fields/general/textarea"
+            label="Textarea"
+            name="textareaValue"
+            required="{Boolean}false"/>
+        <textarea-required
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="kestros/cms2/fields/general/textarea"
+            label="Textarea (Required)"
+            name="textareaRequired"
+            required="{Boolean}true"/>
+
+        <checkbox-standard
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="kestros/cms2/fields/general/checkbox"
+            label="Checkbox"
+            name="checkboxValue"
+            required="{Boolean}false"/>
+        <checkbox-disabled
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="kestros/cms2/fields/general/checkbox"
+            label="Checkbox (Disabled)"
+            name="checkboxDisabled"
+            required="{Boolean}false"
+            disabled="{Boolean}true"/>
+
+        <select-standard
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="kestros/cms2/fields/general/selectfield"
+            label="Select"
+            name="selectValue"
+            required="{Boolean}false">
+            <options jcr:primaryType="nt:unstructured">
+                <option-a
+                    jcr:primaryType="nt:unstructured"
+                    text="Option A"
+                    value="a"
+                    selected="{Boolean}true"/>
+                <option-b
+                    jcr:primaryType="nt:unstructured"
+                    text="Option B"
+                    value="b"
+                    selected="{Boolean}false"/>
+                <option-c
+                    jcr:primaryType="nt:unstructured"
+                    text="Option C"
+                    value="c"
+                    selected="{Boolean}false"/>
+            </options>
+        </select-standard>
+        <select-required
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="kestros/cms2/fields/general/selectfield"
+            label="Select (Required)"
+            name="selectRequired"
+            required="{Boolean}true">
+            <options jcr:primaryType="nt:unstructured">
+                <option-x
+                    jcr:primaryType="nt:unstructured"
+                    text="Option X"
+                    value="x"
+                    selected="{Boolean}true"/>
+                <option-y
+                    jcr:primaryType="nt:unstructured"
+                    text="Option Y"
+                    value="y"
+                    selected="{Boolean}false"/>
+            </options>
+        </select-required>
+
+        <pathfield-standard
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="kestros/cms2/fields/general/pathfield"
+            label="Path (Asset)"
+            name="assetPath"
+            required="{Boolean}false"/>
+        <pathfield-page
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="kestros/cms2/fields/general/pathfield"
+            label="Path (Page, Required)"
+            name="pagePath"
+            required="{Boolean}true"/>
+
+        <number-standard
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="kestros/cms2/fields/general/numberfield"
+            label="Number"
+            name="numberValue"
+            required="{Boolean}false"/>
+        <number-required
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="kestros/cms2/fields/general/numberfield"
+            label="Number (Required)"
+            name="numberRequired"
+            required="{Boolean}true"/>
+
+        <date-standard
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="kestros/cms2/fields/general/datefield"
+            label="Date"
+            name="dateValue"
+            required="{Boolean}false"/>
+
+        <datetime-standard
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="kestros/cms2/fields/general/datetimefield"
+            label="Date + Time"
+            name="datetimeValue"
+            required="{Boolean}false"/>
+
+        <hidden-standard
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="kestros/cms2/fields/general/hiddenfield"
+            label="Hidden"
+            name="hiddenValue"
+            required="{Boolean}false"/>
+
+        <toggle-standard
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="kestros/cms2/fields/general/togglefield"
+            label="Toggle"
+            name="toggleValue"
+            required="{Boolean}false"/>
+        <toggle-disabled
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="kestros/cms2/fields/general/togglefield"
+            label="Toggle (Disabled)"
+            name="toggleDisabled"
+            required="{Boolean}false"
+            disabled="{Boolean}true"/>
+
+        <radiogroup-standard
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="kestros/cms2/fields/general/radiogroup"
+            label="Radio Group"
+            name="radioValue"
+            required="{Boolean}false">
+            <options jcr:primaryType="nt:unstructured">
+                <radio-a
+                    jcr:primaryType="nt:unstructured"
+                    text="Radio A"
+                    value="a"
+                    selected="{Boolean}true"/>
+                <radio-b
+                    jcr:primaryType="nt:unstructured"
+                    text="Radio B"
+                    value="b"
+                    selected="{Boolean}false"/>
+                <radio-c
+                    jcr:primaryType="nt:unstructured"
+                    text="Radio C"
+                    value="c"
+                    selected="{Boolean}false"/>
+            </options>
+        </radiogroup-standard>
+        <radiogroup-required
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="kestros/cms2/fields/general/radiogroup"
+            label="Radio Group (Required)"
+            name="radioRequired"
+            required="{Boolean}true">
+            <options jcr:primaryType="nt:unstructured">
+                <radio-x
+                    jcr:primaryType="nt:unstructured"
+                    text="Radio X"
+                    value="x"
+                    selected="{Boolean}false"/>
+                <radio-y
+                    jcr:primaryType="nt:unstructured"
+                    text="Radio Y"
+                    value="y"
+                    selected="{Boolean}false"/>
+            </options>
+        </radiogroup-required>
+
+        <tagfield-standard
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="kestros/cms2/fields/general/tagfield"
+            label="Tag Field"
+            name="tagValue"
+            required="{Boolean}false"/>
+
+        <richtext-standard
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="kestros/cms2/fields/general/richtext"
+            label="Rich Text"
+            name="richTextValue"
+            required="{Boolean}false"/>
+
+    </content>
+</jcr:root>
