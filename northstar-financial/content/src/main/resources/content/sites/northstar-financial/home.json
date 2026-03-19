@@ -1,0 +1,84 @@
+{
+  "jcr:primaryType": "kes:Page",
+  "jcr:content": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "kestros/commons/components/kestros-base-page",
+    "jcr:title": "Home",
+    "main": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/content-area",
+      "hero-section": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "/libs/kestros/commons/components/structure/section",
+        "variations": "[]",
+        "hero-image": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/content/image",
+          "src": "TODO: [northstar-financial hero — aerial view of a modern city skyline at dawn with golden light]"
+        },
+        "heading": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/content/heading",
+          "level": "h1",
+          "text": "Your Financial Future, Clearly Mapped",
+          "variations": "[]"
+        },
+        "text": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/content/text",
+          "text": "Northstar Financial partners with individuals and families to build lasting wealth through disciplined planning and transparent advice."
+        },
+        "cta-buttons": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/content/button-group",
+          "button-1": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "/libs/kestros/commons/components/content/button",
+            "text": "Our Services",
+            "href": "/content/sites/northstar-financial/services.html"
+          },
+          "button-2": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "/libs/kestros/commons/components/content/button",
+            "text": "Schedule a Consultation",
+            "href": "/content/sites/northstar-financial/contact.html"
+          }
+        }
+      },
+      "trust-section": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "/libs/kestros/commons/components/structure/section",
+        "variations": "[]",
+        "heading": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/content/heading",
+          "level": "h2",
+          "text": "Trusted by Families Across the Region",
+          "variations": "[]"
+        },
+        "grid": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/structure/grid",
+          "card-1": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "/libs/kestros/commons/components/content/card",
+            "title": "Fee-Only Advisory",
+            "text": "We earn fees from you, not commissions from product sales. Our interests are aligned with yours."
+          },
+          "card-2": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "/libs/kestros/commons/components/content/card",
+            "title": "Holistic Planning",
+            "text": "Investment management is just one piece. We integrate tax, estate, insurance, and retirement into a unified plan."
+          },
+          "card-3": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "/libs/kestros/commons/components/content/card",
+            "title": "Long-Term Perspective",
+            "text": "Markets fluctuate. Your goals do not. We build portfolios that stay the course."
+          }
+        }
+      }
+    }
+  }
+}
