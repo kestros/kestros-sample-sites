@@ -1,65 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
-          xmlns:kes="http://kestros.io"
+          xmlns:kes="http://kestros.io/kes/1.0"
           xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
           xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
-          jcr:primaryType="kes:Site"
-          jcr:title="Signal Conf"
-          jcr:description="Signal Conference sample site demonstrating custom datasources">
+          jcr:primaryType="kes:Site">
     <jcr:content
             jcr:primaryType="nt:unstructured"
             jcr:title="Signal Conf"
-            jcr:description="Signal Conference sample site"/>
-    <presenters
-            jcr:primaryType="kes:Page"
-            jcr:title="Presenters">
-        <jcr:content
+            jcr:description="Signal Conference — a full conference site built on UIkit"
+            kes:theme="/etc/ui-frameworks/ui-kit/versions/0.0.1/themes/default"
+            sling:resourceType="kestros/commons/components/kestros-base-page"
+            publicationStrategy="kestros-single-instance">
+        <header
                 jcr:primaryType="nt:unstructured"
-                jcr:title="Presenters"
-                jcr:description="Conference presenters">
-            <card-list
+                sling:resourceType="kestros/commons/components/inherited-content-area">
+            <container
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="/libs/kestros/commons/components/lists/card-list"
-                    kes:datasource="presenters"
-                    pagesPath="/content/sites/signal-conf/presenters"
-                    readMoreText="View Sessions"/>
-        </jcr:content>
-        <alice-smith
-                jcr:primaryType="kes:Page"
-                jcr:title="Alice Smith">
-            <jcr:content
-                    jcr:primaryType="nt:unstructured"
-                    jcr:title="Alice Smith"
-                    jcr:description="Senior Developer">
-                <button-group
+                    sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    elementType="header">
+                <section
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="/libs/kestros/commons/components/content/button-group"
-                        kes:datasource="presenter-sessions"
-                        sessionsPath="/content/sites/signal-conf/sessions"/>
-            </jcr:content>
-        </alice-smith>
-        <bob-jones
-                jcr:primaryType="kes:Page"
-                jcr:title="Bob Jones">
-            <jcr:content
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                        variations="[]">
+                    <page-title
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/page-title"
+                            level="h1"
+                            variations="[]"/>
+                    <navigation
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/navigation"
+                            variations="[]"/>
+                </section>
+            </container>
+        </header>
+        <main
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/content-area">
+            <section
                     jcr:primaryType="nt:unstructured"
-                    jcr:title="Bob Jones"
-                    jcr:description="Lead Architect">
-                <button-group
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    variations="[]">
+                <container
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="/libs/kestros/commons/components/content/button-group"
-                        kes:datasource="presenter-sessions"
-                        sessionsPath="/content/sites/signal-conf/sessions"/>
-            </jcr:content>
-        </bob-jones>
-    </presenters>
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main"
+                        variations="[]">
+                    <inherited-content-area
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/inherited-content-area">
+                        <breadcrumbs
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/breadcrumbs"
+                                variations="[]"/>
+                    </inherited-content-area>
+                </container>
+            </section>
+        </main>
+        <footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area">
+            <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    elementType="footer">
+                <section
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                        variations="[]">
+                    <heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            level="h3"
+                            text="Signal Conf"
+                            variations="[]"/>
+                    <text
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="A Kestros CMS sample conference site built on UIkit."
+                            variations="[]"/>
+                </section>
+            </container>
+        </footer>
+    </jcr:content>
     <sessions
             jcr:primaryType="kes:Page"
             jcr:title="Sessions">
         <jcr:content
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Sessions"
-                jcr:description="Conference sessions"/>
+                jcr:description="Browse all conference sessions"
+                sling:resourceType="kestros/commons/components/kestros-base-page">
+            <main
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/content-area">
+                <section
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                        variations="[]">
+                    <container
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                            elementType="main"
+                            variations="[]">
+                        <heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                level="h2"
+                                text="Conference Sessions"
+                                variations="[]"/>
+                        <card-list
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/lists/card-list"
+                                kes:datasource="presenter-sessions"
+                                pagesPath="/content/sites/signal-conf/sessions"
+                                readMoreText="View Session"/>
+                    </container>
+                </section>
+            </main>
+        </jcr:content>
         <intro-to-sling
                 jcr:primaryType="kes:Page"
                 jcr:title="Introduction to Sling">
@@ -69,14 +128,41 @@
                     jcr:description="Learn the basics of Apache Sling"
                     sessionTime="9:00 AM"
                     presenterName="Alice Smith"
-                    presenterPath="/content/sites/signal-conf/presenters/alice-smith"
-                    kes:tags="[/etc/tags/signal-conf/day-1,/etc/tags/signal-conf/topic/sling]">
-                <related-sessions
+                    presenterPath="/content/sites/signal-conf/speakers/alice-smith"
+                    kes:tags="[/etc/tags/signal-conf/day-1,/etc/tags/signal-conf/topic/sling]"
+                    sling:resourceType="kestros/commons/components/kestros-base-page">
+                <main
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="/libs/kestros/commons/components/lists/card-list"
-                        kes:datasource="tag-search"
-                        pagesPath="/content/sites/signal-conf/sessions"
-                        readMoreText="View Session"/>
+                        sling:resourceType="kestros/commons/components/content-area">
+                    <section
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                            variations="[]">
+                        <container
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                                elementType="main"
+                                variations="[]">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h2"
+                                    text="Introduction to Sling"
+                                    variations="[]"/>
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Learn the basics of Apache Sling in this introductory session."
+                                    variations="[]"/>
+                            <related-sessions
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/lists/card-list"
+                                    kes:datasource="tag-search"
+                                    pagesPath="/content/sites/signal-conf/sessions"
+                                    readMoreText="View Session"/>
+                        </container>
+                    </section>
+                </main>
             </jcr:content>
         </intro-to-sling>
         <advanced-htl
@@ -88,14 +174,41 @@
                     jcr:description="Deep dive into HTL templating"
                     sessionTime="11:00 AM"
                     presenterName="Bob Jones"
-                    presenterPath="/content/sites/signal-conf/presenters/bob-jones"
-                    kes:tags="[/etc/tags/signal-conf/day-1,/etc/tags/signal-conf/topic/htl]">
-                <related-sessions
+                    presenterPath="/content/sites/signal-conf/speakers/bob-jones"
+                    kes:tags="[/etc/tags/signal-conf/day-1,/etc/tags/signal-conf/topic/htl]"
+                    sling:resourceType="kestros/commons/components/kestros-base-page">
+                <main
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="/libs/kestros/commons/components/lists/card-list"
-                        kes:datasource="tag-search"
-                        pagesPath="/content/sites/signal-conf/sessions"
-                        readMoreText="View Session"/>
+                        sling:resourceType="kestros/commons/components/content-area">
+                    <section
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                            variations="[]">
+                        <container
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                                elementType="main"
+                                variations="[]">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h2"
+                                    text="Advanced HTL Techniques"
+                                    variations="[]"/>
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="A deep dive into advanced Sling HTL templating patterns and best practices."
+                                    variations="[]"/>
+                            <related-sessions
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/lists/card-list"
+                                    kes:datasource="tag-search"
+                                    pagesPath="/content/sites/signal-conf/sessions"
+                                    readMoreText="View Session"/>
+                        </container>
+                    </section>
+                </main>
             </jcr:content>
         </advanced-htl>
         <osgi-services
@@ -107,36 +220,588 @@
                     jcr:description="Understanding OSGi service patterns"
                     sessionTime="2:00 PM"
                     presenterName="Alice Smith"
-                    presenterPath="/content/sites/signal-conf/presenters/alice-smith"
-                    kes:tags="[/etc/tags/signal-conf/day-2,/etc/tags/signal-conf/topic/sling]">
-                <related-sessions
+                    presenterPath="/content/sites/signal-conf/speakers/alice-smith"
+                    kes:tags="[/etc/tags/signal-conf/day-2,/etc/tags/signal-conf/topic/sling]"
+                    sling:resourceType="kestros/commons/components/kestros-base-page">
+                <main
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="/libs/kestros/commons/components/lists/card-list"
-                        kes:datasource="tag-search"
-                        pagesPath="/content/sites/signal-conf/sessions"
-                        readMoreText="View Session"/>
+                        sling:resourceType="kestros/commons/components/content-area">
+                    <section
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                            variations="[]">
+                        <container
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                                elementType="main"
+                                variations="[]">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h2"
+                                    text="OSGi Services Deep Dive"
+                                    variations="[]"/>
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Understanding OSGi service patterns and best practices in a Kestros/Sling context."
+                                    variations="[]"/>
+                            <related-sessions
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/lists/card-list"
+                                    kes:datasource="tag-search"
+                                    pagesPath="/content/sites/signal-conf/sessions"
+                                    readMoreText="View Session"/>
+                        </container>
+                    </section>
+                </main>
             </jcr:content>
         </osgi-services>
+        <jcr-content-modeling
+                jcr:primaryType="kes:Page"
+                jcr:title="JCR Content Modeling">
+            <jcr:content
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="JCR Content Modeling"
+                    jcr:description="Best practices for modeling content in Apache Jackrabbit"
+                    sessionTime="10:00 AM"
+                    presenterName="Carol White"
+                    presenterPath="/content/sites/signal-conf/speakers/carol-white"
+                    kes:tags="[/etc/tags/signal-conf/day-2,/etc/tags/signal-conf/topic/jcr]"
+                    sling:resourceType="kestros/commons/components/kestros-base-page">
+                <main
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/content-area">
+                    <section
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                            variations="[]">
+                        <container
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                                elementType="main"
+                                variations="[]">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h2"
+                                    text="JCR Content Modeling"
+                                    variations="[]"/>
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Best practices for structuring and modeling content in Apache Jackrabbit JCR repositories."
+                                    variations="[]"/>
+                        </container>
+                    </section>
+                </main>
+            </jcr:content>
+        </jcr-content-modeling>
     </sessions>
+    <speakers
+            jcr:primaryType="kes:Page"
+            jcr:title="Speakers">
+        <jcr:content
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Speakers"
+                jcr:description="Conference speakers and presenters"
+                sling:resourceType="kestros/commons/components/kestros-base-page">
+            <main
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/content-area">
+                <section
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                        variations="[]">
+                    <container
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                            elementType="main"
+                            variations="[]">
+                        <heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                level="h2"
+                                text="Our Speakers"
+                                variations="[]"/>
+                        <card-list
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/lists/card-list"
+                                kes:datasource="presenters"
+                                pagesPath="/content/sites/signal-conf/speakers"
+                                readMoreText="View Sessions"/>
+                    </container>
+                </section>
+            </main>
+        </jcr:content>
+        <alice-smith
+                jcr:primaryType="kes:Page"
+                jcr:title="Alice Smith">
+            <jcr:content
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Alice Smith"
+                    jcr:description="Senior Developer and Sling expert"
+                    sling:resourceType="kestros/commons/components/kestros-base-page">
+                <main
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/content-area">
+                    <section
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                            variations="[]">
+                        <container
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                                elementType="main"
+                                variations="[]">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h2"
+                                    text="Alice Smith"
+                                    variations="[]"/>
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Senior Developer specializing in Apache Sling and OSGi services."
+                                    variations="[]"/>
+                            <button-group
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/button-group"
+                                    kes:datasource="presenter-sessions"
+                                    sessionsPath="/content/sites/signal-conf/sessions"/>
+                        </container>
+                    </section>
+                </main>
+            </jcr:content>
+        </alice-smith>
+        <bob-jones
+                jcr:primaryType="kes:Page"
+                jcr:title="Bob Jones">
+            <jcr:content
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Bob Jones"
+                    jcr:description="Lead Architect and HTL specialist"
+                    sling:resourceType="kestros/commons/components/kestros-base-page">
+                <main
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/content-area">
+                    <section
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                            variations="[]">
+                        <container
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                                elementType="main"
+                                variations="[]">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h2"
+                                    text="Bob Jones"
+                                    variations="[]"/>
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Lead Architect with deep expertise in HTL templating and Kestros component design."
+                                    variations="[]"/>
+                            <button-group
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/button-group"
+                                    kes:datasource="presenter-sessions"
+                                    sessionsPath="/content/sites/signal-conf/sessions"/>
+                        </container>
+                    </section>
+                </main>
+            </jcr:content>
+        </bob-jones>
+        <carol-white
+                jcr:primaryType="kes:Page"
+                jcr:title="Carol White">
+            <jcr:content
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Carol White"
+                    jcr:description="JCR Content Modeling expert"
+                    sling:resourceType="kestros/commons/components/kestros-base-page">
+                <main
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/content-area">
+                    <section
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                            variations="[]">
+                        <container
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                                elementType="main"
+                                variations="[]">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h2"
+                                    text="Carol White"
+                                    variations="[]"/>
+                            <text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="JCR Content Modeling expert with years of experience designing Jackrabbit repository structures."
+                                    variations="[]"/>
+                            <button-group
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/button-group"
+                                    kes:datasource="presenter-sessions"
+                                    sessionsPath="/content/sites/signal-conf/sessions"/>
+                        </container>
+                    </section>
+                </main>
+            </jcr:content>
+        </carol-white>
+    </speakers>
+    <sponsors
+            jcr:primaryType="kes:Page"
+            jcr:title="Sponsors">
+        <jcr:content
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Sponsors"
+                jcr:description="Signal Conf sponsors and partners"
+                sling:resourceType="kestros/commons/components/kestros-base-page">
+            <main
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/content-area">
+                <section
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                        variations="[]">
+                    <container
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                            elementType="main"
+                            variations="[]">
+                        <heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                level="h2"
+                                text="Our Sponsors"
+                                variations="[]"/>
+                        <text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Signal Conf is made possible by the generous support of our sponsors."
+                                variations="[]"/>
+                        <platinum-heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                level="h3"
+                                text="Platinum Sponsors"
+                                variations="[]"/>
+                        <grid
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/grid"
+                                variations="[]">
+                            <column-1
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="kestros/commons/components/content-area">
+                                <heading
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                        level="h4"
+                                        text="Kestros IO"
+                                        variations="[]"/>
+                                <text
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                                        text="Open-source CMS built on Apache Sling."
+                                        variations="[]"/>
+                                <button
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/libs/kestros/commons/components/content/button"
+                                        href="https://kestros.io"
+                                        label="Visit Kestros"
+                                        text="Visit Kestros"
+                                        variations="[]"/>
+                            </column-1>
+                            <column-2
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="kestros/commons/components/content-area">
+                                <heading
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                        level="h4"
+                                        text="Apache Software Foundation"
+                                        variations="[]"/>
+                                <text
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                                        text="The home of Apache Sling, Jackrabbit, and Felix."
+                                        variations="[]"/>
+                                <button
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/libs/kestros/commons/components/content/button"
+                                        href="https://apache.org"
+                                        label="Visit ASF"
+                                        text="Visit ASF"
+                                        variations="[]"/>
+                            </column-2>
+                        </grid>
+                        <gold-heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                level="h3"
+                                text="Gold Sponsors"
+                                variations="[]"/>
+                        <grid-gold
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/grid"
+                                variations="[]">
+                            <column-1
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="kestros/commons/components/content-area">
+                                <heading
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                        level="h4"
+                                        text="UIkit"
+                                        variations="[]"/>
+                                <text
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                                        text="A lightweight and modular front-end framework."
+                                        variations="[]"/>
+                            </column-1>
+                            <column-2
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="kestros/commons/components/content-area">
+                                <heading
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                        level="h4"
+                                        text="OSGi Alliance"
+                                        variations="[]"/>
+                                <text
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                                        text="The specification body behind the OSGi framework."
+                                        variations="[]"/>
+                            </column-2>
+                        </grid-gold>
+                    </container>
+                </section>
+            </main>
+        </jcr:content>
+    </sponsors>
     <schedule
             jcr:primaryType="kes:Page"
             jcr:title="Schedule">
         <jcr:content
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Schedule"
-                jcr:description="Conference schedule">
-            <day-1-table
+                jcr:description="Conference schedule"
+                sling:resourceType="kestros/commons/components/kestros-base-page">
+            <main
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="/libs/kestros/commons/components/content/table"
-                    kes:datasource="schedule"
-                    sessionsPath="/content/sites/signal-conf/sessions"
-                    dayTag="/etc/tags/signal-conf/day-1"/>
-            <day-2-table
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="/libs/kestros/commons/components/content/table"
-                    kes:datasource="schedule"
-                    sessionsPath="/content/sites/signal-conf/sessions"
-                    dayTag="/etc/tags/signal-conf/day-2"/>
+                    sling:resourceType="kestros/commons/components/content-area">
+                <section
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                        variations="[]">
+                    <container
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                            elementType="main"
+                            variations="[]">
+                        <heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                level="h2"
+                                text="Conference Schedule"
+                                variations="[]"/>
+                        <day-1-heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                level="h3"
+                                text="Day 1"
+                                variations="[]"/>
+                        <day-1-table
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/table"
+                                kes:datasource="schedule"
+                                sessionsPath="/content/sites/signal-conf/sessions"
+                                dayTag="/etc/tags/signal-conf/day-1"/>
+                        <day-2-heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                level="h3"
+                                text="Day 2"
+                                variations="[]"/>
+                        <day-2-table
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/table"
+                                kes:datasource="schedule"
+                                sessionsPath="/content/sites/signal-conf/sessions"
+                                dayTag="/etc/tags/signal-conf/day-2"/>
+                    </container>
+                </section>
+            </main>
         </jcr:content>
     </schedule>
+    <venue
+            jcr:primaryType="kes:Page"
+            jcr:title="Venue">
+        <jcr:content
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Venue"
+                jcr:description="Signal Conf venue and location information"
+                sling:resourceType="kestros/commons/components/kestros-base-page">
+            <main
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/content-area">
+                <section
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                        variations="[]">
+                    <container
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                            elementType="main"
+                            variations="[]">
+                        <heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                level="h2"
+                                text="Conference Venue"
+                                variations="[]"/>
+                        <text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Signal Conf takes place at the Kestros Convention Center, located in the heart of downtown."
+                                variations="[]"/>
+                        <address-heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                level="h3"
+                                text="Address"
+                                variations="[]"/>
+                        <address-text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="123 Sling Avenue, Suite 100, Apache City, CA 94105"
+                                variations="[]"/>
+                        <getting-there-heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                level="h3"
+                                text="Getting There"
+                                variations="[]"/>
+                        <grid
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/grid"
+                                variations="[]">
+                            <column-1
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="kestros/commons/components/content-area">
+                                <heading
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                        level="h4"
+                                        text="By Public Transit"
+                                        variations="[]"/>
+                                <text
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                                        text="Take the Blue Line to Convention Center Station. Exit at Main Street and walk 2 blocks north."
+                                        variations="[]"/>
+                            </column-1>
+                            <column-2
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="kestros/commons/components/content-area">
+                                <heading
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                        level="h4"
+                                        text="By Car"
+                                        variations="[]"/>
+                                <text
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                                        text="Parking is available in the Kestros Convention Center garage at 125 Sling Avenue. Daily rate applies."
+                                        variations="[]"/>
+                            </column-2>
+                            <column-3
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="kestros/commons/components/content-area">
+                                <heading
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                        level="h4"
+                                        text="Nearby Hotels"
+                                        variations="[]"/>
+                                <text
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                                        text="The Jackrabbit Inn (0.2 miles) and Sling Hotel (0.5 miles) offer conference rates. Use code SIGNALCONF at booking."
+                                        variations="[]"/>
+                            </column-3>
+                        </grid>
+                        <rooms-heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                level="h3"
+                                text="Meeting Rooms"
+                                variations="[]"/>
+                        <grid-rooms
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/grid"
+                                variations="[]">
+                            <column-1
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="kestros/commons/components/content-area">
+                                <heading
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                        level="h4"
+                                        text="Main Hall"
+                                        variations="[]"/>
+                                <text
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                                        text="Capacity: 500. Keynotes and main track sessions."
+                                        variations="[]"/>
+                            </column-1>
+                            <column-2
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="kestros/commons/components/content-area">
+                                <heading
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                        level="h4"
+                                        text="Room A — Sling"
+                                        variations="[]"/>
+                                <text
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                                        text="Capacity: 120. Technical breakout sessions."
+                                        variations="[]"/>
+                            </column-2>
+                            <column-3
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="kestros/commons/components/content-area">
+                                <heading
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                        level="h4"
+                                        text="Room B — Felix"
+                                        variations="[]"/>
+                                <text
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                                        text="Capacity: 80. Workshops and hands-on labs."
+                                        variations="[]"/>
+                            </column-3>
+                        </grid-rooms>
+                    </container>
+                </section>
+            </main>
+        </jcr:content>
+    </venue>
 </jcr:root>
