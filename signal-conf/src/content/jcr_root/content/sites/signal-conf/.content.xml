@@ -83,8 +83,7 @@
         </footer>
     </jcr:content>
     <sessions
-            jcr:primaryType="kes:Page"
-            jcr:title="Sessions">
+            jcr:primaryType="kes:Page">
         <jcr:content
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Sessions"
@@ -119,8 +118,7 @@
             </main>
         </jcr:content>
         <intro-to-sling
-                jcr:primaryType="kes:Page"
-                jcr:title="Introduction to Sling">
+                jcr:primaryType="kes:Page">
             <jcr:content
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Introduction to Sling"
@@ -165,8 +163,7 @@
             </jcr:content>
         </intro-to-sling>
         <advanced-htl
-                jcr:primaryType="kes:Page"
-                jcr:title="Advanced HTL Techniques">
+                jcr:primaryType="kes:Page">
             <jcr:content
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Advanced HTL Techniques"
@@ -211,8 +208,7 @@
             </jcr:content>
         </advanced-htl>
         <osgi-services
-                jcr:primaryType="kes:Page"
-                jcr:title="OSGi Services Deep Dive">
+                jcr:primaryType="kes:Page">
             <jcr:content
                     jcr:primaryType="nt:unstructured"
                     jcr:title="OSGi Services Deep Dive"
@@ -257,8 +253,7 @@
             </jcr:content>
         </osgi-services>
         <jcr-content-modeling
-                jcr:primaryType="kes:Page"
-                jcr:title="JCR Content Modeling">
+                jcr:primaryType="kes:Page">
             <jcr:content
                     jcr:primaryType="nt:unstructured"
                     jcr:title="JCR Content Modeling"
@@ -298,8 +293,7 @@
         </jcr-content-modeling>
     </sessions>
     <speakers
-            jcr:primaryType="kes:Page"
-            jcr:title="Speakers">
+            jcr:primaryType="kes:Page">
         <jcr:content
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Speakers"
@@ -334,8 +328,7 @@
             </main>
         </jcr:content>
         <alice-smith
-                jcr:primaryType="kes:Page"
-                jcr:title="Alice Smith">
+                jcr:primaryType="kes:Page">
             <jcr:content
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Alice Smith"
@@ -375,8 +368,7 @@
             </jcr:content>
         </alice-smith>
         <bob-jones
-                jcr:primaryType="kes:Page"
-                jcr:title="Bob Jones">
+                jcr:primaryType="kes:Page">
             <jcr:content
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Bob Jones"
@@ -416,8 +408,7 @@
             </jcr:content>
         </bob-jones>
         <carol-white
-                jcr:primaryType="kes:Page"
-                jcr:title="Carol White">
+                jcr:primaryType="kes:Page">
             <jcr:content
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Carol White"
@@ -458,8 +449,7 @@
         </carol-white>
     </speakers>
     <sponsors
-            jcr:primaryType="kes:Page"
-            jcr:title="Sponsors">
+            jcr:primaryType="kes:Page">
         <jcr:content
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Sponsors"
@@ -590,8 +580,7 @@
         </jcr:content>
     </sponsors>
     <schedule
-            jcr:primaryType="kes:Page"
-            jcr:title="Schedule">
+            jcr:primaryType="kes:Page">
         <jcr:content
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Schedule"
@@ -645,8 +634,7 @@
         </jcr:content>
     </schedule>
     <venue
-            jcr:primaryType="kes:Page"
-            jcr:title="Venue">
+            jcr:primaryType="kes:Page">
         <jcr:content
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Venue"
