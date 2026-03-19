@@ -1,0 +1,51 @@
+{
+  "jcr:primaryType": "kes:Page",
+  "jcr:content": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "kestros/commons/components/kestros-base-page",
+    "jcr:title": "Our Studio",
+    "main": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/content-area",
+      "intro-section": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "/libs/kestros/commons/components/structure/section",
+        "variations": "[]",
+        "heading": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/content/heading",
+          "level": "h1",
+          "text": "About Haven Architecture",
+          "variations": "[]"
+        },
+        "text": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/content/text",
+          "text": "Founded in 2003, Haven Architecture is a multidisciplinary design studio based in the Pacific Northwest. We believe architecture should be grounded in its place — shaped by climate, culture, and community rather than imposed upon them."
+        },
+        "image": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/content/image",
+          "src": "TODO: [haven-architecture team photo — diverse group of architects gathered around a model in a bright, plant-filled studio]"
+        }
+      },
+      "philosophy-section": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "/libs/kestros/commons/components/structure/section",
+        "variations": "[]",
+        "heading": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/content/heading",
+          "level": "h2",
+          "text": "Our Philosophy",
+          "variations": "[]"
+        },
+        "text": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/content/text",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat metus in dui maximus, a congue arcu tincidunt. Nulla facilisi. Donec vel semper turpis, vel consequat purus. Curabitur ac est vel mi condimentum suscipit."
+        }
+      }
+    }
+  }
+}

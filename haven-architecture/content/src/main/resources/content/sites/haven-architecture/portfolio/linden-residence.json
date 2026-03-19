@@ -1,0 +1,53 @@
+{
+  "jcr:primaryType": "kes:Page",
+  "jcr:content": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "kestros/commons/components/kestros-base-page",
+    "jcr:title": "Linden Residence",
+    "jcr:description": "A sustainable family home nestled in a woodland clearing, designed around passive solar principles and local materials.",
+    "tags": ["residential", "sustainable", "new-build"],
+    "main": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/content-area",
+      "hero-section": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "/libs/kestros/commons/components/structure/section",
+        "variations": "[]",
+        "hero-image": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/content/image",
+          "src": "TODO: [linden-residence exterior — timber-clad home surrounded by birch trees with green roof]"
+        },
+        "heading": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/content/heading",
+          "level": "h1",
+          "text": "Linden Residence",
+          "variations": "[]"
+        },
+        "text": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/content/text",
+          "text": "Linden Residence sits gently in a deciduous woodland, its green roof merging with the canopy. Oriented to capture winter sun while shading summer heat, the home achieves near-zero energy use through careful siting, thermal mass, and cross-ventilation."
+        }
+      },
+      "details-section": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "/libs/kestros/commons/components/structure/section",
+        "variations": "[]",
+        "heading": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/content/heading",
+          "level": "h2",
+          "text": "Sustainability Features",
+          "variations": "[]"
+        },
+        "text": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/content/text",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta."
+        }
+      }
+    }
+  }
+}

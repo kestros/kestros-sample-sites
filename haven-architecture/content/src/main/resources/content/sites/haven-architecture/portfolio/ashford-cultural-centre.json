@@ -1,0 +1,46 @@
+{
+  "jcr:primaryType": "kes:Page",
+  "jcr:content": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "kestros/commons/components/kestros-base-page",
+    "jcr:title": "Ashford Cultural Centre",
+    "jcr:description": "A regional arts and education hub combining gallery, library, and performance spaces under a single expressive roof.",
+    "tags": ["cultural", "commercial", "new-build"],
+    "main": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/content-area",
+      "hero-section": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "/libs/kestros/commons/components/structure/section",
+        "variations": "[]",
+        "hero-image": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/content/image",
+          "src": "TODO: [ashford-cultural-centre exterior — angular concrete facade with large glass atrium entrance at dusk]"
+        },
+        "heading": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/content/heading",
+          "level": "h1",
+          "text": "Ashford Cultural Centre",
+          "variations": "[]"
+        },
+        "text": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/content/text",
+          "text": "The Ashford Cultural Centre anchors the town's creative quarter with a sculptural form that draws visitors through layered public spaces — from an open-air courtyard to intimate reading rooms, culminating in a 400-seat performance hall."
+        }
+      },
+      "gallery-section": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "/libs/kestros/commons/components/structure/section",
+        "variations": "[]",
+        "image": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/content/image",
+          "src": "TODO: [ashford-cultural-centre interior atrium — multi-storey void with suspended light installation]"
+        }
+      }
+    }
+  }
+}

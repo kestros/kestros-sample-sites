@@ -1,0 +1,74 @@
+{
+  "jcr:primaryType": "kes:Page",
+  "jcr:content": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "kestros/commons/components/kestros-base-page",
+    "jcr:title": "Services",
+    "main": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/content-area",
+      "intro-section": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "/libs/kestros/commons/components/structure/section",
+        "variations": "[]",
+        "heading": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/content/heading",
+          "level": "h1",
+          "text": "What We Do",
+          "variations": "[]"
+        },
+        "text": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/content/text",
+          "text": "Haven Architecture offers a full spectrum of design services, from initial concept through construction administration."
+        }
+      },
+      "services-grid": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "/libs/kestros/commons/components/structure/section",
+        "variations": "[]",
+        "grid": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/structure/grid",
+          "card-1": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "/libs/kestros/commons/components/content/card",
+            "title": "Residential Design",
+            "text": "Custom homes, renovations, and multi-family dwellings tailored to how you live."
+          },
+          "card-2": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "/libs/kestros/commons/components/content/card",
+            "title": "Commercial Architecture",
+            "text": "Offices, retail, and hospitality spaces that elevate brand and experience."
+          },
+          "card-3": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "/libs/kestros/commons/components/content/card",
+            "title": "Cultural & Civic",
+            "text": "Libraries, galleries, community centres, and public gathering spaces."
+          },
+          "card-4": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "/libs/kestros/commons/components/content/card",
+            "title": "Interior Design",
+            "text": "Material selection, spatial planning, and bespoke furniture for residential and commercial interiors."
+          },
+          "card-5": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "/libs/kestros/commons/components/content/card",
+            "title": "Urban Planning",
+            "text": "Master plans, streetscape design, and placemaking strategies for neighbourhoods and districts."
+          },
+          "card-6": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "/libs/kestros/commons/components/content/card",
+            "title": "Sustainability Consulting",
+            "text": "Passive design strategies, energy modelling, and certification pathways for green buildings."
+          }
+        }
+      }
+    }
+  }
+}

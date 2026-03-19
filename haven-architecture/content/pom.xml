@@ -1,0 +1,105 @@
+<!--
+  ~      Copyright (C) 2020  Kestros, Inc.
+  ~
+  ~     This program is free software: you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation, either version 3 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License
+  ~     along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  ~
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>io.kestros.cms.sample-sites</groupId>
+        <artifactId>haven-architecture-site</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <groupId>io.kestros.cms.sample-sites</groupId>
+    <artifactId>haven-architecture-site-content</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <name>Haven Architecture Site - Content</name>
+    <description>Content bundle for the Haven Architecture sample site</description>
+    <packaging>bundle</packaging>
+
+    <properties>
+        <bundleCategory>kestros</bundleCategory>
+    </properties>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+        </resources>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.rat</groupId>
+                <artifactId>apache-rat-plugin</artifactId>
+                <version>0.13</version>
+                <configuration>
+                    <excludes>
+                        <exclude>target/*</exclude>
+                        <exclude>**/target/*</exclude>
+                        <exclude>**/target/**/*</exclude>
+                        <exclude>**/*.json</exclude>
+                        <exclude>node/**/*</exclude>
+                        <exclude>node_modules/**/*</exclude>
+                        <exclude>**/README.md</exclude>
+                        <exclude>package.json</exclude>
+                        <exclude>package-lock.json</exclude>
+                        <exclude>*-maven-settings.xml</exclude>
+                    </excludes>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <Sling-Initial-Content>
+                            /content/sites/haven-architecture.json;overwrite:=true;path:=/content/sites/haven-architecture,
+                            /content/sites/haven-architecture/home.json;overwrite:=true;path:=/content/sites/haven-architecture/home,
+                            /content/sites/haven-architecture/portfolio.json;overwrite:=true;path:=/content/sites/haven-architecture/portfolio,
+                            /content/sites/haven-architecture/portfolio/meridian-house.json;overwrite:=true;path:=/content/sites/haven-architecture/portfolio/meridian-house,
+                            /content/sites/haven-architecture/portfolio/crestwood-pavilion.json;overwrite:=true;path:=/content/sites/haven-architecture/portfolio/crestwood-pavilion,
+                            /content/sites/haven-architecture/portfolio/ashford-cultural-centre.json;overwrite:=true;path:=/content/sites/haven-architecture/portfolio/ashford-cultural-centre,
+                            /content/sites/haven-architecture/portfolio/blackrock-studio.json;overwrite:=true;path:=/content/sites/haven-architecture/portfolio/blackrock-studio,
+                            /content/sites/haven-architecture/portfolio/linden-residence.json;overwrite:=true;path:=/content/sites/haven-architecture/portfolio/linden-residence,
+                            /content/sites/haven-architecture/portfolio/solano-bridge.json;overwrite:=true;path:=/content/sites/haven-architecture/portfolio/solano-bridge,
+                            /content/sites/haven-architecture/services.json;overwrite:=true;path:=/content/sites/haven-architecture/services,
+                            /content/sites/haven-architecture/studio.json;overwrite:=true;path:=/content/sites/haven-architecture/studio,
+                            /content/sites/haven-architecture/journal.json;overwrite:=true;path:=/content/sites/haven-architecture/journal,
+                            /content/sites/haven-architecture/contact.json;overwrite:=true;path:=/content/sites/haven-architecture/contact,
+                            /content/sites/haven-architecture/tags.json;overwrite:=true;path:=/content/sites/haven-architecture/tags
+                        </Sling-Initial-Content>
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

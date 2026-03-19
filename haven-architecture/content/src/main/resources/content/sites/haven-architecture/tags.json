@@ -1,0 +1,44 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:title": "Tags",
+  "residential": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Residential"
+  },
+  "commercial": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Commercial"
+  },
+  "cultural": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Cultural"
+  },
+  "infrastructure": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Infrastructure"
+  },
+  "interior-design": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Interior Design"
+  },
+  "urban-planning": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Urban Planning"
+  },
+  "renovation": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Renovation"
+  },
+  "new-build": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "New Build"
+  },
+  "sustainable": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Sustainable"
+  },
+  "mixed-use": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Mixed Use"
+  }
+}
