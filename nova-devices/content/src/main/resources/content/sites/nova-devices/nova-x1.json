@@ -1,0 +1,163 @@
+{
+  "jcr:primaryType": "kes:Page",
+  "jcr:content": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "kestros/commons/components/kestros-base-page",
+    "jcr:title": "Nova X1",
+    "kes:template": "/apps/nova-devices/templates/nova-devices-base-page",
+    "header": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/inherited-content-area"
+    },
+    "main": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/content-area",
+      "hero-section": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/commons/components/structure/section",
+        "hero-heading": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/heading",
+          "headingType": "h1",
+          "headingText": "Nova X1"
+        },
+        "hero-tagline": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/heading",
+          "headingType": "h2",
+          "headingText": "Engineered for Excellence"
+        },
+        "hero-image": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/image",
+          "src": "TODO: [nova-x1 hero product shot front and back]"
+        }
+      },
+      "overview-section": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/commons/components/structure/section",
+        "overview-grid": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/structure/grid",
+          "columns": 2,
+          "column-1": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "kestros/commons/components/content-area",
+            "product-image": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content/image",
+              "src": "TODO: [nova-x1 detail lifestyle shot]"
+            }
+          },
+          "column-2": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "kestros/commons/components/content-area",
+            "overview-heading": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content/heading",
+              "headingType": "h3",
+              "headingText": "Pro-Grade. Every Day."
+            },
+            "overview-text": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content/text",
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            },
+            "overview-text-2": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content/text",
+              "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
+            },
+            "cta-button": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content/button",
+              "text": "Buy Nova X1",
+              "href": "https://example.com"
+            }
+          }
+        }
+      },
+      "video-section": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/commons/components/structure/section",
+        "video-heading": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/heading",
+          "headingType": "h2",
+          "headingText": "See It in Action"
+        },
+        "product-video": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/video-embed",
+          "src": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "title": "Nova X1 Official Product Video"
+        }
+      },
+      "specs-section": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/commons/components/structure/section",
+        "specs-heading": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/heading",
+          "headingType": "h2",
+          "headingText": "Technical Specifications"
+        },
+        "specs-grid": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/structure/grid",
+          "columns": 3,
+          "column-1": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "kestros/commons/components/content-area",
+            "spec-heading": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content/heading",
+              "headingType": "h4",
+              "headingText": "Display"
+            },
+            "spec-text": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content/text",
+              "text": "6.7\" Super Retina XDR OLED, 2796 x 1290 resolution, 460 ppi, ProMotion 120Hz"
+            }
+          },
+          "column-2": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "kestros/commons/components/content-area",
+            "spec-heading": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content/heading",
+              "headingType": "h4",
+              "headingText": "Camera"
+            },
+            "spec-text": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content/text",
+              "text": "48MP main, 12MP ultrawide, 12MP 5x telephoto. 4K ProRes video capture."
+            }
+          },
+          "column-3": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "kestros/commons/components/content-area",
+            "spec-heading": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content/heading",
+              "headingType": "h4",
+              "headingText": "Battery"
+            },
+            "spec-text": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content/text",
+              "text": "Up to 29 hours video playback. MagSafe and Qi2 wireless charging supported."
+            }
+          }
+        }
+      }
+    },
+    "footer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/inherited-content-area",
+      "reset": true
+    }
+  }
+}

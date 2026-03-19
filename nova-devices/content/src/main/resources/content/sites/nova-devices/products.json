@@ -1,0 +1,76 @@
+{
+  "jcr:primaryType": "kes:Page",
+  "jcr:content": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "kestros/commons/components/kestros-base-page",
+    "jcr:title": "Products",
+    "kes:template": "/apps/nova-devices/templates/nova-devices-base-page",
+    "header": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/inherited-content-area"
+    },
+    "main": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/content-area",
+      "page-intro": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/commons/components/structure/section",
+        "page-heading": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/heading",
+          "headingType": "h1",
+          "headingText": "Our Products"
+        },
+        "page-intro-text": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/text",
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa cum sociis natoque penatibus."
+        }
+      },
+      "product-grid-section": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/commons/components/structure/section",
+        "product-grid": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/structure/grid",
+          "columns": 2,
+          "column-1": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "kestros/commons/components/content-area",
+            "nova-x1-card": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content/card",
+              "jcr:title": "Nova X1",
+              "jcr:description": "The flagship smartphone engineered for professionals. Featuring a pro-grade camera system, all-day battery, and industry-leading performance.",
+              "image": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "kestros/commons/components/content/image",
+                "src": "TODO: [nova-x1 product card image]"
+              }
+            }
+          },
+          "column-2": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "kestros/commons/components/content-area",
+            "nova-s2-card": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content/card",
+              "jcr:title": "Nova S2",
+              "jcr:description": "The compact powerhouse for everyday excellence. Sleek design meets incredible capability in the palm of your hand.",
+              "image": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "kestros/commons/components/content/image",
+                "src": "TODO: [nova-s2 product card image]"
+              }
+            }
+          }
+        }
+      }
+    },
+    "footer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/inherited-content-area",
+      "reset": true
+    }
+  }
+}
