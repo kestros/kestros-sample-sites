@@ -1,0 +1,6 @@
+{
+  "jcr:primaryType": "kes:ManagedUiFramework",
+  "jcr:title": "Launchpad.io",
+  "jcr:description": "UI Framework for Launchpad.io Sample Site (Bulma)",
+  "kes:uiFrameworkCode": "launchpad-io"
+}
