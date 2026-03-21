@@ -81,7 +81,92 @@
                 </section>
             </container>
         </footer>
+        <dynamic-routes
+                jcr:primaryType="kes:DynamicRoutes">
+            <speaker-route
+                    jcr:primaryType="kes:DynamicRoute"
+                    pattern="speakers/{speaker}"
+                    targetPage="speaker-detail"
+                    parameters="[speaker-slug:speaker]"/>
+            <session-route
+                    jcr:primaryType="kes:DynamicRoute"
+                    pattern="sessions/{session}"
+                    targetPage="session-detail"
+                    parameters="[session-slug:session]"/>
+        </dynamic-routes>
     </jcr:content>
+    <speaker-detail
+            jcr:primaryType="kes:Page">
+        <jcr:content
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Speaker Detail"
+                jcr:description="Dynamic page template for individual speaker profiles"
+                sling:resourceType="kestros/commons/components/kestros-base-page"
+                hideInNavigation="true">
+            <main
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/content-area">
+                <section
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/structure/section"
+                        variations="[]">
+                    <container
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kestros/commons/components/structure/container"
+                            elementType="main"
+                            variations="[]">
+                        <heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content/heading"
+                                headingType="h1"
+                                text="Speaker Detail"
+                                variations="[]"/>
+                        <text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content/text"
+                                text="This page renders dynamically using the speaker-slug parameter from the URL."
+                                variations="[]"/>
+                    </container>
+                </section>
+            </main>
+        </jcr:content>
+    </speaker-detail>
+    <session-detail
+            jcr:primaryType="kes:Page">
+        <jcr:content
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Session Detail"
+                jcr:description="Dynamic page template for individual session details"
+                sling:resourceType="kestros/commons/components/kestros-base-page"
+                hideInNavigation="true">
+            <main
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/content-area">
+                <section
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/structure/section"
+                        variations="[]">
+                    <container
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kestros/commons/components/structure/container"
+                            elementType="main"
+                            variations="[]">
+                        <heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content/heading"
+                                headingType="h1"
+                                text="Session Detail"
+                                variations="[]"/>
+                        <text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content/text"
+                                text="This page renders dynamically using the session-slug parameter from the URL."
+                                variations="[]"/>
+                    </container>
+                </section>
+            </main>
+        </jcr:content>
+    </session-detail>
     <sessions
             jcr:primaryType="kes:Page">
         <jcr:content
