@@ -1,0 +1,126 @@
+{
+  "jcr:primaryType": "kes:Page",
+  "jcr:content": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "kestros/commons/components/kestros-base-page",
+    "jcr:title": "Features",
+    "header": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/inherited-content-area"
+    },
+    "main": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/content-area",
+      "container": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/commons/components/structure/container",
+        "top-navigation": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/structure/top-navigation"
+        },
+        "heading": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/heading",
+          "level": "h1",
+          "text": "Features"
+        },
+        "text": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/text",
+          "text": "Everything you need to build and deploy modern web applications."
+        }
+      },
+      "container-1": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/commons/components/structure/container",
+        "container": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/structure/container",
+          "grid": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "kestros/commons/components/structure/grid",
+            "columns": 2,
+            "column-1": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content-area",
+              "heading": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "kestros/commons/components/content/heading",
+                "level": "h3",
+                "text": "Continuous Deployment"
+              },
+              "text": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "kestros/commons/components/content/text",
+                "text": "Push to your main branch and your changes are live in seconds. Automatic rollback if health checks fail. Branch previews for every pull request."
+              }
+            },
+            "column-2": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content-area",
+              "heading": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "kestros/commons/components/content/heading",
+                "level": "h3",
+                "text": "Global CDN"
+              },
+              "text": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "kestros/commons/components/content/text",
+                "text": "Your content is served from edge locations around the world. Sub-50ms response times for static assets. Automatic cache invalidation on deploy."
+              }
+            }
+          }
+        }
+      },
+      "container-2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/commons/components/structure/container",
+        "container": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/structure/container",
+          "grid": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "kestros/commons/components/structure/grid",
+            "columns": 2,
+            "column-1": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content-area",
+              "heading": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "kestros/commons/components/content/heading",
+                "level": "h3",
+                "text": "Database Management"
+              },
+              "text": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "kestros/commons/components/content/text",
+                "text": "Managed PostgreSQL, MySQL, and Redis instances with automatic backups. Point-in-time recovery and read replicas available."
+              }
+            },
+            "column-2": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content-area",
+              "heading": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "kestros/commons/components/content/heading",
+                "level": "h3",
+                "text": "Team Collaboration"
+              },
+              "text": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "kestros/commons/components/content/text",
+                "text": "Invite your team with fine-grained access controls. Activity logs and audit trails for every deployment. Integrations with Slack and GitHub."
+              }
+            }
+          }
+        }
+      }
+    },
+    "footer": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/inherited-content-area",
+      "reset": true
+    }
+  }
+}
