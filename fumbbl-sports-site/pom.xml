@@ -23,19 +23,19 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>io.kestros.commons</groupId>
-    <artifactId>kestros-parent</artifactId>
-    <version>0.3.3</version>
+    <groupId>io.kestros.cms</groupId>
+    <artifactId>kestros-site-parent</artifactId>
+    <version>0.1.2-SNAPSHOT</version>
     <relativePath/>
   </parent>
 
-  <groupId>io.kestros.cms</groupId>
-  <artifactId>kestros-sample-sites</artifactId>
-  <version>0.1.1-SNAPSHOT</version>
-
-  <name>Kestros Sample Sites</name>
-  <description>Sample sites and demo applications for the Kestros CMS platform</description>
+  <groupId>io.kestros.cms.sample-sites</groupId>
+  <artifactId>fumbbl-sports-site</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
+
+  <name>FUMBBL Sports Site</name>
+  <description>Sports-themed sample site using FUMBBL API for live Blood Bowl match data</description>
 
   <licenses>
     <license>
@@ -52,13 +52,12 @@
   </scm>
 
   <modules>
-<!--    <module>lorem-ipsum-site</module>-->
-    <module>explore</module>
-<!--    <module>resolve-2021</module>-->
-    <module>basic-components-sample</module>
-    <module>fumbbl-sports-site</module>
+    <module>core</module>
+    <module>app</module>
+    <module>content</module>
   </modules>
 
   <dependencyManagement>
   </dependencyManagement>
+
 </project>

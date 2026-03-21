@@ -1,0 +1,32 @@
+<div data-sly-use.matchList="io.kestros.samples.fumbbl.core.models.MatchListModel"
+     class="fumbbl-match-list">
+  <div data-sly-test="${matchList.hasMatches}" class="match-results">
+    <table class="match-table">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Division</th>
+          <th>Home Team</th>
+          <th>Score</th>
+          <th>Away Team</th>
+          <th>Home Roster</th>
+          <th>Away Roster</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-sly-list.match="${matchList.matches}">
+          <td class="match-date">${match.date}</td>
+          <td class="match-division">${match.division}</td>
+          <td class="team-name team-1">${match.team1Name}</td>
+          <td class="match-score">${match.team1Score} - ${match.team2Score}</td>
+          <td class="team-name team-2">${match.team2Name}</td>
+          <td class="team-roster">${match.team1Roster}</td>
+          <td class="team-roster">${match.team2Roster}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div data-sly-test="${!matchList.hasMatches}" class="no-matches">
+    <p>No recent matches available. The FUMBBL API may be temporarily unreachable.</p>
+  </div>
+</div>

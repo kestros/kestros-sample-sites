@@ -1,0 +1,49 @@
+{
+  "jcr:primaryType": "kes:Page",
+  "jcr:content": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "kestros/commons/components/kestros-base-page",
+    "jcr:title": "About",
+    "main": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/content-area",
+      "container": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/commons/components/structure/container",
+        "heading": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/heading",
+          "level": "h2",
+          "text": "About FUMBBL Sports"
+        },
+        "text-1": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/text",
+          "text": "FUMBBL Sports is a sample site built on the Kestros CMS platform. It demonstrates how Kestros sites can integrate with external REST APIs to render dynamic, live content."
+        },
+        "heading-2": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/heading",
+          "level": "h3",
+          "text": "What is FUMBBL?"
+        },
+        "text-2": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/text",
+          "text": "FUMBBL (Fantasy Universal Multiplayer Blood Bowl League) is an online platform for playing Blood Bowl, the classic fantasy football tabletop game. The FUMBBL API provides access to match results, team data, and league statistics."
+        },
+        "heading-3": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/heading",
+          "level": "h3",
+          "text": "Technical Details"
+        },
+        "text-3": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/text",
+          "text": "This site uses an OSGi service (FumbblApiClient) that extends BaseExternalConnectionService to fetch live match data from the FUMBBL public API. A Sling model (MatchListModel) exposes the data to HTL templates for rendering. The API client includes a 60-second in-memory cache and graceful degradation when the API is unreachable."
+        }
+      }
+    }
+  }
+}

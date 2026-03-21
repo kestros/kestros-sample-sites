@@ -1,0 +1,12 @@
+{
+  "jcr:primaryType": "kes:PageTemplate",
+  "jcr:content": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "FUMBBL Sports Page",
+    "sling:resourceType": "kestros/commons/components/kestros-base-page",
+    "main": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/content-area"
+    }
+  }
+}

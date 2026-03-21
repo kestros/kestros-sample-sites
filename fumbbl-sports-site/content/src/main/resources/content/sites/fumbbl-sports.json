@@ -1,0 +1,37 @@
+{
+  "jcr:primaryType": "kes:Site",
+  "jcr:content": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "kestros/commons/components/kestros-base-page",
+    "jcr:title": "FUMBBL Sports",
+    "jcr:description": "Live Blood Bowl match results from the FUMBBL league",
+    "publicationStrategy": "kestros-single-instance",
+    "header": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/inherited-content-area"
+    },
+    "main": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/content-area",
+      "container": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/commons/components/structure/container",
+        "heading": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/heading",
+          "level": "h1",
+          "text": "FUMBBL Sports"
+        },
+        "text": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/content/text",
+          "text": "Live Blood Bowl match results powered by the FUMBBL API. This sample site demonstrates Kestros's ability to consume an external REST API and render dynamic content."
+        },
+        "top-navigation": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "kestros/commons/components/structure/top-navigation"
+        }
+      }
+    }
+  }
+}

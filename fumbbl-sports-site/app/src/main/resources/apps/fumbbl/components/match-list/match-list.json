@@ -1,0 +1,9 @@
+{
+  "jcr:primaryType": "kes:ComponentType",
+  "jcr:content": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Match List",
+    "jcr:description": "Displays recent FUMBBL Blood Bowl match results",
+    "componentGroup": "FUMBBL Sports"
+  }
+}
