@@ -1,0 +1,16 @@
+{
+  "name": "kestros-e2e-tests",
+  "version": "1.0.0",
+  "description": "Playwright E2E tests for Kestros CMS",
+  "private": true,
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:ui": "npx playwright test --ui",
+    "test:smoke": "npx playwright test --grep @smoke",
+    "report": "npx playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0"
+  }
+}
