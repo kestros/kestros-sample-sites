@@ -1,0 +1,15 @@
+{
+  "jcr:primaryType": "kes:PageTemplate",
+  "jcr:content": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:title": "Haven Architecture Base Page",
+    "sling:resourceType": "kestros/commons/components/kestros-base-page",
+    "allowedUiFrameworks": [
+      "/etc/ui-frameworks/ui-kit"
+    ],
+    "main": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/content-area"
+    }
+  }
+}

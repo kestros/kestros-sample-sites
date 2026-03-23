@@ -1,0 +1,47 @@
+{
+  "jcr:primaryType": "kes:Page",
+  "jcr:content": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "kestros/commons/components/kestros-base-page",
+    "jcr:title": "Blackrock Studio",
+    "jcr:description": "A mixed-use creative workspace carved into a former industrial warehouse, preserving raw character while introducing modern comfort.",
+    "tags": ["commercial", "renovation", "interior-design", "mixed-use"],
+    "main": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/content-area",
+      "hero-section": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "/libs/kestros/commons/components/structure/section",
+        "variations": "[]",
+        "hero-image": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/content/image",
+          "src": "TODO: [blackrock-studio interior — exposed brick and steel beams with modern glass partitions and pendant lighting]"
+        },
+        "heading": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/content/heading",
+          "level": "h1",
+          "text": "Blackrock Studio",
+          "variations": "[]"
+        },
+        "text": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/content/text",
+          "text": "Blackrock Studio transforms a 1920s brick warehouse into a vibrant co-working and gallery space. The design retains the building's industrial DNA — exposed trusses, polished concrete floors, original loading bays — while threading in acoustic comfort and natural light."
+        }
+      },
+      "cta-section": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "/libs/kestros/commons/components/structure/section",
+        "variations": "[]",
+        "button": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/content/button",
+          "text": "Enquire About Studio Space",
+          "href": "/content/sites/haven-architecture/contact.html"
+        }
+      }
+    }
+  }
+}

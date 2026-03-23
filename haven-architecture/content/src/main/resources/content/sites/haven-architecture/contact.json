@@ -1,0 +1,52 @@
+{
+  "jcr:primaryType": "kes:Page",
+  "jcr:content": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "kestros/commons/components/kestros-base-page",
+    "jcr:title": "Contact",
+    "main": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/content-area",
+      "contact-section": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "/libs/kestros/commons/components/structure/section",
+        "variations": "[]",
+        "heading": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/content/heading",
+          "level": "h1",
+          "text": "Get in Touch",
+          "variations": "[]"
+        },
+        "text": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/content/text",
+          "text": "Whether you have a site, a brief, or just a question, we would love to hear from you. Drop us a line and we will get back to you within two business days."
+        },
+        "button": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/content/button",
+          "text": "Email Us",
+          "href": "mailto:hello@havenarchitecture.example"
+        }
+      },
+      "location-section": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "/libs/kestros/commons/components/structure/section",
+        "variations": "[]",
+        "heading": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/content/heading",
+          "level": "h2",
+          "text": "Visit Our Studio",
+          "variations": "[]"
+        },
+        "text": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/content/text",
+          "text": "Haven Architecture Studio\n42 Harbour Lane, Suite 300\nPortland, OR 97209"
+        }
+      }
+    }
+  }
+}
