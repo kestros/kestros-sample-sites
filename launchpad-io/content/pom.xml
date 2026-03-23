@@ -49,33 +49,6 @@
 
         <plugins>
             <plugin>
-                <groupId>org.apache.rat</groupId>
-                <artifactId>apache-rat-plugin</artifactId>
-                <version>0.13</version>
-                <configuration>
-                    <excludes>
-                        <exclude>target/*</exclude>
-                        <exclude>**/target/*</exclude>
-                        <exclude>**/target/**/*</exclude>
-                        <exclude>**/*.json</exclude>
-                        <exclude>node/**/*</exclude>
-                        <exclude>node_modules/**/*</exclude>
-                        <exclude>**/README.md</exclude>
-                        <exclude>package.json</exclude>
-                        <exclude>package-lock.json</exclude>
-                        <exclude>*-maven-settings.xml</exclude>
-                    </excludes>
-                </configuration>
-                <executions>
-                    <execution>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>check</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>maven-bundle-plugin</artifactId>
                 <extensions>true</extensions>

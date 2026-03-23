@@ -148,8 +148,6 @@
             sling:resourceType="kestros/cms2/fields/general/togglefield"
             label="Toggle"
             name="toggleValue"
-            onLabel="On"
-            offLabel="Off"
             required="{Boolean}false"/>
         <toggle-disabled
             jcr:primaryType="nt:unstructured"
