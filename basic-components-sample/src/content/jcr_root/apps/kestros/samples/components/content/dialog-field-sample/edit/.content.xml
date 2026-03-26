@@ -132,8 +132,15 @@
         <datetime-standard
             jcr:primaryType="nt:unstructured"
             sling:resourceType="kestros/cms2/fields/general/datetimefield"
-            label="Date + Time"
+            label="Date + Time (Composite)"
             name="datetimeValue"
+            required="{Boolean}false"/>
+
+        <datetime-local-standard
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="kestros/cms2/fields/general/datetimelocalfield"
+            label="Date + Time (Single Input)"
+            name="datetimeLocalValue"
             required="{Boolean}false"/>
 
         <hidden-standard
