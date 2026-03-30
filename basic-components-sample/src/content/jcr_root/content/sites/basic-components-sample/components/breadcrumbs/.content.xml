@@ -36,20 +36,33 @@
                         <column-2
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="kestros/commons/components/content-area">
-                            <heading
+                            <title
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    level="h4"
-                                    text="Common View HTL"/>
-                            <code
+                                    level="h1"
+                                    text="Breadcrumbs"/>
+                            <intro
                                     jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="/libs/kestros/commons/components/content/code"
-                                    codeResource="/libs/kestros/commons/components/structure/breadcrumbs/common/content.html"/>
-                            <heading-1
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text="&lt;p&gt;A navigation component that displays the current page's position in the site hierarchy as a breadcrumb trail. Shows the path from site root to the current page, helping users understand their location and navigate back.&lt;/p&gt;"/>
+                            <properties-heading
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    level="h4"
+                                    level="h2"
+                                    text="Properties"/>
+                            <properties-text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text="&lt;p&gt;No configurable properties - the breadcrumbs component automatically generates the trail by walking up the page hierarchy from the current page to the site root.&lt;/p&gt;"/>
+                            <examples-heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h2"
                                     text="Examples"/>
+                            <note
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text="&lt;p&gt;&lt;em&gt;The breadcrumbs component automatically renders the trail for the current page. On this documentation page, it would show: Basic Components Sample &gt; Components &gt; Breadcrumbs&lt;/em&gt;&lt;/p&gt;"/>
                         </column-2>
                         <column-3
                                 jcr:primaryType="nt:unstructured"

@@ -36,20 +36,33 @@
                         <column-2
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="kestros/commons/components/content-area">
-                            <heading
+                            <title
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    level="h4"
-                                    text="Common View HTL"/>
-                            <code
+                                    level="h1"
+                                    text="Grid"/>
+                            <intro
                                     jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="/libs/kestros/commons/components/content/code"
-                                    codeResource="/libs/kestros/commons/components/structure/grid/common/content.html"/>
-                            <heading-1
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text="&lt;p&gt;A multi-column layout component that organizes content into named columns (column-1, column-2, column-3, etc.). Grids are commonly used within containers to create responsive layouts.&lt;/p&gt;"/>
+                            <properties-heading
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    level="h4"
+                                    level="h2"
+                                    text="Properties"/>
+                            <properties-text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text="&lt;p&gt;&lt;strong&gt;columns&lt;/strong&gt; - Number of columns in the grid (integer or string). Common values: 2, 3 (default).&lt;/p&gt;&lt;p&gt;Columns are created as child content areas named column-1, column-2, column-3, etc.&lt;/p&gt;"/>
+                            <examples-heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h2"
                                     text="Examples"/>
+                            <note
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text="&lt;p&gt;&lt;em&gt;This page layout itself uses a 3-column grid with a sidebar (column-1), main content (column-2), and empty space (column-3).&lt;/em&gt;&lt;/p&gt;"/>
                         </column-2>
                         <column-3
                                 jcr:primaryType="nt:unstructured"
