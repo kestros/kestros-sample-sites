@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:kes="http://kestros.io/kes/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="kes:Page">
+    <jcr:content
+        jcr:description=""
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Accordion"
+        kes:template="/libs/kestros/commons/base-page-template"
+        sling:resourceType="kestros/commons/components/kestros-base-page">
+        <header
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"/>
+        <main
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/content-area">
+            <section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section">
+                <inherited-content-area
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/inherited-content-area"/>
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        elementType="main">
+                    <grid
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/grid">
+                        <column-1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <inherited-content-area
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/inherited-content-area"/>
+                        </column-1>
+                        <column-2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area">
+                            <heading
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h2"
+                                    text="Accordion"/>
+                            <accordion
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/structure/accordion">
+                                <panel-1
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/libs/kestros/commons/components/structure/accordion-panel"
+                                        title="Panel One">
+                                    <text
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                                            text="Content for panel one."/>
+                                </panel-1>
+                                <panel-2
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/libs/kestros/commons/components/structure/accordion-panel"
+                                        title="Panel Two">
+                                    <text
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                                            text="Content for panel two."/>
+                                </panel-2>
+                            </accordion>
+                        </column-2>
+                        <column-3
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area"/>
+                    </grid>
+                </container>
+            </section>
+        </main>
+        <footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"/>
+    </jcr:content>
+</jcr:root>

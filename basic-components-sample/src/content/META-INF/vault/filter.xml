@@ -2,6 +2,7 @@
 <workspaceFilter version="1.0">
 
   <filter root="/content/sites/basic-components-sample"/>
+  <filter root="/content/tags/basic-components-sample"/>
   <filter root="/apps/kestros/samples"/>
 
 </workspaceFilter>
