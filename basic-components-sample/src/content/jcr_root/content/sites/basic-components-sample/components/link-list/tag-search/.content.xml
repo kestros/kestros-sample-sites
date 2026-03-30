@@ -39,79 +39,79 @@
                             <title
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    kes:dataSource="default"
-                                    headingText="Link List Tag Search Datasource"
-                                    headingType="h1"/>
+                                   
+                                    text="Link List Tag Search Datasource"
+                                    level="h1"/>
                             <intro
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    kes:dataSource="default"
+                                   
                                     text="&lt;p&gt;The tag-search datasource renders a link for each child page that matches one or more configured tags. Works identically to the card-list tag-search but outputs links instead of cards. The current page is excluded from results.&lt;/p&gt;"/>
                             <overview-heading
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    kes:dataSource="default"
-                                    headingText="Overview"
-                                    headingType="h2"/>
+                                   
+                                    text="Overview"
+                                    level="h2"/>
                             <overview-text
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    kes:dataSource="default"
+                                   
                                     text="&lt;p&gt;Select tag-search from the datasource dropdown in the link-list component dialog. The datasource uses TagRetrievalService to find pages with matching tags.&lt;/p&gt;&lt;p&gt;Tag matching uses OR logic: a page matches if it has any of the configured tags.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Component type:&lt;/strong&gt; link-list&lt;br/&gt;&lt;strong&gt;Datasource class:&lt;/strong&gt; LinkListTagSearchDataSource&lt;br/&gt;&lt;strong&gt;Behavior:&lt;/strong&gt; Finds child pages of a root page that have matching tags, renders each as a link.&lt;/p&gt;"/>
                             <config-heading
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    kes:dataSource="default"
-                                    headingText="Configuration"
-                                    headingType="h2"/>
+                                   
+                                    text="Configuration"
+                                    level="h2"/>
                             <config-text
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    kes:dataSource="default"
+                                   
                                     text="&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt; (tags) - One or more tag paths as a String array. Pages match if they have any of these tags.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Root Path&lt;/strong&gt; (pagesPath) - JCR path of the page whose children are searched. Optional. If not set, defaults to the parent of the containing page.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Sort By&lt;/strong&gt; (sortBy) - Options: None (natural order), Title, Name, Created Date, Last Modified.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Reverse Order&lt;/strong&gt; (reverse) - Boolean checkbox. Reverses the sort direction.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Limit&lt;/strong&gt; (limit) - Number field. Maximum number of results. 0 means no limit.&lt;/p&gt;"/>
                             <tags-heading
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    kes:dataSource="default"
-                                    headingText="How Tags Work"
-                                    headingType="h2"/>
+                                   
+                                    text="How Tags Work"
+                                    level="h2"/>
                             <tags-text
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    kes:dataSource="default"
+                                   
                                     text="&lt;p&gt;Tags are stored on pages as the kes:tags property (String array) on jcr:content. The datasource reads configured tags from the component's tags property, then iterates over child pages of the root page. For each child page, it calls TagRetrievalService.getTagsOnResource() and checks if any returned tag path matches a configured tag path. The current page is always excluded from results.&lt;/p&gt;"/>
                             <jcr-heading
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    kes:dataSource="default"
-                                    headingText="JCR Structure"
-                                    headingType="h2"/>
+                                   
+                                    text="JCR Structure"
+                                    level="h2"/>
                             <jcr-text
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    kes:dataSource="default"
+                                   
                                     text="&lt;p&gt;A configured link-list node: sling:resourceType = /libs/kestros/commons/components/lists/link-list, kes:dataSource = tag-search, tags = [tag paths], pagesPath = /content/sites/... (optional), sortBy = title, reverse = false, limit = 0.&lt;/p&gt;"/>
                             <examples-heading
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    kes:dataSource="default"
-                                    headingText="Examples"
-                                    headingType="h2"/>
+                                   
+                                    text="Examples"
+                                    level="h2"/>
                             <examples-intro
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    kes:dataSource="default"
+                                   
                                     text="&lt;p&gt;The following examples use test pages under /content/sites/basic-components-sample/components/card-list/ with various kes:tags values.&lt;/p&gt;"/>
                             <ex1-heading
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    kes:dataSource="default"
-                                    headingText="Single Tag Filter"
-                                    headingType="h3"/>
+                                   
+                                    text="Single Tag Filter"
+                                    level="h3"/>
                             <ex1-desc
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    kes:dataSource="default"
+                                   
                                     text="&lt;p&gt;Tag: category/arts. Sorted by title. Root path: /content/sites/basic-components-sample/components/card-list.&lt;/p&gt;"/>
                             <ex1-links
                                     jcr:primaryType="nt:unstructured"
@@ -123,13 +123,13 @@
                             <ex2-heading
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    kes:dataSource="default"
-                                    headingText="Reverse Sort"
-                                    headingType="h3"/>
+                                   
+                                    text="Reverse Sort"
+                                    level="h3"/>
                             <ex2-desc
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    kes:dataSource="default"
+                                   
                                     text="&lt;p&gt;Tag: content-type/article. Reverse alphabetical sort (Z-A).&lt;/p&gt;"/>
                             <ex2-links
                                     jcr:primaryType="nt:unstructured"
@@ -142,13 +142,13 @@
                             <ex3-heading
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    kes:dataSource="default"
-                                    headingText="Limited Results"
-                                    headingType="h3"/>
+                                   
+                                    text="Limited Results"
+                                    level="h3"/>
                             <ex3-desc
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    kes:dataSource="default"
+                                   
                                     text="&lt;p&gt;Tag: status/featured. Limit: 1.&lt;/p&gt;"/>
                             <ex3-links
                                     jcr:primaryType="nt:unstructured"
@@ -157,7 +157,7 @@
                                     tags="[/content/tags/basic-components-sample/status/featured]"
                                     pagesPath="/content/sites/basic-components-sample/components/card-list"
                                     sortBy="title"
-                                    limit="1"/>
+                                    limit="{Long}1"/>
                         </column-2>
                         <column-3
                                 jcr:primaryType="nt:unstructured"

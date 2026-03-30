@@ -39,79 +39,79 @@
                             <title
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    kes:dataSource="default"
-                                    headingText="Card List Child Pages Datasource"
-                                    headingType="h1"/>
+                                   
+                                    text="Card List Child Pages Datasource"
+                                    level="h1"/>
                             <intro
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    kes:dataSource="default"
+                                   
                                     text="&lt;p&gt;The child-pages datasource renders a card for each child page under a configurable root path. If no root path is set, it defaults to the containing page. Supports sorting, reverse ordering, and result limiting.&lt;/p&gt;"/>
                             <overview-heading
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    kes:dataSource="default"
-                                    headingText="Overview"
-                                    headingType="h2"/>
+                                   
+                                    text="Overview"
+                                    level="h2"/>
                             <overview-text
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    kes:dataSource="default"
+                                   
                                     text="&lt;p&gt;Select child-pages from the datasource dropdown in the card-list component dialog. The datasource fetches all child pages of the root page and renders each as a card element.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Component type:&lt;/strong&gt; card-list&lt;br/&gt;&lt;strong&gt;Datasource class:&lt;/strong&gt; CardListChildPagesDataSource&lt;br/&gt;&lt;strong&gt;Behavior:&lt;/strong&gt; Lists all child pages of a root page as cards, with optional sorting, reversing, and limiting.&lt;/p&gt;"/>
                             <config-heading
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    kes:dataSource="default"
-                                    headingText="Configuration"
-                                    headingType="h2"/>
+                                   
+                                    text="Configuration"
+                                    level="h2"/>
                             <config-text
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    kes:dataSource="default"
+                                   
                                     text="&lt;p&gt;&lt;strong&gt;Root Path&lt;/strong&gt; (pagesPath) - JCR path of the page whose children are listed. If not set, falls back to the containing page.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Text&lt;/strong&gt; (readMoreText) - Custom button label for each card's read-more link.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Sort By&lt;/strong&gt; (sortBy) - Options: None (natural order), Title, Name, Created Date, Last Modified.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Reverse Order&lt;/strong&gt; (reverse) - Boolean checkbox. Reverses the sort direction.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Limit&lt;/strong&gt; (limit) - Number field. Maximum number of results. 0 means no limit.&lt;/p&gt;"/>
                             <how-heading
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    kes:dataSource="default"
-                                    headingText="How the Datasource Works"
-                                    headingType="h2"/>
+                                   
+                                    text="How the Datasource Works"
+                                    level="h2"/>
                             <how-text
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    kes:dataSource="default"
+                                   
                                     text="&lt;p&gt;The datasource resolves the root page from the pagesPath property. If pagesPath is not set, it calls getContainingPage() on the component's resource to find the nearest kes:Page ancestor. It then iterates over all child pages of the root, applying sort, reverse, and limit in that order. Each page is wrapped in a KestrosCardImpl with the page title, description, and an optional read-more button.&lt;/p&gt;"/>
                             <jcr-heading
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    kes:dataSource="default"
-                                    headingText="JCR Structure"
-                                    headingType="h2"/>
+                                   
+                                    text="JCR Structure"
+                                    level="h2"/>
                             <jcr-text
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    kes:dataSource="default"
+                                   
                                     text="&lt;p&gt;A configured card-list node: sling:resourceType = /libs/kestros/commons/components/lists/card-list, kes:dataSource = child-pages, pagesPath = /content/sites/my-site/my-page, readMoreText = Read More, sortBy = title, reverse = false, limit = 0.&lt;/p&gt;"/>
                             <examples-heading
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    kes:dataSource="default"
-                                    headingText="Examples"
-                                    headingType="h2"/>
+                                   
+                                    text="Examples"
+                                    level="h2"/>
                             <examples-intro
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    kes:dataSource="default"
+                                   
                                     text="&lt;p&gt;These examples list child pages of the card-list sample section. Each demonstrates a different configuration option.&lt;/p&gt;"/>
                             <ex1-heading
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    kes:dataSource="default"
-                                    headingText="Default - All Child Pages"
-                                    headingType="h3"/>
+                                   
+                                    text="Default - All Child Pages"
+                                    level="h3"/>
                             <ex1-desc
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    kes:dataSource="default"
+                                   
                                     text="&lt;p&gt;No pagesPath set. Lists children of the parent page in natural order.&lt;/p&gt;"/>
                             <ex1-cards
                                     jcr:primaryType="nt:unstructured"
@@ -120,13 +120,13 @@
                             <ex2-heading
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    kes:dataSource="default"
-                                    headingText="Sorted by Title"
-                                    headingType="h3"/>
+                                   
+                                    text="Sorted by Title"
+                                    level="h3"/>
                             <ex2-desc
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    kes:dataSource="default"
+                                   
                                     text="&lt;p&gt;Sort by title alphabetically (A-Z).&lt;/p&gt;"/>
                             <ex2-cards
                                     jcr:primaryType="nt:unstructured"
@@ -136,13 +136,13 @@
                             <ex3-heading
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    kes:dataSource="default"
-                                    headingText="Reverse Sort"
-                                    headingType="h3"/>
+                                   
+                                    text="Reverse Sort"
+                                    level="h3"/>
                             <ex3-desc
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    kes:dataSource="default"
+                                   
                                     text="&lt;p&gt;Sort by title, reversed (Z-A).&lt;/p&gt;"/>
                             <ex3-cards
                                     jcr:primaryType="nt:unstructured"
@@ -153,20 +153,20 @@
                             <ex4-heading
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    kes:dataSource="default"
-                                    headingText="Limited Results"
-                                    headingType="h3"/>
+                                   
+                                    text="Limited Results"
+                                    level="h3"/>
                             <ex4-desc
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    kes:dataSource="default"
+                                   
                                     text="&lt;p&gt;Limit to 2 results.&lt;/p&gt;"/>
                             <ex4-cards
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/lists/card-list"
                                     kes:dataSource="child-pages"
                                     sortBy="title"
-                                    limit="2"/>
+                                    limit="{Long}2"/>
                         </column-2>
                         <column-3
                                 jcr:primaryType="nt:unstructured"

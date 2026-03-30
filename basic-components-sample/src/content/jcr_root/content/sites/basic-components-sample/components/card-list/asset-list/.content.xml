@@ -39,79 +39,79 @@
                             <title
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    kes:dataSource="default"
-                                    headingText="Card List Asset List Datasource"
-                                    headingType="h1"/>
+                                   
+                                    text="Card List Asset List Datasource"
+                                    level="h1"/>
                             <intro
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    kes:dataSource="default"
+                                   
                                     text="&lt;p&gt;The asset-list datasource renders a card for each asset in a configured asset collection. Each card displays the asset image, title, and description. Supports sorting, reverse ordering, and result limiting.&lt;/p&gt;"/>
                             <overview-heading
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    kes:dataSource="default"
-                                    headingText="Overview"
-                                    headingType="h2"/>
+                                   
+                                    text="Overview"
+                                    level="h2"/>
                             <overview-text
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    kes:dataSource="default"
+                                   
                                     text="&lt;p&gt;Select asset-list from the datasource dropdown in the card-list component dialog. The datasource uses the AssetRetrievalService to fetch assets from a configured collection path.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Component type:&lt;/strong&gt; card-list&lt;br/&gt;&lt;strong&gt;Datasource class:&lt;/strong&gt; CardListAssetsDataSource&lt;br/&gt;&lt;strong&gt;Behavior:&lt;/strong&gt; Lists all child assets of an asset collection as cards, each with an image, heading, and description.&lt;/p&gt;"/>
                             <config-heading
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    kes:dataSource="default"
-                                    headingText="Configuration"
-                                    headingType="h2"/>
+                                   
+                                    text="Configuration"
+                                    level="h2"/>
                             <config-text
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    kes:dataSource="default"
+                                   
                                     text="&lt;p&gt;&lt;strong&gt;Asset Collection&lt;/strong&gt; (collectionPath) - JCR path of the asset collection. Uses a pathfield restricted to /content/assets with resourceType kes:AssetCollection.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Sort By&lt;/strong&gt; (sortBy) - Options: None (natural order), Title, Name, Created Date, Last Modified.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Reverse Order&lt;/strong&gt; (reverse) - Boolean checkbox. Reverses the sort direction.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Limit&lt;/strong&gt; (limit) - Number field. Maximum number of results. 0 means no limit.&lt;/p&gt;"/>
                             <how-heading
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    kes:dataSource="default"
-                                    headingText="How the Datasource Works"
-                                    headingType="h2"/>
+                                   
+                                    text="How the Datasource Works"
+                                    level="h2"/>
                             <how-text
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    kes:dataSource="default"
+                                   
                                     text="&lt;p&gt;The datasource resolves the asset collection from the collectionPath property using the AssetRetrievalService (injected via @OSGiService). It calls getCollection() to retrieve the AssetCollection, then getChildAssets() to get all assets. Assets are sorted by the specified field (title uses getTitle(), name uses getName(), createdDate uses getCreatedDate(), lastModified uses getModifiedDate()), reversed if requested, and limited to the configured count. Each asset is wrapped in a KestrosCardImpl with an image element, heading, and description.&lt;/p&gt;"/>
                             <jcr-heading
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    kes:dataSource="default"
-                                    headingText="JCR Structure"
-                                    headingType="h2"/>
+                                   
+                                    text="JCR Structure"
+                                    level="h2"/>
                             <jcr-text
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    kes:dataSource="default"
+                                   
                                     text="&lt;p&gt;A configured card-list node: sling:resourceType = /libs/kestros/commons/components/lists/card-list, kes:dataSource = asset-list, collectionPath = /content/assets/my-collection, sortBy = title, reverse = false, limit = 0.&lt;/p&gt;"/>
                             <examples-heading
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    kes:dataSource="default"
-                                    headingText="Examples"
-                                    headingType="h2"/>
+                                   
+                                    text="Examples"
+                                    level="h2"/>
                             <examples-intro
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    kes:dataSource="default"
+                                   
                                     text="&lt;p&gt;Live examples require an asset collection to be configured on the instance. The card-list below uses the asset-list datasource.&lt;/p&gt;"/>
                             <ex1-heading
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    kes:dataSource="default"
-                                    headingText="Asset List (no collection configured)"
-                                    headingType="h3"/>
+                                   
+                                    text="Asset List (no collection configured)"
+                                    level="h3"/>
                             <ex1-desc
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    kes:dataSource="default"
+                                   
                                     text="&lt;p&gt;No collectionPath set. Returns empty list gracefully.&lt;/p&gt;"/>
                             <ex1-cards
                                     jcr:primaryType="nt:unstructured"
