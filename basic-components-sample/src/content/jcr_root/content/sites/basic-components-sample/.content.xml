@@ -5,7 +5,7 @@
             jcr:description="A sample site to demonstrate the basic components of Kestros."
             jcr:primaryType="nt:unstructured"
             jcr:title="Basic Components Sample"
-            kes:theme="/etc/ui-frameworks/empty-framework/versions/0.0.1/themes/default"
+            kes:theme="/etc/ui-frameworks/ui-kit/versions/0.0.1/themes/default"
             sling:resourceType="kestros/commons/components/kestros-base-page"
             displayDescription=""
             publicationStrategy="kestros-single-instance">
