@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:kes="http://kestros.io/kes/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+        jcr:primaryType="kes:Page">
+    <jcr:content jcr:description="" jcr:primaryType="nt:unstructured" jcr:title="Structure Components" kes:template="/libs/kestros/commons/base-page-template" sling:resourceType="kestros/commons/components/kestros-base-page">
+        <header jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
+        <main jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
+            <section jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/section">
+                <inherited-content-area jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/inherited-content-area"/>
+                <container jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container" elementType="main">
+                    <title jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Structure Components" headingType="h1"/>
+                    <description jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Layout and structural components for organizing page content into sections, containers, grids, and collapsible panels."/>
+                    <links jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/lists/link-list">
+                        <l-section jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Section — semantic section with optional background" href="/content/sites/basic-components-sample/components/section.html"/>
+                        <l-container jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Container — generic content wrapper" href="/content/sites/basic-components-sample/components/container.html"/>
+                        <l-grid jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Grid — multi-column layout" href="/content/sites/basic-components-sample/components/grid.html"/>
+                        <l-accordion jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Accordion — collapsible panel container" href="/content/sites/basic-components-sample/components/accordion.html"/>
+                        <l-accordion-panel jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Accordion Panel — individual collapsible panel" href="/content/sites/basic-components-sample/components/accordion-panel.html"/>
+                    </links>
+                </container>
+            </section>
+        </main>
+        <footer jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
+    </jcr:content>
+</jcr:root>
