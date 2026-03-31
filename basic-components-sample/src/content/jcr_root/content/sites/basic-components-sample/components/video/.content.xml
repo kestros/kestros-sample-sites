@@ -14,7 +14,8 @@
                     <props-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="videoPath (String) - Path to the video asset in the repository."/>
                     <props-2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="fallbackText (String) - Fallback text displayed when the video cannot be played."/>
                     <examples-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Examples" headingType="h2"/>
-                    <example-note jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Video examples require video assets in the DAM. Configure videoPath to point to an existing video asset."/>
+                    <ex-label-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Basic video with fallback:"/>
+                    <example-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/code" code="&lt;video videoPath=&quot;/content/dam/videos/intro.mp4&quot; fallbackText=&quot;Your browser does not support video playback.&quot;/&gt;"/>
                 </container>
             </section>
         </main>

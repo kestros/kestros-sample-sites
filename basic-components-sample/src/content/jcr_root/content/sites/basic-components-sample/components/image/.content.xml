@@ -20,7 +20,10 @@
                     <props-7 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="anchorTitle (String) - Title attribute on the anchor element when href is set."/>
                     <props-8 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="openInNewTab (Boolean) - Open the linked URL in a new browser tab. Default: false."/>
                     <examples-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Examples" headingType="h2"/>
-                    <example-note jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Image examples require image assets in the DAM. Configure imagePath to point to an existing asset."/>
+                    <ex-label-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Basic image with alt text:"/>
+                    <example-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/code" code="&lt;image imagePath=&quot;/content/dam/photos/hero.jpg&quot; altText=&quot;Hero banner image&quot; imageTitle=&quot;Welcome&quot;/&gt;"/>
+                    <ex-label-2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Linked image with caption:"/>
+                    <example-2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/code" code="&lt;image imagePath=&quot;/content/dam/photos/product.jpg&quot; altText=&quot;Product photo&quot; caption=&quot;Our flagship product&quot; href=&quot;/products.html&quot; ariaLabel=&quot;View product details&quot;/&gt;"/>
                 </container>
             </section>
         </main>

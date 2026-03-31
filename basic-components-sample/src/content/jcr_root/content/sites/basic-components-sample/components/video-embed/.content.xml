@@ -15,7 +15,10 @@
                     <props-2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="mute (Boolean) - Whether to mute the video on load. Default: false."/>
                     <props-3 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="allowFullScreen (Boolean) - Whether to allow fullscreen mode. Default: true."/>
                     <examples-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Examples" headingType="h2"/>
-                    <example-note jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Video embed examples require a YouTube video ID. Configure youtubeVideo with a valid ID."/>
+                    <ex-label-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="YouTube embed:"/>
+                    <example-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/code" code="&lt;video-embed youtubeVideo=&quot;dQw4w9WgXcQ&quot; mute=&quot;false&quot; allowFullScreen=&quot;true&quot;/&gt;"/>
+                    <ex-label-2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Muted autoplay embed:"/>
+                    <example-2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/code" code="&lt;video-embed youtubeVideo=&quot;dQw4w9WgXcQ&quot; mute=&quot;true&quot; allowFullScreen=&quot;false&quot;/&gt;"/>
                 </container>
             </section>
         </main>

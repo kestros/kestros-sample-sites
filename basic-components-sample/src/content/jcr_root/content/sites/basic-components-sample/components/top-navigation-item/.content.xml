@@ -13,7 +13,10 @@
                     <properties-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Properties" headingType="h2"/>
                     <props-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Contains a link child (text, href, title, openInNewTab, ariaLabel). Nest additional top-navigation-item children for dropdown menus."/>
                     <examples-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Examples" headingType="h2"/>
-                    <example-note jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Top navigation items must be placed inside a top-navigation component. See the Top Navigation page for a full example with multiple items."/>
+                    <ex-label-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Simple navigation item:"/>
+                    <example-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/code" code="&lt;top-navigation-item&gt;&#10;  &lt;link text=&quot;Products&quot; href=&quot;/products.html&quot;/&gt;&#10;&lt;/top-navigation-item&gt;"/>
+                    <ex-label-2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Item with dropdown submenu:"/>
+                    <example-2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/code" code="&lt;top-navigation-item&gt;&#10;  &lt;link text=&quot;Services&quot; href=&quot;/services.html&quot;/&gt;&#10;  &lt;sub-item-1 sling:resourceType=&quot;.../top-navigation-item&quot;&gt;&#10;    &lt;link text=&quot;Consulting&quot; href=&quot;/services/consulting.html&quot;/&gt;&#10;  &lt;/sub-item-1&gt;&#10;&lt;/top-navigation-item&gt;"/>
                 </container>
             </section>
         </main>
