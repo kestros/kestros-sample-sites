@@ -23,6 +23,12 @@
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation"
                             brandName="Kestros Components">
+                        <logo
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/image"
+                                imagePath="/content/assets/logos/kestros-icon-color.png"
+                                altText="Kestros Logo"
+                                imageTitle="Kestros"/>
                         <components-link
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation-item"

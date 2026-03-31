@@ -26,7 +26,7 @@
                     <ds-2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="page-card — From a page. Properties: pagePath, headingLevel, buttonLabel."/>
                     <ds-3 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="asset-card — From a DAM asset. Properties: imagePath, headingType."/>
                     <examples-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Examples" headingType="h2"/>
-                    <example-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/card" description="A basic card with a description."/>
+                    <example-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/card" description="A sample card showing a landscape photograph with description text."/>
                 </container>
             </section>
         </main>
