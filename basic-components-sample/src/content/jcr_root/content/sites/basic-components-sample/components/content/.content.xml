@@ -10,6 +10,19 @@
                     <title jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Content Components" headingType="h1"/>
                     <description jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Components for rendering text, media, interactive elements, and other visible page content."/>
                     <links jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/lists/link-list">
+                        <l-01 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Alert" href="/content/sites/basic-components-sample/components/alert.html"/>
+                        <l-02 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Button" href="/content/sites/basic-components-sample/components/button.html"/>
+                        <l-03 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Button Group" href="/content/sites/basic-components-sample/components/button-group.html"/>
+                        <l-04 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Card" href="/content/sites/basic-components-sample/components/card.html"/>
+                        <l-05 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Code" href="/content/sites/basic-components-sample/components/code.html"/>
+                        <l-06 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Heading" href="/content/sites/basic-components-sample/components/heading.html"/>
+                        <l-07 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Image" href="/content/sites/basic-components-sample/components/image.html"/>
+                        <l-08 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Link" href="/content/sites/basic-components-sample/components/link.html"/>
+                        <l-09 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Page Title" href="/content/sites/basic-components-sample/components/page-title.html"/>
+                        <l-10 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Richtext" href="/content/sites/basic-components-sample/components/richtext.html"/>
+                        <l-11 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Text" href="/content/sites/basic-components-sample/components/text.html"/>
+                        <l-12 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Video" href="/content/sites/basic-components-sample/components/video.html"/>
+                        <l-13 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Video Embed" href="/content/sites/basic-components-sample/components/video-embed.html"/>
                     </links>
                 </container>
             </section>
