@@ -8,7 +8,7 @@
                 <inherited-content-area jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/inherited-content-area"/>
                 <container jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container" elementType="main">
                     <title jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Alert" headingType="h1"/>
-                    <description jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Displays alert messages with a heading and body text. Use for notifications, warnings, success messages, or informational callouts."/>
+                    <description jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Displays alert messages with a heading and body text. Use for notifications, warnings, and informational callouts."/>
                     <resource-type jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Resource Type: /libs/kestros/commons/components/content/alert"/>
                     <properties-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Properties" headingType="h2"/>
                     <properties-table jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table">
@@ -16,18 +16,20 @@
                         <h-type jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-header" text="Type"/>
                         <h-desc jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-header" text="Description"/>
                         <row-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-row">
-                            <c-name jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-cell"><t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="heading
-text"/></c-name>
-                            <c-type jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-cell"><t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="String
-String"/></c-type>
-                            <c-desc jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-cell"><t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Alert heading or title text.
-Alert body message text."/></c-desc>
+                            <c-name jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-cell"><t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="heading"/></c-name>
+                            <c-type jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-cell"><t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="String"/></c-type>
+                            <c-desc jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-cell"><t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Alert heading or title text."/></c-desc>
                         </row-1>
+                        <row-2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-row">
+                            <c-name jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-cell"><t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="text"/></c-name>
+                            <c-type jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-cell"><t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="String"/></c-type>
+                            <c-desc jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-cell"><t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Alert body message text."/></c-desc>
+                        </row-2>
                     </properties-table>
                     <examples-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Examples" headingType="h2"/>
                     <example-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/alert" heading="Success" text="Your changes have been saved successfully."/>
-                    <example-2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/alert" heading="Warning" text="This action cannot be undone. Please confirm before proceeding."/>
-                    <example-3 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/alert" heading="Information" text="The system will be undergoing scheduled maintenance this weekend."/>
+                    <example-2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/alert" heading="Warning" text="This action cannot be undone."/>
+                    <example-3 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/alert" heading="Information" text="Scheduled maintenance this weekend."/>
                 </container>
             </section>
         </main>

@@ -24,7 +24,6 @@
                     <examples-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Examples" headingType="h2"/>
                     <example-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="This is a simple text paragraph demonstrating the text component."/>
                     <example-2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Components in Kestros are built on Apache Sling and use JCR content repositories for storage."/>
-                    <example-3 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Each component has a resource type, configurable properties, and one or more HTL views for rendering."/>
                 </container>
             </section>
         </main>
