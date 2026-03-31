@@ -14,7 +14,7 @@
                     <props-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Contains a link child component with properties: text (String), href (String), title (String), openInNewTab (Boolean), ariaLabel (String)."/>
                     <examples-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Examples" headingType="h2"/>
                     <ex-label jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Navigation item with link:"/>
-                    <example-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/code" code="&lt;navigation-item&gt;&#10;  &lt;link text=&quot;Home&quot; href=&quot;/content/sites/my-site.html&quot;/&gt;&#10;&lt;/navigation-item&gt;"/>
+                    <example-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/code" code="&lt;home-link&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    sling:resourceType=&quot;/libs/kestros/commons/components/navigation/navigation-item&quot;&gt;&#10;  &lt;link&#10;      jcr:primaryType=&quot;nt:unstructured&quot;&#10;      sling:resourceType=&quot;/libs/kestros/commons/components/content/link&quot;&#10;      text=&quot;Home&quot;&#10;      href=&quot;/content/sites/my-site.html&quot;/&gt;&#10;&lt;/home-link&gt;"/>
                     <ex-label-2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="See the Navigation page for a full menu example."/>
                 </container>
             </section>

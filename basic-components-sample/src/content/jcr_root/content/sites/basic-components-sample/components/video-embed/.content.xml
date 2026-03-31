@@ -16,9 +16,9 @@
                     <props-3 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="allowFullScreen (Boolean) - Whether to allow fullscreen mode. Default: true."/>
                     <examples-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Examples" headingType="h2"/>
                     <ex-label-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="YouTube embed:"/>
-                    <example-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/code" code="&lt;video-embed youtubeVideo=&quot;dQw4w9WgXcQ&quot; mute=&quot;false&quot; allowFullScreen=&quot;true&quot;/&gt;"/>
+                    <example-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/code" code="&lt;my-video&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    sling:resourceType=&quot;/libs/kestros/commons/components/content/video-embed&quot;&#10;    youtubeVideo=&quot;dQw4w9WgXcQ&quot;&#10;    mute=&quot;{Boolean}false&quot;&#10;    allowFullScreen=&quot;{Boolean}true&quot;/&gt;"/>
                     <ex-label-2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Muted autoplay embed:"/>
-                    <example-2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/code" code="&lt;video-embed youtubeVideo=&quot;dQw4w9WgXcQ&quot; mute=&quot;true&quot; allowFullScreen=&quot;false&quot;/&gt;"/>
+                    <example-2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/code" code="&lt;muted-video&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    sling:resourceType=&quot;/libs/kestros/commons/components/content/video-embed&quot;&#10;    youtubeVideo=&quot;dQw4w9WgXcQ&quot;&#10;    mute=&quot;{Boolean}true&quot;&#10;    allowFullScreen=&quot;{Boolean}false&quot;/&gt;"/>
                 </container>
             </section>
         </main>

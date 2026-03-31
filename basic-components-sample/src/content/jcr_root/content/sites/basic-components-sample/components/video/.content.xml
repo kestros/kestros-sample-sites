@@ -15,7 +15,7 @@
                     <props-2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="fallbackText (String) - Fallback text displayed when the video cannot be played."/>
                     <examples-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Examples" headingType="h2"/>
                     <ex-label-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Basic video with fallback:"/>
-                    <example-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/code" code="&lt;video videoPath=&quot;/content/dam/videos/intro.mp4&quot; fallbackText=&quot;Your browser does not support video playback.&quot;/&gt;"/>
+                    <example-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/code" code="&lt;intro-video&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    sling:resourceType=&quot;/libs/kestros/commons/components/content/video&quot;&#10;    videoPath=&quot;/content/dam/videos/intro.mp4&quot;&#10;    fallbackText=&quot;Your browser does not support video playback.&quot;/&gt;"/>
                 </container>
             </section>
         </main>
