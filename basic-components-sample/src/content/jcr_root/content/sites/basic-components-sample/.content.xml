@@ -19,18 +19,37 @@
                 <section
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/structure/section">
-                    <page-title
+                    <top-nav
                             jcr:primaryType="nt:unstructured"
-                            sling:resourceType="/libs/kestros/commons/components/content/page-title"
-                            level="h1"/>
+                            sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation"
+                            brandName="Kestros Components">
+                        <components-link
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation-item"
+                                text="All Components"
+                                href="/content/sites/basic-components-sample/components.html"/>
+                        <content-link
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation-item"
+                                text="Content"
+                                href="/content/sites/basic-components-sample/components/heading.html"/>
+                        <structure-link
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation-item"
+                                text="Structure"
+                                href="/content/sites/basic-components-sample/components/section.html"/>
+                        <nav-link
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation-item"
+                                text="Navigation"
+                                href="/content/sites/basic-components-sample/components/navigation.html"/>
+                        <lists-link
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation-item"
+                                text="Lists"
+                                href="/content/sites/basic-components-sample/components/link-list.html"/>
+                    </top-nav>
                 </section>
-                <section-1
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="/libs/kestros/commons/components/structure/section">
-                    <navigation
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="/libs/kestros/commons/components/structure/navigation"/>
-                </section-1>
             </container>
         </header>
         <main
@@ -59,20 +78,19 @@
                             <heading
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    level="h3"
-                                    text="Components"/>
+                                    headingText="Components"
+                                    headingType="h3"/>
                             <richtext
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    text="&lt;h4&gt;Structure&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/accordion&quot;&gt;Accordion&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/accordion-panel&quot;&gt;Accordion Panel&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/container&quot;&gt;Container&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/grid&quot;&gt;Grid&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/section&quot;&gt;Section&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;Content&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/alert&quot;&gt;Alert&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/button&quot;&gt;Button&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/button-group&quot;&gt;Button Group&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/code&quot;&gt;Code&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/heading&quot;&gt;Heading&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/image&quot;&gt;Image&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/link&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/richtext&quot;&gt;Richtext&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/text&quot;&gt;Text&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/video&quot;&gt;Video&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/video-embed&quot;&gt;Video Embed&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;Lists&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/card&quot;&gt;Card&lt;/a&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/card/asset-card&quot;&gt;Asset Card&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/card/page-card&quot;&gt;Page Card&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/card-list&quot;&gt;Card List&lt;/a&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/card-list/asset-list&quot;&gt;Asset List&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/card-list/child-pages&quot;&gt;Child Pages&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/card-list/tag-search&quot;&gt;Tag Search&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/link-list&quot;&gt;Link List&lt;/a&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/link-list/child-pages&quot;&gt;Child Pages&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/link-list/tag-search&quot;&gt;Tag Search&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;Navigation&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/breadcrumb&quot;&gt;Breadcrumb&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/breadcrumbs&quot;&gt;Breadcrumbs&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/navigation&quot;&gt;Navigation&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/navigation-item&quot;&gt;Navigation Item&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/top-navigation&quot;&gt;Top Navigation&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/top-navigation-item&quot;&gt;Top Navigation Item&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;Utilities&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/dialog-field-sample&quot;&gt;Dialog Field Sample&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/page-title&quot;&gt;Page Title&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/table&quot;&gt;Table&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;"/>
+                                    text="&lt;h4&gt;Content&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/heading.html&quot;&gt;Heading&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/text.html&quot;&gt;Text&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/richtext.html&quot;&gt;Richtext&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/code.html&quot;&gt;Code&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/image.html&quot;&gt;Image&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/video.html&quot;&gt;Video&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/video-embed.html&quot;&gt;Video Embed&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/button.html&quot;&gt;Button&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/button-group.html&quot;&gt;Button Group&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/link.html&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/card.html&quot;&gt;Card&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/alert.html&quot;&gt;Alert&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/page-title.html&quot;&gt;Page Title&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;Structure&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/section.html&quot;&gt;Section&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/container.html&quot;&gt;Container&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/grid.html&quot;&gt;Grid&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/accordion.html&quot;&gt;Accordion&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/accordion-panel.html&quot;&gt;Accordion Panel&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;Navigation&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/navigation.html&quot;&gt;Navigation&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/navigation-item.html&quot;&gt;Navigation Item&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/top-navigation.html&quot;&gt;Top Navigation&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/top-navigation-item.html&quot;&gt;Top Navigation Item&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/breadcrumbs.html&quot;&gt;Breadcrumbs&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/breadcrumb.html&quot;&gt;Breadcrumb&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;Lists&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/link-list.html&quot;&gt;Link List&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/card-list.html&quot;&gt;Card List&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;Table&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/table.html&quot;&gt;Table&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/table-header.html&quot;&gt;Table Header&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/table-row.html&quot;&gt;Table Row&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/table-cell.html&quot;&gt;Table Cell&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;"/>
                         </column-1>
+                        <column-2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area"/>
                         <column-3
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="kestros/commons/components/content-area"/>
-                        <column-2
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="kestros/commons/components/content-area">
-                        </column-2>
                     </grid>
                 </container>
             </section>
@@ -87,45 +105,24 @@
                 <section
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/structure/section">
-                    <grid
+                    <text
                             jcr:primaryType="nt:unstructured"
-                            sling:resourceType="/libs/kestros/commons/components/structure/grid">
-                        <column-1
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Kestros Basic Components Documentation"/>
+                    <link-list
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/lists/link-list">
+                        <kestros-io
                                 jcr:primaryType="nt:unstructured"
-                                sling:resourceType="kestros/commons/components/content-area">
-                            <heading
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    level="h3"
-                                    text="Links"/>
-                            <button
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="/libs/kestros/commons/components/content/button"
-                                    href="https://kestros.io"
-                                    label="Kestros IO"
-                                    link="https://kestros.io"
-                                    text="Kestros IO"/>
-                            <button-1
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="/libs/kestros/commons/components/content/button"
-                                    href="https://github.com/kestros"
-                                    label="Github"
-                                    link="https://github.com/kestros"
-                                    text="Github"/>
-                        </column-1>
-                        <column-2
+                                sling:resourceType="/libs/kestros/commons/components/content/link"
+                                text="Kestros.io"
+                                href="https://kestros.io"/>
+                        <github
                                 jcr:primaryType="nt:unstructured"
-                                sling:resourceType="kestros/commons/components/content-area">
-                            <heading
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    level="h3"
-                                    text="Documentation"/>
-                        </column-2>
-                        <column-3
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="kestros/commons/components/content-area"/>
-                    </grid>
+                                sling:resourceType="/libs/kestros/commons/components/content/link"
+                                text="GitHub"
+                                href="https://github.com/kestros"/>
+                    </link-list>
                 </section>
             </container>
         </footer>
