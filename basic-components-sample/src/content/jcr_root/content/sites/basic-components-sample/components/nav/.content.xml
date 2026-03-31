@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:kes="http://kestros.io/kes/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+        jcr:primaryType="kes:Page">
+    <jcr:content jcr:description="" jcr:primaryType="nt:unstructured" jcr:title="Navigation Components" kes:template="/libs/kestros/commons/base-page-template" sling:resourceType="kestros/commons/components/kestros-base-page">
+        <header jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
+        <main jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
+            <section jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/section">
+                <inherited-content-area jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/inherited-content-area"/>
+                <container jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container" elementType="main">
+                    <title jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Navigation Components" headingType="h1"/>
+                    <description jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Components for site navigation including menus, top navigation bars, breadcrumb trails, and navigation items."/>
+                    <links jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/lists/link-list">
+                        <l-navigation jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Navigation — menu from navigation-item children" href="/content/sites/basic-components-sample/components/navigation.html"/>
+                        <l-navigation-item jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Navigation Item — single menu entry" href="/content/sites/basic-components-sample/components/navigation-item.html"/>
+                        <l-top-navigation jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Top Navigation — site navbar with brand" href="/content/sites/basic-components-sample/components/top-navigation.html"/>
+                        <l-top-navigation-item jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Top Navigation Item — navbar entry with dropdowns" href="/content/sites/basic-components-sample/components/top-navigation-item.html"/>
+                        <l-breadcrumbs jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Breadcrumbs — page location trail" href="/content/sites/basic-components-sample/components/breadcrumbs.html"/>
+                        <l-breadcrumb jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Breadcrumb — single trail entry" href="/content/sites/basic-components-sample/components/breadcrumb.html"/>
+                    </links>
+                </container>
+            </section>
+        </main>
+        <footer jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
+    </jcr:content>
+</jcr:root>

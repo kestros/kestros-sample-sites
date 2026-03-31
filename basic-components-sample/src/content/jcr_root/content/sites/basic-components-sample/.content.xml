@@ -5,7 +5,7 @@
             jcr:description="A sample site to demonstrate the basic components of Kestros."
             jcr:primaryType="nt:unstructured"
             jcr:title="Basic Components Sample"
-            kes:theme="/etc/ui-frameworks/empty-framework/versions/0.0.1/themes/default"
+            kes:theme="/etc/ui-frameworks/ui-kit/versions/0.0.1/themes/default"
             sling:resourceType="kestros/commons/components/kestros-base-page"
             displayDescription=""
             publicationStrategy="kestros-single-instance">
@@ -18,23 +18,44 @@
                     elementType="header">
                 <section
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="/libs/kestros/commons/components/structure/section"
-                        variations="[]">
-                    <page-title
+                        sling:resourceType="/libs/kestros/commons/components/structure/section">
+                    <top-nav
                             jcr:primaryType="nt:unstructured"
-                            sling:resourceType="/libs/kestros/commons/components/content/page-title"
-                            level="h1"
-                            variations="[]"/>
+                            sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation"
+                            brandName="Kestros Components">
+                        <image
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/image"
+                                imagePath="/content/assets/logos/kestros-icon-color.png"
+                                altText="Kestros Logo"
+                                imageTitle="Kestros"/>
+                        <components-link
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation-item"
+                                text="All Components"
+                                href="/content/sites/basic-components-sample/components.html"/>
+                        <content-link
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation-item"
+                                text="Content"
+                                href="/content/sites/basic-components-sample/components/content.html"/>
+                        <structure-link
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation-item"
+                                text="Structure"
+                                href="/content/sites/basic-components-sample/components/structure.html"/>
+                        <nav-link
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation-item"
+                                text="Navigation"
+                                href="/content/sites/basic-components-sample/components/nav.html"/>
+                        <lists-link
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation-item"
+                                text="Lists &amp; Tables"
+                                href="/content/sites/basic-components-sample/components/lists.html"/>
+                    </top-nav>
                 </section>
-                <section-1
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="/libs/kestros/commons/components/structure/section"
-                        variations="[]">
-                    <navigation
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="/libs/kestros/commons/components/structure/navigation"
-                            variations="[]"/>
-                </section-1>
             </container>
         </header>
         <main
@@ -42,45 +63,40 @@
                 sling:resourceType="kestros/commons/components/content-area">
             <section
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="/libs/kestros/commons/components/structure/section"
-                    variations="[]">
+                    sling:resourceType="/libs/kestros/commons/components/structure/section">
                 <inherited-content-area
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/inherited-content-area">
                     <breadcrumbs
                             jcr:primaryType="nt:unstructured"
-                            sling:resourceType="/libs/kestros/commons/components/structure/breadcrumbs"
-                            variations="[]"/>
+                            sling:resourceType="/libs/kestros/commons/components/structure/breadcrumbs"/>
                 </inherited-content-area>
                 <container
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/structure/container"
-                        elementType="main"
-                        variations="[]">
+                        elementType="main">
                     <grid
                             jcr:primaryType="nt:unstructured"
-                            sling:resourceType="/libs/kestros/commons/components/structure/grid"
-                            variations="[]">
+                            sling:resourceType="/libs/kestros/commons/components/structure/grid">
                         <column-1
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="kestros/commons/components/content-area">
-                            <inherited-content-area
+                            <heading
                                     jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="/libs/kestros/commons/components/inherited-content-area">
-                                <navigation
-                                        jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="/libs/kestros/commons/components/structure/navigation"
-                                        rootPage="/content/sites/basic-components-sample/components"
-                                        variations="[]"/>
-                            </inherited-content-area>
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    headingText="Components"
+                                    headingType="h3"/>
+                            <richtext
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text="&lt;h4&gt;Content&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/heading.html&quot;&gt;Heading&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/text.html&quot;&gt;Text&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/richtext.html&quot;&gt;Richtext&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/code.html&quot;&gt;Code&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/image.html&quot;&gt;Image&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/video.html&quot;&gt;Video&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/video-embed.html&quot;&gt;Video Embed&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/button.html&quot;&gt;Button&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/button-group.html&quot;&gt;Button Group&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/link.html&quot;&gt;Link&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/card.html&quot;&gt;Card&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/alert.html&quot;&gt;Alert&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/page-title.html&quot;&gt;Page Title&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;Structure&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/section.html&quot;&gt;Section&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/container.html&quot;&gt;Container&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/grid.html&quot;&gt;Grid&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/accordion.html&quot;&gt;Accordion&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/accordion-panel.html&quot;&gt;Accordion Panel&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;Navigation&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/navigation.html&quot;&gt;Navigation&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/navigation-item.html&quot;&gt;Navigation Item&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/top-navigation.html&quot;&gt;Top Navigation&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/top-navigation-item.html&quot;&gt;Top Navigation Item&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/breadcrumbs.html&quot;&gt;Breadcrumbs&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/breadcrumb.html&quot;&gt;Breadcrumb&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;Lists&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/link-list.html&quot;&gt;Link List&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/card-list.html&quot;&gt;Card List&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;Table&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/table.html&quot;&gt;Table&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/table-header.html&quot;&gt;Table Header&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/table-row.html&quot;&gt;Table Row&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/content/sites/basic-components-sample/components/table-cell.html&quot;&gt;Table Cell&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;"/>
                         </column-1>
+                        <column-2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area"/>
                         <column-3
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="kestros/commons/components/content-area"/>
-                        <column-2
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="kestros/commons/components/content-area">
-                        </column-2>
                     </grid>
                 </container>
             </section>
@@ -94,51 +110,25 @@
                     elementType="footer">
                 <section
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="/libs/kestros/commons/components/structure/section"
-                        variations="[]">
-                    <grid
+                        sling:resourceType="/libs/kestros/commons/components/structure/section">
+                    <text
                             jcr:primaryType="nt:unstructured"
-                            sling:resourceType="/libs/kestros/commons/components/structure/grid">
-                        <column-1
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Kestros Basic Components Documentation"/>
+                    <link-list
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/lists/link-list">
+                        <kestros-io
                                 jcr:primaryType="nt:unstructured"
-                                sling:resourceType="kestros/commons/components/content-area">
-                            <heading
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    level="h3"
-                                    text="Links"
-                                    variations="[]"/>
-                            <button
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="/libs/kestros/commons/components/content/button"
-                                    href="https://kestros.io"
-                                    label="Kestros IO"
-                                    link="https://kestros.io"
-                                    text="Kestros IO"
-                                    variations="[]"/>
-                            <button-1
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="/libs/kestros/commons/components/content/button"
-                                    href="https://github.com/kestros"
-                                    label="Github"
-                                    link="https://github.com/kestros"
-                                    text="Github"
-                                    variations="[]"/>
-                        </column-1>
-                        <column-2
+                                sling:resourceType="/libs/kestros/commons/components/content/link"
+                                text="Kestros.io"
+                                href="https://kestros.io"/>
+                        <github
                                 jcr:primaryType="nt:unstructured"
-                                sling:resourceType="kestros/commons/components/content-area">
-                            <heading
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    level="h3"
-                                    text="Documentation"
-                                    variations="[]"/>
-                        </column-2>
-                        <column-3
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="kestros/commons/components/content-area"/>
-                    </grid>
+                                sling:resourceType="/libs/kestros/commons/components/content/link"
+                                text="GitHub"
+                                href="https://github.com/kestros"/>
+                    </link-list>
                 </section>
             </container>
         </footer>

@@ -1,60 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:kes="http://kestros.io/kes/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
-    jcr:primaryType="kes:Page">
-    <jcr:content
-        jcr:description=""
-        jcr:primaryType="nt:unstructured"
-        jcr:title="Richtext"
-        kes:template="/libs/kestros/commons/base-page-template"
-        sling:resourceType="kestros/commons/components/kestros-base-page">
-        <header
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="kestros/commons/components/inherited-content-area"/>
-        <main
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="kestros/commons/components/content-area">
-            <section
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="/libs/kestros/commons/components/structure/section">
-                <inherited-content-area
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="/libs/kestros/commons/components/inherited-content-area"/>
-                <container
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="/libs/kestros/commons/components/structure/container"
-                        elementType="main">
-                    <grid
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="/libs/kestros/commons/components/structure/grid">
-                        <column-1
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="kestros/commons/components/content-area">
-                            <inherited-content-area
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="/libs/kestros/commons/components/inherited-content-area"/>
-                        </column-1>
-                        <column-2
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="kestros/commons/components/content-area">
-                            <heading
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    level="h2"
-                                    text="Richtext"/>
-                            <richtext
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    text="&lt;p&gt;This is a &lt;strong&gt;richtext&lt;/strong&gt; component with &lt;em&gt;formatted&lt;/em&gt; content.&lt;/p&gt;"/>
-                        </column-2>
-                        <column-3
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="kestros/commons/components/content-area"/>
-                    </grid>
+        jcr:primaryType="kes:Page">
+    <jcr:content jcr:description="" jcr:primaryType="nt:unstructured" jcr:title="Richtext" kes:template="/libs/kestros/commons/base-page-template" sling:resourceType="kestros/commons/components/kestros-base-page">
+        <header jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
+        <main jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
+            <section jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/section">
+                <inherited-content-area jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/inherited-content-area"/>
+                <container jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container" elementType="main">
+                    <title jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Richtext" headingType="h1"/>
+                    <description jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Renders formatted and stylized text blocks with HTML markup support."/>
+                    <resource-type jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Resource Type: /libs/kestros/commons/components/content/richtext"/>
+                    <properties-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Properties" headingType="h2"/>
+                    <properties-table jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table">
+                        <h-name jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-header" text="Property"/>
+                        <h-type jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-header" text="Type"/>
+                        <h-desc jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-header" text="Description"/>
+                        <row-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-row">
+                            <c-name jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-cell"><t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="text"/></c-name>
+                            <c-type jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-cell"><t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="String"/></c-type>
+                            <c-desc jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-cell"><t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Rich text content with HTML formatting."/></c-desc>
+                        </row-1>
+                    </properties-table>
+                    <examples-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Examples" headingType="h2"/>
+                    <example-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/richtext" text="This is &lt;strong&gt;bold text&lt;/strong&gt; and this is &lt;em&gt;italic text&lt;/em&gt;."/>
+                    <example-2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/richtext" text="&lt;ul&gt;&lt;li&gt;First item&lt;/li&gt;&lt;li&gt;Second item&lt;/li&gt;&lt;li&gt;Third item&lt;/li&gt;&lt;/ul&gt;"/>
                 </container>
             </section>
         </main>
-        <footer
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="kestros/commons/components/inherited-content-area"/>
+        <footer jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
     </jcr:content>
 </jcr:root>

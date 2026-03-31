@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:kes="http://kestros.io/kes/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+        jcr:primaryType="kes:Page">
+    <jcr:content jcr:description="" jcr:primaryType="nt:unstructured" jcr:title="List &amp; Table Components" kes:template="/libs/kestros/commons/base-page-template" sling:resourceType="kestros/commons/components/kestros-base-page">
+        <header jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
+        <main jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
+            <section jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/section">
+                <inherited-content-area jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/inherited-content-area"/>
+                <container jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container" elementType="main">
+                    <title jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="List &amp; Table Components" headingType="h1"/>
+                    <list-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Lists" headingType="h2"/>
+                    <description jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="List components render collections of links or cards. They support static content and dynamic datasources (child-pages, tag-search, asset-list)."/>
+                    <list-links jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/lists/link-list">
+                        <l-link-list jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Link List — list of links with datasources" href="/content/sites/basic-components-sample/components/link-list.html"/>
+                        <l-card-list jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Card List — list of cards with datasources" href="/content/sites/basic-components-sample/components/card-list.html"/>
+                    </list-links>
+                    <table-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Tables" headingType="h2"/>
+                    <table-desc jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Table components display structured data in rows and columns. Build tables from table-header, table-row, and table-cell children."/>
+                    <table-links jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/lists/link-list">
+                        <l-table jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Table — data table container" href="/content/sites/basic-components-sample/components/table.html"/>
+                        <l-table-header jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Table Header — column header cell" href="/content/sites/basic-components-sample/components/table-header.html"/>
+                        <l-table-row jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Table Row — data row" href="/content/sites/basic-components-sample/components/table-row.html"/>
+                        <l-table-cell jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Table Cell — single data cell" href="/content/sites/basic-components-sample/components/table-cell.html"/>
+                    </table-links>
+                </container>
+            </section>
+        </main>
+        <footer jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
+    </jcr:content>
+</jcr:root>
