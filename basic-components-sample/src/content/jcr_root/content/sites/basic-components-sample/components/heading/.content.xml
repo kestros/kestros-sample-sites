@@ -23,67 +23,61 @@
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/structure/container"
                         elementType="main">
-                    <grid
+                    <title
                             jcr:primaryType="nt:unstructured"
-                            sling:resourceType="/libs/kestros/commons/components/structure/grid">
-                        <column-1
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="kestros/commons/components/content-area">
-                            <inherited-content-area
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="/libs/kestros/commons/components/inherited-content-area"/>
-                        </column-1>
-                        <column-2
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="kestros/commons/components/content-area">
-                            <title
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    level="h1"
-                                    text="Heading"/>
-                            <intro
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    text="&lt;p&gt;A semantic heading component that renders heading elements (h1–h4). Use headings to structure page content and improve accessibility and SEO.&lt;/p&gt;"/>
-                            <properties-heading
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    level="h2"
-                                    text="Properties"/>
-                            <properties-text
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    text="&lt;p&gt;&lt;strong&gt;text&lt;/strong&gt; - The heading text content (string).&lt;/p&gt;&lt;p&gt;&lt;strong&gt;level&lt;/strong&gt; - The HTML heading level. Valid values: h1, h2, h3, h4 (defaults to h1).&lt;/p&gt;"/>
-                            <examples-heading
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    level="h2"
-                                    text="Examples"/>
-                            <example-1
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    level="h1"
-                                    text="Heading Level 1"/>
-                            <example-2
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    level="h2"
-                                    text="Heading Level 2"/>
-                            <example-3
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    level="h3"
-                                    text="Heading Level 3"/>
-                            <example-4
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
-                                    level="h4"
-                                    text="Heading Level 4"/>
-                        </column-2>
-                        <column-3
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="kestros/commons/components/content-area"/>
-                    </grid>
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            headingText="Heading"
+                            headingType="h1"/>
+                    <description
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Renders a configurable HTML heading element. Supports heading levels h1 through h6 with custom text content."/>
+                    <resource-type
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Resource Type: content/heading"/>
+                    <properties-heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            headingText="Properties"
+                            headingType="h2"/>
+                    <props-text
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="headingText (String) - The text content displayed in the heading. Required."/>
+                    <props-text-2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="headingType (String) - The heading level: h1, h2, h3, h4, h5, or h6."/>
+                    <examples-heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            headingText="Examples"
+                            headingType="h2"/>
+                    <example-1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            headingText="Page Title Example"
+                            headingType="h1"/>
+                    <example-2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            headingText="Section Heading"
+                            headingType="h2"/>
+                    <example-3
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            headingText="Subsection Heading"
+                            headingType="h4"/>
+                    <source-heading
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            headingText="HTL Source"
+                            headingType="h2"/>
+                    <source-code
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/code"
+                            codeResource="/libs/kestros/commons/components/content/heading/common/content.html"/>
                 </container>
             </section>
         </main>
