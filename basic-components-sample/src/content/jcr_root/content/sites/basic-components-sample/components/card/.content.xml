@@ -36,11 +36,24 @@
                         <column-2
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="kestros/commons/components/content-area">
-                            <heading
+                            <title
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h1"
+                                    text="Card"/>
+                            <intro
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text="&lt;p&gt;A card component that displays content in a visually distinct container. Cards are typically used to present items in grids or lists with optional images, titles, and descriptions.&lt;/p&gt;"/>
+                            <properties-heading
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/heading"
                                     level="h2"
-                                    text="Card"/>
+                                    text="Properties"/>
+                            <properties-text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text="&lt;p&gt;&lt;strong&gt;heading&lt;/strong&gt; - Card title or heading text.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;description&lt;/strong&gt; - Card body text content.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;image&lt;/strong&gt; - Optional card image or thumbnail.&lt;/p&gt;"/>
                             <card
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/card"

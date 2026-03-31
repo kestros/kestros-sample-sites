@@ -36,11 +36,24 @@
                         <column-2
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="kestros/commons/components/content-area">
-                            <heading
+                            <title
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h1"
+                                    text="Breadcrumb"/>
+                            <intro
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text="&lt;p&gt;A single breadcrumb link component representing one step in a breadcrumb trail. Used within breadcrumbs parent component to show navigation hierarchy.&lt;/p&gt;"/>
+                            <properties-heading
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/heading"
                                     level="h2"
-                                    text="Breadcrumb"/>
+                                    text="Properties"/>
+                            <properties-text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text="&lt;p&gt;No configurable properties. Breadcrumbs are auto-generated from page hierarchy.&lt;/p&gt;"/>
                             <breadcrumb
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/navigation/breadcrumb"/>

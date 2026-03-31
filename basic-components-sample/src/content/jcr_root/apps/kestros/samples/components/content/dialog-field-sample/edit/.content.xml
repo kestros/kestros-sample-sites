@@ -127,8 +127,8 @@
             label="Number (Integer Only)"
             name="numberInteger"
             integerOnly="{Boolean}true"
-            min="{Float}0"
-            max="{Float}100"/>
+            min="0"
+            max="100"/>
 
         <date-standard
             jcr:primaryType="nt:unstructured"

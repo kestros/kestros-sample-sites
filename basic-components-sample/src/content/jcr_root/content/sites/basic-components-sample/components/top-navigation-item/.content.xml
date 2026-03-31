@@ -36,11 +36,24 @@
                         <column-2
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="kestros/commons/components/content-area">
-                            <heading
+                            <title
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h1"
+                                    text="Top Navigation Item"/>
+                            <intro
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text="&lt;p&gt;An individual item within a top navigation component. Represents a single link or navigation option.&lt;/p&gt;"/>
+                            <properties-heading
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/heading"
                                     level="h2"
-                                    text="Top Navigation Item"/>
+                                    text="Properties"/>
+                            <properties-text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text="&lt;p&gt;&lt;strong&gt;text&lt;/strong&gt; - Navigation item label or text.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;href&lt;/strong&gt; - Target URL or page path for the navigation link.&lt;/p&gt;"/>
                             <top-navigation
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation">

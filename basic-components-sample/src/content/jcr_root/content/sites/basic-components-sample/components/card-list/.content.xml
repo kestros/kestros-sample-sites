@@ -36,11 +36,24 @@
                         <column-2
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="kestros/commons/components/content-area">
-                            <heading
+                            <title
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                    level="h1"
+                                    text="Card List"/>
+                            <intro
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text="&lt;p&gt;A list container component that displays multiple card components in a grid or list layout. Card lists use datasources to automatically populate cards from different content sources.&lt;/p&gt;"/>
+                            <properties-heading
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/heading"
                                     level="h2"
-                                    text="Card List"/>
+                                    text="Properties"/>
+                            <properties-text
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text="&lt;p&gt;&lt;strong&gt;datasource&lt;/strong&gt; - The data source component that provides card data (asset-list, child-pages, tag-search, etc.).&lt;/p&gt;&lt;p&gt;&lt;strong&gt;columns&lt;/strong&gt; - Number of columns for the card grid layout.&lt;/p&gt;"/>
                             <card-list
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/lists/card-list"/>
