@@ -8,20 +8,42 @@
                 <inherited-content-area jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/inherited-content-area"/>
                 <container jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container" elementType="main">
                     <title jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Link List" headingType="h1"/>
-                    <description jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Renders a list of links. Can be populated statically with link children, or dynamically via child-pages or tag-search datasources."/>
+                    <description jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Renders a list of links. Supports static content and dynamic datasources."/>
                     <resource-type jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Resource Type: /libs/kestros/commons/components/lists/link-list"/>
                     <properties-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Properties" headingType="h2"/>
-                    <props-note jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Link list is a container for link children. No direct properties on the list itself."/>
+                    <properties-table jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table">
+                        <h-name jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-header" text="Property"/>
+                        <h-type jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-header" text="Type"/>
+                        <h-desc jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-header" text="Description"/>
+                        <row-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-row">
+                            <c-name jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-cell"><t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="(container)"/></c-name>
+                            <c-type jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-cell"><t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="—"/></c-type>
+                            <c-desc jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-cell"><t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Add link children for static list."/></c-desc>
+                        </row-1>
+                    </properties-table>
                     <ds-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Datasources" headingType="h2"/>
-                    <ds-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="default - Static list of link children configured directly."/>
-                    <ds-2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="child-pages - Generates links from child pages. Properties: pagesPath (String), sortBy (String), reverse (Boolean), limit (String)."/>
-                    <ds-3 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="tag-search - Generates links from pages matching tags. Properties: tags (String[]), pagesPath (String), sortBy (String), reverse (Boolean), limit (String)."/>
+                    <ds-table jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table">
+                        <dh-name jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-header" text="Datasource"/>
+                        <dh-props jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-header" text="Properties"/>
+                        <dr-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-row">
+                            <c1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-cell"><t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="default"/></c1>
+                            <c2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-cell"><t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Static link children"/></c2>
+                        </dr-1>
+                        <dr-2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-row">
+                            <c1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-cell"><t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="child-pages"/></c1>
+                            <c2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-cell"><t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="pagesPath, sortBy, reverse, limit"/></c2>
+                        </dr-2>
+                        <dr-3 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-row">
+                            <c1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-cell"><t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="tag-search"/></c1>
+                            <c2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-cell"><t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="tags, pagesPath, sortBy, reverse, limit"/></c2>
+                        </dr-3>
+                    </ds-table>
                     <examples-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Examples" headingType="h2"/>
-                    <ex-label-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Static link list with three links:"/>
+                    <ex-label jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Static link list:"/>
                     <example-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/lists/link-list">
-                        <link-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Heading Component" href="/content/sites/basic-components-sample/components/heading.html"/>
-                        <link-2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Button Component" href="/content/sites/basic-components-sample/components/button.html"/>
-                        <link-3 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Card Component" href="/content/sites/basic-components-sample/components/card.html"/>
+                        <link-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Heading" href="/content/sites/basic-components-sample/components/heading.html"/>
+                        <link-2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Button" href="/content/sites/basic-components-sample/components/button.html"/>
+                        <link-3 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Card" href="/content/sites/basic-components-sample/components/card.html"/>
                     </example-1>
                 </container>
             </section>

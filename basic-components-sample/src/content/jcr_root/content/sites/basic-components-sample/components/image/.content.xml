@@ -8,22 +8,43 @@
                 <inherited-content-area jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/inherited-content-area"/>
                 <container jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container" elementType="main">
                     <title jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Image" headingType="h1"/>
-                    <description jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Displays an image asset with optional link, caption, alt text, and accessibility attributes. Supports both DAM asset paths and static image paths."/>
+                    <description jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Displays an image asset with optional link, caption, alt text, and accessibility attributes."/>
                     <resource-type jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Resource Type: /libs/kestros/commons/components/content/image"/>
                     <properties-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Properties" headingType="h2"/>
-                    <props-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="imagePath (String) - Path to the image asset in the repository. Required."/>
-                    <props-2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="altText (String) - Alternative text for accessibility and SEO."/>
-                    <props-3 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="caption (String) - Caption text displayed below the image."/>
-                    <props-4 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="imageTitle (String) - Title attribute for the image element."/>
-                    <props-5 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="href (String) - URL to link the image to. Makes the image clickable."/>
-                    <props-6 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="ariaLabel (String) - ARIA label for screen readers."/>
-                    <props-7 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="anchorTitle (String) - Title attribute on the anchor element when href is set."/>
-                    <props-8 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="openInNewTab (Boolean) - Open the linked URL in a new browser tab. Default: false."/>
+                    <properties-table jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table">
+                        <h-name jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-header" text="Property"/>
+                        <h-type jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-header" text="Type"/>
+                        <h-desc jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-header" text="Description"/>
+                        <row-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-row">
+                            <c-name jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-cell"><t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="imagePath
+altText
+caption
+imageTitle
+href
+ariaLabel
+anchorTitle
+openInNewTab"/></c-name>
+                            <c-type jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-cell"><t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="String
+String
+String
+String
+String
+String
+String
+Boolean"/></c-type>
+                            <c-desc jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-cell"><t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Path to the image asset. Required.
+Alternative text for accessibility.
+Caption text below the image.
+Title attribute for the image.
+URL to link the image to.
+ARIA label for screen readers.
+Title on the anchor element.
+Open link in new tab. Default: false."/></c-desc>
+                        </row-1>
+                    </properties-table>
                     <examples-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Examples" headingType="h2"/>
-                    <ex-label-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Basic image with alt text:"/>
+                    <ex-label jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Basic image with alt text:"/>
                     <example-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/code" code="&lt;my-image&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    sling:resourceType=&quot;/libs/kestros/commons/components/content/image&quot;&#10;    imagePath=&quot;/content/dam/photos/hero.jpg&quot;&#10;    altText=&quot;Hero banner image&quot;&#10;    imageTitle=&quot;Welcome&quot;/&gt;"/>
-                    <ex-label-2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Linked image with caption:"/>
-                    <example-2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/code" code="&lt;linked-image&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    sling:resourceType=&quot;/libs/kestros/commons/components/content/image&quot;&#10;    imagePath=&quot;/content/dam/photos/product.jpg&quot;&#10;    altText=&quot;Product photo&quot;&#10;    caption=&quot;Our flagship product&quot;&#10;    href=&quot;/products.html&quot;&#10;    ariaLabel=&quot;View product details&quot;/&gt;"/>
                 </container>
             </section>
         </main>

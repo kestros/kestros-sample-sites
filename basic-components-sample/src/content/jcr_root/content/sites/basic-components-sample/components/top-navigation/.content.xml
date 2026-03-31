@@ -8,21 +8,26 @@
                 <inherited-content-area jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/inherited-content-area"/>
                 <container jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container" elementType="main">
                     <title jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Top Navigation" headingType="h1"/>
-                    <description jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Top-level site navigation bar with a brand name, optional logo image, and top-navigation-item children. Supports dropdown submenus via nested top-navigation-items. Typically placed in the page header inherited content area."/>
+                    <description jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Site navigation bar with brand name, optional logo, and top-navigation-item children. Supports dropdown submenus."/>
                     <resource-type jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Resource Type: /libs/kestros/commons/components/navigation/top-navigation"/>
                     <properties-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Properties" headingType="h2"/>
-                    <props-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="brandName (String) - Brand or site name displayed in the navigation bar."/>
-                    <props-2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Contains an optional image child (for a logo) and top-navigation-item children (each containing a link)."/>
-                    <structure-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Content Structure" headingType="h2"/>
-                    <structure-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="top-navigation (brandName='My Site')"/>
-                    <structure-2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="    logo (image component, optional)"/>
-                    <structure-3 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="  item-1 (top-navigation-item)"/>
-                    <structure-4 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="    link (link component: text='Home', href='/index.html')"/>
-                    <structure-5 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="    item-2 (top-navigation-item, with dropdown)"/>
-                    <structure-6 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="    link (link component: text='Products', href='/products.html')"/>
-                    <structure-7 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="        sub-item (nested top-navigation-item for dropdown)"/>
+                    <properties-table jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table">
+                        <h-name jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-header" text="Property"/>
+                        <h-type jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-header" text="Type"/>
+                        <h-desc jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-header" text="Description"/>
+                        <row-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-row">
+                            <c-name jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-cell"><t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="brandName"/></c-name>
+                            <c-type jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-cell"><t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="String"/></c-type>
+                            <c-desc jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-cell"><t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Brand or site name in the navigation bar."/></c-desc>
+                        </row-1>
+                        <row-2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-row">
+                            <c-name jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-cell"><t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="(children)"/></c-name>
+                            <c-type jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-cell"><t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="—"/></c-type>
+                            <c-desc jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-cell"><t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Add image child (logo) and top-navigation-item children."/></c-desc>
+                        </row-2>
+                    </properties-table>
                     <examples-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Examples" headingType="h2"/>
-                    <example-note jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Top navigation renders in the page header context. See the site header on any page of this sample site for a live example."/>
+                    <ex-note jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="This site header uses the top-navigation component. See it at the top of every page."/>
                 </container>
             </section>
         </main>

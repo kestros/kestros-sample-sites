@@ -8,13 +8,21 @@
                 <inherited-content-area jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/inherited-content-area"/>
                 <container jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container" elementType="main">
                     <title jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Table Row" headingType="h1"/>
-                    <description jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="A data row within a table. Contains table-cell children, each holding content components. Place as a direct child of a table component."/>
+                    <description jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="A data row within a table. Contains table-cell children."/>
                     <resource-type jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Resource Type: /libs/kestros/commons/components/content/table-row"/>
                     <properties-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Properties" headingType="h2"/>
-                    <props-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="See the Table component page for property documentation."/>
+                    <properties-table jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table">
+                        <h-name jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-header" text="Property"/>
+                        <h-type jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-header" text="Type"/>
+                        <h-desc jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-header" text="Description"/>
+                        <row-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-row">
+                            <c-name jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-cell"><t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="(container)"/></c-name>
+                            <c-type jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-cell"><t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="—"/></c-type>
+                            <c-desc jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table-cell"><t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Add table-cell children."/></c-desc>
+                        </row-1>
+                    </properties-table>
                     <examples-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Examples" headingType="h2"/>
-                    <ex-label jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="XML configuration:"/>
-                    <example-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/code" code="&lt;row-1&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    sling:resourceType=&quot;/libs/kestros/commons/components/content/table-row&quot;&gt;&#10;  &lt;cell-1&#10;      jcr:primaryType=&quot;nt:unstructured&quot;&#10;      sling:resourceType=&quot;/libs/kestros/commons/components/content/table-cell&quot;&gt;&#10;    &lt;text&#10;        jcr:primaryType=&quot;nt:unstructured&quot;&#10;        sling:resourceType=&quot;/libs/kestros/commons/components/content/text&quot;&#10;        text=&quot;Cell content&quot;/&gt;&#10;  &lt;/cell-1&gt;&#10;&lt;/row-1&gt;"/>
+                    <example-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/code" code="&lt;row-1&#10;    jcr:primaryType=&quot;nt:unstructured&quot;&#10;    sling:resourceType=&quot;/libs/kestros/commons/components/content/table-row&quot;&gt;&#10;  &lt;cell-1&#10;      jcr:primaryType=&quot;nt:unstructured&quot;&#10;      sling:resourceType=&quot;/libs/kestros/commons/components/content/table-cell&quot;&gt;&#10;    &lt;text jcr:primaryType=&quot;nt:unstructured&quot;&#10;        sling:resourceType=&quot;/libs/kestros/commons/components/content/text&quot;&#10;        text=&quot;Cell content&quot;/&gt;&#10;  &lt;/cell-1&gt;&#10;&lt;/row-1&gt;"/>
                 </container>
             </section>
         </main>
