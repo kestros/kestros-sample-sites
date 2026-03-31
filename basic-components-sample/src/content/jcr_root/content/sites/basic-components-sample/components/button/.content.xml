@@ -15,8 +15,10 @@
                     <props-2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="href (String) - URL the button links to. Required."/>
                     <props-3 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="title (String) - Title attribute for hover tooltip."/>
                     <props-4 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="ariaLabel (String) - ARIA label for screen readers."/>
-                    <props-5 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="disabled (Boolean) - Whether the button is disabled. Default: false."/>
-                    <props-6 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="rel (String) - Rel attribute for the anchor (e.g. noopener, nofollow)."/>
+                    <props-5 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="ariaDescribedBy (String) - ARIA described-by attribute for screen readers."/>
+                    <props-6 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="disabled (Boolean) - Whether the button is disabled. Default: false."/>
+                    <props-7 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="rel (String) - Rel attribute for the anchor (e.g. noopener, nofollow)."/>
+                    <props-8 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="lang (String) - Language attribute for the element."/>
                     <examples-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Examples" headingType="h2"/>
                     <example-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/button" text="Learn More" href="/content/sites/basic-components-sample.html" title="Go to the sample site"/>
                     <example-2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/button" text="Get Started" href="/content/sites/basic-components-sample/components.html" ariaLabel="Navigate to components list"/>
