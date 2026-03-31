@@ -35,7 +35,7 @@
                     <resource-type
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="/libs/kestros/commons/components/content/text"
-                            text="Resource Type: content/heading"/>
+                            text="Resource Type: /libs/kestros/commons/components/content/heading"/>
                     <properties-heading
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="/libs/kestros/commons/components/content/heading"
