@@ -16,8 +16,6 @@
                     <example-1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/richtext" text="This is &lt;strong&gt;bold text&lt;/strong&gt; and this is &lt;em&gt;italic text&lt;/em&gt; in a richtext component."/>
                     <example-2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/richtext" text="&lt;p&gt;Richtext supports &lt;a href='/content/sites/basic-components-sample.html'&gt;links&lt;/a&gt;, &lt;strong&gt;bold&lt;/strong&gt;, &lt;em&gt;italic&lt;/em&gt;, and &lt;code&gt;inline code&lt;/code&gt;.&lt;/p&gt;"/>
                     <example-3 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/richtext" text="&lt;ul&gt;&lt;li&gt;First item&lt;/li&gt;&lt;li&gt;Second item&lt;/li&gt;&lt;li&gt;Third item&lt;/li&gt;&lt;/ul&gt;"/>
-                    <source-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="HTL Source" headingType="h2"/>
-                    <source-code jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/code" codeResource="/libs/kestros/commons/components/content/richtext/common/content.html"/>
                 </container>
             </section>
         </main>

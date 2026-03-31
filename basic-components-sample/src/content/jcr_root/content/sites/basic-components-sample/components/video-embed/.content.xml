@@ -16,8 +16,6 @@
                     <props-3 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="allowFullScreen (Boolean) - Whether to allow fullscreen mode. Default: true."/>
                     <examples-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Examples" headingType="h2"/>
                     <example-note jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Video embed examples require a YouTube video ID. Configure youtubeVideo with a valid ID."/>
-                    <source-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="HTL Source" headingType="h2"/>
-                    <source-code jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/code" codeResource="/libs/kestros/commons/components/content/video-embed/common/content.html"/>
                 </container>
             </section>
         </main>
