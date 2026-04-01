@@ -10,31 +10,9 @@
     "header": {
       "jcr:primaryType": "nt:unstructured",
       "sling:resourceType": "kestros/commons/components/inherited-content-area",
-      "container": {
+      "top-navigation": {
         "jcr:primaryType": "nt:unstructured",
-        "sling:resourceType": "/libs/kestros/commons/components/structure/container",
-        "elementType": "header",
-        "section": {
-          "jcr:primaryType": "nt:unstructured",
-          "sling:resourceType": "/libs/kestros/commons/components/structure/section",
-          "variations": "[]",
-          "page-title": {
-            "jcr:primaryType": "nt:unstructured",
-            "sling:resourceType": "/libs/kestros/commons/components/content/page-title",
-            "level": "h1",
-            "variations": "[]"
-          }
-        },
-        "nav-section": {
-          "jcr:primaryType": "nt:unstructured",
-          "sling:resourceType": "/libs/kestros/commons/components/structure/section",
-          "variations": "[]",
-          "navigation": {
-            "jcr:primaryType": "nt:unstructured",
-            "sling:resourceType": "/libs/kestros/commons/components/structure/navigation",
-            "variations": "[]"
-          }
-        }
+        "sling:resourceType": "/libs/kestros/commons/components/structure/top-navigation"
       }
     },
     "main": {
@@ -44,14 +22,13 @@
     "footer": {
       "jcr:primaryType": "nt:unstructured",
       "sling:resourceType": "kestros/commons/components/inherited-content-area",
-      "container": {
+      "section": {
         "jcr:primaryType": "nt:unstructured",
-        "sling:resourceType": "/libs/kestros/commons/components/structure/container",
-        "elementType": "footer",
-        "section": {
+        "sling:resourceType": "/libs/kestros/commons/components/structure/section",
+        "variations": "[bg-dark]",
+        "container": {
           "jcr:primaryType": "nt:unstructured",
-          "sling:resourceType": "/libs/kestros/commons/components/structure/section",
-          "variations": "[]",
+          "sling:resourceType": "/libs/kestros/commons/components/structure/container",
           "grid": {
             "jcr:primaryType": "nt:unstructured",
             "sling:resourceType": "/libs/kestros/commons/components/structure/grid",
@@ -61,9 +38,8 @@
               "heading": {
                 "jcr:primaryType": "nt:unstructured",
                 "sling:resourceType": "/libs/kestros/commons/components/content/heading",
-                "level": "h3",
-                "text": "Northstar Financial",
-                "variations": "[]"
+                "headingType": "h3",
+                "headingText": "Northstar Financial"
               },
               "text": {
                 "jcr:primaryType": "nt:unstructured",
@@ -77,9 +53,8 @@
               "heading": {
                 "jcr:primaryType": "nt:unstructured",
                 "sling:resourceType": "/libs/kestros/commons/components/content/heading",
-                "level": "h3",
-                "text": "Legal",
-                "variations": "[]"
+                "headingType": "h3",
+                "headingText": "Legal"
               },
               "text": {
                 "jcr:primaryType": "nt:unstructured",
@@ -89,7 +64,19 @@
             },
             "column-3": {
               "jcr:primaryType": "nt:unstructured",
-              "sling:resourceType": "kestros/commons/components/content-area"
+              "sling:resourceType": "kestros/commons/components/content-area",
+              "heading": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "/libs/kestros/commons/components/content/heading",
+                "headingType": "h3",
+                "headingText": "Contact"
+              },
+              "link": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "/libs/kestros/commons/components/content/link",
+                "text": "info@northstarfinancial.example",
+                "href": "mailto:info@northstarfinancial.example"
+              }
             }
           }
         }
