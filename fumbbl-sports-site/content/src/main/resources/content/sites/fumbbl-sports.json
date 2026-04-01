@@ -6,6 +6,7 @@
     "jcr:title": "FUMBBL Sports",
     "jcr:description": "Live Blood Bowl match results from the FUMBBL league",
     "publicationStrategy": "kestros-single-instance",
+    "kes:theme": "/etc/ui-frameworks/ui-kit/versions/0.0.1/themes/default",
     "header": {
       "jcr:primaryType": "nt:unstructured",
       "sling:resourceType": "kestros/commons/components/inherited-content-area"
