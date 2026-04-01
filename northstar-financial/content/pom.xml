@@ -82,7 +82,6 @@
                     <instructions>
                         <Sling-Initial-Content>
                             /content/sites/northstar-financial.json;overwrite:=true;path:=/content/sites/northstar-financial,
-                            /content/sites/northstar-financial/home.json;overwrite:=true;path:=/content/sites/northstar-financial/home,
                             /content/sites/northstar-financial/services.json;overwrite:=true;path:=/content/sites/northstar-financial/services,
                             /content/sites/northstar-financial/about.json;overwrite:=true;path:=/content/sites/northstar-financial/about,
                             /content/sites/northstar-financial/insights.json;overwrite:=true;path:=/content/sites/northstar-financial/insights,
