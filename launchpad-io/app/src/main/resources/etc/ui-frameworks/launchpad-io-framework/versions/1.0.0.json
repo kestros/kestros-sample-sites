@@ -4,7 +4,7 @@
   "jcr:description": "Launchpad.io UI Framework built on Bulma",
   "kes:uiFrameworkCode": "launchpad-io",
   "kes:vendorLibraries": [
-    "bulma/0.9.4",
+    "bulma/1.0.4",
     "launchpad-io-vendor-library/0.0.1"
   ]
 }
