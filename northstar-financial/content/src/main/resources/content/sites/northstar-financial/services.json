@@ -7,9 +7,10 @@
     "main": {
       "jcr:primaryType": "nt:unstructured",
       "sling:resourceType": "kestros/commons/components/content-area",
-      "intro-section": {
+      "intro": {
         "jcr:primaryType": "nt:unstructured",
         "sling:resourceType": "/libs/kestros/commons/components/structure/section",
+        "variations": ["py-5"],
         "container": {
           "jcr:primaryType": "nt:unstructured",
           "sling:resourceType": "/libs/kestros/commons/components/structure/container",
@@ -22,17 +23,17 @@
           "text": {
             "jcr:primaryType": "nt:unstructured",
             "sling:resourceType": "/libs/kestros/commons/components/content/text",
-            "text": "Northstar Financial offers comprehensive wealth management services tailored to your life stage and goals."
+            "text": "Northstar Financial offers a full suite of wealth management services. Each engagement begins with understanding your goals — then building a plan to reach them."
           }
         }
       },
-      "services-section": {
+      "row-1": {
         "jcr:primaryType": "nt:unstructured",
         "sling:resourceType": "/libs/kestros/commons/components/structure/section",
         "container": {
           "jcr:primaryType": "nt:unstructured",
           "sling:resourceType": "/libs/kestros/commons/components/structure/container",
-          "grid-1": {
+          "grid": {
             "jcr:primaryType": "nt:unstructured",
             "sling:resourceType": "/libs/kestros/commons/components/structure/grid",
             "column-1": {
@@ -41,13 +42,8 @@
               "card": {
                 "jcr:primaryType": "nt:unstructured",
                 "sling:resourceType": "/libs/kestros/commons/components/content/card",
-                "description": "Goal-based plans covering retirement, education funding, major purchases, and estate transfer.",
-                "titleElement": {
-                  "jcr:primaryType": "nt:unstructured",
-                  "sling:resourceType": "/libs/kestros/commons/components/content/heading",
-                  "headingType": "h3",
-                  "headingText": "Financial Planning"
-                }
+                "description": "Comprehensive, goal-based plans covering retirement, education funding, major purchases, and estate transfer. We build a roadmap and revisit it annually.",
+                "titleElement": { "jcr:primaryType": "nt:unstructured", "sling:resourceType": "/libs/kestros/commons/components/content/heading", "headingType": "h5", "headingText": "Financial Planning" }
               }
             },
             "column-2": {
@@ -56,17 +52,30 @@
               "card": {
                 "jcr:primaryType": "nt:unstructured",
                 "sling:resourceType": "/libs/kestros/commons/components/content/card",
-                "description": "Diversified portfolios built on evidence-based strategies with regular rebalancing and tax-loss harvesting.",
-                "titleElement": {
-                  "jcr:primaryType": "nt:unstructured",
-                  "sling:resourceType": "/libs/kestros/commons/components/content/heading",
-                  "headingType": "h3",
-                  "headingText": "Investment Management"
-                }
+                "description": "Diversified portfolios built on evidence-based strategies. We rebalance quarterly and harvest tax losses to keep more of your returns working for you.",
+                "titleElement": { "jcr:primaryType": "nt:unstructured", "sling:resourceType": "/libs/kestros/commons/components/content/heading", "headingType": "h5", "headingText": "Investment Management" }
+              }
+            },
+            "column-3": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content-area",
+              "card": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "/libs/kestros/commons/components/content/card",
+                "description": "Social Security optimization, distribution strategies, and income projections. We help you retire with confidence — and stay confident.",
+                "titleElement": { "jcr:primaryType": "nt:unstructured", "sling:resourceType": "/libs/kestros/commons/components/content/heading", "headingType": "h5", "headingText": "Retirement Planning" }
               }
             }
-          },
-          "grid-2": {
+          }
+        }
+      },
+      "row-2": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "/libs/kestros/commons/components/structure/section",
+        "container": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/structure/container",
+          "grid": {
             "jcr:primaryType": "nt:unstructured",
             "sling:resourceType": "/libs/kestros/commons/components/structure/grid",
             "column-1": {
@@ -75,13 +84,8 @@
               "card": {
                 "jcr:primaryType": "nt:unstructured",
                 "sling:resourceType": "/libs/kestros/commons/components/content/card",
-                "description": "Social Security optimisation, distribution strategies, and income projections to ensure a confident retirement.",
-                "titleElement": {
-                  "jcr:primaryType": "nt:unstructured",
-                  "sling:resourceType": "/libs/kestros/commons/components/content/heading",
-                  "headingType": "h3",
-                  "headingText": "Retirement Planning"
-                }
+                "description": "Proactive tax planning coordinated with your CPA. We look for opportunities to minimize liability and maximize after-tax returns year-round.",
+                "titleElement": { "jcr:primaryType": "nt:unstructured", "sling:resourceType": "/libs/kestros/commons/components/content/heading", "headingType": "h5", "headingText": "Tax Strategy" }
               }
             },
             "column-2": {
@@ -90,13 +94,18 @@
               "card": {
                 "jcr:primaryType": "nt:unstructured",
                 "sling:resourceType": "/libs/kestros/commons/components/content/card",
-                "description": "Proactive tax planning coordinated with your CPA to minimise liability and maximise after-tax returns.",
-                "titleElement": {
-                  "jcr:primaryType": "nt:unstructured",
-                  "sling:resourceType": "/libs/kestros/commons/components/content/heading",
-                  "headingType": "h3",
-                  "headingText": "Tax Strategy"
-                }
+                "description": "Wills, trusts, beneficiary designations, and charitable giving. We work with your attorney to ensure your wealth transfers the way you intend.",
+                "titleElement": { "jcr:primaryType": "nt:unstructured", "sling:resourceType": "/libs/kestros/commons/components/content/heading", "headingType": "h5", "headingText": "Estate Planning" }
+              }
+            },
+            "column-3": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content-area",
+              "card": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "/libs/kestros/commons/components/content/card",
+                "description": "Life, disability, long-term care, and umbrella coverage. We review your policies to make sure you are protected without overpaying.",
+                "titleElement": { "jcr:primaryType": "nt:unstructured", "sling:resourceType": "/libs/kestros/commons/components/content/heading", "headingType": "h5", "headingText": "Insurance Review" }
               }
             }
           }

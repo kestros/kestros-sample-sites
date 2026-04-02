@@ -83,8 +83,8 @@
                         <Sling-Initial-Content>
                             /content/sites/northstar-financial.json;overwrite:=true;path:=/content/sites/northstar-financial,
                             /content/sites/northstar-financial/services.json;overwrite:=true;path:=/content/sites/northstar-financial/services,
+                            /content/sites/northstar-financial/team.json;overwrite:=true;path:=/content/sites/northstar-financial/team,
                             /content/sites/northstar-financial/about.json;overwrite:=true;path:=/content/sites/northstar-financial/about,
-                            /content/sites/northstar-financial/insights.json;overwrite:=true;path:=/content/sites/northstar-financial/insights,
                             /content/sites/northstar-financial/contact.json;overwrite:=true;path:=/content/sites/northstar-financial/contact
                         </Sling-Initial-Content>
                     </instructions>

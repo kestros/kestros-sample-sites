@@ -5,20 +5,24 @@
     "sling:resourceType": "kestros/commons/components/kestros-base-page",
     "kes:theme": "/etc/ui-frameworks/express/versions/0.0.1/themes/default",
     "jcr:title": "Northstar Financial",
-    "jcr:description": "A financial advisory services firm sample site built with the Express (Bootstrap) framework.",
+    "jcr:description": "Fee-only wealth management for individuals and families.",
     "publicationStrategy": "kestros-single-instance",
+
     "header": {
       "jcr:primaryType": "nt:unstructured",
       "sling:resourceType": "kestros/commons/components/inherited-content-area",
       "top-navigation": {
         "jcr:primaryType": "nt:unstructured",
-        "sling:resourceType": "/libs/kestros/commons/components/navigation/top-navigation"
+        "sling:resourceType": "/libs/kestros/commons/components/navigation/top-navigation",
+        "brandName": "Northstar Financial"
       }
     },
+
     "main": {
       "jcr:primaryType": "nt:unstructured",
       "sling:resourceType": "kestros/commons/components/content-area",
-      "hero-section": {
+
+      "hero": {
         "jcr:primaryType": "nt:unstructured",
         "sling:resourceType": "/libs/kestros/commons/components/structure/section",
         "variations": ["bg-primary", "text-white", "py-5"],
@@ -32,22 +36,23 @@
             "headingText": "Your Financial Future, Clearly Mapped",
             "variations": ["display-4"]
           },
-          "text": {
+          "subtitle": {
             "jcr:primaryType": "nt:unstructured",
             "sling:resourceType": "/libs/kestros/commons/components/content/text",
-            "text": "Northstar Financial partners with individuals and families to build lasting wealth through disciplined planning and transparent advice."
+            "text": "Northstar Financial partners with individuals and families to build lasting wealth through disciplined planning and transparent advice.",
+            "variations": ["fs-5"]
           },
-          "cta-buttons": {
+          "buttons": {
             "jcr:primaryType": "nt:unstructured",
             "sling:resourceType": "/libs/kestros/commons/components/content/button-group",
-            "button-1": {
+            "services": {
               "jcr:primaryType": "nt:unstructured",
               "sling:resourceType": "/libs/kestros/commons/components/content/button",
               "text": "Our Services",
               "href": "/content/sites/northstar-financial/services.html",
               "variations": ["btn-light", "btn-lg"]
             },
-            "button-2": {
+            "contact": {
               "jcr:primaryType": "nt:unstructured",
               "sling:resourceType": "/libs/kestros/commons/components/content/button",
               "text": "Schedule a Consultation",
@@ -57,9 +62,11 @@
           }
         }
       },
-      "trust-section": {
+
+      "services-preview": {
         "jcr:primaryType": "nt:unstructured",
         "sling:resourceType": "/libs/kestros/commons/components/structure/section",
+        "variations": ["py-5"],
         "container": {
           "jcr:primaryType": "nt:unstructured",
           "sling:resourceType": "/libs/kestros/commons/components/structure/container",
@@ -67,7 +74,7 @@
             "jcr:primaryType": "nt:unstructured",
             "sling:resourceType": "/libs/kestros/commons/components/content/heading",
             "headingType": "h2",
-            "headingText": "Trusted by Families Across the Region"
+            "headingText": "What We Do"
           },
           "grid": {
             "jcr:primaryType": "nt:unstructured",
@@ -78,12 +85,12 @@
               "card": {
                 "jcr:primaryType": "nt:unstructured",
                 "sling:resourceType": "/libs/kestros/commons/components/content/card",
-                "description": "We earn fees from you, not commissions from product sales. Our interests are aligned with yours.",
+                "description": "Comprehensive plans covering retirement, education funding, and estate transfer — tailored to your goals and timeline.",
                 "titleElement": {
                   "jcr:primaryType": "nt:unstructured",
                   "sling:resourceType": "/libs/kestros/commons/components/content/heading",
-                  "headingType": "h3",
-                  "headingText": "Fee-Only Advisory"
+                  "headingType": "h5",
+                  "headingText": "Financial Planning"
                 }
               }
             },
@@ -93,12 +100,12 @@
               "card": {
                 "jcr:primaryType": "nt:unstructured",
                 "sling:resourceType": "/libs/kestros/commons/components/content/card",
-                "description": "Investment management is just one piece. We integrate tax, estate, insurance, and retirement into a unified plan.",
+                "description": "Diversified portfolios built on evidence-based strategies with regular rebalancing and tax-loss harvesting.",
                 "titleElement": {
                   "jcr:primaryType": "nt:unstructured",
                   "sling:resourceType": "/libs/kestros/commons/components/content/heading",
-                  "headingType": "h3",
-                  "headingText": "Holistic Planning"
+                  "headingType": "h5",
+                  "headingText": "Investment Management"
                 }
               }
             },
@@ -108,19 +115,92 @@
               "card": {
                 "jcr:primaryType": "nt:unstructured",
                 "sling:resourceType": "/libs/kestros/commons/components/content/card",
-                "description": "Markets fluctuate. Your goals do not. We build portfolios that stay the course.",
+                "description": "Social Security optimization, distribution strategies, and income projections for a confident retirement.",
                 "titleElement": {
                   "jcr:primaryType": "nt:unstructured",
                   "sling:resourceType": "/libs/kestros/commons/components/content/heading",
-                  "headingType": "h3",
-                  "headingText": "Long-Term Perspective"
+                  "headingType": "h5",
+                  "headingText": "Retirement Planning"
                 }
+              }
+            }
+          },
+          "all-services": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "/libs/kestros/commons/components/content/button",
+            "text": "View All Services",
+            "href": "/content/sites/northstar-financial/services.html",
+            "variations": ["btn-outline-primary"]
+          }
+        }
+      },
+
+      "why-northstar": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "/libs/kestros/commons/components/structure/section",
+        "variations": ["bg-light", "py-5"],
+        "container": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/structure/container",
+          "heading": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "/libs/kestros/commons/components/content/heading",
+            "headingType": "h2",
+            "headingText": "Why Northstar"
+          },
+          "grid": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "/libs/kestros/commons/components/structure/grid",
+            "column-1": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content-area",
+              "heading": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "/libs/kestros/commons/components/content/heading",
+                "headingType": "h4",
+                "headingText": "Fee-Only"
+              },
+              "text": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "/libs/kestros/commons/components/content/text",
+                "text": "We earn fees from you — never commissions from product sales. Our advice is always in your interest."
+              }
+            },
+            "column-2": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content-area",
+              "heading": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "/libs/kestros/commons/components/content/heading",
+                "headingType": "h4",
+                "headingText": "Fiduciary"
+              },
+              "text": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "/libs/kestros/commons/components/content/text",
+                "text": "We are legally bound to act in your best interest. Every recommendation we make meets the fiduciary standard."
+              }
+            },
+            "column-3": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content-area",
+              "heading": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "/libs/kestros/commons/components/content/heading",
+                "headingType": "h4",
+                "headingText": "Personalized"
+              },
+              "text": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "/libs/kestros/commons/components/content/text",
+                "text": "No two families are alike. Your plan reflects your values, your risk tolerance, and your definition of success."
               }
             }
           }
         }
       }
     },
+
     "footer": {
       "jcr:primaryType": "nt:unstructured",
       "sling:resourceType": "kestros/commons/components/inherited-content-area",
@@ -146,7 +226,7 @@
               "text": {
                 "jcr:primaryType": "nt:unstructured",
                 "sling:resourceType": "/libs/kestros/commons/components/content/text",
-                "text": "Guiding your financial future with clarity and confidence."
+                "text": "Fee-only wealth management for individuals and families. Philadelphia, PA."
               }
             },
             "column-2": {
@@ -156,12 +236,12 @@
                 "jcr:primaryType": "nt:unstructured",
                 "sling:resourceType": "/libs/kestros/commons/components/content/heading",
                 "headingType": "h5",
-                "headingText": "Legal"
+                "headingText": "Quick Links"
               },
-              "text": {
+              "link-list": {
                 "jcr:primaryType": "nt:unstructured",
-                "sling:resourceType": "/libs/kestros/commons/components/content/text",
-                "text": "Northstar Financial is a registered investment advisory firm. Past performance does not guarantee future results."
+                "sling:resourceType": "/libs/kestros/commons/components/lists/link-list",
+                "datasource": "child-pages"
               }
             },
             "column-3": {
@@ -173,7 +253,12 @@
                 "headingType": "h5",
                 "headingText": "Contact"
               },
-              "link": {
+              "text": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "/libs/kestros/commons/components/content/text",
+                "text": "1200 Market Street, Suite 800\nPhiladelphia, PA 19107"
+              },
+              "email": {
                 "jcr:primaryType": "nt:unstructured",
                 "sling:resourceType": "/libs/kestros/commons/components/content/link",
                 "text": "info@northstarfinancial.example",

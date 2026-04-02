@@ -3,13 +3,14 @@
   "jcr:content": {
     "jcr:primaryType": "nt:unstructured",
     "sling:resourceType": "kestros/commons/components/kestros-base-page",
-    "jcr:title": "About Us",
+    "jcr:title": "About",
     "main": {
       "jcr:primaryType": "nt:unstructured",
       "sling:resourceType": "kestros/commons/components/content-area",
-      "intro-section": {
+      "story": {
         "jcr:primaryType": "nt:unstructured",
         "sling:resourceType": "/libs/kestros/commons/components/structure/section",
+        "variations": ["py-5"],
         "container": {
           "jcr:primaryType": "nt:unstructured",
           "sling:resourceType": "/libs/kestros/commons/components/structure/container",
@@ -19,36 +20,22 @@
             "headingType": "h1",
             "headingText": "About Northstar Financial"
           },
-          "grid": {
+          "text-1": {
             "jcr:primaryType": "nt:unstructured",
-            "sling:resourceType": "/libs/kestros/commons/components/structure/grid",
-            "column-1": {
-              "jcr:primaryType": "nt:unstructured",
-              "sling:resourceType": "kestros/commons/components/content-area",
-              "text": {
-                "jcr:primaryType": "nt:unstructured",
-                "sling:resourceType": "/libs/kestros/commons/components/content/text",
-                "text": "Founded in 2008, Northstar Financial is a fee-only registered investment advisor serving clients throughout the Mid-Atlantic region. Our team of certified financial planners brings decades of combined experience to every relationship."
-              }
-            },
-            "column-2": {
-              "jcr:primaryType": "nt:unstructured",
-              "sling:resourceType": "kestros/commons/components/content-area",
-              "image": {
-                "jcr:primaryType": "nt:unstructured",
-                "sling:resourceType": "/libs/kestros/commons/components/content/image",
-                "imagePath": "/content/assets/landscapes/photo-1500622944204-b135684e99fd.jpeg",
-                "altText": "Northstar Financial team",
-                "variations": ["img-fluid", "rounded"]
-              }
-            }
+            "sling:resourceType": "/libs/kestros/commons/components/content/text",
+            "text": "Founded in 2008, Northstar Financial is a fee-only registered investment advisor serving clients throughout the Mid-Atlantic region. We manage over $250 million in client assets across more than 200 households."
+          },
+          "text-2": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "/libs/kestros/commons/components/content/text",
+            "text": "Our firm was built on a simple principle: financial advice should be transparent, conflict-free, and grounded in evidence. We do not sell products, earn commissions, or accept referral fees. Every recommendation we make is held to the fiduciary standard."
           }
         }
       },
-      "values-section": {
+      "values": {
         "jcr:primaryType": "nt:unstructured",
         "sling:resourceType": "/libs/kestros/commons/components/structure/section",
-        "variations": ["bg-light"],
+        "variations": ["bg-light", "py-5"],
         "container": {
           "jcr:primaryType": "nt:unstructured",
           "sling:resourceType": "/libs/kestros/commons/components/structure/container",
@@ -67,13 +54,13 @@
               "heading": {
                 "jcr:primaryType": "nt:unstructured",
                 "sling:resourceType": "/libs/kestros/commons/components/content/heading",
-                "headingType": "h3",
+                "headingType": "h4",
                 "headingText": "Transparency"
               },
               "text": {
                 "jcr:primaryType": "nt:unstructured",
                 "sling:resourceType": "/libs/kestros/commons/components/content/text",
-                "text": "Every fee, every recommendation, every decision is visible to you. We believe trust starts with openness."
+                "text": "Every fee, every recommendation, every decision is visible to you. We publish our fee schedule and provide detailed quarterly reports."
               }
             },
             "column-2": {
@@ -82,13 +69,13 @@
               "heading": {
                 "jcr:primaryType": "nt:unstructured",
                 "sling:resourceType": "/libs/kestros/commons/components/content/heading",
-                "headingType": "h3",
+                "headingType": "h4",
                 "headingText": "Discipline"
               },
               "text": {
                 "jcr:primaryType": "nt:unstructured",
                 "sling:resourceType": "/libs/kestros/commons/components/content/text",
-                "text": "We follow an evidence-based investment philosophy. No market timing, no chasing trends — just systematic, repeatable processes."
+                "text": "We follow an evidence-based investment philosophy. No market timing, no chasing trends — systematic, repeatable processes that have stood the test of decades."
               }
             },
             "column-3": {
@@ -97,13 +84,13 @@
               "heading": {
                 "jcr:primaryType": "nt:unstructured",
                 "sling:resourceType": "/libs/kestros/commons/components/content/heading",
-                "headingType": "h3",
+                "headingType": "h4",
                 "headingText": "Partnership"
               },
               "text": {
                 "jcr:primaryType": "nt:unstructured",
                 "sling:resourceType": "/libs/kestros/commons/components/content/text",
-                "text": "Your goals shape our advice. We listen first, plan second, and stay alongside you as life changes."
+                "text": "Your goals shape our advice. We listen first, plan second, and stay alongside you as life changes. Our average client relationship spans over a decade."
               }
             }
           }
