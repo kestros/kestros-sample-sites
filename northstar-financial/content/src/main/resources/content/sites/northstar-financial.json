@@ -15,6 +15,7 @@
         "jcr:primaryType": "nt:unstructured",
         "sling:resourceType": "/libs/kestros/commons/components/navigation/top-navigation",
         "brandName": "Northstar Financial",
+        "brandHref": "/content/sites/northstar-financial.html",
         "image": {
           "jcr:primaryType": "nt:unstructured",
           "sling:resourceType": "/libs/kestros/commons/components/content/image",
