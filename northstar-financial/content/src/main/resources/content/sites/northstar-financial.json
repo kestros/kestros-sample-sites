@@ -14,7 +14,31 @@
       "top-navigation": {
         "jcr:primaryType": "nt:unstructured",
         "sling:resourceType": "/libs/kestros/commons/components/navigation/top-navigation",
-        "brandName": "Northstar Financial"
+        "brandName": "Northstar Financial",
+        "nav-services": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/navigation/top-navigation-item",
+          "text": "Services",
+          "href": "/content/sites/northstar-financial/services.html"
+        },
+        "nav-team": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/navigation/top-navigation-item",
+          "text": "Our Team",
+          "href": "/content/sites/northstar-financial/team.html"
+        },
+        "nav-about": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/navigation/top-navigation-item",
+          "text": "About",
+          "href": "/content/sites/northstar-financial/about.html"
+        },
+        "nav-contact": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/navigation/top-navigation-item",
+          "text": "Contact",
+          "href": "/content/sites/northstar-financial/contact.html"
+        }
       }
     },
 
