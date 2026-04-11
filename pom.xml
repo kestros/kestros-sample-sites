@@ -57,6 +57,7 @@
 <!--    <module>resolve-2021</module>-->
     <module>basic-components-sample</module>
     <module>signal-conf</module>
+    <module>league-demo</module>
   </modules>
 
   <dependencyManagement>

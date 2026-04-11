@@ -1,0 +1,7 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:title": "Player Game Log",
+  "group": "League Demo",
+  "classPath": "io.kestros.samples.leaguedemo.datasources.PlayerGameLogTableDataSource",
+  "container": true
+}
