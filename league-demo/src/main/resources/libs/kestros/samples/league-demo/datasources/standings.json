@@ -1,0 +1,7 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:title": "League Standings",
+  "group": "League Demo",
+  "classPath": "io.kestros.samples.leaguedemo.datasources.StandingsTableDataSource",
+  "container": true
+}
