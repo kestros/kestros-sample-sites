@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>io.kestros.cms</groupId>
+        <artifactId>kestros-site-parent</artifactId>
+        <version>0.1.2</version>
+    </parent>
+
+    <groupId>io.kestros.samples</groupId>
+    <artifactId>league-demo</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <name>League Demo Sample Site</name>
+    <description>League demo sample site datasources and dynamic page support</description>
+
+    <packaging>bundle</packaging>
+
+    <properties>
+        <rootPackage>io.kestros.samples.leaguedemo</rootPackage>
+        <bundleCategory>kestros</bundleCategory>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.kestros.cms</groupId>
+            <artifactId>kestros-basic-components</artifactId>
+            <version>0.3.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>io.kestros.cms</groupId>
+            <artifactId>kestros-site-building-api</artifactId>
+            <version>0.1.4-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>io.kestros.cms</groupId>
+            <artifactId>kestros-component-types-api</artifactId>
+            <version>0.1.3-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>io.kestros.samples</groupId>
+            <artifactId>league-framework-api</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>io.kestros.samples</groupId>
+            <artifactId>league-framework-core</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <sourceDirectory>src/main/java</sourceDirectory>
+        <testSourceDirectory>src/test/java</testSourceDirectory>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+        </resources>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <Sling-Initial-Content>
+                            /libs/kestros/samples/league-demo;overwrite:=true;path:=/libs/kestros/samples/league-demo,
+                            /apps/kestros/commons/components;overwrite:=false;path:=/apps/kestros/commons/components
+                        </Sling-Initial-Content>
+                        <Sling-Model-Packages>io.kestros.samples.leaguedemo</Sling-Model-Packages>
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>installBundle</id>
+        </profile>
+    </profiles>
+
+</project>

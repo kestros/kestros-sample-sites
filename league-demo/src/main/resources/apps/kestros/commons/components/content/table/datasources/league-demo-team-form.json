@@ -1,0 +1,7 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:title": "Team Recent Form",
+  "group": "League Demo",
+  "classPath": "io.kestros.samples.leaguedemo.datasources.TeamFormTableDataSource",
+  "container": true
+}
