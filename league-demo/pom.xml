@@ -69,7 +69,8 @@
                 <configuration>
                     <instructions>
                         <Sling-Initial-Content>
-                            /libs/kestros/samples/league-demo;overwrite:=true;path:=/libs/kestros/samples/league-demo
+                            /libs/kestros/samples/league-demo;overwrite:=true;path:=/libs/kestros/samples/league-demo,
+                            /apps/kestros/commons/components;overwrite:=false;path:=/apps/kestros/commons/components
                         </Sling-Initial-Content>
                         <Sling-Model-Packages>io.kestros.samples.leaguedemo</Sling-Model-Packages>
                     </instructions>

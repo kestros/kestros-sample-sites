@@ -27,15 +27,21 @@ public class PlayerGameLogTableDataSource extends BaseContainerSlingModelDataSou
   @org.apache.sling.models.annotations.Optional
   private LeagueDataService leagueDataService;
 
+  private static final org.slf4j.Logger LOG =
+      org.slf4j.LoggerFactory.getLogger(PlayerGameLogTableDataSource.class);
+
   private Player getPlayer() {
     if (leagueDataService == null) {
+      LOG.info("PlayerGameLog: leagueDataService is null");
       return null;
     }
-    String slug = (String) getRequest().getAttribute("player-slug");
-    if (slug == null) {
+    Object req = getRequest();
+    Object attr = req == null ? null : ((SlingHttpServletRequest) req).getAttribute("player-slug");
+    LOG.info("PlayerGameLog: request={}, player-slug attr={}", req, attr);
+    if (attr == null) {
       return null;
     }
-    return leagueDataService.getPlayer(slug);
+    return leagueDataService.getPlayer((String) attr);
   }
 
   @Nonnull
