@@ -9,7 +9,6 @@
 >
     <jcr:content
             jcr:description="What the client asks for and what the client wants are rarely the same sentence."
-            jcr:mixinTypes="[mix:lockable]"
             jcr:primaryType="nt:unstructured"
             jcr:title="The brief is never the actual brief"
             kes:template="/libs/kestros/commons/base-site-template"

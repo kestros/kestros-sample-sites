@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:rep="http://www.jcp.org/jcr/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="kes:Page"
+>
+    <jcr:content
+            jcr:description="A small magazine for slow travelers. No bookings, no ads."
+            jcr:primaryType="nt:unstructured"
+            jcr:title="About Explore"
+            kes:template="/libs/kestros/commons/base-site-template"
+            sling:resourceType="kestros/commons/components/kestros-base-page"
+    >
+        <header
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"
+        />
+        <main
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/content-area"
+        >
+            <hero
+                    inlineVariations="uk-section uk-section-primary"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        inlineVariations="uk-container"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <eyebrow
+                            inlineVariations="uk-text-meta uk-text-uppercase"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="About"
+                    />
+                    <heading
+                            headingText="A small magazine for slow travelers."
+                            headingType="h1"
+                            inlineVariations="uk-heading-medium"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <dek
+                            inlineVariations="uk-text-lead"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="We write about places we like, in the hope that you might like them too. We do not sell trips. We do not run ads. We do not have a newsletter."
+                    />
+                </container>
+            </hero>
+            <why
+                    inlineVariations="uk-section uk-section-default"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        inlineVariations="uk-container"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <heading
+                            headingText="Why we started this."
+                            headingType="h2"
+                            inlineVariations="uk-heading-small"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <p1
+                            inlineVariations="uk-text-lead"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="The world is bigger than a bucket list. The point of a trip is not to check the famous places off a list. The point is to spend a few unfamiliar days somewhere and come home with something to think about."
+                    />
+                    <p2
+                            inlineVariations="uk-text-lead"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="So we publish destination guides for people who travel slowly, the occasional field dispatch, and opinions about packing that will probably annoy you. The destinations on this site are fictional. Everything else is the real thing."
+                    />
+                </container>
+            </why>
+            <masthead
+                    inlineVariations="uk-section uk-section-muted"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        inlineVariations="uk-container"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <eyebrow
+                            inlineVariations="uk-text-meta uk-text-uppercase"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Masthead"
+                    />
+                    <heading
+                            headingText="The people who write it."
+                            headingType="h2"
+                            inlineVariations="uk-heading-small"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <jane-name
+                            headingText="Jane Holloway"
+                            headingType="h3"
+                            inlineVariations="uk-heading-bullet"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <jane-role
+                            inlineVariations="uk-text-meta uk-text-uppercase"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Editor"
+                    />
+                    <jane-body
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Walks fast, takes too many photos. Started the magazine after twenty years of being the person everyone asked about where to go."
+                    />
+                    <marcus-name
+                            headingText="Marcus Adair"
+                            headingType="h3"
+                            inlineVariations="uk-heading-bullet"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <marcus-role
+                            inlineVariations="uk-text-meta uk-text-uppercase"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Field reporter"
+                    />
+                    <marcus-body
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Packed the same bag for ten years. Writes about how to do more with less, and about the time he left his passport in Tashkent."
+                    />
+                    <priya-name
+                            headingText="Priya Chen"
+                            headingType="h3"
+                            inlineVariations="uk-heading-bullet"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <priya-role
+                            inlineVariations="uk-text-meta uk-text-uppercase"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Photographer"
+                    />
+                    <priya-body
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Sleeps on trains. Has the best collection of blue-hour photographs from Central Europe that you have ever seen."
+                    />
+                </container>
+            </masthead>
+            <contact
+                    inlineVariations="uk-section uk-section-default"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        inlineVariations="uk-container"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <heading
+                            headingText="Get in touch."
+                            headingType="h2"
+                            inlineVariations="uk-heading-small"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <body
+                            inlineVariations="uk-text-lead"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Send us a pitch, a correction, or a complaint. We read everything. We answer most things within a week."
+                    />
+                    <email
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="hello@explore.example"
+                    />
+                </container>
+            </contact>
+        </main>
+        <footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"
+        />
+    </jcr:content>
+</jcr:root>

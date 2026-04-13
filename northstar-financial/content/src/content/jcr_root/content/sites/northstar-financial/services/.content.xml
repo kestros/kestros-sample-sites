@@ -9,7 +9,6 @@
 >
     <jcr:content
             jcr:description="Comprehensive financial planning and investment services."
-            jcr:mixinTypes="[mix:lockable]"
             jcr:primaryType="nt:unstructured"
             jcr:title="Services"
             kes:template="/libs/kestros/commons/base-site-template"

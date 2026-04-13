@@ -9,7 +9,6 @@
 >
     <jcr:content
             jcr:description="Linden Residence. Private residence. Inner city, infill lot. 2021."
-            jcr:mixinTypes="[mix:lockable]"
             jcr:primaryType="nt:unstructured"
             jcr:title="Linden Residence"
             kes:template="/libs/kestros/commons/base-site-template"
@@ -111,17 +110,7 @@
                     <facts-list
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                            text="
-&lt;dl class=&quot;uk-description-list uk-description-list-divider&quot;&gt;
-  &lt;dt&gt;Size&lt;/dt&gt;
-  &lt;dd&gt;180 m2 on 95 m2 lot&lt;/dd&gt;
-  &lt;dt&gt;Width&lt;/dt&gt;
-  &lt;dd&gt;5.1 metres&lt;/dd&gt;
-  &lt;dt&gt;Key move&lt;/dt&gt;
-  &lt;dd&gt;Full-height stair as lightwell&lt;/dd&gt;
-  &lt;dt&gt;Completion&lt;/dt&gt;
-  &lt;dd&gt;2021&lt;/dd&gt;
-&lt;/dl&gt;"
+                            text=" &lt;dl class=&quot;uk-description-list uk-description-list-divider&quot;&gt;   &lt;dt&gt;Size&lt;/dt&gt;   &lt;dd&gt;180 m2 on 95 m2 lot&lt;/dd&gt;   &lt;dt&gt;Width&lt;/dt&gt;   &lt;dd&gt;5.1 metres&lt;/dd&gt;   &lt;dt&gt;Key move&lt;/dt&gt;   &lt;dd&gt;Full-height stair as lightwell&lt;/dd&gt;   &lt;dt&gt;Completion&lt;/dt&gt;   &lt;dd&gt;2021&lt;/dd&gt; &lt;/dl&gt;"
                     />
                 </container>
             </facts>
@@ -151,31 +140,7 @@
                     <others
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                            text="
-&lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;
-
-  &lt;div&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/portfolio/meridian-house.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;img src=&quot;https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800&amp;q=80&quot; alt=&quot;Meridian House&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;
-      &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Private residence. 2023&lt;/p&gt;
-      &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Meridian House&lt;/h4&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/portfolio/ashford-cultural-centre.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;img src=&quot;https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1800&amp;q=80&quot; alt=&quot;Ashford Cultural Centre&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;
-      &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Cultural institution. 2022&lt;/p&gt;
-      &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Ashford Cultural Centre&lt;/h4&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/portfolio/crestwood-pavilion.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;img src=&quot;https://images.unsplash.com/photo-1448630360428-65456885c650?w=1800&amp;q=80&quot; alt=&quot;Crestwood Pavilion&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;
-      &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Public pavilion. 2020&lt;/p&gt;
-      &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Crestwood Pavilion&lt;/h4&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-&lt;/div&gt;"
+                            text=" &lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/meridian-house.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800&amp;q=80&quot; alt=&quot;Meridian House&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Private residence. 2023&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Meridian House&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/ashford-cultural-centre.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1800&amp;q=80&quot; alt=&quot;Ashford Cultural Centre&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Cultural institution. 2022&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Ashford Cultural Centre&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/crestwood-pavilion.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1448630360428-65456885c650?w=1800&amp;q=80&quot; alt=&quot;Crestwood Pavilion&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Public pavilion. 2020&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Crestwood Pavilion&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt;"
                     />
                 </container>
             </more-work>

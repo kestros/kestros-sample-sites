@@ -9,7 +9,6 @@
 >
     <jcr:content
             jcr:description="A clear, collaborative path from first conversation to long-term partnership."
-            jcr:mixinTypes="[mix:lockable]"
             jcr:primaryType="nt:unstructured"
             jcr:title="How We Work Together"
             kes:template="/libs/kestros/commons/base-site-template"

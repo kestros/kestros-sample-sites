@@ -9,7 +9,6 @@
 >
     <jcr:content
             jcr:description="Residential, cultural and civic, adaptive reuse, and landscape work."
-            jcr:mixinTypes="[mix:lockable]"
             jcr:primaryType="nt:unstructured"
             jcr:title="Services"
             kes:template="/libs/kestros/commons/base-site-template"

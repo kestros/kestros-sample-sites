@@ -9,7 +9,6 @@
 >
     <jcr:content
             jcr:description="Fee-only wealth management for individuals and families."
-            jcr:mixinTypes="[mix:lockable]"
             jcr:primaryType="nt:unstructured"
             jcr:title="Northstar Financial"
             kes:template="/libs/kestros/commons/base-site-template"
@@ -435,7 +434,6 @@
             </quick-stats>
         </main>
         <footer
-                jcr:mixinTypes="[mix:lockable]"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="kestros/commons/components/inherited-content-area"
         >
@@ -562,7 +560,6 @@
     >
         <jcr:content
                 jcr:description="Comprehensive financial planning and investment services."
-                jcr:mixinTypes="[mix:lockable]"
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Services"
                 kes:template="/libs/kestros/commons/base-site-template"
@@ -777,7 +774,6 @@
     >
         <jcr:content
                 jcr:description="Meet the advisors who will manage your relationship."
-                jcr:mixinTypes="[mix:lockable]"
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Our Team"
                 kes:template="/libs/kestros/commons/base-site-template"
@@ -914,7 +910,6 @@
     >
         <jcr:content
                 jcr:description="Our story, our values, and our commitment to clients."
-                jcr:mixinTypes="[mix:lockable]"
                 jcr:primaryType="nt:unstructured"
                 jcr:title="About Northstar Financial"
                 kes:template="/libs/kestros/commons/base-site-template"
@@ -1114,7 +1109,6 @@
     >
         <jcr:content
                 jcr:description="Schedule a complimentary consultation with our team."
-                jcr:mixinTypes="[mix:lockable]"
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Contact"
                 kes:template="/libs/kestros/commons/base-site-template"
@@ -1178,9 +1172,7 @@
                                     sling:resourceType="kestros/commons/components/content-area"
                             >
                                 <card
-                                        description="Northstar Financial Advisors
-1200 Market Street, Suite 800
-Philadelphia, PA 19107"
+                                        description="Northstar Financial Advisors 1200 Market Street, Suite 800 Philadelphia, PA 19107"
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="/libs/kestros/commons/components/content/card"
                                 >
@@ -1222,8 +1214,7 @@ Philadelphia, PA 19107"
                                     sling:resourceType="kestros/commons/components/content-area"
                             >
                                 <card
-                                        description="Monday – Friday: 9:00am – 6:00pm
-Weekends: by appointment"
+                                        description="Monday – Friday: 9:00am – 6:00pm Weekends: by appointment"
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="/libs/kestros/commons/components/content/card"
                                 >
@@ -1291,7 +1282,6 @@ Weekends: by appointment"
     >
         <jcr:content
                 jcr:description="A clear, collaborative path from first conversation to long-term partnership."
-                jcr:mixinTypes="[mix:lockable]"
                 jcr:primaryType="nt:unstructured"
                 jcr:title="How We Work Together"
                 kes:template="/libs/kestros/commons/base-site-template"
@@ -1506,7 +1496,6 @@ Weekends: by appointment"
     >
         <jcr:content
                 jcr:description="We work with people navigating real financial transitions."
-                jcr:mixinTypes="[mix:lockable]"
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Clients We Know Best"
                 kes:template="/libs/kestros/commons/base-site-template"
@@ -1721,7 +1710,6 @@ Weekends: by appointment"
     >
         <jcr:content
                 jcr:description="Fee-only. No commissions, no hidden markups."
-                jcr:mixinTypes="[mix:lockable]"
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Simple, Transparent Fees"
                 kes:template="/libs/kestros/commons/base-site-template"
@@ -1936,7 +1924,6 @@ Weekends: by appointment"
     >
         <jcr:content
                 jcr:description="The questions we hear most often from prospective clients."
-                jcr:mixinTypes="[mix:lockable]"
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Frequently Asked Questions"
                 kes:template="/libs/kestros/commons/base-site-template"
@@ -2235,7 +2222,6 @@ Weekends: by appointment"
     >
         <jcr:content
                 jcr:description="Thinking out loud about markets, planning, and the decisions that matter."
-                jcr:mixinTypes="[mix:lockable]"
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Insights"
                 kes:template="/libs/kestros/commons/base-site-template"
@@ -2450,7 +2436,6 @@ Weekends: by appointment"
     >
         <jcr:content
                 jcr:description="Illustrative scenarios from real planning engagements."
-                jcr:mixinTypes="[mix:lockable]"
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Client Stories"
                 kes:template="/libs/kestros/commons/base-site-template"
@@ -2581,7 +2566,6 @@ Weekends: by appointment"
     >
         <jcr:content
                 jcr:description="Required regulatory disclosures and firm information."
-                jcr:mixinTypes="[mix:lockable]"
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Disclosures &amp; Legal"
                 kes:template="/libs/kestros/commons/base-site-template"

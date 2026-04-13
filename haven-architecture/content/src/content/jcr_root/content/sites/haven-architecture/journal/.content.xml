@@ -9,7 +9,6 @@
 >
     <jcr:content
             jcr:description="Occasional writing from inside the studio on practice, projects, and design."
-            jcr:mixinTypes="[mix:lockable]"
             jcr:primaryType="nt:unstructured"
             jcr:title="Journal"
             kes:template="/libs/kestros/commons/base-site-template"
@@ -67,31 +66,7 @@
                     <list
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                            text="
-&lt;div class=&quot;uk-grid uk-child-width-1-2@m uk-grid-large&quot; uk-grid&gt;
-
-  &lt;article&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/journal/why-we-draw-by-hand.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;February 2024. M. Haven.&lt;/p&gt;
-      &lt;h2 class=&quot;uk-h3 uk-margin-small-top&quot;&gt;Why we still draw by hand at the start of every project&lt;/h2&gt;
-      &lt;p class=&quot;uk-text-muted&quot;&gt;Not nostalgia. The constraint of a pencil on paper is still the fastest way to think through a building.&lt;/p&gt;
-    &lt;/a&gt;
-  &lt;/article&gt;
-  &lt;article&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/journal/the-brief-is-never-the-brief.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;November 2023. J. Ortega.&lt;/p&gt;
-      &lt;h2 class=&quot;uk-h3 uk-margin-small-top&quot;&gt;The brief is never the actual brief&lt;/h2&gt;
-      &lt;p class=&quot;uk-text-muted&quot;&gt;What the client asks for and what the client wants are rarely the same sentence.&lt;/p&gt;
-    &lt;/a&gt;
-  &lt;/article&gt;
-  &lt;article&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/journal/working-with-an-old-building.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;June 2019. M. Haven.&lt;/p&gt;
-      &lt;h2 class=&quot;uk-h3 uk-margin-small-top&quot;&gt;Working with an old building is a conversation, not a translation&lt;/h2&gt;
-      &lt;p class=&quot;uk-text-muted&quot;&gt;Some notes after the Blackrock conversion wrapped.&lt;/p&gt;
-    &lt;/a&gt;
-  &lt;/article&gt;
-&lt;/div&gt;"
+                            text=" &lt;div class=&quot;uk-grid uk-child-width-1-2@m uk-grid-large&quot; uk-grid&gt;    &lt;article&gt;     &lt;a href=&quot;/content/sites/haven-architecture/journal/why-we-draw-by-hand.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;February 2024. M. Haven.&lt;/p&gt;       &lt;h2 class=&quot;uk-h3 uk-margin-small-top&quot;&gt;Why we still draw by hand at the start of every project&lt;/h2&gt;       &lt;p class=&quot;uk-text-muted&quot;&gt;Not nostalgia. The constraint of a pencil on paper is still the fastest way to think through a building.&lt;/p&gt;     &lt;/a&gt;   &lt;/article&gt;   &lt;article&gt;     &lt;a href=&quot;/content/sites/haven-architecture/journal/the-brief-is-never-the-brief.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;November 2023. J. Ortega.&lt;/p&gt;       &lt;h2 class=&quot;uk-h3 uk-margin-small-top&quot;&gt;The brief is never the actual brief&lt;/h2&gt;       &lt;p class=&quot;uk-text-muted&quot;&gt;What the client asks for and what the client wants are rarely the same sentence.&lt;/p&gt;     &lt;/a&gt;   &lt;/article&gt;   &lt;article&gt;     &lt;a href=&quot;/content/sites/haven-architecture/journal/working-with-an-old-building.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;June 2019. M. Haven.&lt;/p&gt;       &lt;h2 class=&quot;uk-h3 uk-margin-small-top&quot;&gt;Working with an old building is a conversation, not a translation&lt;/h2&gt;       &lt;p class=&quot;uk-text-muted&quot;&gt;Some notes after the Blackrock conversion wrapped.&lt;/p&gt;     &lt;/a&gt;   &lt;/article&gt; &lt;/div&gt;"
                     />
                 </container>
             </list>
@@ -106,7 +81,6 @@
     >
         <jcr:content
                 jcr:description="Not nostalgia. The constraint of a pencil on paper is still the fastest way to think through a building."
-                jcr:mixinTypes="[mix:lockable]"
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Why we still draw by hand at the start of every project"
                 kes:template="/libs/kestros/commons/base-site-template"
@@ -193,7 +167,6 @@
     >
         <jcr:content
                 jcr:description="What the client asks for and what the client wants are rarely the same sentence."
-                jcr:mixinTypes="[mix:lockable]"
                 jcr:primaryType="nt:unstructured"
                 jcr:title="The brief is never the actual brief"
                 kes:template="/libs/kestros/commons/base-site-template"
@@ -280,7 +253,6 @@
     >
         <jcr:content
                 jcr:description="Some notes after the Blackrock conversion wrapped."
-                jcr:mixinTypes="[mix:lockable]"
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Working with an old building is a conversation, not a translation"
                 kes:template="/libs/kestros/commons/base-site-template"

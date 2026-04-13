@@ -9,7 +9,6 @@
 >
     <jcr:content
             jcr:description="Six things Launchpad does and what they mean in practice."
-            jcr:mixinTypes="[mix:lockable]"
             jcr:primaryType="nt:unstructured"
             jcr:title="Features"
             kes:template="/libs/kestros/commons/base-site-template"

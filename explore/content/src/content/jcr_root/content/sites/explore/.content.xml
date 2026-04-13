@@ -1,0 +1,2146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:rep="http://www.jcp.org/jcr/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="kes:Site"
+>
+    <jcr:content
+            jcr:description="A guide to far-flung places worth the trip. Stories, tips, and dispatches from the road."
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Explore"
+            kes:template="/libs/kestros/commons/base-site-template"
+            kes:theme="/etc/ui-frameworks/explore-framework/versions/2.1.0/themes/default"
+            publicationStrategy="kestros-single-instance"
+            sling:resourceType="kestros/commons/components/kestros-base-page"
+    >
+        <header
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"
+        >
+            <top-navigation
+                    brandHref="/content/sites/explore.html"
+                    brandName="Explore"
+                    inlineVariations="navbar navbar-expand-lg navbar-light bg-white border-bottom"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation"
+            >
+                <nav-destinations
+                        href="/content/sites/explore/destinations.html"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation-item"
+                        text="Destinations"
+                />
+                <nav-articles
+                        href="/content/sites/explore/articles.html"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation-item"
+                        text="Articles"
+                />
+                <nav-tips
+                        href="/content/sites/explore/tips.html"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation-item"
+                        text="Travel Tips"
+                />
+                <nav-about
+                        href="/content/sites/explore/about.html"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation-item"
+                        text="About"
+                />
+            </top-navigation>
+        </header>
+        <main
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/content-area"
+        >
+            <hero
+                    inlineVariations="uk-section uk-section-primary"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        inlineVariations="uk-container"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <eyebrow
+                            inlineVariations="uk-text-meta uk-text-uppercase"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="A travel guide"
+                    />
+                    <heading
+                            headingText="Worth the trip."
+                            headingType="h1"
+                            inlineVariations="uk-heading-medium"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <dek
+                            inlineVariations="uk-text-lead"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Five places we keep going back to, four ideas we keep coming back to. No bookings, no ads. Just notes from the road."
+                    />
+                    <cta-dest
+                            href="/content/sites/explore/destinations.html"
+                            inlineVariations="uk-button uk-button-primary"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/button"
+                            text="Destinations"
+                    />
+                    <cta-art
+                            href="/content/sites/explore/articles.html"
+                            inlineVariations="uk-button uk-button-default"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/button"
+                            text="Read the stories"
+                    />
+                </container>
+            </hero>
+            <featured-destinations
+                    inlineVariations="uk-section uk-section-default"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        inlineVariations="uk-container"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <eyebrow
+                            inlineVariations="uk-text-meta uk-text-uppercase"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Featured"
+                    />
+                    <heading
+                            headingText="Five places we keep coming back to."
+                            headingType="h2"
+                            inlineVariations="uk-heading-small"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <dest-cards
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                            text=" &lt;div class=&quot;uk-grid uk-child-width-1-3@m uk-grid-small&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/destinations/kyoto.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=1600&amp;q=80&quot; alt=&quot;Kyoto&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;div class=&quot;uk-margin-small-top&quot;&gt;         &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Kansai, Japan&lt;/p&gt;         &lt;h3 class=&quot;uk-h3 uk-margin-remove-top&quot;&gt;Kyoto&lt;/h3&gt;         &lt;p class=&quot;uk-text-muted&quot;&gt;A thousand temples, a hundred tea houses, and a slow walk through every season.&lt;/p&gt;       &lt;/div&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/destinations/patagonia.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1600&amp;q=80&quot; alt=&quot;Patagonia&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;div class=&quot;uk-margin-small-top&quot;&gt;         &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Southern Argentina and Chile&lt;/p&gt;         &lt;h3 class=&quot;uk-h3 uk-margin-remove-top&quot;&gt;Patagonia&lt;/h3&gt;         &lt;p class=&quot;uk-text-muted&quot;&gt;Wind, granite, glaciers, and a horizon that does not end.&lt;/p&gt;       &lt;/div&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/destinations/marrakech.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1597212618440-806262de4f6b?w=1600&amp;q=80&quot; alt=&quot;Marrakech&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;div class=&quot;uk-margin-small-top&quot;&gt;         &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Morocco&lt;/p&gt;         &lt;h3 class=&quot;uk-h3 uk-margin-remove-top&quot;&gt;Marrakech&lt;/h3&gt;         &lt;p class=&quot;uk-text-muted&quot;&gt;A walled city of dyers, lanterns, and orange juice carts that close at midnight.&lt;/p&gt;       &lt;/div&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt; &lt;p class=&quot;uk-text-center uk-margin-medium-top&quot;&gt;   &lt;a href=&quot;/content/sites/explore/destinations.html&quot; class=&quot;uk-button uk-button-text&quot;&gt;See all destinations&lt;/a&gt; &lt;/p&gt;"
+                    />
+                </container>
+            </featured-destinations>
+            <latest-stories
+                    inlineVariations="uk-section uk-section-muted"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        inlineVariations="uk-container"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <eyebrow
+                            inlineVariations="uk-text-meta uk-text-uppercase"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Stories"
+                    />
+                    <heading
+                            headingText="Latest from the road."
+                            headingType="h2"
+                            inlineVariations="uk-heading-small"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <story-cards
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                            text=" &lt;div class=&quot;uk-grid uk-child-width-1-3@m uk-grid-small&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/articles/why-shoulder-season.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1600&amp;q=80&quot; alt=&quot;Why shoulder season is the real travel season&quot; style=&quot;width: 100%; height: 200px; object-fit: cover;&quot; /&gt;       &lt;div class=&quot;uk-margin-small-top&quot;&gt;         &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Jane Holloway. 6 min read.&lt;/p&gt;         &lt;h3 class=&quot;uk-h4 uk-margin-remove-top&quot;&gt;Why shoulder season is the real travel season&lt;/h3&gt;         &lt;p class=&quot;uk-text-muted&quot;&gt;Cheaper flights, emptier trails, and hosts who still remember how to be hospitable.&lt;/p&gt;       &lt;/div&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/articles/packing-light-2-weeks.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=1600&amp;q=80&quot; alt=&quot;Packing light for two weeks anywhere&quot; style=&quot;width: 100%; height: 200px; object-fit: cover;&quot; /&gt;       &lt;div class=&quot;uk-margin-small-top&quot;&gt;         &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Marcus Adair. 8 min read.&lt;/p&gt;         &lt;h3 class=&quot;uk-h4 uk-margin-remove-top&quot;&gt;Packing light for two weeks anywhere&lt;/h3&gt;         &lt;p class=&quot;uk-text-muted&quot;&gt;A carry-on, a personal item, and a list you can keep in your head.&lt;/p&gt;       &lt;/div&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/articles/sleeping-on-trains.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=1600&amp;q=80&quot; alt=&quot;The quiet joy of sleeping on trains&quot; style=&quot;width: 100%; height: 200px; object-fit: cover;&quot; /&gt;       &lt;div class=&quot;uk-margin-small-top&quot;&gt;         &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Priya Chen. 5 min read.&lt;/p&gt;         &lt;h3 class=&quot;uk-h4 uk-margin-remove-top&quot;&gt;The quiet joy of sleeping on trains&lt;/h3&gt;         &lt;p class=&quot;uk-text-muted&quot;&gt;You fall asleep in one country and wake up in another. No hotel bill, no security line.&lt;/p&gt;       &lt;/div&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt;"
+                    />
+                </container>
+            </latest-stories>
+        </main>
+        <footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"
+        >
+            <site-footer
+                    inlineVariations="uk-section uk-section-secondary"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        inlineVariations="uk-container"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <brand
+                            inlineVariations="uk-text-bold uk-text-uppercase"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Explore"
+                    />
+                    <blurb
+                            inlineVariations="uk-text-small"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="A small magazine about places worth going to. No bookings, no ads, no newsletter you never asked for. Just pieces we wrote because we had something to say."
+                    />
+                    <links
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                            text=" &lt;div class=&quot;uk-grid uk-grid-small uk-child-width-1-3@m&quot; uk-grid&gt;   &lt;div&gt;     &lt;h5 class=&quot;uk-text-bold&quot;&gt;Read&lt;/h5&gt;     &lt;ul class=&quot;uk-list uk-list-small&quot;&gt;       &lt;li&gt;&lt;a href=&quot;/content/sites/explore/destinations.html&quot; class=&quot;uk-link-reset&quot;&gt;Destinations&lt;/a&gt;&lt;/li&gt;       &lt;li&gt;&lt;a href=&quot;/content/sites/explore/articles.html&quot; class=&quot;uk-link-reset&quot;&gt;Articles&lt;/a&gt;&lt;/li&gt;       &lt;li&gt;&lt;a href=&quot;/content/sites/explore/tips.html&quot; class=&quot;uk-link-reset&quot;&gt;Travel tips&lt;/a&gt;&lt;/li&gt;     &lt;/ul&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;h5 class=&quot;uk-text-bold&quot;&gt;About&lt;/h5&gt;     &lt;ul class=&quot;uk-list uk-list-small&quot;&gt;       &lt;li&gt;&lt;a href=&quot;/content/sites/explore/about.html&quot; class=&quot;uk-link-reset&quot;&gt;The magazine&lt;/a&gt;&lt;/li&gt;       &lt;li&gt;&lt;a href=&quot;mailto:hello@explore.example&quot; class=&quot;uk-link-reset&quot;&gt;hello@explore.example&lt;/a&gt;&lt;/li&gt;     &lt;/ul&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;h5 class=&quot;uk-text-bold&quot;&gt;Fine print&lt;/h5&gt;     &lt;p class=&quot;uk-text-small uk-text-muted&quot;&gt;Explore. A fictional travel guide. Everything here is made up.&lt;/p&gt;   &lt;/div&gt; &lt;/div&gt;"
+                    />
+                </container>
+            </site-footer>
+        </footer>
+    </jcr:content>
+    <destinations
+            jcr:primaryType="kes:Page"
+    >
+        <jcr:content
+                jcr:description="Five places worth the trip, with long-form guides for each."
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Destinations"
+                kes:template="/libs/kestros/commons/base-site-template"
+                sling:resourceType="kestros/commons/components/kestros-base-page"
+        >
+            <header
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/inherited-content-area"
+            />
+            <main
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/content-area"
+            >
+                <hero
+                        inlineVariations="uk-section uk-section-primary"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <eyebrow
+                                inlineVariations="uk-text-meta uk-text-uppercase"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Destinations"
+                        />
+                        <heading
+                                headingText="Five places worth the trip."
+                                headingType="h1"
+                                inlineVariations="uk-heading-medium"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <dek
+                                inlineVariations="uk-text-lead"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Each one is the kind of trip we would book again without thinking twice. Click through for the long version."
+                        />
+                    </container>
+                </hero>
+                <grid
+                        inlineVariations="uk-section uk-section-default"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <grid-cards
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                text=" &lt;div class=&quot;uk-grid uk-child-width-1-2@m uk-grid-large&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/destinations/kyoto.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=1600&amp;q=80&quot; alt=&quot;Kyoto&quot; style=&quot;width: 100%; height: 280px; object-fit: cover;&quot; /&gt;       &lt;div class=&quot;uk-margin-small-top&quot;&gt;         &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Kansai, Japan&lt;/p&gt;         &lt;h2 class=&quot;uk-h3 uk-margin-remove-top&quot;&gt;Kyoto&lt;/h2&gt;         &lt;p class=&quot;uk-text-muted&quot;&gt;A thousand temples, a hundred tea houses, and a slow walk through every season.&lt;/p&gt;       &lt;/div&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/destinations/patagonia.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1600&amp;q=80&quot; alt=&quot;Patagonia&quot; style=&quot;width: 100%; height: 280px; object-fit: cover;&quot; /&gt;       &lt;div class=&quot;uk-margin-small-top&quot;&gt;         &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Southern Argentina and Chile&lt;/p&gt;         &lt;h2 class=&quot;uk-h3 uk-margin-remove-top&quot;&gt;Patagonia&lt;/h2&gt;         &lt;p class=&quot;uk-text-muted&quot;&gt;Wind, granite, glaciers, and a horizon that does not end.&lt;/p&gt;       &lt;/div&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/destinations/marrakech.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1597212618440-806262de4f6b?w=1600&amp;q=80&quot; alt=&quot;Marrakech&quot; style=&quot;width: 100%; height: 280px; object-fit: cover;&quot; /&gt;       &lt;div class=&quot;uk-margin-small-top&quot;&gt;         &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Morocco&lt;/p&gt;         &lt;h2 class=&quot;uk-h3 uk-margin-remove-top&quot;&gt;Marrakech&lt;/h2&gt;         &lt;p class=&quot;uk-text-muted&quot;&gt;A walled city of dyers, lanterns, and orange juice carts that close at midnight.&lt;/p&gt;       &lt;/div&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/destinations/iceland-ring.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1504829857797-ddff29c27927?w=1600&amp;q=80&quot; alt=&quot;Iceland Ring Road&quot; style=&quot;width: 100%; height: 280px; object-fit: cover;&quot; /&gt;       &lt;div class=&quot;uk-margin-small-top&quot;&gt;         &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Iceland&lt;/p&gt;         &lt;h2 class=&quot;uk-h3 uk-margin-remove-top&quot;&gt;Iceland Ring Road&lt;/h2&gt;         &lt;p class=&quot;uk-text-muted&quot;&gt;A 1,332 kilometer loop around an island where the road is the trip.&lt;/p&gt;       &lt;/div&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/destinations/madagascar.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1589553416260-f586c8f1514f?w=1600&amp;q=80&quot; alt=&quot;Madagascar&quot; style=&quot;width: 100%; height: 280px; object-fit: cover;&quot; /&gt;       &lt;div class=&quot;uk-margin-small-top&quot;&gt;         &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Indian Ocean, off East Africa&lt;/p&gt;         &lt;h2 class=&quot;uk-h3 uk-margin-remove-top&quot;&gt;Madagascar&lt;/h2&gt;         &lt;p class=&quot;uk-text-muted&quot;&gt;Lemurs, baobabs, and an island ecosystem you will not find anywhere else.&lt;/p&gt;       &lt;/div&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt;"
+                        />
+                    </container>
+                </grid>
+            </main>
+            <footer
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/inherited-content-area"
+            />
+        </jcr:content>
+        <kyoto
+                jcr:primaryType="kes:Page"
+        >
+            <jcr:content
+                    jcr:description="Kyoto - A thousand temples, a hundred tea houses, and a slow walk through every season."
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Kyoto"
+                    kes:template="/libs/kestros/commons/base-site-template"
+                    sling:resourceType="kestros/commons/components/kestros-base-page"
+            >
+                <header
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/inherited-content-area"
+                />
+                <main
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/content-area"
+                >
+                    <hero
+                            inlineVariations="uk-section uk-section-primary"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <region
+                                    inlineVariations="uk-text-meta uk-text-uppercase"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Kansai, Japan"
+                            />
+                            <heading
+                                    headingText="Kyoto"
+                                    headingType="h1"
+                                    inlineVariations="uk-heading-medium"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <dek
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="A thousand temples, a hundred tea houses, and a slow walk through every season."
+                            />
+                            <hero-image
+                                    altText="Kyoto"
+                                    imagePath="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=1600&amp;q=80"
+                                    inlineVariations="uk-width-1-1"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/image"
+                            />
+                            <when
+                                    inlineVariations="uk-text-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="When to go: Mar to May, Oct to Nov"
+                            />
+                        </container>
+                    </hero>
+                    <story
+                            inlineVariations="uk-section uk-section-default"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <p0
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Kyoto rewards the unhurried. The headline temples are real and worth the visit, but the city does its best work in the alleys behind them: a sweet shop run by the same family for six generations, a wood-fired soba counter with eight seats, a moss garden that nobody photographs because nobody else is there."
+                            />
+                            <p1
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Stay at least four nights. Spend one of them entirely in Higashiyama, on foot, with no agenda after lunch. Spend another wandering the lanes north of Demachiyanagi where tourists thin out and Kyoto becomes Kyoto for the people who live in it."
+                            />
+                            <p2
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Spring brings cherry blossoms and the kind of crowds that come with them. Autumn is when the maples turn and the inns drop their rates. Winter gets cold, and most of the city belongs to the people who live in it."
+                            />
+                        </container>
+                    </story>
+                    <highlights
+                            inlineVariations="uk-section uk-section-muted"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <heading
+                                    headingText="Highlights"
+                                    headingType="h2"
+                                    inlineVariations="uk-heading-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <highlights-list
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text=" &lt;ul class=&quot;uk-list uk-list-bullet uk-text-lead&quot;&gt;   &lt;li&gt;The Philosopher's Path in the hour after sunrise&lt;/li&gt;   &lt;li&gt;Temple steps at Honen-in, early, with coffee&lt;/li&gt;   &lt;li&gt;Kaiseki at a small ryokan where nobody speaks English&lt;/li&gt;   &lt;li&gt;The slow local train up to Kurama and the hot spring at the end&lt;/li&gt; &lt;/ul&gt;"
+                            />
+                        </container>
+                    </highlights>
+                    <tip
+                            inlineVariations="uk-section uk-section-secondary"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <eyebrow
+                                    inlineVariations="uk-text-meta uk-text-uppercase"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Field tip"
+                            />
+                            <heading
+                                    headingText="Skip the tour bus stops"
+                                    headingType="h2"
+                                    inlineVariations="uk-heading-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <body
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="The famous spots are famous for good reason. Go early, before the buses get there, and leave by 10am. The rest of the day belongs to whichever neighborhood you end up walking through next."
+                            />
+                        </container>
+                    </tip>
+                    <more
+                            inlineVariations="uk-section uk-section-default"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <heading
+                                    headingText="Other destinations"
+                                    headingType="h2"
+                                    inlineVariations="uk-heading-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <other-cards
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text=" &lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/destinations/patagonia.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1600&amp;q=80&quot; alt=&quot;Patagonia&quot; style=&quot;width: 100%; height: 180px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Southern Argentina and Chile&lt;/p&gt;       &lt;h3 class=&quot;uk-h4 uk-margin-remove-top&quot;&gt;Patagonia&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/destinations/marrakech.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1597212618440-806262de4f6b?w=1600&amp;q=80&quot; alt=&quot;Marrakech&quot; style=&quot;width: 100%; height: 180px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Morocco&lt;/p&gt;       &lt;h3 class=&quot;uk-h4 uk-margin-remove-top&quot;&gt;Marrakech&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/destinations/iceland-ring.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1504829857797-ddff29c27927?w=1600&amp;q=80&quot; alt=&quot;Iceland Ring Road&quot; style=&quot;width: 100%; height: 180px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Iceland&lt;/p&gt;       &lt;h3 class=&quot;uk-h4 uk-margin-remove-top&quot;&gt;Iceland Ring Road&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt;"
+                            />
+                        </container>
+                    </more>
+                </main>
+                <footer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/inherited-content-area"
+                />
+            </jcr:content>
+        </kyoto>
+        <patagonia
+                jcr:primaryType="kes:Page"
+        >
+            <jcr:content
+                    jcr:description="Patagonia - Wind, granite, glaciers, and a horizon that does not end."
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Patagonia"
+                    kes:template="/libs/kestros/commons/base-site-template"
+                    sling:resourceType="kestros/commons/components/kestros-base-page"
+            >
+                <header
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/inherited-content-area"
+                />
+                <main
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/content-area"
+                >
+                    <hero
+                            inlineVariations="uk-section uk-section-primary"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <region
+                                    inlineVariations="uk-text-meta uk-text-uppercase"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Southern Argentina and Chile"
+                            />
+                            <heading
+                                    headingText="Patagonia"
+                                    headingType="h1"
+                                    inlineVariations="uk-heading-medium"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <dek
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Wind, granite, glaciers, and a horizon that does not end."
+                            />
+                            <hero-image
+                                    altText="Patagonia"
+                                    imagePath="https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1600&amp;q=80"
+                                    inlineVariations="uk-width-1-1"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/image"
+                            />
+                            <when
+                                    inlineVariations="uk-text-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="When to go: Nov to Mar (austral summer)"
+                            />
+                        </container>
+                    </hero>
+                    <story
+                            inlineVariations="uk-section uk-section-default"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <p0
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Patagonia is less a place than a feeling. The wind is the protagonist of every story; the landscape is the wind made visible. You will not be the first person to come here looking for solitude and you will not be the last, but the scale is big enough that you will find it anyway."
+                            />
+                            <p1
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="The classic loop is the W trek in Torres del Paine, four to five days through the Chilean side, with refuges if you do not want to camp. On the Argentine side, El Chalten is a hiking village with day hikes that humble whatever you thought a day hike was. Either is enough for a trip; both is better."
+                            />
+                            <p2
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Pack more layers than you think you need. Dinner happens late down here. Tip the guide who talked you out of the wrong trail."
+                            />
+                        </container>
+                    </story>
+                    <highlights
+                            inlineVariations="uk-section uk-section-muted"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <heading
+                                    headingText="Highlights"
+                                    headingType="h2"
+                                    inlineVariations="uk-heading-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <highlights-list
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text=" &lt;ul class=&quot;uk-list uk-list-bullet uk-text-lead&quot;&gt;   &lt;li&gt;Sunrise on the Towers from Mirador Las Torres&lt;/li&gt;   &lt;li&gt;The long day hike to Laguna de los Tres from El Chalten&lt;/li&gt;   &lt;li&gt;The boat through Grey Glacier&lt;/li&gt;   &lt;li&gt;A slow asado at an estancia&lt;/li&gt;   &lt;li&gt;One night with no light pollution&lt;/li&gt; &lt;/ul&gt;"
+                            />
+                        </container>
+                    </highlights>
+                    <tip
+                            inlineVariations="uk-section uk-section-secondary"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <eyebrow
+                                    inlineVariations="uk-text-meta uk-text-uppercase"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Field tip"
+                            />
+                            <heading
+                                    headingText="Book the W trek refuges in August"
+                                    headingType="h2"
+                                    inlineVariations="uk-heading-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <body
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="They fill up for the December and January season by early spring. If you miss those dates, try November or March. The weather is moodier and the trails are a lot quieter."
+                            />
+                        </container>
+                    </tip>
+                    <more
+                            inlineVariations="uk-section uk-section-default"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <heading
+                                    headingText="Other destinations"
+                                    headingType="h2"
+                                    inlineVariations="uk-heading-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <other-cards
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text=" &lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/destinations/kyoto.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=1600&amp;q=80&quot; alt=&quot;Kyoto&quot; style=&quot;width: 100%; height: 180px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Kansai, Japan&lt;/p&gt;       &lt;h3 class=&quot;uk-h4 uk-margin-remove-top&quot;&gt;Kyoto&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/destinations/marrakech.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1597212618440-806262de4f6b?w=1600&amp;q=80&quot; alt=&quot;Marrakech&quot; style=&quot;width: 100%; height: 180px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Morocco&lt;/p&gt;       &lt;h3 class=&quot;uk-h4 uk-margin-remove-top&quot;&gt;Marrakech&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/destinations/iceland-ring.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1504829857797-ddff29c27927?w=1600&amp;q=80&quot; alt=&quot;Iceland Ring Road&quot; style=&quot;width: 100%; height: 180px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Iceland&lt;/p&gt;       &lt;h3 class=&quot;uk-h4 uk-margin-remove-top&quot;&gt;Iceland Ring Road&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt;"
+                            />
+                        </container>
+                    </more>
+                </main>
+                <footer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/inherited-content-area"
+                />
+            </jcr:content>
+        </patagonia>
+        <marrakech
+                jcr:primaryType="kes:Page"
+        >
+            <jcr:content
+                    jcr:description="Marrakech - A walled city of dyers, lanterns, and orange juice carts that close at midnight."
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Marrakech"
+                    kes:template="/libs/kestros/commons/base-site-template"
+                    sling:resourceType="kestros/commons/components/kestros-base-page"
+            >
+                <header
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/inherited-content-area"
+                />
+                <main
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/content-area"
+                >
+                    <hero
+                            inlineVariations="uk-section uk-section-primary"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <region
+                                    inlineVariations="uk-text-meta uk-text-uppercase"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Morocco"
+                            />
+                            <heading
+                                    headingText="Marrakech"
+                                    headingType="h1"
+                                    inlineVariations="uk-heading-medium"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <dek
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="A walled city of dyers, lanterns, and orange juice carts that close at midnight."
+                            />
+                            <hero-image
+                                    altText="Marrakech"
+                                    imagePath="https://images.unsplash.com/photo-1597212618440-806262de4f6b?w=1600&amp;q=80"
+                                    inlineVariations="uk-width-1-1"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/image"
+                            />
+                            <when
+                                    inlineVariations="uk-text-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="When to go: Oct to Apr"
+                            />
+                        </container>
+                    </hero>
+                    <story
+                            inlineVariations="uk-section uk-section-default"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <p0
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Marrakech is loud, fast, and deeply hospitable. The medina is a four-square-mile maze that took a millennium to organize and refuses to be solved in three days. Get lost on purpose. The fastest way out of any wrong turn is to walk forward and ask politely."
+                            />
+                            <p1
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Stay in a riad inside the walls. Day one is for orientation and tea. Day two for the souks (leather, spices, lanterns, in that order). Day three for the tanneries and a long lunch on a rooftop."
+                            />
+                            <p2
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="A side trip to the Atlas Mountains is one bus ride away and worth half a day at least. The contrast of the high passes after the heat of the medina recalibrates the whole trip."
+                            />
+                        </container>
+                    </story>
+                    <highlights
+                            inlineVariations="uk-section uk-section-muted"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <heading
+                                    headingText="Highlights"
+                                    headingType="h2"
+                                    inlineVariations="uk-heading-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <highlights-list
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text=" &lt;ul class=&quot;uk-list uk-list-bullet uk-text-lead&quot;&gt;   &lt;li&gt;Mint tea on a rooftop just before sunset&lt;/li&gt;   &lt;li&gt;The souks before noon, before the crowds find them&lt;/li&gt;   &lt;li&gt;Majorelle Garden in the morning light&lt;/li&gt;   &lt;li&gt;Tagine at a place without a sign out front&lt;/li&gt;   &lt;li&gt;Day trip into the Ourika Valley&lt;/li&gt; &lt;/ul&gt;"
+                            />
+                        </container>
+                    </highlights>
+                    <tip
+                            inlineVariations="uk-section uk-section-secondary"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <eyebrow
+                                    inlineVariations="uk-text-meta uk-text-uppercase"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Field tip"
+                            />
+                            <heading
+                                    headingText="Carry small bills"
+                                    headingType="h2"
+                                    inlineVariations="uk-heading-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <body
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="The medina runs on cash. Keep a stack of small denomination dirhams on you at all times. Tipping is part of how things work here, not an afterthought."
+                            />
+                        </container>
+                    </tip>
+                    <more
+                            inlineVariations="uk-section uk-section-default"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <heading
+                                    headingText="Other destinations"
+                                    headingType="h2"
+                                    inlineVariations="uk-heading-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <other-cards
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text=" &lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/destinations/kyoto.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=1600&amp;q=80&quot; alt=&quot;Kyoto&quot; style=&quot;width: 100%; height: 180px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Kansai, Japan&lt;/p&gt;       &lt;h3 class=&quot;uk-h4 uk-margin-remove-top&quot;&gt;Kyoto&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/destinations/patagonia.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1600&amp;q=80&quot; alt=&quot;Patagonia&quot; style=&quot;width: 100%; height: 180px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Southern Argentina and Chile&lt;/p&gt;       &lt;h3 class=&quot;uk-h4 uk-margin-remove-top&quot;&gt;Patagonia&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/destinations/iceland-ring.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1504829857797-ddff29c27927?w=1600&amp;q=80&quot; alt=&quot;Iceland Ring Road&quot; style=&quot;width: 100%; height: 180px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Iceland&lt;/p&gt;       &lt;h3 class=&quot;uk-h4 uk-margin-remove-top&quot;&gt;Iceland Ring Road&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt;"
+                            />
+                        </container>
+                    </more>
+                </main>
+                <footer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/inherited-content-area"
+                />
+            </jcr:content>
+        </marrakech>
+        <iceland-ring
+                jcr:primaryType="kes:Page"
+        >
+            <jcr:content
+                    jcr:description="Iceland Ring Road - A 1,332 kilometer loop around an island where the road is the trip."
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Iceland Ring Road"
+                    kes:template="/libs/kestros/commons/base-site-template"
+                    sling:resourceType="kestros/commons/components/kestros-base-page"
+            >
+                <header
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/inherited-content-area"
+                />
+                <main
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/content-area"
+                >
+                    <hero
+                            inlineVariations="uk-section uk-section-primary"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <region
+                                    inlineVariations="uk-text-meta uk-text-uppercase"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Iceland"
+                            />
+                            <heading
+                                    headingText="Iceland Ring Road"
+                                    headingType="h1"
+                                    inlineVariations="uk-heading-medium"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <dek
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="A 1,332 kilometer loop around an island where the road is the trip."
+                            />
+                            <hero-image
+                                    altText="Iceland Ring Road"
+                                    imagePath="https://images.unsplash.com/photo-1504829857797-ddff29c27927?w=1600&amp;q=80"
+                                    inlineVariations="uk-width-1-1"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/image"
+                            />
+                            <when
+                                    inlineVariations="uk-text-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="When to go: Jun to Aug for hiking, Sep to Mar for the lights"
+                            />
+                        </container>
+                    </hero>
+                    <story
+                            inlineVariations="uk-section uk-section-default"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <p0
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="The Ring Road is Iceland's national highway and its most honest tourist attraction. Drive it clockwise from Reykjavik and you will pass volcanoes, waterfalls, glaciers, geothermal pools, fishing villages, and the kind of long flat stretches where you stop the car because nobody is around and the silence is the loudest thing in the world."
+                            />
+                            <p1
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Plan eight to ten days for the full loop. Less and you are speeding through; more and you have time for the side roads to the West Fjords or the hot springs that did not make the magazine articles."
+                            />
+                            <p2
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Rent the smallest 4x4 you can find. Most of the F-roads are off-limits to standard cars and the F-roads are where the trip stops being a road trip and starts being a quiet kind of adventure."
+                            />
+                        </container>
+                    </story>
+                    <highlights
+                            inlineVariations="uk-section uk-section-muted"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <heading
+                                    headingText="Highlights"
+                                    headingType="h2"
+                                    inlineVariations="uk-heading-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <highlights-list
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text=" &lt;ul class=&quot;uk-list uk-list-bullet uk-text-lead&quot;&gt;   &lt;li&gt;A night in Hofn eating langoustines&lt;/li&gt;   &lt;li&gt;Walking behind Seljalandsfoss with the camera put away&lt;/li&gt;   &lt;li&gt;A roadside hot pot at midnight&lt;/li&gt;   &lt;li&gt;Stopping at every black sand beach even when you have already seen one&lt;/li&gt;   &lt;li&gt;Watching the sky for the lights, even when it is raining&lt;/li&gt; &lt;/ul&gt;"
+                            />
+                        </container>
+                    </highlights>
+                    <tip
+                            inlineVariations="uk-section uk-section-secondary"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <eyebrow
+                                    inlineVariations="uk-text-meta uk-text-uppercase"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Field tip"
+                            />
+                            <heading
+                                    headingText="Drive it counterclockwise"
+                                    headingType="h2"
+                                    inlineVariations="uk-heading-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <body
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Most of the package tours go clockwise, which jams up the south coast in the morning. Go the other way and you start in the empty north, then hit the famous waterfalls in the late afternoon when the buses are gone."
+                            />
+                        </container>
+                    </tip>
+                    <more
+                            inlineVariations="uk-section uk-section-default"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <heading
+                                    headingText="Other destinations"
+                                    headingType="h2"
+                                    inlineVariations="uk-heading-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <other-cards
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text=" &lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/destinations/kyoto.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=1600&amp;q=80&quot; alt=&quot;Kyoto&quot; style=&quot;width: 100%; height: 180px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Kansai, Japan&lt;/p&gt;       &lt;h3 class=&quot;uk-h4 uk-margin-remove-top&quot;&gt;Kyoto&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/destinations/patagonia.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1600&amp;q=80&quot; alt=&quot;Patagonia&quot; style=&quot;width: 100%; height: 180px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Southern Argentina and Chile&lt;/p&gt;       &lt;h3 class=&quot;uk-h4 uk-margin-remove-top&quot;&gt;Patagonia&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/destinations/marrakech.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1597212618440-806262de4f6b?w=1600&amp;q=80&quot; alt=&quot;Marrakech&quot; style=&quot;width: 100%; height: 180px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Morocco&lt;/p&gt;       &lt;h3 class=&quot;uk-h4 uk-margin-remove-top&quot;&gt;Marrakech&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt;"
+                            />
+                        </container>
+                    </more>
+                </main>
+                <footer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/inherited-content-area"
+                />
+            </jcr:content>
+        </iceland-ring>
+        <madagascar
+                jcr:primaryType="kes:Page"
+        >
+            <jcr:content
+                    jcr:description="Madagascar - Lemurs, baobabs, and an island ecosystem you will not find anywhere else."
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Madagascar"
+                    kes:template="/libs/kestros/commons/base-site-template"
+                    sling:resourceType="kestros/commons/components/kestros-base-page"
+            >
+                <header
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/inherited-content-area"
+                />
+                <main
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/content-area"
+                >
+                    <hero
+                            inlineVariations="uk-section uk-section-primary"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <region
+                                    inlineVariations="uk-text-meta uk-text-uppercase"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Indian Ocean, off East Africa"
+                            />
+                            <heading
+                                    headingText="Madagascar"
+                                    headingType="h1"
+                                    inlineVariations="uk-heading-medium"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <dek
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Lemurs, baobabs, and an island ecosystem you will not find anywhere else."
+                            />
+                            <hero-image
+                                    altText="Madagascar"
+                                    imagePath="https://images.unsplash.com/photo-1589553416260-f586c8f1514f?w=1600&amp;q=80"
+                                    inlineVariations="uk-width-1-1"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/image"
+                            />
+                            <when
+                                    inlineVariations="uk-text-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="When to go: Apr to Oct (dry season)"
+                            />
+                        </container>
+                    </hero>
+                    <story
+                            inlineVariations="uk-section uk-section-default"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <p0
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Madagascar is one of the strangest places on the planet, in the best way. Eight hundred animal species live here and nowhere else. The baobab trees in the west look like pencil drawings stood on end. The reef in the south is the size of Belize. Most travelers see almost none of it, because the country is enormous and the roads are slow."
+                            />
+                            <p1
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Pick one region for a first trip. The classic is the southeast, with Andasibe-Mantadia for indri lemurs and Ranomafana for the cloud forest. Add a few days on the coast at Ifaty if you can."
+                            />
+                            <p2
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Travel slowly on purpose. The journey is the point. The country runs on patience and the rewards are large for travelers who pack some."
+                            />
+                        </container>
+                    </story>
+                    <highlights
+                            inlineVariations="uk-section uk-section-muted"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <heading
+                                    headingText="Highlights"
+                                    headingType="h2"
+                                    inlineVariations="uk-heading-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <highlights-list
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text=" &lt;ul class=&quot;uk-list uk-list-bullet uk-text-lead&quot;&gt;   &lt;li&gt;The indri call at dawn in Andasibe&lt;/li&gt;   &lt;li&gt;The Avenue of the Baobabs at the hour before sunset&lt;/li&gt;   &lt;li&gt;Snorkeling the reef at Ifaty&lt;/li&gt;   &lt;li&gt;The slow train down to Manakara&lt;/li&gt;   &lt;li&gt;Zebu skewers from a roadside grill, wherever you find one&lt;/li&gt; &lt;/ul&gt;"
+                            />
+                        </container>
+                    </highlights>
+                    <tip
+                            inlineVariations="uk-section uk-section-secondary"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <eyebrow
+                                    inlineVariations="uk-text-meta uk-text-uppercase"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Field tip"
+                            />
+                            <heading
+                                    headingText="Hire a local driver-guide"
+                                    headingType="h2"
+                                    inlineVariations="uk-heading-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <body
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Self-driving Madagascar is a project, not a vacation. A local driver knows which sections of road are passable in the rain, which villages are worth stopping in, and where to sleep when you end up four hours behind schedule. Budget for it. It is the best money you will spend on the trip."
+                            />
+                        </container>
+                    </tip>
+                    <more
+                            inlineVariations="uk-section uk-section-default"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <heading
+                                    headingText="Other destinations"
+                                    headingType="h2"
+                                    inlineVariations="uk-heading-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <other-cards
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text=" &lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/destinations/kyoto.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=1600&amp;q=80&quot; alt=&quot;Kyoto&quot; style=&quot;width: 100%; height: 180px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Kansai, Japan&lt;/p&gt;       &lt;h3 class=&quot;uk-h4 uk-margin-remove-top&quot;&gt;Kyoto&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/destinations/patagonia.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1600&amp;q=80&quot; alt=&quot;Patagonia&quot; style=&quot;width: 100%; height: 180px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Southern Argentina and Chile&lt;/p&gt;       &lt;h3 class=&quot;uk-h4 uk-margin-remove-top&quot;&gt;Patagonia&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/destinations/marrakech.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1597212618440-806262de4f6b?w=1600&amp;q=80&quot; alt=&quot;Marrakech&quot; style=&quot;width: 100%; height: 180px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Morocco&lt;/p&gt;       &lt;h3 class=&quot;uk-h4 uk-margin-remove-top&quot;&gt;Marrakech&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt;"
+                            />
+                        </container>
+                    </more>
+                </main>
+                <footer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/inherited-content-area"
+                />
+            </jcr:content>
+        </madagascar>
+    </destinations>
+    <articles
+            jcr:primaryType="kes:Page"
+    >
+        <jcr:content
+                jcr:description="Notes from the road: stories, tips, and the occasional rant."
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Articles"
+                kes:template="/libs/kestros/commons/base-site-template"
+                sling:resourceType="kestros/commons/components/kestros-base-page"
+        >
+            <header
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/inherited-content-area"
+            />
+            <main
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/content-area"
+            >
+                <hero
+                        inlineVariations="uk-section uk-section-primary"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <eyebrow
+                                inlineVariations="uk-text-meta uk-text-uppercase"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Stories"
+                        />
+                        <heading
+                                headingText="Notes from the road."
+                                headingType="h1"
+                                inlineVariations="uk-heading-medium"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <dek
+                                inlineVariations="uk-text-lead"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Reflections, field notes, and the occasional rant about how airports have gotten worse."
+                        />
+                    </container>
+                </hero>
+                <grid
+                        inlineVariations="uk-section uk-section-default"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <grid-cards
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                text=" &lt;div class=&quot;uk-grid uk-child-width-1-2@m uk-grid-large&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/articles/why-shoulder-season.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1600&amp;q=80&quot; alt=&quot;Why shoulder season is the real travel season&quot; style=&quot;width: 100%; height: 260px; object-fit: cover;&quot; /&gt;       &lt;div class=&quot;uk-margin-small-top&quot;&gt;         &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Jane Holloway. Editor, 20 years on the road. 6 min read.&lt;/p&gt;         &lt;h2 class=&quot;uk-h3 uk-margin-remove-top&quot;&gt;Why shoulder season is the real travel season&lt;/h2&gt;         &lt;p class=&quot;uk-text-muted&quot;&gt;Cheaper flights, emptier trails, and hosts who still remember how to be hospitable.&lt;/p&gt;       &lt;/div&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/articles/packing-light-2-weeks.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=1600&amp;q=80&quot; alt=&quot;Packing light for two weeks anywhere&quot; style=&quot;width: 100%; height: 260px; object-fit: cover;&quot; /&gt;       &lt;div class=&quot;uk-margin-small-top&quot;&gt;         &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Marcus Adair. Field reporter, has packed the same bag for ten years. 8 min read.&lt;/p&gt;         &lt;h2 class=&quot;uk-h3 uk-margin-remove-top&quot;&gt;Packing light for two weeks anywhere&lt;/h2&gt;         &lt;p class=&quot;uk-text-muted&quot;&gt;A carry-on, a personal item, and a list you can keep in your head.&lt;/p&gt;       &lt;/div&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/articles/sleeping-on-trains.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=1600&amp;q=80&quot; alt=&quot;The quiet joy of sleeping on trains&quot; style=&quot;width: 100%; height: 260px; object-fit: cover;&quot; /&gt;       &lt;div class=&quot;uk-margin-small-top&quot;&gt;         &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Priya Chen. Photographer. Not a morning person.. 5 min read.&lt;/p&gt;         &lt;h2 class=&quot;uk-h3 uk-margin-remove-top&quot;&gt;The quiet joy of sleeping on trains&lt;/h2&gt;         &lt;p class=&quot;uk-text-muted&quot;&gt;You fall asleep in one country and wake up in another. No hotel bill, no security line.&lt;/p&gt;       &lt;/div&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/articles/eating-where-locals-eat.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1600&amp;q=80&quot; alt=&quot;Eating where locals eat&quot; style=&quot;width: 100%; height: 260px; object-fit: cover;&quot; /&gt;       &lt;div class=&quot;uk-margin-small-top&quot;&gt;         &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Tomas Reyes. Food writer, bad at reservations. 7 min read.&lt;/p&gt;         &lt;h2 class=&quot;uk-h3 uk-margin-remove-top&quot;&gt;Eating where locals eat&lt;/h2&gt;         &lt;p class=&quot;uk-text-muted&quot;&gt;The food is better. The bill is smaller. The room is full of people who already live there.&lt;/p&gt;       &lt;/div&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt;"
+                        />
+                    </container>
+                </grid>
+            </main>
+            <footer
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/inherited-content-area"
+            />
+        </jcr:content>
+        <why-shoulder-season
+                jcr:primaryType="kes:Page"
+        >
+            <jcr:content
+                    jcr:description="Cheaper flights, emptier trails, and hosts who still remember how to be hospitable."
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Why shoulder season is the real travel season"
+                    kes:template="/libs/kestros/commons/base-site-template"
+                    sling:resourceType="kestros/commons/components/kestros-base-page"
+            >
+                <header
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/inherited-content-area"
+                />
+                <main
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/content-area"
+                >
+                    <hero
+                            inlineVariations="uk-section uk-section-primary"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <eyebrow
+                                    inlineVariations="uk-text-meta uk-text-uppercase"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Story"
+                            />
+                            <heading
+                                    headingText="Why shoulder season is the real travel season"
+                                    headingType="h1"
+                                    inlineVariations="uk-heading-medium"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <dek
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Cheaper flights, emptier trails, and hosts who still remember how to be hospitable."
+                            />
+                            <hero-image
+                                    altText="Why shoulder season is the real travel season"
+                                    imagePath="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1600&amp;q=80"
+                                    inlineVariations="uk-width-1-1"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/image"
+                            />
+                            <byline
+                                    inlineVariations="uk-text-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Jane Holloway. Editor, 20 years on the road. 6 min read."
+                            />
+                        </container>
+                    </hero>
+                    <body
+                            inlineVariations="uk-section uk-section-default"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <p0
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Everybody goes in summer. That is the whole problem. Hotels fill up, trains fill up, and by the middle of July the people who live in the places you came to see are exhausted."
+                            />
+                            <p1
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Shoulder season is the four to six weeks on either side of high season. Late April in Kyoto. Early November in Marrakech. March in the Andes, when the rains have let up but the buses still run. The weather is a small gamble. Everything else is better."
+                            />
+                            <p2
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="The fix is not complicated. Move your dates by three weeks. Bring a jacket you would not have needed in July. Book one hotel in advance and wing the rest. You will save a thousand dollars and the people you meet will be nicer about the fact that you showed up."
+                            />
+                        </container>
+                    </body>
+                    <more
+                            inlineVariations="uk-section uk-section-muted"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <heading
+                                    headingText="More stories"
+                                    headingType="h2"
+                                    inlineVariations="uk-heading-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <other-articles
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text=" &lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/articles/packing-light-2-weeks.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=1600&amp;q=80&quot; alt=&quot;Packing light for two weeks anywhere&quot; style=&quot;width: 100%; height: 160px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Marcus Adair. 8 min read.&lt;/p&gt;       &lt;h3 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Packing light for two weeks anywhere&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/articles/sleeping-on-trains.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=1600&amp;q=80&quot; alt=&quot;The quiet joy of sleeping on trains&quot; style=&quot;width: 100%; height: 160px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Priya Chen. 5 min read.&lt;/p&gt;       &lt;h3 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;The quiet joy of sleeping on trains&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/articles/eating-where-locals-eat.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1600&amp;q=80&quot; alt=&quot;Eating where locals eat&quot; style=&quot;width: 100%; height: 160px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Tomas Reyes. 7 min read.&lt;/p&gt;       &lt;h3 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Eating where locals eat&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt;"
+                            />
+                        </container>
+                    </more>
+                </main>
+                <footer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/inherited-content-area"
+                />
+            </jcr:content>
+        </why-shoulder-season>
+        <packing-light-2-weeks
+                jcr:primaryType="kes:Page"
+        >
+            <jcr:content
+                    jcr:description="A carry-on, a personal item, and a list you can keep in your head."
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Packing light for two weeks anywhere"
+                    kes:template="/libs/kestros/commons/base-site-template"
+                    sling:resourceType="kestros/commons/components/kestros-base-page"
+            >
+                <header
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/inherited-content-area"
+                />
+                <main
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/content-area"
+                >
+                    <hero
+                            inlineVariations="uk-section uk-section-primary"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <eyebrow
+                                    inlineVariations="uk-text-meta uk-text-uppercase"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Story"
+                            />
+                            <heading
+                                    headingText="Packing light for two weeks anywhere"
+                                    headingType="h1"
+                                    inlineVariations="uk-heading-medium"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <dek
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="A carry-on, a personal item, and a list you can keep in your head."
+                            />
+                            <hero-image
+                                    altText="Packing light for two weeks anywhere"
+                                    imagePath="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=1600&amp;q=80"
+                                    inlineVariations="uk-width-1-1"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/image"
+                            />
+                            <byline
+                                    inlineVariations="uk-text-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Marcus Adair. Field reporter, has packed the same bag for ten years. 8 min read."
+                            />
+                        </container>
+                    </hero>
+                    <body
+                            inlineVariations="uk-section uk-section-default"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <p0
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Two weeks in a carry-on is not a stunt. It is a system. The system is: clothes you will actually wear, in colors that go with each other, in fabrics that wash in a hotel sink and dry overnight. Anything else is a hobby."
+                            />
+                            <p1
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="The list, every trip: four shirts, two pants, one pair of shorts, four pairs of socks, four pairs of underwear, one fleece, one rain shell, one swimsuit, one pair of shoes you walk in, one pair of sandals. Plus toiletries. Plus a small zip pouch for chargers. That is it."
+                            />
+                            <p2
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="You will look at the list and think you are forgetting things. You are not. You are forgetting the things you would have bought anyway and never used. The bag you can actually carry is the trip you can actually take."
+                            />
+                        </container>
+                    </body>
+                    <more
+                            inlineVariations="uk-section uk-section-muted"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <heading
+                                    headingText="More stories"
+                                    headingType="h2"
+                                    inlineVariations="uk-heading-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <other-articles
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text=" &lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/articles/why-shoulder-season.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1600&amp;q=80&quot; alt=&quot;Why shoulder season is the real travel season&quot; style=&quot;width: 100%; height: 160px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Jane Holloway. 6 min read.&lt;/p&gt;       &lt;h3 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Why shoulder season is the real travel season&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/articles/sleeping-on-trains.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=1600&amp;q=80&quot; alt=&quot;The quiet joy of sleeping on trains&quot; style=&quot;width: 100%; height: 160px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Priya Chen. 5 min read.&lt;/p&gt;       &lt;h3 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;The quiet joy of sleeping on trains&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/articles/eating-where-locals-eat.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1600&amp;q=80&quot; alt=&quot;Eating where locals eat&quot; style=&quot;width: 100%; height: 160px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Tomas Reyes. 7 min read.&lt;/p&gt;       &lt;h3 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Eating where locals eat&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt;"
+                            />
+                        </container>
+                    </more>
+                </main>
+                <footer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/inherited-content-area"
+                />
+            </jcr:content>
+        </packing-light-2-weeks>
+        <sleeping-on-trains
+                jcr:primaryType="kes:Page"
+        >
+            <jcr:content
+                    jcr:description="You fall asleep in one country and wake up in another. No hotel bill, no security line."
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="The quiet joy of sleeping on trains"
+                    kes:template="/libs/kestros/commons/base-site-template"
+                    sling:resourceType="kestros/commons/components/kestros-base-page"
+            >
+                <header
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/inherited-content-area"
+                />
+                <main
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/content-area"
+                >
+                    <hero
+                            inlineVariations="uk-section uk-section-primary"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <eyebrow
+                                    inlineVariations="uk-text-meta uk-text-uppercase"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Story"
+                            />
+                            <heading
+                                    headingText="The quiet joy of sleeping on trains"
+                                    headingType="h1"
+                                    inlineVariations="uk-heading-medium"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <dek
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="You fall asleep in one country and wake up in another. No hotel bill, no security line."
+                            />
+                            <hero-image
+                                    altText="The quiet joy of sleeping on trains"
+                                    imagePath="https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=1600&amp;q=80"
+                                    inlineVariations="uk-width-1-1"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/image"
+                            />
+                            <byline
+                                    inlineVariations="uk-text-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Priya Chen. Photographer. Not a morning person.. 5 min read."
+                            />
+                        </container>
+                    </hero>
+                    <body
+                            inlineVariations="uk-section uk-section-default"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <p0
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Night trains are the second best way to travel and quietly the best. You go to sleep in one city and wake up in another. The transit happens while you are unconscious. You do not have to think about it."
+                            />
+                            <p1
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Europe still has them. Eastern Europe has more. India runs the largest network in the world. There is a beautiful one in Vietnam between Hanoi and Hue. The trick is to book a sleeper, not a seat. Pay the extra fifteen dollars. The bunk is the difference between a night of sleep and a bad joke in the morning."
+                            />
+                            <p2
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Pack earplugs. Pack a snack for when you wake up at 3am for no reason. Tip the conductor if they are good, which they usually are."
+                            />
+                        </container>
+                    </body>
+                    <more
+                            inlineVariations="uk-section uk-section-muted"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <heading
+                                    headingText="More stories"
+                                    headingType="h2"
+                                    inlineVariations="uk-heading-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <other-articles
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text=" &lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/articles/why-shoulder-season.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1600&amp;q=80&quot; alt=&quot;Why shoulder season is the real travel season&quot; style=&quot;width: 100%; height: 160px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Jane Holloway. 6 min read.&lt;/p&gt;       &lt;h3 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Why shoulder season is the real travel season&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/articles/packing-light-2-weeks.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=1600&amp;q=80&quot; alt=&quot;Packing light for two weeks anywhere&quot; style=&quot;width: 100%; height: 160px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Marcus Adair. 8 min read.&lt;/p&gt;       &lt;h3 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Packing light for two weeks anywhere&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/articles/eating-where-locals-eat.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1600&amp;q=80&quot; alt=&quot;Eating where locals eat&quot; style=&quot;width: 100%; height: 160px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Tomas Reyes. 7 min read.&lt;/p&gt;       &lt;h3 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Eating where locals eat&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt;"
+                            />
+                        </container>
+                    </more>
+                </main>
+                <footer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/inherited-content-area"
+                />
+            </jcr:content>
+        </sleeping-on-trains>
+        <eating-where-locals-eat
+                jcr:primaryType="kes:Page"
+        >
+            <jcr:content
+                    jcr:description="The food is better. The bill is smaller. The room is full of people who already live there."
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Eating where locals eat"
+                    kes:template="/libs/kestros/commons/base-site-template"
+                    sling:resourceType="kestros/commons/components/kestros-base-page"
+            >
+                <header
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/inherited-content-area"
+                />
+                <main
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/content-area"
+                >
+                    <hero
+                            inlineVariations="uk-section uk-section-primary"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <eyebrow
+                                    inlineVariations="uk-text-meta uk-text-uppercase"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Story"
+                            />
+                            <heading
+                                    headingText="Eating where locals eat"
+                                    headingType="h1"
+                                    inlineVariations="uk-heading-medium"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <dek
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="The food is better. The bill is smaller. The room is full of people who already live there."
+                            />
+                            <hero-image
+                                    altText="Eating where locals eat"
+                                    imagePath="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1600&amp;q=80"
+                                    inlineVariations="uk-width-1-1"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/image"
+                            />
+                            <byline
+                                    inlineVariations="uk-text-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Tomas Reyes. Food writer, bad at reservations. 7 min read."
+                            />
+                        </container>
+                    </hero>
+                    <body
+                            inlineVariations="uk-section uk-section-default"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <p0
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="A rule of thumb: walk three streets away from anywhere a tour bus could park, look for handwritten menus, and pick the room with the most people who look like they did not get on a plane this week."
+                            />
+                            <p1
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Every city has one street that every guidebook sends visitors to. Skip that street. Walk to where the office workers eat lunch. Walk to where the shop owners eat dinner. The food is what people make for the people they love, and that is a different meal than the one made for tourists."
+                            />
+                            <p2
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="When in doubt, ask the woman behind the counter at the bakery. She will not steer you wrong, and on the way out the bread will still be warm."
+                            />
+                        </container>
+                    </body>
+                    <more
+                            inlineVariations="uk-section uk-section-muted"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <heading
+                                    headingText="More stories"
+                                    headingType="h2"
+                                    inlineVariations="uk-heading-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <other-articles
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text=" &lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/articles/why-shoulder-season.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1600&amp;q=80&quot; alt=&quot;Why shoulder season is the real travel season&quot; style=&quot;width: 100%; height: 160px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Jane Holloway. 6 min read.&lt;/p&gt;       &lt;h3 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Why shoulder season is the real travel season&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/articles/packing-light-2-weeks.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=1600&amp;q=80&quot; alt=&quot;Packing light for two weeks anywhere&quot; style=&quot;width: 100%; height: 160px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Marcus Adair. 8 min read.&lt;/p&gt;       &lt;h3 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Packing light for two weeks anywhere&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/articles/sleeping-on-trains.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=1600&amp;q=80&quot; alt=&quot;The quiet joy of sleeping on trains&quot; style=&quot;width: 100%; height: 160px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Priya Chen. 5 min read.&lt;/p&gt;       &lt;h3 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;The quiet joy of sleeping on trains&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt;"
+                            />
+                        </container>
+                    </more>
+                </main>
+                <footer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/inherited-content-area"
+                />
+            </jcr:content>
+        </eating-where-locals-eat>
+    </articles>
+    <tips
+            jcr:primaryType="kes:Page"
+    >
+        <jcr:content
+                jcr:description="Things we wish we had known, loosely organized by when they matter."
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Travel tips"
+                kes:template="/libs/kestros/commons/base-site-template"
+                sling:resourceType="kestros/commons/components/kestros-base-page"
+        >
+            <header
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/inherited-content-area"
+            />
+            <main
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/content-area"
+            >
+                <hero
+                        inlineVariations="uk-section uk-section-primary"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <eyebrow
+                                inlineVariations="uk-text-meta uk-text-uppercase"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Travel tips"
+                        />
+                        <heading
+                                headingText="Things we wish we had known."
+                                headingType="h1"
+                                inlineVariations="uk-heading-medium"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <dek
+                                inlineVariations="uk-text-lead"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="An opinionated list. The rules that have saved us the most time and money, loosely organized by when they start to matter."
+                        />
+                    </container>
+                </hero>
+                <before
+                        inlineVariations="uk-section uk-section-default"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <heading
+                                headingText="Before the trip"
+                                headingType="h2"
+                                inlineVariations="uk-heading-small"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <tip-0-title
+                                headingText="Book the flight first"
+                                headingType="h3"
+                                inlineVariations="uk-heading-bullet"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <tip-0-body
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="The flight is the expensive part and the inflexible part. Lock the dates, then plan the rest of the trip around them. Most people do this in the wrong order and end up paying for it twice."
+                        />
+                        <tip-1-title
+                                headingText="Tell one person at home"
+                                headingType="h3"
+                                inlineVariations="uk-heading-bullet"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <tip-1-body
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Not an itinerary, not every hotel, just: where you landed, where you should end up, and roughly when. If something goes wrong they will know how to start looking."
+                        />
+                        <tip-2-title
+                                headingText="Pack less than you planned"
+                                headingType="h3"
+                                inlineVariations="uk-heading-bullet"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <tip-2-body
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Lay everything out on the bed. Now take half of it away. You will not wear what you thought you would wear, and whatever is missing you can buy when you get there for less than your baggage fee."
+                        />
+                    </container>
+                </before>
+                <during
+                        inlineVariations="uk-section uk-section-muted"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <heading
+                                headingText="While you are there"
+                                headingType="h2"
+                                inlineVariations="uk-heading-small"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <tip-0-title
+                                headingText="Walk for the first day"
+                                headingType="h3"
+                                inlineVariations="uk-heading-bullet"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <tip-0-body
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Do not go to the famous spots on day one. Walk a neighborhood instead. The city starts to make sense. The famous spots are easier to find after that, and you will have stories about how you got there."
+                        />
+                        <tip-1-title
+                                headingText="Eat one meal on your own"
+                                headingType="h3"
+                                inlineVariations="uk-heading-bullet"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <tip-1-body
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="A market counter, a park bench, whatever. No conversation, no phone. You will notice three things about the place you would have missed at a table for two."
+                        />
+                        <tip-2-title
+                                headingText="Keep a notebook"
+                                headingType="h3"
+                                inlineVariations="uk-heading-bullet"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <tip-2-body
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Not a travel journal. Just a notebook. One line a day is enough. What you eat, what you saw, what the weather did. You will be grateful for it in five years in a way that a phone album will never match."
+                        />
+                    </container>
+                </during>
+                <after
+                        inlineVariations="uk-section uk-section-default"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <heading
+                                headingText="After you get back"
+                                headingType="h2"
+                                inlineVariations="uk-heading-small"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <tip-0-title
+                                headingText="Unpack on the day you land"
+                                headingType="h3"
+                                inlineVariations="uk-heading-bullet"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <tip-0-body
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Anything that stays in the bag for a week will stay there forever. Just do it the day you get home, even if you are tired. Especially if you are tired."
+                        />
+                        <tip-1-title
+                                headingText="Write down one page"
+                                headingType="h3"
+                                inlineVariations="uk-heading-bullet"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <tip-1-body
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Not a blog post. One page, in the notebook you kept. The best meal, the worst day, the one thing you would do differently. Six months from now you will read it and be surprised what you forgot."
+                        />
+                        <tip-2-title
+                                headingText="Start the next one soon"
+                                headingType="h3"
+                                inlineVariations="uk-heading-bullet"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <tip-2-body
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Do not wait for some feeling of inspiration. Pick a country, pick a week a few months out, put it on the calendar. The next trip is half built the moment you commit to a date."
+                        />
+                    </container>
+                </after>
+            </main>
+            <footer
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/inherited-content-area"
+            />
+        </jcr:content>
+    </tips>
+    <about
+            jcr:primaryType="kes:Page"
+    >
+        <jcr:content
+                jcr:description="A small magazine for slow travelers. No bookings, no ads."
+                jcr:primaryType="nt:unstructured"
+                jcr:title="About Explore"
+                kes:template="/libs/kestros/commons/base-site-template"
+                sling:resourceType="kestros/commons/components/kestros-base-page"
+        >
+            <header
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/inherited-content-area"
+            />
+            <main
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/content-area"
+            >
+                <hero
+                        inlineVariations="uk-section uk-section-primary"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <eyebrow
+                                inlineVariations="uk-text-meta uk-text-uppercase"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="About"
+                        />
+                        <heading
+                                headingText="A small magazine for slow travelers."
+                                headingType="h1"
+                                inlineVariations="uk-heading-medium"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <dek
+                                inlineVariations="uk-text-lead"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="We write about places we like, in the hope that you might like them too. We do not sell trips. We do not run ads. We do not have a newsletter."
+                        />
+                    </container>
+                </hero>
+                <why
+                        inlineVariations="uk-section uk-section-default"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <heading
+                                headingText="Why we started this."
+                                headingType="h2"
+                                inlineVariations="uk-heading-small"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <p1
+                                inlineVariations="uk-text-lead"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="The world is bigger than a bucket list. The point of a trip is not to check the famous places off a list. The point is to spend a few unfamiliar days somewhere and come home with something to think about."
+                        />
+                        <p2
+                                inlineVariations="uk-text-lead"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="So we publish destination guides for people who travel slowly, the occasional field dispatch, and opinions about packing that will probably annoy you. The destinations on this site are fictional. Everything else is the real thing."
+                        />
+                    </container>
+                </why>
+                <masthead
+                        inlineVariations="uk-section uk-section-muted"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <eyebrow
+                                inlineVariations="uk-text-meta uk-text-uppercase"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Masthead"
+                        />
+                        <heading
+                                headingText="The people who write it."
+                                headingType="h2"
+                                inlineVariations="uk-heading-small"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <jane-name
+                                headingText="Jane Holloway"
+                                headingType="h3"
+                                inlineVariations="uk-heading-bullet"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <jane-role
+                                inlineVariations="uk-text-meta uk-text-uppercase"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Editor"
+                        />
+                        <jane-body
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Walks fast, takes too many photos. Started the magazine after twenty years of being the person everyone asked about where to go."
+                        />
+                        <marcus-name
+                                headingText="Marcus Adair"
+                                headingType="h3"
+                                inlineVariations="uk-heading-bullet"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <marcus-role
+                                inlineVariations="uk-text-meta uk-text-uppercase"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Field reporter"
+                        />
+                        <marcus-body
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Packed the same bag for ten years. Writes about how to do more with less, and about the time he left his passport in Tashkent."
+                        />
+                        <priya-name
+                                headingText="Priya Chen"
+                                headingType="h3"
+                                inlineVariations="uk-heading-bullet"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <priya-role
+                                inlineVariations="uk-text-meta uk-text-uppercase"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Photographer"
+                        />
+                        <priya-body
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Sleeps on trains. Has the best collection of blue-hour photographs from Central Europe that you have ever seen."
+                        />
+                    </container>
+                </masthead>
+                <contact
+                        inlineVariations="uk-section uk-section-default"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <heading
+                                headingText="Get in touch."
+                                headingType="h2"
+                                inlineVariations="uk-heading-small"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <body
+                                inlineVariations="uk-text-lead"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Send us a pitch, a correction, or a complaint. We read everything. We answer most things within a week."
+                        />
+                        <email
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="hello@explore.example"
+                        />
+                    </container>
+                </contact>
+            </main>
+            <footer
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/inherited-content-area"
+            />
+        </jcr:content>
+    </about>
+</jcr:root>

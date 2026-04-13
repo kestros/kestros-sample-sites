@@ -9,7 +9,6 @@
 >
     <jcr:content
             jcr:description="The questions we hear most often from prospective clients."
-            jcr:mixinTypes="[mix:lockable]"
             jcr:primaryType="nt:unstructured"
             jcr:title="Frequently Asked Questions"
             kes:template="/libs/kestros/commons/base-site-template"

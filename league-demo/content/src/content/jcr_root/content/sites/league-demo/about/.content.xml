@@ -9,7 +9,6 @@
 >
     <jcr:content
             jcr:description="A fictional ten-club league used to demonstrate the Kestros sport-league sample site."
-            jcr:mixinTypes="[mix:lockable]"
             jcr:primaryType="nt:unstructured"
             jcr:title="About"
             kes:template="/libs/kestros/commons/base-site-template"

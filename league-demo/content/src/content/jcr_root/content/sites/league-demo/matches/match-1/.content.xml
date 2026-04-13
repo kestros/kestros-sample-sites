@@ -9,7 +9,6 @@
 >
     <jcr:content
             jcr:description="Week 12 - Riverside Park - 2-1 to the home side."
-            jcr:mixinTypes="[mix:lockable]"
             jcr:primaryType="nt:unstructured"
             jcr:title="Riverside FC vs Ashdown Athletic"
             kes:template="/libs/kestros/commons/base-site-template"

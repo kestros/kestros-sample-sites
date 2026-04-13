@@ -9,7 +9,6 @@
 >
     <jcr:content
             jcr:description="Not nostalgia. The constraint of a pencil on paper is still the fastest way to think through a building."
-            jcr:mixinTypes="[mix:lockable]"
             jcr:primaryType="nt:unstructured"
             jcr:title="Why we still draw by hand at the start of every project"
             kes:template="/libs/kestros/commons/base-site-template"

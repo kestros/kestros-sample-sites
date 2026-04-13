@@ -37,6 +37,7 @@ SKIP_PROPS = {
     'jcr:lastModifiedBy', 'jcr:lastModified',
     'kes:lastModified', 'kes:lastModifiedBy',
     'kes:publicationStatus', 'kes:publicationStatusLastChanged', 'kes:lastPublishedBy',
+    'jcr:lockIsDeep', 'jcr:lockOwner', 'jcr:mixinTypes',
 }
 
 # Properties that are arrays of typed values

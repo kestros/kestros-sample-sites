@@ -9,7 +9,6 @@
 >
     <jcr:content
             jcr:description="Illustrative scenarios from real planning engagements."
-            jcr:mixinTypes="[mix:lockable]"
             jcr:primaryType="nt:unstructured"
             jcr:title="Client Stories"
             kes:template="/libs/kestros/commons/base-site-template"

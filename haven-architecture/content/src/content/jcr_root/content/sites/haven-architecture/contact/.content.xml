@@ -9,7 +9,6 @@
 >
     <jcr:content
             jcr:description="Start a conversation about a new project. The first call is free."
-            jcr:mixinTypes="[mix:lockable]"
             jcr:primaryType="nt:unstructured"
             jcr:title="Contact"
             kes:template="/libs/kestros/commons/base-site-template"

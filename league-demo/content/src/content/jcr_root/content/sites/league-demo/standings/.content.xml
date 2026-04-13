@@ -5,15 +5,10 @@
           xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
           xmlns:rep="http://www.jcp.org/jcr/1.0"
           xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
-          jcr:lockIsDeep="False"
-          jcr:lockOwner="admin"
           jcr:primaryType="kes:Page"
 >
     <jcr:content
             jcr:description="The live Meridian Premier League table for the 2025-26 season."
-            jcr:lockIsDeep="True"
-            jcr:lockOwner="admin"
-            jcr:mixinTypes="[mix:lockable]"
             jcr:primaryType="nt:unstructured"
             jcr:title="Standings"
             kes:template="/libs/kestros/commons/base-site-template"

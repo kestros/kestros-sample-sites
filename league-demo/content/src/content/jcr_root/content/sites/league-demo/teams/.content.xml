@@ -9,7 +9,6 @@
 >
     <jcr:content
             jcr:description="All ten clubs in the Meridian Premier League, with form and squad links."
-            jcr:mixinTypes="[mix:lockable]"
             jcr:primaryType="nt:unstructured"
             jcr:title="Clubs"
             kes:template="/libs/kestros/commons/base-site-template"
@@ -232,7 +231,6 @@
     >
         <jcr:content
                 jcr:description="Top of the table. Meridian Premier League club profile."
-                jcr:mixinTypes="[mix:lockable]"
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Riverside FC"
                 kes:template="/libs/kestros/commons/base-site-template"

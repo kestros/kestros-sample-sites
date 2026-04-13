@@ -9,7 +9,6 @@
 >
     <jcr:content
             jcr:description="A command-line deploy tool for web apps. One command, no config files, no surprises."
-            jcr:mixinTypes="[mix:lockable]"
             jcr:primaryType="nt:unstructured"
             jcr:title="Launchpad"
             kes:template="/libs/kestros/commons/base-site-template"
@@ -98,21 +97,7 @@
                     <terminal
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                            text="
-&lt;pre class=&quot;uk-background-secondary uk-light uk-padding-small&quot; style=&quot;font-family: Menlo, monospace; font-size: 0.9rem; line-height: 1.55;&quot;&gt;
-&lt;span style=&quot;color: #999&quot;&gt;// first time&lt;/span&gt;
-&lt;span style=&quot;color: #7dd3fc&quot;&gt;$&lt;/span&gt; lp init
-&lt;span style=&quot;color: #999&quot;&gt;detected next.js app. ok? [Y/n]&lt;/span&gt;
-
-&lt;span style=&quot;color: #7dd3fc&quot;&gt;$&lt;/span&gt; lp deploy
-&lt;span style=&quot;color: #999&quot;&gt;building...&lt;/span&gt;
-&lt;span style=&quot;color: #999&quot;&gt;shipping...&lt;/span&gt;
-&lt;span style=&quot;color: #86efac&quot;&gt;done. https://your-app.launchpad.example&lt;/span&gt;
-
-&lt;span style=&quot;color: #999&quot;&gt;// every time after that&lt;/span&gt;
-&lt;span style=&quot;color: #7dd3fc&quot;&gt;$&lt;/span&gt; lp deploy
-&lt;span style=&quot;color: #86efac&quot;&gt;done. 12 seconds.&lt;/span&gt;
-&lt;/pre&gt;"
+                            text=" &lt;pre class=&quot;uk-background-secondary uk-light uk-padding-small&quot; style=&quot;font-family: Menlo, monospace; font-size: 0.9rem; line-height: 1.55;&quot;&gt; &lt;span style=&quot;color: #999&quot;&gt;// first time&lt;/span&gt; &lt;span style=&quot;color: #7dd3fc&quot;&gt;$&lt;/span&gt; lp init &lt;span style=&quot;color: #999&quot;&gt;detected next.js app. ok? [Y/n]&lt;/span&gt;  &lt;span style=&quot;color: #7dd3fc&quot;&gt;$&lt;/span&gt; lp deploy &lt;span style=&quot;color: #999&quot;&gt;building...&lt;/span&gt; &lt;span style=&quot;color: #999&quot;&gt;shipping...&lt;/span&gt; &lt;span style=&quot;color: #86efac&quot;&gt;done. https://your-app.launchpad.example&lt;/span&gt;  &lt;span style=&quot;color: #999&quot;&gt;// every time after that&lt;/span&gt; &lt;span style=&quot;color: #7dd3fc&quot;&gt;$&lt;/span&gt; lp deploy &lt;span style=&quot;color: #86efac&quot;&gt;done. 12 seconds.&lt;/span&gt; &lt;/pre&gt;"
                     />
                 </container>
             </hero>
@@ -148,49 +133,7 @@
                     <feature-grid
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                            text="
-&lt;div class=&quot;uk-grid uk-child-width-1-3@m uk-grid-small&quot; uk-grid&gt;
-
-  &lt;div&gt;
-    &lt;div class=&quot;uk-card uk-card-default uk-card-small uk-card-body&quot;&gt;
-      &lt;h3 class=&quot;uk-card-title&quot;&gt;One command&lt;/h3&gt;
-      &lt;p class=&quot;uk-text-muted&quot;&gt;lp deploy, and you are live.&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;div class=&quot;uk-card uk-card-default uk-card-small uk-card-body&quot;&gt;
-      &lt;h3 class=&quot;uk-card-title&quot;&gt;Atomic rollbacks&lt;/h3&gt;
-      &lt;p class=&quot;uk-text-muted&quot;&gt;Every deploy is a new immutable release. Rolling back takes one command.&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;div class=&quot;uk-card uk-card-default uk-card-small uk-card-body&quot;&gt;
-      &lt;h3 class=&quot;uk-card-title&quot;&gt;Zero config&lt;/h3&gt;
-      &lt;p class=&quot;uk-text-muted&quot;&gt;Works with Next, Rails, Django, Go, Rust, Elixir, and whatever else you have.&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;div class=&quot;uk-card uk-card-default uk-card-small uk-card-body&quot;&gt;
-      &lt;h3 class=&quot;uk-card-title&quot;&gt;Actual logs&lt;/h3&gt;
-      &lt;p class=&quot;uk-text-muted&quot;&gt;Stream them in the terminal. Search them in the browser. Export them when you need to.&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;div class=&quot;uk-card uk-card-default uk-card-small uk-card-body&quot;&gt;
-      &lt;h3 class=&quot;uk-card-title&quot;&gt;Preview environments&lt;/h3&gt;
-      &lt;p class=&quot;uk-text-muted&quot;&gt;Every pull request gets a URL. Not every tool still does this well.&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;div class=&quot;uk-card uk-card-default uk-card-small uk-card-body&quot;&gt;
-      &lt;h3 class=&quot;uk-card-title&quot;&gt;Honest pricing&lt;/h3&gt;
-      &lt;p class=&quot;uk-text-muted&quot;&gt;One line per tier. No enterprise sales team. No &quot;contact us for pricing&quot;.&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p class=&quot;uk-margin-top uk-text-center&quot;&gt;
-  &lt;a href=&quot;/content/sites/launchpad-io/features.html&quot; class=&quot;uk-button uk-button-text&quot;&gt;See all features&lt;/a&gt;
-&lt;/p&gt;"
+                            text=" &lt;div class=&quot;uk-grid uk-child-width-1-3@m uk-grid-small&quot; uk-grid&gt;    &lt;div&gt;     &lt;div class=&quot;uk-card uk-card-default uk-card-small uk-card-body&quot;&gt;       &lt;h3 class=&quot;uk-card-title&quot;&gt;One command&lt;/h3&gt;       &lt;p class=&quot;uk-text-muted&quot;&gt;lp deploy, and you are live.&lt;/p&gt;     &lt;/div&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;div class=&quot;uk-card uk-card-default uk-card-small uk-card-body&quot;&gt;       &lt;h3 class=&quot;uk-card-title&quot;&gt;Atomic rollbacks&lt;/h3&gt;       &lt;p class=&quot;uk-text-muted&quot;&gt;Every deploy is a new immutable release. Rolling back takes one command.&lt;/p&gt;     &lt;/div&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;div class=&quot;uk-card uk-card-default uk-card-small uk-card-body&quot;&gt;       &lt;h3 class=&quot;uk-card-title&quot;&gt;Zero config&lt;/h3&gt;       &lt;p class=&quot;uk-text-muted&quot;&gt;Works with Next, Rails, Django, Go, Rust, Elixir, and whatever else you have.&lt;/p&gt;     &lt;/div&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;div class=&quot;uk-card uk-card-default uk-card-small uk-card-body&quot;&gt;       &lt;h3 class=&quot;uk-card-title&quot;&gt;Actual logs&lt;/h3&gt;       &lt;p class=&quot;uk-text-muted&quot;&gt;Stream them in the terminal. Search them in the browser. Export them when you need to.&lt;/p&gt;     &lt;/div&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;div class=&quot;uk-card uk-card-default uk-card-small uk-card-body&quot;&gt;       &lt;h3 class=&quot;uk-card-title&quot;&gt;Preview environments&lt;/h3&gt;       &lt;p class=&quot;uk-text-muted&quot;&gt;Every pull request gets a URL. Not every tool still does this well.&lt;/p&gt;     &lt;/div&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;div class=&quot;uk-card uk-card-default uk-card-small uk-card-body&quot;&gt;       &lt;h3 class=&quot;uk-card-title&quot;&gt;Honest pricing&lt;/h3&gt;       &lt;p class=&quot;uk-text-muted&quot;&gt;One line per tier. No enterprise sales team. No &quot;contact us for pricing&quot;.&lt;/p&gt;     &lt;/div&gt;   &lt;/div&gt; &lt;/div&gt; &lt;p class=&quot;uk-margin-top uk-text-center&quot;&gt;   &lt;a href=&quot;/content/sites/launchpad-io/features.html&quot; class=&quot;uk-button uk-button-text&quot;&gt;See all features&lt;/a&gt; &lt;/p&gt;"
                     />
                 </container>
             </why>
@@ -262,30 +205,7 @@
                     <footer-cols
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                            text="
-&lt;div class=&quot;uk-grid-small uk-child-width-1-3@m&quot; uk-grid&gt;
-  &lt;div&gt;
-    &lt;h5 class=&quot;uk-text-bold&quot;&gt;Product&lt;/h5&gt;
-    &lt;ul class=&quot;uk-list uk-list-small&quot;&gt;
-      &lt;li&gt;&lt;a href=&quot;/content/sites/launchpad-io/features.html&quot; class=&quot;uk-link-reset&quot;&gt;Features&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;/content/sites/launchpad-io/pricing.html&quot; class=&quot;uk-link-reset&quot;&gt;Pricing&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;h5 class=&quot;uk-text-bold&quot;&gt;Company&lt;/h5&gt;
-    &lt;ul class=&quot;uk-list uk-list-small&quot;&gt;
-      &lt;li&gt;&lt;a href=&quot;/content/sites/launchpad-io/about.html&quot; class=&quot;uk-link-reset&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;mailto:hi@launchpad.example&quot; class=&quot;uk-link-reset&quot;&gt;hi@launchpad.example&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;h5 class=&quot;uk-text-bold&quot;&gt;Install&lt;/h5&gt;
-    &lt;p class=&quot;uk-text-small uk-margin-small-top&quot;&gt;&lt;code&gt;curl -sSf get.launchpad.example | sh&lt;/code&gt;&lt;/p&gt;
-    &lt;p class=&quot;uk-text-small uk-text-muted&quot;&gt;macOS, Linux, Windows via WSL.&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;hr /&gt;
-&lt;p class=&quot;uk-text-small uk-text-muted&quot;&gt;Launchpad. A fictional SaaS. Nothing for sale here.&lt;/p&gt;"
+                            text=" &lt;div class=&quot;uk-grid-small uk-child-width-1-3@m&quot; uk-grid&gt;   &lt;div&gt;     &lt;h5 class=&quot;uk-text-bold&quot;&gt;Product&lt;/h5&gt;     &lt;ul class=&quot;uk-list uk-list-small&quot;&gt;       &lt;li&gt;&lt;a href=&quot;/content/sites/launchpad-io/features.html&quot; class=&quot;uk-link-reset&quot;&gt;Features&lt;/a&gt;&lt;/li&gt;       &lt;li&gt;&lt;a href=&quot;/content/sites/launchpad-io/pricing.html&quot; class=&quot;uk-link-reset&quot;&gt;Pricing&lt;/a&gt;&lt;/li&gt;     &lt;/ul&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;h5 class=&quot;uk-text-bold&quot;&gt;Company&lt;/h5&gt;     &lt;ul class=&quot;uk-list uk-list-small&quot;&gt;       &lt;li&gt;&lt;a href=&quot;/content/sites/launchpad-io/about.html&quot; class=&quot;uk-link-reset&quot;&gt;About&lt;/a&gt;&lt;/li&gt;       &lt;li&gt;&lt;a href=&quot;mailto:hi@launchpad.example&quot; class=&quot;uk-link-reset&quot;&gt;hi@launchpad.example&lt;/a&gt;&lt;/li&gt;     &lt;/ul&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;h5 class=&quot;uk-text-bold&quot;&gt;Install&lt;/h5&gt;     &lt;p class=&quot;uk-text-small uk-margin-small-top&quot;&gt;&lt;code&gt;curl -sSf get.launchpad.example | sh&lt;/code&gt;&lt;/p&gt;     &lt;p class=&quot;uk-text-small uk-text-muted&quot;&gt;macOS, Linux, Windows via WSL.&lt;/p&gt;   &lt;/div&gt; &lt;/div&gt; &lt;hr /&gt; &lt;p class=&quot;uk-text-small uk-text-muted&quot;&gt;Launchpad. A fictional SaaS. Nothing for sale here.&lt;/p&gt;"
                     />
                 </container>
             </site-footer>
@@ -296,7 +216,6 @@
     >
         <jcr:content
                 jcr:description="Six things Launchpad does and what they mean in practice."
-                jcr:mixinTypes="[mix:lockable]"
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Features"
                 kes:template="/libs/kestros/commons/base-site-template"
@@ -601,7 +520,6 @@
     >
         <jcr:content
                 jcr:description="Three tiers. Per-app pricing. No hidden enterprise line."
-                jcr:mixinTypes="[mix:lockable]"
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Pricing"
                 kes:template="/libs/kestros/commons/base-site-template"
@@ -659,43 +577,7 @@
                         <plan-cards
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                text="
-&lt;div class=&quot;uk-grid uk-child-width-1-3@m uk-grid-small&quot; uk-grid&gt;
-
-  &lt;div&gt;
-    &lt;div class=&quot;uk-card uk-card-default uk-card-body&quot;&gt;
-      
-      &lt;h3 class=&quot;uk-card-title uk-margin-small-bottom&quot;&gt;Hobby&lt;/h3&gt;
-      &lt;div class=&quot;uk-heading-medium uk-margin-remove&quot;&gt;$0&lt;/div&gt;
-      &lt;p class=&quot;uk-text-small uk-text-muted uk-margin-remove-top&quot;&gt;forever&lt;/p&gt;
-      &lt;p class=&quot;uk-text-small&quot;&gt;For side projects and personal apps.&lt;/p&gt;
-      &lt;ul class=&quot;uk-list uk-list-bullet uk-text-small&quot;&gt;&lt;li&gt;1 production app&lt;/li&gt;&lt;li&gt;3 preview environments&lt;/li&gt;&lt;li&gt;30 days of logs&lt;/li&gt;&lt;li&gt;2 GB outbound per month&lt;/li&gt;&lt;li&gt;Community support&lt;/li&gt;&lt;/ul&gt;
-      &lt;a href=&quot;#&quot; class=&quot;uk-button uk-button-default uk-width-1-1&quot;&gt;Start for free&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;div class=&quot;uk-card uk-card-primary uk-box-shadow-large uk-card-body&quot;&gt;
-      &lt;div class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-bottom&quot;&gt;Most common&lt;/div&gt;
-      &lt;h3 class=&quot;uk-card-title uk-margin-small-bottom&quot;&gt;Pro&lt;/h3&gt;
-      &lt;div class=&quot;uk-heading-medium uk-margin-remove&quot;&gt;$18&lt;/div&gt;
-      &lt;p class=&quot;uk-text-small uk-text-muted uk-margin-remove-top&quot;&gt;per app, per month&lt;/p&gt;
-      &lt;p class=&quot;uk-text-small&quot;&gt;For small teams with real users.&lt;/p&gt;
-      &lt;ul class=&quot;uk-list uk-list-bullet uk-text-small&quot;&gt;&lt;li&gt;Unlimited production apps&lt;/li&gt;&lt;li&gt;Unlimited preview environments&lt;/li&gt;&lt;li&gt;90 days of logs&lt;/li&gt;&lt;li&gt;100 GB outbound per month&lt;/li&gt;&lt;li&gt;Email support, 1 business day&lt;/li&gt;&lt;li&gt;Custom domains&lt;/li&gt;&lt;/ul&gt;
-      &lt;a href=&quot;#&quot; class=&quot;uk-button uk-button-primary uk-width-1-1&quot;&gt;Start a 14 day trial&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;div class=&quot;uk-card uk-card-default uk-card-body&quot;&gt;
-      
-      &lt;h3 class=&quot;uk-card-title uk-margin-small-bottom&quot;&gt;Team&lt;/h3&gt;
-      &lt;div class=&quot;uk-heading-medium uk-margin-remove&quot;&gt;$60&lt;/div&gt;
-      &lt;p class=&quot;uk-text-small uk-text-muted uk-margin-remove-top&quot;&gt;per app, per month&lt;/p&gt;
-      &lt;p class=&quot;uk-text-small&quot;&gt;For teams running a few production apps.&lt;/p&gt;
-      &lt;ul class=&quot;uk-list uk-list-bullet uk-text-small&quot;&gt;&lt;li&gt;Everything in Pro&lt;/li&gt;&lt;li&gt;1 year of logs&lt;/li&gt;&lt;li&gt;500 GB outbound per month&lt;/li&gt;&lt;li&gt;Priority email support&lt;/li&gt;&lt;li&gt;SSO and audit log&lt;/li&gt;&lt;li&gt;A human to call once a quarter&lt;/li&gt;&lt;/ul&gt;
-      &lt;a href=&quot;#&quot; class=&quot;uk-button uk-button-default uk-width-1-1&quot;&gt;Contact us&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;"
+                                text=" &lt;div class=&quot;uk-grid uk-child-width-1-3@m uk-grid-small&quot; uk-grid&gt;    &lt;div&gt;     &lt;div class=&quot;uk-card uk-card-default uk-card-body&quot;&gt;              &lt;h3 class=&quot;uk-card-title uk-margin-small-bottom&quot;&gt;Hobby&lt;/h3&gt;       &lt;div class=&quot;uk-heading-medium uk-margin-remove&quot;&gt;$0&lt;/div&gt;       &lt;p class=&quot;uk-text-small uk-text-muted uk-margin-remove-top&quot;&gt;forever&lt;/p&gt;       &lt;p class=&quot;uk-text-small&quot;&gt;For side projects and personal apps.&lt;/p&gt;       &lt;ul class=&quot;uk-list uk-list-bullet uk-text-small&quot;&gt;&lt;li&gt;1 production app&lt;/li&gt;&lt;li&gt;3 preview environments&lt;/li&gt;&lt;li&gt;30 days of logs&lt;/li&gt;&lt;li&gt;2 GB outbound per month&lt;/li&gt;&lt;li&gt;Community support&lt;/li&gt;&lt;/ul&gt;       &lt;a href=&quot;#&quot; class=&quot;uk-button uk-button-default uk-width-1-1&quot;&gt;Start for free&lt;/a&gt;     &lt;/div&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;div class=&quot;uk-card uk-card-primary uk-box-shadow-large uk-card-body&quot;&gt;       &lt;div class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-bottom&quot;&gt;Most common&lt;/div&gt;       &lt;h3 class=&quot;uk-card-title uk-margin-small-bottom&quot;&gt;Pro&lt;/h3&gt;       &lt;div class=&quot;uk-heading-medium uk-margin-remove&quot;&gt;$18&lt;/div&gt;       &lt;p class=&quot;uk-text-small uk-text-muted uk-margin-remove-top&quot;&gt;per app, per month&lt;/p&gt;       &lt;p class=&quot;uk-text-small&quot;&gt;For small teams with real users.&lt;/p&gt;       &lt;ul class=&quot;uk-list uk-list-bullet uk-text-small&quot;&gt;&lt;li&gt;Unlimited production apps&lt;/li&gt;&lt;li&gt;Unlimited preview environments&lt;/li&gt;&lt;li&gt;90 days of logs&lt;/li&gt;&lt;li&gt;100 GB outbound per month&lt;/li&gt;&lt;li&gt;Email support, 1 business day&lt;/li&gt;&lt;li&gt;Custom domains&lt;/li&gt;&lt;/ul&gt;       &lt;a href=&quot;#&quot; class=&quot;uk-button uk-button-primary uk-width-1-1&quot;&gt;Start a 14 day trial&lt;/a&gt;     &lt;/div&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;div class=&quot;uk-card uk-card-default uk-card-body&quot;&gt;              &lt;h3 class=&quot;uk-card-title uk-margin-small-bottom&quot;&gt;Team&lt;/h3&gt;       &lt;div class=&quot;uk-heading-medium uk-margin-remove&quot;&gt;$60&lt;/div&gt;       &lt;p class=&quot;uk-text-small uk-text-muted uk-margin-remove-top&quot;&gt;per app, per month&lt;/p&gt;       &lt;p class=&quot;uk-text-small&quot;&gt;For teams running a few production apps.&lt;/p&gt;       &lt;ul class=&quot;uk-list uk-list-bullet uk-text-small&quot;&gt;&lt;li&gt;Everything in Pro&lt;/li&gt;&lt;li&gt;1 year of logs&lt;/li&gt;&lt;li&gt;500 GB outbound per month&lt;/li&gt;&lt;li&gt;Priority email support&lt;/li&gt;&lt;li&gt;SSO and audit log&lt;/li&gt;&lt;li&gt;A human to call once a quarter&lt;/li&gt;&lt;/ul&gt;       &lt;a href=&quot;#&quot; class=&quot;uk-button uk-button-default uk-width-1-1&quot;&gt;Contact us&lt;/a&gt;     &lt;/div&gt;   &lt;/div&gt; &lt;/div&gt;"
                         />
                     </container>
                 </plans>
@@ -719,20 +601,7 @@
                         <faq-list
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                text="
-&lt;dl class=&quot;uk-description-list uk-description-list-divider&quot;&gt;
-
-  &lt;dt&gt;Who is this for?&lt;/dt&gt;
-  &lt;dd class=&quot;uk-text-muted&quot;&gt;Small teams and independent developers shipping web apps. If you have a full DevOps org you will probably find Launchpad too opinionated. If you are one person deploying a side project on a Saturday, this is aimed squarely at you.&lt;/dd&gt;
-  &lt;dt&gt;What runs under the hood?&lt;/dt&gt;
-  &lt;dd class=&quot;uk-text-muted&quot;&gt;We run your app in firecracker microVMs on our own metal in two data centers. The database add-ons run on managed Postgres with daily point-in-time backups. You can see the full stack on our status page.&lt;/dd&gt;
-  &lt;dt&gt;Where is my data?&lt;/dt&gt;
-  &lt;dd class=&quot;uk-text-muted&quot;&gt;East coast and west coast, by default. EU region is in beta for Pro and Team customers. You pick the region at app creation time and can move an app between regions with one command, though the traffic cut-over takes a minute.&lt;/dd&gt;
-  &lt;dt&gt;Can I bring my own domain?&lt;/dt&gt;
-  &lt;dd class=&quot;uk-text-muted&quot;&gt;Yes. Free on the Pro and Team plans, not supported on Hobby. We issue certificates automatically and rotate them ten days before expiry.&lt;/dd&gt;
-  &lt;dt&gt;Do you do autoscaling?&lt;/dt&gt;
-  &lt;dd class=&quot;uk-text-muted&quot;&gt;Yes, but only between bounds you set. We do not automatically scale up to whatever you can afford. The default is &quot;one to three instances&quot;. You can change it.&lt;/dd&gt;
-&lt;/dl&gt;"
+                                text=" &lt;dl class=&quot;uk-description-list uk-description-list-divider&quot;&gt;    &lt;dt&gt;Who is this for?&lt;/dt&gt;   &lt;dd class=&quot;uk-text-muted&quot;&gt;Small teams and independent developers shipping web apps. If you have a full DevOps org you will probably find Launchpad too opinionated. If you are one person deploying a side project on a Saturday, this is aimed squarely at you.&lt;/dd&gt;   &lt;dt&gt;What runs under the hood?&lt;/dt&gt;   &lt;dd class=&quot;uk-text-muted&quot;&gt;We run your app in firecracker microVMs on our own metal in two data centers. The database add-ons run on managed Postgres with daily point-in-time backups. You can see the full stack on our status page.&lt;/dd&gt;   &lt;dt&gt;Where is my data?&lt;/dt&gt;   &lt;dd class=&quot;uk-text-muted&quot;&gt;East coast and west coast, by default. EU region is in beta for Pro and Team customers. You pick the region at app creation time and can move an app between regions with one command, though the traffic cut-over takes a minute.&lt;/dd&gt;   &lt;dt&gt;Can I bring my own domain?&lt;/dt&gt;   &lt;dd class=&quot;uk-text-muted&quot;&gt;Yes. Free on the Pro and Team plans, not supported on Hobby. We issue certificates automatically and rotate them ten days before expiry.&lt;/dd&gt;   &lt;dt&gt;Do you do autoscaling?&lt;/dt&gt;   &lt;dd class=&quot;uk-text-muted&quot;&gt;Yes, but only between bounds you set. We do not automatically scale up to whatever you can afford. The default is &quot;one to three instances&quot;. You can change it.&lt;/dd&gt; &lt;/dl&gt;"
                         />
                     </container>
                 </faq>
@@ -748,7 +617,6 @@
     >
         <jcr:content
                 jcr:description="A deploy tool by a small team, started in 2022, profitable, no VC."
-                jcr:mixinTypes="[mix:lockable]"
                 jcr:primaryType="nt:unstructured"
                 jcr:title="About Launchpad"
                 kes:template="/libs/kestros/commons/base-site-template"
@@ -850,19 +718,7 @@
                         <history-list
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                text="
-&lt;dl class=&quot;uk-description-list uk-description-list-divider&quot;&gt;
-  &lt;dt&gt;2022&lt;/dt&gt;
-  &lt;dd&gt;Two of us were deploying a side project in a small apartment in Lisbon and got frustrated enough to start writing our own tool. Six weeks later the first internal version ran our own apps.&lt;/dd&gt;
-  &lt;dt&gt;2023&lt;/dt&gt;
-  &lt;dd&gt;Invited a hundred beta users. Stayed up for most of the next year fixing things they found.&lt;/dd&gt;
-  &lt;dt&gt;2024&lt;/dt&gt;
-  &lt;dd&gt;Opened signups. Got profitable the same quarter, quietly. Turned down three investor conversations.&lt;/dd&gt;
-  &lt;dt&gt;2025&lt;/dt&gt;
-  &lt;dd&gt;Hired a fifth and sixth engineer. Shipped preview environments and custom domains the same week.&lt;/dd&gt;
-  &lt;dt&gt;2026&lt;/dt&gt;
-  &lt;dd&gt;Eight people. Four hundred paying teams. A CLI that has gotten smaller, not bigger, every quarter.&lt;/dd&gt;
-&lt;/dl&gt;"
+                                text=" &lt;dl class=&quot;uk-description-list uk-description-list-divider&quot;&gt;   &lt;dt&gt;2022&lt;/dt&gt;   &lt;dd&gt;Two of us were deploying a side project in a small apartment in Lisbon and got frustrated enough to start writing our own tool. Six weeks later the first internal version ran our own apps.&lt;/dd&gt;   &lt;dt&gt;2023&lt;/dt&gt;   &lt;dd&gt;Invited a hundred beta users. Stayed up for most of the next year fixing things they found.&lt;/dd&gt;   &lt;dt&gt;2024&lt;/dt&gt;   &lt;dd&gt;Opened signups. Got profitable the same quarter, quietly. Turned down three investor conversations.&lt;/dd&gt;   &lt;dt&gt;2025&lt;/dt&gt;   &lt;dd&gt;Hired a fifth and sixth engineer. Shipped preview environments and custom domains the same week.&lt;/dd&gt;   &lt;dt&gt;2026&lt;/dt&gt;   &lt;dd&gt;Eight people. Four hundred paying teams. A CLI that has gotten smaller, not bigger, every quarter.&lt;/dd&gt; &lt;/dl&gt;"
                         />
                     </container>
                 </history>

@@ -9,7 +9,6 @@
 >
     <jcr:content
             jcr:description="Forward for Riverside FC. Top scorer in the league."
-            jcr:mixinTypes="[mix:lockable]"
             jcr:primaryType="nt:unstructured"
             jcr:title="Luca Mendez"
             kes:template="/libs/kestros/commons/base-site-template"

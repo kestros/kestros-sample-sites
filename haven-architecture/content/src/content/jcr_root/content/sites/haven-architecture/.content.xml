@@ -9,7 +9,6 @@
 >
     <jcr:content
             jcr:description="An architecture studio building thoughtful, site-responsive work across public, cultural, and residential projects since 2003."
-            jcr:mixinTypes="[mix:lockable]"
             jcr:primaryType="nt:unstructured"
             jcr:title="Haven Architecture"
             kes:template="/libs/kestros/commons/base-site-template"
@@ -135,33 +134,7 @@
                     <cards
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                            text="
-&lt;div class=&quot;uk-grid uk-child-width-1-2@m&quot; uk-grid&gt;
-
-  &lt;div&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/portfolio/meridian-house.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;img src=&quot;https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800&amp;q=80&quot; alt=&quot;Meridian House&quot; style=&quot;width: 100%; height: 320px; object-fit: cover;&quot; /&gt;
-      &lt;div class=&quot;uk-margin-small-top&quot;&gt;
-        &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Private residence. 2023. Completed.&lt;/p&gt;
-        &lt;h3 class=&quot;uk-margin-remove-top&quot;&gt;Meridian House&lt;/h3&gt;
-        &lt;p class=&quot;uk-text-muted&quot;&gt;A house built to watch the horizon rather than compete with it.&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/portfolio/ashford-cultural-centre.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;img src=&quot;https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1800&amp;q=80&quot; alt=&quot;Ashford Cultural Centre&quot; style=&quot;width: 100%; height: 320px; object-fit: cover;&quot; /&gt;
-      &lt;div class=&quot;uk-margin-small-top&quot;&gt;
-        &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Cultural institution. 2022. Completed.&lt;/p&gt;
-        &lt;h3 class=&quot;uk-margin-remove-top&quot;&gt;Ashford Cultural Centre&lt;/h3&gt;
-        &lt;p class=&quot;uk-text-muted&quot;&gt;A civic building that uses its courtyard harder than its rooms.&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p class=&quot;uk-text-center uk-margin-medium-top&quot;&gt;
-  &lt;a href=&quot;/content/sites/haven-architecture/portfolio.html&quot; class=&quot;uk-button uk-button-default&quot;&gt;All projects&lt;/a&gt;
-&lt;/p&gt;"
+                            text=" &lt;div class=&quot;uk-grid uk-child-width-1-2@m&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/meridian-house.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800&amp;q=80&quot; alt=&quot;Meridian House&quot; style=&quot;width: 100%; height: 320px; object-fit: cover;&quot; /&gt;       &lt;div class=&quot;uk-margin-small-top&quot;&gt;         &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Private residence. 2023. Completed.&lt;/p&gt;         &lt;h3 class=&quot;uk-margin-remove-top&quot;&gt;Meridian House&lt;/h3&gt;         &lt;p class=&quot;uk-text-muted&quot;&gt;A house built to watch the horizon rather than compete with it.&lt;/p&gt;       &lt;/div&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/ashford-cultural-centre.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1800&amp;q=80&quot; alt=&quot;Ashford Cultural Centre&quot; style=&quot;width: 100%; height: 320px; object-fit: cover;&quot; /&gt;       &lt;div class=&quot;uk-margin-small-top&quot;&gt;         &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Cultural institution. 2022. Completed.&lt;/p&gt;         &lt;h3 class=&quot;uk-margin-remove-top&quot;&gt;Ashford Cultural Centre&lt;/h3&gt;         &lt;p class=&quot;uk-text-muted&quot;&gt;A civic building that uses its courtyard harder than its rooms.&lt;/p&gt;       &lt;/div&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt; &lt;p class=&quot;uk-text-center uk-margin-medium-top&quot;&gt;   &lt;a href=&quot;/content/sites/haven-architecture/portfolio.html&quot; class=&quot;uk-button uk-button-default&quot;&gt;All projects&lt;/a&gt; &lt;/p&gt;"
                     />
                 </container>
             </selected-work>
@@ -228,31 +201,7 @@
                     <journal-cards
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                            text="
-&lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;
-
-  &lt;div&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/journal/why-we-draw-by-hand.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;February 2024&lt;/p&gt;
-      &lt;h3 class=&quot;uk-h5 uk-margin-small-top&quot;&gt;Why we still draw by hand at the start of every project&lt;/h3&gt;
-      &lt;p class=&quot;uk-text-small uk-text-muted&quot;&gt;Not nostalgia. The constraint of a pencil on paper is still the fastest way to think through a building.&lt;/p&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/journal/the-brief-is-never-the-brief.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;November 2023&lt;/p&gt;
-      &lt;h3 class=&quot;uk-h5 uk-margin-small-top&quot;&gt;The brief is never the actual brief&lt;/h3&gt;
-      &lt;p class=&quot;uk-text-small uk-text-muted&quot;&gt;What the client asks for and what the client wants are rarely the same sentence.&lt;/p&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/journal/working-with-an-old-building.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;June 2019&lt;/p&gt;
-      &lt;h3 class=&quot;uk-h5 uk-margin-small-top&quot;&gt;Working with an old building is a conversation, not a translation&lt;/h3&gt;
-      &lt;p class=&quot;uk-text-small uk-text-muted&quot;&gt;Some notes after the Blackrock conversion wrapped.&lt;/p&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-&lt;/div&gt;"
+                            text=" &lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/journal/why-we-draw-by-hand.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;February 2024&lt;/p&gt;       &lt;h3 class=&quot;uk-h5 uk-margin-small-top&quot;&gt;Why we still draw by hand at the start of every project&lt;/h3&gt;       &lt;p class=&quot;uk-text-small uk-text-muted&quot;&gt;Not nostalgia. The constraint of a pencil on paper is still the fastest way to think through a building.&lt;/p&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/journal/the-brief-is-never-the-brief.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;November 2023&lt;/p&gt;       &lt;h3 class=&quot;uk-h5 uk-margin-small-top&quot;&gt;The brief is never the actual brief&lt;/h3&gt;       &lt;p class=&quot;uk-text-small uk-text-muted&quot;&gt;What the client asks for and what the client wants are rarely the same sentence.&lt;/p&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/journal/working-with-an-old-building.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;June 2019&lt;/p&gt;       &lt;h3 class=&quot;uk-h5 uk-margin-small-top&quot;&gt;Working with an old building is a conversation, not a translation&lt;/h3&gt;       &lt;p class=&quot;uk-text-small uk-text-muted&quot;&gt;Some notes after the Blackrock conversion wrapped.&lt;/p&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt;"
                     />
                 </container>
             </journal-preview>
@@ -286,33 +235,7 @@
                     <links
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                            text="
-&lt;div class=&quot;uk-grid uk-grid-small uk-child-width-1-3@m&quot; uk-grid&gt;
-  &lt;div&gt;
-    &lt;h5 class=&quot;uk-text-bold&quot;&gt;Work&lt;/h5&gt;
-    &lt;ul class=&quot;uk-list uk-list-small&quot;&gt;
-      &lt;li&gt;&lt;a href=&quot;/content/sites/haven-architecture/portfolio.html&quot; class=&quot;uk-link-reset&quot;&gt;Portfolio&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;/content/sites/haven-architecture/services.html&quot; class=&quot;uk-link-reset&quot;&gt;Services&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;/content/sites/haven-architecture/journal.html&quot; class=&quot;uk-link-reset&quot;&gt;Journal&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;h5 class=&quot;uk-text-bold&quot;&gt;Studio&lt;/h5&gt;
-    &lt;ul class=&quot;uk-list uk-list-small&quot;&gt;
-      &lt;li&gt;&lt;a href=&quot;/content/sites/haven-architecture/studio.html&quot; class=&quot;uk-link-reset&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;/content/sites/haven-architecture/contact.html&quot; class=&quot;uk-link-reset&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;h5 class=&quot;uk-text-bold&quot;&gt;Reach us&lt;/h5&gt;
-    &lt;ul class=&quot;uk-list uk-list-small&quot;&gt;
-      &lt;li&gt;&lt;a href=&quot;mailto:studio@haven.example&quot; class=&quot;uk-link-reset&quot;&gt;studio@haven.example&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;+1 555 0140&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;hr /&gt;
-&lt;p class=&quot;uk-text-small uk-text-muted&quot;&gt;Haven Architecture. A fictional architecture studio built as a sitebuilding sample. Projects, people, and dates are invented.&lt;/p&gt;"
+                            text=" &lt;div class=&quot;uk-grid uk-grid-small uk-child-width-1-3@m&quot; uk-grid&gt;   &lt;div&gt;     &lt;h5 class=&quot;uk-text-bold&quot;&gt;Work&lt;/h5&gt;     &lt;ul class=&quot;uk-list uk-list-small&quot;&gt;       &lt;li&gt;&lt;a href=&quot;/content/sites/haven-architecture/portfolio.html&quot; class=&quot;uk-link-reset&quot;&gt;Portfolio&lt;/a&gt;&lt;/li&gt;       &lt;li&gt;&lt;a href=&quot;/content/sites/haven-architecture/services.html&quot; class=&quot;uk-link-reset&quot;&gt;Services&lt;/a&gt;&lt;/li&gt;       &lt;li&gt;&lt;a href=&quot;/content/sites/haven-architecture/journal.html&quot; class=&quot;uk-link-reset&quot;&gt;Journal&lt;/a&gt;&lt;/li&gt;     &lt;/ul&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;h5 class=&quot;uk-text-bold&quot;&gt;Studio&lt;/h5&gt;     &lt;ul class=&quot;uk-list uk-list-small&quot;&gt;       &lt;li&gt;&lt;a href=&quot;/content/sites/haven-architecture/studio.html&quot; class=&quot;uk-link-reset&quot;&gt;About&lt;/a&gt;&lt;/li&gt;       &lt;li&gt;&lt;a href=&quot;/content/sites/haven-architecture/contact.html&quot; class=&quot;uk-link-reset&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;     &lt;/ul&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;h5 class=&quot;uk-text-bold&quot;&gt;Reach us&lt;/h5&gt;     &lt;ul class=&quot;uk-list uk-list-small&quot;&gt;       &lt;li&gt;&lt;a href=&quot;mailto:studio@haven.example&quot; class=&quot;uk-link-reset&quot;&gt;studio@haven.example&lt;/a&gt;&lt;/li&gt;       &lt;li&gt;+1 555 0140&lt;/li&gt;     &lt;/ul&gt;   &lt;/div&gt; &lt;/div&gt; &lt;hr /&gt; &lt;p class=&quot;uk-text-small uk-text-muted&quot;&gt;Haven Architecture. A fictional architecture studio built as a sitebuilding sample. Projects, people, and dates are invented.&lt;/p&gt;"
                     />
                 </container>
             </site-footer>
@@ -323,7 +246,6 @@
     >
         <jcr:content
                 jcr:description="Selected work across residential, cultural, and adaptive reuse projects."
-                jcr:mixinTypes="[mix:lockable]"
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Portfolio"
                 kes:template="/libs/kestros/commons/base-site-template"
@@ -381,70 +303,7 @@
                         <grid
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                text="
-&lt;div class=&quot;uk-grid uk-child-width-1-2@m uk-grid-large&quot; uk-grid&gt;
-
-  &lt;div&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/portfolio/meridian-house.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;img src=&quot;https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800&amp;q=80&quot; alt=&quot;Meridian House&quot; style=&quot;width: 100%; height: 320px; object-fit: cover;&quot; /&gt;
-      &lt;div class=&quot;uk-margin-small-top&quot;&gt;
-        &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Private residence. 2023. Completed.&lt;/p&gt;
-        &lt;h3 class=&quot;uk-margin-remove-top&quot;&gt;Meridian House&lt;/h3&gt;
-        &lt;p class=&quot;uk-text-muted&quot;&gt;A house built to watch the horizon rather than compete with it.&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/portfolio/ashford-cultural-centre.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;img src=&quot;https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1800&amp;q=80&quot; alt=&quot;Ashford Cultural Centre&quot; style=&quot;width: 100%; height: 320px; object-fit: cover;&quot; /&gt;
-      &lt;div class=&quot;uk-margin-small-top&quot;&gt;
-        &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Cultural institution. 2022. Completed.&lt;/p&gt;
-        &lt;h3 class=&quot;uk-margin-remove-top&quot;&gt;Ashford Cultural Centre&lt;/h3&gt;
-        &lt;p class=&quot;uk-text-muted&quot;&gt;A civic building that uses its courtyard harder than its rooms.&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/portfolio/linden-residence.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;img src=&quot;https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1800&amp;q=80&quot; alt=&quot;Linden Residence&quot; style=&quot;width: 100%; height: 320px; object-fit: cover;&quot; /&gt;
-      &lt;div class=&quot;uk-margin-small-top&quot;&gt;
-        &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Private residence. 2021. Completed.&lt;/p&gt;
-        &lt;h3 class=&quot;uk-margin-remove-top&quot;&gt;Linden Residence&lt;/h3&gt;
-        &lt;p class=&quot;uk-text-muted&quot;&gt;An infill house on a narrow lot that borrows light from its neighbors.&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/portfolio/crestwood-pavilion.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;img src=&quot;https://images.unsplash.com/photo-1448630360428-65456885c650?w=1800&amp;q=80&quot; alt=&quot;Crestwood Pavilion&quot; style=&quot;width: 100%; height: 320px; object-fit: cover;&quot; /&gt;
-      &lt;div class=&quot;uk-margin-small-top&quot;&gt;
-        &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Public pavilion. 2020. Completed.&lt;/p&gt;
-        &lt;h3 class=&quot;uk-margin-remove-top&quot;&gt;Crestwood Pavilion&lt;/h3&gt;
-        &lt;p class=&quot;uk-text-muted&quot;&gt;A small park pavilion the city asked us to build for $180k and finished under budget.&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/portfolio/blackrock-studio.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;img src=&quot;https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=1800&amp;q=80&quot; alt=&quot;Blackrock Studio&quot; style=&quot;width: 100%; height: 320px; object-fit: cover;&quot; /&gt;
-      &lt;div class=&quot;uk-margin-small-top&quot;&gt;
-        &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Artist studio. 2019. Completed.&lt;/p&gt;
-        &lt;h3 class=&quot;uk-margin-remove-top&quot;&gt;Blackrock Studio&lt;/h3&gt;
-        &lt;p class=&quot;uk-text-muted&quot;&gt;A painting studio carved out of a disused mechanical workshop.&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/portfolio/solano-bridge.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;img src=&quot;https://images.unsplash.com/photo-1467632499275-7a693a761056?w=1800&amp;q=80&quot; alt=&quot;Solano Bridge&quot; style=&quot;width: 100%; height: 320px; object-fit: cover;&quot; /&gt;
-      &lt;div class=&quot;uk-margin-small-top&quot;&gt;
-        &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Pedestrian bridge. 2024. In construction.&lt;/p&gt;
-        &lt;h3 class=&quot;uk-margin-remove-top&quot;&gt;Solano Bridge&lt;/h3&gt;
-        &lt;p class=&quot;uk-text-muted&quot;&gt;A pedestrian bridge replacing the temporary one that has been up for seventeen years.&lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-&lt;/div&gt;"
+                                text=" &lt;div class=&quot;uk-grid uk-child-width-1-2@m uk-grid-large&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/meridian-house.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800&amp;q=80&quot; alt=&quot;Meridian House&quot; style=&quot;width: 100%; height: 320px; object-fit: cover;&quot; /&gt;       &lt;div class=&quot;uk-margin-small-top&quot;&gt;         &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Private residence. 2023. Completed.&lt;/p&gt;         &lt;h3 class=&quot;uk-margin-remove-top&quot;&gt;Meridian House&lt;/h3&gt;         &lt;p class=&quot;uk-text-muted&quot;&gt;A house built to watch the horizon rather than compete with it.&lt;/p&gt;       &lt;/div&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/ashford-cultural-centre.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1800&amp;q=80&quot; alt=&quot;Ashford Cultural Centre&quot; style=&quot;width: 100%; height: 320px; object-fit: cover;&quot; /&gt;       &lt;div class=&quot;uk-margin-small-top&quot;&gt;         &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Cultural institution. 2022. Completed.&lt;/p&gt;         &lt;h3 class=&quot;uk-margin-remove-top&quot;&gt;Ashford Cultural Centre&lt;/h3&gt;         &lt;p class=&quot;uk-text-muted&quot;&gt;A civic building that uses its courtyard harder than its rooms.&lt;/p&gt;       &lt;/div&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/linden-residence.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1800&amp;q=80&quot; alt=&quot;Linden Residence&quot; style=&quot;width: 100%; height: 320px; object-fit: cover;&quot; /&gt;       &lt;div class=&quot;uk-margin-small-top&quot;&gt;         &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Private residence. 2021. Completed.&lt;/p&gt;         &lt;h3 class=&quot;uk-margin-remove-top&quot;&gt;Linden Residence&lt;/h3&gt;         &lt;p class=&quot;uk-text-muted&quot;&gt;An infill house on a narrow lot that borrows light from its neighbors.&lt;/p&gt;       &lt;/div&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/crestwood-pavilion.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1448630360428-65456885c650?w=1800&amp;q=80&quot; alt=&quot;Crestwood Pavilion&quot; style=&quot;width: 100%; height: 320px; object-fit: cover;&quot; /&gt;       &lt;div class=&quot;uk-margin-small-top&quot;&gt;         &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Public pavilion. 2020. Completed.&lt;/p&gt;         &lt;h3 class=&quot;uk-margin-remove-top&quot;&gt;Crestwood Pavilion&lt;/h3&gt;         &lt;p class=&quot;uk-text-muted&quot;&gt;A small park pavilion the city asked us to build for $180k and finished under budget.&lt;/p&gt;       &lt;/div&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/blackrock-studio.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=1800&amp;q=80&quot; alt=&quot;Blackrock Studio&quot; style=&quot;width: 100%; height: 320px; object-fit: cover;&quot; /&gt;       &lt;div class=&quot;uk-margin-small-top&quot;&gt;         &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Artist studio. 2019. Completed.&lt;/p&gt;         &lt;h3 class=&quot;uk-margin-remove-top&quot;&gt;Blackrock Studio&lt;/h3&gt;         &lt;p class=&quot;uk-text-muted&quot;&gt;A painting studio carved out of a disused mechanical workshop.&lt;/p&gt;       &lt;/div&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/solano-bridge.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1467632499275-7a693a761056?w=1800&amp;q=80&quot; alt=&quot;Solano Bridge&quot; style=&quot;width: 100%; height: 320px; object-fit: cover;&quot; /&gt;       &lt;div class=&quot;uk-margin-small-top&quot;&gt;         &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Pedestrian bridge. 2024. In construction.&lt;/p&gt;         &lt;h3 class=&quot;uk-margin-remove-top&quot;&gt;Solano Bridge&lt;/h3&gt;         &lt;p class=&quot;uk-text-muted&quot;&gt;A pedestrian bridge replacing the temporary one that has been up for seventeen years.&lt;/p&gt;       &lt;/div&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt;"
                         />
                     </container>
                 </grid>
@@ -459,7 +318,6 @@
         >
             <jcr:content
                     jcr:description="Meridian House. Private residence. Northern coastline. 2023."
-                    jcr:mixinTypes="[mix:lockable]"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Meridian House"
                     kes:template="/libs/kestros/commons/base-site-template"
@@ -561,19 +419,7 @@
                             <facts-list
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    text="
-&lt;dl class=&quot;uk-description-list uk-description-list-divider&quot;&gt;
-  &lt;dt&gt;Size&lt;/dt&gt;
-  &lt;dd&gt;320 m2&lt;/dd&gt;
-  &lt;dt&gt;Site&lt;/dt&gt;
-  &lt;dd&gt;1.4 hectares&lt;/dd&gt;
-  &lt;dt&gt;Materials&lt;/dt&gt;
-  &lt;dd&gt;Reclaimed cedar, board-formed concrete, zinc roof&lt;/dd&gt;
-  &lt;dt&gt;Collaborators&lt;/dt&gt;
-  &lt;dd&gt;Pine &amp; Drake structural, L. Ferris landscape&lt;/dd&gt;
-  &lt;dt&gt;Completion&lt;/dt&gt;
-  &lt;dd&gt;October 2023&lt;/dd&gt;
-&lt;/dl&gt;"
+                                    text=" &lt;dl class=&quot;uk-description-list uk-description-list-divider&quot;&gt;   &lt;dt&gt;Size&lt;/dt&gt;   &lt;dd&gt;320 m2&lt;/dd&gt;   &lt;dt&gt;Site&lt;/dt&gt;   &lt;dd&gt;1.4 hectares&lt;/dd&gt;   &lt;dt&gt;Materials&lt;/dt&gt;   &lt;dd&gt;Reclaimed cedar, board-formed concrete, zinc roof&lt;/dd&gt;   &lt;dt&gt;Collaborators&lt;/dt&gt;   &lt;dd&gt;Pine &amp; Drake structural, L. Ferris landscape&lt;/dd&gt;   &lt;dt&gt;Completion&lt;/dt&gt;   &lt;dd&gt;October 2023&lt;/dd&gt; &lt;/dl&gt;"
                             />
                         </container>
                     </facts>
@@ -603,31 +449,7 @@
                             <others
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    text="
-&lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;
-
-  &lt;div&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/portfolio/ashford-cultural-centre.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;img src=&quot;https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1800&amp;q=80&quot; alt=&quot;Ashford Cultural Centre&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;
-      &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Cultural institution. 2022&lt;/p&gt;
-      &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Ashford Cultural Centre&lt;/h4&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/portfolio/linden-residence.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;img src=&quot;https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1800&amp;q=80&quot; alt=&quot;Linden Residence&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;
-      &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Private residence. 2021&lt;/p&gt;
-      &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Linden Residence&lt;/h4&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/portfolio/crestwood-pavilion.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;img src=&quot;https://images.unsplash.com/photo-1448630360428-65456885c650?w=1800&amp;q=80&quot; alt=&quot;Crestwood Pavilion&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;
-      &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Public pavilion. 2020&lt;/p&gt;
-      &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Crestwood Pavilion&lt;/h4&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-&lt;/div&gt;"
+                                    text=" &lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/ashford-cultural-centre.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1800&amp;q=80&quot; alt=&quot;Ashford Cultural Centre&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Cultural institution. 2022&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Ashford Cultural Centre&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/linden-residence.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1800&amp;q=80&quot; alt=&quot;Linden Residence&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Private residence. 2021&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Linden Residence&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/crestwood-pavilion.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1448630360428-65456885c650?w=1800&amp;q=80&quot; alt=&quot;Crestwood Pavilion&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Public pavilion. 2020&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Crestwood Pavilion&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt;"
                             />
                         </container>
                     </more-work>
@@ -643,7 +465,6 @@
         >
             <jcr:content
                     jcr:description="Ashford Cultural Centre. Cultural institution. Town square, Ashford. 2022."
-                    jcr:mixinTypes="[mix:lockable]"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Ashford Cultural Centre"
                     kes:template="/libs/kestros/commons/base-site-template"
@@ -745,19 +566,7 @@
                             <facts-list
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    text="
-&lt;dl class=&quot;uk-description-list uk-description-list-divider&quot;&gt;
-  &lt;dt&gt;Program&lt;/dt&gt;
-  &lt;dd&gt;Gallery, auditorium, cafe, courtyard&lt;/dd&gt;
-  &lt;dt&gt;Size&lt;/dt&gt;
-  &lt;dd&gt;2,100 m2 indoor, 1,600 m2 courtyard&lt;/dd&gt;
-  &lt;dt&gt;Structure&lt;/dt&gt;
-  &lt;dd&gt;Glulam tree columns, timber roof deck&lt;/dd&gt;
-  &lt;dt&gt;Budget&lt;/dt&gt;
-  &lt;dd&gt;$8.4M&lt;/dd&gt;
-  &lt;dt&gt;Completion&lt;/dt&gt;
-  &lt;dd&gt;Spring 2022&lt;/dd&gt;
-&lt;/dl&gt;"
+                                    text=" &lt;dl class=&quot;uk-description-list uk-description-list-divider&quot;&gt;   &lt;dt&gt;Program&lt;/dt&gt;   &lt;dd&gt;Gallery, auditorium, cafe, courtyard&lt;/dd&gt;   &lt;dt&gt;Size&lt;/dt&gt;   &lt;dd&gt;2,100 m2 indoor, 1,600 m2 courtyard&lt;/dd&gt;   &lt;dt&gt;Structure&lt;/dt&gt;   &lt;dd&gt;Glulam tree columns, timber roof deck&lt;/dd&gt;   &lt;dt&gt;Budget&lt;/dt&gt;   &lt;dd&gt;$8.4M&lt;/dd&gt;   &lt;dt&gt;Completion&lt;/dt&gt;   &lt;dd&gt;Spring 2022&lt;/dd&gt; &lt;/dl&gt;"
                             />
                         </container>
                     </facts>
@@ -787,31 +596,7 @@
                             <others
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    text="
-&lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;
-
-  &lt;div&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/portfolio/meridian-house.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;img src=&quot;https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800&amp;q=80&quot; alt=&quot;Meridian House&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;
-      &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Private residence. 2023&lt;/p&gt;
-      &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Meridian House&lt;/h4&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/portfolio/linden-residence.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;img src=&quot;https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1800&amp;q=80&quot; alt=&quot;Linden Residence&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;
-      &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Private residence. 2021&lt;/p&gt;
-      &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Linden Residence&lt;/h4&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/portfolio/crestwood-pavilion.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;img src=&quot;https://images.unsplash.com/photo-1448630360428-65456885c650?w=1800&amp;q=80&quot; alt=&quot;Crestwood Pavilion&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;
-      &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Public pavilion. 2020&lt;/p&gt;
-      &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Crestwood Pavilion&lt;/h4&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-&lt;/div&gt;"
+                                    text=" &lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/meridian-house.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800&amp;q=80&quot; alt=&quot;Meridian House&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Private residence. 2023&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Meridian House&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/linden-residence.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1800&amp;q=80&quot; alt=&quot;Linden Residence&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Private residence. 2021&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Linden Residence&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/crestwood-pavilion.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1448630360428-65456885c650?w=1800&amp;q=80&quot; alt=&quot;Crestwood Pavilion&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Public pavilion. 2020&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Crestwood Pavilion&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt;"
                             />
                         </container>
                     </more-work>
@@ -827,7 +612,6 @@
         >
             <jcr:content
                     jcr:description="Linden Residence. Private residence. Inner city, infill lot. 2021."
-                    jcr:mixinTypes="[mix:lockable]"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Linden Residence"
                     kes:template="/libs/kestros/commons/base-site-template"
@@ -929,17 +713,7 @@
                             <facts-list
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    text="
-&lt;dl class=&quot;uk-description-list uk-description-list-divider&quot;&gt;
-  &lt;dt&gt;Size&lt;/dt&gt;
-  &lt;dd&gt;180 m2 on 95 m2 lot&lt;/dd&gt;
-  &lt;dt&gt;Width&lt;/dt&gt;
-  &lt;dd&gt;5.1 metres&lt;/dd&gt;
-  &lt;dt&gt;Key move&lt;/dt&gt;
-  &lt;dd&gt;Full-height stair as lightwell&lt;/dd&gt;
-  &lt;dt&gt;Completion&lt;/dt&gt;
-  &lt;dd&gt;2021&lt;/dd&gt;
-&lt;/dl&gt;"
+                                    text=" &lt;dl class=&quot;uk-description-list uk-description-list-divider&quot;&gt;   &lt;dt&gt;Size&lt;/dt&gt;   &lt;dd&gt;180 m2 on 95 m2 lot&lt;/dd&gt;   &lt;dt&gt;Width&lt;/dt&gt;   &lt;dd&gt;5.1 metres&lt;/dd&gt;   &lt;dt&gt;Key move&lt;/dt&gt;   &lt;dd&gt;Full-height stair as lightwell&lt;/dd&gt;   &lt;dt&gt;Completion&lt;/dt&gt;   &lt;dd&gt;2021&lt;/dd&gt; &lt;/dl&gt;"
                             />
                         </container>
                     </facts>
@@ -969,31 +743,7 @@
                             <others
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    text="
-&lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;
-
-  &lt;div&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/portfolio/meridian-house.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;img src=&quot;https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800&amp;q=80&quot; alt=&quot;Meridian House&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;
-      &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Private residence. 2023&lt;/p&gt;
-      &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Meridian House&lt;/h4&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/portfolio/ashford-cultural-centre.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;img src=&quot;https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1800&amp;q=80&quot; alt=&quot;Ashford Cultural Centre&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;
-      &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Cultural institution. 2022&lt;/p&gt;
-      &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Ashford Cultural Centre&lt;/h4&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/portfolio/crestwood-pavilion.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;img src=&quot;https://images.unsplash.com/photo-1448630360428-65456885c650?w=1800&amp;q=80&quot; alt=&quot;Crestwood Pavilion&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;
-      &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Public pavilion. 2020&lt;/p&gt;
-      &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Crestwood Pavilion&lt;/h4&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-&lt;/div&gt;"
+                                    text=" &lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/meridian-house.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800&amp;q=80&quot; alt=&quot;Meridian House&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Private residence. 2023&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Meridian House&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/ashford-cultural-centre.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1800&amp;q=80&quot; alt=&quot;Ashford Cultural Centre&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Cultural institution. 2022&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Ashford Cultural Centre&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/crestwood-pavilion.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1448630360428-65456885c650?w=1800&amp;q=80&quot; alt=&quot;Crestwood Pavilion&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Public pavilion. 2020&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Crestwood Pavilion&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt;"
                             />
                         </container>
                     </more-work>
@@ -1009,7 +759,6 @@
         >
             <jcr:content
                     jcr:description="Crestwood Pavilion. Public pavilion. Crestwood Park. 2020."
-                    jcr:mixinTypes="[mix:lockable]"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Crestwood Pavilion"
                     kes:template="/libs/kestros/commons/base-site-template"
@@ -1111,19 +860,7 @@
                             <facts-list
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    text="
-&lt;dl class=&quot;uk-description-list uk-description-list-divider&quot;&gt;
-  &lt;dt&gt;Program&lt;/dt&gt;
-  &lt;dd&gt;Covered pavilion, benches, water fountain&lt;/dd&gt;
-  &lt;dt&gt;Footprint&lt;/dt&gt;
-  &lt;dd&gt;110 m2&lt;/dd&gt;
-  &lt;dt&gt;Budget&lt;/dt&gt;
-  &lt;dd&gt;$180,000&lt;/dd&gt;
-  &lt;dt&gt;Actual&lt;/dt&gt;
-  &lt;dd&gt;$167,000&lt;/dd&gt;
-  &lt;dt&gt;Built&lt;/dt&gt;
-  &lt;dd&gt;2020&lt;/dd&gt;
-&lt;/dl&gt;"
+                                    text=" &lt;dl class=&quot;uk-description-list uk-description-list-divider&quot;&gt;   &lt;dt&gt;Program&lt;/dt&gt;   &lt;dd&gt;Covered pavilion, benches, water fountain&lt;/dd&gt;   &lt;dt&gt;Footprint&lt;/dt&gt;   &lt;dd&gt;110 m2&lt;/dd&gt;   &lt;dt&gt;Budget&lt;/dt&gt;   &lt;dd&gt;$180,000&lt;/dd&gt;   &lt;dt&gt;Actual&lt;/dt&gt;   &lt;dd&gt;$167,000&lt;/dd&gt;   &lt;dt&gt;Built&lt;/dt&gt;   &lt;dd&gt;2020&lt;/dd&gt; &lt;/dl&gt;"
                             />
                         </container>
                     </facts>
@@ -1153,31 +890,7 @@
                             <others
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    text="
-&lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;
-
-  &lt;div&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/portfolio/meridian-house.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;img src=&quot;https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800&amp;q=80&quot; alt=&quot;Meridian House&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;
-      &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Private residence. 2023&lt;/p&gt;
-      &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Meridian House&lt;/h4&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/portfolio/ashford-cultural-centre.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;img src=&quot;https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1800&amp;q=80&quot; alt=&quot;Ashford Cultural Centre&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;
-      &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Cultural institution. 2022&lt;/p&gt;
-      &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Ashford Cultural Centre&lt;/h4&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/portfolio/linden-residence.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;img src=&quot;https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1800&amp;q=80&quot; alt=&quot;Linden Residence&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;
-      &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Private residence. 2021&lt;/p&gt;
-      &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Linden Residence&lt;/h4&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-&lt;/div&gt;"
+                                    text=" &lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/meridian-house.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800&amp;q=80&quot; alt=&quot;Meridian House&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Private residence. 2023&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Meridian House&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/ashford-cultural-centre.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1800&amp;q=80&quot; alt=&quot;Ashford Cultural Centre&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Cultural institution. 2022&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Ashford Cultural Centre&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/linden-residence.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1800&amp;q=80&quot; alt=&quot;Linden Residence&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Private residence. 2021&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Linden Residence&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt;"
                             />
                         </container>
                     </more-work>
@@ -1193,7 +906,6 @@
         >
             <jcr:content
                     jcr:description="Blackrock Studio. Artist studio. Industrial district. 2019."
-                    jcr:mixinTypes="[mix:lockable]"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Blackrock Studio"
                     kes:template="/libs/kestros/commons/base-site-template"
@@ -1295,19 +1007,7 @@
                             <facts-list
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    text="
-&lt;dl class=&quot;uk-description-list uk-description-list-divider&quot;&gt;
-  &lt;dt&gt;Program&lt;/dt&gt;
-  &lt;dd&gt;Working studio, office, wet room&lt;/dd&gt;
-  &lt;dt&gt;Original use&lt;/dt&gt;
-  &lt;dd&gt;1940s mechanical workshop&lt;/dd&gt;
-  &lt;dt&gt;Size&lt;/dt&gt;
-  &lt;dd&gt;420 m2&lt;/dd&gt;
-  &lt;dt&gt;Key move&lt;/dt&gt;
-  &lt;dd&gt;Almost nothing to the existing shell&lt;/dd&gt;
-  &lt;dt&gt;Completion&lt;/dt&gt;
-  &lt;dd&gt;2019&lt;/dd&gt;
-&lt;/dl&gt;"
+                                    text=" &lt;dl class=&quot;uk-description-list uk-description-list-divider&quot;&gt;   &lt;dt&gt;Program&lt;/dt&gt;   &lt;dd&gt;Working studio, office, wet room&lt;/dd&gt;   &lt;dt&gt;Original use&lt;/dt&gt;   &lt;dd&gt;1940s mechanical workshop&lt;/dd&gt;   &lt;dt&gt;Size&lt;/dt&gt;   &lt;dd&gt;420 m2&lt;/dd&gt;   &lt;dt&gt;Key move&lt;/dt&gt;   &lt;dd&gt;Almost nothing to the existing shell&lt;/dd&gt;   &lt;dt&gt;Completion&lt;/dt&gt;   &lt;dd&gt;2019&lt;/dd&gt; &lt;/dl&gt;"
                             />
                         </container>
                     </facts>
@@ -1337,31 +1037,7 @@
                             <others
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    text="
-&lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;
-
-  &lt;div&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/portfolio/meridian-house.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;img src=&quot;https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800&amp;q=80&quot; alt=&quot;Meridian House&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;
-      &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Private residence. 2023&lt;/p&gt;
-      &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Meridian House&lt;/h4&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/portfolio/ashford-cultural-centre.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;img src=&quot;https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1800&amp;q=80&quot; alt=&quot;Ashford Cultural Centre&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;
-      &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Cultural institution. 2022&lt;/p&gt;
-      &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Ashford Cultural Centre&lt;/h4&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/portfolio/linden-residence.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;img src=&quot;https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1800&amp;q=80&quot; alt=&quot;Linden Residence&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;
-      &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Private residence. 2021&lt;/p&gt;
-      &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Linden Residence&lt;/h4&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-&lt;/div&gt;"
+                                    text=" &lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/meridian-house.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800&amp;q=80&quot; alt=&quot;Meridian House&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Private residence. 2023&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Meridian House&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/ashford-cultural-centre.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1800&amp;q=80&quot; alt=&quot;Ashford Cultural Centre&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Cultural institution. 2022&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Ashford Cultural Centre&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/linden-residence.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1800&amp;q=80&quot; alt=&quot;Linden Residence&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Private residence. 2021&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Linden Residence&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt;"
                             />
                         </container>
                     </more-work>
@@ -1377,7 +1053,6 @@
         >
             <jcr:content
                     jcr:description="Solano Bridge. Pedestrian bridge. River crossing, Solano district. 2024."
-                    jcr:mixinTypes="[mix:lockable]"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Solano Bridge"
                     kes:template="/libs/kestros/commons/base-site-template"
@@ -1479,19 +1154,7 @@
                             <facts-list
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    text="
-&lt;dl class=&quot;uk-description-list uk-description-list-divider&quot;&gt;
-  &lt;dt&gt;Span&lt;/dt&gt;
-  &lt;dd&gt;34 metres&lt;/dd&gt;
-  &lt;dt&gt;Material&lt;/dt&gt;
-  &lt;dd&gt;Weathering steel, larch deck&lt;/dd&gt;
-  &lt;dt&gt;Replaces&lt;/dt&gt;
-  &lt;dd&gt;Temporary bridge, 2007&lt;/dd&gt;
-  &lt;dt&gt;Budget&lt;/dt&gt;
-  &lt;dd&gt;$1.2M&lt;/dd&gt;
-  &lt;dt&gt;Expected completion&lt;/dt&gt;
-  &lt;dd&gt;Summer 2026&lt;/dd&gt;
-&lt;/dl&gt;"
+                                    text=" &lt;dl class=&quot;uk-description-list uk-description-list-divider&quot;&gt;   &lt;dt&gt;Span&lt;/dt&gt;   &lt;dd&gt;34 metres&lt;/dd&gt;   &lt;dt&gt;Material&lt;/dt&gt;   &lt;dd&gt;Weathering steel, larch deck&lt;/dd&gt;   &lt;dt&gt;Replaces&lt;/dt&gt;   &lt;dd&gt;Temporary bridge, 2007&lt;/dd&gt;   &lt;dt&gt;Budget&lt;/dt&gt;   &lt;dd&gt;$1.2M&lt;/dd&gt;   &lt;dt&gt;Expected completion&lt;/dt&gt;   &lt;dd&gt;Summer 2026&lt;/dd&gt; &lt;/dl&gt;"
                             />
                         </container>
                     </facts>
@@ -1521,31 +1184,7 @@
                             <others
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                    text="
-&lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;
-
-  &lt;div&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/portfolio/meridian-house.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;img src=&quot;https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800&amp;q=80&quot; alt=&quot;Meridian House&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;
-      &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Private residence. 2023&lt;/p&gt;
-      &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Meridian House&lt;/h4&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/portfolio/ashford-cultural-centre.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;img src=&quot;https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1800&amp;q=80&quot; alt=&quot;Ashford Cultural Centre&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;
-      &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Cultural institution. 2022&lt;/p&gt;
-      &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Ashford Cultural Centre&lt;/h4&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/portfolio/linden-residence.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;img src=&quot;https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1800&amp;q=80&quot; alt=&quot;Linden Residence&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;
-      &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Private residence. 2021&lt;/p&gt;
-      &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Linden Residence&lt;/h4&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-&lt;/div&gt;"
+                                    text=" &lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/meridian-house.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800&amp;q=80&quot; alt=&quot;Meridian House&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Private residence. 2023&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Meridian House&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/ashford-cultural-centre.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1800&amp;q=80&quot; alt=&quot;Ashford Cultural Centre&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Cultural institution. 2022&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Ashford Cultural Centre&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/linden-residence.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1800&amp;q=80&quot; alt=&quot;Linden Residence&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Private residence. 2021&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Linden Residence&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt;"
                             />
                         </container>
                     </more-work>
@@ -1562,7 +1201,6 @@
     >
         <jcr:content
                 jcr:description="Occasional writing from inside the studio on practice, projects, and design."
-                jcr:mixinTypes="[mix:lockable]"
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Journal"
                 kes:template="/libs/kestros/commons/base-site-template"
@@ -1620,31 +1258,7 @@
                         <list
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                text="
-&lt;div class=&quot;uk-grid uk-child-width-1-2@m uk-grid-large&quot; uk-grid&gt;
-
-  &lt;article&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/journal/why-we-draw-by-hand.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;February 2024. M. Haven.&lt;/p&gt;
-      &lt;h2 class=&quot;uk-h3 uk-margin-small-top&quot;&gt;Why we still draw by hand at the start of every project&lt;/h2&gt;
-      &lt;p class=&quot;uk-text-muted&quot;&gt;Not nostalgia. The constraint of a pencil on paper is still the fastest way to think through a building.&lt;/p&gt;
-    &lt;/a&gt;
-  &lt;/article&gt;
-  &lt;article&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/journal/the-brief-is-never-the-brief.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;November 2023. J. Ortega.&lt;/p&gt;
-      &lt;h2 class=&quot;uk-h3 uk-margin-small-top&quot;&gt;The brief is never the actual brief&lt;/h2&gt;
-      &lt;p class=&quot;uk-text-muted&quot;&gt;What the client asks for and what the client wants are rarely the same sentence.&lt;/p&gt;
-    &lt;/a&gt;
-  &lt;/article&gt;
-  &lt;article&gt;
-    &lt;a href=&quot;/content/sites/haven-architecture/journal/working-with-an-old-building.html&quot; class=&quot;uk-link-reset&quot;&gt;
-      &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;June 2019. M. Haven.&lt;/p&gt;
-      &lt;h2 class=&quot;uk-h3 uk-margin-small-top&quot;&gt;Working with an old building is a conversation, not a translation&lt;/h2&gt;
-      &lt;p class=&quot;uk-text-muted&quot;&gt;Some notes after the Blackrock conversion wrapped.&lt;/p&gt;
-    &lt;/a&gt;
-  &lt;/article&gt;
-&lt;/div&gt;"
+                                text=" &lt;div class=&quot;uk-grid uk-child-width-1-2@m uk-grid-large&quot; uk-grid&gt;    &lt;article&gt;     &lt;a href=&quot;/content/sites/haven-architecture/journal/why-we-draw-by-hand.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;February 2024. M. Haven.&lt;/p&gt;       &lt;h2 class=&quot;uk-h3 uk-margin-small-top&quot;&gt;Why we still draw by hand at the start of every project&lt;/h2&gt;       &lt;p class=&quot;uk-text-muted&quot;&gt;Not nostalgia. The constraint of a pencil on paper is still the fastest way to think through a building.&lt;/p&gt;     &lt;/a&gt;   &lt;/article&gt;   &lt;article&gt;     &lt;a href=&quot;/content/sites/haven-architecture/journal/the-brief-is-never-the-brief.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;November 2023. J. Ortega.&lt;/p&gt;       &lt;h2 class=&quot;uk-h3 uk-margin-small-top&quot;&gt;The brief is never the actual brief&lt;/h2&gt;       &lt;p class=&quot;uk-text-muted&quot;&gt;What the client asks for and what the client wants are rarely the same sentence.&lt;/p&gt;     &lt;/a&gt;   &lt;/article&gt;   &lt;article&gt;     &lt;a href=&quot;/content/sites/haven-architecture/journal/working-with-an-old-building.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;June 2019. M. Haven.&lt;/p&gt;       &lt;h2 class=&quot;uk-h3 uk-margin-small-top&quot;&gt;Working with an old building is a conversation, not a translation&lt;/h2&gt;       &lt;p class=&quot;uk-text-muted&quot;&gt;Some notes after the Blackrock conversion wrapped.&lt;/p&gt;     &lt;/a&gt;   &lt;/article&gt; &lt;/div&gt;"
                         />
                     </container>
                 </list>
@@ -1659,7 +1273,6 @@
         >
             <jcr:content
                     jcr:description="Not nostalgia. The constraint of a pencil on paper is still the fastest way to think through a building."
-                    jcr:mixinTypes="[mix:lockable]"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Why we still draw by hand at the start of every project"
                     kes:template="/libs/kestros/commons/base-site-template"
@@ -1746,7 +1359,6 @@
         >
             <jcr:content
                     jcr:description="What the client asks for and what the client wants are rarely the same sentence."
-                    jcr:mixinTypes="[mix:lockable]"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="The brief is never the actual brief"
                     kes:template="/libs/kestros/commons/base-site-template"
@@ -1833,7 +1445,6 @@
         >
             <jcr:content
                     jcr:description="Some notes after the Blackrock conversion wrapped."
-                    jcr:mixinTypes="[mix:lockable]"
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Working with an old building is a conversation, not a translation"
                     kes:template="/libs/kestros/commons/base-site-template"
@@ -1921,7 +1532,6 @@
     >
         <jcr:content
                 jcr:description="Founded 2003. Eleven people in a converted warehouse. Five or six projects a year."
-                jcr:mixinTypes="[mix:lockable]"
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Our Studio"
                 kes:template="/libs/kestros/commons/base-site-template"
@@ -2023,19 +1633,7 @@
                         <history-list
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                                text="
-&lt;dl class=&quot;uk-description-list uk-description-list-divider&quot;&gt;
-  &lt;dt&gt;2003&lt;/dt&gt;
-  &lt;dd&gt;M. Haven and J. Ortega found the studio in a small back room above a bookshop. First project is a backyard studio for a printmaker.&lt;/dd&gt;
-  &lt;dt&gt;2008&lt;/dt&gt;
-  &lt;dd&gt;Studio moves into the current warehouse space. First civic project, a library renovation, wraps up the following spring.&lt;/dd&gt;
-  &lt;dt&gt;2012&lt;/dt&gt;
-  &lt;dd&gt;Adds a second principal, R. Kline, to head up the cultural work. The Ashford Cultural Centre competition is won three years later.&lt;/dd&gt;
-  &lt;dt&gt;2019&lt;/dt&gt;
-  &lt;dd&gt;Blackrock Studio opens. First project we would describe as adaptive reuse in any honest sense of the word.&lt;/dd&gt;
-  &lt;dt&gt;2023&lt;/dt&gt;
-  &lt;dd&gt;Meridian House completes. Eleven-person studio, about forty projects under the belt, still drawing the first four weeks by hand.&lt;/dd&gt;
-&lt;/dl&gt;"
+                                text=" &lt;dl class=&quot;uk-description-list uk-description-list-divider&quot;&gt;   &lt;dt&gt;2003&lt;/dt&gt;   &lt;dd&gt;M. Haven and J. Ortega found the studio in a small back room above a bookshop. First project is a backyard studio for a printmaker.&lt;/dd&gt;   &lt;dt&gt;2008&lt;/dt&gt;   &lt;dd&gt;Studio moves into the current warehouse space. First civic project, a library renovation, wraps up the following spring.&lt;/dd&gt;   &lt;dt&gt;2012&lt;/dt&gt;   &lt;dd&gt;Adds a second principal, R. Kline, to head up the cultural work. The Ashford Cultural Centre competition is won three years later.&lt;/dd&gt;   &lt;dt&gt;2019&lt;/dt&gt;   &lt;dd&gt;Blackrock Studio opens. First project we would describe as adaptive reuse in any honest sense of the word.&lt;/dd&gt;   &lt;dt&gt;2023&lt;/dt&gt;   &lt;dd&gt;Meridian House completes. Eleven-person studio, about forty projects under the belt, still drawing the first four weeks by hand.&lt;/dd&gt; &lt;/dl&gt;"
                         />
                     </container>
                 </history>
@@ -2051,7 +1649,6 @@
     >
         <jcr:content
                 jcr:description="Residential, cultural and civic, adaptive reuse, and landscape work."
-                jcr:mixinTypes="[mix:lockable]"
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Services"
                 kes:template="/libs/kestros/commons/base-site-template"
@@ -2205,7 +1802,6 @@
     >
         <jcr:content
                 jcr:description="Start a conversation about a new project. The first call is free."
-                jcr:mixinTypes="[mix:lockable]"
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Contact"
                 kes:template="/libs/kestros/commons/base-site-template"

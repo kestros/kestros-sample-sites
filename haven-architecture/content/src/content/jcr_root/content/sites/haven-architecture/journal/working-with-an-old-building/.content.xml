@@ -9,7 +9,6 @@
 >
     <jcr:content
             jcr:description="Some notes after the Blackrock conversion wrapped."
-            jcr:mixinTypes="[mix:lockable]"
             jcr:primaryType="nt:unstructured"
             jcr:title="Working with an old building is a conversation, not a translation"
             kes:template="/libs/kestros/commons/base-site-template"

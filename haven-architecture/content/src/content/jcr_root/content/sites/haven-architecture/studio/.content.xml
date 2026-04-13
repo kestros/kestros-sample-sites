@@ -9,7 +9,6 @@
 >
     <jcr:content
             jcr:description="Founded 2003. Eleven people in a converted warehouse. Five or six projects a year."
-            jcr:mixinTypes="[mix:lockable]"
             jcr:primaryType="nt:unstructured"
             jcr:title="Our Studio"
             kes:template="/libs/kestros/commons/base-site-template"
@@ -111,19 +110,7 @@
                     <history-list
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="/libs/kestros/commons/components/content/richtext"
-                            text="
-&lt;dl class=&quot;uk-description-list uk-description-list-divider&quot;&gt;
-  &lt;dt&gt;2003&lt;/dt&gt;
-  &lt;dd&gt;M. Haven and J. Ortega found the studio in a small back room above a bookshop. First project is a backyard studio for a printmaker.&lt;/dd&gt;
-  &lt;dt&gt;2008&lt;/dt&gt;
-  &lt;dd&gt;Studio moves into the current warehouse space. First civic project, a library renovation, wraps up the following spring.&lt;/dd&gt;
-  &lt;dt&gt;2012&lt;/dt&gt;
-  &lt;dd&gt;Adds a second principal, R. Kline, to head up the cultural work. The Ashford Cultural Centre competition is won three years later.&lt;/dd&gt;
-  &lt;dt&gt;2019&lt;/dt&gt;
-  &lt;dd&gt;Blackrock Studio opens. First project we would describe as adaptive reuse in any honest sense of the word.&lt;/dd&gt;
-  &lt;dt&gt;2023&lt;/dt&gt;
-  &lt;dd&gt;Meridian House completes. Eleven-person studio, about forty projects under the belt, still drawing the first four weeks by hand.&lt;/dd&gt;
-&lt;/dl&gt;"
+                            text=" &lt;dl class=&quot;uk-description-list uk-description-list-divider&quot;&gt;   &lt;dt&gt;2003&lt;/dt&gt;   &lt;dd&gt;M. Haven and J. Ortega found the studio in a small back room above a bookshop. First project is a backyard studio for a printmaker.&lt;/dd&gt;   &lt;dt&gt;2008&lt;/dt&gt;   &lt;dd&gt;Studio moves into the current warehouse space. First civic project, a library renovation, wraps up the following spring.&lt;/dd&gt;   &lt;dt&gt;2012&lt;/dt&gt;   &lt;dd&gt;Adds a second principal, R. Kline, to head up the cultural work. The Ashford Cultural Centre competition is won three years later.&lt;/dd&gt;   &lt;dt&gt;2019&lt;/dt&gt;   &lt;dd&gt;Blackrock Studio opens. First project we would describe as adaptive reuse in any honest sense of the word.&lt;/dd&gt;   &lt;dt&gt;2023&lt;/dt&gt;   &lt;dd&gt;Meridian House completes. Eleven-person studio, about forty projects under the belt, still drawing the first four weeks by hand.&lt;/dd&gt; &lt;/dl&gt;"
                     />
                 </container>
             </history>

@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:rep="http://www.jcp.org/jcr/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="kes:Page"
+>
+    <jcr:content
+            jcr:description="Notes from the road: stories, tips, and the occasional rant."
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Articles"
+            kes:template="/libs/kestros/commons/base-site-template"
+            sling:resourceType="kestros/commons/components/kestros-base-page"
+    >
+        <header
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"
+        />
+        <main
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/content-area"
+        >
+            <hero
+                    inlineVariations="uk-section uk-section-primary"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        inlineVariations="uk-container"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <eyebrow
+                            inlineVariations="uk-text-meta uk-text-uppercase"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Stories"
+                    />
+                    <heading
+                            headingText="Notes from the road."
+                            headingType="h1"
+                            inlineVariations="uk-heading-medium"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <dek
+                            inlineVariations="uk-text-lead"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Reflections, field notes, and the occasional rant about how airports have gotten worse."
+                    />
+                </container>
+            </hero>
+            <grid
+                    inlineVariations="uk-section uk-section-default"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        inlineVariations="uk-container"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <grid-cards
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                            text=" &lt;div class=&quot;uk-grid uk-child-width-1-2@m uk-grid-large&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/articles/why-shoulder-season.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1600&amp;q=80&quot; alt=&quot;Why shoulder season is the real travel season&quot; style=&quot;width: 100%; height: 260px; object-fit: cover;&quot; /&gt;       &lt;div class=&quot;uk-margin-small-top&quot;&gt;         &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Jane Holloway. Editor, 20 years on the road. 6 min read.&lt;/p&gt;         &lt;h2 class=&quot;uk-h3 uk-margin-remove-top&quot;&gt;Why shoulder season is the real travel season&lt;/h2&gt;         &lt;p class=&quot;uk-text-muted&quot;&gt;Cheaper flights, emptier trails, and hosts who still remember how to be hospitable.&lt;/p&gt;       &lt;/div&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/articles/packing-light-2-weeks.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=1600&amp;q=80&quot; alt=&quot;Packing light for two weeks anywhere&quot; style=&quot;width: 100%; height: 260px; object-fit: cover;&quot; /&gt;       &lt;div class=&quot;uk-margin-small-top&quot;&gt;         &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Marcus Adair. Field reporter, has packed the same bag for ten years. 8 min read.&lt;/p&gt;         &lt;h2 class=&quot;uk-h3 uk-margin-remove-top&quot;&gt;Packing light for two weeks anywhere&lt;/h2&gt;         &lt;p class=&quot;uk-text-muted&quot;&gt;A carry-on, a personal item, and a list you can keep in your head.&lt;/p&gt;       &lt;/div&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/articles/sleeping-on-trains.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=1600&amp;q=80&quot; alt=&quot;The quiet joy of sleeping on trains&quot; style=&quot;width: 100%; height: 260px; object-fit: cover;&quot; /&gt;       &lt;div class=&quot;uk-margin-small-top&quot;&gt;         &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Priya Chen. Photographer. Not a morning person.. 5 min read.&lt;/p&gt;         &lt;h2 class=&quot;uk-h3 uk-margin-remove-top&quot;&gt;The quiet joy of sleeping on trains&lt;/h2&gt;         &lt;p class=&quot;uk-text-muted&quot;&gt;You fall asleep in one country and wake up in another. No hotel bill, no security line.&lt;/p&gt;       &lt;/div&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/articles/eating-where-locals-eat.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1600&amp;q=80&quot; alt=&quot;Eating where locals eat&quot; style=&quot;width: 100%; height: 260px; object-fit: cover;&quot; /&gt;       &lt;div class=&quot;uk-margin-small-top&quot;&gt;         &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Tomas Reyes. Food writer, bad at reservations. 7 min read.&lt;/p&gt;         &lt;h2 class=&quot;uk-h3 uk-margin-remove-top&quot;&gt;Eating where locals eat&lt;/h2&gt;         &lt;p class=&quot;uk-text-muted&quot;&gt;The food is better. The bill is smaller. The room is full of people who already live there.&lt;/p&gt;       &lt;/div&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt;"
+                    />
+                </container>
+            </grid>
+        </main>
+        <footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"
+        />
+    </jcr:content>
+    <why-shoulder-season
+            jcr:primaryType="kes:Page"
+    >
+        <jcr:content
+                jcr:description="Cheaper flights, emptier trails, and hosts who still remember how to be hospitable."
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Why shoulder season is the real travel season"
+                kes:template="/libs/kestros/commons/base-site-template"
+                sling:resourceType="kestros/commons/components/kestros-base-page"
+        >
+            <header
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/inherited-content-area"
+            />
+            <main
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/content-area"
+            >
+                <hero
+                        inlineVariations="uk-section uk-section-primary"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <eyebrow
+                                inlineVariations="uk-text-meta uk-text-uppercase"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Story"
+                        />
+                        <heading
+                                headingText="Why shoulder season is the real travel season"
+                                headingType="h1"
+                                inlineVariations="uk-heading-medium"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <dek
+                                inlineVariations="uk-text-lead"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Cheaper flights, emptier trails, and hosts who still remember how to be hospitable."
+                        />
+                        <hero-image
+                                altText="Why shoulder season is the real travel season"
+                                imagePath="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1600&amp;q=80"
+                                inlineVariations="uk-width-1-1"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/image"
+                        />
+                        <byline
+                                inlineVariations="uk-text-small"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Jane Holloway. Editor, 20 years on the road. 6 min read."
+                        />
+                    </container>
+                </hero>
+                <body
+                        inlineVariations="uk-section uk-section-default"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <p0
+                                inlineVariations="uk-text-lead"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Everybody goes in summer. That is the whole problem. Hotels fill up, trains fill up, and by the middle of July the people who live in the places you came to see are exhausted."
+                        />
+                        <p1
+                                inlineVariations="uk-text-lead"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Shoulder season is the four to six weeks on either side of high season. Late April in Kyoto. Early November in Marrakech. March in the Andes, when the rains have let up but the buses still run. The weather is a small gamble. Everything else is better."
+                        />
+                        <p2
+                                inlineVariations="uk-text-lead"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="The fix is not complicated. Move your dates by three weeks. Bring a jacket you would not have needed in July. Book one hotel in advance and wing the rest. You will save a thousand dollars and the people you meet will be nicer about the fact that you showed up."
+                        />
+                    </container>
+                </body>
+                <more
+                        inlineVariations="uk-section uk-section-muted"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <heading
+                                headingText="More stories"
+                                headingType="h2"
+                                inlineVariations="uk-heading-small"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <other-articles
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                text=" &lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/articles/packing-light-2-weeks.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=1600&amp;q=80&quot; alt=&quot;Packing light for two weeks anywhere&quot; style=&quot;width: 100%; height: 160px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Marcus Adair. 8 min read.&lt;/p&gt;       &lt;h3 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Packing light for two weeks anywhere&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/articles/sleeping-on-trains.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=1600&amp;q=80&quot; alt=&quot;The quiet joy of sleeping on trains&quot; style=&quot;width: 100%; height: 160px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Priya Chen. 5 min read.&lt;/p&gt;       &lt;h3 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;The quiet joy of sleeping on trains&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/articles/eating-where-locals-eat.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1600&amp;q=80&quot; alt=&quot;Eating where locals eat&quot; style=&quot;width: 100%; height: 160px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Tomas Reyes. 7 min read.&lt;/p&gt;       &lt;h3 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Eating where locals eat&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt;"
+                        />
+                    </container>
+                </more>
+            </main>
+            <footer
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/inherited-content-area"
+            />
+        </jcr:content>
+    </why-shoulder-season>
+    <packing-light-2-weeks
+            jcr:primaryType="kes:Page"
+    >
+        <jcr:content
+                jcr:description="A carry-on, a personal item, and a list you can keep in your head."
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Packing light for two weeks anywhere"
+                kes:template="/libs/kestros/commons/base-site-template"
+                sling:resourceType="kestros/commons/components/kestros-base-page"
+        >
+            <header
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/inherited-content-area"
+            />
+            <main
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/content-area"
+            >
+                <hero
+                        inlineVariations="uk-section uk-section-primary"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <eyebrow
+                                inlineVariations="uk-text-meta uk-text-uppercase"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Story"
+                        />
+                        <heading
+                                headingText="Packing light for two weeks anywhere"
+                                headingType="h1"
+                                inlineVariations="uk-heading-medium"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <dek
+                                inlineVariations="uk-text-lead"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="A carry-on, a personal item, and a list you can keep in your head."
+                        />
+                        <hero-image
+                                altText="Packing light for two weeks anywhere"
+                                imagePath="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=1600&amp;q=80"
+                                inlineVariations="uk-width-1-1"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/image"
+                        />
+                        <byline
+                                inlineVariations="uk-text-small"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Marcus Adair. Field reporter, has packed the same bag for ten years. 8 min read."
+                        />
+                    </container>
+                </hero>
+                <body
+                        inlineVariations="uk-section uk-section-default"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <p0
+                                inlineVariations="uk-text-lead"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Two weeks in a carry-on is not a stunt. It is a system. The system is: clothes you will actually wear, in colors that go with each other, in fabrics that wash in a hotel sink and dry overnight. Anything else is a hobby."
+                        />
+                        <p1
+                                inlineVariations="uk-text-lead"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="The list, every trip: four shirts, two pants, one pair of shorts, four pairs of socks, four pairs of underwear, one fleece, one rain shell, one swimsuit, one pair of shoes you walk in, one pair of sandals. Plus toiletries. Plus a small zip pouch for chargers. That is it."
+                        />
+                        <p2
+                                inlineVariations="uk-text-lead"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="You will look at the list and think you are forgetting things. You are not. You are forgetting the things you would have bought anyway and never used. The bag you can actually carry is the trip you can actually take."
+                        />
+                    </container>
+                </body>
+                <more
+                        inlineVariations="uk-section uk-section-muted"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <heading
+                                headingText="More stories"
+                                headingType="h2"
+                                inlineVariations="uk-heading-small"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <other-articles
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                text=" &lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/articles/why-shoulder-season.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1600&amp;q=80&quot; alt=&quot;Why shoulder season is the real travel season&quot; style=&quot;width: 100%; height: 160px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Jane Holloway. 6 min read.&lt;/p&gt;       &lt;h3 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Why shoulder season is the real travel season&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/articles/sleeping-on-trains.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=1600&amp;q=80&quot; alt=&quot;The quiet joy of sleeping on trains&quot; style=&quot;width: 100%; height: 160px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Priya Chen. 5 min read.&lt;/p&gt;       &lt;h3 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;The quiet joy of sleeping on trains&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/articles/eating-where-locals-eat.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1600&amp;q=80&quot; alt=&quot;Eating where locals eat&quot; style=&quot;width: 100%; height: 160px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Tomas Reyes. 7 min read.&lt;/p&gt;       &lt;h3 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Eating where locals eat&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt;"
+                        />
+                    </container>
+                </more>
+            </main>
+            <footer
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/inherited-content-area"
+            />
+        </jcr:content>
+    </packing-light-2-weeks>
+    <sleeping-on-trains
+            jcr:primaryType="kes:Page"
+    >
+        <jcr:content
+                jcr:description="You fall asleep in one country and wake up in another. No hotel bill, no security line."
+                jcr:primaryType="nt:unstructured"
+                jcr:title="The quiet joy of sleeping on trains"
+                kes:template="/libs/kestros/commons/base-site-template"
+                sling:resourceType="kestros/commons/components/kestros-base-page"
+        >
+            <header
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/inherited-content-area"
+            />
+            <main
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/content-area"
+            >
+                <hero
+                        inlineVariations="uk-section uk-section-primary"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <eyebrow
+                                inlineVariations="uk-text-meta uk-text-uppercase"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Story"
+                        />
+                        <heading
+                                headingText="The quiet joy of sleeping on trains"
+                                headingType="h1"
+                                inlineVariations="uk-heading-medium"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <dek
+                                inlineVariations="uk-text-lead"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="You fall asleep in one country and wake up in another. No hotel bill, no security line."
+                        />
+                        <hero-image
+                                altText="The quiet joy of sleeping on trains"
+                                imagePath="https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=1600&amp;q=80"
+                                inlineVariations="uk-width-1-1"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/image"
+                        />
+                        <byline
+                                inlineVariations="uk-text-small"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Priya Chen. Photographer. Not a morning person.. 5 min read."
+                        />
+                    </container>
+                </hero>
+                <body
+                        inlineVariations="uk-section uk-section-default"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <p0
+                                inlineVariations="uk-text-lead"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Night trains are the second best way to travel and quietly the best. You go to sleep in one city and wake up in another. The transit happens while you are unconscious. You do not have to think about it."
+                        />
+                        <p1
+                                inlineVariations="uk-text-lead"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Europe still has them. Eastern Europe has more. India runs the largest network in the world. There is a beautiful one in Vietnam between Hanoi and Hue. The trick is to book a sleeper, not a seat. Pay the extra fifteen dollars. The bunk is the difference between a night of sleep and a bad joke in the morning."
+                        />
+                        <p2
+                                inlineVariations="uk-text-lead"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Pack earplugs. Pack a snack for when you wake up at 3am for no reason. Tip the conductor if they are good, which they usually are."
+                        />
+                    </container>
+                </body>
+                <more
+                        inlineVariations="uk-section uk-section-muted"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <heading
+                                headingText="More stories"
+                                headingType="h2"
+                                inlineVariations="uk-heading-small"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <other-articles
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                text=" &lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/articles/why-shoulder-season.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1600&amp;q=80&quot; alt=&quot;Why shoulder season is the real travel season&quot; style=&quot;width: 100%; height: 160px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Jane Holloway. 6 min read.&lt;/p&gt;       &lt;h3 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Why shoulder season is the real travel season&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/articles/packing-light-2-weeks.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=1600&amp;q=80&quot; alt=&quot;Packing light for two weeks anywhere&quot; style=&quot;width: 100%; height: 160px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Marcus Adair. 8 min read.&lt;/p&gt;       &lt;h3 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Packing light for two weeks anywhere&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/articles/eating-where-locals-eat.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1600&amp;q=80&quot; alt=&quot;Eating where locals eat&quot; style=&quot;width: 100%; height: 160px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Tomas Reyes. 7 min read.&lt;/p&gt;       &lt;h3 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Eating where locals eat&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt;"
+                        />
+                    </container>
+                </more>
+            </main>
+            <footer
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/inherited-content-area"
+            />
+        </jcr:content>
+    </sleeping-on-trains>
+    <eating-where-locals-eat
+            jcr:primaryType="kes:Page"
+    >
+        <jcr:content
+                jcr:description="The food is better. The bill is smaller. The room is full of people who already live there."
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Eating where locals eat"
+                kes:template="/libs/kestros/commons/base-site-template"
+                sling:resourceType="kestros/commons/components/kestros-base-page"
+        >
+            <header
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/inherited-content-area"
+            />
+            <main
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/content-area"
+            >
+                <hero
+                        inlineVariations="uk-section uk-section-primary"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <eyebrow
+                                inlineVariations="uk-text-meta uk-text-uppercase"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Story"
+                        />
+                        <heading
+                                headingText="Eating where locals eat"
+                                headingType="h1"
+                                inlineVariations="uk-heading-medium"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <dek
+                                inlineVariations="uk-text-lead"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="The food is better. The bill is smaller. The room is full of people who already live there."
+                        />
+                        <hero-image
+                                altText="Eating where locals eat"
+                                imagePath="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1600&amp;q=80"
+                                inlineVariations="uk-width-1-1"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/image"
+                        />
+                        <byline
+                                inlineVariations="uk-text-small"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Tomas Reyes. Food writer, bad at reservations. 7 min read."
+                        />
+                    </container>
+                </hero>
+                <body
+                        inlineVariations="uk-section uk-section-default"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <p0
+                                inlineVariations="uk-text-lead"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="A rule of thumb: walk three streets away from anywhere a tour bus could park, look for handwritten menus, and pick the room with the most people who look like they did not get on a plane this week."
+                        />
+                        <p1
+                                inlineVariations="uk-text-lead"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Every city has one street that every guidebook sends visitors to. Skip that street. Walk to where the office workers eat lunch. Walk to where the shop owners eat dinner. The food is what people make for the people they love, and that is a different meal than the one made for tourists."
+                        />
+                        <p2
+                                inlineVariations="uk-text-lead"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="When in doubt, ask the woman behind the counter at the bakery. She will not steer you wrong, and on the way out the bread will still be warm."
+                        />
+                    </container>
+                </body>
+                <more
+                        inlineVariations="uk-section uk-section-muted"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <heading
+                                headingText="More stories"
+                                headingType="h2"
+                                inlineVariations="uk-heading-small"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <other-articles
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                text=" &lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/articles/why-shoulder-season.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1600&amp;q=80&quot; alt=&quot;Why shoulder season is the real travel season&quot; style=&quot;width: 100%; height: 160px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Jane Holloway. 6 min read.&lt;/p&gt;       &lt;h3 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Why shoulder season is the real travel season&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/articles/packing-light-2-weeks.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=1600&amp;q=80&quot; alt=&quot;Packing light for two weeks anywhere&quot; style=&quot;width: 100%; height: 160px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Marcus Adair. 8 min read.&lt;/p&gt;       &lt;h3 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Packing light for two weeks anywhere&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/articles/sleeping-on-trains.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=1600&amp;q=80&quot; alt=&quot;The quiet joy of sleeping on trains&quot; style=&quot;width: 100%; height: 160px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Priya Chen. 5 min read.&lt;/p&gt;       &lt;h3 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;The quiet joy of sleeping on trains&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt;"
+                        />
+                    </container>
+                </more>
+            </main>
+            <footer
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/inherited-content-area"
+            />
+        </jcr:content>
+    </eating-where-locals-eat>
+</jcr:root>

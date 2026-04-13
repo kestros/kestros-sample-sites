@@ -9,7 +9,6 @@
 >
     <jcr:content
             jcr:description="Every fixture in the 2025-26 season, grouped by matchweek."
-            jcr:mixinTypes="[mix:lockable]"
             jcr:primaryType="nt:unstructured"
             jcr:title="Schedule"
             kes:template="/libs/kestros/commons/base-site-template"

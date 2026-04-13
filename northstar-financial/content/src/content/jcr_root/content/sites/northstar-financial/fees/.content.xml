@@ -9,7 +9,6 @@
 >
     <jcr:content
             jcr:description="Fee-only. No commissions, no hidden markups."
-            jcr:mixinTypes="[mix:lockable]"
             jcr:primaryType="nt:unstructured"
             jcr:title="Simple, Transparent Fees"
             kes:template="/libs/kestros/commons/base-site-template"

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:rep="http://www.jcp.org/jcr/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="kes:Page"
+>
+    <jcr:content
+            jcr:description="Madagascar - Lemurs, baobabs, and an island ecosystem you will not find anywhere else."
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Madagascar"
+            kes:template="/libs/kestros/commons/base-site-template"
+            sling:resourceType="kestros/commons/components/kestros-base-page"
+    >
+        <header
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"
+        />
+        <main
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/content-area"
+        >
+            <hero
+                    inlineVariations="uk-section uk-section-primary"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        inlineVariations="uk-container"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <region
+                            inlineVariations="uk-text-meta uk-text-uppercase"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Indian Ocean, off East Africa"
+                    />
+                    <heading
+                            headingText="Madagascar"
+                            headingType="h1"
+                            inlineVariations="uk-heading-medium"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <dek
+                            inlineVariations="uk-text-lead"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Lemurs, baobabs, and an island ecosystem you will not find anywhere else."
+                    />
+                    <hero-image
+                            altText="Madagascar"
+                            imagePath="https://images.unsplash.com/photo-1589553416260-f586c8f1514f?w=1600&amp;q=80"
+                            inlineVariations="uk-width-1-1"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/image"
+                    />
+                    <when
+                            inlineVariations="uk-text-small"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="When to go: Apr to Oct (dry season)"
+                    />
+                </container>
+            </hero>
+            <story
+                    inlineVariations="uk-section uk-section-default"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        inlineVariations="uk-container"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <p0
+                            inlineVariations="uk-text-lead"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Madagascar is one of the strangest places on the planet, in the best way. Eight hundred animal species live here and nowhere else. The baobab trees in the west look like pencil drawings stood on end. The reef in the south is the size of Belize. Most travelers see almost none of it, because the country is enormous and the roads are slow."
+                    />
+                    <p1
+                            inlineVariations="uk-text-lead"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Pick one region for a first trip. The classic is the southeast, with Andasibe-Mantadia for indri lemurs and Ranomafana for the cloud forest. Add a few days on the coast at Ifaty if you can."
+                    />
+                    <p2
+                            inlineVariations="uk-text-lead"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Travel slowly on purpose. The journey is the point. The country runs on patience and the rewards are large for travelers who pack some."
+                    />
+                </container>
+            </story>
+            <highlights
+                    inlineVariations="uk-section uk-section-muted"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        inlineVariations="uk-container"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <heading
+                            headingText="Highlights"
+                            headingType="h2"
+                            inlineVariations="uk-heading-small"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <highlights-list
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                            text=" &lt;ul class=&quot;uk-list uk-list-bullet uk-text-lead&quot;&gt;   &lt;li&gt;The indri call at dawn in Andasibe&lt;/li&gt;   &lt;li&gt;The Avenue of the Baobabs at the hour before sunset&lt;/li&gt;   &lt;li&gt;Snorkeling the reef at Ifaty&lt;/li&gt;   &lt;li&gt;The slow train down to Manakara&lt;/li&gt;   &lt;li&gt;Zebu skewers from a roadside grill, wherever you find one&lt;/li&gt; &lt;/ul&gt;"
+                    />
+                </container>
+            </highlights>
+            <tip
+                    inlineVariations="uk-section uk-section-secondary"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        inlineVariations="uk-container"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <eyebrow
+                            inlineVariations="uk-text-meta uk-text-uppercase"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Field tip"
+                    />
+                    <heading
+                            headingText="Hire a local driver-guide"
+                            headingType="h2"
+                            inlineVariations="uk-heading-small"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <body
+                            inlineVariations="uk-text-lead"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Self-driving Madagascar is a project, not a vacation. A local driver knows which sections of road are passable in the rain, which villages are worth stopping in, and where to sleep when you end up four hours behind schedule. Budget for it. It is the best money you will spend on the trip."
+                    />
+                </container>
+            </tip>
+            <more
+                    inlineVariations="uk-section uk-section-default"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        inlineVariations="uk-container"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <heading
+                            headingText="Other destinations"
+                            headingType="h2"
+                            inlineVariations="uk-heading-small"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <other-cards
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                            text=" &lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/destinations/kyoto.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=1600&amp;q=80&quot; alt=&quot;Kyoto&quot; style=&quot;width: 100%; height: 180px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Kansai, Japan&lt;/p&gt;       &lt;h3 class=&quot;uk-h4 uk-margin-remove-top&quot;&gt;Kyoto&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/destinations/patagonia.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1600&amp;q=80&quot; alt=&quot;Patagonia&quot; style=&quot;width: 100%; height: 180px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Southern Argentina and Chile&lt;/p&gt;       &lt;h3 class=&quot;uk-h4 uk-margin-remove-top&quot;&gt;Patagonia&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/destinations/marrakech.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1597212618440-806262de4f6b?w=1600&amp;q=80&quot; alt=&quot;Marrakech&quot; style=&quot;width: 100%; height: 180px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Morocco&lt;/p&gt;       &lt;h3 class=&quot;uk-h4 uk-margin-remove-top&quot;&gt;Marrakech&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt;"
+                    />
+                </container>
+            </more>
+        </main>
+        <footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"
+        />
+    </jcr:content>
+</jcr:root>

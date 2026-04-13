@@ -9,7 +9,6 @@
 >
     <jcr:content
             jcr:description="Thinking out loud about markets, planning, and the decisions that matter."
-            jcr:mixinTypes="[mix:lockable]"
             jcr:primaryType="nt:unstructured"
             jcr:title="Insights"
             kes:template="/libs/kestros/commons/base-site-template"

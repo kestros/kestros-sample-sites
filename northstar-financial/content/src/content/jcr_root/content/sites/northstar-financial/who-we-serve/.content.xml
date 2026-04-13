@@ -9,7 +9,6 @@
 >
     <jcr:content
             jcr:description="We work with people navigating real financial transitions."
-            jcr:mixinTypes="[mix:lockable]"
             jcr:primaryType="nt:unstructured"
             jcr:title="Clients We Know Best"
             kes:template="/libs/kestros/commons/base-site-template"

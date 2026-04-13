@@ -9,7 +9,6 @@
 >
     <jcr:content
             jcr:description="Our story, our values, and our commitment to clients."
-            jcr:mixinTypes="[mix:lockable]"
             jcr:primaryType="nt:unstructured"
             jcr:title="About Northstar Financial"
             kes:template="/libs/kestros/commons/base-site-template"

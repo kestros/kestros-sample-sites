@@ -9,7 +9,6 @@
 >
     <jcr:content
             jcr:description="Every Meridian Premier League season since the league formed."
-            jcr:mixinTypes="[mix:lockable]"
             jcr:primaryType="nt:unstructured"
             jcr:title="Seasons"
             kes:template="/libs/kestros/commons/base-site-template"

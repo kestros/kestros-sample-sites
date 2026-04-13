@@ -9,7 +9,6 @@
 >
     <jcr:content
             jcr:description="Every match played in the 2025-26 season with scorers and lineups."
-            jcr:mixinTypes="[mix:lockable]"
             jcr:primaryType="nt:unstructured"
             jcr:title="Match reports"
             kes:template="/libs/kestros/commons/base-site-template"
@@ -232,7 +231,6 @@
     >
         <jcr:content
                 jcr:description="Week 12 - Riverside Park - 2-1 to the home side."
-                jcr:mixinTypes="[mix:lockable]"
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Riverside FC vs Ashdown Athletic"
                 kes:template="/libs/kestros/commons/base-site-template"

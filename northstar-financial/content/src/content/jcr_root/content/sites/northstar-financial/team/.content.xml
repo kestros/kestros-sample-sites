@@ -9,7 +9,6 @@
 >
     <jcr:content
             jcr:description="Meet the advisors who will manage your relationship."
-            jcr:mixinTypes="[mix:lockable]"
             jcr:primaryType="nt:unstructured"
             jcr:title="Our Team"
             kes:template="/libs/kestros/commons/base-site-template"

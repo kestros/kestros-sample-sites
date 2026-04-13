@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:rep="http://www.jcp.org/jcr/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="kes:Page"
+>
+    <jcr:content
+            jcr:description="Marrakech - A walled city of dyers, lanterns, and orange juice carts that close at midnight."
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Marrakech"
+            kes:template="/libs/kestros/commons/base-site-template"
+            sling:resourceType="kestros/commons/components/kestros-base-page"
+    >
+        <header
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"
+        />
+        <main
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/content-area"
+        >
+            <hero
+                    inlineVariations="uk-section uk-section-primary"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        inlineVariations="uk-container"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <region
+                            inlineVariations="uk-text-meta uk-text-uppercase"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Morocco"
+                    />
+                    <heading
+                            headingText="Marrakech"
+                            headingType="h1"
+                            inlineVariations="uk-heading-medium"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <dek
+                            inlineVariations="uk-text-lead"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="A walled city of dyers, lanterns, and orange juice carts that close at midnight."
+                    />
+                    <hero-image
+                            altText="Marrakech"
+                            imagePath="https://images.unsplash.com/photo-1597212618440-806262de4f6b?w=1600&amp;q=80"
+                            inlineVariations="uk-width-1-1"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/image"
+                    />
+                    <when
+                            inlineVariations="uk-text-small"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="When to go: Oct to Apr"
+                    />
+                </container>
+            </hero>
+            <story
+                    inlineVariations="uk-section uk-section-default"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        inlineVariations="uk-container"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <p0
+                            inlineVariations="uk-text-lead"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Marrakech is loud, fast, and deeply hospitable. The medina is a four-square-mile maze that took a millennium to organize and refuses to be solved in three days. Get lost on purpose. The fastest way out of any wrong turn is to walk forward and ask politely."
+                    />
+                    <p1
+                            inlineVariations="uk-text-lead"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Stay in a riad inside the walls. Day one is for orientation and tea. Day two for the souks (leather, spices, lanterns, in that order). Day three for the tanneries and a long lunch on a rooftop."
+                    />
+                    <p2
+                            inlineVariations="uk-text-lead"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="A side trip to the Atlas Mountains is one bus ride away and worth half a day at least. The contrast of the high passes after the heat of the medina recalibrates the whole trip."
+                    />
+                </container>
+            </story>
+            <highlights
+                    inlineVariations="uk-section uk-section-muted"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        inlineVariations="uk-container"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <heading
+                            headingText="Highlights"
+                            headingType="h2"
+                            inlineVariations="uk-heading-small"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <highlights-list
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                            text=" &lt;ul class=&quot;uk-list uk-list-bullet uk-text-lead&quot;&gt;   &lt;li&gt;Mint tea on a rooftop just before sunset&lt;/li&gt;   &lt;li&gt;The souks before noon, before the crowds find them&lt;/li&gt;   &lt;li&gt;Majorelle Garden in the morning light&lt;/li&gt;   &lt;li&gt;Tagine at a place without a sign out front&lt;/li&gt;   &lt;li&gt;Day trip into the Ourika Valley&lt;/li&gt; &lt;/ul&gt;"
+                    />
+                </container>
+            </highlights>
+            <tip
+                    inlineVariations="uk-section uk-section-secondary"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        inlineVariations="uk-container"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <eyebrow
+                            inlineVariations="uk-text-meta uk-text-uppercase"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Field tip"
+                    />
+                    <heading
+                            headingText="Carry small bills"
+                            headingType="h2"
+                            inlineVariations="uk-heading-small"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <body
+                            inlineVariations="uk-text-lead"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="The medina runs on cash. Keep a stack of small denomination dirhams on you at all times. Tipping is part of how things work here, not an afterthought."
+                    />
+                </container>
+            </tip>
+            <more
+                    inlineVariations="uk-section uk-section-default"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        inlineVariations="uk-container"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <heading
+                            headingText="Other destinations"
+                            headingType="h2"
+                            inlineVariations="uk-heading-small"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <other-cards
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                            text=" &lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/destinations/kyoto.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=1600&amp;q=80&quot; alt=&quot;Kyoto&quot; style=&quot;width: 100%; height: 180px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Kansai, Japan&lt;/p&gt;       &lt;h3 class=&quot;uk-h4 uk-margin-remove-top&quot;&gt;Kyoto&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/destinations/patagonia.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1600&amp;q=80&quot; alt=&quot;Patagonia&quot; style=&quot;width: 100%; height: 180px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Southern Argentina and Chile&lt;/p&gt;       &lt;h3 class=&quot;uk-h4 uk-margin-remove-top&quot;&gt;Patagonia&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/explore/destinations/iceland-ring.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1504829857797-ddff29c27927?w=1600&amp;q=80&quot; alt=&quot;Iceland Ring Road&quot; style=&quot;width: 100%; height: 180px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Iceland&lt;/p&gt;       &lt;h3 class=&quot;uk-h4 uk-margin-remove-top&quot;&gt;Iceland Ring Road&lt;/h3&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt;"
+                    />
+                </container>
+            </more>
+        </main>
+        <footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"
+        />
+    </jcr:content>
+</jcr:root>

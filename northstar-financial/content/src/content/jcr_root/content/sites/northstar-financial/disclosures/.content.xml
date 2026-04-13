@@ -9,7 +9,6 @@
 >
     <jcr:content
             jcr:description="Required regulatory disclosures and firm information."
-            jcr:mixinTypes="[mix:lockable]"
             jcr:primaryType="nt:unstructured"
             jcr:title="Disclosures &amp; Legal"
             kes:template="/libs/kestros/commons/base-site-template"
