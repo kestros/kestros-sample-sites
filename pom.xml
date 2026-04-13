@@ -58,6 +58,9 @@
     <module>basic-components-sample</module>
     <module>signal-conf</module>
     <module>league-demo</module>
+    <module>haven-architecture</module>
+    <module>launchpad-io</module>
+    <module>northstar-financial</module>
   </modules>
 
   <dependencyManagement>

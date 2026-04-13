@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:rep="http://www.jcp.org/jcr/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="kes:Page"
+>
+    <jcr:content
+            jcr:description="Every match played in the 2025-26 season with scorers and lineups."
+            jcr:mixinTypes="[mix:lockable]"
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Match reports"
+            kes:template="/libs/kestros/commons/base-site-template"
+            sling:resourceType="kestros/commons/components/kestros-base-page"
+    >
+        <header
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"
+        />
+        <main
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/content-area"
+        >
+            <hero
+                    inlineVariations="uk-section uk-section-primary"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        inlineVariations="uk-container uk-container-large"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <eyebrow
+                            inlineVariations="uk-text-meta uk-text-uppercase"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Results"
+                    />
+                    <heading
+                            headingText="Match reports."
+                            headingType="h1"
+                            inlineVariations="uk-heading-medium"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <subtitle
+                            inlineVariations="uk-text-lead"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Every match played in the 2025-26 season, with scorers, lineups, and the five-minute version of what happened."
+                    />
+                </container>
+            </hero>
+            <recent
+                    inlineVariations="uk-section uk-section-default"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        inlineVariations="uk-container uk-container-large"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <eyebrow
+                            inlineVariations="uk-text-meta uk-text-uppercase"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Played"
+                    />
+                    <heading
+                            headingText="Recent results."
+                            headingType="h2"
+                            inlineVariations="uk-heading-small"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <match-table
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                            text="&lt;table class=&quot;uk-table uk-table-striped uk-table-small uk-table-middle&quot;&gt;
+        &lt;thead&gt;&lt;tr&gt;&lt;th&gt;Date&lt;/th&gt;&lt;th&gt;Week&lt;/th&gt;&lt;th&gt;Fixture&lt;/th&gt;&lt;th&gt;Score&lt;/th&gt;&lt;th&gt;Winner&lt;/th&gt;&lt;th&gt;Report&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+        &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td class=&quot;uk-text-muted uk-text-small&quot;&gt;2026-04-04&lt;/td&gt;
+          &lt;td class=&quot;uk-text-small&quot;&gt;W12&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;Riverside FC&lt;/strong&gt; vs &lt;strong&gt;Ashdown Athletic&lt;/strong&gt;&lt;/td&gt;
+          &lt;td class=&quot;uk-text-bold&quot;&gt;2 - 1&lt;/td&gt;
+          &lt;td class=&quot;uk-text-muted uk-text-small&quot;&gt;Riverside FC&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&quot;/content/sites/league-demo/matches/match-1.html&quot; class=&quot;uk-text-small&quot;&gt;Match report&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td class=&quot;uk-text-muted uk-text-small&quot;&gt;2026-04-04&lt;/td&gt;
+          &lt;td class=&quot;uk-text-small&quot;&gt;W12&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;Meridian City&lt;/strong&gt; vs &lt;strong&gt;Stone Valley&lt;/strong&gt;&lt;/td&gt;
+          &lt;td class=&quot;uk-text-bold&quot;&gt;3 - 0&lt;/td&gt;
+          &lt;td class=&quot;uk-text-muted uk-text-small&quot;&gt;Meridian City&lt;/td&gt;
+          &lt;td&gt;&lt;span class=&quot;uk-text-muted uk-text-small&quot;&gt;Report&lt;/span&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td class=&quot;uk-text-muted uk-text-small&quot;&gt;2026-04-04&lt;/td&gt;
+          &lt;td class=&quot;uk-text-small&quot;&gt;W12&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;Northside United&lt;/strong&gt; vs &lt;strong&gt;Westbrook Rovers&lt;/strong&gt;&lt;/td&gt;
+          &lt;td class=&quot;uk-text-bold&quot;&gt;1 - 1&lt;/td&gt;
+          &lt;td class=&quot;uk-text-muted uk-text-small&quot;&gt;Draw&lt;/td&gt;
+          &lt;td&gt;&lt;span class=&quot;uk-text-muted uk-text-small&quot;&gt;Report&lt;/span&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td class=&quot;uk-text-muted uk-text-small&quot;&gt;2026-04-05&lt;/td&gt;
+          &lt;td class=&quot;uk-text-small&quot;&gt;W12&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;Port Heights&lt;/strong&gt; vs &lt;strong&gt;Oakhill FC&lt;/strong&gt;&lt;/td&gt;
+          &lt;td class=&quot;uk-text-bold&quot;&gt;2 - 2&lt;/td&gt;
+          &lt;td class=&quot;uk-text-muted uk-text-small&quot;&gt;Draw&lt;/td&gt;
+          &lt;td&gt;&lt;span class=&quot;uk-text-muted uk-text-small&quot;&gt;Report&lt;/span&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td class=&quot;uk-text-muted uk-text-small&quot;&gt;2026-04-05&lt;/td&gt;
+          &lt;td class=&quot;uk-text-small&quot;&gt;W12&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;Queensbury Wanderers&lt;/strong&gt; vs &lt;strong&gt;Southshore United&lt;/strong&gt;&lt;/td&gt;
+          &lt;td class=&quot;uk-text-bold&quot;&gt;1 - 0&lt;/td&gt;
+          &lt;td class=&quot;uk-text-muted uk-text-small&quot;&gt;Queensbury Wanderers&lt;/td&gt;
+          &lt;td&gt;&lt;span class=&quot;uk-text-muted uk-text-small&quot;&gt;Report&lt;/span&gt;&lt;/td&gt;
+        &lt;/tr&gt;&lt;/tbody&gt;
+      &lt;/table&gt;
+      &lt;p class=&quot;uk-text-small uk-text-muted uk-margin-small-top&quot;&gt;Detailed reports are currently available for one exemplar match. Full match reports for every fixture will follow.&lt;/p&gt;"
+                    />
+                </container>
+            </recent>
+            <upcoming
+                    inlineVariations="uk-section uk-section-muted"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        inlineVariations="uk-container uk-container-large"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <eyebrow
+                            inlineVariations="uk-text-meta uk-text-uppercase"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Scheduled"
+                    />
+                    <heading
+                            headingText="Next up."
+                            headingType="h2"
+                            inlineVariations="uk-heading-small"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <upcoming-table
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                            text="&lt;table class=&quot;uk-table uk-table-small uk-table-middle&quot;&gt;
+        &lt;thead&gt;&lt;tr&gt;&lt;th&gt;Date&lt;/th&gt;&lt;th&gt;Week&lt;/th&gt;&lt;th&gt;Fixture&lt;/th&gt;&lt;th&gt;KO&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+        &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td class=&quot;uk-text-muted uk-text-small&quot;&gt;2026-04-11&lt;/td&gt;
+          &lt;td class=&quot;uk-text-small&quot;&gt;W13&lt;/td&gt;
+          &lt;td&gt;Stone Valley vs Riverside FC&lt;/td&gt;
+          &lt;td class=&quot;uk-text-muted uk-text-small&quot;&gt;15:00&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td class=&quot;uk-text-muted uk-text-small&quot;&gt;2026-04-11&lt;/td&gt;
+          &lt;td class=&quot;uk-text-small&quot;&gt;W13&lt;/td&gt;
+          &lt;td&gt;Ashdown Athletic vs Meridian City&lt;/td&gt;
+          &lt;td class=&quot;uk-text-muted uk-text-small&quot;&gt;17:30&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td class=&quot;uk-text-muted uk-text-small&quot;&gt;2026-04-11&lt;/td&gt;
+          &lt;td class=&quot;uk-text-small&quot;&gt;W13&lt;/td&gt;
+          &lt;td&gt;Westbrook Rovers vs Port Heights&lt;/td&gt;
+          &lt;td class=&quot;uk-text-muted uk-text-small&quot;&gt;20:00&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td class=&quot;uk-text-muted uk-text-small&quot;&gt;2026-04-12&lt;/td&gt;
+          &lt;td class=&quot;uk-text-small&quot;&gt;W13&lt;/td&gt;
+          &lt;td&gt;Oakhill FC vs Queensbury Wanderers&lt;/td&gt;
+          &lt;td class=&quot;uk-text-muted uk-text-small&quot;&gt;14:00&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td class=&quot;uk-text-muted uk-text-small&quot;&gt;2026-04-12&lt;/td&gt;
+          &lt;td class=&quot;uk-text-small&quot;&gt;W13&lt;/td&gt;
+          &lt;td&gt;Southshore United vs Northside United&lt;/td&gt;
+          &lt;td class=&quot;uk-text-muted uk-text-small&quot;&gt;16:30&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td class=&quot;uk-text-muted uk-text-small&quot;&gt;2026-04-18&lt;/td&gt;
+          &lt;td class=&quot;uk-text-small&quot;&gt;W14&lt;/td&gt;
+          &lt;td&gt;Riverside FC vs Meridian City&lt;/td&gt;
+          &lt;td class=&quot;uk-text-muted uk-text-small&quot;&gt;17:00&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td class=&quot;uk-text-muted uk-text-small&quot;&gt;2026-04-18&lt;/td&gt;
+          &lt;td class=&quot;uk-text-small&quot;&gt;W14&lt;/td&gt;
+          &lt;td&gt;Ashdown Athletic vs Port Heights&lt;/td&gt;
+          &lt;td class=&quot;uk-text-muted uk-text-small&quot;&gt;15:00&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td class=&quot;uk-text-muted uk-text-small&quot;&gt;2026-04-19&lt;/td&gt;
+          &lt;td class=&quot;uk-text-small&quot;&gt;W14&lt;/td&gt;
+          &lt;td&gt;Northside United vs Stone Valley&lt;/td&gt;
+          &lt;td class=&quot;uk-text-muted uk-text-small&quot;&gt;14:00&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td class=&quot;uk-text-muted uk-text-small&quot;&gt;2026-04-19&lt;/td&gt;
+          &lt;td class=&quot;uk-text-small&quot;&gt;W14&lt;/td&gt;
+          &lt;td&gt;Westbrook Rovers vs Oakhill FC&lt;/td&gt;
+          &lt;td class=&quot;uk-text-muted uk-text-small&quot;&gt;16:00&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td class=&quot;uk-text-muted uk-text-small&quot;&gt;2026-04-19&lt;/td&gt;
+          &lt;td class=&quot;uk-text-small&quot;&gt;W14&lt;/td&gt;
+          &lt;td&gt;Queensbury Wanderers vs Southshore United&lt;/td&gt;
+          &lt;td class=&quot;uk-text-muted uk-text-small&quot;&gt;18:30&lt;/td&gt;
+        &lt;/tr&gt;&lt;/tbody&gt;
+      &lt;/table&gt;"
+                    />
+                </container>
+            </upcoming>
+        </main>
+        <footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"
+        />
+    </jcr:content>
+    <match-1
+            jcr:primaryType="kes:Page"
+    >
+        <jcr:content
+                jcr:description="Week 12 - Riverside Park - 2-1 to the home side."
+                jcr:mixinTypes="[mix:lockable]"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Riverside FC vs Ashdown Athletic"
+                kes:template="/libs/kestros/commons/base-site-template"
+                sling:resourceType="kestros/commons/components/kestros-base-page"
+        >
+            <header
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/inherited-content-area"
+            />
+            <main
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/content-area"
+            >
+                <hero
+                        inlineVariations="uk-section uk-section-primary"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container uk-container-large"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <eyebrow
+                                inlineVariations="uk-text-meta uk-text-uppercase"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Week 12 - 2026-04-04 - 15:00 - Riverside Park"
+                        />
+                        <scoreboard
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                text="
+      &lt;div class=&quot;uk-grid-small uk-child-width-1-3 uk-flex-middle uk-text-center&quot; uk-grid&gt;
+        &lt;div&gt;
+          &lt;div class=&quot;uk-text-large uk-text-bold&quot;&gt;Riverside FC&lt;/div&gt;
+          &lt;div class=&quot;uk-text-muted uk-text-small&quot;&gt;Home&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+          &lt;div class=&quot;uk-heading-medium uk-margin-remove&quot;&gt;2 - 1&lt;/div&gt;
+          &lt;div class=&quot;uk-text-meta uk-text-uppercase&quot;&gt;Full time&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+          &lt;div class=&quot;uk-text-large uk-text-bold&quot;&gt;Ashdown Athletic&lt;/div&gt;
+          &lt;div class=&quot;uk-text-muted uk-text-small&quot;&gt;Away&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;"
+                        />
+                    </container>
+                </hero>
+                <scoring
+                        inlineVariations="uk-section uk-section-default"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container uk-container-large"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <eyebrow
+                                inlineVariations="uk-text-meta uk-text-uppercase"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Scoring"
+                        />
+                        <heading
+                                headingText="How the goals went in."
+                                headingType="h2"
+                                inlineVariations="uk-heading-small"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <goals-table
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                text="&lt;table class=&quot;uk-table uk-table-divider uk-table-small&quot;&gt;
+        &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&quot;uk-text-muted&quot;&gt;12'&lt;/td&gt;
+        &lt;td&gt;&lt;strong&gt;Riverside FC&lt;/strong&gt;&lt;/td&gt;
+        &lt;td&gt;Luca Mendez&lt;/td&gt;
+        &lt;td class=&quot;uk-text-muted uk-text-small&quot;&gt;assist: Ivan Petrovic&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class=&quot;uk-text-muted&quot;&gt;34'&lt;/td&gt;
+        &lt;td&gt;&lt;strong&gt;Ashdown Athletic&lt;/strong&gt;&lt;/td&gt;
+        &lt;td&gt;Jamal Washington&lt;/td&gt;
+        &lt;td class=&quot;uk-text-muted uk-text-small&quot;&gt;unassisted&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class=&quot;uk-text-muted&quot;&gt;78'&lt;/td&gt;
+        &lt;td&gt;&lt;strong&gt;Riverside FC&lt;/strong&gt;&lt;/td&gt;
+        &lt;td&gt;Luca Mendez&lt;/td&gt;
+        &lt;td class=&quot;uk-text-muted uk-text-small&quot;&gt;assist: Kofi Adomako&lt;/td&gt;
+      &lt;/tr&gt;&lt;/tbody&gt;
+      &lt;/table&gt;"
+                        />
+                    </container>
+                </scoring>
+                <team-stats
+                        inlineVariations="uk-section uk-section-muted"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container uk-container-large"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <heading
+                                headingText="Team stats."
+                                headingType="h2"
+                                inlineVariations="uk-heading-small"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <stats-table
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                text="&lt;table class=&quot;uk-table uk-table-small uk-table-divider&quot;&gt;
+        &lt;thead&gt;&lt;tr&gt;
+          &lt;th class=&quot;uk-text-right&quot;&gt;Riverside FC&lt;/th&gt;&lt;th class=&quot;uk-text-center&quot;&gt;&lt;/th&gt;&lt;th class=&quot;uk-text-left&quot;&gt;Ashdown Athletic&lt;/th&gt;
+        &lt;/tr&gt;&lt;/thead&gt;
+        &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class=&quot;uk-text-right uk-text-bold&quot;&gt;58%&lt;/td&gt;
+        &lt;td class=&quot;uk-text-center uk-text-muted&quot;&gt;Possession&lt;/td&gt;
+        &lt;td class=&quot;uk-text-left uk-text-bold&quot;&gt;42%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class=&quot;uk-text-right uk-text-bold&quot;&gt;14&lt;/td&gt;
+        &lt;td class=&quot;uk-text-center uk-text-muted&quot;&gt;Shots&lt;/td&gt;
+        &lt;td class=&quot;uk-text-left uk-text-bold&quot;&gt;9&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class=&quot;uk-text-right uk-text-bold&quot;&gt;7&lt;/td&gt;
+        &lt;td class=&quot;uk-text-center uk-text-muted&quot;&gt;Shots on target&lt;/td&gt;
+        &lt;td class=&quot;uk-text-left uk-text-bold&quot;&gt;3&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class=&quot;uk-text-right uk-text-bold&quot;&gt;6&lt;/td&gt;
+        &lt;td class=&quot;uk-text-center uk-text-muted&quot;&gt;Corners&lt;/td&gt;
+        &lt;td class=&quot;uk-text-left uk-text-bold&quot;&gt;4&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class=&quot;uk-text-right uk-text-bold&quot;&gt;11&lt;/td&gt;
+        &lt;td class=&quot;uk-text-center uk-text-muted&quot;&gt;Fouls&lt;/td&gt;
+        &lt;td class=&quot;uk-text-left uk-text-bold&quot;&gt;14&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class=&quot;uk-text-right uk-text-bold&quot;&gt;1&lt;/td&gt;
+        &lt;td class=&quot;uk-text-center uk-text-muted&quot;&gt;Yellow cards&lt;/td&gt;
+        &lt;td class=&quot;uk-text-left uk-text-bold&quot;&gt;3&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td class=&quot;uk-text-right uk-text-bold&quot;&gt;0&lt;/td&gt;
+        &lt;td class=&quot;uk-text-center uk-text-muted&quot;&gt;Red cards&lt;/td&gt;
+        &lt;td class=&quot;uk-text-left uk-text-bold&quot;&gt;0&lt;/td&gt;
+      &lt;/tr&gt;&lt;/tbody&gt;
+      &lt;/table&gt;"
+                        />
+                    </container>
+                </team-stats>
+                <lineups
+                        inlineVariations="uk-section uk-section-default"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container uk-container-large"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <heading
+                                headingText="Lineups."
+                                headingType="h2"
+                                inlineVariations="uk-heading-small"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <lineups
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                text="
+      &lt;div class=&quot;uk-grid-medium uk-child-width-1-2@m&quot; uk-grid&gt;
+        &lt;div&gt;
+          &lt;h4&gt;Riverside FC - 4-3-3&lt;/h4&gt;
+          &lt;ul class=&quot;uk-list uk-list-divider&quot;&gt;
+            &lt;li&gt;&lt;strong&gt;1&lt;/strong&gt;  Mateo Reyes &lt;span class=&quot;uk-text-muted&quot;&gt;GK&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;2&lt;/strong&gt;  David O'Sullivan&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;4&lt;/strong&gt;  Henrik Larsson&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;5&lt;/strong&gt;  Omar El-Khoury&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;6&lt;/strong&gt;  Takeshi Ono&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;8&lt;/strong&gt;  Kofi Adomako&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;10&lt;/strong&gt;  Ivan Petrovic&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;9&lt;/strong&gt;  &lt;a href=&quot;/content/sites/league-demo/players/luca-mendez.html&quot;&gt;Luca Mendez&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;11&lt;/strong&gt;  Sami Toure&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;14&lt;/strong&gt;  Paulo Araujo&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;18&lt;/strong&gt;  Ben Kowalski&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+          &lt;h4&gt;Ashdown Athletic - 4-4-2&lt;/h4&gt;
+          &lt;ul class=&quot;uk-list uk-list-divider&quot;&gt;
+            &lt;li&gt;&lt;strong&gt;1&lt;/strong&gt;  Marcus Vale &lt;span class=&quot;uk-text-muted&quot;&gt;GK&lt;/span&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;3&lt;/strong&gt;  Lars Eriksson&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;4&lt;/strong&gt;  Dev Patel&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;5&lt;/strong&gt;  Carlos Mendonca&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;6&lt;/strong&gt;  Ryo Tanaka&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;7&lt;/strong&gt;  Jamal Washington&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;8&lt;/strong&gt;  Sean O'Connor&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;10&lt;/strong&gt;  Abdoulaye Diop&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;11&lt;/strong&gt;  Thiago Souza&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;9&lt;/strong&gt;  Pietro Bianchi&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;17&lt;/strong&gt;  Felix Hartmann&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;"
+                        />
+                    </container>
+                </lineups>
+            </main>
+            <footer
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/inherited-content-area"
+            />
+        </jcr:content>
+    </match-1>
+</jcr:root>

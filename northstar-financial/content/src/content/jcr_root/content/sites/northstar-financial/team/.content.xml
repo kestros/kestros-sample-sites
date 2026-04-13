@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:rep="http://www.jcp.org/jcr/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="kes:Page"
+>
+    <jcr:content
+            jcr:description="Meet the advisors who will manage your relationship."
+            jcr:mixinTypes="[mix:lockable]"
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Our Team"
+            kes:template="/libs/kestros/commons/base-site-template"
+            sling:resourceType="kestros/commons/components/kestros-base-page"
+    >
+        <header
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"
+        />
+        <main
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/content-area"
+        >
+            <hero
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <heading
+                            headingText="Who you will work with."
+                            headingType="h1"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <subtitle
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Three advisors and two support staff. We are small on purpose. Every one of us works on every client."
+                    />
+                </container>
+            </hero>
+            <advisors
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <heading
+                            headingText="The advisors"
+                            headingType="h2"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <grid
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/grid"
+                    >
+                        <column-1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area"
+                        >
+                            <card
+                                    description="Sarah started Northstar in 2008 after ten years at a large wirehouse in Manhattan. She is the founding partner and most of her clients are families in the five years either side of retirement. She is a CFP and holds an MBA from Wharton. Outside the office she coaches her daughter's hockey team badly."
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/card"
+                            >
+                                <titleElement
+                                        headingText="Sarah Chen, CFP"
+                                        headingType="h3"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                />
+                                <image
+                                        altText="Sarah Chen, founding partner"
+                                        imagePath="/content/assets/team/nf-headshot-sarah.svg"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/libs/kestros/commons/components/content/image"
+                                />
+                            </card>
+                        </column-1>
+                        <column-2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area"
+                        >
+                            <card
+                                    description="Marcus runs the investment side of the practice. Before joining Northstar in 2015 he managed portfolios at a $15B asset manager, which is the kind of job that teaches you to be allergic to market timing. He is a CFA and a CFP. He writes most of the quarterly notes that go to clients."
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/card"
+                            >
+                                <titleElement
+                                        headingText="Marcus Thompson, CFA, CFP"
+                                        headingType="h3"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                />
+                                <image
+                                        altText="Marcus Thompson, investment partner"
+                                        imagePath="/content/assets/team/nf-headshot-marcus.svg"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/libs/kestros/commons/components/content/image"
+                                />
+                            </card>
+                        </column-2>
+                        <column-3
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="kestros/commons/components/content-area"
+                        >
+                            <card
+                                    description="Elena leads the planning and tax work. She came to Northstar from a regional CPA firm where she spent eight years untangling complicated returns for business owners and inheritors. CPA and Personal Financial Specialist credentials. The rest of the firm asks her questions before we answer them."
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/card"
+                            >
+                                <titleElement
+                                        headingText="Elena Rodriguez, CPA, PFS"
+                                        headingType="h3"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                />
+                                <image
+                                        altText="Elena Rodriguez, planning lead"
+                                        imagePath="/content/assets/team/nf-headshot-elena.svg"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/libs/kestros/commons/components/content/image"
+                                />
+                            </card>
+                        </column-3>
+                    </grid>
+                </container>
+            </advisors>
+        </main>
+        <footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"
+        />
+    </jcr:content>
+</jcr:root>
