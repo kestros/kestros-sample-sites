@@ -1,0 +1,12 @@
+[
+  {"id": "riverside-fc", "name": "Riverside FC", "shortName": "RIV", "city": "Riverside", "stadium": "Riverside Park", "founded": 1892},
+  {"id": "meridian-city", "name": "Meridian City", "shortName": "MER", "city": "Meridian", "stadium": "Meridian Stadium", "founded": 1903},
+  {"id": "ashdown-athletic", "name": "Ashdown Athletic", "shortName": "ASH", "city": "Ashdown", "stadium": "Ashdown Park", "founded": 1911},
+  {"id": "northside-united", "name": "Northside United", "shortName": "NOR", "city": "Northside", "stadium": "Northern Ground", "founded": 1905},
+  {"id": "port-heights", "name": "Port Heights", "shortName": "PTH", "city": "Port Heights", "stadium": "Harbour Stadium", "founded": 1919},
+  {"id": "queensbury-wrs", "name": "Queensbury Wanderers", "shortName": "QBY", "city": "Queensbury", "stadium": "Wanderers Field", "founded": 1923},
+  {"id": "oakhill-fc", "name": "Oakhill FC", "shortName": "OAK", "city": "Oakhill", "stadium": "Oak Park", "founded": 1934},
+  {"id": "westbrook-rovers", "name": "Westbrook Rovers", "shortName": "WBR", "city": "Westbrook", "stadium": "Brook Lane", "founded": 1898},
+  {"id": "southshore-united", "name": "Southshore United", "shortName": "SSU", "city": "Southshore", "stadium": "Shore Park", "founded": 1947},
+  {"id": "stone-valley", "name": "Stone Valley", "shortName": "SVL", "city": "Stone Valley", "stadium": "Valley Ground", "founded": 1886}
+]
