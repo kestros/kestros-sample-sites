@@ -1,0 +1,8 @@
+[
+  {"id": "2025-26", "name": "2025-26", "startYear": 2025, "endYear": 2026, "teamIds": ["riverside-fc", "meridian-city", "ashdown-athletic", "northside-united", "port-heights", "queensbury-wrs", "oakhill-fc", "westbrook-rovers", "southshore-united", "stone-valley"], "matchIds": []},
+  {"id": "2024-25", "name": "2024-25", "startYear": 2024, "endYear": 2025, "teamIds": ["riverside-fc", "meridian-city", "ashdown-athletic", "northside-united", "port-heights", "queensbury-wrs", "oakhill-fc", "westbrook-rovers", "southshore-united", "stone-valley"], "matchIds": []},
+  {"id": "2023-24", "name": "2023-24", "startYear": 2023, "endYear": 2024, "teamIds": ["riverside-fc", "meridian-city", "ashdown-athletic", "northside-united", "port-heights", "queensbury-wrs", "oakhill-fc", "westbrook-rovers", "southshore-united", "stone-valley"], "matchIds": []},
+  {"id": "2022-23", "name": "2022-23", "startYear": 2022, "endYear": 2023, "teamIds": ["riverside-fc", "meridian-city", "ashdown-athletic", "northside-united", "port-heights", "queensbury-wrs", "oakhill-fc", "westbrook-rovers", "southshore-united", "stone-valley"], "matchIds": []},
+  {"id": "2021-22", "name": "2021-22", "startYear": 2021, "endYear": 2022, "teamIds": ["riverside-fc", "meridian-city", "ashdown-athletic", "northside-united", "port-heights", "queensbury-wrs", "oakhill-fc", "westbrook-rovers", "southshore-united", "stone-valley"], "matchIds": []},
+  {"id": "2020-21", "name": "2020-21", "startYear": 2020, "endYear": 2021, "teamIds": ["riverside-fc", "meridian-city", "ashdown-athletic", "northside-united", "port-heights", "queensbury-wrs", "oakhill-fc", "westbrook-rovers", "southshore-united", "stone-valley"], "matchIds": []}
+]

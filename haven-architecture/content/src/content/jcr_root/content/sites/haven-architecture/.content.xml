@@ -1,0 +1,1947 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:rep="http://www.jcp.org/jcr/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="kes:Site"
+>
+    <jcr:content
+            jcr:description="An architecture studio building thoughtful, site-responsive work across public, cultural, and residential projects since 2003."
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Haven Architecture"
+            kes:template="/libs/kestros/commons/base-site-template"
+            kes:theme="/etc/ui-frameworks/ui-kit/versions/0.0.1/themes/default"
+            publicationStrategy="kestros-single-instance"
+            sling:resourceType="kestros/commons/components/kestros-base-page"
+    >
+        <header
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"
+        >
+            <top-navigation
+                    brandHref="/content/sites/haven-architecture.html"
+                    brandName="Haven Architecture"
+                    inlineVariations="uk-navbar uk-navbar-container"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation"
+            >
+                <nav-portfolio
+                        href="/content/sites/haven-architecture/portfolio.html"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation-item"
+                        text="Portfolio"
+                />
+                <nav-studio
+                        href="/content/sites/haven-architecture/studio.html"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation-item"
+                        text="Studio"
+                />
+                <nav-services
+                        href="/content/sites/haven-architecture/services.html"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation-item"
+                        text="Services"
+                />
+                <nav-journal
+                        href="/content/sites/haven-architecture/journal.html"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation-item"
+                        text="Journal"
+                />
+                <nav-contact
+                        href="/content/sites/haven-architecture/contact.html"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation-item"
+                        text="Contact"
+                />
+            </top-navigation>
+        </header>
+        <main
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/content-area"
+        >
+            <hero
+                    inlineVariations="uk-section uk-section-primary"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        inlineVariations="uk-container"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <eyebrow
+                            inlineVariations="uk-text-meta uk-text-uppercase"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Haven. An architecture studio."
+                    />
+                    <heading
+                            headingText="Buildings with a long attention span."
+                            headingType="h1"
+                            inlineVariations="uk-heading-medium"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <dek
+                            inlineVariations="uk-text-lead"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="We design houses, civic buildings, and adaptive reuse projects. Work that is specific to its site, slow to date, and built to last forty years or more."
+                    />
+                    <cta-portfolio
+                            href="/content/sites/haven-architecture/portfolio.html"
+                            inlineVariations="uk-button uk-button-primary"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/button"
+                            text="Portfolio"
+                    />
+                    <cta-studio
+                            href="/content/sites/haven-architecture/studio.html"
+                            inlineVariations="uk-button uk-button-default"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/button"
+                            text="About the studio"
+                    />
+                </container>
+            </hero>
+            <selected-work
+                    inlineVariations="uk-section uk-section-default"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        inlineVariations="uk-container"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <eyebrow
+                            inlineVariations="uk-text-meta uk-text-uppercase"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Selected work"
+                    />
+                    <heading
+                            headingText="Recent projects."
+                            headingType="h2"
+                            inlineVariations="uk-heading-small"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <cards
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                            text=" &lt;div class=&quot;uk-grid uk-child-width-1-2@m&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/meridian-house.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800&amp;q=80&quot; alt=&quot;Meridian House&quot; style=&quot;width: 100%; height: 320px; object-fit: cover;&quot; /&gt;       &lt;div class=&quot;uk-margin-small-top&quot;&gt;         &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Private residence. 2023. Completed.&lt;/p&gt;         &lt;h3 class=&quot;uk-margin-remove-top&quot;&gt;Meridian House&lt;/h3&gt;         &lt;p class=&quot;uk-text-muted&quot;&gt;A house built to watch the horizon rather than compete with it.&lt;/p&gt;       &lt;/div&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/ashford-cultural-centre.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1800&amp;q=80&quot; alt=&quot;Ashford Cultural Centre&quot; style=&quot;width: 100%; height: 320px; object-fit: cover;&quot; /&gt;       &lt;div class=&quot;uk-margin-small-top&quot;&gt;         &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Cultural institution. 2022. Completed.&lt;/p&gt;         &lt;h3 class=&quot;uk-margin-remove-top&quot;&gt;Ashford Cultural Centre&lt;/h3&gt;         &lt;p class=&quot;uk-text-muted&quot;&gt;A civic building that uses its courtyard harder than its rooms.&lt;/p&gt;       &lt;/div&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt; &lt;p class=&quot;uk-text-center uk-margin-medium-top&quot;&gt;   &lt;a href=&quot;/content/sites/haven-architecture/portfolio.html&quot; class=&quot;uk-button uk-button-default&quot;&gt;All projects&lt;/a&gt; &lt;/p&gt;"
+                    />
+                </container>
+            </selected-work>
+            <intro
+                    inlineVariations="uk-section uk-section-muted"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        inlineVariations="uk-container"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <eyebrow
+                            inlineVariations="uk-text-meta uk-text-uppercase"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="About the studio"
+                    />
+                    <heading
+                            headingText="Small on purpose."
+                            headingType="h2"
+                            inlineVariations="uk-heading-small"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <p1
+                            inlineVariations="uk-text-lead"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="We are a studio of eleven people working out of a converted warehouse in the inner city. We take on five or six projects a year, which is about as many as we can do well. We do not do every project that comes our way and we never have."
+                    />
+                    <p2
+                            inlineVariations="uk-text-lead"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="The studio was founded in 2003. The founding partners are still here. So is the same approach: start with the site, draw by hand, leave things alone when they do not need to be touched, and argue about details until the details get easier."
+                    />
+                </container>
+            </intro>
+            <journal-preview
+                    inlineVariations="uk-section uk-section-default"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        inlineVariations="uk-container"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <eyebrow
+                            inlineVariations="uk-text-meta uk-text-uppercase"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="From the journal"
+                    />
+                    <heading
+                            headingText="Notes and essays."
+                            headingType="h2"
+                            inlineVariations="uk-heading-small"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <journal-cards
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                            text=" &lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/journal/why-we-draw-by-hand.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;February 2024&lt;/p&gt;       &lt;h3 class=&quot;uk-h5 uk-margin-small-top&quot;&gt;Why we still draw by hand at the start of every project&lt;/h3&gt;       &lt;p class=&quot;uk-text-small uk-text-muted&quot;&gt;Not nostalgia. The constraint of a pencil on paper is still the fastest way to think through a building.&lt;/p&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/journal/the-brief-is-never-the-brief.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;November 2023&lt;/p&gt;       &lt;h3 class=&quot;uk-h5 uk-margin-small-top&quot;&gt;The brief is never the actual brief&lt;/h3&gt;       &lt;p class=&quot;uk-text-small uk-text-muted&quot;&gt;What the client asks for and what the client wants are rarely the same sentence.&lt;/p&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/journal/working-with-an-old-building.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;June 2019&lt;/p&gt;       &lt;h3 class=&quot;uk-h5 uk-margin-small-top&quot;&gt;Working with an old building is a conversation, not a translation&lt;/h3&gt;       &lt;p class=&quot;uk-text-small uk-text-muted&quot;&gt;Some notes after the Blackrock conversion wrapped.&lt;/p&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt;"
+                    />
+                </container>
+            </journal-preview>
+        </main>
+        <footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"
+        >
+            <site-footer
+                    inlineVariations="uk-section uk-section-secondary"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        inlineVariations="uk-container"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <brand
+                            inlineVariations="uk-text-bold uk-text-uppercase"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Haven Architecture"
+                    />
+                    <blurb
+                            inlineVariations="uk-text-small"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="An architecture studio working on houses, civic buildings, and the occasional old building worth keeping. Small on purpose since 2003."
+                    />
+                    <links
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                            text=" &lt;div class=&quot;uk-grid uk-grid-small uk-child-width-1-3@m&quot; uk-grid&gt;   &lt;div&gt;     &lt;h5 class=&quot;uk-text-bold&quot;&gt;Work&lt;/h5&gt;     &lt;ul class=&quot;uk-list uk-list-small&quot;&gt;       &lt;li&gt;&lt;a href=&quot;/content/sites/haven-architecture/portfolio.html&quot; class=&quot;uk-link-reset&quot;&gt;Portfolio&lt;/a&gt;&lt;/li&gt;       &lt;li&gt;&lt;a href=&quot;/content/sites/haven-architecture/services.html&quot; class=&quot;uk-link-reset&quot;&gt;Services&lt;/a&gt;&lt;/li&gt;       &lt;li&gt;&lt;a href=&quot;/content/sites/haven-architecture/journal.html&quot; class=&quot;uk-link-reset&quot;&gt;Journal&lt;/a&gt;&lt;/li&gt;     &lt;/ul&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;h5 class=&quot;uk-text-bold&quot;&gt;Studio&lt;/h5&gt;     &lt;ul class=&quot;uk-list uk-list-small&quot;&gt;       &lt;li&gt;&lt;a href=&quot;/content/sites/haven-architecture/studio.html&quot; class=&quot;uk-link-reset&quot;&gt;About&lt;/a&gt;&lt;/li&gt;       &lt;li&gt;&lt;a href=&quot;/content/sites/haven-architecture/contact.html&quot; class=&quot;uk-link-reset&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;     &lt;/ul&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;h5 class=&quot;uk-text-bold&quot;&gt;Reach us&lt;/h5&gt;     &lt;ul class=&quot;uk-list uk-list-small&quot;&gt;       &lt;li&gt;&lt;a href=&quot;mailto:studio@haven.example&quot; class=&quot;uk-link-reset&quot;&gt;studio@haven.example&lt;/a&gt;&lt;/li&gt;       &lt;li&gt;+1 555 0140&lt;/li&gt;     &lt;/ul&gt;   &lt;/div&gt; &lt;/div&gt; &lt;hr /&gt; &lt;p class=&quot;uk-text-small uk-text-muted&quot;&gt;Haven Architecture. A fictional architecture studio built as a sitebuilding sample. Projects, people, and dates are invented.&lt;/p&gt;"
+                    />
+                </container>
+            </site-footer>
+        </footer>
+    </jcr:content>
+    <portfolio
+            jcr:primaryType="kes:Page"
+    >
+        <jcr:content
+                jcr:description="Selected work across residential, cultural, and adaptive reuse projects."
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Portfolio"
+                kes:template="/libs/kestros/commons/base-site-template"
+                sling:resourceType="kestros/commons/components/kestros-base-page"
+        >
+            <header
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/inherited-content-area"
+            />
+            <main
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/content-area"
+            >
+                <hero
+                        inlineVariations="uk-section uk-section-primary"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <eyebrow
+                                inlineVariations="uk-text-meta uk-text-uppercase"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Portfolio"
+                        />
+                        <heading
+                                headingText="Selected work, 2019 to present."
+                                headingType="h1"
+                                inlineVariations="uk-heading-medium"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <dek
+                                inlineVariations="uk-text-lead"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Six recent projects across residential, cultural, and adaptive reuse. A representative sample of what the studio does."
+                        />
+                    </container>
+                </hero>
+                <grid
+                        inlineVariations="uk-section uk-section-default"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <grid
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                text=" &lt;div class=&quot;uk-grid uk-child-width-1-2@m uk-grid-large&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/meridian-house.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800&amp;q=80&quot; alt=&quot;Meridian House&quot; style=&quot;width: 100%; height: 320px; object-fit: cover;&quot; /&gt;       &lt;div class=&quot;uk-margin-small-top&quot;&gt;         &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Private residence. 2023. Completed.&lt;/p&gt;         &lt;h3 class=&quot;uk-margin-remove-top&quot;&gt;Meridian House&lt;/h3&gt;         &lt;p class=&quot;uk-text-muted&quot;&gt;A house built to watch the horizon rather than compete with it.&lt;/p&gt;       &lt;/div&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/ashford-cultural-centre.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1800&amp;q=80&quot; alt=&quot;Ashford Cultural Centre&quot; style=&quot;width: 100%; height: 320px; object-fit: cover;&quot; /&gt;       &lt;div class=&quot;uk-margin-small-top&quot;&gt;         &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Cultural institution. 2022. Completed.&lt;/p&gt;         &lt;h3 class=&quot;uk-margin-remove-top&quot;&gt;Ashford Cultural Centre&lt;/h3&gt;         &lt;p class=&quot;uk-text-muted&quot;&gt;A civic building that uses its courtyard harder than its rooms.&lt;/p&gt;       &lt;/div&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/linden-residence.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1800&amp;q=80&quot; alt=&quot;Linden Residence&quot; style=&quot;width: 100%; height: 320px; object-fit: cover;&quot; /&gt;       &lt;div class=&quot;uk-margin-small-top&quot;&gt;         &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Private residence. 2021. Completed.&lt;/p&gt;         &lt;h3 class=&quot;uk-margin-remove-top&quot;&gt;Linden Residence&lt;/h3&gt;         &lt;p class=&quot;uk-text-muted&quot;&gt;An infill house on a narrow lot that borrows light from its neighbors.&lt;/p&gt;       &lt;/div&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/crestwood-pavilion.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1448630360428-65456885c650?w=1800&amp;q=80&quot; alt=&quot;Crestwood Pavilion&quot; style=&quot;width: 100%; height: 320px; object-fit: cover;&quot; /&gt;       &lt;div class=&quot;uk-margin-small-top&quot;&gt;         &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Public pavilion. 2020. Completed.&lt;/p&gt;         &lt;h3 class=&quot;uk-margin-remove-top&quot;&gt;Crestwood Pavilion&lt;/h3&gt;         &lt;p class=&quot;uk-text-muted&quot;&gt;A small park pavilion the city asked us to build for $180k and finished under budget.&lt;/p&gt;       &lt;/div&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/blackrock-studio.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=1800&amp;q=80&quot; alt=&quot;Blackrock Studio&quot; style=&quot;width: 100%; height: 320px; object-fit: cover;&quot; /&gt;       &lt;div class=&quot;uk-margin-small-top&quot;&gt;         &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Artist studio. 2019. Completed.&lt;/p&gt;         &lt;h3 class=&quot;uk-margin-remove-top&quot;&gt;Blackrock Studio&lt;/h3&gt;         &lt;p class=&quot;uk-text-muted&quot;&gt;A painting studio carved out of a disused mechanical workshop.&lt;/p&gt;       &lt;/div&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/solano-bridge.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1467632499275-7a693a761056?w=1800&amp;q=80&quot; alt=&quot;Solano Bridge&quot; style=&quot;width: 100%; height: 320px; object-fit: cover;&quot; /&gt;       &lt;div class=&quot;uk-margin-small-top&quot;&gt;         &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;Pedestrian bridge. 2024. In construction.&lt;/p&gt;         &lt;h3 class=&quot;uk-margin-remove-top&quot;&gt;Solano Bridge&lt;/h3&gt;         &lt;p class=&quot;uk-text-muted&quot;&gt;A pedestrian bridge replacing the temporary one that has been up for seventeen years.&lt;/p&gt;       &lt;/div&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt;"
+                        />
+                    </container>
+                </grid>
+            </main>
+            <footer
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/inherited-content-area"
+            />
+        </jcr:content>
+        <meridian-house
+                jcr:primaryType="kes:Page"
+        >
+            <jcr:content
+                    jcr:description="Meridian House. Private residence. Northern coastline. 2023."
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Meridian House"
+                    kes:template="/libs/kestros/commons/base-site-template"
+                    sling:resourceType="kestros/commons/components/kestros-base-page"
+            >
+                <header
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/inherited-content-area"
+                />
+                <main
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/content-area"
+                >
+                    <hero
+                            inlineVariations="uk-section uk-section-primary"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <meta
+                                    inlineVariations="uk-text-meta uk-text-uppercase"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Private residence. Northern coastline. 2023. Completed."
+                            />
+                            <heading
+                                    headingText="Meridian House"
+                                    headingType="h1"
+                                    inlineVariations="uk-heading-medium"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <dek
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="A house built to watch the horizon rather than compete with it."
+                            />
+                            <hero-image
+                                    altText="Meridian House"
+                                    imagePath="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800&amp;q=80"
+                                    inlineVariations="uk-width-1-1"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/image"
+                            />
+                        </container>
+                    </hero>
+                    <story
+                            inlineVariations="uk-section uk-section-default"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <p0
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Meridian House sits on a rocky headland facing due north, with the water on three sides and the wind for company. The program is simple: a single-family home for a couple who had retired from the city and wanted to see weather coming."
+                            />
+                            <p1
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="The plan is a long bar turned parallel to the coast, broken into three volumes connected by glazed passages. The middle volume holds the kitchen and the shared living space. The end volumes are bedrooms and a small studio. Every room faces the water."
+                            />
+                            <p2
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="The structure is reclaimed timber over a cast concrete base. The roof pitches inland, catching runoff into a cistern that feeds the garden. The garden is indigenous grasses, unirrigated, because the client wanted to see what the land would do on its own."
+                            />
+                        </container>
+                    </story>
+                    <facts
+                            inlineVariations="uk-section uk-section-muted"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <heading
+                                    headingText="Project facts"
+                                    headingType="h2"
+                                    inlineVariations="uk-heading-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <facts-list
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text=" &lt;dl class=&quot;uk-description-list uk-description-list-divider&quot;&gt;   &lt;dt&gt;Size&lt;/dt&gt;   &lt;dd&gt;320 m2&lt;/dd&gt;   &lt;dt&gt;Site&lt;/dt&gt;   &lt;dd&gt;1.4 hectares&lt;/dd&gt;   &lt;dt&gt;Materials&lt;/dt&gt;   &lt;dd&gt;Reclaimed cedar, board-formed concrete, zinc roof&lt;/dd&gt;   &lt;dt&gt;Collaborators&lt;/dt&gt;   &lt;dd&gt;Pine &amp; Drake structural, L. Ferris landscape&lt;/dd&gt;   &lt;dt&gt;Completion&lt;/dt&gt;   &lt;dd&gt;October 2023&lt;/dd&gt; &lt;/dl&gt;"
+                            />
+                        </container>
+                    </facts>
+                    <more-work
+                            inlineVariations="uk-section uk-section-default"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <eyebrow
+                                    inlineVariations="uk-text-meta uk-text-uppercase"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="More work"
+                            />
+                            <heading
+                                    headingText="Related projects."
+                                    headingType="h2"
+                                    inlineVariations="uk-heading-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <others
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text=" &lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/ashford-cultural-centre.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1800&amp;q=80&quot; alt=&quot;Ashford Cultural Centre&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Cultural institution. 2022&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Ashford Cultural Centre&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/linden-residence.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1800&amp;q=80&quot; alt=&quot;Linden Residence&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Private residence. 2021&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Linden Residence&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/crestwood-pavilion.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1448630360428-65456885c650?w=1800&amp;q=80&quot; alt=&quot;Crestwood Pavilion&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Public pavilion. 2020&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Crestwood Pavilion&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt;"
+                            />
+                        </container>
+                    </more-work>
+                </main>
+                <footer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/inherited-content-area"
+                />
+            </jcr:content>
+        </meridian-house>
+        <ashford-cultural-centre
+                jcr:primaryType="kes:Page"
+        >
+            <jcr:content
+                    jcr:description="Ashford Cultural Centre. Cultural institution. Town square, Ashford. 2022."
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Ashford Cultural Centre"
+                    kes:template="/libs/kestros/commons/base-site-template"
+                    sling:resourceType="kestros/commons/components/kestros-base-page"
+            >
+                <header
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/inherited-content-area"
+                />
+                <main
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/content-area"
+                >
+                    <hero
+                            inlineVariations="uk-section uk-section-primary"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <meta
+                                    inlineVariations="uk-text-meta uk-text-uppercase"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Cultural institution. Town square, Ashford. 2022. Completed."
+                            />
+                            <heading
+                                    headingText="Ashford Cultural Centre"
+                                    headingType="h1"
+                                    inlineVariations="uk-heading-medium"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <dek
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="A civic building that uses its courtyard harder than its rooms."
+                            />
+                            <hero-image
+                                    altText="Ashford Cultural Centre"
+                                    imagePath="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1800&amp;q=80"
+                                    inlineVariations="uk-width-1-1"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/image"
+                            />
+                        </container>
+                    </hero>
+                    <story
+                            inlineVariations="uk-section uk-section-default"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <p0
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="The brief for Ashford was a modest civic building with a gallery, a 180-seat auditorium, and a cafe. What the town actually needed was a covered outdoor space big enough to hold a market or a wedding or a town meeting."
+                            />
+                            <p1
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="The plan wraps the interior program around a central courtyard covered by a shallow timber roof, forty metres on a side. The roof is carried on eight tree columns. The interior rooms open onto the courtyard in good weather and close up in winter without much fuss."
+                            />
+                            <p2
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="In the two years since it opened the courtyard has hosted a farmer's market, three funerals, nine weddings, the annual school play, and a protest about traffic on the main road. The gallery is nice. The auditorium is fine. The courtyard is the building."
+                            />
+                        </container>
+                    </story>
+                    <facts
+                            inlineVariations="uk-section uk-section-muted"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <heading
+                                    headingText="Project facts"
+                                    headingType="h2"
+                                    inlineVariations="uk-heading-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <facts-list
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text=" &lt;dl class=&quot;uk-description-list uk-description-list-divider&quot;&gt;   &lt;dt&gt;Program&lt;/dt&gt;   &lt;dd&gt;Gallery, auditorium, cafe, courtyard&lt;/dd&gt;   &lt;dt&gt;Size&lt;/dt&gt;   &lt;dd&gt;2,100 m2 indoor, 1,600 m2 courtyard&lt;/dd&gt;   &lt;dt&gt;Structure&lt;/dt&gt;   &lt;dd&gt;Glulam tree columns, timber roof deck&lt;/dd&gt;   &lt;dt&gt;Budget&lt;/dt&gt;   &lt;dd&gt;$8.4M&lt;/dd&gt;   &lt;dt&gt;Completion&lt;/dt&gt;   &lt;dd&gt;Spring 2022&lt;/dd&gt; &lt;/dl&gt;"
+                            />
+                        </container>
+                    </facts>
+                    <more-work
+                            inlineVariations="uk-section uk-section-default"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <eyebrow
+                                    inlineVariations="uk-text-meta uk-text-uppercase"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="More work"
+                            />
+                            <heading
+                                    headingText="Related projects."
+                                    headingType="h2"
+                                    inlineVariations="uk-heading-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <others
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text=" &lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/meridian-house.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800&amp;q=80&quot; alt=&quot;Meridian House&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Private residence. 2023&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Meridian House&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/linden-residence.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1800&amp;q=80&quot; alt=&quot;Linden Residence&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Private residence. 2021&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Linden Residence&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/crestwood-pavilion.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1448630360428-65456885c650?w=1800&amp;q=80&quot; alt=&quot;Crestwood Pavilion&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Public pavilion. 2020&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Crestwood Pavilion&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt;"
+                            />
+                        </container>
+                    </more-work>
+                </main>
+                <footer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/inherited-content-area"
+                />
+            </jcr:content>
+        </ashford-cultural-centre>
+        <linden-residence
+                jcr:primaryType="kes:Page"
+        >
+            <jcr:content
+                    jcr:description="Linden Residence. Private residence. Inner city, infill lot. 2021."
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Linden Residence"
+                    kes:template="/libs/kestros/commons/base-site-template"
+                    sling:resourceType="kestros/commons/components/kestros-base-page"
+            >
+                <header
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/inherited-content-area"
+                />
+                <main
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/content-area"
+                >
+                    <hero
+                            inlineVariations="uk-section uk-section-primary"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <meta
+                                    inlineVariations="uk-text-meta uk-text-uppercase"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Private residence. Inner city, infill lot. 2021. Completed."
+                            />
+                            <heading
+                                    headingText="Linden Residence"
+                                    headingType="h1"
+                                    inlineVariations="uk-heading-medium"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <dek
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="An infill house on a narrow lot that borrows light from its neighbors."
+                            />
+                            <hero-image
+                                    altText="Linden Residence"
+                                    imagePath="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1800&amp;q=80"
+                                    inlineVariations="uk-width-1-1"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/image"
+                            />
+                        </container>
+                    </hero>
+                    <story
+                            inlineVariations="uk-section uk-section-default"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <p0
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Linden sits on a lot five metres wide between two older brick houses. The constraint of the site forced the diagram: everything happens front-to-back, not side-to-side, and every room has to earn its borrowed light."
+                            />
+                            <p1
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="The front of the house is a quiet brick facade that matches the street. The back opens entirely to a small garden with a high east-facing wall. The middle of the house is a full-height stair that doubles as a lightwell, pulling sun from the roof down to the kitchen. We spent more time on that stair than on any other part of the project."
+                            />
+                            <p2
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="The owners have three children and a dog. The house works because we designed for the dog first."
+                            />
+                        </container>
+                    </story>
+                    <facts
+                            inlineVariations="uk-section uk-section-muted"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <heading
+                                    headingText="Project facts"
+                                    headingType="h2"
+                                    inlineVariations="uk-heading-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <facts-list
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text=" &lt;dl class=&quot;uk-description-list uk-description-list-divider&quot;&gt;   &lt;dt&gt;Size&lt;/dt&gt;   &lt;dd&gt;180 m2 on 95 m2 lot&lt;/dd&gt;   &lt;dt&gt;Width&lt;/dt&gt;   &lt;dd&gt;5.1 metres&lt;/dd&gt;   &lt;dt&gt;Key move&lt;/dt&gt;   &lt;dd&gt;Full-height stair as lightwell&lt;/dd&gt;   &lt;dt&gt;Completion&lt;/dt&gt;   &lt;dd&gt;2021&lt;/dd&gt; &lt;/dl&gt;"
+                            />
+                        </container>
+                    </facts>
+                    <more-work
+                            inlineVariations="uk-section uk-section-default"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <eyebrow
+                                    inlineVariations="uk-text-meta uk-text-uppercase"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="More work"
+                            />
+                            <heading
+                                    headingText="Related projects."
+                                    headingType="h2"
+                                    inlineVariations="uk-heading-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <others
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text=" &lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/meridian-house.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800&amp;q=80&quot; alt=&quot;Meridian House&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Private residence. 2023&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Meridian House&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/ashford-cultural-centre.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1800&amp;q=80&quot; alt=&quot;Ashford Cultural Centre&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Cultural institution. 2022&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Ashford Cultural Centre&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/crestwood-pavilion.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1448630360428-65456885c650?w=1800&amp;q=80&quot; alt=&quot;Crestwood Pavilion&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Public pavilion. 2020&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Crestwood Pavilion&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt;"
+                            />
+                        </container>
+                    </more-work>
+                </main>
+                <footer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/inherited-content-area"
+                />
+            </jcr:content>
+        </linden-residence>
+        <crestwood-pavilion
+                jcr:primaryType="kes:Page"
+        >
+            <jcr:content
+                    jcr:description="Crestwood Pavilion. Public pavilion. Crestwood Park. 2020."
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Crestwood Pavilion"
+                    kes:template="/libs/kestros/commons/base-site-template"
+                    sling:resourceType="kestros/commons/components/kestros-base-page"
+            >
+                <header
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/inherited-content-area"
+                />
+                <main
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/content-area"
+                >
+                    <hero
+                            inlineVariations="uk-section uk-section-primary"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <meta
+                                    inlineVariations="uk-text-meta uk-text-uppercase"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Public pavilion. Crestwood Park. 2020. Completed."
+                            />
+                            <heading
+                                    headingText="Crestwood Pavilion"
+                                    headingType="h1"
+                                    inlineVariations="uk-heading-medium"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <dek
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="A small park pavilion the city asked us to build for $180k and finished under budget."
+                            />
+                            <hero-image
+                                    altText="Crestwood Pavilion"
+                                    imagePath="https://images.unsplash.com/photo-1448630360428-65456885c650?w=1800&amp;q=80"
+                                    inlineVariations="uk-width-1-1"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/image"
+                            />
+                        </container>
+                    </hero>
+                    <story
+                            inlineVariations="uk-section uk-section-default"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <p0
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Crestwood was a tight brief with a tight budget. The city needed a sheltered gathering space in an under-used park, with room for a farmer's market on weekends and nothing much the rest of the time. They wanted it built cheap and built fast."
+                            />
+                            <p1
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="We chose a simple steel-frame canopy and timber in-fill, prefabricated offsite in sections that could arrive on a flatbed and be bolted together in a week. The shape is a shallow hip that catches afternoon shade on the west and sheds rain north into a swale."
+                            />
+                            <p2
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="We came in at $167,000, six percent under the allocated budget, with the leftover money going to benches and a water fountain. It has been up for four years and nobody has complained about it once."
+                            />
+                        </container>
+                    </story>
+                    <facts
+                            inlineVariations="uk-section uk-section-muted"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <heading
+                                    headingText="Project facts"
+                                    headingType="h2"
+                                    inlineVariations="uk-heading-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <facts-list
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text=" &lt;dl class=&quot;uk-description-list uk-description-list-divider&quot;&gt;   &lt;dt&gt;Program&lt;/dt&gt;   &lt;dd&gt;Covered pavilion, benches, water fountain&lt;/dd&gt;   &lt;dt&gt;Footprint&lt;/dt&gt;   &lt;dd&gt;110 m2&lt;/dd&gt;   &lt;dt&gt;Budget&lt;/dt&gt;   &lt;dd&gt;$180,000&lt;/dd&gt;   &lt;dt&gt;Actual&lt;/dt&gt;   &lt;dd&gt;$167,000&lt;/dd&gt;   &lt;dt&gt;Built&lt;/dt&gt;   &lt;dd&gt;2020&lt;/dd&gt; &lt;/dl&gt;"
+                            />
+                        </container>
+                    </facts>
+                    <more-work
+                            inlineVariations="uk-section uk-section-default"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <eyebrow
+                                    inlineVariations="uk-text-meta uk-text-uppercase"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="More work"
+                            />
+                            <heading
+                                    headingText="Related projects."
+                                    headingType="h2"
+                                    inlineVariations="uk-heading-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <others
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text=" &lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/meridian-house.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800&amp;q=80&quot; alt=&quot;Meridian House&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Private residence. 2023&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Meridian House&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/ashford-cultural-centre.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1800&amp;q=80&quot; alt=&quot;Ashford Cultural Centre&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Cultural institution. 2022&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Ashford Cultural Centre&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/linden-residence.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1800&amp;q=80&quot; alt=&quot;Linden Residence&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Private residence. 2021&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Linden Residence&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt;"
+                            />
+                        </container>
+                    </more-work>
+                </main>
+                <footer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/inherited-content-area"
+                />
+            </jcr:content>
+        </crestwood-pavilion>
+        <blackrock-studio
+                jcr:primaryType="kes:Page"
+        >
+            <jcr:content
+                    jcr:description="Blackrock Studio. Artist studio. Industrial district. 2019."
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Blackrock Studio"
+                    kes:template="/libs/kestros/commons/base-site-template"
+                    sling:resourceType="kestros/commons/components/kestros-base-page"
+            >
+                <header
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/inherited-content-area"
+                />
+                <main
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/content-area"
+                >
+                    <hero
+                            inlineVariations="uk-section uk-section-primary"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <meta
+                                    inlineVariations="uk-text-meta uk-text-uppercase"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Artist studio. Industrial district. 2019. Completed."
+                            />
+                            <heading
+                                    headingText="Blackrock Studio"
+                                    headingType="h1"
+                                    inlineVariations="uk-heading-medium"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <dek
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="A painting studio carved out of a disused mechanical workshop."
+                            />
+                            <hero-image
+                                    altText="Blackrock Studio"
+                                    imagePath="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=1800&amp;q=80"
+                                    inlineVariations="uk-width-1-1"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/image"
+                            />
+                        </container>
+                    </hero>
+                    <story
+                            inlineVariations="uk-section uk-section-default"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <p0
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Blackrock started as a mechanical workshop in the 1940s and had been empty for eight years when a painter approached us about converting it. She had a small budget and a large north-facing wall with clerestory windows, and that was basically the whole brief."
+                            />
+                            <p1
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="We did almost nothing to the exterior. Inside we stripped the mezzanine and added a high partition wall to separate a working area from a small office and wet room. The old hoist is still overhead. It does not do anything anymore but it looks great."
+                            />
+                            <p2
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="The light at noon is better than any studio we have designed from scratch, because we could not have designed it from scratch. Sometimes the best move is to leave things alone and put the walls where they need to be."
+                            />
+                        </container>
+                    </story>
+                    <facts
+                            inlineVariations="uk-section uk-section-muted"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <heading
+                                    headingText="Project facts"
+                                    headingType="h2"
+                                    inlineVariations="uk-heading-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <facts-list
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text=" &lt;dl class=&quot;uk-description-list uk-description-list-divider&quot;&gt;   &lt;dt&gt;Program&lt;/dt&gt;   &lt;dd&gt;Working studio, office, wet room&lt;/dd&gt;   &lt;dt&gt;Original use&lt;/dt&gt;   &lt;dd&gt;1940s mechanical workshop&lt;/dd&gt;   &lt;dt&gt;Size&lt;/dt&gt;   &lt;dd&gt;420 m2&lt;/dd&gt;   &lt;dt&gt;Key move&lt;/dt&gt;   &lt;dd&gt;Almost nothing to the existing shell&lt;/dd&gt;   &lt;dt&gt;Completion&lt;/dt&gt;   &lt;dd&gt;2019&lt;/dd&gt; &lt;/dl&gt;"
+                            />
+                        </container>
+                    </facts>
+                    <more-work
+                            inlineVariations="uk-section uk-section-default"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <eyebrow
+                                    inlineVariations="uk-text-meta uk-text-uppercase"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="More work"
+                            />
+                            <heading
+                                    headingText="Related projects."
+                                    headingType="h2"
+                                    inlineVariations="uk-heading-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <others
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text=" &lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/meridian-house.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800&amp;q=80&quot; alt=&quot;Meridian House&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Private residence. 2023&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Meridian House&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/ashford-cultural-centre.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1800&amp;q=80&quot; alt=&quot;Ashford Cultural Centre&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Cultural institution. 2022&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Ashford Cultural Centre&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/linden-residence.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1800&amp;q=80&quot; alt=&quot;Linden Residence&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Private residence. 2021&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Linden Residence&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt;"
+                            />
+                        </container>
+                    </more-work>
+                </main>
+                <footer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/inherited-content-area"
+                />
+            </jcr:content>
+        </blackrock-studio>
+        <solano-bridge
+                jcr:primaryType="kes:Page"
+        >
+            <jcr:content
+                    jcr:description="Solano Bridge. Pedestrian bridge. River crossing, Solano district. 2024."
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Solano Bridge"
+                    kes:template="/libs/kestros/commons/base-site-template"
+                    sling:resourceType="kestros/commons/components/kestros-base-page"
+            >
+                <header
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/inherited-content-area"
+                />
+                <main
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/content-area"
+                >
+                    <hero
+                            inlineVariations="uk-section uk-section-primary"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <meta
+                                    inlineVariations="uk-text-meta uk-text-uppercase"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Pedestrian bridge. River crossing, Solano district. 2024. In construction."
+                            />
+                            <heading
+                                    headingText="Solano Bridge"
+                                    headingType="h1"
+                                    inlineVariations="uk-heading-medium"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <dek
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="A pedestrian bridge replacing the temporary one that has been up for seventeen years."
+                            />
+                            <hero-image
+                                    altText="Solano Bridge"
+                                    imagePath="https://images.unsplash.com/photo-1467632499275-7a693a761056?w=1800&amp;q=80"
+                                    inlineVariations="uk-width-1-1"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/image"
+                            />
+                        </container>
+                    </hero>
+                    <story
+                            inlineVariations="uk-section uk-section-default"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <p0
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Solano is a weathering-steel pedestrian bridge replacing a temporary wooden span that the city put up in 2007 as a quick fix and then forgot about. The brief was &quot;something nicer than what is there now and something that will last forty years&quot;, which is a fine brief if you read it charitably."
+                            />
+                            <p1
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="The structure is a single span, 34 metres, in a shallow truss with the handrails integrated into the top chord. The deck is larch planks, grooved, replaceable in sections. The whole thing sits on two small concrete abutments set back from the water's edge so the ecology of the bank does not get disturbed."
+                            />
+                            <p2
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Construction starts in early 2026 and should finish by the end of summer. We will post progress photos when we remember to."
+                            />
+                        </container>
+                    </story>
+                    <facts
+                            inlineVariations="uk-section uk-section-muted"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <heading
+                                    headingText="Project facts"
+                                    headingType="h2"
+                                    inlineVariations="uk-heading-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <facts-list
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text=" &lt;dl class=&quot;uk-description-list uk-description-list-divider&quot;&gt;   &lt;dt&gt;Span&lt;/dt&gt;   &lt;dd&gt;34 metres&lt;/dd&gt;   &lt;dt&gt;Material&lt;/dt&gt;   &lt;dd&gt;Weathering steel, larch deck&lt;/dd&gt;   &lt;dt&gt;Replaces&lt;/dt&gt;   &lt;dd&gt;Temporary bridge, 2007&lt;/dd&gt;   &lt;dt&gt;Budget&lt;/dt&gt;   &lt;dd&gt;$1.2M&lt;/dd&gt;   &lt;dt&gt;Expected completion&lt;/dt&gt;   &lt;dd&gt;Summer 2026&lt;/dd&gt; &lt;/dl&gt;"
+                            />
+                        </container>
+                    </facts>
+                    <more-work
+                            inlineVariations="uk-section uk-section-default"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <eyebrow
+                                    inlineVariations="uk-text-meta uk-text-uppercase"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="More work"
+                            />
+                            <heading
+                                    headingText="Related projects."
+                                    headingType="h2"
+                                    inlineVariations="uk-heading-small"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <others
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                    text=" &lt;div class=&quot;uk-grid uk-child-width-1-3@m&quot; uk-grid&gt;    &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/meridian-house.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800&amp;q=80&quot; alt=&quot;Meridian House&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Private residence. 2023&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Meridian House&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/ashford-cultural-centre.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1800&amp;q=80&quot; alt=&quot;Ashford Cultural Centre&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Cultural institution. 2022&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Ashford Cultural Centre&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt;   &lt;div&gt;     &lt;a href=&quot;/content/sites/haven-architecture/portfolio/linden-residence.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;img src=&quot;https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1800&amp;q=80&quot; alt=&quot;Linden Residence&quot; style=&quot;width: 100%; height: 220px; object-fit: cover;&quot; /&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-small-top uk-margin-remove-bottom&quot;&gt;Private residence. 2021&lt;/p&gt;       &lt;h4 class=&quot;uk-h5 uk-margin-remove-top&quot;&gt;Linden Residence&lt;/h4&gt;     &lt;/a&gt;   &lt;/div&gt; &lt;/div&gt;"
+                            />
+                        </container>
+                    </more-work>
+                </main>
+                <footer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/inherited-content-area"
+                />
+            </jcr:content>
+        </solano-bridge>
+    </portfolio>
+    <journal
+            jcr:primaryType="kes:Page"
+    >
+        <jcr:content
+                jcr:description="Occasional writing from inside the studio on practice, projects, and design."
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Journal"
+                kes:template="/libs/kestros/commons/base-site-template"
+                sling:resourceType="kestros/commons/components/kestros-base-page"
+        >
+            <header
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/inherited-content-area"
+            />
+            <main
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/content-area"
+            >
+                <hero
+                        inlineVariations="uk-section uk-section-primary"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <eyebrow
+                                inlineVariations="uk-text-meta uk-text-uppercase"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Journal"
+                        />
+                        <heading
+                                headingText="Notes and essays."
+                                headingType="h1"
+                                inlineVariations="uk-heading-medium"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <dek
+                                inlineVariations="uk-text-lead"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Occasional writing from inside the studio. Thoughts on practice, on specific projects, on the things that come up in design reviews."
+                        />
+                    </container>
+                </hero>
+                <list
+                        inlineVariations="uk-section uk-section-default"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <list
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                text=" &lt;div class=&quot;uk-grid uk-child-width-1-2@m uk-grid-large&quot; uk-grid&gt;    &lt;article&gt;     &lt;a href=&quot;/content/sites/haven-architecture/journal/why-we-draw-by-hand.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;February 2024. M. Haven.&lt;/p&gt;       &lt;h2 class=&quot;uk-h3 uk-margin-small-top&quot;&gt;Why we still draw by hand at the start of every project&lt;/h2&gt;       &lt;p class=&quot;uk-text-muted&quot;&gt;Not nostalgia. The constraint of a pencil on paper is still the fastest way to think through a building.&lt;/p&gt;     &lt;/a&gt;   &lt;/article&gt;   &lt;article&gt;     &lt;a href=&quot;/content/sites/haven-architecture/journal/the-brief-is-never-the-brief.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;November 2023. J. Ortega.&lt;/p&gt;       &lt;h2 class=&quot;uk-h3 uk-margin-small-top&quot;&gt;The brief is never the actual brief&lt;/h2&gt;       &lt;p class=&quot;uk-text-muted&quot;&gt;What the client asks for and what the client wants are rarely the same sentence.&lt;/p&gt;     &lt;/a&gt;   &lt;/article&gt;   &lt;article&gt;     &lt;a href=&quot;/content/sites/haven-architecture/journal/working-with-an-old-building.html&quot; class=&quot;uk-link-reset&quot;&gt;       &lt;p class=&quot;uk-text-meta uk-text-uppercase uk-margin-remove&quot;&gt;June 2019. M. Haven.&lt;/p&gt;       &lt;h2 class=&quot;uk-h3 uk-margin-small-top&quot;&gt;Working with an old building is a conversation, not a translation&lt;/h2&gt;       &lt;p class=&quot;uk-text-muted&quot;&gt;Some notes after the Blackrock conversion wrapped.&lt;/p&gt;     &lt;/a&gt;   &lt;/article&gt; &lt;/div&gt;"
+                        />
+                    </container>
+                </list>
+            </main>
+            <footer
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/inherited-content-area"
+            />
+        </jcr:content>
+        <why-we-draw-by-hand
+                jcr:primaryType="kes:Page"
+        >
+            <jcr:content
+                    jcr:description="Not nostalgia. The constraint of a pencil on paper is still the fastest way to think through a building."
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Why we still draw by hand at the start of every project"
+                    kes:template="/libs/kestros/commons/base-site-template"
+                    sling:resourceType="kestros/commons/components/kestros-base-page"
+            >
+                <header
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/inherited-content-area"
+                />
+                <main
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/content-area"
+                >
+                    <hero
+                            inlineVariations="uk-section uk-section-primary"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <meta
+                                    inlineVariations="uk-text-meta uk-text-uppercase"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="February 2024. M. Haven."
+                            />
+                            <heading
+                                    headingText="Why we still draw by hand at the start of every project"
+                                    headingType="h1"
+                                    inlineVariations="uk-heading-medium"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <dek
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Not nostalgia. The constraint of a pencil on paper is still the fastest way to think through a building."
+                            />
+                        </container>
+                    </hero>
+                    <body
+                            inlineVariations="uk-section uk-section-default"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <p0
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="We use the same computer tools as everyone else. When it comes time to document a building we have the models, the BIM, the engineering coordination. That is not in question."
+                            />
+                            <p1
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="But for the first four or five weeks of a project, before the consultants are on board and before the site has been properly measured, we work almost entirely in plan sketches, section studies, and the occasional small chipboard model. The reason is not nostalgia. It is that the pencil imposes a cost on every line. You have to commit to a move before you draw it, because undoing a pencil line is a minor defeat."
+                            />
+                            <p2
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="That cost is what we are paying for. It is the reason the first conversation with a client goes better at a table with a sheet of tracing paper on it than it does at a screen. The sketch is slow enough to think with."
+                            />
+                        </container>
+                    </body>
+                </main>
+                <footer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/inherited-content-area"
+                />
+            </jcr:content>
+        </why-we-draw-by-hand>
+        <the-brief-is-never-the-brief
+                jcr:primaryType="kes:Page"
+        >
+            <jcr:content
+                    jcr:description="What the client asks for and what the client wants are rarely the same sentence."
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="The brief is never the actual brief"
+                    kes:template="/libs/kestros/commons/base-site-template"
+                    sling:resourceType="kestros/commons/components/kestros-base-page"
+            >
+                <header
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/inherited-content-area"
+                />
+                <main
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/content-area"
+                >
+                    <hero
+                            inlineVariations="uk-section uk-section-primary"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <meta
+                                    inlineVariations="uk-text-meta uk-text-uppercase"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="November 2023. J. Ortega."
+                            />
+                            <heading
+                                    headingText="The brief is never the actual brief"
+                                    headingType="h1"
+                                    inlineVariations="uk-heading-medium"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <dek
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="What the client asks for and what the client wants are rarely the same sentence."
+                            />
+                        </container>
+                    </hero>
+                    <body
+                            inlineVariations="uk-section uk-section-default"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <p0
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Every project starts with a brief. Sometimes it is a formal document with program requirements and a budget, and sometimes it is a text message that says &quot;we need more space&quot;. Either way it is almost never what the client actually wants."
+                            />
+                            <p1
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="The actual want is underneath the brief, and our first job is to dig until we find it. Often it is a specific feeling, or a habit that the current space is blocking. For Meridian House it was &quot;we want to see weather coming&quot;. For Ashford it was &quot;the town needs somewhere to gather that is not a parking lot&quot;. Neither of those sentences was in the written brief."
+                            />
+                            <p2
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="The trick, if it is a trick, is to ask about something they love in another building and then not change the subject. That is usually where the real program lives."
+                            />
+                        </container>
+                    </body>
+                </main>
+                <footer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/inherited-content-area"
+                />
+            </jcr:content>
+        </the-brief-is-never-the-brief>
+        <working-with-an-old-building
+                jcr:primaryType="kes:Page"
+        >
+            <jcr:content
+                    jcr:description="Some notes after the Blackrock conversion wrapped."
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Working with an old building is a conversation, not a translation"
+                    kes:template="/libs/kestros/commons/base-site-template"
+                    sling:resourceType="kestros/commons/components/kestros-base-page"
+            >
+                <header
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/inherited-content-area"
+                />
+                <main
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/content-area"
+                >
+                    <hero
+                            inlineVariations="uk-section uk-section-primary"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <meta
+                                    inlineVariations="uk-text-meta uk-text-uppercase"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="June 2019. M. Haven."
+                            />
+                            <heading
+                                    headingText="Working with an old building is a conversation, not a translation"
+                                    headingType="h1"
+                                    inlineVariations="uk-heading-medium"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/heading"
+                            />
+                            <dek
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Some notes after the Blackrock conversion wrapped."
+                            />
+                        </container>
+                    </hero>
+                    <body
+                            inlineVariations="uk-section uk-section-default"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    >
+                        <container
+                                inlineVariations="uk-container"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/structure/container"
+                        >
+                            <p0
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="Blackrock Studio wrapped last month and I have been thinking about what I would tell a younger version of myself about renovation work. There are two traps. The first is to try to hide the existing building under a layer of new material, as if the old structure were something to be corrected. The second is to make too big a deal about the old building, to treat every beam and bolt as a precious object that must be preserved."
+                            />
+                            <p1
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="The middle path is something like a conversation. The old building has things to say, and so do you. You listen to it for a few weeks before you say anything back. Then you put up a wall where it needs to be, you leave a hoist overhead because it is beautiful, and you let the compromise be visible."
+                            />
+                            <p2
+                                    inlineVariations="uk-text-lead"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/libs/kestros/commons/components/content/text"
+                                    text="A client once asked me what percentage of an old building we should keep in a renovation. I do not have a number. But the question is wrong. It is not about percentages. It is about which moves pay and which moves do not."
+                            />
+                        </container>
+                    </body>
+                </main>
+                <footer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="kestros/commons/components/inherited-content-area"
+                />
+            </jcr:content>
+        </working-with-an-old-building>
+    </journal>
+    <studio
+            jcr:primaryType="kes:Page"
+    >
+        <jcr:content
+                jcr:description="Founded 2003. Eleven people in a converted warehouse. Five or six projects a year."
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Our Studio"
+                kes:template="/libs/kestros/commons/base-site-template"
+                sling:resourceType="kestros/commons/components/kestros-base-page"
+        >
+            <header
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/inherited-content-area"
+            />
+            <main
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/content-area"
+            >
+                <hero
+                        inlineVariations="uk-section uk-section-primary"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <eyebrow
+                                inlineVariations="uk-text-meta uk-text-uppercase"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Studio"
+                        />
+                        <heading
+                                headingText="Eleven people in a warehouse."
+                                headingType="h1"
+                                inlineVariations="uk-heading-medium"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <dek
+                                inlineVariations="uk-text-lead"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Founded 2003. Based in the inner city. Five or six projects a year, no more than we can do well."
+                        />
+                    </container>
+                </hero>
+                <how-we-work
+                        inlineVariations="uk-section uk-section-default"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <heading
+                                headingText="How we work."
+                                headingType="h2"
+                                inlineVariations="uk-heading-small"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <p1
+                                inlineVariations="uk-text-lead"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="We believe architecture is a slow discipline. The work we are proudest of took a long time to design and longer to build. We try to protect that pace and not to apologize for it."
+                        />
+                        <p2
+                                inlineVariations="uk-text-lead"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Every project begins with a long walk around the site, a conversation with whoever will use the building, and about four weeks of hand drawing before we turn on a computer. The sketches are slow enough to think with, which is the point."
+                        />
+                        <p3
+                                inlineVariations="uk-text-lead"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="We keep the studio at eleven people on purpose. Small is a commitment, not a stage we are passing through. At eleven we can sit together at lunch, and the principal is involved in every project from the first sketch to the day it opens."
+                        />
+                    </container>
+                </how-we-work>
+                <history
+                        inlineVariations="uk-section uk-section-muted"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <heading
+                                headingText="A short history."
+                                headingType="h2"
+                                inlineVariations="uk-heading-small"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <history-list
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                                text=" &lt;dl class=&quot;uk-description-list uk-description-list-divider&quot;&gt;   &lt;dt&gt;2003&lt;/dt&gt;   &lt;dd&gt;M. Haven and J. Ortega found the studio in a small back room above a bookshop. First project is a backyard studio for a printmaker.&lt;/dd&gt;   &lt;dt&gt;2008&lt;/dt&gt;   &lt;dd&gt;Studio moves into the current warehouse space. First civic project, a library renovation, wraps up the following spring.&lt;/dd&gt;   &lt;dt&gt;2012&lt;/dt&gt;   &lt;dd&gt;Adds a second principal, R. Kline, to head up the cultural work. The Ashford Cultural Centre competition is won three years later.&lt;/dd&gt;   &lt;dt&gt;2019&lt;/dt&gt;   &lt;dd&gt;Blackrock Studio opens. First project we would describe as adaptive reuse in any honest sense of the word.&lt;/dd&gt;   &lt;dt&gt;2023&lt;/dt&gt;   &lt;dd&gt;Meridian House completes. Eleven-person studio, about forty projects under the belt, still drawing the first four weeks by hand.&lt;/dd&gt; &lt;/dl&gt;"
+                        />
+                    </container>
+                </history>
+            </main>
+            <footer
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/inherited-content-area"
+            />
+        </jcr:content>
+    </studio>
+    <services
+            jcr:primaryType="kes:Page"
+    >
+        <jcr:content
+                jcr:description="Residential, cultural and civic, adaptive reuse, and landscape work."
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Services"
+                kes:template="/libs/kestros/commons/base-site-template"
+                sling:resourceType="kestros/commons/components/kestros-base-page"
+        >
+            <header
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/inherited-content-area"
+            />
+            <main
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/content-area"
+            >
+                <hero
+                        inlineVariations="uk-section uk-section-primary"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <eyebrow
+                                inlineVariations="uk-text-meta uk-text-uppercase"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Services"
+                        />
+                        <heading
+                                headingText="What we take on."
+                                headingType="h1"
+                                inlineVariations="uk-heading-medium"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <dek
+                                inlineVariations="uk-text-lead"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="A short list. We keep the practice narrow on purpose and we are happy to recommend other firms when a project is not a fit."
+                        />
+                    </container>
+                </hero>
+                <list
+                        inlineVariations="uk-section uk-section-default"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <residential-heading
+                                headingText="Residential"
+                                headingType="h3"
+                                inlineVariations="uk-heading-bullet"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <residential-body
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="New-build houses and significant renovations, from infill lots to coastline properties. We work at any scale that fits on a residential plan set."
+                        />
+                        <cultural-and-civic-heading
+                                headingText="Cultural and civic"
+                                headingType="h3"
+                                inlineVariations="uk-heading-bullet"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <cultural-and-civic-body
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Small-to-mid-sized public buildings: libraries, community centres, galleries, pavilions. Most of these start as competitions and all of them start with a long walk around the site."
+                        />
+                        <adaptive-reuse-heading
+                                headingText="Adaptive reuse"
+                                headingType="h3"
+                                inlineVariations="uk-heading-bullet"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <adaptive-reuse-body
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Old buildings that want a second life. We are particular about what we take on here. If the old building has nothing to say we are usually not the right firm."
+                        />
+                        <landscape-and-site-heading
+                                headingText="Landscape and site"
+                                headingType="h3"
+                                inlineVariations="uk-heading-bullet"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <landscape-and-site-body
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="When a project needs it, we work with landscape architects from the first week. Increasingly we think of this as the same work, not a discipline we subcontract out."
+                        />
+                    </container>
+                </list>
+                <engagement
+                        inlineVariations="uk-section uk-section-muted"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <heading
+                                headingText="How an engagement runs."
+                                headingType="h2"
+                                inlineVariations="uk-heading-small"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <p1
+                                inlineVariations="uk-text-lead"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="A typical project starts with an introductory meeting and a site walk, usually at no cost. If we are a good fit on both sides we do a short paid feasibility phase, which is where we figure out whether the project is worth doing and how much it is likely to cost."
+                        />
+                        <p2
+                                inlineVariations="uk-text-lead"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="From there the phases are conventional: schematic design, design development, construction documents, bidding, construction administration. We run our side of the process with one project lead and the appropriate junior staff on each phase. The principal who signed your contract will still be looking at the drawings on the last day."
+                        />
+                        <p3
+                                inlineVariations="uk-text-lead"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="If you would like to talk about a project, the contact page is the right place to start."
+                        />
+                    </container>
+                </engagement>
+            </main>
+            <footer
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/inherited-content-area"
+            />
+        </jcr:content>
+    </services>
+    <contact
+            jcr:primaryType="kes:Page"
+    >
+        <jcr:content
+                jcr:description="Start a conversation about a new project. The first call is free."
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Contact"
+                kes:template="/libs/kestros/commons/base-site-template"
+                sling:resourceType="kestros/commons/components/kestros-base-page"
+        >
+            <header
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/inherited-content-area"
+            />
+            <main
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/content-area"
+            >
+                <hero
+                        inlineVariations="uk-section uk-section-primary"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <eyebrow
+                                inlineVariations="uk-text-meta uk-text-uppercase"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Contact"
+                        />
+                        <heading
+                                headingText="Get in touch."
+                                headingType="h1"
+                                inlineVariations="uk-heading-medium"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <dek
+                                inlineVariations="uk-text-lead"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="We respond to every enquiry within a week. If you are considering a new project we would like to hear about it."
+                        />
+                    </container>
+                </hero>
+                <details
+                        inlineVariations="uk-section uk-section-default"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <studio-heading
+                                headingText="114 Cooperage Row"
+                                headingType="h3"
+                                inlineVariations="uk-heading-bullet"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <studio-body
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Suite 3, converted warehouse building on the east side. Second door after the bakery."
+                        />
+                        <hours-heading
+                                headingText="Hours"
+                                headingType="h3"
+                                inlineVariations="uk-heading-bullet"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <hours-body
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Monday to Friday, 9 to 6. We are almost always in the studio but we have a bad habit of not answering the door. Email first."
+                        />
+                        <email-heading
+                                headingText="Email"
+                                headingType="h3"
+                                inlineVariations="uk-heading-bullet"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <email-body
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="studio@haven.example"
+                        />
+                        <phone-heading
+                                headingText="Phone"
+                                headingType="h3"
+                                inlineVariations="uk-heading-bullet"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <phone-body
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="+1 555 0140"
+                        />
+                    </container>
+                </details>
+                <considering
+                        inlineVariations="uk-section uk-section-muted"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/section"
+                >
+                    <container
+                            inlineVariations="uk-container"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/structure/container"
+                    >
+                        <heading
+                                headingText="Considering a project?"
+                                headingType="h2"
+                                inlineVariations="uk-heading-small"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        />
+                        <p1
+                                inlineVariations="uk-text-lead"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="The first conversation is free and it is the most important one. Tell us what you are thinking about, even if it is vague. What kind of project, what site you have in mind if any, what timeline you are working against. We will read it carefully and write back."
+                        />
+                        <p2
+                                inlineVariations="uk-text-lead"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="We take on five or six projects a year. If the fit is wrong we will say so and suggest a studio we think would be better. That is not a polite brush-off. It is how we keep the practice worth doing."
+                        />
+                    </container>
+                </considering>
+            </main>
+            <footer
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="kestros/commons/components/inherited-content-area"
+            />
+        </jcr:content>
+    </contact>
+</jcr:root>

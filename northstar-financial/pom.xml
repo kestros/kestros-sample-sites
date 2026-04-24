@@ -5,18 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.kestros.samples</groupId>
-    <artifactId>league-demo-parent</artifactId>
+    <artifactId>northstar-financial-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>League Demo Sample Site</name>
-    <description>League demo sample site — datasources, dynamic page filters, and domain models</description>
+    <name>Northstar Financial Sample Site</name>
 
     <modules>
-        <module>api</module>
-        <module>core</module>
-        <module>application</module>
-        <module>datasources</module>
         <module>content</module>
     </modules>
 

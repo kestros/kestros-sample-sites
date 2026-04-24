@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:rep="http://www.jcp.org/jcr/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="kes:Page"
+>
+    <jcr:content
+            jcr:description="Things we wish we had known, loosely organized by when they matter."
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Travel tips"
+            kes:template="/libs/kestros/commons/base-site-template"
+            sling:resourceType="kestros/commons/components/kestros-base-page"
+    >
+        <header
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"
+        />
+        <main
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/content-area"
+        >
+            <hero
+                    inlineVariations="uk-section uk-section-primary"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        inlineVariations="uk-container"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <eyebrow
+                            inlineVariations="uk-text-meta uk-text-uppercase"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Travel tips"
+                    />
+                    <heading
+                            headingText="Things we wish we had known."
+                            headingType="h1"
+                            inlineVariations="uk-heading-medium"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <dek
+                            inlineVariations="uk-text-lead"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="An opinionated list. The rules that have saved us the most time and money, loosely organized by when they start to matter."
+                    />
+                </container>
+            </hero>
+            <before
+                    inlineVariations="uk-section uk-section-default"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        inlineVariations="uk-container"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <heading
+                            headingText="Before the trip"
+                            headingType="h2"
+                            inlineVariations="uk-heading-small"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <tip-0-title
+                            headingText="Book the flight first"
+                            headingType="h3"
+                            inlineVariations="uk-heading-bullet"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <tip-0-body
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="The flight is the expensive part and the inflexible part. Lock the dates, then plan the rest of the trip around them. Most people do this in the wrong order and end up paying for it twice."
+                    />
+                    <tip-1-title
+                            headingText="Tell one person at home"
+                            headingType="h3"
+                            inlineVariations="uk-heading-bullet"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <tip-1-body
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Not an itinerary, not every hotel, just: where you landed, where you should end up, and roughly when. If something goes wrong they will know how to start looking."
+                    />
+                    <tip-2-title
+                            headingText="Pack less than you planned"
+                            headingType="h3"
+                            inlineVariations="uk-heading-bullet"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <tip-2-body
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Lay everything out on the bed. Now take half of it away. You will not wear what you thought you would wear, and whatever is missing you can buy when you get there for less than your baggage fee."
+                    />
+                </container>
+            </before>
+            <during
+                    inlineVariations="uk-section uk-section-muted"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        inlineVariations="uk-container"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <heading
+                            headingText="While you are there"
+                            headingType="h2"
+                            inlineVariations="uk-heading-small"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <tip-0-title
+                            headingText="Walk for the first day"
+                            headingType="h3"
+                            inlineVariations="uk-heading-bullet"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <tip-0-body
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Do not go to the famous spots on day one. Walk a neighborhood instead. The city starts to make sense. The famous spots are easier to find after that, and you will have stories about how you got there."
+                    />
+                    <tip-1-title
+                            headingText="Eat one meal on your own"
+                            headingType="h3"
+                            inlineVariations="uk-heading-bullet"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <tip-1-body
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="A market counter, a park bench, whatever. No conversation, no phone. You will notice three things about the place you would have missed at a table for two."
+                    />
+                    <tip-2-title
+                            headingText="Keep a notebook"
+                            headingType="h3"
+                            inlineVariations="uk-heading-bullet"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <tip-2-body
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Not a travel journal. Just a notebook. One line a day is enough. What you eat, what you saw, what the weather did. You will be grateful for it in five years in a way that a phone album will never match."
+                    />
+                </container>
+            </during>
+            <after
+                    inlineVariations="uk-section uk-section-default"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        inlineVariations="uk-container"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <heading
+                            headingText="After you get back"
+                            headingType="h2"
+                            inlineVariations="uk-heading-small"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <tip-0-title
+                            headingText="Unpack on the day you land"
+                            headingType="h3"
+                            inlineVariations="uk-heading-bullet"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <tip-0-body
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Anything that stays in the bag for a week will stay there forever. Just do it the day you get home, even if you are tired. Especially if you are tired."
+                    />
+                    <tip-1-title
+                            headingText="Write down one page"
+                            headingType="h3"
+                            inlineVariations="uk-heading-bullet"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <tip-1-body
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Not a blog post. One page, in the notebook you kept. The best meal, the worst day, the one thing you would do differently. Six months from now you will read it and be surprised what you forgot."
+                    />
+                    <tip-2-title
+                            headingText="Start the next one soon"
+                            headingType="h3"
+                            inlineVariations="uk-heading-bullet"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <tip-2-body
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Do not wait for some feeling of inspiration. Pick a country, pick a week a few months out, put it on the calendar. The next trip is half built the moment you commit to a date."
+                    />
+                </container>
+            </after>
+        </main>
+        <footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"
+        />
+    </jcr:content>
+</jcr:root>

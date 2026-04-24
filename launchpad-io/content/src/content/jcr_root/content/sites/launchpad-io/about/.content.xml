@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:rep="http://www.jcp.org/jcr/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="kes:Page"
+>
+    <jcr:content
+            jcr:description="A deploy tool by a small team, started in 2022, profitable, no VC."
+            jcr:primaryType="nt:unstructured"
+            jcr:title="About Launchpad"
+            kes:template="/libs/kestros/commons/base-site-template"
+            sling:resourceType="kestros/commons/components/kestros-base-page"
+    >
+        <header
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"
+        />
+        <main
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/content-area"
+        >
+            <hero
+                    inlineVariations="uk-section uk-section-primary"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        inlineVariations="uk-container"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <eyebrow
+                            inlineVariations="uk-text-meta uk-text-uppercase"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="About Launchpad"
+                    />
+                    <heading
+                            headingText="A deploy tool by a small team."
+                            headingType="h1"
+                            inlineVariations="uk-heading-medium"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <dek
+                            inlineVariations="uk-text-lead"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="We started Launchpad in 2022 because the tools we used to deploy our own side projects had all grown into platforms we did not want to learn. Eight people now, profitable, no VC money."
+                    />
+                </container>
+            </hero>
+            <believe
+                    inlineVariations="uk-section uk-section-default"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        inlineVariations="uk-container"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <heading
+                            headingText="What we believe."
+                            headingType="h2"
+                            inlineVariations="uk-heading-small"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <p1
+                            inlineVariations="uk-text-lead"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="Deploying a web app should feel like pushing to git. The common case should be one command. The uncommon case should be two. Anything more than that is the tool asking you to do its job."
+                    />
+                    <p2
+                            inlineVariations="uk-text-lead"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="We also believe that small is a feature. Being a team of eight means we answer support emails ourselves, we can change the roadmap in the same week we hear from a customer, and none of our pricing has a &quot;contact sales&quot; line on it. You can read our pricing page in ten seconds."
+                    />
+                    <p3
+                            inlineVariations="uk-text-lead"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="None of that is unique. A lot of tools started out saying this. We are trying to not forget it."
+                    />
+                </container>
+            </believe>
+            <history
+                    inlineVariations="uk-section uk-section-muted"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        inlineVariations="uk-container"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <heading
+                            headingText="A short history."
+                            headingType="h2"
+                            inlineVariations="uk-heading-small"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <history-list
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/richtext"
+                            text=" &lt;dl class=&quot;uk-description-list uk-description-list-divider&quot;&gt;   &lt;dt&gt;2022&lt;/dt&gt;   &lt;dd&gt;Two of us were deploying a side project in a small apartment in Lisbon and got frustrated enough to start writing our own tool. Six weeks later the first internal version ran our own apps.&lt;/dd&gt;   &lt;dt&gt;2023&lt;/dt&gt;   &lt;dd&gt;Invited a hundred beta users. Stayed up for most of the next year fixing things they found.&lt;/dd&gt;   &lt;dt&gt;2024&lt;/dt&gt;   &lt;dd&gt;Opened signups. Got profitable the same quarter, quietly. Turned down three investor conversations.&lt;/dd&gt;   &lt;dt&gt;2025&lt;/dt&gt;   &lt;dd&gt;Hired a fifth and sixth engineer. Shipped preview environments and custom domains the same week.&lt;/dd&gt;   &lt;dt&gt;2026&lt;/dt&gt;   &lt;dd&gt;Eight people. Four hundred paying teams. A CLI that has gotten smaller, not bigger, every quarter.&lt;/dd&gt; &lt;/dl&gt;"
+                    />
+                </container>
+            </history>
+            <contact
+                    inlineVariations="uk-section uk-section-default"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <container
+                        inlineVariations="uk-container"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/container"
+                >
+                    <heading
+                            headingText="Get in touch."
+                            headingType="h2"
+                            inlineVariations="uk-heading-small"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/heading"
+                    />
+                    <body
+                            inlineVariations="uk-text-lead"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/text"
+                            text="If you want to talk to us, email hi@launchpad.example. We read everything. If you are evaluating Launchpad for a team, include what you are running today and what is frustrating about it."
+                    />
+                </container>
+            </contact>
+        </main>
+        <footer
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="kestros/commons/components/inherited-content-area"
+        />
+    </jcr:content>
+</jcr:root>
