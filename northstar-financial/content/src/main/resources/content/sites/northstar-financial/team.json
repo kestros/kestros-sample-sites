@@ -1,0 +1,107 @@
+{
+  "jcr:primaryType": "kes:Page",
+  "jcr:content": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "kestros/commons/components/kestros-base-page",
+    "jcr:title": "Our Team",
+    "main": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/content-area",
+      "intro": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "/libs/kestros/commons/components/structure/section",
+        "variations": ["py-5"],
+        "container": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/structure/container",
+          "heading": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "/libs/kestros/commons/components/content/heading",
+            "headingType": "h1",
+            "headingText": "Our Team"
+          },
+          "text": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "/libs/kestros/commons/components/content/text",
+            "text": "Our advisors hold the CFP, CFA, and CPA designations. More importantly, they listen before they plan."
+          }
+        }
+      },
+      "advisors": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "/libs/kestros/commons/components/structure/section",
+        "container": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/structure/container",
+          "grid": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "/libs/kestros/commons/components/structure/grid",
+            "column-1": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content-area",
+              "card": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "/libs/kestros/commons/components/content/card",
+                "description": "Founder and Managing Partner. 20 years in wealth management. CFP, CFA. Sarah founded Northstar in 2008 with a simple belief: financial advice should be transparent, evidence-based, and always in the client's interest.",
+                "imageElement": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "sling:resourceType": "/libs/kestros/commons/components/content/image",
+                  "imagePath": "/content/assets/landscapes/photo-1500622944204-b135684e99fd.jpeg",
+                  "altText": "Sarah Chen"
+                },
+                "titleElement": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "sling:resourceType": "/libs/kestros/commons/components/content/heading",
+                  "headingType": "h5",
+                  "headingText": "Sarah Chen, CFP, CFA"
+                }
+              }
+            },
+            "column-2": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content-area",
+              "card": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "/libs/kestros/commons/components/content/card",
+                "description": "Senior Financial Planner. 15 years of experience. CFP, CPA. James specializes in retirement income planning and tax-efficient withdrawal strategies for clients approaching or in retirement.",
+                "imageElement": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "sling:resourceType": "/libs/kestros/commons/components/content/image",
+                  "imagePath": "/content/assets/landscapes/photo-1464069668014-99e9cd4abf16.jpeg",
+                  "altText": "James Okafor"
+                },
+                "titleElement": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "sling:resourceType": "/libs/kestros/commons/components/content/heading",
+                  "headingType": "h5",
+                  "headingText": "James Okafor, CFP, CPA"
+                }
+              }
+            },
+            "column-3": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content-area",
+              "card": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "/libs/kestros/commons/components/content/card",
+                "description": "Financial Planner. 8 years of experience. CFP. Maria works with young professionals and growing families on building their first financial plan, from student loan strategy to first-home purchases.",
+                "imageElement": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "sling:resourceType": "/libs/kestros/commons/components/content/image",
+                  "imagePath": "/content/assets/landscapes/photo-1544179516-b0878e1cbe48.jpeg",
+                  "altText": "Maria Reyes"
+                },
+                "titleElement": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "sling:resourceType": "/libs/kestros/commons/components/content/heading",
+                  "headingType": "h5",
+                  "headingText": "Maria Reyes, CFP"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

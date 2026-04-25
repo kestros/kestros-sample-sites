@@ -1,0 +1,101 @@
+{
+  "jcr:primaryType": "kes:Page",
+  "jcr:content": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "kestros/commons/components/kestros-base-page",
+    "jcr:title": "About",
+    "main": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "kestros/commons/components/content-area",
+      "story": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "/libs/kestros/commons/components/structure/section",
+        "variations": ["py-5"],
+        "container": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/structure/container",
+          "heading": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "/libs/kestros/commons/components/content/heading",
+            "headingType": "h1",
+            "headingText": "About Northstar Financial"
+          },
+          "text-1": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "/libs/kestros/commons/components/content/text",
+            "text": "Founded in 2008, Northstar Financial is a fee-only registered investment advisor serving clients throughout the Mid-Atlantic region. We manage over $250 million in client assets across more than 200 households."
+          },
+          "text-2": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "/libs/kestros/commons/components/content/text",
+            "text": "Our firm was built on a simple principle: financial advice should be transparent, conflict-free, and grounded in evidence. We do not sell products, earn commissions, or accept referral fees. Every recommendation we make is held to the fiduciary standard."
+          }
+        }
+      },
+      "values": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "/libs/kestros/commons/components/structure/section",
+        "variations": ["bg-light", "py-5"],
+        "container": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "/libs/kestros/commons/components/structure/container",
+          "heading": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "/libs/kestros/commons/components/content/heading",
+            "headingType": "h2",
+            "headingText": "Our Values"
+          },
+          "grid": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "/libs/kestros/commons/components/structure/grid",
+            "column-1": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content-area",
+              "heading": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "/libs/kestros/commons/components/content/heading",
+                "headingType": "h4",
+                "headingText": "Transparency"
+              },
+              "text": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "/libs/kestros/commons/components/content/text",
+                "text": "Every fee, every recommendation, every decision is visible to you. We publish our fee schedule and provide detailed quarterly reports."
+              }
+            },
+            "column-2": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content-area",
+              "heading": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "/libs/kestros/commons/components/content/heading",
+                "headingType": "h4",
+                "headingText": "Discipline"
+              },
+              "text": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "/libs/kestros/commons/components/content/text",
+                "text": "We follow an evidence-based investment philosophy. No market timing, no chasing trends — systematic, repeatable processes that have stood the test of decades."
+              }
+            },
+            "column-3": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "kestros/commons/components/content-area",
+              "heading": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "/libs/kestros/commons/components/content/heading",
+                "headingType": "h4",
+                "headingText": "Partnership"
+              },
+              "text": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "/libs/kestros/commons/components/content/text",
+                "text": "Your goals shape our advice. We listen first, plan second, and stay alongside you as life changes. Our average client relationship spans over a decade."
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
