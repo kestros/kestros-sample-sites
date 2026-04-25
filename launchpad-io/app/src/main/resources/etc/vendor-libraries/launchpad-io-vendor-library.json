@@ -1,0 +1,6 @@
+{
+  "jcr:primaryType": "kes:ManagedVendorLibrary",
+  "jcr:title": "Launchpad.io Vendor Library",
+  "jcr:description": "Vendor Library for the Launchpad.io Sample Site",
+  "documentationUrl": "https://bulma.io"
+}
