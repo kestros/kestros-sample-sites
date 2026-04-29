@@ -49,7 +49,7 @@ public class PlayerStatsCardListDataSource extends BaseContainerSlingModelDataSo
       try {
         cards.add(new KestrosCardImpl(
             stat[1],
-            new KestrosHeadingImpl(stat[0], "h4", this, "title", "stat-title-" + i),
+            new KestrosHeadingImpl(stat[0], "h4", this, "title", "titleElement"),
             null, null,
             this, "card", "stat-" + i));
         i++;

@@ -1,0 +1,7 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:title": "Players",
+  "group": "League Demo",
+  "classPath": "io.kestros.samples.leaguedemo.datasources.TopScorersTableDataSource",
+  "container": true
+}

@@ -1,0 +1,7 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:title": "Team Info",
+  "group": "League Demo",
+  "classPath": "io.kestros.samples.leaguedemo.datasources.TeamInfoTableDataSource",
+  "container": true
+}
