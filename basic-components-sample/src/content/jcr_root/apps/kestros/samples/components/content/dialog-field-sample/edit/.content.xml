@@ -231,5 +231,21 @@
             name="richTextValue"
             required="{Boolean}false"/>
 
+        <fileupload-standard
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="kestros/cms2/fields/general/filefield"
+            label="File Upload"
+            name="fileUploadValue"
+            uploadUrl="/bin/kestros/assets/upload"
+            required="{Boolean}false"/>
+        <fileupload-required
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="kestros/cms2/fields/general/filefield"
+            label="File Upload (Required)"
+            name="fileUploadRequired"
+            uploadUrl="/bin/kestros/assets/upload"
+            accept="image/*,.pdf"
+            required="{Boolean}true"/>
+
     </content>
 </jcr:root>
