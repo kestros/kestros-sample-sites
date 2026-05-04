@@ -7,6 +7,7 @@ import io.kestros.cms.components.basic.api.table.KestrosTableHeader;
 import io.kestros.cms.components.basic.api.table.KestrosTableRow;
 import io.kestros.cms.components.basic.core.BaseContainerSlingModelDataSource;
 import io.kestros.samples.league.api.models.Season;
+import io.kestros.samples.league.api.models.Team;
 import io.kestros.samples.league.api.services.LeagueDataService;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -31,8 +32,10 @@ public class SeasonsTableDataSource extends BaseContainerSlingModelDataSource
     List<KestrosTableHeader> headers = new ArrayList<>();
     try {
       headers.add(new SyntheticTableHeader("Season", this, "header", "season"));
-      headers.add(new SyntheticTableHeader("Teams", this, "header", "teams"));
-      headers.add(new SyntheticTableHeader("Matches", this, "header", "matches"));
+      headers.add(new SyntheticTableHeader("Status", this, "header", "status"));
+      headers.add(new SyntheticTableHeader("Champion", this, "header", "champ"));
+      headers.add(new SyntheticTableHeader("Runner-up", this, "header", "runnerup"));
+      headers.add(new SyntheticTableHeader("Golden Boot", this, "header", "boot"));
     } catch (Exception e) { /* skip */ }
     return headers;
   }
@@ -46,14 +49,32 @@ public class SeasonsTableDataSource extends BaseContainerSlingModelDataSource
     int i = 0;
     for (Season s : leagueDataService.getSeasons()) {
       String name = s.getName() != null ? s.getName() : s.getStartYear() + "-" + s.getEndYear();
-      int teamCount = s.getTeamIds() != null ? s.getTeamIds().size() : 0;
-      int matchCount = s.getMatchIds() != null ? s.getMatchIds().size() : 0;
+      String status = s.getStatus() != null ? s.getStatus() : "";
+
+      String champ = "-";
+      if (s.getChampionId() != null && !s.getChampionId().isEmpty()) {
+        Team t = leagueDataService.getTeam(s.getChampionId());
+        champ = t != null ? t.getName() : s.getChampionId();
+      }
+
+      String runnerUp = "-";
+      if (s.getRunnerUpId() != null && !s.getRunnerUpId().isEmpty()) {
+        Team t = leagueDataService.getTeam(s.getRunnerUpId());
+        runnerUp = t != null ? t.getName() : s.getRunnerUpId();
+      }
+
+      String boot = "-";
+      if (s.getTopScorerGoals() > 0) {
+        boot = s.getTopScorerGoals() + " goals";
+      }
 
       try {
         List<KestrosTableCell> cells = Arrays.asList(
             new SyntheticTableCell(name, this, "cell", "name-" + i),
-            new SyntheticTableCell(String.valueOf(teamCount), this, "cell", "teams-" + i),
-            new SyntheticTableCell(String.valueOf(matchCount), this, "cell", "matches-" + i)
+            new SyntheticTableCell(status, this, "cell", "status-" + i),
+            new SyntheticTableCell(champ, this, "cell", "champ-" + i),
+            new SyntheticTableCell(runnerUp, this, "cell", "runnerup-" + i),
+            new SyntheticTableCell(boot, this, "cell", "boot-" + i)
         );
         rows.add(new SyntheticTableRow(cells, this, "row", "row-" + i));
         i++;
