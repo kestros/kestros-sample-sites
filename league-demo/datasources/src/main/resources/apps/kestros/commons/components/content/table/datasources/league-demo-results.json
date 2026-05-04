@@ -1,0 +1,7 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:title": "Match Results (Played Only)",
+  "group": "League Demo",
+  "classPath": "io.kestros.samples.leaguedemo.datasources.PlayedResultsTableDataSource",
+  "container": true
+}
