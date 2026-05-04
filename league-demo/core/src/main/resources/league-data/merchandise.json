@@ -1,0 +1,98 @@
+[
+  {
+    "id": "home-jersey-2526",
+    "name": "2025-26 Official Home Jersey",
+    "category": "Jerseys",
+    "price": "79.99",
+    "description": "The official MPL home jersey for the 2025-26 season. Lightweight performance fabric with embroidered league crest. Available in all ten club colours.",
+    "tags": ["jersey", "official", "new-season"]
+  },
+  {
+    "id": "away-jersey-2526",
+    "name": "2025-26 Official Away Jersey",
+    "category": "Jerseys",
+    "price": "79.99",
+    "description": "The alternate match jersey for the 2025-26 campaign. Breathable mesh construction with contrast detailing. Available for all clubs.",
+    "tags": ["jersey", "official", "new-season"]
+  },
+  {
+    "id": "training-top",
+    "name": "MPL Training Top",
+    "category": "Training",
+    "price": "49.99",
+    "description": "Quarter-zip training top in league navy with green accent trim. Moisture-wicking fabric, raglan sleeves, embroidered MPL crest.",
+    "tags": ["training", "official"]
+  },
+  {
+    "id": "supporter-scarf",
+    "name": "Club Supporter Scarf",
+    "category": "Accessories",
+    "price": "24.99",
+    "description": "Jacquard-knit scarf in your club's colours. Double-sided design with club name and crest. 100% acrylic, one size fits all.",
+    "tags": ["scarf", "accessories", "club"]
+  },
+  {
+    "id": "league-cap",
+    "name": "MPL Snapback Cap",
+    "category": "Accessories",
+    "price": "29.99",
+    "description": "Structured six-panel snapback cap with embroidered MPL logo. Adjustable fit, curved brim, navy with green under-visor.",
+    "tags": ["cap", "accessories", "official"]
+  },
+  {
+    "id": "match-ball",
+    "name": "2025-26 Official Match Ball",
+    "category": "Equipment",
+    "price": "149.99",
+    "description": "The same FIFA-quality ball used in every MPL fixture. Hand-stitched panels, thermal bonding, official league markings. Size 5.",
+    "tags": ["ball", "equipment", "official"]
+  },
+  {
+    "id": "mini-ball",
+    "name": "MPL Mini Ball",
+    "category": "Equipment",
+    "price": "19.99",
+    "description": "Miniature replica of the official match ball. Perfect for display or kickabouts. Size 1 with full league graphics.",
+    "tags": ["ball", "equipment", "kids"]
+  },
+  {
+    "id": "travel-mug",
+    "name": "MPL Travel Mug",
+    "category": "Lifestyle",
+    "price": "14.99",
+    "description": "Insulated stainless steel travel mug with MPL branding. Keeps drinks hot for 6 hours or cold for 12. 450ml capacity.",
+    "tags": ["lifestyle", "drinkware"]
+  },
+  {
+    "id": "hoodie",
+    "name": "MPL Essential Hoodie",
+    "category": "Casual",
+    "price": "59.99",
+    "description": "Heavyweight cotton-blend hoodie with printed league crest. Kangaroo pocket, ribbed cuffs, drawstring hood. Available in navy, grey, and green.",
+    "tags": ["hoodie", "casual", "official"]
+  },
+  {
+    "id": "rain-jacket",
+    "name": "MPL Matchday Rain Jacket",
+    "category": "Outerwear",
+    "price": "89.99",
+    "description": "Waterproof, breathable rain jacket for the terraces. Sealed seams, packable hood, reflective MPL badge. Be ready for any weather.",
+    "tags": ["jacket", "outerwear", "matchday"]
+  },
+  {
+    "id": "youth-kit",
+    "name": "Youth Home Kit Set",
+    "category": "Youth",
+    "price": "54.99",
+    "description": "Complete youth kit set including jersey, shorts, and socks. Same design as the senior kit, sized for ages 6-14. Available for all clubs.",
+    "tags": ["youth", "jersey", "kit"]
+  },
+  {
+    "id": "pennant",
+    "name": "Club Pennant",
+    "category": "Collectibles",
+    "price": "12.99",
+    "description": "Traditional triangular pennant featuring your club's crest and founding year. Satin fabric with gold fringe. Perfect for display.",
+    "tags": ["pennant", "collectible", "club"]
+  }
+]

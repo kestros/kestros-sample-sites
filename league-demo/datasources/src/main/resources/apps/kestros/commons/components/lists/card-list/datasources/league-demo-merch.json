@@ -1,0 +1,7 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:title": "League Merchandise",
+  "group": "League Demo",
+  "classPath": "io.kestros.samples.leaguedemo.datasources.MerchCardListDataSource",
+  "container": true
+}
