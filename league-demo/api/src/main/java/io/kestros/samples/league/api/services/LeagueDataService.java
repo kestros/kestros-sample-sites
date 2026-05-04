@@ -2,6 +2,7 @@ package io.kestros.samples.league.api.services;
 
 import io.kestros.samples.league.api.models.Article;
 import io.kestros.samples.league.api.models.Match;
+import io.kestros.samples.league.api.models.Sponsor;
 import io.kestros.samples.league.api.models.Player;
 import io.kestros.samples.league.api.models.Season;
 import io.kestros.samples.league.api.models.Team;
@@ -38,4 +39,6 @@ public interface LeagueDataService {
     List<Article> getArticles();
 
     List<Article> getArticlesByTag(String tag);
+
+    List<Sponsor> getSponsors();
 }

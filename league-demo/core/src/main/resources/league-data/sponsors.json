@@ -1,0 +1,66 @@
+[
+  {
+    "id": "meridian-bank",
+    "name": "Meridian National Bank",
+    "tier": "title",
+    "category": "Title Partner",
+    "website": "#",
+    "description": "Official banking partner and title sponsor of the Meridian Premier League since 2019."
+  },
+  {
+    "id": "apex-sports",
+    "name": "Apex Sportswear",
+    "tier": "official",
+    "category": "Official Kit Supplier",
+    "website": "#",
+    "description": "Providing match balls and official referee kits for all MPL fixtures."
+  },
+  {
+    "id": "meridian-broadcast",
+    "name": "Meridian Sports Network",
+    "tier": "official",
+    "category": "Official Broadcaster",
+    "website": "#",
+    "description": "Live coverage of every MPL match, plus highlights, analysis, and magazine programming."
+  },
+  {
+    "id": "greenfield-energy",
+    "name": "Greenfield Energy",
+    "tier": "official",
+    "category": "Sustainability Partner",
+    "website": "#",
+    "description": "Powering all ten MPL stadiums with 100% renewable energy."
+  },
+  {
+    "id": "coastline-motors",
+    "name": "Coastline Motors",
+    "tier": "partner",
+    "category": "Official Automotive Partner",
+    "website": "#",
+    "description": "Official vehicle partner providing player and staff transport across the league."
+  },
+  {
+    "id": "highland-brew",
+    "name": "Highland Brewing Co.",
+    "tier": "partner",
+    "category": "Official Beer Partner",
+    "website": "#",
+    "description": "The official beer of the MPL, available at all league venues."
+  },
+  {
+    "id": "nova-telecom",
+    "name": "Nova Telecom",
+    "tier": "partner",
+    "category": "Technology Partner",
+    "website": "#",
+    "description": "Providing stadium connectivity and the MPL's official mobile app platform."
+  },
+  {
+    "id": "summit-insurance",
+    "name": "Summit Insurance Group",
+    "tier": "partner",
+    "category": "Insurance Partner",
+    "website": "#",
+    "description": "Official insurance partner of the Meridian Premier League."
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:title": "League Sponsors",
+  "group": "League Demo",
+  "classPath": "io.kestros.samples.leaguedemo.datasources.SponsorsCardListDataSource",
+  "container": true
+}
