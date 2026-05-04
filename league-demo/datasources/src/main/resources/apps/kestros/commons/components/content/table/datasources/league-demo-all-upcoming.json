@@ -1,0 +1,7 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:title": "All Upcoming Fixtures",
+  "group": "League Demo",
+  "classPath": "io.kestros.samples.leaguedemo.datasources.AllUpcomingFixturesTableDataSource",
+  "container": true
+}
