@@ -43,11 +43,11 @@
                         <stat-label jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Matches Played"/>
                     </column-1>
                     <column-2 jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
-                        <stat-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="158" headingType="h3"/>
+                        <stat-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="175" headingType="h3"/>
                         <stat-label jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Goals Scored"/>
                     </column-2>
                     <column-3 jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
-                        <stat-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="2.63" headingType="h3"/>
+                        <stat-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="2.92" headingType="h3"/>
                         <stat-label jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Goals Per Match"/>
                     </column-3>
                 </overview-grid>
