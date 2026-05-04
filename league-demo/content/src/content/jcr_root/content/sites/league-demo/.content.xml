@@ -113,32 +113,53 @@
                 </ctas>
             </hero>
 
-            <!-- Recent Results -->
-            <results-section
+            <!-- Match Center: Results | Fixtures side by side -->
+            <match-center-section
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="/libs/kestros/commons/components/structure/section"
             >
                 <heading
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/heading"
-                        headingText="Week 12 Results"
+                        headingText="Match Center"
                         headingType="h2"/>
-                <results-subtitle
+                <match-center-grid
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="The latest scores from across the Meridian Premier League."/>
-                <results-table
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="/libs/kestros/commons/components/content/table"
-                        kes:datasource="league-demo-recent-results"/>
-                <schedule-link
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="/libs/kestros/commons/components/content/link"
-                        text="Full Schedule and Results"
-                        href="/content/sites/league-demo/schedule.html"/>
-            </results-section>
+                        sling:resourceType="/libs/kestros/commons/components/structure/grid"
+                        layout="50-50"
+                >
+                    <column-1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kestros/commons/components/content-area"
+                    >
+                        <heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                headingText="Week 12 Results"
+                                headingType="h3"/>
+                        <results-table
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/table"
+                                kes:datasource="league-demo-recent-results"/>
+                    </column-1>
+                    <column-2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kestros/commons/components/content-area"
+                    >
+                        <heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                headingText="Week 13 Fixtures"
+                                headingType="h3"/>
+                        <upcoming-table
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/table"
+                                kes:datasource="league-demo-upcoming"/>
+                    </column-2>
+                </match-center-grid>
+            </match-center-section>
 
-            <!-- League News -->
+            <!-- League News (3-col grid) -->
             <news-section
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="/libs/kestros/commons/components/structure/section"
@@ -152,87 +173,69 @@
                 <news-cards
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/lists/card-list"
-                        kes:datasource="league-demo-news"
-                        layout="two-columns"/>
+                        kes:datasource="league-demo-news"/>
+                <news-link
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/link"
+                        text="All News"
+                        href="/content/sites/league-demo/news.html"/>
             </news-section>
 
-            <!-- Standings -->
-            <standings-section
+            <!-- League Pulse: Standings | Top Scorers side by side -->
+            <pulse-section
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="/libs/kestros/commons/components/structure/section"
             >
                 <heading
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/heading"
-                        headingText="Standings"
+                        headingText="League Pulse"
                         headingType="h2"/>
-                <standings-subtitle
+                <pulse-grid
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="The top 5 of the table, updated through Matchweek 12."/>
-                <standings-table
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="/libs/kestros/commons/components/content/table"
-                        kes:datasource="league-demo-top-five-standings"/>
-                <full-table-link
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="/libs/kestros/commons/components/content/link"
-                        text="View Full Table"
-                        href="/content/sites/league-demo/standings.html"/>
-            </standings-section>
-
-            <!-- Top Scorers -->
-            <scorers-section
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="/libs/kestros/commons/components/structure/section"
-                    layout="dark"
-            >
-                <heading
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="/libs/kestros/commons/components/content/heading"
-                        headingText="Top Scorers"
-                        headingType="h2"/>
-                <scorers-subtitle
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="The Golden Boot race through Matchweek 12."/>
-                <scorers-cards
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="/libs/kestros/commons/components/lists/card-list"
-                        kes:datasource="league-demo-top-scorers"
-                        layout="two-columns"/>
-                <stats-link
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="/libs/kestros/commons/components/content/link"
-                        text="Full Stats Centre"
-                        href="/content/sites/league-demo/stats.html"/>
-            </scorers-section>
-
-            <!-- Upcoming Fixtures -->
-            <upcoming-section
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="/libs/kestros/commons/components/structure/section"
-                    layout="dark"
-            >
-                <heading
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="/libs/kestros/commons/components/content/heading"
-                        headingText="Week 13 Fixtures"
-                        headingType="h2"/>
-                <upcoming-subtitle
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="The next round of MPL action."/>
-                <upcoming-table
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="/libs/kestros/commons/components/content/table"
-                        kes:datasource="league-demo-upcoming"/>
-                <schedule-link
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="/libs/kestros/commons/components/content/link"
-                        text="View Full Schedule"
-                        href="/content/sites/league-demo/schedule.html"/>
-            </upcoming-section>
+                        sling:resourceType="/libs/kestros/commons/components/structure/grid"
+                        layout="50-50"
+                >
+                    <column-1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kestros/commons/components/content-area"
+                    >
+                        <heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                headingText="Standings"
+                                headingType="h3"/>
+                        <standings-table
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/table"
+                                kes:datasource="league-demo-top-five-standings"/>
+                        <full-table-link
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/link"
+                                text="Full Table"
+                                href="/content/sites/league-demo/standings.html"/>
+                    </column-1>
+                    <column-2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kestros/commons/components/content-area"
+                    >
+                        <heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                headingText="Top Scorers"
+                                headingType="h3"/>
+                        <scorers-cards
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/lists/card-list"
+                                kes:datasource="league-demo-top-scorers"/>
+                        <stats-link
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/link"
+                                text="Stats Centre"
+                                href="/content/sites/league-demo/stats.html"/>
+                    </column-2>
+                </pulse-grid>
+            </pulse-section>
 
             <!-- Newsletter -->
             <newsletter-section
