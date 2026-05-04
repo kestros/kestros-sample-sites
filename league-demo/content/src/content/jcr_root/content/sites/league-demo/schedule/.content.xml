@@ -7,23 +7,23 @@
     <jcr:content
             jcr:primaryType="nt:unstructured"
             jcr:title="Schedule"
-            jcr:description="Every fixture in the 2025-26 season, grouped by matchweek."
+            jcr:description="Every fixture in the 2025-26 Meridian Premier League season."
             sling:resourceType="kestros/commons/components/kestros-base-page">
         <header jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
         <main jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
             <page-header
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="/libs/kestros/commons/components/structure/section"
-                    inlineVariations="bg-light">
+                    layout="hero">
                 <heading
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/heading"
-                        headingText="Schedule"
+                        headingText="Schedule &amp; Results"
                         headingType="h1"/>
                 <subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="Every fixture in the 2025-26 season. Times are local to each match venue."/>
+                        text="All 90 fixtures across 18 matchweeks. Weeks 1-12 played, 13-18 upcoming."/>
             </page-header>
             <table-section
                     jcr:primaryType="nt:unstructured"

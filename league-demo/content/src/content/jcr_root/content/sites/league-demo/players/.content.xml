@@ -7,14 +7,14 @@
     <jcr:content
             jcr:primaryType="nt:unstructured"
             jcr:title="Players"
-            jcr:description="Top scorers, squads, and player profiles across the league."
+            jcr:description="Player directory for the 2025-26 Meridian Premier League season."
             sling:resourceType="kestros/commons/components/kestros-base-page">
         <header jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
         <main jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
             <page-header
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="/libs/kestros/commons/components/structure/section"
-                    inlineVariations="bg-light">
+                    layout="hero">
                 <heading
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/heading"
@@ -23,7 +23,7 @@
                 <subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="Every player registered in the 2025-26 Meridian Premier League, organized by club."/>
+                        text="Player directory across all ten MPL clubs."/>
             </page-header>
             <table-section
                     jcr:primaryType="nt:unstructured"
