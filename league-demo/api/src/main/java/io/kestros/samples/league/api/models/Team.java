@@ -19,4 +19,14 @@ public interface Team {
     int getFounded();
 
     List<String> getPlayerIds();
+
+    String getNickname();
+
+    String getManager();
+
+    int getStadiumCapacity();
+
+    String getPrimaryColor();
+
+    String getSecondaryColor();
 }

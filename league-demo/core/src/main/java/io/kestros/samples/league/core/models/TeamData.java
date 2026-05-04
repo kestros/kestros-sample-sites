@@ -17,6 +17,11 @@ public class TeamData implements Team {
     private String stadium;
     private int founded;
     private List<String> playerIds = new ArrayList<>();
+    private String nickname;
+    private String manager;
+    private int stadiumCapacity;
+    private String primaryColor;
+    private String secondaryColor;
 
     @Override
     public String getId() {
@@ -89,4 +94,24 @@ public class TeamData implements Team {
     public void setPlayerIds(List<String> playerIds) {
         this.playerIds = playerIds;
     }
+
+    @Override
+    public String getNickname() { return nickname; }
+    public void setNickname(String nickname) { this.nickname = nickname; }
+
+    @Override
+    public String getManager() { return manager; }
+    public void setManager(String manager) { this.manager = manager; }
+
+    @Override
+    public int getStadiumCapacity() { return stadiumCapacity; }
+    public void setStadiumCapacity(int stadiumCapacity) { this.stadiumCapacity = stadiumCapacity; }
+
+    @Override
+    public String getPrimaryColor() { return primaryColor; }
+    public void setPrimaryColor(String primaryColor) { this.primaryColor = primaryColor; }
+
+    @Override
+    public String getSecondaryColor() { return secondaryColor; }
+    public void setSecondaryColor(String secondaryColor) { this.secondaryColor = secondaryColor; }
 }

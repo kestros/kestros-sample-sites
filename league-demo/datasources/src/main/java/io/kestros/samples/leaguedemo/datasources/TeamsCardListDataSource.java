@@ -76,8 +76,21 @@ public class TeamsCardListDataSource extends BaseContainerSlingModelDataSource
           } catch (Exception ignored) {}
         }
 
+        StringBuilder desc = new StringBuilder();
+        if (team.getNickname() != null) {
+          desc.append("\"").append(team.getNickname()).append("\" | ");
+        }
+        desc.append(team.getStadium());
+        if (team.getStadiumCapacity() > 0) {
+          desc.append(" (").append(String.format("%,d", team.getStadiumCapacity())).append(")");
+        }
+        desc.append(" | Est. ").append(team.getFounded());
+        if (team.getManager() != null) {
+          desc.append(" | Manager: ").append(team.getManager());
+        }
+
         cards.add(new KestrosCardImpl(
-            team.getCity() + " - " + team.getStadium() + " - Est. " + team.getFounded(),
+            desc.toString(),
             new KestrosHeadingImpl(team.getName(), "h3", this, "title", "titleElement"),
             image, buttonGroup,
             this, "card", team.getId()));
