@@ -7,41 +7,232 @@
     <jcr:content
             jcr:primaryType="nt:unstructured"
             jcr:title="About"
-            jcr:description="A fictional ten-club league used to demonstrate the Kestros sport-league sample site."
+            jcr:description="History, format, and governance of the Meridian Premier League."
             sling:resourceType="kestros/commons/components/kestros-base-page">
         <header jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
         <main jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
+
+            <!-- Page Header -->
             <page-header
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="/libs/kestros/commons/components/structure/section"
-                    inlineVariations="bg-light">
+                    layout="hero"
+            >
                 <heading
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/heading"
-                        headingText="About the Meridian Premier League"
+                        headingText="About the League"
                         headingType="h1"/>
-            </page-header>
-            <content-section
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="/libs/kestros/commons/components/structure/section">
-                <overview
+                <subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="The Meridian Premier League was founded in 2019 as a ten-club top-flight competition. Each season spans 18 matchweeks, with every club playing each rival once at home and once away. The bottom two clubs are relegated at the end of each campaign, while the top three qualify for European competition."/>
-            </content-section>
-            <format-section
+                        text="Seven seasons. Ten clubs. One champion."/>
+            </page-header>
+
+            <!-- History -->
+            <history-section
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="/libs/kestros/commons/components/structure/section">
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
                 <heading
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/heading"
-                        headingText="Format"
+                        headingText="Our History"
+                        headingType="h2"/>
+                <history-text
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="The Meridian Premier League was established in 2019, uniting ten of the region's most storied football clubs under a single competitive banner. What began as a proposal between club chairmen at the annual Meridian Football Association summit quickly became the most anticipated launch in regional football history."/>
+                <history-text-2
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="The inaugural 2019-20 season drew record crowds as decades-old local rivalries were given a professional stage for the first time. Since then, the league has grown into a fully professional competition with dedicated broadcast coverage, youth development pathways, and a reputation for producing some of the most exciting football in the country."/>
+                <history-text-3
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="The 2025-26 campaign marks the seventh season of Meridian Premier League football. Over that span, five different clubs have lifted the championship trophy, and no team has ever successfully defended their title -- a testament to the fierce competition that defines the MPL."/>
+            </history-section>
+
+            <!-- The Clubs -->
+            <clubs-section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    layout="dark"
+            >
+                <heading
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        headingText="The Clubs"
+                        headingType="h2"/>
+                <clubs-text
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="The MPL brings together ten clubs from across the Meridian region, ranging from Stone Valley -- the oldest club in the league, founded in 1886 -- to Southshore United, the youngest, established in 1947. Between them, these clubs represent over a thousand years of combined footballing tradition."/>
+                <clubs-grid
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/grid"
+                >
+                    <column-1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kestros/commons/components/content-area"
+                    >
+                        <club-list-1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Stone Valley (Est. 1886) -- Valley Ground"/>
+                        <club-list-2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Riverside FC (Est. 1892) -- Riverside Park"/>
+                        <club-list-3
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Westbrook Rovers (Est. 1898) -- Brook Lane"/>
+                        <club-list-4
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Meridian City (Est. 1903) -- Meridian Stadium"/>
+                        <club-list-5
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Northside United (Est. 1905) -- Northern Ground"/>
+                    </column-1>
+                    <column-2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kestros/commons/components/content-area"
+                    >
+                        <club-list-6
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Ashdown Athletic (Est. 1911) -- Ashdown Park"/>
+                        <club-list-7
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Port Heights (Est. 1919) -- Harbour Stadium"/>
+                        <club-list-8
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Queensbury Wanderers (Est. 1923) -- Wanderers Field"/>
+                        <club-list-9
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Oakhill FC (Est. 1934) -- Oak Park"/>
+                        <club-list-10
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Southshore United (Est. 1947) -- Shore Park"/>
+                    </column-2>
+                </clubs-grid>
+            </clubs-section>
+
+            <!-- Competition Format -->
+            <format-section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <heading
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        headingText="Competition Format"
                         headingType="h2"/>
                 <format-text
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="Every club plays 18 league matches -- one home and one away against each of the other nine sides. A win earns three points, a draw one point, and a loss zero. Clubs are ranked by total points, then goal difference, then goals scored. If clubs are still level, head-to-head record decides. The champion lifts the trophy after Matchweek 18."/>
+                        text="The MPL follows a double round-robin format across 18 matchweeks. Every club plays each of the other nine opponents twice -- once at home and once away -- for a total of 18 league matches per team and 90 matches per season."/>
+                <points-text
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="Three points are awarded for a win, one for a draw, and none for a defeat. Clubs are ranked by total points. Where two or more clubs are level on points, the tiebreakers applied in order are: goal difference, goals scored, head-to-head record, and finally a playoff if required to determine the champion."/>
+                <calendar-text
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="The season typically runs from late August through early May, with matches held on Saturdays and selected midweek dates. Each matchweek features five simultaneous fixtures, ensuring every club is in action on the same day."/>
             </format-section>
+
+            <!-- Season Awards -->
+            <awards-section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    layout="dark"
+            >
+                <heading
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        headingText="Season Awards"
+                        headingType="h2"/>
+                <awards-text
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="At the conclusion of each season, the league recognizes outstanding individual and team achievement with four major awards."/>
+                <awards-grid
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/grid"
+                >
+                    <column-1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kestros/commons/components/content-area"
+                    >
+                        <award-1-heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                headingText="Golden Boot"
+                                headingType="h4"/>
+                        <award-1-text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Awarded to the season's leading goal scorer."/>
+                    </column-1>
+                    <column-2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kestros/commons/components/content-area"
+                    >
+                        <award-2-heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                headingText="Player of the Season"
+                                headingType="h4"/>
+                        <award-2-text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Voted on by club managers and captains for the most outstanding individual contribution."/>
+                    </column-2>
+                    <column-3
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kestros/commons/components/content-area"
+                    >
+                        <award-3-heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                headingText="Manager of the Season"
+                                headingType="h4"/>
+                        <award-3-text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Recognizes tactical excellence and leadership from the touchline."/>
+                    </column-3>
+                </awards-grid>
+            </awards-section>
+
+            <!-- Governance -->
+            <governance-section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+            >
+                <heading
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        headingText="Governance"
+                        headingType="h2"/>
+                <governance-text
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="The Meridian Premier League is governed by the MPL Board, comprising one representative from each member club alongside an independent chairperson and two non-executive directors. The Board oversees competition rules, broadcast agreements, commercial partnerships, and the league's community investment programs."/>
+                <governance-text-2
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="The league operates under the jurisdiction of the Meridian Football Association (MFA) and adheres to the rules and regulations set by the national governing body. All clubs must meet annual licensing requirements covering financial stability, stadium standards, youth development, and community engagement."/>
+            </governance-section>
+
         </main>
         <footer jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
     </jcr:content>
