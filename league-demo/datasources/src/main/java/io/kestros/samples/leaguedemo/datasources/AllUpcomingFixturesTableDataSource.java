@@ -35,7 +35,6 @@ public class AllUpcomingFixturesTableDataSource extends BaseContainerSlingModelD
       headers.add(new SyntheticTableHeader("Wk", this, "header", "wk"));
       headers.add(new SyntheticTableHeader("Date", this, "header", "date"));
       headers.add(new SyntheticTableHeader("Home", this, "header", "home"));
-      headers.add(new SyntheticTableHeader("vs", this, "header", "vs"));
       headers.add(new SyntheticTableHeader("Away", this, "header", "away"));
     } catch (Exception e) { /* skip */ }
     return headers;
@@ -63,7 +62,6 @@ public class AllUpcomingFixturesTableDataSource extends BaseContainerSlingModelD
             new SyntheticTableCell(String.valueOf(m.getMatchday()), this, "cell", "wk-" + i),
             new SyntheticTableCell(m.getDate(), this, "cell", "date-" + i),
             new SyntheticTableCell(homeName, this, "cell", "home-" + i),
-            new SyntheticTableCell("vs", this, "cell", "vs-" + i),
             new SyntheticTableCell(awayName, this, "cell", "away-" + i)
         );
         rows.add(new SyntheticTableRow(cells, this, "row", "row-" + i));
