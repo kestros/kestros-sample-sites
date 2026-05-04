@@ -1,0 +1,7 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:title": "Top Scorers",
+  "group": "League Demo",
+  "classPath": "io.kestros.samples.leaguedemo.datasources.TopScorersCardListDataSource",
+  "container": true
+}
