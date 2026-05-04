@@ -1,0 +1,7 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:title": "Form Guide",
+  "group": "League Demo",
+  "classPath": "io.kestros.samples.leaguedemo.datasources.FormGuideCardListDataSource",
+  "container": true
+}
