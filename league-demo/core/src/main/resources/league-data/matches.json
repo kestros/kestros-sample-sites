@@ -429,7 +429,8 @@
     "seasonId": "2025-26",
     "date": "2025-11-22",
     "venue": "Riverside Park",
-    "played": true
+    "played": true,
+    "writeup": "A stunning upset at Riverside Park as Ashdown Athletic dismantled the league leaders with four clinical goals. Riverside's defensive frailties, masked by weeks of narrow victories, were ruthlessly exposed. This was the result that blew the title race wide open."
   },
   {
     "id": "week-8-northside-united-vs-meridian-city",
@@ -441,7 +442,8 @@
     "seasonId": "2025-26",
     "date": "2025-11-22",
     "venue": "Northern Ground",
-    "played": true
+    "played": true,
+    "writeup": "Northside United produced a statement performance at Northern Ground, outmuscling and outrunning a subdued Meridian City. Three first-half goals set the tone for a one-sided afternoon that left City's title ambitions looking fragile."
   },
   {
     "id": "week-8-port-heights-vs-stone-valley",
@@ -453,7 +455,8 @@
     "seasonId": "2025-26",
     "date": "2025-11-22",
     "venue": "Harbour Stadium",
-    "played": true
+    "played": true,
+    "writeup": "Port Heights edged a scrappy encounter at Harbour Stadium thanks to a late penalty. Stone Valley will feel hard done by after the referee's contentious decision, but Port Heights will not care as they climb out of the bottom three."
   },
   {
     "id": "week-8-queensbury-wrs-vs-southshore-united",
@@ -465,7 +468,8 @@
     "seasonId": "2025-26",
     "date": "2025-11-23",
     "venue": "Wanderers Field",
-    "played": true
+    "played": true,
+    "writeup": "Queensbury's firepower proved too much for a leaky Southshore defence. Three goals from three different scorers in a dominant first-half display put the match beyond the visitors long before the final whistle."
   },
   {
     "id": "week-8-oakhill-fc-vs-westbrook-rovers",
@@ -477,7 +481,8 @@
     "seasonId": "2025-26",
     "date": "2025-11-23",
     "venue": "Oak Park",
-    "played": true
+    "played": true,
+    "writeup": "A cagey affair at Oak Park was settled by a single moment of brilliance from Oakhill's winger, whose curling effort from twenty-five yards left the Westbrook goalkeeper rooted to the spot."
   },
   {
     "id": "week-9-riverside-fc-vs-meridian-city",
@@ -489,7 +494,8 @@
     "seasonId": "2025-26",
     "date": "2025-11-29",
     "venue": "Riverside Park",
-    "played": true
+    "played": true,
+    "writeup": "The big one lived up to its billing. Riverside edged a tense and tactical encounter against Meridian City, with the decisive goal coming from a set piece five minutes from time. A massive three points in the context of the title race."
   },
   {
     "id": "week-9-ashdown-athletic-vs-stone-valley",
@@ -501,7 +507,8 @@
     "seasonId": "2025-26",
     "date": "2025-11-29",
     "venue": "Ashdown Park",
-    "played": true
+    "played": true,
+    "writeup": "Stone Valley produced a remarkable comeback at Ashdown Park. Trailing 2-0 at the break, the visitors scored three unanswered second-half goals to stun the home crowd and claim an improbable victory."
   },
   {
     "id": "week-9-northside-united-vs-southshore-united",
@@ -513,7 +520,8 @@
     "seasonId": "2025-26",
     "date": "2025-11-29",
     "venue": "Northern Ground",
-    "played": true
+    "played": true,
+    "writeup": "Northside's defensive excellence was on full display again in a match of few clear-cut chances. A solitary first-half header was enough to secure the points against a hard-working but limited Southshore side."
   },
   {
     "id": "week-9-port-heights-vs-westbrook-rovers",
@@ -525,7 +533,8 @@
     "seasonId": "2025-26",
     "date": "2025-11-30",
     "venue": "Harbour Stadium",
-    "played": true
+    "played": true,
+    "writeup": "Port Heights delivered the performance of the season with a ruthless four-goal dismantling of Westbrook Rovers. The hosts were irresistible going forward, combining intricate passing with devastating pace on the break."
   },
   {
     "id": "week-9-queensbury-wrs-vs-oakhill-fc",
@@ -537,7 +546,8 @@
     "seasonId": "2025-26",
     "date": "2025-11-30",
     "venue": "Wanderers Field",
-    "played": true
+    "played": true,
+    "writeup": "Neither side could find the breakthrough in a tight, tactical stalemate at Wanderers Field. Both goalkeepers produced outstanding saves, and the 0-0 scoreline was a fair reflection of a match where defences were firmly on top."
   },
   {
     "id": "week-10-stone-valley-vs-riverside-fc",

@@ -15,4 +15,14 @@ public interface Season {
     List<String> getTeamIds();
 
     List<String> getMatchIds();
+
+    String getChampionId();
+
+    String getRunnerUpId();
+
+    String getTopScorerId();
+
+    int getTopScorerGoals();
+
+    String getStatus();
 }

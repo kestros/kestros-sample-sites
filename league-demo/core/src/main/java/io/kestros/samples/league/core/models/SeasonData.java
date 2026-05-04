@@ -15,6 +15,11 @@ public class SeasonData implements Season {
     private int endYear;
     private List<String> teamIds = new ArrayList<>();
     private List<String> matchIds = new ArrayList<>();
+    private String championId;
+    private String runnerUpId;
+    private String topScorerId;
+    private int topScorerGoals;
+    private String status;
 
     @Override
     public String getId() {
@@ -69,4 +74,24 @@ public class SeasonData implements Season {
     public void setMatchIds(List<String> matchIds) {
         this.matchIds = matchIds;
     }
+
+    @Override
+    public String getChampionId() { return championId; }
+    public void setChampionId(String championId) { this.championId = championId; }
+
+    @Override
+    public String getRunnerUpId() { return runnerUpId; }
+    public void setRunnerUpId(String runnerUpId) { this.runnerUpId = runnerUpId; }
+
+    @Override
+    public String getTopScorerId() { return topScorerId; }
+    public void setTopScorerId(String topScorerId) { this.topScorerId = topScorerId; }
+
+    @Override
+    public int getTopScorerGoals() { return topScorerGoals; }
+    public void setTopScorerGoals(int topScorerGoals) { this.topScorerGoals = topScorerGoals; }
+
+    @Override
+    public String getStatus() { return status; }
+    public void setStatus(String status) { this.status = status; }
 }
