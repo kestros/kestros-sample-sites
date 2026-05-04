@@ -22,7 +22,7 @@ import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 public class TopScorersCardListDataSource extends BaseContainerSlingModelDataSource
     implements KestrosCardList {
 
-  private static final int MAX_PLAYERS = 10;
+  private static final int MAX_PLAYERS = 5;
 
   @OSGiService
   @org.apache.sling.models.annotations.Optional

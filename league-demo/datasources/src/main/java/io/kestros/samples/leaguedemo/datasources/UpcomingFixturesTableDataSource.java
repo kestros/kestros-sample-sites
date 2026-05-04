@@ -23,7 +23,7 @@ import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 public class UpcomingFixturesTableDataSource extends BaseContainerSlingModelDataSource
     implements KestrosTable {
 
-  private static final int MAX_UPCOMING = 10;
+  private static final int MAX_UPCOMING = 5;
 
   @OSGiService
   @org.apache.sling.models.annotations.Optional

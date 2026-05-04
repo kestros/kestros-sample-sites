@@ -173,7 +173,7 @@
                 <standings-table
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/table"
-                        kes:datasource="league-demo-standings"/>
+                        kes:datasource="league-demo-top-five-standings"/>
                 <full-table-link
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/link"
