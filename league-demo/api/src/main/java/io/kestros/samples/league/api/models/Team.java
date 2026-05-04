@@ -31,4 +31,10 @@ public interface Team {
     String getSecondaryColor();
 
     String getDescription();
+
+    String getSurface();
+
+    String getVenueAddress();
+
+    int getVenueOpened();
 }

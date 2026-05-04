@@ -23,6 +23,9 @@ public class TeamData implements Team {
     private String primaryColor;
     private String secondaryColor;
     private String description;
+    private String surface;
+    private String venueAddress;
+    private int venueOpened;
 
     @Override
     public String getId() {
@@ -119,4 +122,13 @@ public class TeamData implements Team {
     @Override
     public String getDescription() { return description; }
     public void setDescription(String description) { this.description = description; }
+
+    @Override public String getSurface() { return surface; }
+    public void setSurface(String surface) { this.surface = surface; }
+
+    @Override public String getVenueAddress() { return venueAddress; }
+    public void setVenueAddress(String venueAddress) { this.venueAddress = venueAddress; }
+
+    @Override public int getVenueOpened() { return venueOpened; }
+    public void setVenueOpened(int venueOpened) { this.venueOpened = venueOpened; }
 }

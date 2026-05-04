@@ -1,0 +1,7 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:title": "League Venues",
+  "group": "League Demo",
+  "classPath": "io.kestros.samples.leaguedemo.datasources.VenuesCardListDataSource",
+  "container": true
+}
