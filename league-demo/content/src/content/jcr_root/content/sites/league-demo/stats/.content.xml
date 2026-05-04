@@ -7,7 +7,7 @@
     <jcr:content
             jcr:primaryType="nt:unstructured"
             jcr:title="Stats"
-            jcr:description="Season statistics, top scorers, assists leaders, and clean sheet records for the 2025-26 MPL season."
+            jcr:description="Season statistics, top scorers, and assists leaders for the 2025-26 MPL season."
             sling:resourceType="kestros/commons/components/kestros-base-page">
         <header jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
         <main jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
@@ -26,119 +26,70 @@
                         text="2025-26 season leaders through Matchweek 12."/>
             </page-header>
 
-            <!-- Season Overview -->
-            <overview-section
+            <!-- Top Goals + Top Assists side by side -->
+            <leaders-section
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="/libs/kestros/commons/components/structure/section">
                 <heading
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/heading"
-                        headingText="Season at a Glance"
+                        headingText="Season Leaders"
                         headingType="h2"/>
-                <overview-grid
+                <leaders-grid
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="/libs/kestros/commons/components/structure/grid">
-                    <column-1 jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
-                        <stat-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="60" headingType="h3"/>
-                        <stat-label jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Matches Played"/>
+                        sling:resourceType="/libs/kestros/commons/components/structure/grid"
+                        layout="50-50">
+                    <column-1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kestros/commons/components/content-area">
+                        <heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                headingText="Golden Boot Race"
+                                headingType="h3"/>
+                        <goals-table
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/table"
+                                variations="[table-striped,table-hover]"
+                                kes:datasource="league-demo-top-goals"/>
                     </column-1>
-                    <column-2 jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
-                        <stat-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="175" headingType="h3"/>
-                        <stat-label jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Goals Scored"/>
+                    <column-2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kestros/commons/components/content-area">
+                        <heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                headingText="Assists Leaders"
+                                headingType="h3"/>
+                        <assists-table
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/table"
+                                variations="[table-striped,table-hover]"
+                                kes:datasource="league-demo-top-assists"/>
                     </column-2>
-                    <column-3 jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
-                        <stat-heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="2.92" headingType="h3"/>
-                        <stat-label jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Goals Per Match"/>
-                    </column-3>
-                </overview-grid>
-            </overview-section>
+                </leaders-grid>
+            </leaders-section>
 
-            <!-- Top Scorers -->
-            <scorers-section
+            <!-- Full Scoring Leaders table -->
+            <full-section
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="/libs/kestros/commons/components/structure/section"
                     layout="dark">
                 <heading
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/heading"
-                        headingText="Golden Boot Race"
+                        headingText="Full Scoring Leaders"
                         headingType="h2"/>
-                <scorers-text
+                <subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="The race for the 2025-26 Golden Boot. Awarded to the season's leading goal scorer."/>
-                <scorers-grid
+                        text="Top 15 goal scorers across the season with apps, goals, and assists."/>
+                <full-table
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="/libs/kestros/commons/components/structure/grid">
-                    <column-1 jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
-                        <s1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="1. Marcus Fletcher" headingType="h4"/>
-                        <s1d jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Riverside FC -- 11 goals. 6 home, 5 away. 3 penalties."/>
-                    </column-1>
-                    <column-2 jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
-                        <s2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="2. Carlos Vega" headingType="h4"/>
-                        <s2d jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Meridian City -- 10 goals. 7 from open play, 3 from set pieces."/>
-                    </column-2>
-                    <column-3 jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
-                        <s3 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="3. Omar Hassan" headingType="h4"/>
-                        <s3d jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Northside United -- 9 goals. All from open play."/>
-                    </column-3>
-                </scorers-grid>
-            </scorers-section>
-
-            <!-- Assists -->
-            <assists-section
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="/libs/kestros/commons/components/structure/section">
-                <heading
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="/libs/kestros/commons/components/content/heading"
-                        headingText="Assists Leaders"
-                        headingType="h2"/>
-                <assists-grid
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="/libs/kestros/commons/components/structure/grid">
-                    <column-1 jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
-                        <a1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="1. Liam Chen" headingType="h4"/>
-                        <a1d jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Meridian City -- 8 assists. League leader in chances created (42)."/>
-                    </column-1>
-                    <column-2 jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
-                        <a2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="2. Tomas Eriksen" headingType="h4"/>
-                        <a2d jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Riverside FC -- 7 assists. Key playmaker from the right wing."/>
-                    </column-2>
-                    <column-3 jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
-                        <a3 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="3. Daniel Okafor" headingType="h4"/>
-                        <a3d jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Northside United -- 6 assists. Set-piece specialist."/>
-                    </column-3>
-                </assists-grid>
-            </assists-section>
-
-            <!-- Clean Sheets -->
-            <cleansheets-section
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="/libs/kestros/commons/components/structure/section"
-                    layout="dark">
-                <heading
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="/libs/kestros/commons/components/content/heading"
-                        headingText="Clean Sheets"
-                        headingType="h2"/>
-                <cs-grid
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="/libs/kestros/commons/components/structure/grid">
-                    <column-1 jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
-                        <c1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="1. Andre Silva" headingType="h4"/>
-                        <c1d jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Northside United -- 7 clean sheets. Best save percentage in the league (81%)."/>
-                    </column-1>
-                    <column-2 jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
-                        <c2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="2. Matt Henderson" headingType="h4"/>
-                        <c2d jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Riverside FC -- 5 clean sheets. Commanding presence in the box."/>
-                    </column-2>
-                    <column-3 jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
-                        <c3 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="3. Chen Wei" headingType="h4"/>
-                        <c3d jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Oakhill FC -- 5 clean sheets. Set-piece threat from midfield too."/>
-                    </column-3>
-                </cs-grid>
-            </cleansheets-section>
+                        sling:resourceType="/libs/kestros/commons/components/content/table"
+                        variations="[table-striped,table-hover]"
+                        kes:datasource="league-demo-players"/>
+            </full-section>
         </main>
         <footer jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
     </jcr:content>
