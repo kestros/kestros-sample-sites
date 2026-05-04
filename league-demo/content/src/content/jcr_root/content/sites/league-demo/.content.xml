@@ -98,6 +98,10 @@
                         sling:resourceType="/libs/kestros/commons/components/content/heading"
                         headingText="Week 12 Results"
                         headingType="h2"/>
+                <results-subtitle
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="The latest scores from across the Meridian Premier League."/>
                 <results-table
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/table"
@@ -137,6 +141,10 @@
                         sling:resourceType="/libs/kestros/commons/components/content/heading"
                         headingText="Standings"
                         headingType="h2"/>
+                <standings-subtitle
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="Updated through Matchweek 12. Riverside FC lead by three points."/>
                 <standings-table
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/table"
