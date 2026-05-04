@@ -16,6 +16,7 @@ public class MatchData implements Match {
     private String date;
     private String venue;
     private boolean played;
+    private String writeup;
 
     @Override
     public String getId() {
@@ -105,5 +106,14 @@ public class MatchData implements Match {
 
     public void setPlayed(boolean played) {
         this.played = played;
+    }
+
+    @Override
+    public String getWriteup() {
+        return writeup;
+    }
+
+    public void setWriteup(String writeup) {
+        this.writeup = writeup;
     }
 }

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "week-12-recap",
+    "title": "Week 12 Recap: Westbrook Stun Riverside in Thriller",
+    "summary": "Westbrook Rovers handed league leaders Riverside FC a rare defeat with a commanding 3-1 victory at Brook Lane. Elsewhere, Northside United kept their top-four hopes alive with a clean sheet against Ashdown, while Queensbury and Stone Valley shared six goals in a breathless draw.",
+    "date": "2025-12-21",
+    "category": "Match Report",
+    "tags": ["matchweek-12", "westbrook-rovers", "riverside-fc", "northside-united"]
+  },
+  {
+    "id": "title-race-analysis",
+    "title": "Title Race: Can Anyone Catch Riverside?",
+    "summary": "Despite their Week 12 stumble at Brook Lane, Riverside FC remain firm favourites for the championship. But with six matchweeks remaining and Meridian City finding form at exactly the right time, the race is far from over. We break down the numbers.",
+    "date": "2025-12-22",
+    "category": "Analysis",
+    "tags": ["riverside-fc", "meridian-city", "title-race"]
+  },
+  {
+    "id": "meridian-city-form",
+    "title": "Meridian City's Quiet Surge: Four Wins in Five",
+    "summary": "While the spotlight has been on Riverside, Meridian City have quietly assembled the best form in the league. Back-to-back away wins at Oakhill and Port Heights have moved them into genuine contention. Manager David Kowalski credits a midfield reshuffle in Week 8.",
+    "date": "2025-12-19",
+    "category": "Feature",
+    "tags": ["meridian-city", "form-guide"]
+  },
+  {
+    "id": "northside-defensive-record",
+    "title": "The Wall: How Northside United Built the League's Best Defence",
+    "summary": "Northside United have conceded just nine goals in twelve matches, the stingiest record in the division. Centre-back partnership Torres and Akimoto have started every league game together, and their understanding is bordering on telepathic.",
+    "date": "2025-12-18",
+    "category": "Feature",
+    "tags": ["northside-united", "defence", "stats"]
+  },
+  {
+    "id": "golden-boot-race",
+    "title": "Golden Boot Watch: The Scoring Charts After Week 12",
+    "summary": "The race for the Golden Boot is heating up with three players separated by just two goals at the top of the charts. With six matchweeks still to play, the award is wide open heading into the new year.",
+    "date": "2025-12-21",
+    "category": "Stats",
+    "tags": ["golden-boot", "stats", "top-scorers"]
+  },
+  {
+    "id": "queensbury-six-goal-thriller",
+    "title": "Six of the Best: Queensbury and Stone Valley Share the Spoils",
+    "summary": "Wanderers Field was treated to the game of the season as Queensbury and Stone Valley traded blows in a remarkable 3-3 draw. Two goals in the final five minutes ensured neither side could claim all three points in a match that had everything.",
+    "date": "2025-12-20",
+    "category": "Match Report",
+    "tags": ["matchweek-12", "queensbury-wrs", "stone-valley"]
+  },
+  {
+    "id": "week-13-preview",
+    "title": "Week 13 Preview: Festive Football Returns",
+    "summary": "The holiday fixtures are here, and the schedule throws up some blockbuster encounters. Riverside host Meridian City in a potential title decider, while relegation-threatened Southshore travel to Queensbury knowing anything less than three points could spell trouble.",
+    "date": "2025-12-23",
+    "category": "Preview",
+    "tags": ["matchweek-13", "riverside-fc", "meridian-city", "southshore-united", "preview"]
+  },
+  {
+    "id": "relegation-battle",
+    "title": "Survival Sunday? The Relegation Picture After 12 Weeks",
+    "summary": "Stone Valley, Southshore United, and Queensbury Wanderers are locked in a three-way fight to avoid the drop. With the bottom two relegated, one of these clubs will survive and two will not. We examine who has the easier run-in.",
+    "date": "2025-12-22",
+    "category": "Analysis",
+    "tags": ["stone-valley", "southshore-united", "queensbury-wrs", "relegation"]
+  },
+  {
+    "id": "oakhill-clean-sheet",
+    "title": "Oakhill Grind Out Crucial Win Over Southshore",
+    "summary": "A solitary first-half goal from midfielder Chen Wei was enough to earn Oakhill FC all three points against struggling Southshore United. The clean sheet, their fifth of the season, moves Oakhill into the top half of the table.",
+    "date": "2025-12-20",
+    "category": "Match Report",
+    "tags": ["matchweek-12", "oakhill-fc", "southshore-united"]
+  },
+  {
+    "id": "season-halfway-awards",
+    "title": "MPL Halfway Awards: Our Picks for Player, Manager, and Goal of the Season So Far",
+    "summary": "With the season past the halfway mark, our panel selects the standout performers from the first twelve matchweeks. From Riverside's relentless attacking to Northside's watertight defence, there is no shortage of candidates.",
+    "date": "2025-12-23",
+    "category": "Feature",
+    "tags": ["awards", "mid-season", "riverside-fc", "northside-united"]
+  }
+]

@@ -2,11 +2,13 @@ package io.kestros.samples.league.core.services;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import io.kestros.samples.league.api.models.Article;
 import io.kestros.samples.league.api.models.Match;
 import io.kestros.samples.league.api.models.Player;
 import io.kestros.samples.league.api.models.Season;
 import io.kestros.samples.league.api.models.Team;
 import io.kestros.samples.league.api.services.LeagueDataService;
+import io.kestros.samples.league.core.models.ArticleData;
 import io.kestros.samples.league.core.models.MatchData;
 import io.kestros.samples.league.core.models.PlayerData;
 import io.kestros.samples.league.core.models.SeasonData;
@@ -35,6 +37,7 @@ public class DefaultLeagueDataService implements LeagueDataService {
     private List<PlayerData> players = Collections.emptyList();
     private List<MatchData> matches = Collections.emptyList();
     private List<SeasonData> seasons = Collections.emptyList();
+    private List<ArticleData> articles = Collections.emptyList();
 
     @Activate
     protected void activate() {
@@ -43,8 +46,9 @@ public class DefaultLeagueDataService implements LeagueDataService {
         players = loadJson(mapper, "players.json", new TypeReference<List<PlayerData>>() {});
         matches = loadJson(mapper, "matches.json", new TypeReference<List<MatchData>>() {});
         seasons = loadJson(mapper, "seasons.json", new TypeReference<List<SeasonData>>() {});
-        LOG.info("Loaded league data: {} teams, {} players, {} matches, {} seasons",
-                teams.size(), players.size(), matches.size(), seasons.size());
+        articles = loadJson(mapper, "articles.json", new TypeReference<List<ArticleData>>() {});
+        LOG.info("Loaded league data: {} teams, {} players, {} matches, {} seasons, {} articles",
+                teams.size(), players.size(), matches.size(), seasons.size(), articles.size());
     }
 
     private <T> List<T> loadJson(ObjectMapper mapper, String filename, TypeReference<List<T>> type) {
@@ -116,5 +120,17 @@ public class DefaultLeagueDataService implements LeagueDataService {
     @Override
     public Season getSeason(String id) {
         return seasons.stream().filter(s -> s.getId().equals(id)).findFirst().orElse(null);
+    }
+
+    @Override
+    public List<Article> getArticles() {
+        return Collections.unmodifiableList(articles);
+    }
+
+    @Override
+    public List<Article> getArticlesByTag(String tag) {
+        return articles.stream()
+                .filter(a -> a.getTags() != null && a.getTags().contains(tag))
+                .collect(Collectors.toList());
     }
 }

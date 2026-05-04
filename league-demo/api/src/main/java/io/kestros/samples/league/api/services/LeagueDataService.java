@@ -1,5 +1,6 @@
 package io.kestros.samples.league.api.services;
 
+import io.kestros.samples.league.api.models.Article;
 import io.kestros.samples.league.api.models.Match;
 import io.kestros.samples.league.api.models.Player;
 import io.kestros.samples.league.api.models.Season;
@@ -33,4 +34,8 @@ public interface LeagueDataService {
 
     @Nullable
     Season getSeason(String id);
+
+    List<Article> getArticles();
+
+    List<Article> getArticlesByTag(String tag);
 }

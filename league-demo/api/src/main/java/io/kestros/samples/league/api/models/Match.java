@@ -21,4 +21,6 @@ public interface Match {
     String getVenue();
 
     boolean isPlayed();
+
+    String getWriteup();
 }
