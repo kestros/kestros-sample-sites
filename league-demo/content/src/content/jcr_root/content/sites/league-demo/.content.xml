@@ -169,7 +169,7 @@
                 <standings-subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="Updated through Matchweek 12. Riverside FC lead by three points."/>
+                        text="The top 5 of the table, updated through Matchweek 12."/>
                 <standings-table
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/table"
