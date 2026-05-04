@@ -1,0 +1,7 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:title": "Champions Roll of Honour",
+  "group": "League Demo",
+  "classPath": "io.kestros.samples.leaguedemo.datasources.ChampionsCardListDataSource",
+  "container": true
+}
