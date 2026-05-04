@@ -31,6 +31,7 @@ public class FixturesTableDataSource extends BaseContainerSlingModelDataSource
   public List<KestrosTableHeader> getHeaderElements() {
     List<KestrosTableHeader> headers = new ArrayList<>();
     try {
+      headers.add(new SyntheticTableHeader("Wk", this, "header", "wk"));
       headers.add(new SyntheticTableHeader("Date", this, "header", "date"));
       headers.add(new SyntheticTableHeader("Home", this, "header", "home"));
       headers.add(new SyntheticTableHeader("Score", this, "header", "score"));
@@ -53,10 +54,11 @@ public class FixturesTableDataSource extends BaseContainerSlingModelDataSource
       String awayName = away != null ? away.getName() : m.getAwayTeamId();
       String score = m.isPlayed()
           ? m.getHomeScore() + " - " + m.getAwayScore()
-          : m.getDate();
+          : "vs";
 
       try {
         List<KestrosTableCell> cells = Arrays.asList(
+            new SyntheticTableCell(String.valueOf(m.getMatchday()), this, "cell", "wk-" + i),
             new SyntheticTableCell(m.getDate(), this, "cell", "date-" + i),
             new SyntheticTableCell(homeName, this, "cell", "home-" + i),
             new SyntheticTableCell(score, this, "cell", "score-" + i),
