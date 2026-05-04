@@ -77,6 +77,9 @@ public class TeamsCardListDataSource extends BaseContainerSlingModelDataSource
         }
 
         StringBuilder desc = new StringBuilder();
+        if (team.getDescription() != null && !team.getDescription().isEmpty()) {
+          desc.append(team.getDescription()).append(" ");
+        }
         if (team.getNickname() != null) {
           desc.append("\"").append(team.getNickname()).append("\" | ");
         }

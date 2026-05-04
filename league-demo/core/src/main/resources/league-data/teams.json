@@ -11,7 +11,8 @@
     "manager": "James Harrington",
     "primaryColor": "#1a3a6b",
     "secondaryColor": "#ffffff",
-    "logoUrl": ""
+    "logoUrl": "",
+    "description": "The dominant force of modern MPL football. Two-time champions with the largest stadium in the league, Riverside Park is a fortress that few visiting sides relish visiting."
   },
   {
     "id": "meridian-city",
@@ -25,7 +26,8 @@
     "manager": "David Kowalski",
     "primaryColor": "#6a1b9a",
     "secondaryColor": "#f5f5f5",
-    "logoUrl": ""
+    "logoUrl": "",
+    "description": "The capital club and two-time champions. Playing out of the league's showpiece venue, Meridian Stadium, the Citizens combine technical quality with tactical sophistication under David Kowalski."
   },
   {
     "id": "ashdown-athletic",
@@ -39,7 +41,8 @@
     "manager": "Sarah Mitchell",
     "primaryColor": "#c62828",
     "secondaryColor": "#000000",
-    "logoUrl": ""
+    "logoUrl": "",
+    "description": "The reigning champions. Ashdown's remarkable 2024-25 title run, masterminded by Sarah Mitchell, proved that ambition and coaching can overcome budget constraints."
   },
   {
     "id": "northside-united",
@@ -53,7 +56,8 @@
     "manager": "Carlos Medina",
     "primaryColor": "#212121",
     "secondaryColor": "#ffffff",
-    "logoUrl": ""
+    "logoUrl": "",
+    "description": "Former champions with the best defensive record in the league. The Magpies are built on organisation, discipline, and the partnership of Torres and Akimoto at centre-back."
   },
   {
     "id": "port-heights",
@@ -67,7 +71,8 @@
     "manager": "Tom Gallagher",
     "primaryColor": "#0277bd",
     "secondaryColor": "#ffd600",
-    "logoUrl": ""
+    "logoUrl": "",
+    "description": "A proud coastal club with a passionate supporter base. The Dockers punch above their weight at Harbour Stadium and have a knack for producing exciting cup runs."
   },
   {
     "id": "queensbury-wrs",
@@ -81,7 +86,8 @@
     "manager": "Neil Bradshaw",
     "primaryColor": "#2e7d32",
     "secondaryColor": "#ffffff",
-    "logoUrl": ""
+    "logoUrl": "",
+    "description": "The Wanderers are never dull. Known for their attacking football and chaotic defending in equal measure, a trip to Wanderers Field guarantees entertainment."
   },
   {
     "id": "oakhill-fc",
@@ -95,7 +101,8 @@
     "manager": "Rebecca Thornton",
     "primaryColor": "#e65100",
     "secondaryColor": "#1b5e20",
-    "logoUrl": ""
+    "logoUrl": "",
+    "description": "A club on the rise under Rebecca Thornton. Strong set-piece routines and a promising academy have made the Oaks an increasingly tough proposition for opposition sides."
   },
   {
     "id": "westbrook-rovers",
@@ -109,7 +116,8 @@
     "manager": "Patrick O'Brien",
     "primaryColor": "#283593",
     "secondaryColor": "#ef5350",
-    "logoUrl": ""
+    "logoUrl": "",
+    "description": "2020-21 champions and one of the league's founding members. The Rovers have endured a lean spell but showed glimpses of their quality with a stunning Week 12 victory over Riverside."
   },
   {
     "id": "southshore-united",
@@ -123,7 +131,8 @@
     "manager": "Mark Ellison",
     "primaryColor": "#00838f",
     "secondaryColor": "#ffffff",
-    "logoUrl": ""
+    "logoUrl": "",
+    "description": "The youngest club in the league, battling to establish themselves at the top level. Shore Park may be the smallest ground, but the atmosphere on matchday rivals anything in the MPL."
   },
   {
     "id": "stone-valley",
@@ -137,6 +146,7 @@
     "manager": "Frank Jessop",
     "primaryColor": "#4e342e",
     "secondaryColor": "#ffb74d",
-    "logoUrl": ""
+    "logoUrl": "",
+    "description": "The oldest club in the MPL, founded in 1886. The Quarrymen's Valley Ground is steeped in history, and their fans are among the most loyal in the division despite recent struggles."
   }
 ]

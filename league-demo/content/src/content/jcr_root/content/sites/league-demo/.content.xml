@@ -315,7 +315,7 @@
                         >
                             <about-league jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="About the League" href="/content/sites/league-demo/about.html"/>
                             <season-archive jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Season Archive" href="/content/sites/league-demo/seasons.html"/>
-                            <contact jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Contact" href="#"/>
+                            <contact jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Contact" href="/content/sites/league-demo/contact.html"/>
                             <privacy jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Privacy Policy" href="#"/>
                         </about-links>
                     </column-4>

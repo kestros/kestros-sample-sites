@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="kes:Page">
+    <jcr:content
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Contact"
+            jcr:description="Get in touch with the Meridian Premier League."
+            sling:resourceType="kestros/commons/components/kestros-base-page">
+        <header jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
+        <main jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
+            <page-header
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    layout="hero">
+                <heading
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        headingText="Contact Us"
+                        headingType="h1"/>
+                <subtitle
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="We would love to hear from you."/>
+            </page-header>
+
+            <!-- General -->
+            <general-section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section">
+                <heading
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        headingText="General Enquiries"
+                        headingType="h2"/>
+                <contact-grid
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/grid">
+                    <column-1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kestros/commons/components/content-area">
+                        <email-heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                headingText="Email"
+                                headingType="h4"/>
+                        <email-text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="info@meridianpremierleague.com"/>
+                    </column-1>
+                    <column-2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kestros/commons/components/content-area">
+                        <phone-heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                headingText="Phone"
+                                headingType="h4"/>
+                        <phone-text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="+1 (555) 012-3456. Lines open Monday to Friday, 9am to 5pm."/>
+                    </column-2>
+                    <column-3
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kestros/commons/components/content-area">
+                        <mail-heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                headingText="Post"
+                                headingType="h4"/>
+                        <mail-text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="MPL Headquarters, 100 League Drive, Meridian, MR1 4PL"/>
+                    </column-3>
+                </contact-grid>
+            </general-section>
+
+            <!-- Departments -->
+            <departments-section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    layout="dark">
+                <heading
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        headingText="Departments"
+                        headingType="h2"/>
+                <dept-grid
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/grid">
+                    <column-1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kestros/commons/components/content-area">
+                        <media-heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                headingText="Media &amp; Press"
+                                headingType="h4"/>
+                        <media-text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="press@meridianpremierleague.com. For accreditation requests, interview enquiries, and media resources."/>
+                    </column-1>
+                    <column-2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kestros/commons/components/content-area">
+                        <commercial-heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                headingText="Commercial &amp; Partnerships"
+                                headingType="h4"/>
+                        <commercial-text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="partnerships@meridianpremierleague.com. For sponsorship, hospitality, and advertising opportunities."/>
+                    </column-2>
+                    <column-3
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kestros/commons/components/content-area">
+                        <community-heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                headingText="Community &amp; Education"
+                                headingType="h4"/>
+                        <community-text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="community@meridianpremierleague.com. For school visits, coaching programmes, and charity partnerships."/>
+                    </column-3>
+                </dept-grid>
+            </departments-section>
+
+            <!-- Social -->
+            <social-section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section">
+                <heading
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        headingText="Follow Us"
+                        headingType="h2"/>
+                <social-text
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="Stay connected with the Meridian Premier League on social media for breaking news, match updates, behind-the-scenes content, and exclusive interviews."/>
+                <social-links
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/lists/link-list">
+                    <twitter jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Twitter: @MeridianPL" href="#"/>
+                    <instagram jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Instagram: @meridianpremierleague" href="#"/>
+                    <youtube jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="YouTube: Meridian Premier League" href="#"/>
+                    <tiktok jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="TikTok: @mplofficial" href="#"/>
+                </social-links>
+            </social-section>
+        </main>
+        <footer jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
+    </jcr:content>
+</jcr:root>

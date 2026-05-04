@@ -22,6 +22,7 @@ public class TeamData implements Team {
     private int stadiumCapacity;
     private String primaryColor;
     private String secondaryColor;
+    private String description;
 
     @Override
     public String getId() {
@@ -114,4 +115,8 @@ public class TeamData implements Team {
     @Override
     public String getSecondaryColor() { return secondaryColor; }
     public void setSecondaryColor(String secondaryColor) { this.secondaryColor = secondaryColor; }
+
+    @Override
+    public String getDescription() { return description; }
+    public void setDescription(String description) { this.description = description; }
 }

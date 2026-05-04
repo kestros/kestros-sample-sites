@@ -29,4 +29,6 @@ public interface Team {
     String getPrimaryColor();
 
     String getSecondaryColor();
+
+    String getDescription();
 }
