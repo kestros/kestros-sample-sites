@@ -86,6 +86,7 @@
                 <seasons-table
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/table"
+                        variations="[table-striped,table-hover]"
                         kes:datasource="league-demo-seasons"/>
             </table-section>
         </main>

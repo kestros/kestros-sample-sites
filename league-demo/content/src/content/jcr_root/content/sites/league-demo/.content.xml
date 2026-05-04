@@ -142,6 +142,7 @@
                         <results-table
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="/libs/kestros/commons/components/content/table"
+                                variations="[table-striped,table-hover]"
                                 kes:datasource="league-demo-recent-results"/>
                     </column-1>
                     <column-2
@@ -156,6 +157,7 @@
                         <upcoming-table
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="/libs/kestros/commons/components/content/table"
+                                variations="[table-striped,table-hover]"
                                 kes:datasource="league-demo-upcoming"/>
                     </column-2>
                 </match-center-grid>
@@ -210,6 +212,7 @@
                         <standings-table
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="/libs/kestros/commons/components/content/table"
+                                variations="[table-striped,table-hover]"
                                 kes:datasource="league-demo-top-five-standings"/>
                         <full-table-link
                                 jcr:primaryType="nt:unstructured"
