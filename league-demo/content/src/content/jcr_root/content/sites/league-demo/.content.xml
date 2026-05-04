@@ -311,6 +311,7 @@
                             <schedule jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Schedule &amp; Results" href="/content/sites/league-demo/schedule.html"/>
                             <teams jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Teams" href="/content/sites/league-demo/teams.html"/>
                             <players jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Players" href="/content/sites/league-demo/players.html"/>
+                            <stats jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Stats" href="/content/sites/league-demo/stats.html"/>
                         </competition-links>
                     </column-2>
                     <column-3
@@ -329,6 +330,7 @@
                             <watch jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Watch Live" href="/content/sites/league-demo/watch.html"/>
                             <tickets jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Tickets" href="/content/sites/league-demo/tickets.html"/>
                             <shop jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Official Shop" href="/content/sites/league-demo/shop.html"/>
+                            <venues jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Venues" href="/content/sites/league-demo/venues.html"/>
                             <community jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Community" href="/content/sites/league-demo/community.html"/>
                         </fan-links>
                     </column-3>
