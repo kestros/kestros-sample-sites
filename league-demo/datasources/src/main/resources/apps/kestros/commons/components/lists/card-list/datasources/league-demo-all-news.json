@@ -1,0 +1,7 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:title": "All League News",
+  "group": "League Demo",
+  "classPath": "io.kestros.samples.leaguedemo.datasources.AllNewsCardListDataSource",
+  "container": true
+}

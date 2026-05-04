@@ -23,6 +23,11 @@
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation"
             >
+                <nav-news
+                        href="/content/sites/league-demo/news.html"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation-item"
+                        text="News"/>
                 <nav-standings
                         href="/content/sites/league-demo/standings.html"
                         jcr:primaryType="nt:unstructured"
