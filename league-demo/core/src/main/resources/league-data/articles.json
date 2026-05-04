@@ -1,11 +1,19 @@
 [
   {
-    "id": "week-12-recap",
-    "title": "Week 12 Recap: Westbrook Stun Riverside in Thriller",
-    "summary": "Westbrook Rovers handed league leaders Riverside FC a rare defeat with a commanding 3-1 victory at Brook Lane. Elsewhere, Northside United kept their top-four hopes alive with a clean sheet against Ashdown, while Queensbury and Stone Valley shared six goals in a breathless draw.",
-    "date": "2025-12-21",
-    "category": "Match Report",
-    "tags": ["matchweek-12", "westbrook-rovers", "riverside-fc", "northside-united"]
+    "id": "week-13-preview",
+    "title": "Week 13 Preview: Festive Football Returns",
+    "summary": "The holiday fixtures are here, and the schedule throws up some blockbuster encounters. Riverside host Meridian City in a potential title decider, while relegation-threatened Southshore travel to Queensbury knowing anything less than three points could spell trouble.",
+    "date": "2025-12-23",
+    "category": "Preview",
+    "tags": ["matchweek-13", "riverside-fc", "meridian-city", "southshore-united", "preview"]
+  },
+  {
+    "id": "season-halfway-awards",
+    "title": "MPL Halfway Awards: Our Picks for Player, Manager, and Goal of the Season So Far",
+    "summary": "With the season past the halfway mark, our panel selects the standout performers from the first twelve matchweeks. From Riverside's relentless attacking to Northside's watertight defence, there is no shortage of candidates.",
+    "date": "2025-12-23",
+    "category": "Feature",
+    "tags": ["awards", "mid-season", "riverside-fc", "northside-united"]
   },
   {
     "id": "title-race-analysis",
@@ -16,20 +24,20 @@
     "tags": ["riverside-fc", "meridian-city", "title-race"]
   },
   {
-    "id": "meridian-city-form",
-    "title": "Meridian City's Quiet Surge: Four Wins in Five",
-    "summary": "While the spotlight has been on Riverside, Meridian City have quietly assembled the best form in the league. Back-to-back away wins at Oakhill and Port Heights have moved them into genuine contention. Manager David Kowalski credits a midfield reshuffle in Week 8.",
-    "date": "2025-12-19",
-    "category": "Feature",
-    "tags": ["meridian-city", "form-guide"]
+    "id": "relegation-battle",
+    "title": "Survival Sunday? The Relegation Picture After 12 Weeks",
+    "summary": "Stone Valley, Southshore United, and Queensbury Wanderers are locked in a three-way fight to avoid the drop. With the bottom two relegated, one of these clubs will survive and two will not. We examine who has the easier run-in.",
+    "date": "2025-12-22",
+    "category": "Analysis",
+    "tags": ["stone-valley", "southshore-united", "queensbury-wrs", "relegation"]
   },
   {
-    "id": "northside-defensive-record",
-    "title": "The Wall: How Northside United Built the League's Best Defence",
-    "summary": "Northside United have conceded just nine goals in twelve matches, the stingiest record in the division. Centre-back partnership Torres and Akimoto have started every league game together, and their understanding is bordering on telepathic.",
-    "date": "2025-12-18",
-    "category": "Feature",
-    "tags": ["northside-united", "defence", "stats"]
+    "id": "week-12-recap",
+    "title": "Week 12 Recap: Westbrook Stun Riverside in Thriller",
+    "summary": "Westbrook Rovers handed league leaders Riverside FC a rare defeat with a commanding 3-1 victory at Brook Lane. Elsewhere, Northside United kept their top-four hopes alive with a clean sheet against Ashdown, while Queensbury and Stone Valley shared six goals in a breathless draw.",
+    "date": "2025-12-21",
+    "category": "Match Report",
+    "tags": ["matchweek-12", "westbrook-rovers", "riverside-fc", "northside-united"]
   },
   {
     "id": "golden-boot-race",
@@ -48,22 +56,6 @@
     "tags": ["matchweek-12", "queensbury-wrs", "stone-valley"]
   },
   {
-    "id": "week-13-preview",
-    "title": "Week 13 Preview: Festive Football Returns",
-    "summary": "The holiday fixtures are here, and the schedule throws up some blockbuster encounters. Riverside host Meridian City in a potential title decider, while relegation-threatened Southshore travel to Queensbury knowing anything less than three points could spell trouble.",
-    "date": "2025-12-23",
-    "category": "Preview",
-    "tags": ["matchweek-13", "riverside-fc", "meridian-city", "southshore-united", "preview"]
-  },
-  {
-    "id": "relegation-battle",
-    "title": "Survival Sunday? The Relegation Picture After 12 Weeks",
-    "summary": "Stone Valley, Southshore United, and Queensbury Wanderers are locked in a three-way fight to avoid the drop. With the bottom two relegated, one of these clubs will survive and two will not. We examine who has the easier run-in.",
-    "date": "2025-12-22",
-    "category": "Analysis",
-    "tags": ["stone-valley", "southshore-united", "queensbury-wrs", "relegation"]
-  },
-  {
     "id": "oakhill-clean-sheet",
     "title": "Oakhill Grind Out Crucial Win Over Southshore",
     "summary": "A solitary first-half goal from midfielder Chen Wei was enough to earn Oakhill FC all three points against struggling Southshore United. The clean sheet, their fifth of the season, moves Oakhill into the top half of the table.",
@@ -72,11 +64,99 @@
     "tags": ["matchweek-12", "oakhill-fc", "southshore-united"]
   },
   {
-    "id": "season-halfway-awards",
-    "title": "MPL Halfway Awards: Our Picks for Player, Manager, and Goal of the Season So Far",
-    "summary": "With the season past the halfway mark, our panel selects the standout performers from the first twelve matchweeks. From Riverside's relentless attacking to Northside's watertight defence, there is no shortage of candidates.",
-    "date": "2025-12-23",
+    "id": "meridian-city-form",
+    "title": "Meridian City's Quiet Surge: Four Wins in Five",
+    "summary": "While the spotlight has been on Riverside, Meridian City have quietly assembled the best form in the league. Back-to-back away wins at Oakhill and Port Heights have moved them into genuine contention. Manager David Kowalski credits a midfield reshuffle in Week 8.",
+    "date": "2025-12-19",
     "category": "Feature",
-    "tags": ["awards", "mid-season", "riverside-fc", "northside-united"]
+    "tags": ["meridian-city", "form-guide"]
+  },
+  {
+    "id": "northside-defensive-record",
+    "title": "The Wall: How Northside United Built the League's Best Defence",
+    "summary": "Northside United have conceded just nine goals in twelve matches, the stingiest record in the division. Centre-back partnership Torres and Akimoto have started every league game together, and their understanding is bordering on telepathic.",
+    "date": "2025-12-18",
+    "category": "Feature",
+    "tags": ["northside-united", "defence", "stats"]
+  },
+  {
+    "id": "week-11-recap",
+    "title": "Week 11 Recap: Northside Run Riot at Harbour Stadium",
+    "summary": "Northside United demolished Port Heights 4-1 in the standout result of Matchweek 11. Meridian City continued their surge with a comeback win at Oakhill, while Riverside eased past Southshore to stay top.",
+    "date": "2025-12-14",
+    "category": "Match Report",
+    "tags": ["matchweek-11", "northside-united", "port-heights", "meridian-city"]
+  },
+  {
+    "id": "january-window-preview",
+    "title": "January Window: Which Clubs Need Reinforcements?",
+    "summary": "The transfer window opens in a matter of weeks and several MPL clubs are expected to be active. Southshore desperately need firepower up front, Queensbury could do with defensive reinforcements, and even Riverside might dip into the market for a creative midfielder.",
+    "date": "2025-12-17",
+    "category": "Transfers",
+    "tags": ["transfers", "january-window", "southshore-united", "queensbury-wrs", "riverside-fc"]
+  },
+  {
+    "id": "youth-academy-spotlight",
+    "title": "Academy Watch: The Young Players Making an Impact This Season",
+    "summary": "From Oakhill's 18-year-old winger to Ashdown's teenage goalkeeper, this season has seen a wave of academy graduates break into first-team squads. We profile the five most exciting young talents in the MPL.",
+    "date": "2025-12-15",
+    "category": "Feature",
+    "tags": ["youth", "academy", "oakhill-fc", "ashdown-athletic"]
+  },
+  {
+    "id": "week-10-recap",
+    "title": "Week 10 Recap: Oakhill Hammer Northside in Shock Result",
+    "summary": "Oakhill FC produced the performance of the weekend with a stunning 4-1 demolition of previously solid Northside United. Queensbury edged Port Heights 4-3 in a seven-goal thriller, while Ashdown continued their steady climb with an away win at Westbrook.",
+    "date": "2025-12-07",
+    "category": "Match Report",
+    "tags": ["matchweek-10", "oakhill-fc", "northside-united", "queensbury-wrs"]
+  },
+  {
+    "id": "attendance-record",
+    "title": "Record Crowds: MPL Attendance Up 12% on Last Season",
+    "summary": "The Meridian Premier League is on course for its best-attended season ever. Through twelve matchweeks, total attendance is up 12% compared to the same stage last year, with Riverside Park and Meridian Stadium leading the way.",
+    "date": "2025-12-16",
+    "category": "League News",
+    "tags": ["attendance", "league-news", "riverside-fc", "meridian-city"]
+  },
+  {
+    "id": "manager-spotlight-kowalski",
+    "title": "The Kowalski Effect: How Meridian City's Manager Transformed Their Season",
+    "summary": "After a slow start to the campaign, Meridian City have been revitalised under David Kowalski's tactical overhaul. A switch to a 3-5-2 formation in Week 6 has unlocked their attacking potential and turned them into genuine title contenders.",
+    "date": "2025-12-12",
+    "category": "Feature",
+    "tags": ["meridian-city", "manager", "tactics"]
+  },
+  {
+    "id": "community-day-announcement",
+    "title": "MPL Community Day: All Ten Clubs to Host Free Events on January 11",
+    "summary": "The league has announced its annual Community Day, with all ten member clubs opening their doors for free family-friendly events. Activities include stadium tours, coaching clinics, player meet-and-greets, and charity fundraisers.",
+    "date": "2025-12-10",
+    "category": "Community",
+    "tags": ["community", "league-news", "events"]
+  },
+  {
+    "id": "week-8-riverside-upset",
+    "title": "Ashdown Athletic Demolish Riverside 4-1 in Season's Biggest Upset",
+    "summary": "The result that sent shockwaves through the league. Ashdown Athletic tore Riverside FC apart at Riverside Park with a ruthless attacking display that raised serious questions about the leaders' defensive resilience.",
+    "date": "2025-11-23",
+    "category": "Match Report",
+    "tags": ["matchweek-8", "ashdown-athletic", "riverside-fc", "upset"]
+  },
+  {
+    "id": "broadcast-deal",
+    "title": "MPL Signs Extended Broadcast Partnership Through 2028",
+    "summary": "The Meridian Premier League has secured a three-year extension to its broadcast partnership, ensuring live coverage of every match through the 2027-28 season. The new deal includes enhanced digital streaming options and expanded international distribution.",
+    "date": "2025-11-20",
+    "category": "League News",
+    "tags": ["broadcast", "league-news", "commercial"]
+  },
+  {
+    "id": "season-opener-recap",
+    "title": "Opening Day: Northside Send a Message with Dominant Display",
+    "summary": "Northside United served notice of their intentions on day one with a commanding 3-0 victory over Oakhill FC. Riverside and Meridian City also started with wins, while Ashdown and Westbrook played out an entertaining 2-2 draw.",
+    "date": "2025-08-24",
+    "category": "Match Report",
+    "tags": ["matchweek-1", "northside-united", "oakhill-fc", "riverside-fc", "season-opener"]
   }
 ]
