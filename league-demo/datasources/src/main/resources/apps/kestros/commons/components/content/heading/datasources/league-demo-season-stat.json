@@ -1,0 +1,6 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:title": "Season Stat",
+  "group": "League Demo",
+  "classPath": "io.kestros.samples.leaguedemo.datasources.SeasonStatHeadingDataSource"
+}

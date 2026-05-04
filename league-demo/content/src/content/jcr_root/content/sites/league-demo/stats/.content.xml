@@ -26,6 +26,63 @@
                         text="2025-26 season leaders through Matchweek 12."/>
             </page-header>
 
+            <!-- Season at a Glance -->
+            <glance-section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section">
+                <heading
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        headingText="Season at a Glance"
+                        headingType="h2"/>
+                <glance-grid
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/grid">
+                    <column-1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kestros/commons/components/content-area">
+                        <stat
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                kes:datasource="league-demo-season-stat"
+                                metric="matchesPlayed"
+                                level="h3"/>
+                        <label
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Matches Played"/>
+                    </column-1>
+                    <column-2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kestros/commons/components/content-area">
+                        <stat
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                kes:datasource="league-demo-season-stat"
+                                metric="totalGoals"
+                                level="h3"/>
+                        <label
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Goals Scored"/>
+                    </column-2>
+                    <column-3
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kestros/commons/components/content-area">
+                        <stat
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                kes:datasource="league-demo-season-stat"
+                                metric="goalsPerMatch"
+                                level="h3"/>
+                        <label
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Goals Per Match"/>
+                    </column-3>
+                </glance-grid>
+            </glance-section>
+
             <!-- Top Goals + Top Assists side by side -->
             <leaders-section
                     jcr:primaryType="nt:unstructured"
