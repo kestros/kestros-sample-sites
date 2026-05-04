@@ -17,4 +17,14 @@ public interface Player {
     String getNationality();
 
     String getImageUrl();
+
+    int getGoals();
+
+    int getAssists();
+
+    int getAppearances();
+
+    int getYellowCards();
+
+    int getRedCards();
 }

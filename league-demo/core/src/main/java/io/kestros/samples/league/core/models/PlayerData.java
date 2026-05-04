@@ -14,6 +14,11 @@ public class PlayerData implements Player {
     private String teamId;
     private String nationality;
     private String imageUrl;
+    private int goals;
+    private int assists;
+    private int appearances;
+    private int yellowCards;
+    private int redCards;
 
     @Override
     public String getId() {
@@ -86,4 +91,19 @@ public class PlayerData implements Player {
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
     }
+
+    @Override public int getGoals() { return goals; }
+    public void setGoals(int goals) { this.goals = goals; }
+
+    @Override public int getAssists() { return assists; }
+    public void setAssists(int assists) { this.assists = assists; }
+
+    @Override public int getAppearances() { return appearances; }
+    public void setAppearances(int appearances) { this.appearances = appearances; }
+
+    @Override public int getYellowCards() { return yellowCards; }
+    public void setYellowCards(int yellowCards) { this.yellowCards = yellowCards; }
+
+    @Override public int getRedCards() { return redCards; }
+    public void setRedCards(int redCards) { this.redCards = redCards; }
 }

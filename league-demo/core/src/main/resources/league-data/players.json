@@ -6,7 +6,12 @@
     "position": "Goalkeeper",
     "number": 1,
     "teamId": "riverside-fc",
-    "nationality": "Germany"
+    "nationality": "Germany",
+    "goals": 0,
+    "assists": 0,
+    "appearances": 6,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "malik-almeida",
@@ -15,7 +20,12 @@
     "position": "Goalkeeper",
     "number": 13,
     "teamId": "riverside-fc",
-    "nationality": "Argentina"
+    "nationality": "Argentina",
+    "goals": 0,
+    "assists": 0,
+    "appearances": 9,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "sami-cole",
@@ -24,7 +34,12 @@
     "position": "Defender",
     "number": 2,
     "teamId": "riverside-fc",
-    "nationality": "Ivory Coast"
+    "nationality": "Ivory Coast",
+    "goals": 0,
+    "assists": 2,
+    "appearances": 8,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "robert-ross",
@@ -33,7 +48,12 @@
     "position": "Defender",
     "number": 3,
     "teamId": "riverside-fc",
-    "nationality": "Uruguay"
+    "nationality": "Uruguay",
+    "goals": 0,
+    "assists": 0,
+    "appearances": 11,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "nabil-bahi",
@@ -42,7 +62,12 @@
     "position": "Defender",
     "number": 4,
     "teamId": "riverside-fc",
-    "nationality": "Belgium"
+    "nationality": "Belgium",
+    "goals": 2,
+    "assists": 2,
+    "appearances": 8,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "emil-popescu",
@@ -51,7 +76,12 @@
     "position": "Defender",
     "number": 5,
     "teamId": "riverside-fc",
-    "nationality": "Greece"
+    "nationality": "Greece",
+    "goals": 0,
+    "assists": 1,
+    "appearances": 11,
+    "yellowCards": 4,
+    "redCards": 1
   },
   {
     "id": "ben-volkov",
@@ -60,7 +90,12 @@
     "position": "Defender",
     "number": 15,
     "teamId": "riverside-fc",
-    "nationality": "South Korea"
+    "nationality": "South Korea",
+    "goals": 0,
+    "assists": 2,
+    "appearances": 5,
+    "yellowCards": 3,
+    "redCards": 1
   },
   {
     "id": "pierre-mendez",
@@ -69,7 +104,12 @@
     "position": "Midfielder",
     "number": 6,
     "teamId": "riverside-fc",
-    "nationality": "Morocco"
+    "nationality": "Morocco",
+    "goals": 1,
+    "assists": 1,
+    "appearances": 9,
+    "yellowCards": 2,
+    "redCards": 0
   },
   {
     "id": "oumar-adomako",
@@ -78,7 +118,12 @@
     "position": "Midfielder",
     "number": 7,
     "teamId": "riverside-fc",
-    "nationality": "Australia"
+    "nationality": "Australia",
+    "goals": 0,
+    "assists": 3,
+    "appearances": 6,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "oscar-larsson",
@@ -87,7 +132,12 @@
     "position": "Midfielder",
     "number": 8,
     "teamId": "riverside-fc",
-    "nationality": "England"
+    "nationality": "England",
+    "goals": 2,
+    "assists": 4,
+    "appearances": 10,
+    "yellowCards": 2,
+    "redCards": 0
   },
   {
     "id": "max-laurent",
@@ -96,7 +146,12 @@
     "position": "Midfielder",
     "number": 10,
     "teamId": "riverside-fc",
-    "nationality": "Egypt"
+    "nationality": "Egypt",
+    "goals": 5,
+    "assists": 3,
+    "appearances": 5,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "sami-greer",
@@ -105,7 +160,12 @@
     "position": "Midfielder",
     "number": 16,
     "teamId": "riverside-fc",
-    "nationality": "Germany"
+    "nationality": "Germany",
+    "goals": 0,
+    "assists": 4,
+    "appearances": 11,
+    "yellowCards": 2,
+    "redCards": 0
   },
   {
     "id": "jonas-watanabe",
@@ -114,7 +174,12 @@
     "position": "Forward",
     "number": 9,
     "teamId": "riverside-fc",
-    "nationality": "Italy"
+    "nationality": "Italy",
+    "goals": 5,
+    "assists": 1,
+    "appearances": 10,
+    "yellowCards": 2,
+    "redCards": 0
   },
   {
     "id": "axel-harrington",
@@ -123,7 +188,12 @@
     "position": "Forward",
     "number": 11,
     "teamId": "riverside-fc",
-    "nationality": "Colombia"
+    "nationality": "Colombia",
+    "goals": 1,
+    "assists": 1,
+    "appearances": 6,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "jamie-green",
@@ -132,7 +202,12 @@
     "position": "Forward",
     "number": 18,
     "teamId": "riverside-fc",
-    "nationality": "Croatia"
+    "nationality": "Croatia",
+    "goals": 2,
+    "assists": 0,
+    "appearances": 6,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "daniel-rossi",
@@ -141,7 +216,12 @@
     "position": "Forward",
     "number": 19,
     "teamId": "riverside-fc",
-    "nationality": "Wales"
+    "nationality": "Wales",
+    "goals": 4,
+    "assists": 2,
+    "appearances": 9,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "malik-demir",
@@ -150,7 +230,12 @@
     "position": "Goalkeeper",
     "number": 1,
     "teamId": "meridian-city",
-    "nationality": "Uruguay"
+    "nationality": "Uruguay",
+    "goals": 0,
+    "assists": 0,
+    "appearances": 10,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "filip-clarke",
@@ -159,7 +244,12 @@
     "position": "Goalkeeper",
     "number": 13,
     "teamId": "meridian-city",
-    "nationality": "Denmark"
+    "nationality": "Denmark",
+    "goals": 0,
+    "assists": 0,
+    "appearances": 8,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "patrick-stone",
@@ -168,7 +258,12 @@
     "position": "Defender",
     "number": 2,
     "teamId": "meridian-city",
-    "nationality": "Poland"
+    "nationality": "Poland",
+    "goals": 2,
+    "assists": 2,
+    "appearances": 6,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "charlie-mitchell",
@@ -177,7 +272,12 @@
     "position": "Defender",
     "number": 3,
     "teamId": "meridian-city",
-    "nationality": "England"
+    "nationality": "England",
+    "goals": 1,
+    "assists": 1,
+    "appearances": 7,
+    "yellowCards": 2,
+    "redCards": 0
   },
   {
     "id": "peter-fernandez",
@@ -186,7 +286,12 @@
     "position": "Defender",
     "number": 4,
     "teamId": "meridian-city",
-    "nationality": "Jamaica"
+    "nationality": "Jamaica",
+    "goals": 0,
+    "assists": 0,
+    "appearances": 10,
+    "yellowCards": 0,
+    "redCards": 1
   },
   {
     "id": "george-garcia",
@@ -195,7 +300,12 @@
     "position": "Defender",
     "number": 5,
     "teamId": "meridian-city",
-    "nationality": "Romania"
+    "nationality": "Romania",
+    "goals": 1,
+    "assists": 0,
+    "appearances": 11,
+    "yellowCards": 1,
+    "redCards": 1
   },
   {
     "id": "jan-hamilton",
@@ -204,7 +314,12 @@
     "position": "Defender",
     "number": 15,
     "teamId": "meridian-city",
-    "nationality": "Australia"
+    "nationality": "Australia",
+    "goals": 2,
+    "assists": 1,
+    "appearances": 8,
+    "yellowCards": 3,
+    "redCards": 1
   },
   {
     "id": "fabio-lang",
@@ -213,7 +328,12 @@
     "position": "Midfielder",
     "number": 6,
     "teamId": "meridian-city",
-    "nationality": "Nigeria"
+    "nationality": "Nigeria",
+    "goals": 2,
+    "assists": 1,
+    "appearances": 7,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "rafael-davies",
@@ -222,7 +342,12 @@
     "position": "Midfielder",
     "number": 7,
     "teamId": "meridian-city",
-    "nationality": "Wales"
+    "nationality": "Wales",
+    "goals": 5,
+    "assists": 4,
+    "appearances": 9,
+    "yellowCards": 3,
+    "redCards": 0
   },
   {
     "id": "gael-muller",
@@ -231,7 +356,12 @@
     "position": "Midfielder",
     "number": 8,
     "teamId": "meridian-city",
-    "nationality": "Sweden"
+    "nationality": "Sweden",
+    "goals": 2,
+    "assists": 1,
+    "appearances": 11,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "theo-ono",
@@ -240,7 +370,12 @@
     "position": "Midfielder",
     "number": 10,
     "teamId": "meridian-city",
-    "nationality": "Serbia"
+    "nationality": "Serbia",
+    "goals": 0,
+    "assists": 0,
+    "appearances": 12,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "craig-dubois",
@@ -249,7 +384,12 @@
     "position": "Midfielder",
     "number": 16,
     "teamId": "meridian-city",
-    "nationality": "Belgium"
+    "nationality": "Belgium",
+    "goals": 5,
+    "assists": 1,
+    "appearances": 7,
+    "yellowCards": 3,
+    "redCards": 0
   },
   {
     "id": "ben-popescu",
@@ -258,7 +398,12 @@
     "position": "Forward",
     "number": 9,
     "teamId": "meridian-city",
-    "nationality": "Greece"
+    "nationality": "Greece",
+    "goals": 4,
+    "assists": 3,
+    "appearances": 6,
+    "yellowCards": 2,
+    "redCards": 0
   },
   {
     "id": "peter-el-khoury",
@@ -267,7 +412,12 @@
     "position": "Forward",
     "number": 11,
     "teamId": "meridian-city",
-    "nationality": "Turkey"
+    "nationality": "Turkey",
+    "goals": 5,
+    "assists": 2,
+    "appearances": 12,
+    "yellowCards": 2,
+    "redCards": 0
   },
   {
     "id": "danny-green",
@@ -276,7 +426,12 @@
     "position": "Forward",
     "number": 18,
     "teamId": "meridian-city",
-    "nationality": "Uruguay"
+    "nationality": "Uruguay",
+    "goals": 6,
+    "assists": 0,
+    "appearances": 5,
+    "yellowCards": 2,
+    "redCards": 0
   },
   {
     "id": "jake-hassan",
@@ -285,7 +440,12 @@
     "position": "Forward",
     "number": 19,
     "teamId": "meridian-city",
-    "nationality": "Austria"
+    "nationality": "Austria",
+    "goals": 6,
+    "assists": 2,
+    "appearances": 9,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "kofi-winter",
@@ -294,7 +454,12 @@
     "position": "Goalkeeper",
     "number": 1,
     "teamId": "ashdown-athletic",
-    "nationality": "Senegal"
+    "nationality": "Senegal",
+    "goals": 0,
+    "assists": 0,
+    "appearances": 9,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "kai-santos",
@@ -303,7 +468,12 @@
     "position": "Goalkeeper",
     "number": 13,
     "teamId": "ashdown-athletic",
-    "nationality": "Japan"
+    "nationality": "Japan",
+    "goals": 0,
+    "assists": 0,
+    "appearances": 7,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "chris-horvat",
@@ -312,7 +482,12 @@
     "position": "Defender",
     "number": 2,
     "teamId": "ashdown-athletic",
-    "nationality": "Czech Republic"
+    "nationality": "Czech Republic",
+    "goals": 2,
+    "assists": 2,
+    "appearances": 5,
+    "yellowCards": 2,
+    "redCards": 0
   },
   {
     "id": "theo-tanaka",
@@ -321,7 +496,12 @@
     "position": "Defender",
     "number": 3,
     "teamId": "ashdown-athletic",
-    "nationality": "USA"
+    "nationality": "USA",
+    "goals": 2,
+    "assists": 1,
+    "appearances": 6,
+    "yellowCards": 4,
+    "redCards": 0
   },
   {
     "id": "alex-taylor",
@@ -330,7 +510,12 @@
     "position": "Defender",
     "number": 4,
     "teamId": "ashdown-athletic",
-    "nationality": "USA"
+    "nationality": "USA",
+    "goals": 1,
+    "assists": 0,
+    "appearances": 7,
+    "yellowCards": 4,
+    "redCards": 0
   },
   {
     "id": "theo-asante",
@@ -339,7 +524,12 @@
     "position": "Defender",
     "number": 5,
     "teamId": "ashdown-athletic",
-    "nationality": "Romania"
+    "nationality": "Romania",
+    "goals": 1,
+    "assists": 0,
+    "appearances": 10,
+    "yellowCards": 0,
+    "redCards": 1
   },
   {
     "id": "connor-bradshaw",
@@ -348,7 +538,12 @@
     "position": "Defender",
     "number": 15,
     "teamId": "ashdown-athletic",
-    "nationality": "Netherlands"
+    "nationality": "Netherlands",
+    "goals": 0,
+    "assists": 0,
+    "appearances": 9,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "robert-wood",
@@ -357,7 +552,12 @@
     "position": "Midfielder",
     "number": 6,
     "teamId": "ashdown-athletic",
-    "nationality": "Ivory Coast"
+    "nationality": "Ivory Coast",
+    "goals": 5,
+    "assists": 3,
+    "appearances": 6,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "gael-walsh",
@@ -366,7 +566,12 @@
     "position": "Midfielder",
     "number": 7,
     "teamId": "ashdown-athletic",
-    "nationality": "Wales"
+    "nationality": "Wales",
+    "goals": 1,
+    "assists": 3,
+    "appearances": 7,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "kai-fuentes",
@@ -375,7 +580,12 @@
     "position": "Midfielder",
     "number": 8,
     "teamId": "ashdown-athletic",
-    "nationality": "Turkey"
+    "nationality": "Turkey",
+    "goals": 4,
+    "assists": 4,
+    "appearances": 9,
+    "yellowCards": 3,
+    "redCards": 0
   },
   {
     "id": "tom-harrington",
@@ -384,7 +594,12 @@
     "position": "Midfielder",
     "number": 10,
     "teamId": "ashdown-athletic",
-    "nationality": "Brazil"
+    "nationality": "Brazil",
+    "goals": 4,
+    "assists": 1,
+    "appearances": 8,
+    "yellowCards": 2,
+    "redCards": 0
   },
   {
     "id": "andrei-oliveira",
@@ -393,7 +608,12 @@
     "position": "Midfielder",
     "number": 16,
     "teamId": "ashdown-athletic",
-    "nationality": "Argentina"
+    "nationality": "Argentina",
+    "goals": 5,
+    "assists": 2,
+    "appearances": 11,
+    "yellowCards": 3,
+    "redCards": 0
   },
   {
     "id": "jamie-stone",
@@ -402,7 +622,12 @@
     "position": "Forward",
     "number": 9,
     "teamId": "ashdown-athletic",
-    "nationality": "Nigeria"
+    "nationality": "Nigeria",
+    "goals": 1,
+    "assists": 1,
+    "appearances": 12,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "luca-toure",
@@ -411,7 +636,12 @@
     "position": "Forward",
     "number": 11,
     "teamId": "ashdown-athletic",
-    "nationality": "Canada"
+    "nationality": "Canada",
+    "goals": 3,
+    "assists": 0,
+    "appearances": 6,
+    "yellowCards": 2,
+    "redCards": 0
   },
   {
     "id": "henrik-davies",
@@ -420,7 +650,12 @@
     "position": "Forward",
     "number": 18,
     "teamId": "ashdown-athletic",
-    "nationality": "Ghana"
+    "nationality": "Ghana",
+    "goals": 5,
+    "assists": 1,
+    "appearances": 8,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "mateo-adomako",
@@ -429,7 +664,12 @@
     "position": "Forward",
     "number": 19,
     "teamId": "ashdown-athletic",
-    "nationality": "Germany"
+    "nationality": "Germany",
+    "goals": 6,
+    "assists": 0,
+    "appearances": 6,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "jamie-oshiro",
@@ -438,7 +678,12 @@
     "position": "Goalkeeper",
     "number": 1,
     "teamId": "northside-united",
-    "nationality": "Romania"
+    "nationality": "Romania",
+    "goals": 0,
+    "assists": 0,
+    "appearances": 6,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "oscar-el-khoury",
@@ -447,7 +692,12 @@
     "position": "Goalkeeper",
     "number": 13,
     "teamId": "northside-united",
-    "nationality": "Romania"
+    "nationality": "Romania",
+    "goals": 0,
+    "assists": 0,
+    "appearances": 10,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "nikita-stone",
@@ -456,7 +706,12 @@
     "position": "Defender",
     "number": 2,
     "teamId": "northside-united",
-    "nationality": "Cameroon"
+    "nationality": "Cameroon",
+    "goals": 1,
+    "assists": 2,
+    "appearances": 8,
+    "yellowCards": 3,
+    "redCards": 0
   },
   {
     "id": "mateo-kone",
@@ -465,7 +720,12 @@
     "position": "Defender",
     "number": 3,
     "teamId": "northside-united",
-    "nationality": "Brazil"
+    "nationality": "Brazil",
+    "goals": 2,
+    "assists": 2,
+    "appearances": 7,
+    "yellowCards": 4,
+    "redCards": 1
   },
   {
     "id": "kwesi-cole",
@@ -474,7 +734,12 @@
     "position": "Defender",
     "number": 4,
     "teamId": "northside-united",
-    "nationality": "Greece"
+    "nationality": "Greece",
+    "goals": 1,
+    "assists": 1,
+    "appearances": 8,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "ben-scott",
@@ -483,7 +748,12 @@
     "position": "Defender",
     "number": 5,
     "teamId": "northside-united",
-    "nationality": "Ghana"
+    "nationality": "Ghana",
+    "goals": 2,
+    "assists": 1,
+    "appearances": 6,
+    "yellowCards": 2,
+    "redCards": 1
   },
   {
     "id": "mateo-stone",
@@ -492,7 +762,12 @@
     "position": "Defender",
     "number": 15,
     "teamId": "northside-united",
-    "nationality": "USA"
+    "nationality": "USA",
+    "goals": 1,
+    "assists": 2,
+    "appearances": 11,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "pierre-scott",
@@ -501,7 +776,12 @@
     "position": "Midfielder",
     "number": 6,
     "teamId": "northside-united",
-    "nationality": "France"
+    "nationality": "France",
+    "goals": 3,
+    "assists": 2,
+    "appearances": 5,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "stefan-eriksson",
@@ -510,7 +790,12 @@
     "position": "Midfielder",
     "number": 7,
     "teamId": "northside-united",
-    "nationality": "Netherlands"
+    "nationality": "Netherlands",
+    "goals": 1,
+    "assists": 1,
+    "appearances": 8,
+    "yellowCards": 3,
+    "redCards": 0
   },
   {
     "id": "rafael-hamilton",
@@ -519,7 +804,12 @@
     "position": "Midfielder",
     "number": 8,
     "teamId": "northside-united",
-    "nationality": "South Korea"
+    "nationality": "South Korea",
+    "goals": 3,
+    "assists": 1,
+    "appearances": 7,
+    "yellowCards": 2,
+    "redCards": 0
   },
   {
     "id": "kylian-ono",
@@ -528,7 +818,12 @@
     "position": "Midfielder",
     "number": 10,
     "teamId": "northside-united",
-    "nationality": "USA"
+    "nationality": "USA",
+    "goals": 1,
+    "assists": 0,
+    "appearances": 12,
+    "yellowCards": 3,
+    "redCards": 0
   },
   {
     "id": "reo-bakayoko",
@@ -537,7 +832,12 @@
     "position": "Midfielder",
     "number": 16,
     "teamId": "northside-united",
-    "nationality": "Poland"
+    "nationality": "Poland",
+    "goals": 0,
+    "assists": 4,
+    "appearances": 6,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "danny-horvat",
@@ -546,7 +846,12 @@
     "position": "Forward",
     "number": 9,
     "teamId": "northside-united",
-    "nationality": "Mexico"
+    "nationality": "Mexico",
+    "goals": 2,
+    "assists": 1,
+    "appearances": 6,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "diego-chambers",
@@ -555,7 +860,12 @@
     "position": "Forward",
     "number": 11,
     "teamId": "northside-united",
-    "nationality": "Colombia"
+    "nationality": "Colombia",
+    "goals": 4,
+    "assists": 1,
+    "appearances": 12,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "oumar-hartley",
@@ -564,7 +874,12 @@
     "position": "Forward",
     "number": 18,
     "teamId": "northside-united",
-    "nationality": "Senegal"
+    "nationality": "Senegal",
+    "goals": 2,
+    "assists": 3,
+    "appearances": 5,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "tyrone-horvat",
@@ -573,7 +888,12 @@
     "position": "Forward",
     "number": 19,
     "teamId": "northside-united",
-    "nationality": "Uruguay"
+    "nationality": "Uruguay",
+    "goals": 3,
+    "assists": 3,
+    "appearances": 11,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "filip-beckett",
@@ -582,7 +902,12 @@
     "position": "Goalkeeper",
     "number": 1,
     "teamId": "port-heights",
-    "nationality": "USA"
+    "nationality": "USA",
+    "goals": 0,
+    "assists": 0,
+    "appearances": 11,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "adam-price",
@@ -591,7 +916,12 @@
     "position": "Goalkeeper",
     "number": 13,
     "teamId": "port-heights",
-    "nationality": "Ivory Coast"
+    "nationality": "Ivory Coast",
+    "goals": 0,
+    "assists": 0,
+    "appearances": 7,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "jamie-tanaka",
@@ -600,7 +930,12 @@
     "position": "Defender",
     "number": 2,
     "teamId": "port-heights",
-    "nationality": "Italy"
+    "nationality": "Italy",
+    "goals": 0,
+    "assists": 0,
+    "appearances": 9,
+    "yellowCards": 4,
+    "redCards": 0
   },
   {
     "id": "nathan-hamilton",
@@ -609,7 +944,12 @@
     "position": "Defender",
     "number": 3,
     "teamId": "port-heights",
-    "nationality": "Scotland"
+    "nationality": "Scotland",
+    "goals": 0,
+    "assists": 0,
+    "appearances": 10,
+    "yellowCards": 4,
+    "redCards": 1
   },
   {
     "id": "jack-berger",
@@ -618,7 +958,12 @@
     "position": "Defender",
     "number": 4,
     "teamId": "port-heights",
-    "nationality": "Egypt"
+    "nationality": "Egypt",
+    "goals": 0,
+    "assists": 2,
+    "appearances": 7,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "hugo-jensen",
@@ -627,7 +972,12 @@
     "position": "Defender",
     "number": 5,
     "teamId": "port-heights",
-    "nationality": "Scotland"
+    "nationality": "Scotland",
+    "goals": 2,
+    "assists": 0,
+    "appearances": 6,
+    "yellowCards": 1,
+    "redCards": 1
   },
   {
     "id": "pierre-lang",
@@ -636,7 +986,12 @@
     "position": "Defender",
     "number": 15,
     "teamId": "port-heights",
-    "nationality": "Chile"
+    "nationality": "Chile",
+    "goals": 2,
+    "assists": 0,
+    "appearances": 6,
+    "yellowCards": 4,
+    "redCards": 0
   },
   {
     "id": "filip-davies",
@@ -645,7 +1000,12 @@
     "position": "Midfielder",
     "number": 6,
     "teamId": "port-heights",
-    "nationality": "Greece"
+    "nationality": "Greece",
+    "goals": 3,
+    "assists": 4,
+    "appearances": 6,
+    "yellowCards": 2,
+    "redCards": 0
   },
   {
     "id": "ismail-toure",
@@ -654,7 +1014,12 @@
     "position": "Midfielder",
     "number": 7,
     "teamId": "port-heights",
-    "nationality": "Romania"
+    "nationality": "Romania",
+    "goals": 1,
+    "assists": 2,
+    "appearances": 9,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "theo-wright",
@@ -663,7 +1028,12 @@
     "position": "Midfielder",
     "number": 8,
     "teamId": "port-heights",
-    "nationality": "Japan"
+    "nationality": "Japan",
+    "goals": 3,
+    "assists": 1,
+    "appearances": 9,
+    "yellowCards": 2,
+    "redCards": 0
   },
   {
     "id": "charlie-popescu",
@@ -672,7 +1042,12 @@
     "position": "Midfielder",
     "number": 10,
     "teamId": "port-heights",
-    "nationality": "Germany"
+    "nationality": "Germany",
+    "goals": 2,
+    "assists": 0,
+    "appearances": 12,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "james-kovac",
@@ -681,7 +1056,12 @@
     "position": "Midfielder",
     "number": 16,
     "teamId": "port-heights",
-    "nationality": "South Korea"
+    "nationality": "South Korea",
+    "goals": 4,
+    "assists": 4,
+    "appearances": 12,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "ali-kone",
@@ -690,7 +1070,12 @@
     "position": "Forward",
     "number": 9,
     "teamId": "port-heights",
-    "nationality": "Brazil"
+    "nationality": "Brazil",
+    "goals": 5,
+    "assists": 1,
+    "appearances": 6,
+    "yellowCards": 2,
+    "redCards": 0
   },
   {
     "id": "peter-greer",
@@ -699,7 +1084,12 @@
     "position": "Forward",
     "number": 11,
     "teamId": "port-heights",
-    "nationality": "Czech Republic"
+    "nationality": "Czech Republic",
+    "goals": 2,
+    "assists": 2,
+    "appearances": 9,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "takeshi-mcgregor",
@@ -708,7 +1098,12 @@
     "position": "Forward",
     "number": 18,
     "teamId": "port-heights",
-    "nationality": "Czech Republic"
+    "nationality": "Czech Republic",
+    "goals": 3,
+    "assists": 2,
+    "appearances": 8,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "carlos-bakayoko",
@@ -717,7 +1112,12 @@
     "position": "Forward",
     "number": 19,
     "teamId": "port-heights",
-    "nationality": "Scotland"
+    "nationality": "Scotland",
+    "goals": 5,
+    "assists": 2,
+    "appearances": 12,
+    "yellowCards": 2,
+    "redCards": 0
   },
   {
     "id": "tom-chen",
@@ -726,7 +1126,12 @@
     "position": "Goalkeeper",
     "number": 1,
     "teamId": "queensbury-wrs",
-    "nationality": "Switzerland"
+    "nationality": "Switzerland",
+    "goals": 0,
+    "assists": 0,
+    "appearances": 5,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "luis-ono",
@@ -735,7 +1140,12 @@
     "position": "Goalkeeper",
     "number": 13,
     "teamId": "queensbury-wrs",
-    "nationality": "Australia"
+    "nationality": "Australia",
+    "goals": 0,
+    "assists": 0,
+    "appearances": 6,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "max-ono",
@@ -744,7 +1154,12 @@
     "position": "Defender",
     "number": 2,
     "teamId": "queensbury-wrs",
-    "nationality": "Uruguay"
+    "nationality": "Uruguay",
+    "goals": 0,
+    "assists": 0,
+    "appearances": 9,
+    "yellowCards": 4,
+    "redCards": 0
   },
   {
     "id": "sean-horvat",
@@ -753,7 +1168,12 @@
     "position": "Defender",
     "number": 3,
     "teamId": "queensbury-wrs",
-    "nationality": "Italy"
+    "nationality": "Italy",
+    "goals": 1,
+    "assists": 2,
+    "appearances": 9,
+    "yellowCards": 1,
+    "redCards": 1
   },
   {
     "id": "robert-fuentes",
@@ -762,7 +1182,12 @@
     "position": "Defender",
     "number": 4,
     "teamId": "queensbury-wrs",
-    "nationality": "Croatia"
+    "nationality": "Croatia",
+    "goals": 2,
+    "assists": 2,
+    "appearances": 8,
+    "yellowCards": 2,
+    "redCards": 1
   },
   {
     "id": "aiden-laurent",
@@ -771,7 +1196,12 @@
     "position": "Defender",
     "number": 5,
     "teamId": "queensbury-wrs",
-    "nationality": "Cameroon"
+    "nationality": "Cameroon",
+    "goals": 0,
+    "assists": 0,
+    "appearances": 9,
+    "yellowCards": 3,
+    "redCards": 1
   },
   {
     "id": "oumar-silva",
@@ -780,7 +1210,12 @@
     "position": "Defender",
     "number": 15,
     "teamId": "queensbury-wrs",
-    "nationality": "Brazil"
+    "nationality": "Brazil",
+    "goals": 0,
+    "assists": 1,
+    "appearances": 5,
+    "yellowCards": 1,
+    "redCards": 1
   },
   {
     "id": "stefan-green",
@@ -789,7 +1224,12 @@
     "position": "Midfielder",
     "number": 6,
     "teamId": "queensbury-wrs",
-    "nationality": "Serbia"
+    "nationality": "Serbia",
+    "goals": 5,
+    "assists": 3,
+    "appearances": 7,
+    "yellowCards": 3,
+    "redCards": 0
   },
   {
     "id": "nabil-diallo",
@@ -798,7 +1238,12 @@
     "position": "Midfielder",
     "number": 7,
     "teamId": "queensbury-wrs",
-    "nationality": "Japan"
+    "nationality": "Japan",
+    "goals": 0,
+    "assists": 0,
+    "appearances": 5,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "ismail-johansson",
@@ -807,7 +1252,12 @@
     "position": "Midfielder",
     "number": 8,
     "teamId": "queensbury-wrs",
-    "nationality": "Canada"
+    "nationality": "Canada",
+    "goals": 2,
+    "assists": 4,
+    "appearances": 5,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "jan-mendez",
@@ -816,7 +1266,12 @@
     "position": "Midfielder",
     "number": 10,
     "teamId": "queensbury-wrs",
-    "nationality": "Australia"
+    "nationality": "Australia",
+    "goals": 1,
+    "assists": 0,
+    "appearances": 11,
+    "yellowCards": 2,
+    "redCards": 0
   },
   {
     "id": "patrick-taylor",
@@ -825,7 +1280,12 @@
     "position": "Midfielder",
     "number": 16,
     "teamId": "queensbury-wrs",
-    "nationality": "Uruguay"
+    "nationality": "Uruguay",
+    "goals": 0,
+    "assists": 2,
+    "appearances": 10,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "david-bianchi",
@@ -834,7 +1294,12 @@
     "position": "Forward",
     "number": 9,
     "teamId": "queensbury-wrs",
-    "nationality": "Portugal"
+    "nationality": "Portugal",
+    "goals": 6,
+    "assists": 0,
+    "appearances": 8,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "nikita-bahi",
@@ -843,7 +1308,12 @@
     "position": "Forward",
     "number": 11,
     "teamId": "queensbury-wrs",
-    "nationality": "Senegal"
+    "nationality": "Senegal",
+    "goals": 5,
+    "assists": 1,
+    "appearances": 11,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "nathan-nilsson",
@@ -852,7 +1322,12 @@
     "position": "Forward",
     "number": 18,
     "teamId": "queensbury-wrs",
-    "nationality": "Nigeria"
+    "nationality": "Nigeria",
+    "goals": 2,
+    "assists": 3,
+    "appearances": 7,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "max-santos",
@@ -861,7 +1336,12 @@
     "position": "Forward",
     "number": 19,
     "teamId": "queensbury-wrs",
-    "nationality": "Denmark"
+    "nationality": "Denmark",
+    "goals": 6,
+    "assists": 2,
+    "appearances": 7,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "malik-berger",
@@ -870,7 +1350,12 @@
     "position": "Goalkeeper",
     "number": 1,
     "teamId": "oakhill-fc",
-    "nationality": "Uruguay"
+    "nationality": "Uruguay",
+    "goals": 0,
+    "assists": 0,
+    "appearances": 8,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "gael-hassan",
@@ -879,7 +1364,12 @@
     "position": "Goalkeeper",
     "number": 13,
     "teamId": "oakhill-fc",
-    "nationality": "Sweden"
+    "nationality": "Sweden",
+    "goals": 0,
+    "assists": 0,
+    "appearances": 7,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "oscar-tanaka",
@@ -888,7 +1378,12 @@
     "position": "Defender",
     "number": 2,
     "teamId": "oakhill-fc",
-    "nationality": "Nigeria"
+    "nationality": "Nigeria",
+    "goals": 0,
+    "assists": 1,
+    "appearances": 11,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "oscar-kovac",
@@ -897,7 +1392,12 @@
     "position": "Defender",
     "number": 3,
     "teamId": "oakhill-fc",
-    "nationality": "Brazil"
+    "nationality": "Brazil",
+    "goals": 1,
+    "assists": 1,
+    "appearances": 12,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "finn-ross",
@@ -906,7 +1406,12 @@
     "position": "Defender",
     "number": 4,
     "teamId": "oakhill-fc",
-    "nationality": "Ivory Coast"
+    "nationality": "Ivory Coast",
+    "goals": 2,
+    "assists": 0,
+    "appearances": 5,
+    "yellowCards": 3,
+    "redCards": 1
   },
   {
     "id": "rafael-larsson",
@@ -915,7 +1420,12 @@
     "position": "Defender",
     "number": 5,
     "teamId": "oakhill-fc",
-    "nationality": "Colombia"
+    "nationality": "Colombia",
+    "goals": 0,
+    "assists": 1,
+    "appearances": 9,
+    "yellowCards": 2,
+    "redCards": 1
   },
   {
     "id": "andre-dubois",
@@ -924,7 +1434,12 @@
     "position": "Defender",
     "number": 15,
     "teamId": "oakhill-fc",
-    "nationality": "Czech Republic"
+    "nationality": "Czech Republic",
+    "goals": 0,
+    "assists": 0,
+    "appearances": 10,
+    "yellowCards": 2,
+    "redCards": 0
   },
   {
     "id": "patrick-kone",
@@ -933,7 +1448,12 @@
     "position": "Midfielder",
     "number": 6,
     "teamId": "oakhill-fc",
-    "nationality": "Ireland"
+    "nationality": "Ireland",
+    "goals": 0,
+    "assists": 0,
+    "appearances": 9,
+    "yellowCards": 3,
+    "redCards": 0
   },
   {
     "id": "oscar-bahi",
@@ -942,7 +1462,12 @@
     "position": "Midfielder",
     "number": 7,
     "teamId": "oakhill-fc",
-    "nationality": "Austria"
+    "nationality": "Austria",
+    "goals": 5,
+    "assists": 2,
+    "appearances": 10,
+    "yellowCards": 3,
+    "redCards": 0
   },
   {
     "id": "danny-schneider",
@@ -951,7 +1476,12 @@
     "position": "Midfielder",
     "number": 8,
     "teamId": "oakhill-fc",
-    "nationality": "Spain"
+    "nationality": "Spain",
+    "goals": 3,
+    "assists": 4,
+    "appearances": 6,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "simon-green",
@@ -960,7 +1490,12 @@
     "position": "Midfielder",
     "number": 10,
     "teamId": "oakhill-fc",
-    "nationality": "Chile"
+    "nationality": "Chile",
+    "goals": 0,
+    "assists": 3,
+    "appearances": 9,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "kwame-muller",
@@ -969,7 +1504,12 @@
     "position": "Midfielder",
     "number": 16,
     "teamId": "oakhill-fc",
-    "nationality": "Egypt"
+    "nationality": "Egypt",
+    "goals": 2,
+    "assists": 3,
+    "appearances": 8,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "james-wood",
@@ -978,7 +1518,12 @@
     "position": "Forward",
     "number": 9,
     "teamId": "oakhill-fc",
-    "nationality": "Switzerland"
+    "nationality": "Switzerland",
+    "goals": 5,
+    "assists": 2,
+    "appearances": 10,
+    "yellowCards": 2,
+    "redCards": 0
   },
   {
     "id": "emir-evans",
@@ -987,7 +1532,12 @@
     "position": "Forward",
     "number": 11,
     "teamId": "oakhill-fc",
-    "nationality": "South Korea"
+    "nationality": "South Korea",
+    "goals": 6,
+    "assists": 2,
+    "appearances": 6,
+    "yellowCards": 2,
+    "redCards": 0
   },
   {
     "id": "nikita-mensah",
@@ -996,7 +1546,12 @@
     "position": "Forward",
     "number": 18,
     "teamId": "oakhill-fc",
-    "nationality": "Czech Republic"
+    "nationality": "Czech Republic",
+    "goals": 6,
+    "assists": 3,
+    "appearances": 9,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "emir-kelly",
@@ -1005,7 +1560,12 @@
     "position": "Forward",
     "number": 19,
     "teamId": "oakhill-fc",
-    "nationality": "Uruguay"
+    "nationality": "Uruguay",
+    "goals": 6,
+    "assists": 2,
+    "appearances": 11,
+    "yellowCards": 2,
+    "redCards": 0
   },
   {
     "id": "youssef-rivera",
@@ -1014,7 +1574,12 @@
     "position": "Goalkeeper",
     "number": 1,
     "teamId": "westbrook-rovers",
-    "nationality": "Portugal"
+    "nationality": "Portugal",
+    "goals": 0,
+    "assists": 0,
+    "appearances": 7,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "jake-jensen",
@@ -1023,7 +1588,12 @@
     "position": "Goalkeeper",
     "number": 13,
     "teamId": "westbrook-rovers",
-    "nationality": "Serbia"
+    "nationality": "Serbia",
+    "goals": 0,
+    "assists": 0,
+    "appearances": 11,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "felix-johansson",
@@ -1032,7 +1602,12 @@
     "position": "Defender",
     "number": 2,
     "teamId": "westbrook-rovers",
-    "nationality": "Croatia"
+    "nationality": "Croatia",
+    "goals": 2,
+    "assists": 2,
+    "appearances": 7,
+    "yellowCards": 2,
+    "redCards": 1
   },
   {
     "id": "robert-greer",
@@ -1041,7 +1616,12 @@
     "position": "Defender",
     "number": 3,
     "teamId": "westbrook-rovers",
-    "nationality": "Croatia"
+    "nationality": "Croatia",
+    "goals": 1,
+    "assists": 1,
+    "appearances": 5,
+    "yellowCards": 1,
+    "redCards": 1
   },
   {
     "id": "hassan-watanabe",
@@ -1050,7 +1630,12 @@
     "position": "Defender",
     "number": 4,
     "teamId": "westbrook-rovers",
-    "nationality": "Chile"
+    "nationality": "Chile",
+    "goals": 1,
+    "assists": 1,
+    "appearances": 10,
+    "yellowCards": 3,
+    "redCards": 0
   },
   {
     "id": "rafael-cross",
@@ -1059,7 +1644,12 @@
     "position": "Defender",
     "number": 5,
     "teamId": "westbrook-rovers",
-    "nationality": "Australia"
+    "nationality": "Australia",
+    "goals": 2,
+    "assists": 0,
+    "appearances": 12,
+    "yellowCards": 0,
+    "redCards": 1
   },
   {
     "id": "marcus-walsh",
@@ -1068,7 +1658,12 @@
     "position": "Defender",
     "number": 15,
     "teamId": "westbrook-rovers",
-    "nationality": "Czech Republic"
+    "nationality": "Czech Republic",
+    "goals": 0,
+    "assists": 0,
+    "appearances": 10,
+    "yellowCards": 2,
+    "redCards": 0
   },
   {
     "id": "jose-martin",
@@ -1077,7 +1672,12 @@
     "position": "Midfielder",
     "number": 6,
     "teamId": "westbrook-rovers",
-    "nationality": "Austria"
+    "nationality": "Austria",
+    "goals": 1,
+    "assists": 0,
+    "appearances": 8,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "kai-kone",
@@ -1086,7 +1686,12 @@
     "position": "Midfielder",
     "number": 7,
     "teamId": "westbrook-rovers",
-    "nationality": "Ivory Coast"
+    "nationality": "Ivory Coast",
+    "goals": 3,
+    "assists": 4,
+    "appearances": 8,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "luis-jones",
@@ -1095,7 +1700,12 @@
     "position": "Midfielder",
     "number": 8,
     "teamId": "westbrook-rovers",
-    "nationality": "France"
+    "nationality": "France",
+    "goals": 3,
+    "assists": 4,
+    "appearances": 12,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "sam-martin",
@@ -1104,7 +1714,12 @@
     "position": "Midfielder",
     "number": 10,
     "teamId": "westbrook-rovers",
-    "nationality": "Belgium"
+    "nationality": "Belgium",
+    "goals": 3,
+    "assists": 3,
+    "appearances": 11,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "liam-santos",
@@ -1113,7 +1728,12 @@
     "position": "Midfielder",
     "number": 16,
     "teamId": "westbrook-rovers",
-    "nationality": "Morocco"
+    "nationality": "Morocco",
+    "goals": 5,
+    "assists": 0,
+    "appearances": 7,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "callum-lund",
@@ -1122,7 +1742,12 @@
     "position": "Forward",
     "number": 9,
     "teamId": "westbrook-rovers",
-    "nationality": "England"
+    "nationality": "England",
+    "goals": 2,
+    "assists": 1,
+    "appearances": 11,
+    "yellowCards": 2,
+    "redCards": 0
   },
   {
     "id": "aiden-eriksson",
@@ -1131,7 +1756,12 @@
     "position": "Forward",
     "number": 11,
     "teamId": "westbrook-rovers",
-    "nationality": "Belgium"
+    "nationality": "Belgium",
+    "goals": 1,
+    "assists": 1,
+    "appearances": 12,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "carlos-greer",
@@ -1140,7 +1770,12 @@
     "position": "Forward",
     "number": 18,
     "teamId": "westbrook-rovers",
-    "nationality": "Argentina"
+    "nationality": "Argentina",
+    "goals": 2,
+    "assists": 3,
+    "appearances": 12,
+    "yellowCards": 2,
+    "redCards": 0
   },
   {
     "id": "mark-ferreira",
@@ -1149,7 +1784,12 @@
     "position": "Forward",
     "number": 19,
     "teamId": "westbrook-rovers",
-    "nationality": "Poland"
+    "nationality": "Poland",
+    "goals": 4,
+    "assists": 3,
+    "appearances": 10,
+    "yellowCards": 2,
+    "redCards": 0
   },
   {
     "id": "tom-schneider",
@@ -1158,7 +1798,12 @@
     "position": "Goalkeeper",
     "number": 1,
     "teamId": "southshore-united",
-    "nationality": "Serbia"
+    "nationality": "Serbia",
+    "goals": 0,
+    "assists": 0,
+    "appearances": 12,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "simon-cross",
@@ -1167,7 +1812,12 @@
     "position": "Goalkeeper",
     "number": 13,
     "teamId": "southshore-united",
-    "nationality": "Colombia"
+    "nationality": "Colombia",
+    "goals": 0,
+    "assists": 0,
+    "appearances": 12,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "mark-adomako",
@@ -1176,7 +1826,12 @@
     "position": "Defender",
     "number": 2,
     "teamId": "southshore-united",
-    "nationality": "Spain"
+    "nationality": "Spain",
+    "goals": 0,
+    "assists": 2,
+    "appearances": 9,
+    "yellowCards": 2,
+    "redCards": 1
   },
   {
     "id": "mikkel-foster",
@@ -1185,7 +1840,12 @@
     "position": "Defender",
     "number": 3,
     "teamId": "southshore-united",
-    "nationality": "Romania"
+    "nationality": "Romania",
+    "goals": 1,
+    "assists": 1,
+    "appearances": 8,
+    "yellowCards": 0,
+    "redCards": 1
   },
   {
     "id": "luke-kelly",
@@ -1194,7 +1854,12 @@
     "position": "Defender",
     "number": 4,
     "teamId": "southshore-united",
-    "nationality": "Norway"
+    "nationality": "Norway",
+    "goals": 1,
+    "assists": 1,
+    "appearances": 8,
+    "yellowCards": 2,
+    "redCards": 0
   },
   {
     "id": "filip-larsson",
@@ -1203,7 +1868,12 @@
     "position": "Defender",
     "number": 5,
     "teamId": "southshore-united",
-    "nationality": "USA"
+    "nationality": "USA",
+    "goals": 0,
+    "assists": 0,
+    "appearances": 7,
+    "yellowCards": 3,
+    "redCards": 0
   },
   {
     "id": "peter-almeida",
@@ -1212,7 +1882,12 @@
     "position": "Defender",
     "number": 15,
     "teamId": "southshore-united",
-    "nationality": "Egypt"
+    "nationality": "Egypt",
+    "goals": 0,
+    "assists": 1,
+    "appearances": 8,
+    "yellowCards": 3,
+    "redCards": 1
   },
   {
     "id": "noah-tanaka",
@@ -1221,7 +1896,12 @@
     "position": "Midfielder",
     "number": 6,
     "teamId": "southshore-united",
-    "nationality": "Switzerland"
+    "nationality": "Switzerland",
+    "goals": 3,
+    "assists": 0,
+    "appearances": 12,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "jamie-bakayoko",
@@ -1230,7 +1910,12 @@
     "position": "Midfielder",
     "number": 7,
     "teamId": "southshore-united",
-    "nationality": "Jamaica"
+    "nationality": "Jamaica",
+    "goals": 3,
+    "assists": 4,
+    "appearances": 11,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "jamie-lang",
@@ -1239,7 +1924,12 @@
     "position": "Midfielder",
     "number": 8,
     "teamId": "southshore-united",
-    "nationality": "Ghana"
+    "nationality": "Ghana",
+    "goals": 3,
+    "assists": 0,
+    "appearances": 11,
+    "yellowCards": 2,
+    "redCards": 0
   },
   {
     "id": "kenji-taylor",
@@ -1248,7 +1938,12 @@
     "position": "Midfielder",
     "number": 10,
     "teamId": "southshore-united",
-    "nationality": "Italy"
+    "nationality": "Italy",
+    "goals": 3,
+    "assists": 3,
+    "appearances": 9,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "tom-moreno",
@@ -1257,7 +1952,12 @@
     "position": "Midfielder",
     "number": 16,
     "teamId": "southshore-united",
-    "nationality": "South Korea"
+    "nationality": "South Korea",
+    "goals": 1,
+    "assists": 2,
+    "appearances": 12,
+    "yellowCards": 3,
+    "redCards": 0
   },
   {
     "id": "marcus-park",
@@ -1266,7 +1966,12 @@
     "position": "Forward",
     "number": 9,
     "teamId": "southshore-united",
-    "nationality": "Denmark"
+    "nationality": "Denmark",
+    "goals": 1,
+    "assists": 3,
+    "appearances": 12,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "omar-murphy",
@@ -1275,7 +1980,12 @@
     "position": "Forward",
     "number": 11,
     "teamId": "southshore-united",
-    "nationality": "Scotland"
+    "nationality": "Scotland",
+    "goals": 6,
+    "assists": 1,
+    "appearances": 11,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "kai-almeida",
@@ -1284,7 +1994,12 @@
     "position": "Forward",
     "number": 18,
     "teamId": "southshore-united",
-    "nationality": "Jamaica"
+    "nationality": "Jamaica",
+    "goals": 5,
+    "assists": 0,
+    "appearances": 7,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "yusuf-petrov",
@@ -1293,7 +2008,12 @@
     "position": "Forward",
     "number": 19,
     "teamId": "southshore-united",
-    "nationality": "Scotland"
+    "nationality": "Scotland",
+    "goals": 1,
+    "assists": 3,
+    "appearances": 5,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "callum-park",
@@ -1302,7 +2022,12 @@
     "position": "Goalkeeper",
     "number": 1,
     "teamId": "stone-valley",
-    "nationality": "Morocco"
+    "nationality": "Morocco",
+    "goals": 0,
+    "assists": 0,
+    "appearances": 12,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "david-costa",
@@ -1311,7 +2036,12 @@
     "position": "Goalkeeper",
     "number": 13,
     "teamId": "stone-valley",
-    "nationality": "Sweden"
+    "nationality": "Sweden",
+    "goals": 0,
+    "assists": 0,
+    "appearances": 5,
+    "yellowCards": 1,
+    "redCards": 0
   },
   {
     "id": "hugo-butler",
@@ -1320,7 +2050,12 @@
     "position": "Defender",
     "number": 2,
     "teamId": "stone-valley",
-    "nationality": "Colombia"
+    "nationality": "Colombia",
+    "goals": 1,
+    "assists": 0,
+    "appearances": 11,
+    "yellowCards": 3,
+    "redCards": 1
   },
   {
     "id": "jonas-muller",
@@ -1329,7 +2064,12 @@
     "position": "Defender",
     "number": 3,
     "teamId": "stone-valley",
-    "nationality": "Chile"
+    "nationality": "Chile",
+    "goals": 1,
+    "assists": 1,
+    "appearances": 10,
+    "yellowCards": 3,
+    "redCards": 1
   },
   {
     "id": "ryan-davies",
@@ -1338,7 +2078,12 @@
     "position": "Defender",
     "number": 4,
     "teamId": "stone-valley",
-    "nationality": "Scotland"
+    "nationality": "Scotland",
+    "goals": 1,
+    "assists": 0,
+    "appearances": 6,
+    "yellowCards": 4,
+    "redCards": 0
   },
   {
     "id": "kylian-nilsson",
@@ -1347,7 +2092,12 @@
     "position": "Defender",
     "number": 5,
     "teamId": "stone-valley",
-    "nationality": "Netherlands"
+    "nationality": "Netherlands",
+    "goals": 0,
+    "assists": 2,
+    "appearances": 10,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "liam-cross",
@@ -1356,7 +2106,12 @@
     "position": "Defender",
     "number": 15,
     "teamId": "stone-valley",
-    "nationality": "Czech Republic"
+    "nationality": "Czech Republic",
+    "goals": 0,
+    "assists": 0,
+    "appearances": 5,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "craig-garcia",
@@ -1365,7 +2120,12 @@
     "position": "Midfielder",
     "number": 6,
     "teamId": "stone-valley",
-    "nationality": "Cameroon"
+    "nationality": "Cameroon",
+    "goals": 1,
+    "assists": 3,
+    "appearances": 8,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "luke-hassan",
@@ -1374,7 +2134,12 @@
     "position": "Midfielder",
     "number": 7,
     "teamId": "stone-valley",
-    "nationality": "Ivory Coast"
+    "nationality": "Ivory Coast",
+    "goals": 3,
+    "assists": 2,
+    "appearances": 8,
+    "yellowCards": 2,
+    "redCards": 0
   },
   {
     "id": "omar-taylor",
@@ -1383,7 +2148,12 @@
     "position": "Midfielder",
     "number": 8,
     "teamId": "stone-valley",
-    "nationality": "Wales"
+    "nationality": "Wales",
+    "goals": 4,
+    "assists": 4,
+    "appearances": 7,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "alex-fuentes",
@@ -1392,7 +2162,12 @@
     "position": "Midfielder",
     "number": 10,
     "teamId": "stone-valley",
-    "nationality": "Croatia"
+    "nationality": "Croatia",
+    "goals": 2,
+    "assists": 0,
+    "appearances": 7,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "felix-berg",
@@ -1401,7 +2176,12 @@
     "position": "Midfielder",
     "number": 16,
     "teamId": "stone-valley",
-    "nationality": "Spain"
+    "nationality": "Spain",
+    "goals": 4,
+    "assists": 3,
+    "appearances": 9,
+    "yellowCards": 3,
+    "redCards": 0
   },
   {
     "id": "tyrone-beckett",
@@ -1410,7 +2190,12 @@
     "position": "Forward",
     "number": 9,
     "teamId": "stone-valley",
-    "nationality": "Turkey"
+    "nationality": "Turkey",
+    "goals": 1,
+    "assists": 1,
+    "appearances": 8,
+    "yellowCards": 0,
+    "redCards": 0
   },
   {
     "id": "andrei-petrov",
@@ -1419,7 +2204,12 @@
     "position": "Forward",
     "number": 11,
     "teamId": "stone-valley",
-    "nationality": "Canada"
+    "nationality": "Canada",
+    "goals": 6,
+    "assists": 0,
+    "appearances": 9,
+    "yellowCards": 2,
+    "redCards": 0
   },
   {
     "id": "jake-wood",
@@ -1428,7 +2218,12 @@
     "position": "Forward",
     "number": 18,
     "teamId": "stone-valley",
-    "nationality": "Poland"
+    "nationality": "Poland",
+    "goals": 3,
+    "assists": 3,
+    "appearances": 5,
+    "yellowCards": 2,
+    "redCards": 0
   },
   {
     "id": "andrei-martin",
@@ -1437,6 +2232,11 @@
     "position": "Forward",
     "number": 19,
     "teamId": "stone-valley",
-    "nationality": "Senegal"
+    "nationality": "Senegal",
+    "goals": 1,
+    "assists": 2,
+    "appearances": 10,
+    "yellowCards": 0,
+    "redCards": 0
   }
 ]
