@@ -32,7 +32,7 @@
                             <goal>package</goal>
                         </goals>
                     </execution>
-                </executions>
+                </executions>\
                 <configuration>
                     <group>io.kestros.samples</group>
                     <accessControlHandling>ignore</accessControlHandling>
