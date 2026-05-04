@@ -93,7 +93,7 @@ public class TeamsCardListDataSource extends BaseContainerSlingModelDataSource
         }
 
         cards.add(new KestrosCardImpl(
-            desc.toString(),
+            team.getName() + " -- " + desc.toString(),
             new KestrosHeadingImpl(team.getName(), "h3", this, "title", "titleElement"),
             image, buttonGroup,
             this, "card", team.getId()));

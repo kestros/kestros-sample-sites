@@ -95,7 +95,8 @@ public class FormGuideCardListDataSource extends BaseContainerSlingModelDataSour
       int pts = entry.getValue();
 
       try {
-        String desc = "Last 5: " + formStr + " | " + wins + "W " + draws + "D " + losses + "L"
+        String desc = (i + 1) + ". " + team.getName() + " -- "
+            + "Last 5: " + formStr + " | " + wins + "W " + draws + "D " + losses + "L"
             + " | " + pts + " pts from 5 matches";
 
         cards.add(new KestrosCardImpl(

@@ -37,12 +37,17 @@ public class NewsCardListDataSource extends BaseContainerSlingModelDataSource
     for (int i = 0; i < count; i++) {
       Article article = articles.get(i);
       try {
-        String description = article.getSummary();
+        // Card titleElement doesn't render through synthetic adaptation,
+        // so put title at top of description so it actually shows.
+        StringBuilder desc = new StringBuilder();
+        desc.append(article.getTitle()).append(" -- ");
         if (article.getCategory() != null) {
-          description = article.getCategory() + " | " + article.getDate() + " -- " + description;
+          desc.append(article.getCategory()).append(" | ").append(article.getDate()).append(" -- ");
         }
+        desc.append(article.getSummary());
+
         cards.add(new KestrosCardImpl(
-            description,
+            desc.toString(),
             new KestrosHeadingImpl(article.getTitle(),
                 "h3", this, "title", "news-title-" + i),
             null, null, this, "card", article.getId()));
