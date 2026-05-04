@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="kes:Page">
+    <jcr:content
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Privacy Policy"
+            jcr:description="The Meridian Premier League's privacy policy and data handling practices."
+            sling:resourceType="kestros/commons/components/kestros-base-page">
+        <header jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
+        <main jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
+            <page-header
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    layout="hero">
+                <heading
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        headingText="Privacy Policy"
+                        headingType="h1"/>
+                <subtitle
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="Last updated: August 1, 2025"/>
+            </page-header>
+            <intro-section jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/section">
+                <intro jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text"
+                       text="The Meridian Premier League (MPL) is committed to protecting your personal data. This privacy policy explains how we collect, use, store, and share information when you visit our website, purchase tickets, subscribe to our streaming service, or interact with us through other channels."/>
+            </intro-section>
+            <collection-section jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/section">
+                <heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Information We Collect" headingType="h2"/>
+                <text jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text"
+                      text="We collect information you provide directly, such as your name, email address, and payment details when purchasing tickets or merchandise. We also collect usage data including pages visited, time spent on our site, and device information through cookies and similar technologies."/>
+            </collection-section>
+            <use-section jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/section">
+                <heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="How We Use Your Information" headingType="h2"/>
+                <text jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text"
+                      text="We use your information to process ticket and merchandise orders, deliver streaming content, send league news and updates (with your consent), improve our website and services, and comply with legal obligations. We never sell your personal data to third parties."/>
+            </use-section>
+            <rights-section jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/section">
+                <heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Your Rights" headingType="h2"/>
+                <text jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text"
+                      text="You have the right to access, correct, or delete your personal data at any time. You may also opt out of marketing communications by clicking the unsubscribe link in any email or contacting us at privacy@meridianpremierleague.com."/>
+            </rights-section>
+            <contact-section jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/section">
+                <heading jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Contact" headingType="h2"/>
+                <text jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text"
+                      text="For questions about this policy or your personal data, contact our Data Protection Officer at privacy@meridianpremierleague.com or write to: Data Protection Officer, MPL Headquarters, 100 League Drive, Meridian, MR1 4PL."/>
+            </contact-section>
+        </main>
+        <footer jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
+    </jcr:content>
+</jcr:root>

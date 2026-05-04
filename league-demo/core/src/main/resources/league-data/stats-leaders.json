@@ -1,0 +1,35 @@
+[
+  {
+    "id": "golden-boot",
+    "category": "Top Scorers",
+    "leaders": [
+      {"rank": 1, "playerName": "Marcus Fletcher", "teamId": "riverside-fc", "value": "11 goals", "detail": "6 home, 5 away. 3 penalties."},
+      {"rank": 2, "playerName": "Carlos Vega", "teamId": "meridian-city", "value": "10 goals", "detail": "7 from open play, 3 from set pieces."},
+      {"rank": 3, "playerName": "Omar Hassan", "teamId": "northside-united", "value": "9 goals", "detail": "All from open play. League's most clinical finisher."},
+      {"rank": 4, "playerName": "Jake Morrison", "teamId": "westbrook-rovers", "value": "7 goals", "detail": "4 in the last 3 matches. Hot streak."},
+      {"rank": 5, "playerName": "Rui Oliveira", "teamId": "ashdown-athletic", "value": "7 goals", "detail": "5 away goals -- best in the league."}
+    ]
+  },
+  {
+    "id": "assists",
+    "category": "Top Assists",
+    "leaders": [
+      {"rank": 1, "playerName": "Liam Chen", "teamId": "meridian-city", "value": "8 assists", "detail": "League leader in chances created (42)."},
+      {"rank": 2, "playerName": "Tomas Eriksen", "teamId": "riverside-fc", "value": "7 assists", "detail": "Key playmaker from the right wing."},
+      {"rank": 3, "playerName": "Daniel Okafor", "teamId": "northside-united", "value": "6 assists", "detail": "Set-piece specialist."},
+      {"rank": 4, "playerName": "Kai Tanaka", "teamId": "oakhill-fc", "value": "5 assists", "detail": "5 assists from 8 starts."},
+      {"rank": 5, "playerName": "Ben Wright", "teamId": "ashdown-athletic", "value": "5 assists", "detail": "All from open play."}
+    ]
+  },
+  {
+    "id": "clean-sheets",
+    "category": "Clean Sheets",
+    "leaders": [
+      {"rank": 1, "playerName": "Andre Silva", "teamId": "northside-united", "value": "7 clean sheets", "detail": "Best save percentage in the league (81%)."},
+      {"rank": 2, "playerName": "Matt Henderson", "teamId": "riverside-fc", "value": "5 clean sheets", "detail": "Commanding presence in the box."},
+      {"rank": 3, "playerName": "Chen Wei", "teamId": "oakhill-fc", "value": "5 clean sheets", "detail": "Set-piece threat from midfield too."},
+      {"rank": 4, "playerName": "Lucas Pereira", "teamId": "ashdown-athletic", "value": "4 clean sheets", "detail": "Leader of the reigning champions' defence."},
+      {"rank": 5, "playerName": "James Cooper", "teamId": "meridian-city", "value": "4 clean sheets", "detail": "Improved dramatically under Kowalski."}
+    ]
+  }
+]
