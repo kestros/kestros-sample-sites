@@ -50,7 +50,7 @@
                     <plugin>
                         <groupId>io.wcm.maven.plugins</groupId>
                         <artifactId>wcmio-content-package-maven-plugin</artifactId>
-                        <version>2.2.2</version>
+                        <version>1.6.18</version>
                         <executions>
                             <execution>
                                 <goals>

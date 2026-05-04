@@ -1,0 +1,7 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:title": "Recent Results",
+  "group": "League Demo",
+  "classPath": "io.kestros.samples.leaguedemo.datasources.RecentResultsTableDataSource",
+  "container": true
+}

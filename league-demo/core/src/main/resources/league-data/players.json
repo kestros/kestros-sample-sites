@@ -1,108 +1,1442 @@
 [
-  {"id": "mateo-reyes", "firstName": "Mateo", "lastName": "Reyes", "position": "Goalkeeper", "number": 1, "teamId": "riverside-fc", "nationality": "Mexico"},
-  {"id": "david-osullivan", "firstName": "David", "lastName": "O'Sullivan", "position": "Defender", "number": 2, "teamId": "riverside-fc", "nationality": "Ireland"},
-  {"id": "henrik-larsson", "firstName": "Henrik", "lastName": "Larsson", "position": "Defender", "number": 4, "teamId": "riverside-fc", "nationality": "Sweden"},
-  {"id": "omar-el-khoury", "firstName": "Omar", "lastName": "El-Khoury", "position": "Defender", "number": 5, "teamId": "riverside-fc", "nationality": "Lebanon"},
-  {"id": "takeshi-ono", "firstName": "Takeshi", "lastName": "Ono", "position": "Midfielder", "number": 6, "teamId": "riverside-fc", "nationality": "Japan"},
-  {"id": "kofi-adomako", "firstName": "Kofi", "lastName": "Adomako", "position": "Midfielder", "number": 8, "teamId": "riverside-fc", "nationality": "Ghana"},
-  {"id": "luca-mendez", "firstName": "Luca", "lastName": "Mendez", "position": "Forward", "number": 9, "teamId": "riverside-fc", "nationality": "Argentina"},
-  {"id": "ivan-petrovic", "firstName": "Ivan", "lastName": "Petrovic", "position": "Midfielder", "number": 10, "teamId": "riverside-fc", "nationality": "Serbia"},
-  {"id": "sami-toure", "firstName": "Sami", "lastName": "Toure", "position": "Forward", "number": 11, "teamId": "riverside-fc", "nationality": "Senegal"},
-  {"id": "jake-butler", "firstName": "Jake", "lastName": "Butler", "position": "Defender", "number": 3, "teamId": "riverside-fc", "nationality": "England"},
-  {"id": "reo-tanaka", "firstName": "Reo", "lastName": "Tanaka", "position": "Forward", "number": 7, "teamId": "riverside-fc", "nationality": "Japan"},
-  {"id": "noah-beckett", "firstName": "Noah", "lastName": "Beckett", "position": "Goalkeeper", "number": 13, "teamId": "riverside-fc", "nationality": "Australia"},
-
-  {"id": "kai-oshiro", "firstName": "Kai", "lastName": "Oshiro", "position": "Forward", "number": 9, "teamId": "meridian-city", "nationality": "Japan"},
-  {"id": "marcus-cole", "firstName": "Marcus", "lastName": "Cole", "position": "Midfielder", "number": 10, "teamId": "meridian-city", "nationality": "England"},
-  {"id": "andre-silva", "firstName": "Andre", "lastName": "Silva", "position": "Goalkeeper", "number": 1, "teamId": "meridian-city", "nationality": "Portugal"},
-  {"id": "tyrone-williams", "firstName": "Tyrone", "lastName": "Williams", "position": "Defender", "number": 2, "teamId": "meridian-city", "nationality": "Jamaica"},
-  {"id": "emil-johansson", "firstName": "Emil", "lastName": "Johansson", "position": "Defender", "number": 4, "teamId": "meridian-city", "nationality": "Sweden"},
-  {"id": "diego-fuentes", "firstName": "Diego", "lastName": "Fuentes", "position": "Defender", "number": 5, "teamId": "meridian-city", "nationality": "Chile"},
-  {"id": "kenji-watanabe", "firstName": "Kenji", "lastName": "Watanabe", "position": "Midfielder", "number": 6, "teamId": "meridian-city", "nationality": "Japan"},
-  {"id": "pierre-mbeki", "firstName": "Pierre", "lastName": "Mbeki", "position": "Midfielder", "number": 8, "teamId": "meridian-city", "nationality": "Cameroon"},
-  {"id": "adam-novak", "firstName": "Adam", "lastName": "Novak", "position": "Forward", "number": 11, "teamId": "meridian-city", "nationality": "Czech Republic"},
-  {"id": "finn-oconnor", "firstName": "Finn", "lastName": "O'Connor", "position": "Defender", "number": 3, "teamId": "meridian-city", "nationality": "Ireland"},
-  {"id": "lucas-ferreira", "firstName": "Lucas", "lastName": "Ferreira", "position": "Forward", "number": 7, "teamId": "meridian-city", "nationality": "Brazil"},
-
-  {"id": "jake-harrington", "firstName": "Jake", "lastName": "Harrington", "position": "Forward", "number": 9, "teamId": "ashdown-athletic", "nationality": "England"},
-  {"id": "tom-bradshaw", "firstName": "Tom", "lastName": "Bradshaw", "position": "Goalkeeper", "number": 1, "teamId": "ashdown-athletic", "nationality": "Wales"},
-  {"id": "carlos-rivera", "firstName": "Carlos", "lastName": "Rivera", "position": "Defender", "number": 2, "teamId": "ashdown-athletic", "nationality": "Spain"},
-  {"id": "ali-hassan", "firstName": "Ali", "lastName": "Hassan", "position": "Defender", "number": 4, "teamId": "ashdown-athletic", "nationality": "Egypt"},
-  {"id": "ryan-mcgregor", "firstName": "Ryan", "lastName": "McGregor", "position": "Defender", "number": 5, "teamId": "ashdown-athletic", "nationality": "Scotland"},
-  {"id": "nikolas-papadopoulos", "firstName": "Nikolas", "lastName": "Papadopoulos", "position": "Midfielder", "number": 6, "teamId": "ashdown-athletic", "nationality": "Greece"},
-  {"id": "luis-moreno", "firstName": "Luis", "lastName": "Moreno", "position": "Midfielder", "number": 8, "teamId": "ashdown-athletic", "nationality": "Colombia"},
-  {"id": "ethan-cross", "firstName": "Ethan", "lastName": "Cross", "position": "Midfielder", "number": 10, "teamId": "ashdown-athletic", "nationality": "England"},
-  {"id": "kwame-asante", "firstName": "Kwame", "lastName": "Asante", "position": "Forward", "number": 11, "teamId": "ashdown-athletic", "nationality": "Ghana"},
-  {"id": "sam-thompson", "firstName": "Sam", "lastName": "Thompson", "position": "Defender", "number": 3, "teamId": "ashdown-athletic", "nationality": "England"},
-  {"id": "daniel-park", "firstName": "Daniel", "lastName": "Park", "position": "Forward", "number": 7, "teamId": "ashdown-athletic", "nationality": "South Korea"},
-
-  {"id": "mateo-silva", "firstName": "Mateo", "lastName": "Silva", "position": "Forward", "number": 9, "teamId": "northside-united", "nationality": "Uruguay"},
-  {"id": "james-ward", "firstName": "James", "lastName": "Ward", "position": "Goalkeeper", "number": 1, "teamId": "northside-united", "nationality": "England"},
-  {"id": "leo-dubois", "firstName": "Leo", "lastName": "Dubois", "position": "Defender", "number": 2, "teamId": "northside-united", "nationality": "France"},
-  {"id": "alex-chen", "firstName": "Alex", "lastName": "Chen", "position": "Defender", "number": 4, "teamId": "northside-united", "nationality": "Canada"},
-  {"id": "brian-kelly", "firstName": "Brian", "lastName": "Kelly", "position": "Defender", "number": 5, "teamId": "northside-united", "nationality": "Ireland"},
-  {"id": "hugo-martin", "firstName": "Hugo", "lastName": "Martin", "position": "Midfielder", "number": 6, "teamId": "northside-united", "nationality": "France"},
-  {"id": "paulo-costa", "firstName": "Paulo", "lastName": "Costa", "position": "Midfielder", "number": 8, "teamId": "northside-united", "nationality": "Brazil"},
-  {"id": "max-schneider", "firstName": "Max", "lastName": "Schneider", "position": "Midfielder", "number": 10, "teamId": "northside-united", "nationality": "Germany"},
-  {"id": "yusuf-demir", "firstName": "Yusuf", "lastName": "Demir", "position": "Forward", "number": 11, "teamId": "northside-united", "nationality": "Turkey"},
-
-  {"id": "callum-greer", "firstName": "Callum", "lastName": "Greer", "position": "Forward", "number": 9, "teamId": "port-heights", "nationality": "Scotland"},
-  {"id": "ben-mitchell", "firstName": "Ben", "lastName": "Mitchell", "position": "Goalkeeper", "number": 1, "teamId": "port-heights", "nationality": "England"},
-  {"id": "nabil-kone", "firstName": "Nabil", "lastName": "Kone", "position": "Defender", "number": 2, "teamId": "port-heights", "nationality": "Ivory Coast"},
-  {"id": "jack-reynolds", "firstName": "Jack", "lastName": "Reynolds", "position": "Defender", "number": 4, "teamId": "port-heights", "nationality": "England"},
-  {"id": "andrei-popescu", "firstName": "Andrei", "lastName": "Popescu", "position": "Defender", "number": 5, "teamId": "port-heights", "nationality": "Romania"},
-  {"id": "josh-evans", "firstName": "Josh", "lastName": "Evans", "position": "Midfielder", "number": 6, "teamId": "port-heights", "nationality": "Wales"},
-  {"id": "rafael-santos", "firstName": "Rafael", "lastName": "Santos", "position": "Midfielder", "number": 8, "teamId": "port-heights", "nationality": "Brazil"},
-  {"id": "oscar-nilsson", "firstName": "Oscar", "lastName": "Nilsson", "position": "Midfielder", "number": 10, "teamId": "port-heights", "nationality": "Sweden"},
-  {"id": "danny-wright", "firstName": "Danny", "lastName": "Wright", "position": "Forward", "number": 11, "teamId": "port-heights", "nationality": "England"},
-
-  {"id": "youssef-bahi", "firstName": "Youssef", "lastName": "Bahi", "position": "Forward", "number": 9, "teamId": "queensbury-wrs", "nationality": "Morocco"},
-  {"id": "peter-novotny", "firstName": "Peter", "lastName": "Novotny", "position": "Goalkeeper", "number": 1, "teamId": "queensbury-wrs", "nationality": "Slovakia"},
-  {"id": "chris-hartley", "firstName": "Chris", "lastName": "Hartley", "position": "Defender", "number": 2, "teamId": "queensbury-wrs", "nationality": "England"},
-  {"id": "moussa-diallo", "firstName": "Moussa", "lastName": "Diallo", "position": "Defender", "number": 4, "teamId": "queensbury-wrs", "nationality": "Mali"},
-  {"id": "liam-murphy", "firstName": "Liam", "lastName": "Murphy", "position": "Defender", "number": 5, "teamId": "queensbury-wrs", "nationality": "Ireland"},
-  {"id": "victor-almeida", "firstName": "Victor", "lastName": "Almeida", "position": "Midfielder", "number": 6, "teamId": "queensbury-wrs", "nationality": "Portugal"},
-  {"id": "jamie-scott", "firstName": "Jamie", "lastName": "Scott", "position": "Midfielder", "number": 8, "teamId": "queensbury-wrs", "nationality": "Scotland"},
-  {"id": "mikkel-jensen", "firstName": "Mikkel", "lastName": "Jensen", "position": "Midfielder", "number": 10, "teamId": "queensbury-wrs", "nationality": "Denmark"},
-  {"id": "tomas-garcia", "firstName": "Tomas", "lastName": "Garcia", "position": "Forward", "number": 11, "teamId": "queensbury-wrs", "nationality": "Argentina"},
-
-  {"id": "nathan-wood", "firstName": "Nathan", "lastName": "Wood", "position": "Forward", "number": 9, "teamId": "oakhill-fc", "nationality": "England"},
-  {"id": "simon-berger", "firstName": "Simon", "lastName": "Berger", "position": "Goalkeeper", "number": 1, "teamId": "oakhill-fc", "nationality": "Switzerland"},
-  {"id": "kwesi-mensah", "firstName": "Kwesi", "lastName": "Mensah", "position": "Defender", "number": 2, "teamId": "oakhill-fc", "nationality": "Ghana"},
-  {"id": "connor-walsh", "firstName": "Connor", "lastName": "Walsh", "position": "Defender", "number": 4, "teamId": "oakhill-fc", "nationality": "Ireland"},
-  {"id": "fabio-rossi", "firstName": "Fabio", "lastName": "Rossi", "position": "Defender", "number": 5, "teamId": "oakhill-fc", "nationality": "Italy"},
-  {"id": "aiden-clarke", "firstName": "Aiden", "lastName": "Clarke", "position": "Midfielder", "number": 6, "teamId": "oakhill-fc", "nationality": "England"},
-  {"id": "ismail-sow", "firstName": "Ismail", "lastName": "Sow", "position": "Midfielder", "number": 8, "teamId": "oakhill-fc", "nationality": "Senegal"},
-  {"id": "george-taylor", "firstName": "George", "lastName": "Taylor", "position": "Midfielder", "number": 10, "teamId": "oakhill-fc", "nationality": "England"},
-  {"id": "filip-kovac", "firstName": "Filip", "lastName": "Kovac", "position": "Forward", "number": 11, "teamId": "oakhill-fc", "nationality": "Croatia"},
-
-  {"id": "mark-davies", "firstName": "Mark", "lastName": "Davies", "position": "Forward", "number": 9, "teamId": "westbrook-rovers", "nationality": "Wales"},
-  {"id": "robert-lang", "firstName": "Robert", "lastName": "Lang", "position": "Goalkeeper", "number": 1, "teamId": "westbrook-rovers", "nationality": "Germany"},
-  {"id": "hassan-ahmed", "firstName": "Hassan", "lastName": "Ahmed", "position": "Defender", "number": 2, "teamId": "westbrook-rovers", "nationality": "Egypt"},
-  {"id": "sean-kelly", "firstName": "Sean", "lastName": "Kelly", "position": "Defender", "number": 4, "teamId": "westbrook-rovers", "nationality": "Ireland"},
-  {"id": "ivan-horvat", "firstName": "Ivan", "lastName": "Horvat", "position": "Defender", "number": 5, "teamId": "westbrook-rovers", "nationality": "Croatia"},
-  {"id": "luke-bennett", "firstName": "Luke", "lastName": "Bennett", "position": "Midfielder", "number": 6, "teamId": "westbrook-rovers", "nationality": "England"},
-  {"id": "alex-petrov", "firstName": "Alex", "lastName": "Petrov", "position": "Midfielder", "number": 8, "teamId": "westbrook-rovers", "nationality": "Bulgaria"},
-  {"id": "charlie-ross", "firstName": "Charlie", "lastName": "Ross", "position": "Midfielder", "number": 10, "teamId": "westbrook-rovers", "nationality": "Scotland"},
-  {"id": "emir-ozcan", "firstName": "Emir", "lastName": "Ozcan", "position": "Forward", "number": 11, "teamId": "westbrook-rovers", "nationality": "Turkey"},
-
-  {"id": "michael-green", "firstName": "Michael", "lastName": "Green", "position": "Forward", "number": 9, "teamId": "southshore-united", "nationality": "England"},
-  {"id": "antonio-bianchi", "firstName": "Antonio", "lastName": "Bianchi", "position": "Goalkeeper", "number": 1, "teamId": "southshore-united", "nationality": "Italy"},
-  {"id": "tom-price", "firstName": "Tom", "lastName": "Price", "position": "Defender", "number": 2, "teamId": "southshore-united", "nationality": "Wales"},
-  {"id": "jose-ramirez", "firstName": "Jose", "lastName": "Ramirez", "position": "Defender", "number": 4, "teamId": "southshore-united", "nationality": "Mexico"},
-  {"id": "patrick-obrien", "firstName": "Patrick", "lastName": "O'Brien", "position": "Defender", "number": 5, "teamId": "southshore-united", "nationality": "Ireland"},
-  {"id": "martin-lund", "firstName": "Martin", "lastName": "Lund", "position": "Midfielder", "number": 6, "teamId": "southshore-united", "nationality": "Norway"},
-  {"id": "ben-foster", "firstName": "Ben", "lastName": "Foster", "position": "Midfielder", "number": 8, "teamId": "southshore-united", "nationality": "England"},
-  {"id": "tariq-khan", "firstName": "Tariq", "lastName": "Khan", "position": "Midfielder", "number": 10, "teamId": "southshore-united", "nationality": "Pakistan"},
-  {"id": "leo-winter", "firstName": "Leo", "lastName": "Winter", "position": "Forward", "number": 11, "teamId": "southshore-united", "nationality": "Austria"},
-
-  {"id": "will-stone", "firstName": "Will", "lastName": "Stone", "position": "Forward", "number": 9, "teamId": "stone-valley", "nationality": "England"},
-  {"id": "jan-muller", "firstName": "Jan", "lastName": "Muller", "position": "Goalkeeper", "number": 1, "teamId": "stone-valley", "nationality": "Germany"},
-  {"id": "kyle-chambers", "firstName": "Kyle", "lastName": "Chambers", "position": "Defender", "number": 2, "teamId": "stone-valley", "nationality": "England"},
-  {"id": "abdou-diop", "firstName": "Abdou", "lastName": "Diop", "position": "Defender", "number": 4, "teamId": "stone-valley", "nationality": "Senegal"},
-  {"id": "craig-hamilton", "firstName": "Craig", "lastName": "Hamilton", "position": "Defender", "number": 5, "teamId": "stone-valley", "nationality": "Scotland"},
-  {"id": "jonas-eriksson", "firstName": "Jonas", "lastName": "Eriksson", "position": "Midfielder", "number": 6, "teamId": "stone-valley", "nationality": "Sweden"},
-  {"id": "davi-oliveira", "firstName": "Davi", "lastName": "Oliveira", "position": "Midfielder", "number": 8, "teamId": "stone-valley", "nationality": "Brazil"},
-  {"id": "aaron-jones", "firstName": "Aaron", "lastName": "Jones", "position": "Midfielder", "number": 10, "teamId": "stone-valley", "nationality": "Wales"},
-  {"id": "nikita-volkov", "firstName": "Nikita", "lastName": "Volkov", "position": "Forward", "number": 11, "teamId": "stone-valley", "nationality": "Russia"}
+  {
+    "id": "youssef-chen",
+    "firstName": "Youssef",
+    "lastName": "Chen",
+    "position": "Goalkeeper",
+    "number": 1,
+    "teamId": "riverside-fc",
+    "nationality": "Germany"
+  },
+  {
+    "id": "malik-almeida",
+    "firstName": "Malik",
+    "lastName": "Almeida",
+    "position": "Goalkeeper",
+    "number": 13,
+    "teamId": "riverside-fc",
+    "nationality": "Argentina"
+  },
+  {
+    "id": "sami-cole",
+    "firstName": "Sami",
+    "lastName": "Cole",
+    "position": "Defender",
+    "number": 2,
+    "teamId": "riverside-fc",
+    "nationality": "Ivory Coast"
+  },
+  {
+    "id": "robert-ross",
+    "firstName": "Robert",
+    "lastName": "Ross",
+    "position": "Defender",
+    "number": 3,
+    "teamId": "riverside-fc",
+    "nationality": "Uruguay"
+  },
+  {
+    "id": "nabil-bahi",
+    "firstName": "Nabil",
+    "lastName": "Bahi",
+    "position": "Defender",
+    "number": 4,
+    "teamId": "riverside-fc",
+    "nationality": "Belgium"
+  },
+  {
+    "id": "emil-popescu",
+    "firstName": "Emil",
+    "lastName": "Popescu",
+    "position": "Defender",
+    "number": 5,
+    "teamId": "riverside-fc",
+    "nationality": "Greece"
+  },
+  {
+    "id": "ben-volkov",
+    "firstName": "Ben",
+    "lastName": "Volkov",
+    "position": "Defender",
+    "number": 15,
+    "teamId": "riverside-fc",
+    "nationality": "South Korea"
+  },
+  {
+    "id": "pierre-mendez",
+    "firstName": "Pierre",
+    "lastName": "Mendez",
+    "position": "Midfielder",
+    "number": 6,
+    "teamId": "riverside-fc",
+    "nationality": "Morocco"
+  },
+  {
+    "id": "oumar-adomako",
+    "firstName": "Oumar",
+    "lastName": "Adomako",
+    "position": "Midfielder",
+    "number": 7,
+    "teamId": "riverside-fc",
+    "nationality": "Australia"
+  },
+  {
+    "id": "oscar-larsson",
+    "firstName": "Oscar",
+    "lastName": "Larsson",
+    "position": "Midfielder",
+    "number": 8,
+    "teamId": "riverside-fc",
+    "nationality": "England"
+  },
+  {
+    "id": "max-laurent",
+    "firstName": "Max",
+    "lastName": "Laurent",
+    "position": "Midfielder",
+    "number": 10,
+    "teamId": "riverside-fc",
+    "nationality": "Egypt"
+  },
+  {
+    "id": "sami-greer",
+    "firstName": "Sami",
+    "lastName": "Greer",
+    "position": "Midfielder",
+    "number": 16,
+    "teamId": "riverside-fc",
+    "nationality": "Germany"
+  },
+  {
+    "id": "jonas-watanabe",
+    "firstName": "Jonas",
+    "lastName": "Watanabe",
+    "position": "Forward",
+    "number": 9,
+    "teamId": "riverside-fc",
+    "nationality": "Italy"
+  },
+  {
+    "id": "axel-harrington",
+    "firstName": "Axel",
+    "lastName": "Harrington",
+    "position": "Forward",
+    "number": 11,
+    "teamId": "riverside-fc",
+    "nationality": "Colombia"
+  },
+  {
+    "id": "jamie-green",
+    "firstName": "Jamie",
+    "lastName": "Green",
+    "position": "Forward",
+    "number": 18,
+    "teamId": "riverside-fc",
+    "nationality": "Croatia"
+  },
+  {
+    "id": "daniel-rossi",
+    "firstName": "Daniel",
+    "lastName": "Rossi",
+    "position": "Forward",
+    "number": 19,
+    "teamId": "riverside-fc",
+    "nationality": "Wales"
+  },
+  {
+    "id": "malik-demir",
+    "firstName": "Malik",
+    "lastName": "Demir",
+    "position": "Goalkeeper",
+    "number": 1,
+    "teamId": "meridian-city",
+    "nationality": "Uruguay"
+  },
+  {
+    "id": "filip-clarke",
+    "firstName": "Filip",
+    "lastName": "Clarke",
+    "position": "Goalkeeper",
+    "number": 13,
+    "teamId": "meridian-city",
+    "nationality": "Denmark"
+  },
+  {
+    "id": "patrick-stone",
+    "firstName": "Patrick",
+    "lastName": "Stone",
+    "position": "Defender",
+    "number": 2,
+    "teamId": "meridian-city",
+    "nationality": "Poland"
+  },
+  {
+    "id": "charlie-mitchell",
+    "firstName": "Charlie",
+    "lastName": "Mitchell",
+    "position": "Defender",
+    "number": 3,
+    "teamId": "meridian-city",
+    "nationality": "England"
+  },
+  {
+    "id": "peter-fernandez",
+    "firstName": "Peter",
+    "lastName": "Fernandez",
+    "position": "Defender",
+    "number": 4,
+    "teamId": "meridian-city",
+    "nationality": "Jamaica"
+  },
+  {
+    "id": "george-garcia",
+    "firstName": "George",
+    "lastName": "Garcia",
+    "position": "Defender",
+    "number": 5,
+    "teamId": "meridian-city",
+    "nationality": "Romania"
+  },
+  {
+    "id": "jan-hamilton",
+    "firstName": "Jan",
+    "lastName": "Hamilton",
+    "position": "Defender",
+    "number": 15,
+    "teamId": "meridian-city",
+    "nationality": "Australia"
+  },
+  {
+    "id": "fabio-lang",
+    "firstName": "Fabio",
+    "lastName": "Lang",
+    "position": "Midfielder",
+    "number": 6,
+    "teamId": "meridian-city",
+    "nationality": "Nigeria"
+  },
+  {
+    "id": "rafael-davies",
+    "firstName": "Rafael",
+    "lastName": "Davies",
+    "position": "Midfielder",
+    "number": 7,
+    "teamId": "meridian-city",
+    "nationality": "Wales"
+  },
+  {
+    "id": "gael-muller",
+    "firstName": "Gael",
+    "lastName": "Muller",
+    "position": "Midfielder",
+    "number": 8,
+    "teamId": "meridian-city",
+    "nationality": "Sweden"
+  },
+  {
+    "id": "theo-ono",
+    "firstName": "Theo",
+    "lastName": "Ono",
+    "position": "Midfielder",
+    "number": 10,
+    "teamId": "meridian-city",
+    "nationality": "Serbia"
+  },
+  {
+    "id": "craig-dubois",
+    "firstName": "Craig",
+    "lastName": "Dubois",
+    "position": "Midfielder",
+    "number": 16,
+    "teamId": "meridian-city",
+    "nationality": "Belgium"
+  },
+  {
+    "id": "ben-popescu",
+    "firstName": "Ben",
+    "lastName": "Popescu",
+    "position": "Forward",
+    "number": 9,
+    "teamId": "meridian-city",
+    "nationality": "Greece"
+  },
+  {
+    "id": "peter-el-khoury",
+    "firstName": "Peter",
+    "lastName": "El-Khoury",
+    "position": "Forward",
+    "number": 11,
+    "teamId": "meridian-city",
+    "nationality": "Turkey"
+  },
+  {
+    "id": "danny-green",
+    "firstName": "Danny",
+    "lastName": "Green",
+    "position": "Forward",
+    "number": 18,
+    "teamId": "meridian-city",
+    "nationality": "Uruguay"
+  },
+  {
+    "id": "jake-hassan",
+    "firstName": "Jake",
+    "lastName": "Hassan",
+    "position": "Forward",
+    "number": 19,
+    "teamId": "meridian-city",
+    "nationality": "Austria"
+  },
+  {
+    "id": "kofi-winter",
+    "firstName": "Kofi",
+    "lastName": "Winter",
+    "position": "Goalkeeper",
+    "number": 1,
+    "teamId": "ashdown-athletic",
+    "nationality": "Senegal"
+  },
+  {
+    "id": "kai-santos",
+    "firstName": "Kai",
+    "lastName": "Santos",
+    "position": "Goalkeeper",
+    "number": 13,
+    "teamId": "ashdown-athletic",
+    "nationality": "Japan"
+  },
+  {
+    "id": "chris-horvat",
+    "firstName": "Chris",
+    "lastName": "Horvat",
+    "position": "Defender",
+    "number": 2,
+    "teamId": "ashdown-athletic",
+    "nationality": "Czech Republic"
+  },
+  {
+    "id": "theo-tanaka",
+    "firstName": "Theo",
+    "lastName": "Tanaka",
+    "position": "Defender",
+    "number": 3,
+    "teamId": "ashdown-athletic",
+    "nationality": "USA"
+  },
+  {
+    "id": "alex-taylor",
+    "firstName": "Alex",
+    "lastName": "Taylor",
+    "position": "Defender",
+    "number": 4,
+    "teamId": "ashdown-athletic",
+    "nationality": "USA"
+  },
+  {
+    "id": "theo-asante",
+    "firstName": "Theo",
+    "lastName": "Asante",
+    "position": "Defender",
+    "number": 5,
+    "teamId": "ashdown-athletic",
+    "nationality": "Romania"
+  },
+  {
+    "id": "connor-bradshaw",
+    "firstName": "Connor",
+    "lastName": "Bradshaw",
+    "position": "Defender",
+    "number": 15,
+    "teamId": "ashdown-athletic",
+    "nationality": "Netherlands"
+  },
+  {
+    "id": "robert-wood",
+    "firstName": "Robert",
+    "lastName": "Wood",
+    "position": "Midfielder",
+    "number": 6,
+    "teamId": "ashdown-athletic",
+    "nationality": "Ivory Coast"
+  },
+  {
+    "id": "gael-walsh",
+    "firstName": "Gael",
+    "lastName": "Walsh",
+    "position": "Midfielder",
+    "number": 7,
+    "teamId": "ashdown-athletic",
+    "nationality": "Wales"
+  },
+  {
+    "id": "kai-fuentes",
+    "firstName": "Kai",
+    "lastName": "Fuentes",
+    "position": "Midfielder",
+    "number": 8,
+    "teamId": "ashdown-athletic",
+    "nationality": "Turkey"
+  },
+  {
+    "id": "tom-harrington",
+    "firstName": "Tom",
+    "lastName": "Harrington",
+    "position": "Midfielder",
+    "number": 10,
+    "teamId": "ashdown-athletic",
+    "nationality": "Brazil"
+  },
+  {
+    "id": "andrei-oliveira",
+    "firstName": "Andrei",
+    "lastName": "Oliveira",
+    "position": "Midfielder",
+    "number": 16,
+    "teamId": "ashdown-athletic",
+    "nationality": "Argentina"
+  },
+  {
+    "id": "jamie-stone",
+    "firstName": "Jamie",
+    "lastName": "Stone",
+    "position": "Forward",
+    "number": 9,
+    "teamId": "ashdown-athletic",
+    "nationality": "Nigeria"
+  },
+  {
+    "id": "luca-toure",
+    "firstName": "Luca",
+    "lastName": "Toure",
+    "position": "Forward",
+    "number": 11,
+    "teamId": "ashdown-athletic",
+    "nationality": "Canada"
+  },
+  {
+    "id": "henrik-davies",
+    "firstName": "Henrik",
+    "lastName": "Davies",
+    "position": "Forward",
+    "number": 18,
+    "teamId": "ashdown-athletic",
+    "nationality": "Ghana"
+  },
+  {
+    "id": "mateo-adomako",
+    "firstName": "Mateo",
+    "lastName": "Adomako",
+    "position": "Forward",
+    "number": 19,
+    "teamId": "ashdown-athletic",
+    "nationality": "Germany"
+  },
+  {
+    "id": "jamie-oshiro",
+    "firstName": "Jamie",
+    "lastName": "Oshiro",
+    "position": "Goalkeeper",
+    "number": 1,
+    "teamId": "northside-united",
+    "nationality": "Romania"
+  },
+  {
+    "id": "oscar-el-khoury",
+    "firstName": "Oscar",
+    "lastName": "El-Khoury",
+    "position": "Goalkeeper",
+    "number": 13,
+    "teamId": "northside-united",
+    "nationality": "Romania"
+  },
+  {
+    "id": "nikita-stone",
+    "firstName": "Nikita",
+    "lastName": "Stone",
+    "position": "Defender",
+    "number": 2,
+    "teamId": "northside-united",
+    "nationality": "Cameroon"
+  },
+  {
+    "id": "mateo-kone",
+    "firstName": "Mateo",
+    "lastName": "Kone",
+    "position": "Defender",
+    "number": 3,
+    "teamId": "northside-united",
+    "nationality": "Brazil"
+  },
+  {
+    "id": "kwesi-cole",
+    "firstName": "Kwesi",
+    "lastName": "Cole",
+    "position": "Defender",
+    "number": 4,
+    "teamId": "northside-united",
+    "nationality": "Greece"
+  },
+  {
+    "id": "ben-scott",
+    "firstName": "Ben",
+    "lastName": "Scott",
+    "position": "Defender",
+    "number": 5,
+    "teamId": "northside-united",
+    "nationality": "Ghana"
+  },
+  {
+    "id": "mateo-stone",
+    "firstName": "Mateo",
+    "lastName": "Stone",
+    "position": "Defender",
+    "number": 15,
+    "teamId": "northside-united",
+    "nationality": "USA"
+  },
+  {
+    "id": "pierre-scott",
+    "firstName": "Pierre",
+    "lastName": "Scott",
+    "position": "Midfielder",
+    "number": 6,
+    "teamId": "northside-united",
+    "nationality": "France"
+  },
+  {
+    "id": "stefan-eriksson",
+    "firstName": "Stefan",
+    "lastName": "Eriksson",
+    "position": "Midfielder",
+    "number": 7,
+    "teamId": "northside-united",
+    "nationality": "Netherlands"
+  },
+  {
+    "id": "rafael-hamilton",
+    "firstName": "Rafael",
+    "lastName": "Hamilton",
+    "position": "Midfielder",
+    "number": 8,
+    "teamId": "northside-united",
+    "nationality": "South Korea"
+  },
+  {
+    "id": "kylian-ono",
+    "firstName": "Kylian",
+    "lastName": "Ono",
+    "position": "Midfielder",
+    "number": 10,
+    "teamId": "northside-united",
+    "nationality": "USA"
+  },
+  {
+    "id": "reo-bakayoko",
+    "firstName": "Reo",
+    "lastName": "Bakayoko",
+    "position": "Midfielder",
+    "number": 16,
+    "teamId": "northside-united",
+    "nationality": "Poland"
+  },
+  {
+    "id": "danny-horvat",
+    "firstName": "Danny",
+    "lastName": "Horvat",
+    "position": "Forward",
+    "number": 9,
+    "teamId": "northside-united",
+    "nationality": "Mexico"
+  },
+  {
+    "id": "diego-chambers",
+    "firstName": "Diego",
+    "lastName": "Chambers",
+    "position": "Forward",
+    "number": 11,
+    "teamId": "northside-united",
+    "nationality": "Colombia"
+  },
+  {
+    "id": "oumar-hartley",
+    "firstName": "Oumar",
+    "lastName": "Hartley",
+    "position": "Forward",
+    "number": 18,
+    "teamId": "northside-united",
+    "nationality": "Senegal"
+  },
+  {
+    "id": "tyrone-horvat",
+    "firstName": "Tyrone",
+    "lastName": "Horvat",
+    "position": "Forward",
+    "number": 19,
+    "teamId": "northside-united",
+    "nationality": "Uruguay"
+  },
+  {
+    "id": "filip-beckett",
+    "firstName": "Filip",
+    "lastName": "Beckett",
+    "position": "Goalkeeper",
+    "number": 1,
+    "teamId": "port-heights",
+    "nationality": "USA"
+  },
+  {
+    "id": "adam-price",
+    "firstName": "Adam",
+    "lastName": "Price",
+    "position": "Goalkeeper",
+    "number": 13,
+    "teamId": "port-heights",
+    "nationality": "Ivory Coast"
+  },
+  {
+    "id": "jamie-tanaka",
+    "firstName": "Jamie",
+    "lastName": "Tanaka",
+    "position": "Defender",
+    "number": 2,
+    "teamId": "port-heights",
+    "nationality": "Italy"
+  },
+  {
+    "id": "nathan-hamilton",
+    "firstName": "Nathan",
+    "lastName": "Hamilton",
+    "position": "Defender",
+    "number": 3,
+    "teamId": "port-heights",
+    "nationality": "Scotland"
+  },
+  {
+    "id": "jack-berger",
+    "firstName": "Jack",
+    "lastName": "Berger",
+    "position": "Defender",
+    "number": 4,
+    "teamId": "port-heights",
+    "nationality": "Egypt"
+  },
+  {
+    "id": "hugo-jensen",
+    "firstName": "Hugo",
+    "lastName": "Jensen",
+    "position": "Defender",
+    "number": 5,
+    "teamId": "port-heights",
+    "nationality": "Scotland"
+  },
+  {
+    "id": "pierre-lang",
+    "firstName": "Pierre",
+    "lastName": "Lang",
+    "position": "Defender",
+    "number": 15,
+    "teamId": "port-heights",
+    "nationality": "Chile"
+  },
+  {
+    "id": "filip-davies",
+    "firstName": "Filip",
+    "lastName": "Davies",
+    "position": "Midfielder",
+    "number": 6,
+    "teamId": "port-heights",
+    "nationality": "Greece"
+  },
+  {
+    "id": "ismail-toure",
+    "firstName": "Ismail",
+    "lastName": "Toure",
+    "position": "Midfielder",
+    "number": 7,
+    "teamId": "port-heights",
+    "nationality": "Romania"
+  },
+  {
+    "id": "theo-wright",
+    "firstName": "Theo",
+    "lastName": "Wright",
+    "position": "Midfielder",
+    "number": 8,
+    "teamId": "port-heights",
+    "nationality": "Japan"
+  },
+  {
+    "id": "charlie-popescu",
+    "firstName": "Charlie",
+    "lastName": "Popescu",
+    "position": "Midfielder",
+    "number": 10,
+    "teamId": "port-heights",
+    "nationality": "Germany"
+  },
+  {
+    "id": "james-kovac",
+    "firstName": "James",
+    "lastName": "Kovac",
+    "position": "Midfielder",
+    "number": 16,
+    "teamId": "port-heights",
+    "nationality": "South Korea"
+  },
+  {
+    "id": "ali-kone",
+    "firstName": "Ali",
+    "lastName": "Kone",
+    "position": "Forward",
+    "number": 9,
+    "teamId": "port-heights",
+    "nationality": "Brazil"
+  },
+  {
+    "id": "peter-greer",
+    "firstName": "Peter",
+    "lastName": "Greer",
+    "position": "Forward",
+    "number": 11,
+    "teamId": "port-heights",
+    "nationality": "Czech Republic"
+  },
+  {
+    "id": "takeshi-mcgregor",
+    "firstName": "Takeshi",
+    "lastName": "McGregor",
+    "position": "Forward",
+    "number": 18,
+    "teamId": "port-heights",
+    "nationality": "Czech Republic"
+  },
+  {
+    "id": "carlos-bakayoko",
+    "firstName": "Carlos",
+    "lastName": "Bakayoko",
+    "position": "Forward",
+    "number": 19,
+    "teamId": "port-heights",
+    "nationality": "Scotland"
+  },
+  {
+    "id": "tom-chen",
+    "firstName": "Tom",
+    "lastName": "Chen",
+    "position": "Goalkeeper",
+    "number": 1,
+    "teamId": "queensbury-wrs",
+    "nationality": "Switzerland"
+  },
+  {
+    "id": "luis-ono",
+    "firstName": "Luis",
+    "lastName": "Ono",
+    "position": "Goalkeeper",
+    "number": 13,
+    "teamId": "queensbury-wrs",
+    "nationality": "Australia"
+  },
+  {
+    "id": "max-ono",
+    "firstName": "Max",
+    "lastName": "Ono",
+    "position": "Defender",
+    "number": 2,
+    "teamId": "queensbury-wrs",
+    "nationality": "Uruguay"
+  },
+  {
+    "id": "sean-horvat",
+    "firstName": "Sean",
+    "lastName": "Horvat",
+    "position": "Defender",
+    "number": 3,
+    "teamId": "queensbury-wrs",
+    "nationality": "Italy"
+  },
+  {
+    "id": "robert-fuentes",
+    "firstName": "Robert",
+    "lastName": "Fuentes",
+    "position": "Defender",
+    "number": 4,
+    "teamId": "queensbury-wrs",
+    "nationality": "Croatia"
+  },
+  {
+    "id": "aiden-laurent",
+    "firstName": "Aiden",
+    "lastName": "Laurent",
+    "position": "Defender",
+    "number": 5,
+    "teamId": "queensbury-wrs",
+    "nationality": "Cameroon"
+  },
+  {
+    "id": "oumar-silva",
+    "firstName": "Oumar",
+    "lastName": "Silva",
+    "position": "Defender",
+    "number": 15,
+    "teamId": "queensbury-wrs",
+    "nationality": "Brazil"
+  },
+  {
+    "id": "stefan-green",
+    "firstName": "Stefan",
+    "lastName": "Green",
+    "position": "Midfielder",
+    "number": 6,
+    "teamId": "queensbury-wrs",
+    "nationality": "Serbia"
+  },
+  {
+    "id": "nabil-diallo",
+    "firstName": "Nabil",
+    "lastName": "Diallo",
+    "position": "Midfielder",
+    "number": 7,
+    "teamId": "queensbury-wrs",
+    "nationality": "Japan"
+  },
+  {
+    "id": "ismail-johansson",
+    "firstName": "Ismail",
+    "lastName": "Johansson",
+    "position": "Midfielder",
+    "number": 8,
+    "teamId": "queensbury-wrs",
+    "nationality": "Canada"
+  },
+  {
+    "id": "jan-mendez",
+    "firstName": "Jan",
+    "lastName": "Mendez",
+    "position": "Midfielder",
+    "number": 10,
+    "teamId": "queensbury-wrs",
+    "nationality": "Australia"
+  },
+  {
+    "id": "patrick-taylor",
+    "firstName": "Patrick",
+    "lastName": "Taylor",
+    "position": "Midfielder",
+    "number": 16,
+    "teamId": "queensbury-wrs",
+    "nationality": "Uruguay"
+  },
+  {
+    "id": "david-bianchi",
+    "firstName": "David",
+    "lastName": "Bianchi",
+    "position": "Forward",
+    "number": 9,
+    "teamId": "queensbury-wrs",
+    "nationality": "Portugal"
+  },
+  {
+    "id": "nikita-bahi",
+    "firstName": "Nikita",
+    "lastName": "Bahi",
+    "position": "Forward",
+    "number": 11,
+    "teamId": "queensbury-wrs",
+    "nationality": "Senegal"
+  },
+  {
+    "id": "nathan-nilsson",
+    "firstName": "Nathan",
+    "lastName": "Nilsson",
+    "position": "Forward",
+    "number": 18,
+    "teamId": "queensbury-wrs",
+    "nationality": "Nigeria"
+  },
+  {
+    "id": "max-santos",
+    "firstName": "Max",
+    "lastName": "Santos",
+    "position": "Forward",
+    "number": 19,
+    "teamId": "queensbury-wrs",
+    "nationality": "Denmark"
+  },
+  {
+    "id": "malik-berger",
+    "firstName": "Malik",
+    "lastName": "Berger",
+    "position": "Goalkeeper",
+    "number": 1,
+    "teamId": "oakhill-fc",
+    "nationality": "Uruguay"
+  },
+  {
+    "id": "gael-hassan",
+    "firstName": "Gael",
+    "lastName": "Hassan",
+    "position": "Goalkeeper",
+    "number": 13,
+    "teamId": "oakhill-fc",
+    "nationality": "Sweden"
+  },
+  {
+    "id": "oscar-tanaka",
+    "firstName": "Oscar",
+    "lastName": "Tanaka",
+    "position": "Defender",
+    "number": 2,
+    "teamId": "oakhill-fc",
+    "nationality": "Nigeria"
+  },
+  {
+    "id": "oscar-kovac",
+    "firstName": "Oscar",
+    "lastName": "Kovac",
+    "position": "Defender",
+    "number": 3,
+    "teamId": "oakhill-fc",
+    "nationality": "Brazil"
+  },
+  {
+    "id": "finn-ross",
+    "firstName": "Finn",
+    "lastName": "Ross",
+    "position": "Defender",
+    "number": 4,
+    "teamId": "oakhill-fc",
+    "nationality": "Ivory Coast"
+  },
+  {
+    "id": "rafael-larsson",
+    "firstName": "Rafael",
+    "lastName": "Larsson",
+    "position": "Defender",
+    "number": 5,
+    "teamId": "oakhill-fc",
+    "nationality": "Colombia"
+  },
+  {
+    "id": "andre-dubois",
+    "firstName": "Andre",
+    "lastName": "Dubois",
+    "position": "Defender",
+    "number": 15,
+    "teamId": "oakhill-fc",
+    "nationality": "Czech Republic"
+  },
+  {
+    "id": "patrick-kone",
+    "firstName": "Patrick",
+    "lastName": "Kone",
+    "position": "Midfielder",
+    "number": 6,
+    "teamId": "oakhill-fc",
+    "nationality": "Ireland"
+  },
+  {
+    "id": "oscar-bahi",
+    "firstName": "Oscar",
+    "lastName": "Bahi",
+    "position": "Midfielder",
+    "number": 7,
+    "teamId": "oakhill-fc",
+    "nationality": "Austria"
+  },
+  {
+    "id": "danny-schneider",
+    "firstName": "Danny",
+    "lastName": "Schneider",
+    "position": "Midfielder",
+    "number": 8,
+    "teamId": "oakhill-fc",
+    "nationality": "Spain"
+  },
+  {
+    "id": "simon-green",
+    "firstName": "Simon",
+    "lastName": "Green",
+    "position": "Midfielder",
+    "number": 10,
+    "teamId": "oakhill-fc",
+    "nationality": "Chile"
+  },
+  {
+    "id": "kwame-muller",
+    "firstName": "Kwame",
+    "lastName": "Muller",
+    "position": "Midfielder",
+    "number": 16,
+    "teamId": "oakhill-fc",
+    "nationality": "Egypt"
+  },
+  {
+    "id": "james-wood",
+    "firstName": "James",
+    "lastName": "Wood",
+    "position": "Forward",
+    "number": 9,
+    "teamId": "oakhill-fc",
+    "nationality": "Switzerland"
+  },
+  {
+    "id": "emir-evans",
+    "firstName": "Emir",
+    "lastName": "Evans",
+    "position": "Forward",
+    "number": 11,
+    "teamId": "oakhill-fc",
+    "nationality": "South Korea"
+  },
+  {
+    "id": "nikita-mensah",
+    "firstName": "Nikita",
+    "lastName": "Mensah",
+    "position": "Forward",
+    "number": 18,
+    "teamId": "oakhill-fc",
+    "nationality": "Czech Republic"
+  },
+  {
+    "id": "emir-kelly",
+    "firstName": "Emir",
+    "lastName": "Kelly",
+    "position": "Forward",
+    "number": 19,
+    "teamId": "oakhill-fc",
+    "nationality": "Uruguay"
+  },
+  {
+    "id": "youssef-rivera",
+    "firstName": "Youssef",
+    "lastName": "Rivera",
+    "position": "Goalkeeper",
+    "number": 1,
+    "teamId": "westbrook-rovers",
+    "nationality": "Portugal"
+  },
+  {
+    "id": "jake-jensen",
+    "firstName": "Jake",
+    "lastName": "Jensen",
+    "position": "Goalkeeper",
+    "number": 13,
+    "teamId": "westbrook-rovers",
+    "nationality": "Serbia"
+  },
+  {
+    "id": "felix-johansson",
+    "firstName": "Felix",
+    "lastName": "Johansson",
+    "position": "Defender",
+    "number": 2,
+    "teamId": "westbrook-rovers",
+    "nationality": "Croatia"
+  },
+  {
+    "id": "robert-greer",
+    "firstName": "Robert",
+    "lastName": "Greer",
+    "position": "Defender",
+    "number": 3,
+    "teamId": "westbrook-rovers",
+    "nationality": "Croatia"
+  },
+  {
+    "id": "hassan-watanabe",
+    "firstName": "Hassan",
+    "lastName": "Watanabe",
+    "position": "Defender",
+    "number": 4,
+    "teamId": "westbrook-rovers",
+    "nationality": "Chile"
+  },
+  {
+    "id": "rafael-cross",
+    "firstName": "Rafael",
+    "lastName": "Cross",
+    "position": "Defender",
+    "number": 5,
+    "teamId": "westbrook-rovers",
+    "nationality": "Australia"
+  },
+  {
+    "id": "marcus-walsh",
+    "firstName": "Marcus",
+    "lastName": "Walsh",
+    "position": "Defender",
+    "number": 15,
+    "teamId": "westbrook-rovers",
+    "nationality": "Czech Republic"
+  },
+  {
+    "id": "jose-martin",
+    "firstName": "Jose",
+    "lastName": "Martin",
+    "position": "Midfielder",
+    "number": 6,
+    "teamId": "westbrook-rovers",
+    "nationality": "Austria"
+  },
+  {
+    "id": "kai-kone",
+    "firstName": "Kai",
+    "lastName": "Kone",
+    "position": "Midfielder",
+    "number": 7,
+    "teamId": "westbrook-rovers",
+    "nationality": "Ivory Coast"
+  },
+  {
+    "id": "luis-jones",
+    "firstName": "Luis",
+    "lastName": "Jones",
+    "position": "Midfielder",
+    "number": 8,
+    "teamId": "westbrook-rovers",
+    "nationality": "France"
+  },
+  {
+    "id": "sam-martin",
+    "firstName": "Sam",
+    "lastName": "Martin",
+    "position": "Midfielder",
+    "number": 10,
+    "teamId": "westbrook-rovers",
+    "nationality": "Belgium"
+  },
+  {
+    "id": "liam-santos",
+    "firstName": "Liam",
+    "lastName": "Santos",
+    "position": "Midfielder",
+    "number": 16,
+    "teamId": "westbrook-rovers",
+    "nationality": "Morocco"
+  },
+  {
+    "id": "callum-lund",
+    "firstName": "Callum",
+    "lastName": "Lund",
+    "position": "Forward",
+    "number": 9,
+    "teamId": "westbrook-rovers",
+    "nationality": "England"
+  },
+  {
+    "id": "aiden-eriksson",
+    "firstName": "Aiden",
+    "lastName": "Eriksson",
+    "position": "Forward",
+    "number": 11,
+    "teamId": "westbrook-rovers",
+    "nationality": "Belgium"
+  },
+  {
+    "id": "carlos-greer",
+    "firstName": "Carlos",
+    "lastName": "Greer",
+    "position": "Forward",
+    "number": 18,
+    "teamId": "westbrook-rovers",
+    "nationality": "Argentina"
+  },
+  {
+    "id": "mark-ferreira",
+    "firstName": "Mark",
+    "lastName": "Ferreira",
+    "position": "Forward",
+    "number": 19,
+    "teamId": "westbrook-rovers",
+    "nationality": "Poland"
+  },
+  {
+    "id": "tom-schneider",
+    "firstName": "Tom",
+    "lastName": "Schneider",
+    "position": "Goalkeeper",
+    "number": 1,
+    "teamId": "southshore-united",
+    "nationality": "Serbia"
+  },
+  {
+    "id": "simon-cross",
+    "firstName": "Simon",
+    "lastName": "Cross",
+    "position": "Goalkeeper",
+    "number": 13,
+    "teamId": "southshore-united",
+    "nationality": "Colombia"
+  },
+  {
+    "id": "mark-adomako",
+    "firstName": "Mark",
+    "lastName": "Adomako",
+    "position": "Defender",
+    "number": 2,
+    "teamId": "southshore-united",
+    "nationality": "Spain"
+  },
+  {
+    "id": "mikkel-foster",
+    "firstName": "Mikkel",
+    "lastName": "Foster",
+    "position": "Defender",
+    "number": 3,
+    "teamId": "southshore-united",
+    "nationality": "Romania"
+  },
+  {
+    "id": "luke-kelly",
+    "firstName": "Luke",
+    "lastName": "Kelly",
+    "position": "Defender",
+    "number": 4,
+    "teamId": "southshore-united",
+    "nationality": "Norway"
+  },
+  {
+    "id": "filip-larsson",
+    "firstName": "Filip",
+    "lastName": "Larsson",
+    "position": "Defender",
+    "number": 5,
+    "teamId": "southshore-united",
+    "nationality": "USA"
+  },
+  {
+    "id": "peter-almeida",
+    "firstName": "Peter",
+    "lastName": "Almeida",
+    "position": "Defender",
+    "number": 15,
+    "teamId": "southshore-united",
+    "nationality": "Egypt"
+  },
+  {
+    "id": "noah-tanaka",
+    "firstName": "Noah",
+    "lastName": "Tanaka",
+    "position": "Midfielder",
+    "number": 6,
+    "teamId": "southshore-united",
+    "nationality": "Switzerland"
+  },
+  {
+    "id": "jamie-bakayoko",
+    "firstName": "Jamie",
+    "lastName": "Bakayoko",
+    "position": "Midfielder",
+    "number": 7,
+    "teamId": "southshore-united",
+    "nationality": "Jamaica"
+  },
+  {
+    "id": "jamie-lang",
+    "firstName": "Jamie",
+    "lastName": "Lang",
+    "position": "Midfielder",
+    "number": 8,
+    "teamId": "southshore-united",
+    "nationality": "Ghana"
+  },
+  {
+    "id": "kenji-taylor",
+    "firstName": "Kenji",
+    "lastName": "Taylor",
+    "position": "Midfielder",
+    "number": 10,
+    "teamId": "southshore-united",
+    "nationality": "Italy"
+  },
+  {
+    "id": "tom-moreno",
+    "firstName": "Tom",
+    "lastName": "Moreno",
+    "position": "Midfielder",
+    "number": 16,
+    "teamId": "southshore-united",
+    "nationality": "South Korea"
+  },
+  {
+    "id": "marcus-park",
+    "firstName": "Marcus",
+    "lastName": "Park",
+    "position": "Forward",
+    "number": 9,
+    "teamId": "southshore-united",
+    "nationality": "Denmark"
+  },
+  {
+    "id": "omar-murphy",
+    "firstName": "Omar",
+    "lastName": "Murphy",
+    "position": "Forward",
+    "number": 11,
+    "teamId": "southshore-united",
+    "nationality": "Scotland"
+  },
+  {
+    "id": "kai-almeida",
+    "firstName": "Kai",
+    "lastName": "Almeida",
+    "position": "Forward",
+    "number": 18,
+    "teamId": "southshore-united",
+    "nationality": "Jamaica"
+  },
+  {
+    "id": "yusuf-petrov",
+    "firstName": "Yusuf",
+    "lastName": "Petrov",
+    "position": "Forward",
+    "number": 19,
+    "teamId": "southshore-united",
+    "nationality": "Scotland"
+  },
+  {
+    "id": "callum-park",
+    "firstName": "Callum",
+    "lastName": "Park",
+    "position": "Goalkeeper",
+    "number": 1,
+    "teamId": "stone-valley",
+    "nationality": "Morocco"
+  },
+  {
+    "id": "david-costa",
+    "firstName": "David",
+    "lastName": "Costa",
+    "position": "Goalkeeper",
+    "number": 13,
+    "teamId": "stone-valley",
+    "nationality": "Sweden"
+  },
+  {
+    "id": "hugo-butler",
+    "firstName": "Hugo",
+    "lastName": "Butler",
+    "position": "Defender",
+    "number": 2,
+    "teamId": "stone-valley",
+    "nationality": "Colombia"
+  },
+  {
+    "id": "jonas-muller",
+    "firstName": "Jonas",
+    "lastName": "Muller",
+    "position": "Defender",
+    "number": 3,
+    "teamId": "stone-valley",
+    "nationality": "Chile"
+  },
+  {
+    "id": "ryan-davies",
+    "firstName": "Ryan",
+    "lastName": "Davies",
+    "position": "Defender",
+    "number": 4,
+    "teamId": "stone-valley",
+    "nationality": "Scotland"
+  },
+  {
+    "id": "kylian-nilsson",
+    "firstName": "Kylian",
+    "lastName": "Nilsson",
+    "position": "Defender",
+    "number": 5,
+    "teamId": "stone-valley",
+    "nationality": "Netherlands"
+  },
+  {
+    "id": "liam-cross",
+    "firstName": "Liam",
+    "lastName": "Cross",
+    "position": "Defender",
+    "number": 15,
+    "teamId": "stone-valley",
+    "nationality": "Czech Republic"
+  },
+  {
+    "id": "craig-garcia",
+    "firstName": "Craig",
+    "lastName": "Garcia",
+    "position": "Midfielder",
+    "number": 6,
+    "teamId": "stone-valley",
+    "nationality": "Cameroon"
+  },
+  {
+    "id": "luke-hassan",
+    "firstName": "Luke",
+    "lastName": "Hassan",
+    "position": "Midfielder",
+    "number": 7,
+    "teamId": "stone-valley",
+    "nationality": "Ivory Coast"
+  },
+  {
+    "id": "omar-taylor",
+    "firstName": "Omar",
+    "lastName": "Taylor",
+    "position": "Midfielder",
+    "number": 8,
+    "teamId": "stone-valley",
+    "nationality": "Wales"
+  },
+  {
+    "id": "alex-fuentes",
+    "firstName": "Alex",
+    "lastName": "Fuentes",
+    "position": "Midfielder",
+    "number": 10,
+    "teamId": "stone-valley",
+    "nationality": "Croatia"
+  },
+  {
+    "id": "felix-berg",
+    "firstName": "Felix",
+    "lastName": "Berg",
+    "position": "Midfielder",
+    "number": 16,
+    "teamId": "stone-valley",
+    "nationality": "Spain"
+  },
+  {
+    "id": "tyrone-beckett",
+    "firstName": "Tyrone",
+    "lastName": "Beckett",
+    "position": "Forward",
+    "number": 9,
+    "teamId": "stone-valley",
+    "nationality": "Turkey"
+  },
+  {
+    "id": "andrei-petrov",
+    "firstName": "Andrei",
+    "lastName": "Petrov",
+    "position": "Forward",
+    "number": 11,
+    "teamId": "stone-valley",
+    "nationality": "Canada"
+  },
+  {
+    "id": "jake-wood",
+    "firstName": "Jake",
+    "lastName": "Wood",
+    "position": "Forward",
+    "number": 18,
+    "teamId": "stone-valley",
+    "nationality": "Poland"
+  },
+  {
+    "id": "andrei-martin",
+    "firstName": "Andrei",
+    "lastName": "Martin",
+    "position": "Forward",
+    "number": 19,
+    "teamId": "stone-valley",
+    "nationality": "Senegal"
+  }
 ]
