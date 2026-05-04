@@ -264,6 +264,7 @@
                     <subscribe-btn
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="/libs/kestros/commons/components/content/button"
+                            variations="[btn-warning,btn-lg]"
                             text="Subscribe to the MPL Newsletter"
                             href="/content/sites/league-demo/contact.html"/>
                 </newsletter-ctas>
