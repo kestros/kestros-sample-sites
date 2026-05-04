@@ -9,7 +9,8 @@
     "seasonId": "2025-26",
     "date": "2025-10-04",
     "venue": "Riverside Park",
-    "played": true
+    "played": true,
+    "writeup": "The curtain-raiser at Riverside Park set the tone for what promises to be an enthralling season. Two composed first-half finishes gave the hosts a deserved victory against a Stone Valley side still finding their feet."
   },
   {
     "id": "week-1-meridian-city-vs-southshore-united",
@@ -21,7 +22,8 @@
     "seasonId": "2025-26",
     "date": "2025-10-04",
     "venue": "Meridian Stadium",
-    "played": true
+    "played": true,
+    "writeup": "A cagey opening-day affair at Meridian Stadium was settled by a single moment of quality in the second half. The champions looked rusty in patches but did enough to start their title defence with three points."
   },
   {
     "id": "week-1-ashdown-athletic-vs-westbrook-rovers",
@@ -33,7 +35,8 @@
     "seasonId": "2025-26",
     "date": "2025-10-04",
     "venue": "Ashdown Park",
-    "played": true
+    "played": true,
+    "writeup": "An end-to-end contest at Ashdown Park produced four goals and neither side could be separated. Westbrook twice came from behind to earn a well-deserved point on the road."
   },
   {
     "id": "week-1-northside-united-vs-oakhill-fc",
@@ -45,7 +48,8 @@
     "seasonId": "2025-26",
     "date": "2025-10-05",
     "venue": "Northern Ground",
-    "played": true
+    "played": true,
+    "writeup": "Northside United made a statement on the opening day with a comprehensive victory over Oakhill. Three goals without reply demonstrated the clinical edge that could make them genuine contenders this season."
   },
   {
     "id": "week-1-port-heights-vs-queensbury-wrs",
@@ -57,7 +61,8 @@
     "seasonId": "2025-26",
     "date": "2025-10-05",
     "venue": "Harbour Stadium",
-    "played": true
+    "played": true,
+    "writeup": "A tight, physical battle at Harbour Stadium was decided by a scrappy goal midway through the first half. Queensbury will feel they deserved more from the match but could not convert their chances."
   },
   {
     "id": "week-2-riverside-fc-vs-southshore-united",
@@ -69,7 +74,8 @@
     "seasonId": "2025-26",
     "date": "2025-10-11",
     "venue": "Riverside Park",
-    "played": true
+    "played": true,
+    "writeup": "Southshore produced a gutsy display to earn a point at Riverside Park. The visitors defended heroically and snatched a late equaliser to deny Riverside a second consecutive win."
   },
   {
     "id": "week-2-stone-valley-vs-westbrook-rovers",
@@ -81,7 +87,8 @@
     "seasonId": "2025-26",
     "date": "2025-10-11",
     "venue": "Valley Ground",
-    "played": true
+    "played": true,
+    "writeup": "A dull 0-0 draw at Valley Ground that neither side will look back on fondly. Chances were scarce and the quality in the final third was sorely lacking from both teams."
   },
   {
     "id": "week-2-meridian-city-vs-oakhill-fc",
@@ -93,7 +100,8 @@
     "seasonId": "2025-26",
     "date": "2025-10-11",
     "venue": "Meridian Stadium",
-    "played": true
+    "played": true,
+    "writeup": "Meridian City showed their pedigree with a professional victory over a spirited Oakhill side. A quickfire double in the opening twenty minutes proved decisive despite a consolation from the visitors."
   },
   {
     "id": "week-2-ashdown-athletic-vs-queensbury-wrs",
@@ -105,7 +113,8 @@
     "seasonId": "2025-26",
     "date": "2025-10-12",
     "venue": "Ashdown Park",
-    "played": true
+    "played": true,
+    "writeup": "Honours even at Ashdown Park after Queensbury fought back from a goal down to claim a deserved point. Both sides created enough chances to win the game but were let down by wasteful finishing."
   },
   {
     "id": "week-2-northside-united-vs-port-heights",
@@ -117,7 +126,8 @@
     "seasonId": "2025-26",
     "date": "2025-10-12",
     "venue": "Northern Ground",
-    "played": true
+    "played": true,
+    "writeup": "Another commanding home performance from Northside United, who dispatched Port Heights without conceding. Their early-season defensive record is already drawing admiring glances from across the league."
   },
   {
     "id": "week-3-riverside-fc-vs-westbrook-rovers",
@@ -129,7 +139,8 @@
     "seasonId": "2025-26",
     "date": "2025-10-18",
     "venue": "Riverside Park",
-    "played": true
+    "played": true,
+    "writeup": "A five-goal thriller at Riverside Park saw the hosts edge a pulsating contest. Westbrook twice drew level before Riverside found a winner with fifteen minutes remaining in a match that swung from end to end."
   },
   {
     "id": "week-3-southshore-united-vs-oakhill-fc",
@@ -141,7 +152,8 @@
     "seasonId": "2025-26",
     "date": "2025-10-18",
     "venue": "Shore Park",
-    "played": true
+    "played": true,
+    "writeup": "Southshore secured their first win of the season with a narrow victory over Oakhill at Shore Park. A well-taken goal early in the second half proved enough to separate two evenly-matched sides."
   },
   {
     "id": "week-3-stone-valley-vs-queensbury-wrs",
@@ -153,7 +165,8 @@
     "seasonId": "2025-26",
     "date": "2025-10-18",
     "venue": "Valley Ground",
-    "played": true
+    "played": true,
+    "writeup": "Stone Valley were rampant at Valley Ground, putting four past a shellshocked Queensbury side. The home crowd were treated to some outstanding attacking football as the hosts recorded their biggest win of the campaign."
   },
   {
     "id": "week-3-meridian-city-vs-port-heights",
@@ -165,7 +178,8 @@
     "seasonId": "2025-26",
     "date": "2025-10-19",
     "venue": "Meridian Stadium",
-    "played": true
+    "played": true,
+    "writeup": "A frustrating afternoon for Meridian City, who dominated possession but could not break down a well-organised Port Heights defence. The visitors earned a valuable point through sheer discipline and resilience."
   },
   {
     "id": "week-3-ashdown-athletic-vs-northside-united",
@@ -177,7 +191,8 @@
     "seasonId": "2025-26",
     "date": "2025-10-19",
     "venue": "Ashdown Park",
-    "played": true
+    "played": true,
+    "writeup": "A Match of the Day contender at Ashdown Park. Five goals, two penalties, and a red card made for a breathless afternoon. Ashdown held on to clinch all three points despite a nervy final ten minutes."
   },
   {
     "id": "week-4-riverside-fc-vs-oakhill-fc",
@@ -189,7 +204,8 @@
     "seasonId": "2025-26",
     "date": "2025-10-25",
     "venue": "Riverside Park",
-    "played": true
+    "played": true,
+    "writeup": "Riverside survived a scare at home as Oakhill twice drew level before the hosts found a late winner. The victory extended Riverside's unbeaten start, but the performance will concern their coaching staff."
   },
   {
     "id": "week-4-westbrook-rovers-vs-queensbury-wrs",
@@ -201,7 +217,8 @@
     "seasonId": "2025-26",
     "date": "2025-10-25",
     "venue": "Brook Lane",
-    "played": true
+    "played": true,
+    "writeup": "Queensbury produced the shock of the weekend with a four-goal demolition of Westbrook at Brook Lane. The visitors were utterly dominant from start to finish in a display that announced them as a force to be reckoned with."
   },
   {
     "id": "week-4-southshore-united-vs-port-heights",
@@ -213,7 +230,8 @@
     "seasonId": "2025-26",
     "date": "2025-10-25",
     "venue": "Shore Park",
-    "played": true
+    "played": true,
+    "writeup": "A hard-fought draw at Shore Park between two sides looking over their shoulders at the bottom of the table. Neither team could find a winner in a match that lacked quality but not effort."
   },
   {
     "id": "week-4-stone-valley-vs-northside-united",
@@ -225,7 +243,8 @@
     "seasonId": "2025-26",
     "date": "2025-10-26",
     "venue": "Valley Ground",
-    "played": true
+    "played": true,
+    "writeup": "Stone Valley ended Northside's winning start to the season with a gutsy victory at Valley Ground. A spirited second-half performance from the hosts overturned an early deficit in front of a raucous home crowd."
   },
   {
     "id": "week-4-meridian-city-vs-ashdown-athletic",
@@ -237,7 +256,8 @@
     "seasonId": "2025-26",
     "date": "2025-10-26",
     "venue": "Meridian Stadium",
-    "played": true
+    "played": true,
+    "writeup": "Meridian City reasserted their title credentials with a clinical display against Ashdown Athletic. Three well-crafted goals showcased the depth of attacking talent at the champions' disposal."
   },
   {
     "id": "week-5-riverside-fc-vs-queensbury-wrs",
@@ -249,7 +269,8 @@
     "seasonId": "2025-26",
     "date": "2025-11-01",
     "venue": "Riverside Park",
-    "played": true
+    "played": true,
+    "writeup": "A routine victory for Riverside at home as they dispatched Queensbury with two second-half goals. The hosts controlled the match from start to finish and could have won by a wider margin."
   },
   {
     "id": "week-5-oakhill-fc-vs-port-heights",
@@ -261,7 +282,8 @@
     "seasonId": "2025-26",
     "date": "2025-11-01",
     "venue": "Oak Park",
-    "played": true
+    "played": true,
+    "writeup": "A forgettable draw at Oak Park between two mid-table sides. Both teams created half-chances but neither goalkeeper was seriously tested in a match that petered out long before the final whistle."
   },
   {
     "id": "week-5-westbrook-rovers-vs-northside-united",
@@ -273,7 +295,8 @@
     "seasonId": "2025-26",
     "date": "2025-11-01",
     "venue": "Brook Lane",
-    "played": true
+    "played": true,
+    "writeup": "A tactical battle at Brook Lane produced a goalless draw that both managers will view differently. Northside will be satisfied with a point away from home, while Westbrook will rue several missed opportunities."
   },
   {
     "id": "week-5-southshore-united-vs-ashdown-athletic",
@@ -285,7 +308,8 @@
     "seasonId": "2025-26",
     "date": "2025-11-02",
     "venue": "Shore Park",
-    "played": true
+    "played": true,
+    "writeup": "Ashdown's defensive resolve earned them all three points at Shore Park. A single goal against the run of play was enough to secure victory as Southshore's profligacy in front of goal cost them dearly."
   },
   {
     "id": "week-5-stone-valley-vs-meridian-city",
@@ -297,7 +321,8 @@
     "seasonId": "2025-26",
     "date": "2025-11-02",
     "venue": "Valley Ground",
-    "played": true
+    "played": true,
+    "writeup": "Stone Valley produced the upset of the day with a memorable victory over Meridian City at Valley Ground. The home side's pressing game unsettled the champions throughout, and two well-taken goals sealed a famous win."
   },
   {
     "id": "week-6-riverside-fc-vs-port-heights",
@@ -309,7 +334,8 @@
     "seasonId": "2025-26",
     "date": "2025-11-08",
     "venue": "Riverside Park",
-    "played": true
+    "played": true,
+    "writeup": "Riverside ground out another narrow home victory, this time against a disciplined Port Heights side. A solitary goal midway through the second half was enough to maintain their position at the summit."
   },
   {
     "id": "week-6-queensbury-wrs-vs-northside-united",
@@ -321,7 +347,8 @@
     "seasonId": "2025-26",
     "date": "2025-11-08",
     "venue": "Wanderers Field",
-    "played": true
+    "played": true,
+    "writeup": "Northside United were ruthless away from home, punishing Queensbury's defensive errors with three clinical finishes. The visitors' counter-attacking play was a masterclass in efficiency."
   },
   {
     "id": "week-6-oakhill-fc-vs-ashdown-athletic",
@@ -333,7 +360,8 @@
     "seasonId": "2025-26",
     "date": "2025-11-08",
     "venue": "Oak Park",
-    "played": true
+    "played": true,
+    "writeup": "A pulsating 2-2 draw at Oak Park as both sides traded blows in an absorbing contest. Ashdown twice took the lead only to be pegged back by a resilient Oakhill side who refused to accept defeat."
   },
   {
     "id": "week-6-westbrook-rovers-vs-meridian-city",
@@ -345,7 +373,8 @@
     "seasonId": "2025-26",
     "date": "2025-11-09",
     "venue": "Brook Lane",
-    "played": true
+    "played": true,
+    "writeup": "Meridian City returned to winning ways with a composed away performance at Brook Lane. Two goals in the space of ten minutes broke Westbrook's resistance and restored order after the shock defeat to Stone Valley."
   },
   {
     "id": "week-6-southshore-united-vs-stone-valley",
@@ -357,7 +386,8 @@
     "seasonId": "2025-26",
     "date": "2025-11-09",
     "venue": "Shore Park",
-    "played": true
+    "played": true,
+    "writeup": "Stone Valley claimed three vital points at Shore Park with a disciplined away display. A single goal from a well-worked free kick proved the difference between two sides battling to establish themselves in the bottom half."
   },
   {
     "id": "week-7-riverside-fc-vs-northside-united",
@@ -369,7 +399,8 @@
     "seasonId": "2025-26",
     "date": "2025-11-15",
     "venue": "Riverside Park",
-    "played": true
+    "played": true,
+    "writeup": "A sensational match at Riverside Park as the hosts ran riot against Northside United. Six goals, including a first-half hat-trick from the home side, made for a thrilling afternoon. Northside pulled two back but the damage was already done."
   },
   {
     "id": "week-7-port-heights-vs-ashdown-athletic",
@@ -381,7 +412,8 @@
     "seasonId": "2025-26",
     "date": "2025-11-15",
     "venue": "Harbour Stadium",
-    "played": true
+    "played": true,
+    "writeup": "Honours even at Harbour Stadium after a fiercely contested draw. Both sides had chances to win it in the closing stages, but the woodwork denied Port Heights and a goal-line clearance saved Ashdown."
   },
   {
     "id": "week-7-queensbury-wrs-vs-meridian-city",
@@ -393,7 +425,8 @@
     "seasonId": "2025-26",
     "date": "2025-11-15",
     "venue": "Wanderers Field",
-    "played": true
+    "played": true,
+    "writeup": "Queensbury produced the biggest shock of the season so far, overcoming Meridian City with a stunning three-goal display. The champions had no answer to the hosts' relentless energy and pressing."
   },
   {
     "id": "week-7-oakhill-fc-vs-stone-valley",
@@ -405,7 +438,8 @@
     "seasonId": "2025-26",
     "date": "2025-11-16",
     "venue": "Oak Park",
-    "played": true
+    "played": true,
+    "writeup": "A tight, attritional affair at Oak Park was settled by a single headed goal from a corner. Oakhill's set-piece prowess continues to be their most reliable weapon in an otherwise unremarkable attacking display."
   },
   {
     "id": "week-7-westbrook-rovers-vs-southshore-united",
@@ -417,7 +451,8 @@
     "seasonId": "2025-26",
     "date": "2025-11-16",
     "venue": "Brook Lane",
-    "played": true
+    "played": true,
+    "writeup": "Westbrook and Southshore shared the spoils in a match that came to life in the final twenty minutes. After a turgid opening hour, both sides suddenly found their attacking instincts and traded late goals."
   },
   {
     "id": "week-8-riverside-fc-vs-ashdown-athletic",
