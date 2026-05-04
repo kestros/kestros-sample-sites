@@ -274,6 +274,7 @@
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="/libs/kestros/commons/components/lists/link-list"
                         >
+                            <news jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="News" href="/content/sites/league-demo/news.html"/>
                             <standings jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Standings" href="/content/sites/league-demo/standings.html"/>
                             <schedule jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Schedule &amp; Results" href="/content/sites/league-demo/schedule.html"/>
                             <teams jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Teams" href="/content/sites/league-demo/teams.html"/>
@@ -281,6 +282,25 @@
                         </competition-links>
                     </column-2>
                     <column-3
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kestros/commons/components/content-area"
+                    >
+                        <fan-heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                headingText="Fan Zone"
+                                headingType="h5"/>
+                        <fan-links
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/lists/link-list"
+                        >
+                            <watch jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Watch Live" href="/content/sites/league-demo/watch.html"/>
+                            <tickets jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Tickets" href="/content/sites/league-demo/tickets.html"/>
+                            <shop jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Official Shop" href="/content/sites/league-demo/shop.html"/>
+                            <community jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Community" href="/content/sites/league-demo/community.html"/>
+                        </fan-links>
+                    </column-3>
+                    <column-4
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="kestros/commons/components/content-area"
                     >
@@ -298,7 +318,7 @@
                             <contact jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Contact" href="#"/>
                             <privacy jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Privacy Policy" href="#"/>
                         </about-links>
-                    </column-3>
+                    </column-4>
                 </footer-grid>
                 <copyright
                         jcr:primaryType="nt:unstructured"

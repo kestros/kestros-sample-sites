@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="kes:Page">
+    <jcr:content
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Community"
+            jcr:description="MPL community programmes, grassroots football, and fan engagement initiatives."
+            sling:resourceType="kestros/commons/components/kestros-base-page">
+        <header jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
+        <main jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
+            <page-header
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    layout="hero">
+                <heading
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        headingText="Community"
+                        headingType="h1"/>
+                <subtitle
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="More than football. The MPL's commitment to the communities we serve."/>
+            </page-header>
+
+            <!-- Overview -->
+            <overview-section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section">
+                <heading
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        headingText="More Than a Game"
+                        headingType="h2"/>
+                <overview-text
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="The Meridian Premier League believes football has the power to change lives. Through our community programmes, we invest in education, health, inclusion, and grassroots sport across the Meridian region. Every club runs its own community trust, and the league provides central funding and coordination to maximise impact."/>
+            </overview-section>
+
+            <!-- Programmes -->
+            <programmes-section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    layout="dark">
+                <heading
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        headingText="Our Programmes"
+                        headingType="h2"/>
+                <programmes-grid
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/grid">
+                    <column-1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kestros/commons/components/content-area">
+                        <kickstart-heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                headingText="MPL Kickstart"
+                                headingType="h4"/>
+                        <kickstart-text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Free coaching sessions for children aged 5-12 at every MPL stadium during school holidays. Over 8,000 young people participated last season."/>
+                    </column-1>
+                    <column-2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kestros/commons/components/content-area">
+                        <goals-heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                headingText="Goals for Good"
+                                headingType="h4"/>
+                        <goals-text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="For every goal scored in the MPL, the league donates $100 to local food banks. Last season's 247 goals raised $24,700 for communities across the region."/>
+                    </column-2>
+                    <column-3
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kestros/commons/components/content-area">
+                        <walking-heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                headingText="Walking Football"
+                                headingType="h4"/>
+                        <walking-text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Weekly walking football sessions for over-50s at all ten club community centres. Designed to improve fitness, reduce isolation, and keep the beautiful game accessible to all ages."/>
+                    </column-3>
+                </programmes-grid>
+            </programmes-section>
+
+            <!-- Community Day -->
+            <community-day-section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section">
+                <heading
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        headingText="MPL Community Day"
+                        headingType="h2"/>
+                <day-text
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="Every January, all ten MPL clubs open their doors for Community Day -- a free, family-friendly celebration of football and community. Activities include stadium tours, coaching clinics, player meet-and-greets, charity fundraisers, and live entertainment. The 2026 Community Day is scheduled for January 11."/>
+                <day-text-2
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="Last year's event attracted over 15,000 visitors across all ten venues, raised $42,000 for local charities, and saw 1,200 children take part in coaching sessions delivered by first-team players."/>
+            </community-day-section>
+
+            <!-- Sustainability -->
+            <sustainability-section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    layout="dark">
+                <heading
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        headingText="Sustainability"
+                        headingType="h2"/>
+                <sustain-text
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="The MPL is committed to environmental responsibility. Through our partnership with Greenfield Energy, all ten stadiums are powered by 100% renewable energy. The league's Green Goals initiative has reduced matchday waste by 35% since 2021 through recycling programmes, reusable cup schemes, and elimination of single-use plastics from all venues."/>
+            </sustainability-section>
+        </main>
+        <footer jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
+    </jcr:content>
+</jcr:root>
