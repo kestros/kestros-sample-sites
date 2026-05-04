@@ -11,7 +11,9 @@ import io.kestros.samples.league.api.models.Team;
 import io.kestros.samples.league.api.services.LeagueDataService;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 import javax.annotation.Nonnull;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
@@ -31,10 +33,13 @@ public class TopScorersTableDataSource extends BaseContainerSlingModelDataSource
   public List<KestrosTableHeader> getHeaderElements() {
     List<KestrosTableHeader> headers = new ArrayList<>();
     try {
-      headers.add(new SyntheticTableHeader("No.", this, "header", "number"));
+      headers.add(new SyntheticTableHeader("#", this, "header", "rank"));
       headers.add(new SyntheticTableHeader("Player", this, "header", "player"));
       headers.add(new SyntheticTableHeader("Club", this, "header", "club"));
-      headers.add(new SyntheticTableHeader("Position", this, "header", "position"));
+      headers.add(new SyntheticTableHeader("Pos", this, "header", "position"));
+      headers.add(new SyntheticTableHeader("Apps", this, "header", "apps"));
+      headers.add(new SyntheticTableHeader("Goals", this, "header", "goals"));
+      headers.add(new SyntheticTableHeader("Assists", this, "header", "assists"));
     } catch (Exception e) { /* skip */ }
     return headers;
   }
@@ -45,11 +50,13 @@ public class TopScorersTableDataSource extends BaseContainerSlingModelDataSource
     List<KestrosTableRow> rows = new ArrayList<>();
     if (leagueDataService == null) return rows;
 
-    // List all players sorted by number (as proxy for prominence)
-    List<Player> players = new ArrayList<>(leagueDataService.getPlayers());
-    if (players.size() > 15) {
-      players = players.subList(0, 15);
-    }
+    // Sort by goals (top scorers), filter out 0-goal players for cleaner top list
+    List<Player> players = leagueDataService.getPlayers().stream()
+        .filter(p -> p.getGoals() > 0)
+        .sorted(Comparator.comparingInt(Player::getGoals).reversed()
+            .thenComparing(Comparator.comparingInt(Player::getAssists).reversed()))
+        .limit(15)
+        .collect(Collectors.toList());
 
     int pos = 0;
     for (Player player : players) {
@@ -60,10 +67,13 @@ public class TopScorersTableDataSource extends BaseContainerSlingModelDataSource
 
       try {
         List<KestrosTableCell> cells = Arrays.asList(
-            new SyntheticTableCell(String.valueOf(player.getNumber()), this, "cell", "number-" + pos),
+            new SyntheticTableCell(String.valueOf(pos), this, "cell", "rank-" + pos),
             new SyntheticTableCell(name, this, "cell", "name-" + pos),
             new SyntheticTableCell(teamName, this, "cell", "club-" + pos),
-            new SyntheticTableCell(player.getPosition(), this, "cell", "position-" + pos)
+            new SyntheticTableCell(player.getPosition(), this, "cell", "position-" + pos),
+            new SyntheticTableCell(String.valueOf(player.getAppearances()), this, "cell", "apps-" + pos),
+            new SyntheticTableCell(String.valueOf(player.getGoals()), this, "cell", "goals-" + pos),
+            new SyntheticTableCell(String.valueOf(player.getAssists()), this, "cell", "assists-" + pos)
         );
         rows.add(new SyntheticTableRow(cells, this, "row", "row-" + pos));
       } catch (Exception e) { /* skip */ }
