@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="kes:Page">
+    <jcr:content
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Tickets"
+            jcr:description="Buy tickets for Meridian Premier League matches. Season passes, single match tickets, and hospitality packages."
+            sling:resourceType="kestros/commons/components/kestros-base-page">
+        <header jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
+        <main jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
+            <page-header
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    layout="hero">
+                <heading
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        headingText="Tickets"
+                        headingType="h1"/>
+                <subtitle
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="Season passes, matchday tickets, and hospitality packages for all ten venues."/>
+            </page-header>
+
+            <!-- Season Pass -->
+            <season-pass-section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section">
+                <heading
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        headingText="Season Passes"
+                        headingType="h2"/>
+                <pass-text
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="The best value way to follow your club. Season passes guarantee your seat for all nine home league matches, plus priority access to any additional cup fixtures. Prices vary by club and seating category."/>
+                <pricing-grid
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/grid">
+                    <column-1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kestros/commons/components/content-area">
+                        <adult-heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                headingText="Adult Season Pass"
+                                headingType="h4"/>
+                        <adult-text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="From $180 per season. All nine home league fixtures. Early bird pricing available until July 31."/>
+                    </column-1>
+                    <column-2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kestros/commons/components/content-area">
+                        <concession-heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                headingText="Concession Pass"
+                                headingType="h4"/>
+                        <concession-text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="From $120 per season. Available to over-65s and under-18s with valid ID. Same great seat, reduced price."/>
+                    </column-2>
+                    <column-3
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kestros/commons/components/content-area">
+                        <family-heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                headingText="Family Pack"
+                                headingType="h4"/>
+                        <family-text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="From $399 per season. Two adults and up to three children (under 16). Dedicated family stand at every venue."/>
+                    </column-3>
+                </pricing-grid>
+            </season-pass-section>
+
+            <!-- Matchday -->
+            <matchday-section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    layout="dark">
+                <heading
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        headingText="Matchday Tickets"
+                        headingType="h2"/>
+                <matchday-text
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="Individual match tickets are available for all fixtures, subject to availability. Tickets go on sale two weeks before each matchday and can be purchased online, by phone, or at the venue box office. Adult matchday tickets start from $25."/>
+                <matchday-text-2
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="Away supporter allocations are managed by the visiting club. Contact your club's ticket office for away match tickets."/>
+            </matchday-section>
+
+            <!-- Hospitality -->
+            <hospitality-section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section">
+                <heading
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        headingText="Hospitality"
+                        headingType="h2"/>
+                <hospitality-text
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="Experience MPL matchdays in style. Hospitality packages include premium seating, pre-match dining, half-time refreshments, and post-match access to the players' lounge. Packages start from $150 per person and are available for all fixtures at participating venues."/>
+                <hospitality-text-2
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="Corporate packages for groups of 10 or more are available with bespoke catering, branded hospitality suites, and pitch-side advertising opportunities. Contact the MPL commercial team for enquiries."/>
+            </hospitality-section>
+        </main>
+        <footer jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
+    </jcr:content>
+</jcr:root>

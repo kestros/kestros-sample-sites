@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="kes:Page">
+    <jcr:content
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Watch"
+            jcr:description="How to watch Meridian Premier League matches live on TV, streaming, and radio."
+            sling:resourceType="kestros/commons/components/kestros-base-page">
+        <header jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
+        <main jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
+            <page-header
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    layout="hero">
+                <heading
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        headingText="Watch Live"
+                        headingType="h1"/>
+                <subtitle
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="Every match, every goal. Live on TV, streaming, and radio."/>
+            </page-header>
+
+            <!-- MPL Stream -->
+            <streaming-section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section">
+                <heading
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        headingText="MPL Stream"
+                        headingType="h2"/>
+                <desc
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="The league's official streaming platform. Watch every match live or on-demand with extended highlights available within 30 minutes of full-time. Annual pass: $99. Monthly: $12.99."/>
+                <features
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="Full 90-match season live and on-demand. Multi-camera angles. In-match stats overlay. Compatible with all major devices and smart TVs."/>
+            </streaming-section>
+
+            <!-- TV -->
+            <tv-section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    layout="dark">
+                <heading
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        headingText="TV Coverage"
+                        headingType="h2"/>
+                <tv-grid
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/structure/grid">
+                    <column-1
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kestros/commons/components/content-area">
+                        <msn-heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                headingText="Meridian Sports Network"
+                                headingType="h4"/>
+                        <msn-text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="Live coverage of all Saturday 3pm fixtures plus Sunday featured matches. Pre-match build-up from 2:30pm with full post-match analysis."/>
+                    </column-1>
+                    <column-2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="kestros/commons/components/content-area">
+                        <highlights-heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/heading"
+                                headingText="MPL Weekly Highlights"
+                                headingType="h4"/>
+                        <highlights-text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="One-hour highlights package every Sunday at 9pm. All goals, key incidents, and expert analysis from the weekend's action."/>
+                    </column-2>
+                </tv-grid>
+            </tv-section>
+
+            <!-- Radio -->
+            <radio-section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section">
+                <heading
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        headingText="Radio"
+                        headingType="h2"/>
+                <radio-text
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="Meridian Radio Sport provides full live commentary on every fixture. Tune in for the Saturday afternoon phone-in from 5pm and weekday evening preview shows. Available on 97.4 FM and online."/>
+            </radio-section>
+
+            <!-- International -->
+            <international-section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    layout="dark">
+                <heading
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        headingText="International Coverage"
+                        headingType="h2"/>
+                <intl-text
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="MPL matches are broadcast in 14 territories worldwide through regional broadcast partners. The league's three-year broadcast deal, extended through 2028, includes enhanced digital streaming options and expanded international distribution. Check local listings for availability in your region."/>
+            </international-section>
+        </main>
+        <footer jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
+    </jcr:content>
+</jcr:root>

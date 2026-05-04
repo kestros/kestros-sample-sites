@@ -1,0 +1,42 @@
+[
+  {
+    "id": "msn-live",
+    "name": "Meridian Sports Network",
+    "type": "tv",
+    "description": "Live coverage of all Saturday 3pm fixtures plus Sunday featured matches. Pre-match build-up from 2:30pm, full post-match analysis.",
+    "schedule": "Saturdays 2:30pm, Sundays 4:00pm",
+    "coverage": "5 live matches per week"
+  },
+  {
+    "id": "mpl-streaming",
+    "name": "MPL Stream",
+    "type": "streaming",
+    "description": "The league's official streaming platform. Watch every match live or on-demand. Extended highlights within 30 minutes of full-time.",
+    "schedule": "All matches live",
+    "coverage": "Full 90-match season + all highlights"
+  },
+  {
+    "id": "meridian-radio",
+    "name": "Meridian Radio Sport",
+    "type": "radio",
+    "description": "Full live commentary on every fixture. Saturday afternoon phone-in from 5pm. Weekday evening preview shows.",
+    "schedule": "All matchdays",
+    "coverage": "Full audio commentary"
+  },
+  {
+    "id": "mpl-highlights",
+    "name": "MPL Weekly Highlights",
+    "type": "tv",
+    "description": "One-hour highlights package every Sunday evening. All goals, key incidents, and expert analysis from the weekend's action.",
+    "schedule": "Sundays 9:00pm",
+    "coverage": "Weekly round-up"
+  },
+  {
+    "id": "international",
+    "name": "International Distribution",
+    "type": "international",
+    "description": "MPL matches are broadcast in 14 territories worldwide through regional broadcast partners. Check local listings for availability.",
+    "schedule": "Varies by territory",
+    "coverage": "14 international territories"
+  }
+]

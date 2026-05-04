@@ -48,6 +48,21 @@
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation-item"
                         text="Players"/>
+                <nav-watch
+                        href="/content/sites/league-demo/watch.html"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation-item"
+                        text="Watch"/>
+                <nav-tickets
+                        href="/content/sites/league-demo/tickets.html"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation-item"
+                        text="Tickets"/>
+                <nav-shop
+                        href="/content/sites/league-demo/shop.html"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation-item"
+                        text="Shop"/>
                 <nav-about
                         href="/content/sites/league-demo/about.html"
                         jcr:primaryType="nt:unstructured"
