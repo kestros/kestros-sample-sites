@@ -47,17 +47,14 @@ public class TopScorersCardListDataSource extends BaseContainerSlingModelDataSou
 
       try {
         String name = player.getFirstName() + " " + player.getLastName();
-        // Card titleElement doesn't render through synthetic resource adaptation,
-        // so include name in description text where it actually shows.
         String goalsStr = player.getGoals() == 1 ? "1 goal" : player.getGoals() + " goals";
         String assistsStr = player.getAssists() == 1 ? "1 assist" : player.getAssists() + " assists";
         String appsStr = player.getAppearances() == 1 ? "1 app" : player.getAppearances() + " apps";
-        String desc = (i + 1) + ". " + name + " (" + teamName + ") -- "
-            + goalsStr + ", " + assistsStr + " in " + appsStr;
+        String desc = teamName + " | " + goalsStr + ", " + assistsStr + " in " + appsStr;
 
         cards.add(new KestrosCardImpl(
             desc,
-            new KestrosHeadingImpl(name,
+            new KestrosHeadingImpl((i + 1) + ". " + name,
                 "h3", this, "title", "scorer-title-" + i),
             null, null, this, "card", player.getId()));
       } catch (Exception ignored) {}

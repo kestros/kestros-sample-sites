@@ -37,10 +37,7 @@ public class NewsCardListDataSource extends BaseContainerSlingModelDataSource
     for (int i = 0; i < count; i++) {
       Article article = articles.get(i);
       try {
-        // Card titleElement doesn't render through synthetic adaptation,
-        // so put title at top of description so it actually shows.
         StringBuilder desc = new StringBuilder();
-        desc.append(article.getTitle()).append(" -- ");
         if (article.getCategory() != null) {
           desc.append(article.getCategory()).append(" | ").append(article.getDate()).append(" -- ");
         }

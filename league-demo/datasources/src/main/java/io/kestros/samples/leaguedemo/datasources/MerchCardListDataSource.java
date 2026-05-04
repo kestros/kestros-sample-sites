@@ -32,7 +32,7 @@ public class MerchCardListDataSource extends BaseContainerSlingModelDataSource
     for (int i = 0; i < leagueDataService.getMerchandise().size(); i++) {
       MerchItem item = leagueDataService.getMerchandise().get(i);
       try {
-        String desc = item.getName() + " -- $" + item.getPrice() + " " + item.getCategory()
+        String desc = "$" + item.getPrice() + " | " + item.getCategory()
             + " -- " + item.getDescription();
         cards.add(new KestrosCardImpl(
             desc,

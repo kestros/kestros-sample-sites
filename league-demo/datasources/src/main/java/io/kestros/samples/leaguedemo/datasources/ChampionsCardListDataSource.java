@@ -52,8 +52,8 @@ public class ChampionsCardListDataSource extends BaseContainerSlingModelDataSour
         }
 
         cards.add(new KestrosCardImpl(
-            season.getName() + " -- " + champion.getName() + " -- " + desc.toString(),
-            new KestrosHeadingImpl(season.getName() + " -- " + champion.getName(),
+            desc.toString(),
+            new KestrosHeadingImpl(season.getName() + " — " + champion.getName(),
                 "h3", this, "title", "champ-title-" + i),
             null, null, this, "card", "champ-" + season.getId()));
         i++;
