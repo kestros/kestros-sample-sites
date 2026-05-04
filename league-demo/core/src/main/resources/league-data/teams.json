@@ -12,7 +12,10 @@
     "primaryColor": "#1a3a6b",
     "secondaryColor": "#ffffff",
     "logoUrl": "",
-    "description": "The dominant force of modern MPL football. Two-time champions with the largest stadium in the league, Riverside Park is a fortress that few visiting sides relish visiting."
+    "description": "The dominant force of modern MPL football. Two-time champions with the largest stadium in the league, Riverside Park is a fortress that few visiting sides relish visiting.",
+    "venueAddress": "Riverside Park, 1 River Road, Riverside, MR2 1RP",
+    "surface": "Natural grass",
+    "venueOpened": 1924
   },
   {
     "id": "meridian-city",
@@ -27,7 +30,10 @@
     "primaryColor": "#6a1b9a",
     "secondaryColor": "#f5f5f5",
     "logoUrl": "",
-    "description": "The capital club and two-time champions. Playing out of the league's showpiece venue, Meridian Stadium, the Citizens combine technical quality with tactical sophistication under David Kowalski."
+    "description": "The capital club and two-time champions. Playing out of the league's showpiece venue, Meridian Stadium, the Citizens combine technical quality with tactical sophistication under David Kowalski.",
+    "venueAddress": "Meridian Stadium, Stadium Way, Meridian, MR1 3MS",
+    "surface": "Hybrid grass",
+    "venueOpened": 2008
   },
   {
     "id": "ashdown-athletic",
@@ -42,7 +48,10 @@
     "primaryColor": "#c62828",
     "secondaryColor": "#000000",
     "logoUrl": "",
-    "description": "The reigning champions. Ashdown's remarkable 2024-25 title run, masterminded by Sarah Mitchell, proved that ambition and coaching can overcome budget constraints."
+    "description": "The reigning champions. Ashdown's remarkable 2024-25 title run, masterminded by Sarah Mitchell, proved that ambition and coaching can overcome budget constraints.",
+    "venueAddress": "Ashdown Park, Oak Lane, Ashdown, MR4 2AP",
+    "surface": "Natural grass",
+    "venueOpened": 1938
   },
   {
     "id": "northside-united",
@@ -57,7 +66,10 @@
     "primaryColor": "#212121",
     "secondaryColor": "#ffffff",
     "logoUrl": "",
-    "description": "Former champions with the best defensive record in the league. The Magpies are built on organisation, discipline, and the partnership of Torres and Akimoto at centre-back."
+    "description": "Former champions with the best defensive record in the league. The Magpies are built on organisation, discipline, and the partnership of Torres and Akimoto at centre-back.",
+    "venueAddress": "Northern Ground, Tyne Street, Northside, MR3 5NG",
+    "surface": "Natural grass",
+    "venueOpened": 1912
   },
   {
     "id": "port-heights",
@@ -72,7 +84,10 @@
     "primaryColor": "#0277bd",
     "secondaryColor": "#ffd600",
     "logoUrl": "",
-    "description": "A proud coastal club with a passionate supporter base. The Dockers punch above their weight at Harbour Stadium and have a knack for producing exciting cup runs."
+    "description": "A proud coastal club with a passionate supporter base. The Dockers punch above their weight at Harbour Stadium and have a knack for producing exciting cup runs.",
+    "venueAddress": "Harbour Stadium, Dock Road, Port Heights, MR6 1HS",
+    "surface": "Natural grass",
+    "venueOpened": 1951
   },
   {
     "id": "queensbury-wrs",
@@ -87,7 +102,10 @@
     "primaryColor": "#2e7d32",
     "secondaryColor": "#ffffff",
     "logoUrl": "",
-    "description": "The Wanderers are never dull. Known for their attacking football and chaotic defending in equal measure, a trip to Wanderers Field guarantees entertainment."
+    "description": "The Wanderers are never dull. Known for their attacking football and chaotic defending in equal measure, a trip to Wanderers Field guarantees entertainment.",
+    "venueAddress": "Wanderers Field, Queens Road, Queensbury, MR5 4WF",
+    "surface": "Natural grass",
+    "venueOpened": 1930
   },
   {
     "id": "oakhill-fc",
@@ -102,7 +120,10 @@
     "primaryColor": "#e65100",
     "secondaryColor": "#1b5e20",
     "logoUrl": "",
-    "description": "A club on the rise under Rebecca Thornton. Strong set-piece routines and a promising academy have made the Oaks an increasingly tough proposition for opposition sides."
+    "description": "A club on the rise under Rebecca Thornton. Strong set-piece routines and a promising academy have made the Oaks an increasingly tough proposition for opposition sides.",
+    "venueAddress": "Oak Park, Hillside Avenue, Oakhill, MR7 2OP",
+    "surface": "Artificial 4G",
+    "venueOpened": 1962
   },
   {
     "id": "westbrook-rovers",
@@ -117,7 +138,10 @@
     "primaryColor": "#283593",
     "secondaryColor": "#ef5350",
     "logoUrl": "",
-    "description": "2020-21 champions and one of the league's founding members. The Rovers have endured a lean spell but showed glimpses of their quality with a stunning Week 12 victory over Riverside."
+    "description": "2020-21 champions and one of the league's founding members. The Rovers have endured a lean spell but showed glimpses of their quality with a stunning Week 12 victory over Riverside.",
+    "venueAddress": "Brook Lane, Canal Street, Westbrook, MR8 3BL",
+    "surface": "Natural grass",
+    "venueOpened": 1906
   },
   {
     "id": "southshore-united",
@@ -132,7 +156,10 @@
     "primaryColor": "#00838f",
     "secondaryColor": "#ffffff",
     "logoUrl": "",
-    "description": "The youngest club in the league, battling to establish themselves at the top level. Shore Park may be the smallest ground, but the atmosphere on matchday rivals anything in the MPL."
+    "description": "The youngest club in the league, battling to establish themselves at the top level. Shore Park may be the smallest ground, but the atmosphere on matchday rivals anything in the MPL.",
+    "venueAddress": "Shore Park, Promenade Road, Southshore, MR9 1SP",
+    "surface": "Natural grass",
+    "venueOpened": 1972
   },
   {
     "id": "stone-valley",
@@ -147,6 +174,9 @@
     "primaryColor": "#4e342e",
     "secondaryColor": "#ffb74d",
     "logoUrl": "",
-    "description": "The oldest club in the MPL, founded in 1886. The Quarrymen's Valley Ground is steeped in history, and their fans are among the most loyal in the division despite recent struggles."
+    "description": "The oldest club in the MPL, founded in 1886. The Quarrymen's Valley Ground is steeped in history, and their fans are among the most loyal in the division despite recent struggles.",
+    "venueAddress": "Valley Ground, Quarry Lane, Stone Valley, MR10 4VG",
+    "surface": "Natural grass",
+    "venueOpened": 1899
   }
 ]
