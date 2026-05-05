@@ -23,11 +23,15 @@ import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 public class NewsCardListDataSource extends BaseContainerSlingModelDataSource
     implements KestrosCardList {
 
-  private static final int MAX_ARTICLES = 4;
+  private static final int DEFAULT_MAX_ARTICLES = 4;
 
   @OSGiService
   @org.apache.sling.models.annotations.Optional
   private LeagueDataService leagueDataService;
+
+  private int getMaxArticles() {
+    return getResource().getValueMap().get("maxRows", DEFAULT_MAX_ARTICLES);
+  }
 
   @Nonnull
   @Override
@@ -36,7 +40,7 @@ public class NewsCardListDataSource extends BaseContainerSlingModelDataSource
     if (leagueDataService == null) return cards;
 
     List<Article> articles = leagueDataService.getArticles();
-    int count = Math.min(articles.size(), MAX_ARTICLES);
+    int count = Math.min(articles.size(), getMaxArticles());
 
     for (int i = 0; i < count; i++) {
       Article article = articles.get(i);

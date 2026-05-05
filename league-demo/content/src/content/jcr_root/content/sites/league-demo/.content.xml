@@ -181,7 +181,8 @@
                 <news-cards
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/lists/card-list"
-                        kes:datasource="league-demo-news"/>
+                        kes:datasource="league-demo-news"
+                        maxRows="3"/>
                 <news-link
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/link"
@@ -236,7 +237,8 @@
                         <scorers-cards
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="/libs/kestros/commons/components/lists/card-list"
-                                kes:datasource="league-demo-top-scorers"/>
+                                kes:datasource="league-demo-top-scorers"
+                                maxRows="3"/>
                         <stats-link
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="/libs/kestros/commons/components/content/link"

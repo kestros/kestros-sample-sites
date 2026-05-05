@@ -3,5 +3,20 @@
   "jcr:title": "League News",
   "group": "League Demo",
   "classPath": "io.kestros.samples.leaguedemo.datasources.NewsCardListDataSource",
-  "container": true
+  "container": true,
+  "edit": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "kestros/cms2/dialog",
+    "content": {
+      "jcr:primaryType": "nt:unstructured",
+      "maxRows": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/cms2/fields/general/numberfield",
+        "label": "Max Articles",
+        "propertyName": "maxRows",
+        "description": "Number of news articles to show. Leave blank for the default (4).",
+        "defaultValue": "4"
+      }
+    }
+  }
 }

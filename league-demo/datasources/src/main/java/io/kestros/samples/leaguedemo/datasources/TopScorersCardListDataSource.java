@@ -26,11 +26,15 @@ import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 public class TopScorersCardListDataSource extends BaseContainerSlingModelDataSource
     implements KestrosCardList {
 
-  private static final int MAX_PLAYERS = 5;
+  private static final int DEFAULT_MAX_PLAYERS = 5;
 
   @OSGiService
   @org.apache.sling.models.annotations.Optional
   private LeagueDataService leagueDataService;
+
+  private int getMaxPlayers() {
+    return getResource().getValueMap().get("maxRows", DEFAULT_MAX_PLAYERS);
+  }
 
   @Nonnull
   @Override
@@ -41,7 +45,7 @@ public class TopScorersCardListDataSource extends BaseContainerSlingModelDataSou
     List<Player> topScorers = leagueDataService.getPlayers().stream()
         .filter(p -> p.getGoals() > 0)
         .sorted(Comparator.comparingInt(Player::getGoals).reversed())
-        .limit(MAX_PLAYERS)
+        .limit(getMaxPlayers())
         .collect(Collectors.toList());
 
     for (int i = 0; i < topScorers.size(); i++) {
