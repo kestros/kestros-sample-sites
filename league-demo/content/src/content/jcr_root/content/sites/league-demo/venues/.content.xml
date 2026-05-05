@@ -50,6 +50,10 @@
                         sling:resourceType="/libs/kestros/commons/components/content/heading"
                         headingText="Visiting a Venue"
                         headingType="h2"/>
+                <info-intro
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="Whether it's your first match or your hundredth, every MPL ground welcomes new and returning supporters. The basics below apply across all ten clubs -- check the individual club's website for ground-specific details on hospitality, family sections, and away-end allocations."/>
                 <info-grid
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/structure/grid">
