@@ -35,6 +35,10 @@
                         sling:resourceType="/libs/kestros/commons/components/content/heading"
                         headingText="Season at a Glance"
                         headingType="h2"/>
+                <subtitle
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="The numbers behind the 2025-26 season so far."/>
                 <glance-grid
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/structure/grid">
@@ -92,6 +96,10 @@
                         sling:resourceType="/libs/kestros/commons/components/content/heading"
                         headingText="Season Leaders"
                         headingType="h2"/>
+                <subtitle
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="Top five for the Golden Boot, and the same for assists."/>
                 <leaders-grid
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/structure/grid"
