@@ -42,7 +42,7 @@
                 <recent-intro
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="The 10 most recent results from this season."/>
+                        kes:datasource="league-demo-season-recent-intro"/>
                 <recent-table
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/table"
