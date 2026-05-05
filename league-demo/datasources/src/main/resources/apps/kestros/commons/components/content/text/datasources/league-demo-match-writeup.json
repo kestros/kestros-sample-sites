@@ -1,0 +1,6 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:title": "Match Writeup",
+  "group": "League Demo",
+  "classPath": "io.kestros.samples.leaguedemo.datasources.MatchWriteupTextDataSource"
+}
