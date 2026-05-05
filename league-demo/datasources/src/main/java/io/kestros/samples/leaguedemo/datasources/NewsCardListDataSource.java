@@ -11,7 +11,9 @@ import io.kestros.cms.components.basic.core.content.image.KestrosImageImpl;
 import io.kestros.samples.league.api.models.Article;
 import io.kestros.samples.league.api.services.LeagueDataService;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 import javax.annotation.Nonnull;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.sling.api.SlingHttpServletRequest;
@@ -39,7 +41,14 @@ public class NewsCardListDataSource extends BaseContainerSlingModelDataSource
     List<KestrosCard> cards = new ArrayList<>();
     if (leagueDataService == null) return cards;
 
-    List<Article> articles = leagueDataService.getArticles();
+    // Surface visually-richer articles first (those with hero imagery), then most recent.
+    // Prevents the homepage card-list from showing imageless cards next to imaged ones.
+    List<Article> articles = leagueDataService.getArticles().stream()
+        .sorted(Comparator
+            .comparing((Article a) -> StringUtils.isNotBlank(a.getImageUrl()))
+            .reversed()
+            .thenComparing(Article::getDate, Comparator.nullsLast(Comparator.reverseOrder())))
+        .collect(Collectors.toList());
     int count = Math.min(articles.size(), getMaxArticles());
 
     for (int i = 0; i < count; i++) {
