@@ -35,6 +35,10 @@
                         sling:resourceType="/libs/kestros/commons/components/content/heading"
                         headingText="General Enquiries"
                         headingType="h2"/>
+                <general-intro
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="The MPL central office handles media accreditation, broadcast partnerships, fixture queries, and all general correspondence. The office responds to most messages within two business days."/>
                 <contact-grid
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/structure/grid">
