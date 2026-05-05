@@ -127,6 +127,10 @@
                         sling:resourceType="/libs/kestros/commons/components/content/heading"
                         headingText="Match Center"
                         headingType="h2"/>
+                <subtitle
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="The latest from Matchweek 12, plus the fixtures coming up this weekend."/>
                 <match-center-grid
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/structure/grid"
@@ -178,6 +182,10 @@
                         sling:resourceType="/libs/kestros/commons/components/content/heading"
                         headingText="League News"
                         headingType="h2"/>
+                <subtitle
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="Top stories, match analysis, and the latest from across the MPL."/>
                 <news-cards
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/lists/card-list"
@@ -200,6 +208,10 @@
                         sling:resourceType="/libs/kestros/commons/components/content/heading"
                         headingText="League Pulse"
                         headingType="h2"/>
+                <subtitle
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="Where the title race stands and who's leading the Golden Boot."/>
                 <pulse-grid
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/structure/grid"
@@ -286,6 +298,10 @@
                         sling:resourceType="/libs/kestros/commons/components/content/heading"
                         headingText="Official Partners"
                         headingType="h2"/>
+                <subtitle
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="The partners who make the Meridian Premier League possible."/>
                 <sponsors-cards
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/lists/card-list"
