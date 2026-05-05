@@ -302,6 +302,7 @@
                 <footer-grid
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/structure/grid"
+                        layout="25-25-25-25"
                 >
                     <column-1
                             jcr:primaryType="nt:unstructured"
