@@ -1,0 +1,6 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:title": "Player Name",
+  "group": "League Demo",
+  "classPath": "io.kestros.samples.leaguedemo.datasources.PlayerNameHeadingDataSource"
+}
