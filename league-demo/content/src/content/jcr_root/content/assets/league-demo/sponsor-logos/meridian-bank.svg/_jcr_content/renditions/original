@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+  <rect width="600" height="200" fill="#ffffff"/>
+  
+  <path d="M 90 55.0 L 135.0 55.0 L 135.0 100 Q 135.0 130.0 90 145.0 Q 45.0 130.0 45.0 100 L 45.0 55.0 Z"
+        fill="#c9a227" stroke="#0d2e5e" stroke-width="3"/>
+  <path d="M 53.0 92 L 127.0 92 L 127.0 102 L 53.0 102 Z" fill="#0d2e5e"/>
+  <text x="175" y="100" font-family="Helvetica, Arial, sans-serif" font-size="48"
+        font-weight="900" fill="#0d2e5e" letter-spacing="-1">MERIDIAN</text>
+  <text x="175" y="125" font-family="Helvetica, Arial, sans-serif" font-size="18"
+        font-weight="500" fill="#0d2e5e" letter-spacing="4" opacity="0.85">BANK</text>
+  
+  <rect x="175" y="135" width="190" height="22" rx="4" fill="#c9a227"/>
+  <text x="270" y="151" font-family="Helvetica, Arial, sans-serif" font-size="12"
+        font-weight="700" fill="#0d2e5e" text-anchor="middle" letter-spacing="2">EST. 1894</text>
+</svg>

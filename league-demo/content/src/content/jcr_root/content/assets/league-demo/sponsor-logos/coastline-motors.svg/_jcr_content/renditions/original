@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+  <rect width="600" height="200" fill="#ffffff"/>
+  
+  <circle cx="90" cy="100" r="45.0" fill="#102a43" stroke="#e63946" stroke-width="4"/>
+  <circle cx="90" cy="100" r="15.0" fill="#e63946"/>
+  <line x1="90" y1="59.0" x2="90" y2="141.0" stroke="#e63946" stroke-width="3"/>
+  <line x1="49.0" y1="100" x2="131.0" y2="100" stroke="#e63946" stroke-width="3"/>
+  <line x1="60.0" y1="70.0" x2="120.0" y2="130.0" stroke="#e63946" stroke-width="3"/>
+  <line x1="60.0" y1="130.0" x2="120.0" y2="70.0" stroke="#e63946" stroke-width="3"/>
+  <text x="175" y="100" font-family="Helvetica, Arial, sans-serif" font-size="48"
+        font-weight="900" fill="#102a43" letter-spacing="-1">COASTLINE</text>
+  <text x="175" y="125" font-family="Helvetica, Arial, sans-serif" font-size="18"
+        font-weight="500" fill="#102a43" letter-spacing="4" opacity="0.85">MOTORS</text>
+  
+</svg>

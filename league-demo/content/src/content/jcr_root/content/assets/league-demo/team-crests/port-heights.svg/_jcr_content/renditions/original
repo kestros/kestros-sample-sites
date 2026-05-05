@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="gportheights" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0277bd" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#014167" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+  <!-- Shield outer border -->
+  <path d="M 60 60 L 340 60 L 340 220 Q 340 320 200 370 Q 60 320 60 220 Z"
+        fill="#ffd600" stroke="#ffd600" stroke-width="4"/>
+  <!-- Shield inner -->
+  <path d="M 75 75 L 325 75 L 325 220 Q 325 310 200 355 Q 75 310 75 220 Z"
+        fill="url(#gportheights)" stroke="#ffd600" stroke-width="2"/>
+  <!-- Top stripe band -->
+  <path d="M 75 130 L 325 130 L 325 165 L 75 165 Z"
+        fill="#ffd600" opacity="0.85"/>
+  <!-- Founded year on stripe -->
+  <text x="200" y="156" font-family="Georgia, serif" font-size="22" font-weight="bold"
+        fill="#0277bd" text-anchor="middle">EST. 1919</text>
+  <!-- Short name -->
+  <text x="200" y="245" font-family="Impact, 'Arial Black', sans-serif" font-size="78" font-weight="900"
+        fill="#ffd600" text-anchor="middle" letter-spacing="2">PTH</text>
+  <!-- Bottom decoration: city -->
+  <text x="200" y="305" font-family="Georgia, serif" font-size="18" font-weight="bold"
+        fill="#ffd600" text-anchor="middle" letter-spacing="3">PORT HEIGHTS</text>
+  <!-- Football accent at top -->
+  <circle cx="200" cy="100" r="14" fill="#ffd600" stroke="#0277bd" stroke-width="2"/>
+  <path d="M 195 92 L 205 92 L 208 100 L 205 108 L 195 108 L 192 100 Z"
+        fill="#0277bd" opacity="0.7"/>
+</svg>

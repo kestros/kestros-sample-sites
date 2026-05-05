@@ -13,4 +13,6 @@ public interface Sponsor {
     String getWebsite();
 
     String getDescription();
+
+    String getLogoUrl();
 }

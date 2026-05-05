@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+  <rect width="600" height="200" fill="#ffffff"/>
+  
+  <polygon points="45.0,145.0 90,55.0 135.0,145.0 120.0,145.0 90,77.5 60.0,145.0" fill="#ff3b00"/>
+  <polygon points="60.0,145.0 90,100 120.0,145.0" fill="#ff3b00" opacity="0.6"/>
+  <text x="175" y="100" font-family="Helvetica, Arial, sans-serif" font-size="48"
+        font-weight="900" fill="#000000" letter-spacing="-1">APEX</text>
+  <text x="175" y="125" font-family="Helvetica, Arial, sans-serif" font-size="18"
+        font-weight="500" fill="#000000" letter-spacing="4" opacity="0.85">SPORTSWEAR</text>
+  
+</svg>

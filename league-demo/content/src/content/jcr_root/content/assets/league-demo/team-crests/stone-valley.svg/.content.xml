@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:kes="http://kestros.io/kes/1.0"
+    jcr:primaryType="kes:Asset"
+    jcr:uuid="5a8f85ad-8c5c-4669-b67a-7c4533e61fe1">
+    <jcr:content
+        jcr:description="\0"
+        jcr:lastModified="{Date}2026-05-04T22:58:10.643-04:00"
+        jcr:lastModifiedBy="admin"
+        jcr:mimeType="image/svg+xml"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="stone-valley.svg"
+        kes:lastModified="{Date}2026-05-04T22:58:10.643-04:00"
+        kes:lastModifiedBy="admin"
+        fileSize="{Long}1650">
+        <renditions/>
+        <metadata/>
+    </jcr:content>
+</jcr:root>

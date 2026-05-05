@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+  <rect width="600" height="200" fill="#ffffff"/>
+  
+  <circle cx="90" cy="130.0" r="6" fill="#26c6da"/>
+  <path d="M 78 122.5 Q 90 100, 102 122.5" stroke="#26c6da" stroke-width="4" fill="none"/>
+  <path d="M 68 115.0 Q 90 77.5, 112 115.0" stroke="#26c6da" stroke-width="4" fill="none" opacity="0.7"/>
+  <path d="M 58 100 Q 90 55.0, 122 100" stroke="#26c6da" stroke-width="4" fill="none" opacity="0.4"/>
+  <text x="175" y="100" font-family="Helvetica, Arial, sans-serif" font-size="48"
+        font-weight="900" fill="#1565c0" letter-spacing="-1">NOVA</text>
+  <text x="175" y="125" font-family="Helvetica, Arial, sans-serif" font-size="18"
+        font-weight="500" fill="#1565c0" letter-spacing="4" opacity="0.85">TELECOM</text>
+  
+</svg>

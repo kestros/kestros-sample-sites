@@ -5,7 +5,8 @@
     "tier": "title",
     "category": "Title Partner",
     "website": "#",
-    "description": "Official banking partner and title sponsor of the Meridian Premier League since 2019."
+    "description": "Official banking partner and title sponsor of the Meridian Premier League since 2019.",
+    "logoUrl": "/content/assets/league-demo/sponsor-logos/meridian-bank.svg"
   },
   {
     "id": "apex-sports",
@@ -13,7 +14,8 @@
     "tier": "official",
     "category": "Official Kit Supplier",
     "website": "#",
-    "description": "Providing match balls and official referee kits for all MPL fixtures."
+    "description": "Providing match balls and official referee kits for all MPL fixtures.",
+    "logoUrl": "/content/assets/league-demo/sponsor-logos/apex-sports.svg"
   },
   {
     "id": "meridian-broadcast",
@@ -21,7 +23,8 @@
     "tier": "official",
     "category": "Official Broadcaster",
     "website": "#",
-    "description": "Live coverage of every MPL match, plus highlights, analysis, and magazine programming."
+    "description": "Live coverage of every MPL match, plus highlights, analysis, and magazine programming.",
+    "logoUrl": "/content/assets/league-demo/sponsor-logos/meridian-broadcast.svg"
   },
   {
     "id": "greenfield-energy",
@@ -29,7 +32,8 @@
     "tier": "official",
     "category": "Sustainability Partner",
     "website": "#",
-    "description": "Powering all ten MPL stadiums with 100% renewable energy."
+    "description": "Powering all ten MPL stadiums with 100% renewable energy.",
+    "logoUrl": "/content/assets/league-demo/sponsor-logos/greenfield-energy.svg"
   },
   {
     "id": "coastline-motors",
@@ -37,7 +41,8 @@
     "tier": "partner",
     "category": "Official Automotive Partner",
     "website": "#",
-    "description": "Official vehicle partner providing player and staff transport across the league."
+    "description": "Official vehicle partner providing player and staff transport across the league.",
+    "logoUrl": "/content/assets/league-demo/sponsor-logos/coastline-motors.svg"
   },
   {
     "id": "highland-brew",
@@ -45,7 +50,8 @@
     "tier": "partner",
     "category": "Official Beer Partner",
     "website": "#",
-    "description": "The official beer of the MPL, available at all league venues."
+    "description": "The official beer of the MPL, available at all league venues.",
+    "logoUrl": "/content/assets/league-demo/sponsor-logos/highland-brew.svg"
   },
   {
     "id": "nova-telecom",
@@ -53,7 +59,8 @@
     "tier": "partner",
     "category": "Technology Partner",
     "website": "#",
-    "description": "Providing stadium connectivity and the MPL's official mobile app platform."
+    "description": "Providing stadium connectivity and the MPL's official mobile app platform.",
+    "logoUrl": "/content/assets/league-demo/sponsor-logos/nova-telecom.svg"
   },
   {
     "id": "summit-insurance",
@@ -61,6 +68,7 @@
     "tier": "partner",
     "category": "Insurance Partner",
     "website": "#",
-    "description": "Official insurance partner of the Meridian Premier League."
+    "description": "Official insurance partner of the Meridian Premier League.",
+    "logoUrl": "/content/assets/league-demo/sponsor-logos/summit-insurance.svg"
   }
 ]

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:kes="http://kestros.io/kes/1.0"
+    jcr:primaryType="kes:Asset"
+    jcr:uuid="d0df9eb3-9bc5-4434-a564-a99609bb9289">
+    <jcr:content
+        jcr:description="\0"
+        jcr:lastModified="{Date}2026-05-04T22:57:22.007-04:00"
+        jcr:lastModifiedBy="admin"
+        jcr:mimeType="image/jpeg"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="season-halfway-awards.jpg"
+        kes:lastModified="{Date}2026-05-04T22:57:22.007-04:00"
+        kes:lastModifiedBy="admin"
+        fileSize="{Long}93195">
+        <renditions/>
+        <metadata/>
+    </jcr:content>
+</jcr:root>

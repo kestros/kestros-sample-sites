@@ -1,15 +1,19 @@
 package io.kestros.samples.leaguedemo.datasources;
 
+import io.kestros.cms.components.basic.api.content.AnchorTarget;
 import io.kestros.cms.components.basic.api.content.KestrosCard;
+import io.kestros.cms.components.basic.api.content.KestrosImage;
 import io.kestros.cms.components.basic.api.lists.KestrosCardList;
 import io.kestros.cms.components.basic.core.BaseContainerSlingModelDataSource;
 import io.kestros.cms.components.basic.core.content.card.KestrosCardImpl;
 import io.kestros.cms.components.basic.core.content.heading.KestrosHeadingImpl;
+import io.kestros.cms.components.basic.core.content.image.KestrosImageImpl;
 import io.kestros.samples.league.api.models.Sponsor;
 import io.kestros.samples.league.api.services.LeagueDataService;
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.Nonnull;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
@@ -32,11 +36,21 @@ public class SponsorsCardListDataSource extends BaseContainerSlingModelDataSourc
     for (int i = 0; i < leagueDataService.getSponsors().size(); i++) {
       Sponsor sponsor = leagueDataService.getSponsors().get(i);
       try {
+        KestrosImage image = null;
+        if (StringUtils.isNotBlank(sponsor.getLogoUrl())) {
+          try {
+            image = new KestrosImageImpl(
+                sponsor.getLogoUrl(), sponsor.getName(), null, null,
+                null, null, null, AnchorTarget.SAME_WINDOW,
+                this, "image", "imageElement", null);
+          } catch (Exception ignored) {}
+        }
+
         cards.add(new KestrosCardImpl(
             sponsor.getCategory() + " -- " + sponsor.getDescription(),
             new KestrosHeadingImpl(sponsor.getName(),
-                "h4", this, "title", "sponsor-title-" + i),
-            null, null, this, "card", sponsor.getId()));
+                "h4", this, "title", "titleElement"),
+            image, null, this, "card", sponsor.getId()));
       } catch (Exception ignored) {}
     }
     return cards;

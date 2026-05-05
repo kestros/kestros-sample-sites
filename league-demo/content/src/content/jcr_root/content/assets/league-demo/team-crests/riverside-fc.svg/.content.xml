@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:kes="http://kestros.io/kes/1.0"
+    jcr:primaryType="kes:Asset"
+    jcr:uuid="5b580654-1d43-4688-b1ae-7f268ce463ab">
+    <jcr:content
+        jcr:description="\0"
+        jcr:lastModified="{Date}2026-05-04T22:58:10.587-04:00"
+        jcr:lastModifiedBy="admin"
+        jcr:mimeType="image/svg+xml"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="riverside-fc.svg"
+        kes:lastModified="{Date}2026-05-04T22:58:10.587-04:00"
+        kes:lastModifiedBy="admin"
+        fileSize="{Long}1647">
+        <renditions/>
+        <metadata/>
+    </jcr:content>
+</jcr:root>
