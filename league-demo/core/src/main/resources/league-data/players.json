@@ -2398,5 +2398,20 @@
     "yellowCards": 0,
     "redCards": 0,
     "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
+  },
+  {
+    "id": "luca-mendez",
+    "firstName": "Luca",
+    "lastName": "Mendez",
+    "position": "Forward",
+    "number": 9,
+    "teamId": "ashdown-athletic",
+    "nationality": "Argentina",
+    "goals": 14,
+    "assists": 5,
+    "appearances": 18,
+    "yellowCards": 2,
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   }
 ]
