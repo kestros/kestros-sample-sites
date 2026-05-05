@@ -141,12 +141,18 @@
                                 sling:resourceType="/libs/kestros/commons/components/content/heading"
                                 headingText="Week 12 Results"
                                 headingType="h3"/>
+                        <!--
                         <results-table
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="/libs/kestros/commons/components/content/table"
                                 variations="[table-striped,table-hover]"
                                 kes:datasource="league-demo-recent-results"
                                 maxRows="3"/>
+                        -->
+                        <results-table-todo
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="TODO uncomment table"/>
                     </column-1>
                     <column-2
                             jcr:primaryType="nt:unstructured"
@@ -157,12 +163,18 @@
                                 sling:resourceType="/libs/kestros/commons/components/content/heading"
                                 headingText="Week 13 Fixtures"
                                 headingType="h3"/>
+                        <!--
                         <upcoming-table
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="/libs/kestros/commons/components/content/table"
                                 variations="[table-striped,table-hover]"
                                 kes:datasource="league-demo-upcoming"
                                 maxRows="3"/>
+                        -->
+                        <upcoming-table-todo
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="TODO uncomment table"/>
                     </column-2>
                 </match-center-grid>
             </match-center-section>
@@ -214,11 +226,17 @@
                                 sling:resourceType="/libs/kestros/commons/components/content/heading"
                                 headingText="Standings"
                                 headingType="h3"/>
+                        <!--
                         <standings-table
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="/libs/kestros/commons/components/content/table"
                                 variations="[table-striped,table-hover]"
                                 kes:datasource="league-demo-top-five-standings"/>
+                        -->
+                        <standings-table-todo
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/kestros/commons/components/content/text"
+                                text="TODO uncomment table"/>
                         <full-table-link
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="/libs/kestros/commons/components/content/link"
