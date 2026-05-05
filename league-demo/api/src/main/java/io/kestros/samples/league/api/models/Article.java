@@ -15,4 +15,6 @@ public interface Article {
     String getCategory();
 
     List<String> getTags();
+
+    String getImageUrl();
 }

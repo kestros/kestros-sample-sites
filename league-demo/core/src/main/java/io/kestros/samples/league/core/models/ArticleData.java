@@ -14,6 +14,7 @@ public class ArticleData implements Article {
     private String date;
     private String category;
     private List<String> tags = new ArrayList<>();
+    private String imageUrl;
 
     @Override
     public String getId() { return id; }
@@ -38,4 +39,8 @@ public class ArticleData implements Article {
     @Override
     public List<String> getTags() { return tags; }
     public void setTags(List<String> tags) { this.tags = tags; }
+
+    @Override
+    public String getImageUrl() { return imageUrl; }
+    public void setImageUrl(String imageUrl) { this.imageUrl = imageUrl; }
 }
