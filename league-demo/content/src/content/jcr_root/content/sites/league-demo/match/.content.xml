@@ -51,6 +51,16 @@
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/table"
                         kes:datasource="league-demo-match-stats"/>
+                <results-cta
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/button-group">
+                    <results-link
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/kestros/commons/components/content/button"
+                            variations="[btn-warning]"
+                            text="Back to All Results"
+                            href="/content/sites/league-demo/matches.html"/>
+                </results-cta>
             </details-section>
         </main>
         <footer jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
