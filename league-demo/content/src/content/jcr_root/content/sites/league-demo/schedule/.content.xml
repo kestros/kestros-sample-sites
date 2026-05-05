@@ -25,6 +25,14 @@
                         sling:resourceType="/libs/kestros/commons/components/content/text"
                         text="Every upcoming fixture from Matchweek 13 through the end of the season."/>
             </page-header>
+            <intro-section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section">
+                <intro-text
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="The Meridian Premier League runs an 18-matchweek double round-robin format — every club plays each rival twice, once at home and once away. Five fixtures are played each matchweek so every side is in action on the same day. The remaining 30 fixtures of the 2025-26 season are listed below."/>
+            </intro-section>
             <table-section
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="/libs/kestros/commons/components/structure/section">
@@ -33,6 +41,10 @@
                         sling:resourceType="/libs/kestros/commons/components/content/heading"
                         headingText="Upcoming Fixtures"
                         headingType="h2"/>
+                <subtitle
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="Matchweek 13 through Matchweek 18. Times are local."/>
                 <fixtures-table
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/table"
