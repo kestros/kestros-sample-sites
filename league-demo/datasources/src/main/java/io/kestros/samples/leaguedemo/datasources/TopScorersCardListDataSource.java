@@ -1,10 +1,13 @@
 package io.kestros.samples.leaguedemo.datasources;
 
+import io.kestros.cms.components.basic.api.content.AnchorTarget;
 import io.kestros.cms.components.basic.api.content.KestrosCard;
+import io.kestros.cms.components.basic.api.content.KestrosImage;
 import io.kestros.cms.components.basic.api.lists.KestrosCardList;
 import io.kestros.cms.components.basic.core.BaseContainerSlingModelDataSource;
 import io.kestros.cms.components.basic.core.content.card.KestrosCardImpl;
 import io.kestros.cms.components.basic.core.content.heading.KestrosHeadingImpl;
+import io.kestros.cms.components.basic.core.content.image.KestrosImageImpl;
 import io.kestros.samples.league.api.models.Player;
 import io.kestros.samples.league.api.models.Team;
 import io.kestros.samples.league.api.services.LeagueDataService;
@@ -13,6 +16,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 import javax.annotation.Nonnull;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
@@ -52,11 +56,21 @@ public class TopScorersCardListDataSource extends BaseContainerSlingModelDataSou
         String appsStr = player.getAppearances() == 1 ? "1 app" : player.getAppearances() + " apps";
         String desc = teamName + " | " + goalsStr + ", " + assistsStr + " in " + appsStr;
 
+        KestrosImage image = null;
+        if (StringUtils.isNotBlank(player.getImageUrl())) {
+          try {
+            image = new KestrosImageImpl(
+                player.getImageUrl(), name, null, null,
+                null, null, null, AnchorTarget.SAME_WINDOW,
+                this, "image", "imageElement", null);
+          } catch (Exception ignored) {}
+        }
+
         cards.add(new KestrosCardImpl(
             desc,
             new KestrosHeadingImpl((i + 1) + ". " + name,
-                "h3", this, "title", "scorer-title-" + i),
-            null, null, this, "card", player.getId()));
+                "h3", this, "title", "titleElement"),
+            image, null, this, "card", player.getId()));
       } catch (Exception ignored) {}
     }
     return cards;

@@ -11,7 +11,8 @@
     "assists": 0,
     "appearances": 12,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "malik-almeida",
@@ -25,7 +26,8 @@
     "assists": 0,
     "appearances": 9,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "sami-cole",
@@ -39,7 +41,8 @@
     "assists": 2,
     "appearances": 8,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "robert-ross",
@@ -53,7 +56,8 @@
     "assists": 0,
     "appearances": 11,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "nabil-bahi",
@@ -67,7 +71,8 @@
     "assists": 2,
     "appearances": 8,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "emil-popescu",
@@ -81,7 +86,8 @@
     "assists": 1,
     "appearances": 11,
     "yellowCards": 4,
-    "redCards": 1
+    "redCards": 1,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "ben-volkov",
@@ -95,7 +101,8 @@
     "assists": 2,
     "appearances": 5,
     "yellowCards": 3,
-    "redCards": 1
+    "redCards": 1,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "tomas-eriksen",
@@ -109,7 +116,8 @@
     "assists": 7,
     "appearances": 12,
     "yellowCards": 2,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "oumar-adomako",
@@ -123,7 +131,8 @@
     "assists": 3,
     "appearances": 6,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "oscar-larsson",
@@ -137,7 +146,8 @@
     "assists": 4,
     "appearances": 10,
     "yellowCards": 2,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "max-laurent",
@@ -151,7 +161,8 @@
     "assists": 3,
     "appearances": 5,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "sami-greer",
@@ -165,7 +176,8 @@
     "assists": 4,
     "appearances": 11,
     "yellowCards": 2,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "marcus-fletcher",
@@ -179,7 +191,8 @@
     "assists": 3,
     "appearances": 12,
     "yellowCards": 2,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "axel-harrington",
@@ -193,7 +206,8 @@
     "assists": 1,
     "appearances": 6,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "jamie-green",
@@ -207,7 +221,8 @@
     "assists": 0,
     "appearances": 6,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "daniel-rossi",
@@ -221,7 +236,8 @@
     "assists": 2,
     "appearances": 9,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "james-cooper",
@@ -235,7 +251,8 @@
     "assists": 0,
     "appearances": 12,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "filip-clarke",
@@ -249,7 +266,8 @@
     "assists": 0,
     "appearances": 8,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "patrick-stone",
@@ -263,7 +281,8 @@
     "assists": 2,
     "appearances": 6,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "charlie-mitchell",
@@ -277,7 +296,8 @@
     "assists": 1,
     "appearances": 7,
     "yellowCards": 2,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "peter-fernandez",
@@ -291,7 +311,8 @@
     "assists": 0,
     "appearances": 10,
     "yellowCards": 0,
-    "redCards": 1
+    "redCards": 1,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "george-garcia",
@@ -305,7 +326,8 @@
     "assists": 0,
     "appearances": 11,
     "yellowCards": 1,
-    "redCards": 1
+    "redCards": 1,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "jan-hamilton",
@@ -319,7 +341,8 @@
     "assists": 1,
     "appearances": 8,
     "yellowCards": 3,
-    "redCards": 1
+    "redCards": 1,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "liam-chen",
@@ -333,7 +356,8 @@
     "assists": 8,
     "appearances": 12,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "rafael-davies",
@@ -347,7 +371,8 @@
     "assists": 4,
     "appearances": 9,
     "yellowCards": 3,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "gael-muller",
@@ -361,7 +386,8 @@
     "assists": 1,
     "appearances": 11,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "theo-ono",
@@ -375,7 +401,8 @@
     "assists": 0,
     "appearances": 12,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "craig-dubois",
@@ -389,7 +416,8 @@
     "assists": 1,
     "appearances": 7,
     "yellowCards": 3,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "carlos-vega",
@@ -403,7 +431,8 @@
     "assists": 4,
     "appearances": 12,
     "yellowCards": 2,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "peter-el-khoury",
@@ -417,7 +446,8 @@
     "assists": 2,
     "appearances": 12,
     "yellowCards": 2,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "danny-green",
@@ -431,7 +461,8 @@
     "assists": 0,
     "appearances": 5,
     "yellowCards": 2,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "jake-hassan",
@@ -445,7 +476,8 @@
     "assists": 2,
     "appearances": 9,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "lucas-pereira",
@@ -459,7 +491,8 @@
     "assists": 0,
     "appearances": 12,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "kai-santos",
@@ -473,7 +506,8 @@
     "assists": 0,
     "appearances": 7,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "chris-horvat",
@@ -487,7 +521,8 @@
     "assists": 2,
     "appearances": 5,
     "yellowCards": 2,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "theo-tanaka",
@@ -501,7 +536,8 @@
     "assists": 1,
     "appearances": 6,
     "yellowCards": 4,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "alex-taylor",
@@ -515,7 +551,8 @@
     "assists": 0,
     "appearances": 7,
     "yellowCards": 4,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "theo-asante",
@@ -529,7 +566,8 @@
     "assists": 0,
     "appearances": 10,
     "yellowCards": 0,
-    "redCards": 1
+    "redCards": 1,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "connor-bradshaw",
@@ -543,7 +581,8 @@
     "assists": 0,
     "appearances": 9,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "ben-wright",
@@ -557,7 +596,8 @@
     "assists": 5,
     "appearances": 12,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "gael-walsh",
@@ -571,7 +611,8 @@
     "assists": 3,
     "appearances": 7,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "kai-fuentes",
@@ -585,7 +626,8 @@
     "assists": 4,
     "appearances": 9,
     "yellowCards": 3,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "tom-harrington",
@@ -599,7 +641,8 @@
     "assists": 1,
     "appearances": 8,
     "yellowCards": 2,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "andrei-oliveira",
@@ -613,7 +656,8 @@
     "assists": 2,
     "appearances": 11,
     "yellowCards": 3,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "rui-oliveira",
@@ -627,7 +671,8 @@
     "assists": 1,
     "appearances": 12,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "luca-toure",
@@ -641,7 +686,8 @@
     "assists": 0,
     "appearances": 6,
     "yellowCards": 2,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "henrik-davies",
@@ -655,7 +701,8 @@
     "assists": 1,
     "appearances": 8,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "mateo-adomako",
@@ -669,7 +716,8 @@
     "assists": 0,
     "appearances": 6,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "andre-silva",
@@ -683,7 +731,8 @@
     "assists": 0,
     "appearances": 12,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "oscar-el-khoury",
@@ -697,7 +746,8 @@
     "assists": 0,
     "appearances": 10,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "nikita-stone",
@@ -711,7 +761,8 @@
     "assists": 2,
     "appearances": 8,
     "yellowCards": 3,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "mateo-kone",
@@ -725,7 +776,8 @@
     "assists": 2,
     "appearances": 7,
     "yellowCards": 4,
-    "redCards": 1
+    "redCards": 1,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "kwesi-cole",
@@ -739,7 +791,8 @@
     "assists": 1,
     "appearances": 8,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "ben-scott",
@@ -753,7 +806,8 @@
     "assists": 1,
     "appearances": 6,
     "yellowCards": 2,
-    "redCards": 1
+    "redCards": 1,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "mateo-stone",
@@ -767,7 +821,8 @@
     "assists": 2,
     "appearances": 11,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "daniel-okafor",
@@ -781,7 +836,8 @@
     "assists": 6,
     "appearances": 12,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "stefan-eriksson",
@@ -795,7 +851,8 @@
     "assists": 1,
     "appearances": 8,
     "yellowCards": 3,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "rafael-hamilton",
@@ -809,7 +866,8 @@
     "assists": 1,
     "appearances": 7,
     "yellowCards": 2,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "kylian-ono",
@@ -823,7 +881,8 @@
     "assists": 0,
     "appearances": 12,
     "yellowCards": 3,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "reo-bakayoko",
@@ -837,7 +896,8 @@
     "assists": 4,
     "appearances": 6,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "omar-hassan",
@@ -851,7 +911,8 @@
     "assists": 2,
     "appearances": 12,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "diego-chambers",
@@ -865,7 +926,8 @@
     "assists": 1,
     "appearances": 12,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "oumar-hartley",
@@ -879,7 +941,8 @@
     "assists": 3,
     "appearances": 5,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "tyrone-horvat",
@@ -893,7 +956,8 @@
     "assists": 3,
     "appearances": 11,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "filip-beckett",
@@ -907,7 +971,8 @@
     "assists": 0,
     "appearances": 11,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "adam-price",
@@ -921,7 +986,8 @@
     "assists": 0,
     "appearances": 7,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "jamie-tanaka",
@@ -935,7 +1001,8 @@
     "assists": 0,
     "appearances": 9,
     "yellowCards": 4,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "nathan-hamilton",
@@ -949,7 +1016,8 @@
     "assists": 0,
     "appearances": 10,
     "yellowCards": 4,
-    "redCards": 1
+    "redCards": 1,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "jack-berger",
@@ -963,7 +1031,8 @@
     "assists": 2,
     "appearances": 7,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "hugo-jensen",
@@ -977,7 +1046,8 @@
     "assists": 0,
     "appearances": 6,
     "yellowCards": 1,
-    "redCards": 1
+    "redCards": 1,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "pierre-lang",
@@ -991,7 +1061,8 @@
     "assists": 0,
     "appearances": 6,
     "yellowCards": 4,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "filip-davies",
@@ -1005,7 +1076,8 @@
     "assists": 4,
     "appearances": 6,
     "yellowCards": 2,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "ismail-toure",
@@ -1019,7 +1091,8 @@
     "assists": 2,
     "appearances": 9,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "theo-wright",
@@ -1033,7 +1106,8 @@
     "assists": 1,
     "appearances": 9,
     "yellowCards": 2,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "charlie-popescu",
@@ -1047,7 +1121,8 @@
     "assists": 0,
     "appearances": 12,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "james-kovac",
@@ -1061,7 +1136,8 @@
     "assists": 4,
     "appearances": 12,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "ali-kone",
@@ -1075,7 +1151,8 @@
     "assists": 1,
     "appearances": 6,
     "yellowCards": 2,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "peter-greer",
@@ -1089,7 +1166,8 @@
     "assists": 2,
     "appearances": 9,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "takeshi-mcgregor",
@@ -1103,7 +1181,8 @@
     "assists": 2,
     "appearances": 8,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "carlos-bakayoko",
@@ -1117,7 +1196,8 @@
     "assists": 2,
     "appearances": 12,
     "yellowCards": 2,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "tom-chen",
@@ -1131,7 +1211,8 @@
     "assists": 0,
     "appearances": 5,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "luis-ono",
@@ -1145,7 +1226,8 @@
     "assists": 0,
     "appearances": 6,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "max-ono",
@@ -1159,7 +1241,8 @@
     "assists": 0,
     "appearances": 9,
     "yellowCards": 4,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "sean-horvat",
@@ -1173,7 +1256,8 @@
     "assists": 2,
     "appearances": 9,
     "yellowCards": 1,
-    "redCards": 1
+    "redCards": 1,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "robert-fuentes",
@@ -1187,7 +1271,8 @@
     "assists": 2,
     "appearances": 8,
     "yellowCards": 2,
-    "redCards": 1
+    "redCards": 1,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "aiden-laurent",
@@ -1201,7 +1286,8 @@
     "assists": 0,
     "appearances": 9,
     "yellowCards": 3,
-    "redCards": 1
+    "redCards": 1,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "oumar-silva",
@@ -1215,7 +1301,8 @@
     "assists": 1,
     "appearances": 5,
     "yellowCards": 1,
-    "redCards": 1
+    "redCards": 1,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "stefan-green",
@@ -1229,7 +1316,8 @@
     "assists": 3,
     "appearances": 7,
     "yellowCards": 3,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "nabil-diallo",
@@ -1243,7 +1331,8 @@
     "assists": 0,
     "appearances": 5,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "ismail-johansson",
@@ -1257,7 +1346,8 @@
     "assists": 4,
     "appearances": 5,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "jan-mendez",
@@ -1271,7 +1361,8 @@
     "assists": 0,
     "appearances": 11,
     "yellowCards": 2,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "patrick-taylor",
@@ -1285,7 +1376,8 @@
     "assists": 2,
     "appearances": 10,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "david-bianchi",
@@ -1299,7 +1391,8 @@
     "assists": 0,
     "appearances": 8,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "nikita-bahi",
@@ -1313,7 +1406,8 @@
     "assists": 1,
     "appearances": 11,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "nathan-nilsson",
@@ -1327,7 +1421,8 @@
     "assists": 3,
     "appearances": 7,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "max-santos",
@@ -1341,7 +1436,8 @@
     "assists": 2,
     "appearances": 7,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "malik-berger",
@@ -1355,7 +1451,8 @@
     "assists": 0,
     "appearances": 8,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "gael-hassan",
@@ -1369,7 +1466,8 @@
     "assists": 0,
     "appearances": 7,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "oscar-tanaka",
@@ -1383,7 +1481,8 @@
     "assists": 1,
     "appearances": 11,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "oscar-kovac",
@@ -1397,7 +1496,8 @@
     "assists": 1,
     "appearances": 12,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "finn-ross",
@@ -1411,7 +1511,8 @@
     "assists": 0,
     "appearances": 5,
     "yellowCards": 3,
-    "redCards": 1
+    "redCards": 1,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "rafael-larsson",
@@ -1425,7 +1526,8 @@
     "assists": 1,
     "appearances": 9,
     "yellowCards": 2,
-    "redCards": 1
+    "redCards": 1,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "andre-dubois",
@@ -1439,7 +1541,8 @@
     "assists": 0,
     "appearances": 10,
     "yellowCards": 2,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "kai-tanaka",
@@ -1453,7 +1556,8 @@
     "assists": 5,
     "appearances": 12,
     "yellowCards": 3,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "chen-wei",
@@ -1467,7 +1571,8 @@
     "assists": 1,
     "appearances": 12,
     "yellowCards": 3,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "danny-schneider",
@@ -1481,7 +1586,8 @@
     "assists": 4,
     "appearances": 6,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "simon-green",
@@ -1495,7 +1601,8 @@
     "assists": 3,
     "appearances": 9,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "kwame-muller",
@@ -1509,7 +1616,8 @@
     "assists": 3,
     "appearances": 8,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "james-wood",
@@ -1523,7 +1631,8 @@
     "assists": 2,
     "appearances": 10,
     "yellowCards": 2,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "emir-evans",
@@ -1537,7 +1646,8 @@
     "assists": 2,
     "appearances": 6,
     "yellowCards": 2,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "nikita-mensah",
@@ -1551,7 +1661,8 @@
     "assists": 3,
     "appearances": 9,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "emir-kelly",
@@ -1565,7 +1676,8 @@
     "assists": 2,
     "appearances": 11,
     "yellowCards": 2,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "youssef-rivera",
@@ -1579,7 +1691,8 @@
     "assists": 0,
     "appearances": 7,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "jake-jensen",
@@ -1593,7 +1706,8 @@
     "assists": 0,
     "appearances": 11,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "felix-johansson",
@@ -1607,7 +1721,8 @@
     "assists": 2,
     "appearances": 7,
     "yellowCards": 2,
-    "redCards": 1
+    "redCards": 1,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "robert-greer",
@@ -1621,7 +1736,8 @@
     "assists": 1,
     "appearances": 5,
     "yellowCards": 1,
-    "redCards": 1
+    "redCards": 1,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "hassan-watanabe",
@@ -1635,7 +1751,8 @@
     "assists": 1,
     "appearances": 10,
     "yellowCards": 3,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "rafael-cross",
@@ -1649,7 +1766,8 @@
     "assists": 0,
     "appearances": 12,
     "yellowCards": 0,
-    "redCards": 1
+    "redCards": 1,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "marcus-walsh",
@@ -1663,7 +1781,8 @@
     "assists": 0,
     "appearances": 10,
     "yellowCards": 2,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "jose-martin",
@@ -1677,7 +1796,8 @@
     "assists": 0,
     "appearances": 8,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "kai-kone",
@@ -1691,7 +1811,8 @@
     "assists": 4,
     "appearances": 8,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "luis-jones",
@@ -1705,7 +1826,8 @@
     "assists": 4,
     "appearances": 12,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "sam-martin",
@@ -1719,7 +1841,8 @@
     "assists": 3,
     "appearances": 11,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "liam-santos",
@@ -1733,7 +1856,8 @@
     "assists": 0,
     "appearances": 7,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "jake-morrison",
@@ -1747,7 +1871,8 @@
     "assists": 2,
     "appearances": 12,
     "yellowCards": 2,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "aiden-eriksson",
@@ -1761,7 +1886,8 @@
     "assists": 1,
     "appearances": 12,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "carlos-greer",
@@ -1775,7 +1901,8 @@
     "assists": 3,
     "appearances": 12,
     "yellowCards": 2,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "mark-ferreira",
@@ -1789,7 +1916,8 @@
     "assists": 3,
     "appearances": 10,
     "yellowCards": 2,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "tom-schneider",
@@ -1803,7 +1931,8 @@
     "assists": 0,
     "appearances": 12,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "simon-cross",
@@ -1817,7 +1946,8 @@
     "assists": 0,
     "appearances": 12,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "mark-adomako",
@@ -1831,7 +1961,8 @@
     "assists": 2,
     "appearances": 9,
     "yellowCards": 2,
-    "redCards": 1
+    "redCards": 1,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "mikkel-foster",
@@ -1845,7 +1976,8 @@
     "assists": 1,
     "appearances": 8,
     "yellowCards": 0,
-    "redCards": 1
+    "redCards": 1,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "luke-kelly",
@@ -1859,7 +1991,8 @@
     "assists": 1,
     "appearances": 8,
     "yellowCards": 2,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "filip-larsson",
@@ -1873,7 +2006,8 @@
     "assists": 0,
     "appearances": 7,
     "yellowCards": 3,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "peter-almeida",
@@ -1887,7 +2021,8 @@
     "assists": 1,
     "appearances": 8,
     "yellowCards": 3,
-    "redCards": 1
+    "redCards": 1,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "noah-tanaka",
@@ -1901,7 +2036,8 @@
     "assists": 0,
     "appearances": 12,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "jamie-bakayoko",
@@ -1915,7 +2051,8 @@
     "assists": 4,
     "appearances": 11,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "jamie-lang",
@@ -1929,7 +2066,8 @@
     "assists": 0,
     "appearances": 11,
     "yellowCards": 2,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "kenji-taylor",
@@ -1943,7 +2081,8 @@
     "assists": 3,
     "appearances": 9,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "tom-moreno",
@@ -1957,7 +2096,8 @@
     "assists": 2,
     "appearances": 12,
     "yellowCards": 3,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "marcus-park",
@@ -1971,7 +2111,8 @@
     "assists": 3,
     "appearances": 12,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "omar-murphy",
@@ -1985,7 +2126,8 @@
     "assists": 1,
     "appearances": 11,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "kai-almeida",
@@ -1999,7 +2141,8 @@
     "assists": 0,
     "appearances": 7,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "yusuf-petrov",
@@ -2013,7 +2156,8 @@
     "assists": 3,
     "appearances": 5,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "callum-park",
@@ -2027,7 +2171,8 @@
     "assists": 0,
     "appearances": 12,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "david-costa",
@@ -2041,7 +2186,8 @@
     "assists": 0,
     "appearances": 5,
     "yellowCards": 1,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "hugo-butler",
@@ -2055,7 +2201,8 @@
     "assists": 0,
     "appearances": 11,
     "yellowCards": 3,
-    "redCards": 1
+    "redCards": 1,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "jonas-muller",
@@ -2069,7 +2216,8 @@
     "assists": 1,
     "appearances": 10,
     "yellowCards": 3,
-    "redCards": 1
+    "redCards": 1,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "ryan-davies",
@@ -2083,7 +2231,8 @@
     "assists": 0,
     "appearances": 6,
     "yellowCards": 4,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "kylian-nilsson",
@@ -2097,7 +2246,8 @@
     "assists": 2,
     "appearances": 10,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "liam-cross",
@@ -2111,7 +2261,8 @@
     "assists": 0,
     "appearances": 5,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "craig-garcia",
@@ -2125,7 +2276,8 @@
     "assists": 3,
     "appearances": 8,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "luke-hassan",
@@ -2139,7 +2291,8 @@
     "assists": 2,
     "appearances": 8,
     "yellowCards": 2,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "omar-taylor",
@@ -2153,7 +2306,8 @@
     "assists": 4,
     "appearances": 7,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "alex-fuentes",
@@ -2167,7 +2321,8 @@
     "assists": 0,
     "appearances": 7,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "felix-berg",
@@ -2181,7 +2336,8 @@
     "assists": 3,
     "appearances": 9,
     "yellowCards": 3,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "tyrone-beckett",
@@ -2195,7 +2351,8 @@
     "assists": 1,
     "appearances": 8,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "andrei-petrov",
@@ -2209,7 +2366,8 @@
     "assists": 0,
     "appearances": 9,
     "yellowCards": 2,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "jake-wood",
@@ -2223,7 +2381,8 @@
     "assists": 3,
     "appearances": 5,
     "yellowCards": 2,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   },
   {
     "id": "andrei-martin",
@@ -2237,6 +2396,7 @@
     "assists": 2,
     "appearances": 10,
     "yellowCards": 0,
-    "redCards": 0
+    "redCards": 0,
+    "imageUrl": "/content/assets/league-demo/player-photos/player-avatar.png"
   }
 ]
