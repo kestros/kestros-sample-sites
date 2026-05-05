@@ -32,7 +32,7 @@ public class TopScorersCardListDataSource extends BaseContainerSlingModelDataSou
   @org.apache.sling.models.annotations.Optional
   private LeagueDataService leagueDataService;
 
-  private int getMaxPlayers() {
+  int getMaxPlayers() {
     return getResource().getValueMap().get("maxRows", DEFAULT_MAX_PLAYERS);
   }
 

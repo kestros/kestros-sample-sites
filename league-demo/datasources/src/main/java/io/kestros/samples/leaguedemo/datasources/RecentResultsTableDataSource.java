@@ -29,7 +29,7 @@ public class RecentResultsTableDataSource extends BaseContainerSlingModelDataSou
   @org.apache.sling.models.annotations.Optional
   private LeagueDataService leagueDataService;
 
-  private int getMaxResults() {
+  int getMaxResults() {
     return getResource().getValueMap().get("maxRows", DEFAULT_MAX_RESULTS);
   }
 

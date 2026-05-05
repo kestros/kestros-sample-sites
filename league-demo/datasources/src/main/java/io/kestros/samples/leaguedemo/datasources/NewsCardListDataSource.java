@@ -29,7 +29,7 @@ public class NewsCardListDataSource extends BaseContainerSlingModelDataSource
   @org.apache.sling.models.annotations.Optional
   private LeagueDataService leagueDataService;
 
-  private int getMaxArticles() {
+  int getMaxArticles() {
     return getResource().getValueMap().get("maxRows", DEFAULT_MAX_ARTICLES);
   }
 

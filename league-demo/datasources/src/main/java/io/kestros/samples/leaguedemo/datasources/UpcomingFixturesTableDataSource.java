@@ -29,7 +29,7 @@ public class UpcomingFixturesTableDataSource extends BaseContainerSlingModelData
   @org.apache.sling.models.annotations.Optional
   private LeagueDataService leagueDataService;
 
-  private int getMaxUpcoming() {
+  int getMaxUpcoming() {
     return getResource().getValueMap().get("maxRows", DEFAULT_MAX_UPCOMING);
   }
 
