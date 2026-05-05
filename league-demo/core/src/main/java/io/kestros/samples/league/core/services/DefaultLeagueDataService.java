@@ -22,7 +22,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 import javax.annotation.Nullable;
 
@@ -45,6 +48,11 @@ public class DefaultLeagueDataService implements LeagueDataService {
     private List<SponsorData> sponsors = Collections.emptyList();
     private List<MerchItemData> merchandise = Collections.emptyList();
 
+    private Map<String, TeamData> teamsById = Collections.emptyMap();
+    private Map<String, PlayerData> playersById = Collections.emptyMap();
+    private Map<String, MatchData> matchesById = Collections.emptyMap();
+    private Map<String, SeasonData> seasonsById = Collections.emptyMap();
+
     @Activate
     protected void activate() {
         ObjectMapper mapper = new ObjectMapper();
@@ -55,8 +63,25 @@ public class DefaultLeagueDataService implements LeagueDataService {
         articles = loadJson(mapper, "articles.json", new TypeReference<List<ArticleData>>() {});
         sponsors = loadJson(mapper, "sponsors.json", new TypeReference<List<SponsorData>>() {});
         merchandise = loadJson(mapper, "merchandise.json", new TypeReference<List<MerchItemData>>() {});
+
+        teamsById = indexById(teams, TeamData::getId);
+        playersById = indexById(players, PlayerData::getId);
+        matchesById = indexById(matches, MatchData::getId);
+        seasonsById = indexById(seasons, SeasonData::getId);
+
         LOG.info("Loaded league data: {} teams, {} players, {} matches, {} seasons, {} articles, {} sponsors, {} merch",
                 teams.size(), players.size(), matches.size(), seasons.size(), articles.size(), sponsors.size(), merchandise.size());
+    }
+
+    private static <T> Map<String, T> indexById(List<T> items, Function<T, String> idFn) {
+        Map<String, T> map = new HashMap<>(items.size() * 2);
+        for (T item : items) {
+            String id = idFn.apply(item);
+            if (id != null) {
+                map.put(id, item);
+            }
+        }
+        return map;
     }
 
     private <T> List<T> loadJson(ObjectMapper mapper, String filename, TypeReference<List<T>> type) {
@@ -80,7 +105,7 @@ public class DefaultLeagueDataService implements LeagueDataService {
     @Nullable
     @Override
     public Team getTeam(String slug) {
-        return teams.stream().filter(t -> t.getId().equals(slug)).findFirst().orElse(null);
+        return slug == null ? null : teamsById.get(slug);
     }
 
     @Override
@@ -98,7 +123,7 @@ public class DefaultLeagueDataService implements LeagueDataService {
     @Nullable
     @Override
     public Player getPlayer(String slug) {
-        return players.stream().filter(p -> p.getId().equals(slug)).findFirst().orElse(null);
+        return slug == null ? null : playersById.get(slug);
     }
 
     @Override
@@ -116,7 +141,7 @@ public class DefaultLeagueDataService implements LeagueDataService {
     @Nullable
     @Override
     public Match getMatch(String id) {
-        return matches.stream().filter(m -> m.getId().equals(id)).findFirst().orElse(null);
+        return id == null ? null : matchesById.get(id);
     }
 
     @Override
@@ -127,7 +152,7 @@ public class DefaultLeagueDataService implements LeagueDataService {
     @Nullable
     @Override
     public Season getSeason(String id) {
-        return seasons.stream().filter(s -> s.getId().equals(id)).findFirst().orElse(null);
+        return id == null ? null : seasonsById.get(id);
     }
 
     @Override
