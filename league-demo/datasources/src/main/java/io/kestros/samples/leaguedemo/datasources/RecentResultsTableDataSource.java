@@ -23,11 +23,15 @@ import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 public class RecentResultsTableDataSource extends BaseContainerSlingModelDataSource
     implements KestrosTable {
 
-  private static final int MAX_RESULTS = 5;
+  private static final int DEFAULT_MAX_RESULTS = 5;
 
   @OSGiService
   @org.apache.sling.models.annotations.Optional
   private LeagueDataService leagueDataService;
+
+  private int getMaxResults() {
+    return getResource().getValueMap().get("maxRows", DEFAULT_MAX_RESULTS);
+  }
 
   @Nonnull
   @Override
@@ -52,7 +56,7 @@ public class RecentResultsTableDataSource extends BaseContainerSlingModelDataSou
         .filter(Match::isPlayed)
         .collect(Collectors.toList());
 
-    int start = Math.max(0, played.size() - MAX_RESULTS);
+    int start = Math.max(0, played.size() - getMaxResults());
     List<Match> recent = played.subList(start, played.size());
 
     int i = 0;

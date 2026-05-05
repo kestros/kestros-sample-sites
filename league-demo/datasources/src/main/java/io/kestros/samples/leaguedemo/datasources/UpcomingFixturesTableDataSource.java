@@ -23,11 +23,15 @@ import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 public class UpcomingFixturesTableDataSource extends BaseContainerSlingModelDataSource
     implements KestrosTable {
 
-  private static final int MAX_UPCOMING = 5;
+  private static final int DEFAULT_MAX_UPCOMING = 5;
 
   @OSGiService
   @org.apache.sling.models.annotations.Optional
   private LeagueDataService leagueDataService;
+
+  private int getMaxUpcoming() {
+    return getResource().getValueMap().get("maxRows", DEFAULT_MAX_UPCOMING);
+  }
 
   @Nonnull
   @Override
@@ -50,7 +54,7 @@ public class UpcomingFixturesTableDataSource extends BaseContainerSlingModelData
 
     List<Match> upcoming = leagueDataService.getMatches().stream()
         .filter(m -> !m.isPlayed())
-        .limit(MAX_UPCOMING)
+        .limit(getMaxUpcoming())
         .collect(Collectors.toList());
 
     int i = 0;

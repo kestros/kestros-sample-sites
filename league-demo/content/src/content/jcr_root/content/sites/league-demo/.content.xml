@@ -145,7 +145,8 @@
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="/libs/kestros/commons/components/content/table"
                                 variations="[table-striped,table-hover]"
-                                kes:datasource="league-demo-recent-results"/>
+                                kes:datasource="league-demo-recent-results"
+                                maxRows="3"/>
                     </column-1>
                     <column-2
                             jcr:primaryType="nt:unstructured"
@@ -160,7 +161,8 @@
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="/libs/kestros/commons/components/content/table"
                                 variations="[table-striped,table-hover]"
-                                kes:datasource="league-demo-upcoming"/>
+                                kes:datasource="league-demo-upcoming"
+                                maxRows="3"/>
                     </column-2>
                 </match-center-grid>
             </match-center-section>

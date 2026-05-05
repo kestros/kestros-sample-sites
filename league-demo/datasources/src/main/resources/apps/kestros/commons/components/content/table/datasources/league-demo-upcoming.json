@@ -3,5 +3,20 @@
   "jcr:title": "Upcoming Fixtures",
   "group": "League Demo",
   "classPath": "io.kestros.samples.leaguedemo.datasources.UpcomingFixturesTableDataSource",
-  "container": true
+  "container": true,
+  "edit": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "kestros/cms2/dialog",
+    "content": {
+      "jcr:primaryType": "nt:unstructured",
+      "maxRows": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/cms2/fields/general/numberfield",
+        "label": "Max Rows",
+        "propertyName": "maxRows",
+        "description": "Number of upcoming fixtures to show. Leave blank for the default (5).",
+        "defaultValue": "5"
+      }
+    }
+  }
 }
