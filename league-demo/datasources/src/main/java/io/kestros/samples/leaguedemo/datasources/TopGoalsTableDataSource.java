@@ -24,11 +24,15 @@ import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 public class TopGoalsTableDataSource extends BaseContainerSlingModelDataSource
     implements KestrosTable {
 
-  private static final int LIMIT = 5;
+  private static final int DEFAULT_LIMIT = 5;
 
   @OSGiService
   @org.apache.sling.models.annotations.Optional
   private LeagueDataService leagueDataService;
+
+  int getLimit() {
+    return getResource().getValueMap().get("maxRows", DEFAULT_LIMIT);
+  }
 
   @Nonnull
   @Override
@@ -52,7 +56,7 @@ public class TopGoalsTableDataSource extends BaseContainerSlingModelDataSource
     List<Player> top = leagueDataService.getPlayers().stream()
         .filter(p -> p.getGoals() > 0)
         .sorted(Comparator.comparingInt(Player::getGoals).reversed())
-        .limit(LIMIT)
+        .limit(getLimit())
         .collect(Collectors.toList());
 
     int rank = 0;

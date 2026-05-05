@@ -24,11 +24,15 @@ import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 public class TopFiveStandingsTableDataSource extends BaseContainerSlingModelDataSource
     implements KestrosTable {
 
-  private static final int MAX_ROWS = 5;
+  private static final int DEFAULT_MAX_ROWS = 5;
 
   @OSGiService
   @org.apache.sling.models.annotations.Optional
   private LeagueDataService leagueDataService;
+
+  int getMaxRows() {
+    return getResource().getValueMap().get("maxRows", DEFAULT_MAX_ROWS);
+  }
 
   private static class Standing implements Comparable<Standing> {
     String teamId;
@@ -96,7 +100,7 @@ public class TopFiveStandingsTableDataSource extends BaseContainerSlingModelData
     int pos = 0;
     for (Standing s : standings) {
       pos++;
-      if (pos > MAX_ROWS) break;
+      if (pos > getMaxRows()) break;
       Team team = leagueDataService.getTeam(s.teamId);
       String name = team != null ? team.getName() : s.teamId;
       int gd = s.goalDifference();
