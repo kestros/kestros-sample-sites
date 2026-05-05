@@ -100,6 +100,14 @@
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
                         text="Meridian Radio Sport provides full live commentary on every fixture. Tune in for the Saturday afternoon phone-in from 5pm and weekday evening preview shows. Available on 97.4 FM and online."/>
+                <radio-text-2
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="Regional partner stations carry the home commentary for every club. Coastal Sound (101.2 FM) covers Port Heights and Southshore United. Northern Pulse (89.6 FM) handles Northside United and Stone Valley. Local listings are available on each club's website."/>
+                <radio-text-3
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="Every match commentary is also available on demand the morning after the fixture through the MPL podcast feed -- search 'Meridian Premier League' on your podcast app of choice. The weekly review show 'Matchweek' drops every Monday morning."/>
             </radio-section>
 
             <!-- International -->
