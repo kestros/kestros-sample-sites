@@ -20,6 +20,7 @@
         >
             <top-navigation
                     brandName="Meridian Premier League"
+                    brandHref="/content/sites/league-demo.html"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation"
             >
