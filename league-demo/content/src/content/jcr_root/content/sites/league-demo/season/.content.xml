@@ -30,6 +30,25 @@
                         variations="[table-striped,table-hover]"
                         kes:datasource="league-demo-season-info"/>
             </overview-section>
+            <recent-section
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="/libs/kestros/commons/components/structure/section"
+                    layout="dark">
+                <heading
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/heading"
+                        headingText="Recent Results"
+                        headingType="h2"/>
+                <recent-intro
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="The 10 most recent results from this season."/>
+                <recent-table
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/table"
+                        variations="[table-striped,table-hover]"
+                        kes:datasource="league-demo-season-recent"/>
+            </recent-section>
         </main>
         <footer jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
     </jcr:content>

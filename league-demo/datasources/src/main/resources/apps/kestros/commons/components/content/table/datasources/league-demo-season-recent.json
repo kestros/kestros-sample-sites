@@ -1,0 +1,7 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:title": "Season Recent Matches",
+  "group": "League Demo",
+  "classPath": "io.kestros.samples.leaguedemo.datasources.SeasonRecentMatchesTableDataSource",
+  "container": true
+}
