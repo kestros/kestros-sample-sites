@@ -247,7 +247,7 @@
             <newsletter-section
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="/libs/kestros/commons/components/structure/section"
-                    layout="hero"
+                    layout="dark"
             >
                 <heading
                         jcr:primaryType="nt:unstructured"
