@@ -24,6 +24,10 @@
                         sling:resourceType="/libs/kestros/commons/components/content/heading"
                         headingType="h1"
                         kes:datasource="league-demo-player-name"/>
+                <summary
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        kes:datasource="league-demo-player-summary"/>
                 <player-stats
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/table"
