@@ -1,0 +1,6 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:title": "Player Photo",
+  "group": "League Demo",
+  "classPath": "io.kestros.samples.leaguedemo.datasources.PlayerPhotoImageDataSource"
+}
