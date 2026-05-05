@@ -24,6 +24,11 @@
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
                         text="Full league table, fixtures, and season summary."/>
+                <season-info
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/table"
+                        variations="[table-striped,table-hover]"
+                        kes:datasource="league-demo-season-info"/>
             </overview-section>
         </main>
         <footer jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
