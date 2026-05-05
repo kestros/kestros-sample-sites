@@ -66,7 +66,7 @@ public class TeamsCardListDataSource extends BaseContainerSlingModelDataSource
         KestrosButtonGroupImpl buttonGroup = null;
         if (StringUtils.isNotBlank(sitePath)) {
           try {
-            String teamHref = sitePath + "/team/" + team.getId() + ".html";
+            String teamHref = sitePath + "/teams/" + team.getId() + ".html";
             List<KestrosButton> buttons = Arrays.asList(
                 new KestrosButtonImpl("View team", teamHref, null,
                     AnchorTarget.SAME_WINDOW, null, null, null, null, false,
