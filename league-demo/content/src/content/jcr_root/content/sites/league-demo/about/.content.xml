@@ -90,7 +90,7 @@
                 <format-text
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="The MPL follows a double round-robin format across 18 matchweeks. Every club plays each of the other nine opponents twice -- once at home and once away -- for a total of 18 league matches per team and 90 matches per season."/>
+                        kes:datasource="league-demo-competition-format"/>
                 <points-text
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
