@@ -18,6 +18,12 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 
+/**
+ * Per-match statline derived from the match id and the final scoreline. Numbers are
+ * deterministic (a given match always renders the same stats) and internally consistent —
+ * the winning side is biased toward higher possession and shot counts, shots-on-target
+ * never exceed shots, and possession adds to 100%.
+ */
 @Model(adaptables = {SlingHttpServletRequest.class, Resource.class})
 public class MatchStatsTableDataSource extends BaseContainerSlingModelDataSource
     implements KestrosTable {
@@ -54,15 +60,35 @@ public class MatchStatsTableDataSource extends BaseContainerSlingModelDataSource
   public List<KestrosTableRow> getRowElements() {
     List<KestrosTableRow> rows = new ArrayList<>();
     Match match = getMatch();
-    if (match == null) return rows;
+    if (match == null || !match.isPlayed()) return rows;
 
-    // Placeholder stats — in a real implementation these would come from match data
+    int diff = match.getHomeScore() - match.getAwayScore();
+    int homePossession = bounded(match.getId(), "possession", 38, 62) + (diff * 2);
+    homePossession = Math.max(35, Math.min(65, homePossession));
+    int awayPossession = 100 - homePossession;
+
+    int homeShots = bounded(match.getId(), "shotsHome", 7, 19)
+        + Math.max(0, diff * 2);
+    int awayShots = bounded(match.getId(), "shotsAway", 7, 19)
+        + Math.max(0, -diff * 2);
+    int homeSot = Math.min(homeShots,
+        match.getHomeScore() + bounded(match.getId(), "sotHome", 1, 5));
+    int awaySot = Math.min(awayShots,
+        match.getAwayScore() + bounded(match.getId(), "sotAway", 1, 5));
+    int homeCorners = bounded(match.getId(), "cornersHome", 2, 9) + Math.max(0, diff);
+    int awayCorners = bounded(match.getId(), "cornersAway", 2, 9) + Math.max(0, -diff);
+    int homeFouls = bounded(match.getId(), "foulsHome", 6, 16);
+    int awayFouls = bounded(match.getId(), "foulsAway", 6, 16);
+    int homeYellow = bounded(match.getId(), "yellowHome", 0, 4);
+    int awayYellow = bounded(match.getId(), "yellowAway", 0, 4);
+
     String[][] stats = {
-        {"58%", "Possession", "42%"},
-        {"14", "Shots", "9"},
-        {"7", "Shots on target", "3"},
-        {"6", "Corners", "4"},
-        {"11", "Fouls", "14"},
+        {homePossession + "%", "Possession", awayPossession + "%"},
+        {String.valueOf(homeShots), "Shots", String.valueOf(awayShots)},
+        {String.valueOf(homeSot), "Shots on target", String.valueOf(awaySot)},
+        {String.valueOf(homeCorners), "Corners", String.valueOf(awayCorners)},
+        {String.valueOf(homeFouls), "Fouls", String.valueOf(awayFouls)},
+        {String.valueOf(homeYellow), "Yellow cards", String.valueOf(awayYellow)},
     };
 
     int i = 0;
@@ -78,6 +104,17 @@ public class MatchStatsTableDataSource extends BaseContainerSlingModelDataSource
       } catch (Exception e) { /* skip */ }
     }
     return rows;
+  }
+
+  /**
+   * Deterministic value in [min, max] derived from a stable hash of the match id and the
+   * stat name. Same input always yields the same output, which keeps the displayed line
+   * stable across refreshes.
+   */
+  private int bounded(String matchId, String stat, int min, int max) {
+    int h = (matchId + ':' + stat).hashCode();
+    int span = max - min + 1;
+    return min + Math.floorMod(h, span);
   }
 
   @Nonnull

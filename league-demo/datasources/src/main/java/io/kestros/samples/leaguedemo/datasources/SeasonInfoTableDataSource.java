@@ -6,13 +6,17 @@ import io.kestros.cms.components.basic.api.table.KestrosTableCell;
 import io.kestros.cms.components.basic.api.table.KestrosTableHeader;
 import io.kestros.cms.components.basic.api.table.KestrosTableRow;
 import io.kestros.cms.components.basic.core.BaseContainerSlingModelDataSource;
+import io.kestros.samples.league.api.models.Match;
 import io.kestros.samples.league.api.models.Player;
 import io.kestros.samples.league.api.models.Season;
 import io.kestros.samples.league.api.models.Team;
 import io.kestros.samples.league.api.services.LeagueDataService;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import javax.annotation.Nonnull;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
@@ -50,34 +54,55 @@ public class SeasonInfoTableDataSource extends BaseContainerSlingModelDataSource
     Season season = leagueDataService.getSeason(id);
     if (season == null) return rows;
 
-    String champion = "—";
-    if (season.getChampionId() != null && !season.getChampionId().isEmpty()) {
-      Team t = leagueDataService.getTeam(season.getChampionId());
-      champion = t != null ? t.getName() : season.getChampionId();
-    }
-    String runnerUp = "—";
-    if (season.getRunnerUpId() != null && !season.getRunnerUpId().isEmpty()) {
-      Team t = leagueDataService.getTeam(season.getRunnerUpId());
-      runnerUp = t != null ? t.getName() : season.getRunnerUpId();
-    }
-    String topScorer = "—";
-    if (season.getTopScorerId() != null && !season.getTopScorerId().isEmpty()) {
+    boolean inProgress = "in-progress".equals(season.getStatus());
+
+    List<String[]> info = new ArrayList<>();
+    info.add(new String[]{"Status", capitalize(season.getStatus())});
+
+    String championLabel = inProgress ? "Current leader" : "Champion";
+    String runnerUpLabel = inProgress ? "Currently 2nd" : "Runner-Up";
+    String topScorerLabel = inProgress ? "Golden Boot leader" : "Top Scorer";
+
+    String[] standings = inProgress
+        ? topTwoByPoints(id)
+        : new String[]{nameOf(season.getChampionId()), nameOf(season.getRunnerUpId())};
+    info.add(new String[]{championLabel, standings[0] != null ? standings[0] : "—"});
+    info.add(new String[]{runnerUpLabel, standings[1] != null ? standings[1] : "—"});
+
+    String topScorer;
+    if (inProgress) {
+      topScorer = currentTopScorer();
+    } else if (season.getTopScorerId() != null && !season.getTopScorerId().isEmpty()) {
       Player p = leagueDataService.getPlayer(season.getTopScorerId());
-      String name = p != null ? p.getFirstName() + " " + p.getLastName() : season.getTopScorerId();
+      String name = p != null
+          ? p.getFirstName() + " " + p.getLastName()
+          : season.getTopScorerId();
       topScorer = season.getTopScorerGoals() > 0
           ? name + " (" + season.getTopScorerGoals() + " goals)"
           : name;
+    } else {
+      topScorer = "—";
+    }
+    info.add(new String[]{topScorerLabel, topScorer != null ? topScorer : "—"});
+
+    int teamCount = season.getTeamIds() != null ? season.getTeamIds().size() : 0;
+    info.add(new String[]{"Teams", String.valueOf(teamCount)});
+
+    long total = leagueDataService.getMatches().stream()
+        .filter(m -> id.equals(m.getSeasonId()))
+        .count();
+    if (inProgress) {
+      long played = leagueDataService.getMatches().stream()
+          .filter(m -> id.equals(m.getSeasonId()))
+          .filter(Match::isPlayed)
+          .count();
+      info.add(new String[]{"Matches",
+          played + " played / " + total + " scheduled"});
+    } else if (total > 0) {
+      info.add(new String[]{"Matches", String.valueOf(total)});
     }
 
     try {
-      String[][] info = {
-          {"Status", capitalize(season.getStatus())},
-          {"Champion", champion},
-          {"Runner-Up", runnerUp},
-          {"Top Scorer", topScorer},
-          {"Teams", String.valueOf(season.getTeamIds() != null ? season.getTeamIds().size() : 0)},
-          {"Matches", String.valueOf(season.getMatchIds() != null ? season.getMatchIds().size() : 0)},
-      };
       int i = 0;
       for (String[] entry : info) {
         List<KestrosTableCell> cells = Arrays.asList(
@@ -89,6 +114,65 @@ public class SeasonInfoTableDataSource extends BaseContainerSlingModelDataSource
       }
     } catch (Exception e) { /* skip */ }
     return rows;
+  }
+
+  private String nameOf(String teamId) {
+    if (teamId == null || teamId.isEmpty()) return null;
+    Team t = leagueDataService.getTeam(teamId);
+    return t != null ? t.getName() : teamId;
+  }
+
+  /**
+   * Replays the in-progress season's played matches to produce the current top two by
+   * points (goal difference, then goals for as tiebreakers). Returns names; entries are
+   * null where the league hasn't started enough games to rank.
+   */
+  private String[] topTwoByPoints(String seasonId) {
+    Map<String, int[]> stats = new HashMap<>();
+    for (Team t : leagueDataService.getTeams()) {
+      stats.put(t.getId(), new int[]{0, 0, 0});
+    }
+    boolean anyPlayed = false;
+    for (Match m : leagueDataService.getMatches()) {
+      if (!seasonId.equals(m.getSeasonId()) || !m.isPlayed()) continue;
+      anyPlayed = true;
+      int[] home = stats.get(m.getHomeTeamId());
+      int[] away = stats.get(m.getAwayTeamId());
+      if (home == null || away == null) continue;
+      int hs = m.getHomeScore();
+      int as = m.getAwayScore();
+      home[1] += hs - as;
+      away[1] += as - hs;
+      home[2] += hs;
+      away[2] += as;
+      if (hs > as) home[0] += 3;
+      else if (as > hs) away[0] += 3;
+      else { home[0] += 1; away[0] += 1; }
+    }
+    if (!anyPlayed) return new String[]{null, null};
+    List<Map.Entry<String, int[]>> ranked = new ArrayList<>(stats.entrySet());
+    ranked.sort(Comparator
+        .comparingInt((Map.Entry<String, int[]> e) -> e.getValue()[0]).reversed()
+        .thenComparingInt((Map.Entry<String, int[]> e) -> e.getValue()[1]).reversed()
+        .thenComparingInt((Map.Entry<String, int[]> e) -> e.getValue()[2]).reversed());
+    String first = ranked.size() > 0 ? formatLeader(ranked.get(0)) : null;
+    String second = ranked.size() > 1 ? formatLeader(ranked.get(1)) : null;
+    return new String[]{first, second};
+  }
+
+  private String formatLeader(Map.Entry<String, int[]> e) {
+    Team t = leagueDataService.getTeam(e.getKey());
+    String name = t != null ? t.getName() : e.getKey();
+    return name + " (" + e.getValue()[0] + " pts)";
+  }
+
+  private String currentTopScorer() {
+    return leagueDataService.getPlayers().stream()
+        .filter(p -> p.getGoals() > 0)
+        .max(Comparator.comparingInt(Player::getGoals))
+        .map(p -> p.getFirstName() + " " + p.getLastName()
+            + " (" + p.getGoals() + " goals)")
+        .orElse("—");
   }
 
   private static String capitalize(String s) {
