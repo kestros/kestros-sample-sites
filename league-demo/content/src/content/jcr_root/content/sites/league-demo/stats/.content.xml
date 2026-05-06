@@ -53,7 +53,8 @@
                                 sling:resourceType="/libs/kestros/commons/components/content/heading"
                                 kes:datasource="league-demo-season-stat"
                                 metric="matchesPlayed"
-                                level="h3"/>
+                                level="h3"
+                                variations="[/apps/kestros/commons/components/content/heading/lfv2/0.0.1/variations/style/stat-number]"/>
                         <label
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="/libs/kestros/commons/components/content/text"
@@ -67,7 +68,8 @@
                                 sling:resourceType="/libs/kestros/commons/components/content/heading"
                                 kes:datasource="league-demo-season-stat"
                                 metric="totalGoals"
-                                level="h3"/>
+                                level="h3"
+                                variations="[/apps/kestros/commons/components/content/heading/lfv2/0.0.1/variations/style/stat-number]"/>
                         <label
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="/libs/kestros/commons/components/content/text"
@@ -81,7 +83,8 @@
                                 sling:resourceType="/libs/kestros/commons/components/content/heading"
                                 kes:datasource="league-demo-season-stat"
                                 metric="goalsPerMatch"
-                                level="h3"/>
+                                level="h3"
+                                variations="[/apps/kestros/commons/components/content/heading/lfv2/0.0.1/variations/style/stat-number]"/>
                         <label
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="/libs/kestros/commons/components/content/text"
