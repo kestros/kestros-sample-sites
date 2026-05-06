@@ -98,7 +98,7 @@
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
                         kes:datasource="league-demo-season-hero-subtitle"
-                        variations="[lead]"/>
+                        variations="[/apps/kestros/commons/components/content/text/lfv2/0.0.1/variations/style/lead]"/>
                 <ctas
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/button-group"
@@ -106,13 +106,13 @@
                     <standings-btn
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="/libs/kestros/commons/components/content/button"
-                            variations="[btn-warning,btn-lg]"
+                            variations="[/apps/kestros/commons/components/content/button/bootstrap-lib/1.0.0/variations/style/btn-warning,/apps/kestros/commons/components/content/button/bootstrap-lib/1.0.0/variations/size/btn-lg]"
                             text="View Standings"
                             href="/content/sites/league-demo/standings.html"/>
                     <schedule-btn
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="/libs/kestros/commons/components/content/button"
-                            variations="[btn-outline-light,btn-lg]"
+                            variations="[/apps/kestros/commons/components/content/button/bootstrap-lib/1.0.0/variations/outline/btn-outline-light,/apps/kestros/commons/components/content/button/bootstrap-lib/1.0.0/variations/size/btn-lg]"
                             text="Full Schedule"
                             href="/content/sites/league-demo/schedule.html"/>
                 </ctas>
@@ -128,7 +128,7 @@
                         sling:resourceType="/libs/kestros/commons/components/content/text"
                         kes:datasource="league-demo-matchweek-progress"
                         prefix="Matchday"
-                        variations="[overline]"/>
+                        variations="[/apps/kestros/commons/components/content/text/lfv2/0.0.1/variations/style/overline]"/>
                 <heading
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/heading"
@@ -138,7 +138,7 @@
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
                         text="Recent results plus the fixtures coming up this weekend."
-                        variations="[lead]"/>
+                        variations="[/apps/kestros/commons/components/content/text/lfv2/0.0.1/variations/style/lead]"/>
                 <match-center-grid
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/structure/grid"
@@ -157,7 +157,7 @@
                         <results-table
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="/libs/kestros/commons/components/content/table"
-                                variations="[table-striped,table-hover]"
+                                variations="[/apps/kestros/commons/components/content/table/bootstrap-lib/1.0.0/variations/style/table-striped,/apps/kestros/commons/components/content/table/bootstrap-lib/1.0.0/variations/style/table-hover]"
                                 kes:datasource="league-demo-recent-results"
                                 maxRows="3"/>
                     </column-1>
@@ -174,7 +174,7 @@
                         <upcoming-table
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="/libs/kestros/commons/components/content/table"
-                                variations="[table-striped,table-hover]"
+                                variations="[/apps/kestros/commons/components/content/table/bootstrap-lib/1.0.0/variations/style/table-striped,/apps/kestros/commons/components/content/table/bootstrap-lib/1.0.0/variations/style/table-hover]"
                                 kes:datasource="league-demo-upcoming"
                                 maxRows="3"/>
                     </column-2>
@@ -191,7 +191,7 @@
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
                         text="From the pressroom"
-                        variations="[overline]"/>
+                        variations="[/apps/kestros/commons/components/content/text/lfv2/0.0.1/variations/style/overline]"/>
                 <heading
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/heading"
@@ -201,13 +201,13 @@
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
                         text="Top stories, match analysis, and the latest from across the MPL."
-                        variations="[lead]"/>
+                        variations="[/apps/kestros/commons/components/content/text/lfv2/0.0.1/variations/style/lead]"/>
                 <news-cards
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/lists/card-list"
                         kes:datasource="league-demo-news"
                         maxRows="3"
-                        variations="[cards-shadow,cards-hover-lift]"/>
+                        variations="[/apps/kestros/commons/components/lists/card-list/lfv2/0.0.1/variations/style/cards-shadow,/apps/kestros/commons/components/lists/card-list/lfv2/0.0.1/variations/style/cards-hover-lift]"/>
                 <news-link
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/link"
@@ -246,7 +246,7 @@
                         <standings-table
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="/libs/kestros/commons/components/content/table"
-                                variations="[table-striped,table-hover]"
+                                variations="[/apps/kestros/commons/components/content/table/bootstrap-lib/1.0.0/variations/style/table-striped,/apps/kestros/commons/components/content/table/bootstrap-lib/1.0.0/variations/style/table-hover]"
                                 kes:datasource="league-demo-top-five-standings"/>
                         <full-table-link
                                 jcr:primaryType="nt:unstructured"
@@ -268,7 +268,7 @@
                                 sling:resourceType="/libs/kestros/commons/components/lists/card-list"
                                 kes:datasource="league-demo-top-scorers"
                                 maxRows="3"
-                                variations="[cards-shadow]"/>
+                                variations="[/apps/kestros/commons/components/lists/card-list/lfv2/0.0.1/variations/style/cards-shadow]"/>
                         <stats-link
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="/libs/kestros/commons/components/content/link"
@@ -288,7 +288,7 @@
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
                         text="MPL newsletter"
-                        variations="[overline]"/>
+                        variations="[/apps/kestros/commons/components/content/text/lfv2/0.0.1/variations/style/overline]"/>
                 <heading
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/heading"
@@ -298,7 +298,7 @@
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
                         text="Match alerts, breaking news, exclusive features, and Golden Boot updates delivered straight to your inbox. Free, weekly, and unsubscribe anytime."
-                        variations="[lead]"/>
+                        variations="[/apps/kestros/commons/components/content/text/lfv2/0.0.1/variations/style/lead]"/>
                 <newsletter-ctas
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/button-group"
@@ -306,7 +306,7 @@
                     <subscribe-btn
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="/libs/kestros/commons/components/content/button"
-                            variations="[btn-warning,btn-lg]"
+                            variations="[/apps/kestros/commons/components/content/button/bootstrap-lib/1.0.0/variations/style/btn-warning,/apps/kestros/commons/components/content/button/bootstrap-lib/1.0.0/variations/size/btn-lg]"
                             text="Subscribe to the MPL Newsletter"
                             href="/content/sites/league-demo/contact.html"/>
                 </newsletter-ctas>
@@ -331,7 +331,7 @@
                         sling:resourceType="/libs/kestros/commons/components/lists/card-list"
                         kes:datasource="league-demo-sponsors"
                         layout="four-columns"
-                        variations="[cards-shadow,cards-hover-lift]"/>
+                        variations="[/apps/kestros/commons/components/lists/card-list/lfv2/0.0.1/variations/style/cards-shadow,/apps/kestros/commons/components/lists/card-list/lfv2/0.0.1/variations/style/cards-hover-lift]"/>
             </sponsors-section>
         </main>
 

@@ -54,7 +54,7 @@
                 <fixtures-table
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/table"
-                        variations="[table-striped,table-hover]"
+                        variations="[/apps/kestros/commons/components/content/table/bootstrap-lib/1.0.0/variations/style/table-striped,/apps/kestros/commons/components/content/table/bootstrap-lib/1.0.0/variations/style/table-hover]"
                         kes:datasource="league-demo-all-upcoming"/>
                 <results-link
                         jcr:primaryType="nt:unstructured"

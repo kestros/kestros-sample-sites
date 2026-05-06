@@ -118,7 +118,7 @@
                         <goals-table
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="/libs/kestros/commons/components/content/table"
-                                variations="[table-striped,table-hover]"
+                                variations="[/apps/kestros/commons/components/content/table/bootstrap-lib/1.0.0/variations/style/table-striped,/apps/kestros/commons/components/content/table/bootstrap-lib/1.0.0/variations/style/table-hover]"
                                 kes:datasource="league-demo-top-goals"/>
                     </column-1>
                     <column-2
@@ -132,7 +132,7 @@
                         <assists-table
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="/libs/kestros/commons/components/content/table"
-                                variations="[table-striped,table-hover]"
+                                variations="[/apps/kestros/commons/components/content/table/bootstrap-lib/1.0.0/variations/style/table-striped,/apps/kestros/commons/components/content/table/bootstrap-lib/1.0.0/variations/style/table-hover]"
                                 kes:datasource="league-demo-top-assists"/>
                     </column-2>
                 </leaders-grid>
@@ -155,7 +155,7 @@
                 <full-table
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/table"
-                        variations="[table-striped,table-hover]"
+                        variations="[/apps/kestros/commons/components/content/table/bootstrap-lib/1.0.0/variations/style/table-striped,/apps/kestros/commons/components/content/table/bootstrap-lib/1.0.0/variations/style/table-hover]"
                         kes:datasource="league-demo-players"/>
             </full-section>
         </main>
