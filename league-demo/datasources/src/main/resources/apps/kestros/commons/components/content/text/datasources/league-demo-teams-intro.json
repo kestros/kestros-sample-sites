@@ -1,0 +1,6 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:title": "Teams Intro",
+  "group": "League Demo",
+  "classPath": "io.kestros.samples.leaguedemo.datasources.TeamsIntroTextDataSource"
+}

@@ -341,7 +341,9 @@
                         <brand-text
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="/libs/kestros/commons/components/content/text"
-                                text="The official home of the MPL. Follow the 2025-26 season with live standings, fixtures, and club profiles."/>
+                                kes:datasource="league-demo-current-season"
+                                prefix="The official home of the MPL. Follow the "
+                                suffix=" season with live standings, fixtures, and club profiles."/>
                         <social-links
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="/libs/kestros/commons/components/lists/link-list"
@@ -424,7 +426,8 @@
                 <copyright
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="2025-26 Meridian Premier League. All rights reserved."/>
+                        kes:datasource="league-demo-current-season"
+                        suffix=" Meridian Premier League. All rights reserved."/>
             </footer-section>
         </footer>
     </jcr:content>

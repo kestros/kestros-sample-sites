@@ -31,7 +31,7 @@
                 <intro-text
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="The Meridian Premier League brings together ten clubs from across the region — from Stone Valley, founded in 1886 as the league's oldest, to Southshore United, established in 1947. Each one carries its own colours, traditions, and rivalries into every matchweek of the 2025-26 season."/>
+                        kes:datasource="league-demo-teams-intro"/>
             </intro-section>
             <cards-section
                     jcr:primaryType="nt:unstructured"
