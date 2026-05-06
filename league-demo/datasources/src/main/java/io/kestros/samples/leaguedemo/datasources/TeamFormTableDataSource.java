@@ -11,6 +11,7 @@ import io.kestros.samples.league.api.models.Team;
 import io.kestros.samples.league.api.services.LeagueDataService;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import javax.annotation.Nonnull;
 import org.apache.sling.api.SlingHttpServletRequest;
@@ -49,11 +50,16 @@ public class TeamFormTableDataSource extends BaseContainerSlingModelDataSource
     String slug = (String) getRequest().getAttribute("team-slug");
     if (slug == null) return rows;
 
-    int i = 0;
+    List<Match> teamMatches = new ArrayList<>();
     for (Match m : leagueDataService.getMatches()) {
       if (!m.isPlayed()) continue;
       if (!slug.equals(m.getHomeTeamId()) && !slug.equals(m.getAwayTeamId())) continue;
+      teamMatches.add(m);
+    }
+    Collections.reverse(teamMatches);
 
+    int i = 0;
+    for (Match m : teamMatches) {
       boolean isHome = slug.equals(m.getHomeTeamId());
       String oppId = isHome ? m.getAwayTeamId() : m.getHomeTeamId();
       Team opp = leagueDataService.getTeam(oppId);
