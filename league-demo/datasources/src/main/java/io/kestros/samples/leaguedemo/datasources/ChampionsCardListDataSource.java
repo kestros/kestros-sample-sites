@@ -8,12 +8,14 @@ import io.kestros.cms.components.basic.core.BaseContainerSlingModelDataSource;
 import io.kestros.cms.components.basic.core.content.card.KestrosCardImpl;
 import io.kestros.cms.components.basic.core.content.heading.KestrosHeadingImpl;
 import io.kestros.cms.components.basic.core.content.image.KestrosImageImpl;
+import io.kestros.samples.league.api.models.Player;
 import io.kestros.samples.league.api.models.Season;
 import io.kestros.samples.league.api.models.Team;
 import io.kestros.samples.league.api.services.LeagueDataService;
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.Nonnull;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
@@ -51,7 +53,20 @@ public class ChampionsCardListDataSource extends BaseContainerSlingModelDataSour
           desc.append(" | Runner-up: ").append(runnerUp.getName());
         }
         if (season.getTopScorerGoals() > 0) {
-          desc.append(" | Golden Boot: ").append(season.getTopScorerGoals()).append(" goals");
+          String scorerName = null;
+          if (StringUtils.isNotBlank(season.getTopScorerId())) {
+            Player p = leagueDataService.getPlayer(season.getTopScorerId());
+            if (p != null) {
+              scorerName = p.getFirstName() + " " + p.getLastName();
+            }
+          }
+          desc.append(" | Golden Boot: ");
+          if (scorerName != null) {
+            desc.append(scorerName).append(" (")
+                .append(season.getTopScorerGoals()).append(" goals)");
+          } else {
+            desc.append(season.getTopScorerGoals()).append(" goals");
+          }
         }
 
         KestrosImage crest = null;
