@@ -82,6 +82,8 @@ public class StandingsTableDataSource extends BaseContainerSlingModelDataSource
       headers.add(new SyntheticTableHeader("W", this, "header", "won"));
       headers.add(new SyntheticTableHeader("D", this, "header", "drawn"));
       headers.add(new SyntheticTableHeader("L", this, "header", "lost"));
+      headers.add(new SyntheticTableHeader("F", this, "header", "for"));
+      headers.add(new SyntheticTableHeader("A", this, "header", "against"));
       headers.add(new SyntheticTableHeader("GD", this, "header", "gd"));
       headers.add(new SyntheticTableHeader("Pts", this, "header", "pts"));
     } catch (Exception e) { /* skip */ }
@@ -110,6 +112,8 @@ public class StandingsTableDataSource extends BaseContainerSlingModelDataSource
             new SyntheticTableCell(String.valueOf(s.won), this, "cell", "w-" + pos),
             new SyntheticTableCell(String.valueOf(s.drawn), this, "cell", "d-" + pos),
             new SyntheticTableCell(String.valueOf(s.lost), this, "cell", "l-" + pos),
+            new SyntheticTableCell(String.valueOf(s.goalsFor), this, "cell", "for-" + pos),
+            new SyntheticTableCell(String.valueOf(s.goalsAgainst), this, "cell", "against-" + pos),
             new SyntheticTableCell(gdStr, this, "cell", "gd-" + pos),
             new SyntheticTableCell(String.valueOf(s.points()), this, "cell", "pts-" + pos)
         );
