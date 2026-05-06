@@ -61,7 +61,7 @@ public class MatchInfoTableDataSource extends BaseContainerSlingModelDataSource
     try {
       String[][] info = {
           {"Status", status},
-          {"Date", match.getDate() != null ? match.getDate() : "—"},
+          {"Date", match.getDate() != null ? Dates.medium(match.getDate()) : "—"},
           {"Matchweek", String.valueOf(match.getMatchday())},
           {"Venue", match.getVenue() != null ? match.getVenue() : "—"},
           {"Result", result},

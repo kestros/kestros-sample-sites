@@ -64,7 +64,7 @@ public class PlayedResultsTableDataSource extends BaseContainerSlingModelDataSou
       try {
         List<KestrosTableCell> cells = Arrays.asList(
             new SyntheticTableCell(String.valueOf(m.getMatchday()), this, "cell", "wk-" + i),
-            new SyntheticTableCell(m.getDate(), this, "cell", "date-" + i),
+            new SyntheticTableCell(Dates.medium(m.getDate()), this, "cell", "date-" + i),
             new SyntheticTableCell(homeName, this, "cell", "home-" + i),
             new SyntheticTableCell(score, this, "cell", "score-" + i),
             new SyntheticTableCell(awayName, this, "cell", "away-" + i)

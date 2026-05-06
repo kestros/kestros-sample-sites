@@ -56,7 +56,8 @@ public class NewsCardListDataSource extends BaseContainerSlingModelDataSource
       try {
         StringBuilder desc = new StringBuilder();
         if (article.getCategory() != null) {
-          desc.append(article.getCategory()).append(" | ").append(article.getDate()).append(" -- ");
+          desc.append(article.getCategory()).append(" | ")
+              .append(Dates.medium(article.getDate())).append(" -- ");
         }
         desc.append(article.getSummary());
 

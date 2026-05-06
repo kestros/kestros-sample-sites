@@ -47,8 +47,8 @@ public class AllNewsCardListDataSource extends BaseContainerSlingModelDataSource
     for (int i = 0; i < articles.size(); i++) {
       Article article = articles.get(i);
       try {
-        String description = article.getCategory() + " | " + article.getDate()
-            + " -- " + article.getSummary();
+        String description = article.getCategory() + " | "
+            + Dates.medium(article.getDate()) + " -- " + article.getSummary();
 
         KestrosImage image = null;
         if (StringUtils.isNotBlank(article.getImageUrl())) {

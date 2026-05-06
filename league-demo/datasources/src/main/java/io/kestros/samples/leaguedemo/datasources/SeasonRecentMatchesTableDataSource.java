@@ -75,7 +75,7 @@ public class SeasonRecentMatchesTableDataSource extends BaseContainerSlingModelD
       try {
         List<KestrosTableCell> cells = Arrays.asList(
             new SyntheticTableCell("W" + m.getMatchday(), this, "cell", "wk-" + i),
-            new SyntheticTableCell(m.getDate() != null ? m.getDate() : "—", this, "cell", "date-" + i),
+            new SyntheticTableCell(m.getDate() != null ? Dates.medium(m.getDate()) : "—", this, "cell", "date-" + i),
             new SyntheticTableCell(homeName, this, "cell", "home-" + i),
             new SyntheticTableCell(score, this, "cell", "score-" + i),
             new SyntheticTableCell(awayName, this, "cell", "away-" + i)

@@ -66,7 +66,7 @@ public class UpcomingFixturesTableDataSource extends BaseContainerSlingModelData
 
       try {
         List<KestrosTableCell> cells = Arrays.asList(
-            new SyntheticTableCell(m.getDate(), this, "cell", "date-" + i),
+            new SyntheticTableCell(Dates.medium(m.getDate()), this, "cell", "date-" + i),
             new SyntheticTableCell(homeName, this, "cell", "home-" + i),
             new SyntheticTableCell("vs", this, "cell", "vs-" + i),
             new SyntheticTableCell(awayName, this, "cell", "away-" + i)

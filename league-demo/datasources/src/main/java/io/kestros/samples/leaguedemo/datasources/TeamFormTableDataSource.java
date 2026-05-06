@@ -67,7 +67,7 @@ public class TeamFormTableDataSource extends BaseContainerSlingModelDataSource
 
       try {
         List<KestrosTableCell> cells = Arrays.asList(
-            new SyntheticTableCell(m.getDate(), this, "cell", "date-" + i),
+            new SyntheticTableCell(Dates.medium(m.getDate()), this, "cell", "date-" + i),
             new SyntheticTableCell(oppName, this, "cell", "opp-" + i),
             new SyntheticTableCell(venue, this, "cell", "venue-" + i),
             new SyntheticTableCell(result, this, "cell", "result-" + i),
