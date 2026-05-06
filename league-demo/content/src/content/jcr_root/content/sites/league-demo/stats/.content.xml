@@ -24,7 +24,8 @@
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
                         kes:datasource="league-demo-matchweek-progress"
-                        prefix="${seasonName} season leaders through Matchweek"/>
+                        prefix="${seasonName} season leaders through Matchweek"
+                        variations="[/apps/kestros/commons/components/content/text/lfv2/0.0.1/variations/style/lead]"/>
             </page-header>
 
             <!-- Season at a Glance -->
@@ -41,7 +42,8 @@
                         sling:resourceType="/libs/kestros/commons/components/content/text"
                         kes:datasource="league-demo-matchweek-progress"
                         prefix="The numbers behind the ${seasonName} season through Matchweek"
-                        suffix="."/>
+                        suffix="."
+                        variations="[/apps/kestros/commons/components/content/text/lfv2/0.0.1/variations/style/lead]"/>
                 <glance-grid
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/structure/grid">
@@ -105,7 +107,8 @@
                 <subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="Top five for the Golden Boot, and the same for assists."/>
+                        text="Top five for the Golden Boot, and the same for assists."
+                        variations="[/apps/kestros/commons/components/content/text/lfv2/0.0.1/variations/style/lead]"/>
                 <leaders-grid
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/structure/grid"
@@ -154,7 +157,8 @@
                 <subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="Top 15 goal scorers across the season with apps, goals, and assists."/>
+                        text="Top 15 goal scorers across the season with apps, goals, and assists."
+                        variations="[/apps/kestros/commons/components/content/text/lfv2/0.0.1/variations/style/lead]"/>
                 <full-table
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/table"

@@ -24,7 +24,8 @@
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
                         kes:datasource="league-demo-matchweek-progress"
-                        prefix="Season ${seasonName} -- Updated through Matchweek"/>
+                        prefix="Season ${seasonName} -- Updated through Matchweek"
+                        variations="[/apps/kestros/commons/components/content/text/lfv2/0.0.1/variations/style/lead]"/>
             </page-header>
 
             <!-- League Table -->
@@ -39,7 +40,8 @@
                 <table-intro
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="Three points are awarded for a win, one for a draw, and none for a defeat. Clubs level on points are separated by goal difference, then goals scored, then head-to-head record."/>
+                        text="Three points are awarded for a win, one for a draw, and none for a defeat. Clubs level on points are separated by goal difference, then goals scored, then head-to-head record."
+                        variations="[/apps/kestros/commons/components/content/text/lfv2/0.0.1/variations/style/lead]"/>
                 <standings-table
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/table"
@@ -60,7 +62,8 @@
                 <form-subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="Each team's results from their last five matches, ranked by form."/>
+                        text="Each team's results from their last five matches, ranked by form."
+                        variations="[/apps/kestros/commons/components/content/text/lfv2/0.0.1/variations/style/lead]"/>
                 <form-cards
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/lists/card-list"

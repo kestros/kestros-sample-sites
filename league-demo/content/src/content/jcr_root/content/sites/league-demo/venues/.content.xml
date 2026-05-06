@@ -23,7 +23,8 @@
                 <subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="Ten stadiums across the Meridian region. From the 22,000-seat Meridian Stadium to the intimate Valley Ground."/>
+                        text="Ten stadiums across the Meridian region. From the 22,000-seat Meridian Stadium to the intimate Valley Ground."
+                        variations="[/apps/kestros/commons/components/content/text/lfv2/0.0.1/variations/style/lead]"/>
             </page-header>
 
             <venues-section

@@ -23,7 +23,8 @@
                 <subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        kes:datasource="league-demo-seasons-hero"/>
+                        kes:datasource="league-demo-seasons-hero"
+                        variations="[/apps/kestros/commons/components/content/text/lfv2/0.0.1/variations/style/lead]"/>
             </page-header>
 
             <!-- Champions Roll of Honour -->
@@ -38,7 +39,8 @@
                 <champs-subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="Every MPL champion, runner-up, and Golden Boot winner since 2019."/>
+                        text="Every MPL champion, runner-up, and Golden Boot winner since 2019."
+                        variations="[/apps/kestros/commons/components/content/text/lfv2/0.0.1/variations/style/lead]"/>
                 <champions-cards
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/lists/card-list"
@@ -93,7 +95,8 @@
                 <seasons-intro
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="Every Meridian Premier League season since the league's inception in 2019. Click any season name for the full champion, runner-up, top scorer, and competition summary."/>
+                        text="Every Meridian Premier League season since the league's inception in 2019. Click any season name for the full champion, runner-up, top scorer, and competition summary."
+                        variations="[/apps/kestros/commons/components/content/text/lfv2/0.0.1/variations/style/lead]"/>
                 <seasons-table
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/table"

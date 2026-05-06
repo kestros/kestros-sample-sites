@@ -26,7 +26,8 @@
                         kes:datasource="league-demo-matchweek-progress"
                         prefix="Every upcoming fixture from Matchweek"
                         offset="{Long}1"
-                        suffix=" through the end of the season."/>
+                        suffix=" through the end of the season."
+                        variations="[/apps/kestros/commons/components/content/text/lfv2/0.0.1/variations/style/lead]"/>
             </page-header>
             <intro-section
                     jcr:primaryType="nt:unstructured"
@@ -34,7 +35,8 @@
                 <intro-text
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        kes:datasource="league-demo-schedule-intro"/>
+                        kes:datasource="league-demo-schedule-intro"
+                        variations="[/apps/kestros/commons/components/content/text/lfv2/0.0.1/variations/style/lead]"/>
             </intro-section>
             <table-section
                     jcr:primaryType="nt:unstructured"
@@ -50,7 +52,8 @@
                         kes:datasource="league-demo-matchweek-progress"
                         prefix="Matchweek"
                         offset="{Long}1"
-                        suffix=" through end of season. Times are local."/>
+                        suffix=" through end of season. Times are local."
+                        variations="[/apps/kestros/commons/components/content/text/lfv2/0.0.1/variations/style/lead]"/>
                 <fixtures-table
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/table"

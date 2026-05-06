@@ -23,7 +23,8 @@
                 <subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="Ten clubs. Over a century of combined history. One league."/>
+                        text="Ten clubs. Over a century of combined history. One league."
+                        variations="[/apps/kestros/commons/components/content/text/lfv2/0.0.1/variations/style/lead]"/>
             </page-header>
             <intro-section
                     jcr:primaryType="nt:unstructured"
@@ -31,7 +32,8 @@
                 <intro-text
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        kes:datasource="league-demo-teams-intro"/>
+                        kes:datasource="league-demo-teams-intro"
+                        variations="[/apps/kestros/commons/components/content/text/lfv2/0.0.1/variations/style/lead]"/>
             </intro-section>
             <cards-section
                     jcr:primaryType="nt:unstructured"
@@ -44,7 +46,8 @@
                 <subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="Click any club for the squad, fixtures, and full season stats."/>
+                        text="Click any club for the squad, fixtures, and full season stats."
+                        variations="[/apps/kestros/commons/components/content/text/lfv2/0.0.1/variations/style/lead]"/>
                 <teams-cards
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/lists/card-list"

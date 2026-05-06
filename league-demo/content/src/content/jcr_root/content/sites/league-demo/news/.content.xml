@@ -23,7 +23,8 @@
                 <subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="Match reports, analysis, features, and the latest from around the league."/>
+                        text="Match reports, analysis, features, and the latest from around the league."
+                        variations="[/apps/kestros/commons/components/content/text/lfv2/0.0.1/variations/style/lead]"/>
             </page-header>
             <news-section
                     jcr:primaryType="nt:unstructured"
@@ -36,7 +37,8 @@
                 <subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="Stories from across the league, ordered with featured pieces first then by date."/>
+                        text="Stories from across the league, ordered with featured pieces first then by date."
+                        variations="[/apps/kestros/commons/components/content/text/lfv2/0.0.1/variations/style/lead]"/>
                 <all-news
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/lists/card-list"
