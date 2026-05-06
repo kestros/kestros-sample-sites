@@ -1,10 +1,13 @@
 package io.kestros.samples.leaguedemo.datasources;
 
+import io.kestros.cms.components.basic.api.content.AnchorTarget;
 import io.kestros.cms.components.basic.api.content.KestrosCard;
+import io.kestros.cms.components.basic.api.content.KestrosImage;
 import io.kestros.cms.components.basic.api.lists.KestrosCardList;
 import io.kestros.cms.components.basic.core.BaseContainerSlingModelDataSource;
 import io.kestros.cms.components.basic.core.content.card.KestrosCardImpl;
 import io.kestros.cms.components.basic.core.content.heading.KestrosHeadingImpl;
+import io.kestros.cms.components.basic.core.content.image.KestrosImageImpl;
 import io.kestros.samples.league.api.models.Match;
 import io.kestros.samples.league.api.models.Team;
 import io.kestros.samples.league.api.services.LeagueDataService;
@@ -98,11 +101,21 @@ public class FormGuideCardListDataSource extends BaseContainerSlingModelDataSour
         String desc = "Last 5: " + formStr + " | " + wins + "W " + draws + "D " + losses + "L"
             + " | " + pts + " pts from 5 matches";
 
+        KestrosImage crest = null;
+        if (team.getLogoUrl() != null && !team.getLogoUrl().isEmpty()) {
+          try {
+            crest = new KestrosImageImpl(
+                team.getLogoUrl(), team.getName() + " crest", null, null,
+                null, null, null, AnchorTarget.SAME_WINDOW,
+                this, "image", "imageElement", null);
+          } catch (Exception ignored) {}
+        }
+
         cards.add(new KestrosCardImpl(
             desc,
             new KestrosHeadingImpl((i + 1) + ". " + team.getName(),
                 "h3", this, "title", "titleElement"),
-            null, null, this, "card", "form-" + teamId));
+            crest, null, this, "card", "form-" + teamId));
         i++;
       } catch (Exception ignored) {}
     }
