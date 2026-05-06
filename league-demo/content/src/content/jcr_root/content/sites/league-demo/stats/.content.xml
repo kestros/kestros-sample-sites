@@ -32,6 +32,11 @@
             <glance-section
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="/libs/kestros/commons/components/structure/section">
+                <overline
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="By the numbers"
+                        variations="[/apps/kestros/commons/components/content/text/lfv2/0.0.1/variations/style/overline]"/>
                 <heading
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/heading"
@@ -99,6 +104,12 @@
             <leaders-section
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="/libs/kestros/commons/components/structure/section">
+                <overline
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        kes:datasource="league-demo-current-season"
+                        suffix=" top performers"
+                        variations="[/apps/kestros/commons/components/content/text/lfv2/0.0.1/variations/style/overline]"/>
                 <heading
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/heading"
