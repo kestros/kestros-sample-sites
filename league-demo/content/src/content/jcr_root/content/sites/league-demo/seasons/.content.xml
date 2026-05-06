@@ -23,7 +23,7 @@
                 <subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="Seven seasons of Meridian Premier League football. Five different champions."/>
+                        kes:datasource="league-demo-seasons-hero"/>
             </page-header>
 
             <!-- Champions Roll of Honour -->
@@ -59,21 +59,24 @@
                 <records-intro
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="Six completed seasons. Five different champions. The MPL has earned its reputation for unpredictability the hard way -- here are the milestones that have defined the league so far."/>
+                        kes:datasource="league-demo-records-intro"/>
                 <records-grid
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/structure/grid">
                     <column-1 jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
                         <h jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Most Titles" headingType="h4"/>
-                        <t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Meridian City (2) -- 2019-20, 2023-24"/>
+                        <t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text"
+                           kes:datasource="league-demo-season-record" metric="most-titles"/>
                     </column-1>
                     <column-2 jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
-                        <h jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Most Golden Boots" headingType="h4"/>
-                        <t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Carlos Vega -- 16 goals (2023-24). The all-time single-season record."/>
+                        <h jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Highest Single-Season Goals" headingType="h4"/>
+                        <t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text"
+                           kes:datasource="league-demo-season-record" metric="highest-single-season-goals"/>
                     </column-2>
                     <column-3 jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
                         <h jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Most Runner-Up Finishes" headingType="h4"/>
-                        <t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Riverside FC (2) -- 2019-20, 2024-25. Always the bridesmaid, until 2022-23."/>
+                        <t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text"
+                           kes:datasource="league-demo-season-record" metric="most-runners-up"/>
                     </column-3>
                 </records-grid>
             </records-section>

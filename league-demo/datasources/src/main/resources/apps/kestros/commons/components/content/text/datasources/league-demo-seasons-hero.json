@@ -1,0 +1,6 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:title": "Seasons Hero Subtitle",
+  "group": "League Demo",
+  "classPath": "io.kestros.samples.leaguedemo.datasources.SeasonsHeroSubtitleTextDataSource"
+}
