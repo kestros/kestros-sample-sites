@@ -97,7 +97,7 @@
                 <subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="Season 2025-26 -- Week 12 of 18"/>
+                        kes:datasource="league-demo-season-hero-subtitle"/>
                 <ctas
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/button-group"
