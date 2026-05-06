@@ -97,7 +97,8 @@
                 <subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        kes:datasource="league-demo-season-hero-subtitle"/>
+                        kes:datasource="league-demo-season-hero-subtitle"
+                        variations="[lead]"/>
                 <ctas
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/button-group"
@@ -122,6 +123,12 @@
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="/libs/kestros/commons/components/structure/section"
             >
+                <overline
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        kes:datasource="league-demo-matchweek-progress"
+                        prefix="Matchday"
+                        variations="[overline]"/>
                 <heading
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/heading"
@@ -130,9 +137,8 @@
                 <subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        kes:datasource="league-demo-matchweek-progress"
-                        prefix="The latest from Matchweek"
-                        suffix=", plus the fixtures coming up this weekend."/>
+                        text="Recent results plus the fixtures coming up this weekend."
+                        variations="[lead]"/>
                 <match-center-grid
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/structure/grid"
@@ -181,6 +187,11 @@
                     sling:resourceType="/libs/kestros/commons/components/structure/section"
                     layout="dark"
             >
+                <overline
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="From the pressroom"
+                        variations="[overline]"/>
                 <heading
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/heading"
@@ -189,7 +200,8 @@
                 <subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="Top stories, match analysis, and the latest from across the MPL."/>
+                        text="Top stories, match analysis, and the latest from across the MPL."
+                        variations="[lead]"/>
                 <news-cards
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/lists/card-list"
@@ -268,8 +280,13 @@
             <newsletter-section
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="/libs/kestros/commons/components/structure/section"
-                    layout="dark"
+                    layout="accent"
             >
+                <overline
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/kestros/commons/components/content/text"
+                        text="MPL newsletter"
+                        variations="[overline]"/>
                 <heading
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/heading"
@@ -278,7 +295,8 @@
                 <newsletter-text
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="Get match alerts, breaking news, exclusive features, and Golden Boot updates delivered straight to your inbox. Sign up for the MPL Newsletter -- free, weekly, and unsubscribe anytime."/>
+                        text="Match alerts, breaking news, exclusive features, and Golden Boot updates delivered straight to your inbox. Free, weekly, and unsubscribe anytime."
+                        variations="[lead]"/>
                 <newsletter-ctas
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/button-group"
