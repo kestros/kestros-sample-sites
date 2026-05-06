@@ -23,7 +23,8 @@
                 <subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="More than football. The MPL's commitment to the communities we serve."/>
+                        text="More than football. The MPL's commitment to the communities we serve."
+                        variations="[/apps/kestros/commons/components/content/text/lfv2/0.0.1/variations/style/lead]"/>
             </page-header>
 
             <!-- Overview -->

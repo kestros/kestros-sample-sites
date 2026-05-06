@@ -23,7 +23,8 @@
                 <subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="Jerseys, training gear, accessories, and collectibles. Free shipping on orders over $75."/>
+                        text="Jerseys, training gear, accessories, and collectibles. Free shipping on orders over $75."
+                        variations="[/apps/kestros/commons/components/content/text/lfv2/0.0.1/variations/style/lead]"/>
             </page-header>
             <merch-section
                     jcr:primaryType="nt:unstructured"

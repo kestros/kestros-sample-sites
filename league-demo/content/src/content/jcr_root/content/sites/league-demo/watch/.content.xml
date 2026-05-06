@@ -23,7 +23,8 @@
                 <subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="Every match, every goal. Live on TV, streaming, and radio."/>
+                        text="Every match, every goal. Live on TV, streaming, and radio."
+                        variations="[/apps/kestros/commons/components/content/text/lfv2/0.0.1/variations/style/lead]"/>
             </page-header>
 
             <!-- MPL Stream -->
