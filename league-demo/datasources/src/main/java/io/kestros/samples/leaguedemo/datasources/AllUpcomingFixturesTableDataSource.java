@@ -36,6 +36,7 @@ public class AllUpcomingFixturesTableDataSource extends BaseContainerSlingModelD
       headers.add(new SyntheticTableHeader("Date", this, "header", "date"));
       headers.add(new SyntheticTableHeader("Home", this, "header", "home"));
       headers.add(new SyntheticTableHeader("Away", this, "header", "away"));
+      headers.add(new SyntheticTableHeader("Venue", this, "header", "venue"));
     } catch (Exception e) { /* skip */ }
     return headers;
   }
@@ -57,12 +58,14 @@ public class AllUpcomingFixturesTableDataSource extends BaseContainerSlingModelD
       String homeName = home != null ? home.getName() : m.getHomeTeamId();
       String awayName = away != null ? away.getName() : m.getAwayTeamId();
 
+      String venue = m.getVenue() != null ? m.getVenue() : "TBC";
       try {
         List<KestrosTableCell> cells = Arrays.asList(
             new SyntheticTableCell(String.valueOf(m.getMatchday()), this, "cell", "wk-" + i),
             new SyntheticTableCell(m.getDate(), this, "cell", "date-" + i),
             new SyntheticTableCell(homeName, this, "cell", "home-" + i),
-            new SyntheticTableCell(awayName, this, "cell", "away-" + i)
+            new SyntheticTableCell(awayName, this, "cell", "away-" + i),
+            new SyntheticTableCell(venue, this, "cell", "venue-" + i)
         );
         rows.add(new SyntheticTableRow(cells, this, "row", "row-" + i));
         i++;
