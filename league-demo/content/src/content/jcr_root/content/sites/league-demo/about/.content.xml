@@ -50,7 +50,9 @@
                 <history-text-3
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="The 2025-26 campaign marks the seventh season of Meridian Premier League football. Over that span, five different clubs have lifted the championship trophy, and no team has ever successfully defended their title -- a testament to the fierce competition that defines the MPL."/>
+                        kes:datasource="league-demo-current-season"
+                        prefix="The "
+                        suffix=" campaign continues a story of fierce competition: every champion since the league's founding has been a different club in the year that followed, and no team has ever successfully defended their title."/>
             </history-section>
 
             <!-- The Clubs -->
