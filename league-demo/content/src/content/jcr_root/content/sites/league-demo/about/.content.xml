@@ -26,7 +26,7 @@
                 <subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="Seven seasons. Ten clubs. One champion."/>
+                        kes:datasource="league-demo-about-hero"/>
             </page-header>
 
             <!-- History -->
@@ -68,61 +68,11 @@
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
                         text="The MPL brings together ten clubs from across the Meridian region, ranging from Stone Valley -- the oldest club in the league, founded in 1886 -- to Southshore United, the youngest, established in 1947. Between them, these clubs represent over a thousand years of combined footballing tradition."/>
-                <clubs-grid
+                <clubs-table
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="/libs/kestros/commons/components/structure/grid"
-                >
-                    <column-1
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="kestros/commons/components/content-area"
-                    >
-                        <club-list-1
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="/libs/kestros/commons/components/content/text"
-                                text="Stone Valley (Est. 1886) -- Valley Ground"/>
-                        <club-list-2
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="/libs/kestros/commons/components/content/text"
-                                text="Riverside FC (Est. 1892) -- Riverside Park"/>
-                        <club-list-3
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="/libs/kestros/commons/components/content/text"
-                                text="Westbrook Rovers (Est. 1898) -- Brook Lane"/>
-                        <club-list-4
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="/libs/kestros/commons/components/content/text"
-                                text="Meridian City (Est. 1903) -- Meridian Stadium"/>
-                        <club-list-5
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="/libs/kestros/commons/components/content/text"
-                                text="Northside United (Est. 1905) -- Northern Ground"/>
-                    </column-1>
-                    <column-2
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="kestros/commons/components/content-area"
-                    >
-                        <club-list-6
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="/libs/kestros/commons/components/content/text"
-                                text="Ashdown Athletic (Est. 1911) -- Ashdown Park"/>
-                        <club-list-7
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="/libs/kestros/commons/components/content/text"
-                                text="Port Heights (Est. 1919) -- Harbour Stadium"/>
-                        <club-list-8
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="/libs/kestros/commons/components/content/text"
-                                text="Queensbury Wanderers (Est. 1923) -- Wanderers Field"/>
-                        <club-list-9
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="/libs/kestros/commons/components/content/text"
-                                text="Oakhill FC (Est. 1934) -- Oak Park"/>
-                        <club-list-10
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="/libs/kestros/commons/components/content/text"
-                                text="Southshore United (Est. 1947) -- Shore Park"/>
-                    </column-2>
-                </clubs-grid>
+                        sling:resourceType="/libs/kestros/commons/components/content/table"
+                        variations="[table-striped,table-hover]"
+                        kes:datasource="league-demo-about-clubs"/>
             </clubs-section>
 
             <!-- Competition Format -->
