@@ -42,7 +42,8 @@
                 <recent-intro
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        kes:datasource="league-demo-season-recent-intro"/>
+                        kes:datasource="league-demo-season-recent-intro"
+                        variations="[muted]"/>
                 <recent-table
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/table"

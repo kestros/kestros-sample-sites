@@ -27,7 +27,8 @@
                 <summary
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        kes:datasource="league-demo-player-summary"/>
+                        kes:datasource="league-demo-player-summary"
+                        variations="[muted]"/>
                 <player-stats
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/table"

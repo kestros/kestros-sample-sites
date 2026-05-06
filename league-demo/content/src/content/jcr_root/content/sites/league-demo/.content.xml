@@ -206,7 +206,8 @@
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/lists/card-list"
                         kes:datasource="league-demo-news"
-                        maxRows="3"/>
+                        maxRows="3"
+                        variations="[cards-shadow,cards-hover-lift]"/>
                 <news-link
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/link"
@@ -266,7 +267,8 @@
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="/libs/kestros/commons/components/lists/card-list"
                                 kes:datasource="league-demo-top-scorers"
-                                maxRows="3"/>
+                                maxRows="3"
+                                variations="[cards-shadow]"/>
                         <stats-link
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="/libs/kestros/commons/components/content/link"
@@ -328,7 +330,8 @@
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/lists/card-list"
                         kes:datasource="league-demo-sponsors"
-                        layout="four-columns"/>
+                        layout="four-columns"
+                        variations="[cards-shadow,cards-hover-lift]"/>
             </sponsors-section>
         </main>
 
