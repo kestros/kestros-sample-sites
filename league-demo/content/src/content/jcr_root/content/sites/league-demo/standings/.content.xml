@@ -24,7 +24,7 @@
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
                         kes:datasource="league-demo-matchweek-progress"
-                        prefix="Season 2025-26 -- Updated through Matchweek"/>
+                        prefix="Season ${seasonName} -- Updated through Matchweek"/>
             </page-header>
 
             <!-- League Table -->

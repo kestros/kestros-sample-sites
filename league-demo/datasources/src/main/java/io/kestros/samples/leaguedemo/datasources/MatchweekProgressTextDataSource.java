@@ -23,12 +23,17 @@ import org.apache.sling.models.annotations.injectorspecific.OSGiService;
  *       like ", plus the fixtures coming this weekend."). Defaults to "".</li>
  *   <li>{@code offset} — integer added to the current matchday. Defaults to 0.</li>
  * </ul>
+ *
+ * <p>Both {@code prefix} and {@code suffix} support the placeholder
+ * {@code ${seasonName}}, which is replaced with the in-progress season's display name
+ * (e.g. "2025-26"). This lets pages reference the season without hardcoding the year.
  */
 @Model(adaptables = {SlingHttpServletRequest.class, Resource.class})
 public class MatchweekProgressTextDataSource extends BaseSlingModelDataSource
     implements KestrosText {
 
   private static final String DEFAULT_PREFIX = "Updated through Matchweek";
+  private static final String SEASON_NAME_TOKEN = "${seasonName}";
 
   @OSGiService
   @org.apache.sling.models.annotations.Optional
@@ -53,8 +58,11 @@ public class MatchweekProgressTextDataSource extends BaseSlingModelDataSource
         .mapToInt(Match::getMatchday)
         .max()
         .orElse(0);
-    String prefix = getResource().getValueMap().get("prefix", DEFAULT_PREFIX);
-    String suffix = getResource().getValueMap().get("suffix", "");
+    String seasonName = current.getName() != null ? current.getName() : "";
+    String prefix = getResource().getValueMap().get("prefix", DEFAULT_PREFIX)
+        .replace(SEASON_NAME_TOKEN, seasonName);
+    String suffix = getResource().getValueMap().get("suffix", "")
+        .replace(SEASON_NAME_TOKEN, seasonName);
     int offset = getResource().getValueMap().get("offset", 0);
     return prefix + " " + (currentMatchday + offset) + suffix;
   }

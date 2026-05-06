@@ -52,7 +52,9 @@
                 <leaders-subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="The top 15 goal scorers in the 2025-26 season, ranked by goals then assists."/>
+                        kes:datasource="league-demo-matchweek-progress"
+                        prefix="Top 15 goal scorers in the ${seasonName} season through Matchweek"
+                        suffix=", ranked by goals then assists."/>
                 <players-table
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/table"

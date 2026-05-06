@@ -24,7 +24,7 @@
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
                         kes:datasource="league-demo-matchweek-progress"
-                        prefix="2025-26 season leaders through Matchweek"/>
+                        prefix="${seasonName} season leaders through Matchweek"/>
             </page-header>
 
             <!-- Season at a Glance -->
@@ -39,7 +39,9 @@
                 <subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="The numbers behind the 2025-26 season so far."/>
+                        kes:datasource="league-demo-matchweek-progress"
+                        prefix="The numbers behind the ${seasonName} season through Matchweek"
+                        suffix="."/>
                 <glance-grid
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/structure/grid">
