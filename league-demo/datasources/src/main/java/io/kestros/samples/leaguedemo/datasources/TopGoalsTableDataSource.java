@@ -42,7 +42,9 @@ public class TopGoalsTableDataSource extends BaseContainerSlingModelDataSource
       headers.add(new SyntheticTableHeader("#", this, "header", "rank"));
       headers.add(new SyntheticTableHeader("Player", this, "header", "player"));
       headers.add(new SyntheticTableHeader("Club", this, "header", "club"));
+      headers.add(new SyntheticTableHeader("Apps", this, "header", "apps"));
       headers.add(new SyntheticTableHeader("Goals", this, "header", "goals"));
+      headers.add(new SyntheticTableHeader("G/Match", this, "header", "rate"));
     } catch (Exception e) { /* skip */ }
     return headers;
   }
@@ -66,12 +68,17 @@ public class TopGoalsTableDataSource extends BaseContainerSlingModelDataSource
       String teamName = team != null ? team.getName() : p.getTeamId();
       String name = p.getFirstName() + " " + p.getLastName();
 
+      String rate = p.getAppearances() > 0
+          ? String.format("%.2f", (double) p.getGoals() / p.getAppearances())
+          : "—";
       try {
         List<KestrosTableCell> cells = Arrays.asList(
             new SyntheticTableCell(String.valueOf(rank), this, "cell", "rank-" + rank),
             new SyntheticTableCell(name, this, "cell", "name-" + rank),
             new SyntheticTableCell(teamName, this, "cell", "club-" + rank),
-            new SyntheticTableCell(String.valueOf(p.getGoals()), this, "cell", "goals-" + rank)
+            new SyntheticTableCell(String.valueOf(p.getAppearances()), this, "cell", "apps-" + rank),
+            new SyntheticTableCell(String.valueOf(p.getGoals()), this, "cell", "goals-" + rank),
+            new SyntheticTableCell(rate, this, "cell", "rate-" + rank)
         );
         rows.add(new SyntheticTableRow(cells, this, "row", "row-" + rank));
       } catch (Exception e) { /* skip */ }
