@@ -1,0 +1,37 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:title": "Matchweek Heading",
+  "group": "League Demo",
+  "classPath": "io.kestros.samples.leaguedemo.datasources.MatchweekHeadingDataSource",
+  "edit": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "kestros/cms2/dialog",
+    "content": {
+      "jcr:primaryType": "nt:unstructured",
+      "mode": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/cms2/fields/general/textfield",
+        "label": "Mode",
+        "propertyName": "mode",
+        "description": "Either 'current' (most recent played matchweek) or 'next' (next upcoming matchweek).",
+        "defaultValue": "current"
+      },
+      "suffix": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/cms2/fields/general/textfield",
+        "label": "Suffix",
+        "propertyName": "suffix",
+        "description": "Text appended after the week number (e.g. 'Results', 'Fixtures').",
+        "defaultValue": "Results"
+      },
+      "level": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/cms2/fields/general/textfield",
+        "label": "Heading level",
+        "propertyName": "level",
+        "description": "HTML heading level (h1-h6).",
+        "defaultValue": "h3"
+      }
+    }
+  }
+}
