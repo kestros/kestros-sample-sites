@@ -60,11 +60,18 @@ public class TopScorersCardListDataSource extends BaseContainerSlingModelDataSou
         String appsStr = player.getAppearances() == 1 ? "1 app" : player.getAppearances() + " apps";
         String desc = teamName + " | " + goalsStr + ", " + assistsStr + " in " + appsStr;
 
+        // Prefer team crest over generic player avatar — every player currently
+        // shares the same placeholder photo, so the crest is the more informative
+        // visual differentiator on the homepage card.
         KestrosImage image = null;
-        if (StringUtils.isNotBlank(player.getImageUrl())) {
+        String imageUrl = team != null && StringUtils.isNotBlank(team.getLogoUrl())
+            ? team.getLogoUrl()
+            : player.getImageUrl();
+        String imageAlt = team != null ? team.getName() + " crest" : name;
+        if (StringUtils.isNotBlank(imageUrl)) {
           try {
             image = new KestrosImageImpl(
-                player.getImageUrl(), name, null, null,
+                imageUrl, imageAlt, null, null,
                 null, null, null, AnchorTarget.SAME_WINDOW,
                 this, "image", "imageElement", null);
           } catch (Exception ignored) {}
