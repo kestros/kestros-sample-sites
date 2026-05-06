@@ -11,6 +11,7 @@ import io.kestros.samples.league.api.models.Team;
 import io.kestros.samples.league.api.services.LeagueDataService;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 import javax.annotation.Nonnull;
@@ -38,6 +39,7 @@ public class RecentResultsTableDataSource extends BaseContainerSlingModelDataSou
   public List<KestrosTableHeader> getHeaderElements() {
     List<KestrosTableHeader> headers = new ArrayList<>();
     try {
+      headers.add(new SyntheticTableHeader("Wk", this, "header", "wk"));
       headers.add(new SyntheticTableHeader("Date", this, "header", "date"));
       headers.add(new SyntheticTableHeader("Home", this, "header", "home"));
       headers.add(new SyntheticTableHeader("Score", this, "header", "score"));
@@ -57,7 +59,8 @@ public class RecentResultsTableDataSource extends BaseContainerSlingModelDataSou
         .collect(Collectors.toList());
 
     int start = Math.max(0, played.size() - getMaxResults());
-    List<Match> recent = played.subList(start, played.size());
+    List<Match> recent = new ArrayList<>(played.subList(start, played.size()));
+    Collections.reverse(recent);
 
     int i = 0;
     for (Match m : recent) {
@@ -69,6 +72,7 @@ public class RecentResultsTableDataSource extends BaseContainerSlingModelDataSou
 
       try {
         List<KestrosTableCell> cells = Arrays.asList(
+            new SyntheticTableCell(String.valueOf(m.getMatchday()), this, "cell", "wk-" + i),
             new SyntheticTableCell(m.getDate(), this, "cell", "date-" + i),
             new SyntheticTableCell(homeName, this, "cell", "home-" + i),
             new SyntheticTableCell(score, this, "cell", "score-" + i),

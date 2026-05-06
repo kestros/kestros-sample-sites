@@ -1,10 +1,13 @@
 package io.kestros.samples.leaguedemo.datasources;
 
+import io.kestros.cms.components.basic.api.content.AnchorTarget;
 import io.kestros.cms.components.basic.api.content.KestrosCard;
+import io.kestros.cms.components.basic.api.content.KestrosImage;
 import io.kestros.cms.components.basic.api.lists.KestrosCardList;
 import io.kestros.cms.components.basic.core.BaseContainerSlingModelDataSource;
 import io.kestros.cms.components.basic.core.content.card.KestrosCardImpl;
 import io.kestros.cms.components.basic.core.content.heading.KestrosHeadingImpl;
+import io.kestros.cms.components.basic.core.content.image.KestrosImageImpl;
 import io.kestros.samples.league.api.models.Team;
 import io.kestros.samples.league.api.services.LeagueDataService;
 import java.util.ArrayList;
@@ -50,11 +53,21 @@ public class VenuesCardListDataSource extends BaseContainerSlingModelDataSource
           desc.append(" | Opened: ").append(opened);
         }
 
+        KestrosImage crest = null;
+        if (team.getLogoUrl() != null && !team.getLogoUrl().isEmpty()) {
+          try {
+            crest = new KestrosImageImpl(
+                team.getLogoUrl(), team.getName() + " crest", null, null,
+                null, null, null, AnchorTarget.SAME_WINDOW,
+                this, "image", "imageElement", null);
+          } catch (Exception ignored) {}
+        }
+
         cards.add(new KestrosCardImpl(
             desc.toString(),
             new KestrosHeadingImpl(team.getStadium(),
                 "h3", this, "title", "titleElement"),
-            null, null, this, "card", "venue-" + team.getId()));
+            crest, null, this, "card", "venue-" + team.getId()));
         i++;
       } catch (Exception ignored) {}
     }
