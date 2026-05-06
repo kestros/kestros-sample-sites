@@ -23,7 +23,8 @@
                 <subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="2025-26 season leaders through Matchweek 12."/>
+                        kes:datasource="league-demo-matchweek-progress"
+                        prefix="2025-26 season leaders through Matchweek"/>
             </page-header>
 
             <!-- Season at a Glance -->

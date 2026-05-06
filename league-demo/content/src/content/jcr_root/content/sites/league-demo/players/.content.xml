@@ -23,7 +23,7 @@
                 <subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="160 players across ten clubs. Sorted by goals scored."/>
+                        kes:datasource="league-demo-players-hero-subtitle"/>
             </page-header>
 
             <!-- Intro -->
