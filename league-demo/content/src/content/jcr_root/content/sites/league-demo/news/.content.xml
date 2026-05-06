@@ -40,8 +40,7 @@
                 <all-news
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/lists/card-list"
-                        kes:datasource="league-demo-all-news"
-                        layout="three-columns"/>
+                        kes:datasource="league-demo-all-news"/>
             </news-section>
         </main>
         <footer jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
