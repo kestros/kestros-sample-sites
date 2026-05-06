@@ -43,7 +43,7 @@ public class MatchStatsTableDataSource extends BaseContainerSlingModelDataSource
   public List<KestrosTableHeader> getHeaderElements() {
     List<KestrosTableHeader> headers = new ArrayList<>();
     Match match = getMatch();
-    if (match == null || leagueDataService == null) return headers;
+    if (match == null || leagueDataService == null || !match.isPlayed()) return headers;
 
     Team home = leagueDataService.getTeam(match.getHomeTeamId());
     Team away = leagueDataService.getTeam(match.getAwayTeamId());
