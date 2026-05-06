@@ -101,7 +101,7 @@ public class FormGuideCardListDataSource extends BaseContainerSlingModelDataSour
         cards.add(new KestrosCardImpl(
             desc,
             new KestrosHeadingImpl((i + 1) + ". " + team.getName(),
-                "h3", this, "title", "form-title-" + i),
+                "h3", this, "title", "titleElement"),
             null, null, this, "card", "form-" + teamId));
         i++;
       } catch (Exception ignored) {}

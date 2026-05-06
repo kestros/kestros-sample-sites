@@ -37,7 +37,7 @@ public class MerchCardListDataSource extends BaseContainerSlingModelDataSource
         cards.add(new KestrosCardImpl(
             desc,
             new KestrosHeadingImpl(item.getName(),
-                "h3", this, "title", "merch-title-" + i),
+                "h3", this, "title", "titleElement"),
             null, null, this, "card", item.getId()));
       } catch (Exception ignored) {}
     }

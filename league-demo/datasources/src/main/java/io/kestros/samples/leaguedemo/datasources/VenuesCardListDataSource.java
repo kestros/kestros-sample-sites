@@ -53,7 +53,7 @@ public class VenuesCardListDataSource extends BaseContainerSlingModelDataSource
         cards.add(new KestrosCardImpl(
             desc.toString(),
             new KestrosHeadingImpl(team.getStadium(),
-                "h3", this, "title", "venue-title-" + i),
+                "h3", this, "title", "titleElement"),
             null, null, this, "card", "venue-" + team.getId()));
         i++;
       } catch (Exception ignored) {}
