@@ -14,9 +14,7 @@ import io.kestros.samples.league.api.services.LeagueDataService;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import javax.annotation.Nonnull;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
@@ -123,47 +121,24 @@ public class SeasonInfoTableDataSource extends BaseContainerSlingModelDataSource
   }
 
   /**
-   * Replays the in-progress season's played matches to produce the current top two by
-   * points (goal difference, then goals for as tiebreakers). Returns names; entries are
-   * null where the league hasn't started enough games to rank.
+   * Returns the in-progress season's current top two teams (by the shared
+   * StandingsCalculator ranking). Entries are null if no matches have been played yet.
    */
   private String[] topTwoByPoints(String seasonId) {
-    Map<String, int[]> stats = new HashMap<>();
-    for (Team t : leagueDataService.getTeams()) {
-      stats.put(t.getId(), new int[]{0, 0, 0});
+    List<StandingsCalculator.Standing> table =
+        StandingsCalculator.compute(leagueDataService, seasonId);
+    if (table.isEmpty() || table.get(0).played == 0) {
+      return new String[]{null, null};
     }
-    boolean anyPlayed = false;
-    for (Match m : leagueDataService.getMatches()) {
-      if (!seasonId.equals(m.getSeasonId()) || !m.isPlayed()) continue;
-      anyPlayed = true;
-      int[] home = stats.get(m.getHomeTeamId());
-      int[] away = stats.get(m.getAwayTeamId());
-      if (home == null || away == null) continue;
-      int hs = m.getHomeScore();
-      int as = m.getAwayScore();
-      home[1] += hs - as;
-      away[1] += as - hs;
-      home[2] += hs;
-      away[2] += as;
-      if (hs > as) home[0] += 3;
-      else if (as > hs) away[0] += 3;
-      else { home[0] += 1; away[0] += 1; }
-    }
-    if (!anyPlayed) return new String[]{null, null};
-    List<Map.Entry<String, int[]>> ranked = new ArrayList<>(stats.entrySet());
-    ranked.sort(Comparator
-        .comparingInt((Map.Entry<String, int[]> e) -> e.getValue()[0]).reversed()
-        .thenComparingInt((Map.Entry<String, int[]> e) -> e.getValue()[1]).reversed()
-        .thenComparingInt((Map.Entry<String, int[]> e) -> e.getValue()[2]).reversed());
-    String first = ranked.size() > 0 ? formatLeader(ranked.get(0)) : null;
-    String second = ranked.size() > 1 ? formatLeader(ranked.get(1)) : null;
+    String first = formatLeader(table.get(0));
+    String second = table.size() > 1 ? formatLeader(table.get(1)) : null;
     return new String[]{first, second};
   }
 
-  private String formatLeader(Map.Entry<String, int[]> e) {
-    Team t = leagueDataService.getTeam(e.getKey());
-    String name = t != null ? t.getName() : e.getKey();
-    return name + " (" + e.getValue()[0] + " pts)";
+  private String formatLeader(StandingsCalculator.Standing s) {
+    Team t = leagueDataService.getTeam(s.teamId);
+    String name = t != null ? t.getName() : s.teamId;
+    return name + " (" + s.points() + " pts)";
   }
 
   private String currentTopScorer() {

@@ -6,15 +6,11 @@ import io.kestros.cms.components.basic.api.table.KestrosTableCell;
 import io.kestros.cms.components.basic.api.table.KestrosTableHeader;
 import io.kestros.cms.components.basic.api.table.KestrosTableRow;
 import io.kestros.cms.components.basic.core.BaseContainerSlingModelDataSource;
-import io.kestros.samples.league.api.models.Match;
 import io.kestros.samples.league.api.models.Team;
 import io.kestros.samples.league.api.services.LeagueDataService;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Comparator;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import javax.annotation.Nonnull;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.sling.api.SlingHttpServletRequest;
@@ -102,50 +98,28 @@ public class TeamInfoTableDataSource extends BaseContainerSlingModelDataSource
   }
 
   /**
-   * Computes the team's current league position by replaying played matches and ranking
-   * by points (3-1-0), then goal difference, then goals for. Returns "Nth of M" so the
-   * profile makes sense in any league size.
+   * Looks up the team's current league position from the shared standings calculator
+   * and renders it as "Nth of M" so the profile makes sense in any league size.
    */
   private String leaguePosition(String slug) {
-    Map<String, int[]> stats = new HashMap<>();
-    for (Team t : leagueDataService.getTeams()) {
-      stats.put(t.getId(), new int[]{0, 0, 0}); // points, gd, gf
-    }
-    for (Match m : leagueDataService.getMatches()) {
-      if (!m.isPlayed()) continue;
-      int[] home = stats.get(m.getHomeTeamId());
-      int[] away = stats.get(m.getAwayTeamId());
-      if (home == null || away == null) continue;
-      int hs = m.getHomeScore();
-      int as = m.getAwayScore();
-      home[1] += hs - as;
-      away[1] += as - hs;
-      home[2] += hs;
-      away[2] += as;
-      if (hs > as) home[0] += 3;
-      else if (as > hs) away[0] += 3;
-      else { home[0] += 1; away[0] += 1; }
-    }
-    List<Map.Entry<String, int[]>> ranked = new ArrayList<>(stats.entrySet());
-    ranked.sort(Comparator
-        .comparingInt((Map.Entry<String, int[]> e) -> e.getValue()[0]).reversed()
-        .thenComparingInt((Map.Entry<String, int[]> e) -> e.getValue()[1]).reversed()
-        .thenComparingInt((Map.Entry<String, int[]> e) -> e.getValue()[2]).reversed());
-    for (int i = 0; i < ranked.size(); i++) {
-      if (slug.equals(ranked.get(i).getKey())) {
+    List<StandingsCalculator.Standing> table = StandingsCalculator.compute(leagueDataService);
+    for (int i = 0; i < table.size(); i++) {
+      if (slug.equals(table.get(i).teamId)) {
         int rank = i + 1;
-        String suffix;
-        if (rank % 100 >= 11 && rank % 100 <= 13) suffix = "th";
-        else switch (rank % 10) {
-          case 1: suffix = "st"; break;
-          case 2: suffix = "nd"; break;
-          case 3: suffix = "rd"; break;
-          default: suffix = "th";
-        }
-        return rank + suffix + " of " + ranked.size();
+        return rank + ordinalSuffix(rank) + " of " + table.size();
       }
     }
     return null;
+  }
+
+  private static String ordinalSuffix(int rank) {
+    if (rank % 100 >= 11 && rank % 100 <= 13) return "th";
+    switch (rank % 10) {
+      case 1: return "st";
+      case 2: return "nd";
+      case 3: return "rd";
+      default: return "th";
+    }
   }
 
   @Nonnull

@@ -6,14 +6,11 @@ import io.kestros.cms.components.basic.api.table.KestrosTableCell;
 import io.kestros.cms.components.basic.api.table.KestrosTableHeader;
 import io.kestros.cms.components.basic.api.table.KestrosTableRow;
 import io.kestros.cms.components.basic.core.BaseContainerSlingModelDataSource;
-import io.kestros.samples.league.api.models.Match;
 import io.kestros.samples.league.api.models.Team;
 import io.kestros.samples.league.api.services.LeagueDataService;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import javax.annotation.Nonnull;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
@@ -27,49 +24,6 @@ public class StandingsTableDataSource extends BaseContainerSlingModelDataSource
   @OSGiService
   @org.apache.sling.models.annotations.Optional
   private LeagueDataService leagueDataService;
-
-  private static class Standing implements Comparable<Standing> {
-    String teamId;
-    int played, won, drawn, lost, goalsFor, goalsAgainst;
-    int points() { return won * 3 + drawn; }
-    int goalDifference() { return goalsFor - goalsAgainst; }
-
-    @Override
-    public int compareTo(Standing o) {
-      if (o.points() != points()) return o.points() - points();
-      return o.goalDifference() - goalDifference();
-    }
-  }
-
-  private List<Standing> computeStandings() {
-    Map<String, Standing> map = new HashMap<>();
-    if (leagueDataService == null) return new ArrayList<>();
-
-    for (Team t : leagueDataService.getTeams()) {
-      Standing s = new Standing();
-      s.teamId = t.getId();
-      map.put(t.getId(), s);
-    }
-
-    for (Match m : leagueDataService.getMatches()) {
-      if (!m.isPlayed()) continue;
-      Standing home = map.get(m.getHomeTeamId());
-      Standing away = map.get(m.getAwayTeamId());
-      if (home == null || away == null) continue;
-
-      home.played++; away.played++;
-      home.goalsFor += m.getHomeScore(); home.goalsAgainst += m.getAwayScore();
-      away.goalsFor += m.getAwayScore(); away.goalsAgainst += m.getHomeScore();
-
-      if (m.getHomeScore() > m.getAwayScore()) { home.won++; away.lost++; }
-      else if (m.getHomeScore() < m.getAwayScore()) { away.won++; home.lost++; }
-      else { home.drawn++; away.drawn++; }
-    }
-
-    List<Standing> standings = new ArrayList<>(map.values());
-    standings.sort(null);
-    return standings;
-  }
 
   @Nonnull
   @Override
@@ -94,10 +48,9 @@ public class StandingsTableDataSource extends BaseContainerSlingModelDataSource
   @Override
   public List<KestrosTableRow> getRowElements() {
     List<KestrosTableRow> rows = new ArrayList<>();
-    List<Standing> standings = computeStandings();
 
     int pos = 0;
-    for (Standing s : standings) {
+    for (StandingsCalculator.Standing s : StandingsCalculator.compute(leagueDataService)) {
       pos++;
       Team team = leagueDataService.getTeam(s.teamId);
       String name = team != null ? team.getName() : s.teamId;
