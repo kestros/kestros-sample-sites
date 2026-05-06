@@ -2,5 +2,28 @@
   "jcr:primaryType": "nt:unstructured",
   "jcr:title": "Current Season Text",
   "group": "League Demo",
-  "classPath": "io.kestros.samples.leaguedemo.datasources.CurrentSeasonTextDataSource"
+  "classPath": "io.kestros.samples.leaguedemo.datasources.CurrentSeasonTextDataSource",
+  "edit": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "kestros/cms2/dialog",
+    "content": {
+      "jcr:primaryType": "nt:unstructured",
+      "prefix": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/cms2/fields/general/textfield",
+        "label": "Prefix",
+        "name": "prefix",
+        "description": "Text rendered before the season name. e.g. 'Season ' yields 'Season 2025-26'.",
+        "autofocus": false
+      },
+      "suffix": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/cms2/fields/general/textfield",
+        "label": "Suffix",
+        "name": "suffix",
+        "description": "Text rendered after the season name. e.g. ' Meridian Premier League. All rights reserved.'",
+        "autofocus": false
+      }
+    }
+  }
 }

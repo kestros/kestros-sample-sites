@@ -2,5 +2,57 @@
   "jcr:primaryType": "nt:unstructured",
   "jcr:title": "Match Title",
   "group": "League Demo",
-  "classPath": "io.kestros.samples.leaguedemo.datasources.MatchTitleHeadingDataSource"
+  "classPath": "io.kestros.samples.leaguedemo.datasources.MatchTitleHeadingDataSource",
+  "edit": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "kestros/cms2/dialog",
+    "content": {
+      "jcr:primaryType": "nt:unstructured",
+      "level": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/cms2/fields/general/selectfield",
+        "label": "Heading level",
+        "name": "level",
+        "description": "HTML heading level. Default h1 for the match detail page title.",
+        "options": {
+          "h1": {
+            "jcr:primaryType": "nt:unstructured",
+            "text": "Heading 1",
+            "value": "h1",
+            "selected": false
+          },
+          "h2": {
+            "jcr:primaryType": "nt:unstructured",
+            "text": "Heading 2",
+            "value": "h2",
+            "selected": false
+          },
+          "h3": {
+            "jcr:primaryType": "nt:unstructured",
+            "text": "Heading 3",
+            "value": "h3",
+            "selected": true
+          },
+          "h4": {
+            "jcr:primaryType": "nt:unstructured",
+            "text": "Heading 4",
+            "value": "h4",
+            "selected": false
+          },
+          "h5": {
+            "jcr:primaryType": "nt:unstructured",
+            "text": "Heading 5",
+            "value": "h5",
+            "selected": false
+          },
+          "h6": {
+            "jcr:primaryType": "nt:unstructured",
+            "text": "Heading 6",
+            "value": "h6",
+            "selected": false
+          }
+        }
+      }
+    }
+  }
 }

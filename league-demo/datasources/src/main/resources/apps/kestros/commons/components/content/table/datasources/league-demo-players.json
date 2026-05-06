@@ -3,5 +3,20 @@
   "jcr:title": "Players",
   "group": "League Demo",
   "classPath": "io.kestros.samples.leaguedemo.datasources.TopScorersTableDataSource",
-  "container": true
+  "container": true,
+  "edit": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "kestros/cms2/dialog",
+    "content": {
+      "jcr:primaryType": "nt:unstructured",
+      "maxRows": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/cms2/fields/general/numberfield",
+        "label": "Max rows",
+        "name": "maxRows",
+        "description": "Number of players to list. Default 15.",
+        "defaultValue": "15"
+      }
+    }
+  }
 }

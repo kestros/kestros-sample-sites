@@ -2,5 +2,39 @@
   "jcr:primaryType": "nt:unstructured",
   "jcr:title": "Season Record",
   "group": "League Demo",
-  "classPath": "io.kestros.samples.leaguedemo.datasources.SeasonRecordsTextDataSource"
+  "classPath": "io.kestros.samples.leaguedemo.datasources.SeasonRecordsTextDataSource",
+  "edit": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "kestros/cms2/dialog",
+    "content": {
+      "jcr:primaryType": "nt:unstructured",
+      "metric": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/cms2/fields/general/selectfield",
+        "label": "Metric",
+        "name": "metric",
+        "description": "Which all-time record this text element describes.",
+        "options": {
+          "most_titles": {
+            "jcr:primaryType": "nt:unstructured",
+            "text": "Most titles",
+            "value": "most-titles",
+            "selected": true
+          },
+          "most_runners_up": {
+            "jcr:primaryType": "nt:unstructured",
+            "text": "Most runner-up finishes",
+            "value": "most-runners-up",
+            "selected": false
+          },
+          "highest_single_season_goals": {
+            "jcr:primaryType": "nt:unstructured",
+            "text": "Highest single-season goals",
+            "value": "highest-single-season-goals",
+            "selected": false
+          }
+        }
+      }
+    }
+  }
 }
