@@ -23,7 +23,10 @@
                 <subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="Every upcoming fixture from Matchweek 13 through the end of the season."/>
+                        kes:datasource="league-demo-matchweek-progress"
+                        prefix="Every upcoming fixture from Matchweek"
+                        offset="{Long}1"
+                        suffix=" through the end of the season."/>
             </page-header>
             <intro-section
                     jcr:primaryType="nt:unstructured"
@@ -44,7 +47,10 @@
                 <subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="Matchweek 13 through Matchweek 18. Times are local."/>
+                        kes:datasource="league-demo-matchweek-progress"
+                        prefix="Matchweek"
+                        offset="{Long}1"
+                        suffix=" through end of season. Times are local."/>
                 <fixtures-table
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/table"

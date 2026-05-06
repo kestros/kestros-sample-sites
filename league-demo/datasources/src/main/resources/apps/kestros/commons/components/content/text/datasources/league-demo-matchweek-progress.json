@@ -15,6 +15,22 @@
         "propertyName": "prefix",
         "description": "Text shown before the computed matchweek number (e.g. 'Updated through Matchweek').",
         "defaultValue": "Updated through Matchweek"
+      },
+      "suffix": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/cms2/fields/general/textfield",
+        "label": "Suffix",
+        "propertyName": "suffix",
+        "description": "Text shown after the matchweek number — commonly a sentence continuation (e.g. ', plus the fixtures coming this weekend.').",
+        "defaultValue": ""
+      },
+      "offset": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/cms2/fields/general/numberfield",
+        "label": "Offset",
+        "propertyName": "offset",
+        "description": "Integer added to the current matchweek (e.g. 1 to refer to the next matchweek). Negative values look back.",
+        "defaultValue": "0"
       }
     }
   }

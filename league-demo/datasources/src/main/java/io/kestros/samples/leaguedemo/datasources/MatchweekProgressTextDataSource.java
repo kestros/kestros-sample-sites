@@ -12,12 +12,17 @@ import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 
 /**
- * Generic matchweek-progress text. Reads a {@code prefix} property from the resource
- * and emits "{prefix} {N}" where N is the highest played matchday in the in-progress
- * season. Used for page subtitles like "Updated through Matchweek 12" or
- * "2025-26 season leaders through Matchweek 12" where only the prefix differs.
+ * Generic matchweek-progress text. Emits "{prefix} {N}{suffix}" where N is the highest played
+ * matchday in the in-progress season, optionally shifted by {@code offset} (e.g. +1 to refer to
+ * the next matchweek).
  *
- * <p>If no {@code prefix} is set, defaults to "Updated through Matchweek".
+ * <p>Reads three properties from the resource:
+ * <ul>
+ *   <li>{@code prefix} — text before the number. Defaults to "Updated through Matchweek".</li>
+ *   <li>{@code suffix} — text after the number (commonly empty or a sentence continuation
+ *       like ", plus the fixtures coming this weekend."). Defaults to "".</li>
+ *   <li>{@code offset} — integer added to the current matchday. Defaults to 0.</li>
+ * </ul>
  */
 @Model(adaptables = {SlingHttpServletRequest.class, Resource.class})
 public class MatchweekProgressTextDataSource extends BaseSlingModelDataSource
@@ -49,6 +54,8 @@ public class MatchweekProgressTextDataSource extends BaseSlingModelDataSource
         .max()
         .orElse(0);
     String prefix = getResource().getValueMap().get("prefix", DEFAULT_PREFIX);
-    return prefix + " " + currentMatchday;
+    String suffix = getResource().getValueMap().get("suffix", "");
+    int offset = getResource().getValueMap().get("offset", 0);
+    return prefix + " " + (currentMatchday + offset) + suffix;
   }
 }

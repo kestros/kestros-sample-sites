@@ -130,7 +130,9 @@
                 <subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="The latest from Matchweek 12, plus the fixtures coming up this weekend."/>
+                        kes:datasource="league-demo-matchweek-progress"
+                        prefix="The latest from Matchweek"
+                        suffix=", plus the fixtures coming up this weekend."/>
                 <match-center-grid
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/structure/grid"
