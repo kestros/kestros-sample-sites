@@ -283,6 +283,7 @@
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="/libs/kestros/commons/components/structure/section"
                     layout="accent"
+                    variations="[/apps/kestros/commons/components/structure/section/lfv2/0.0.1/variations/spacing/section-compact]"
             >
                 <overline
                         jcr:primaryType="nt:unstructured"
