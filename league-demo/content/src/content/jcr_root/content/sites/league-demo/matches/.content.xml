@@ -23,7 +23,7 @@
                 <subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="60 matches played across 12 matchweeks. Most recent first."/>
+                        kes:datasource="league-demo-results-count"/>
             </page-header>
             <table-section
                     jcr:primaryType="nt:unstructured"

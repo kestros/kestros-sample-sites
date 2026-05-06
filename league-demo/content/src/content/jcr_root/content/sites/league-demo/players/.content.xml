@@ -33,11 +33,11 @@
                 <intro-text
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="The 2025-26 Meridian Premier League features 160 registered players across ten clubs -- from veteran goalscorers chasing the Golden Boot to academy graduates making their professional debuts. The pages below track every player's contribution to the season as it unfolds."/>
+                        kes:datasource="league-demo-players-intro"/>
                 <intro-text-2
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="Click any name in the Scoring Leaders table to see that player's full season profile, including game-by-game appearances, goals, assists, and disciplinary record."/>
+                        text="Every player's contribution is tracked here as the season unfolds -- appearances, goals, assists, and disciplinary records, all updated as matches are played."/>
             </intro-section>
 
             <!-- Scoring Leaders -->
