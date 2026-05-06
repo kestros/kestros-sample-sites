@@ -1,7 +1,0 @@
-{
-  "jcr:primaryType": "nt:unstructured",
-  "jcr:title": "Fixtures",
-  "group": "League Demo",
-  "classPath": "io.kestros.samples.leaguedemo.datasources.FixturesTableDataSource",
-  "container": true
-}
