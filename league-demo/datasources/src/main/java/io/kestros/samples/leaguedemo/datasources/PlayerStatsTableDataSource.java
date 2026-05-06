@@ -71,14 +71,15 @@ public class PlayerStatsTableDataSource extends BaseContainerSlingModelDataSourc
     if (StringUtils.isNotBlank(player.getNationality())) {
       info.add(new String[]{"Nationality", player.getNationality()});
     }
-    info.add(new String[]{"Appearances", String.valueOf(player.getAppearances())});
+    int apps = PlayerAppearances.displayedFor(player, leagueDataService);
+    info.add(new String[]{"Appearances", String.valueOf(apps)});
     info.add(new String[]{"Goals", String.valueOf(player.getGoals())});
     info.add(new String[]{"Assists", String.valueOf(player.getAssists())});
     info.add(new String[]{"Goal contributions",
         String.valueOf(player.getGoals() + player.getAssists())});
-    if (player.getAppearances() > 0 && player.getGoals() > 0) {
+    if (apps > 0 && player.getGoals() > 0) {
       info.add(new String[]{"Minutes per goal",
-          String.valueOf(Math.round(90.0 * player.getAppearances() / player.getGoals()))});
+          String.valueOf(Math.round(90.0 * apps / player.getGoals()))});
     }
     info.add(new String[]{"Discipline",
         player.getYellowCards() + " yellow / " + player.getRedCards() + " red"});

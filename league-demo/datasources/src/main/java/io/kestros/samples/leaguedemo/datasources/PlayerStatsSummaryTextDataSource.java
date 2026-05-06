@@ -37,9 +37,10 @@ public class PlayerStatsSummaryTextDataSource extends BaseSlingModelDataSource
       s.append(team.getName());
     }
     if (s.length() > 0) s.append(" — ");
+    int apps = PlayerAppearances.displayedFor(p, leagueDataService);
     s.append(p.getGoals()).append(p.getGoals() == 1 ? " goal, " : " goals, ");
     s.append(p.getAssists()).append(p.getAssists() == 1 ? " assist in " : " assists in ");
-    s.append(p.getAppearances()).append(p.getAppearances() == 1 ? " app" : " apps");
+    s.append(apps).append(apps == 1 ? " app" : " apps");
     return s.toString();
   }
 }

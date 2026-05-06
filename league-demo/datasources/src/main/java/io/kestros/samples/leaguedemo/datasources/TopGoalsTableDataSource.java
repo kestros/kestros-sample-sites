@@ -68,15 +68,16 @@ public class TopGoalsTableDataSource extends BaseContainerSlingModelDataSource
       String teamName = team != null ? team.getName() : p.getTeamId();
       String name = p.getFirstName() + " " + p.getLastName();
 
-      String rate = p.getAppearances() > 0
-          ? String.format("%.2f", (double) p.getGoals() / p.getAppearances())
+      int apps = PlayerAppearances.displayedFor(p, leagueDataService);
+      String rate = apps > 0
+          ? String.format("%.2f", (double) p.getGoals() / apps)
           : "—";
       try {
         List<KestrosTableCell> cells = Arrays.asList(
             new SyntheticTableCell(String.valueOf(rank), this, "cell", "rank-" + rank),
             new SyntheticTableCell(name, this, "cell", "name-" + rank),
             new SyntheticTableCell(teamName, this, "cell", "club-" + rank),
-            new SyntheticTableCell(String.valueOf(p.getAppearances()), this, "cell", "apps-" + rank),
+            new SyntheticTableCell(String.valueOf(apps), this, "cell", "apps-" + rank),
             new SyntheticTableCell(String.valueOf(p.getGoals()), this, "cell", "goals-" + rank),
             new SyntheticTableCell(rate, this, "cell", "rate-" + rank)
         );

@@ -57,7 +57,8 @@ public class TopScorersCardListDataSource extends BaseContainerSlingModelDataSou
         String name = player.getFirstName() + " " + player.getLastName();
         String goalsStr = player.getGoals() == 1 ? "1 goal" : player.getGoals() + " goals";
         String assistsStr = player.getAssists() == 1 ? "1 assist" : player.getAssists() + " assists";
-        String appsStr = player.getAppearances() == 1 ? "1 app" : player.getAppearances() + " apps";
+        int displayedApps = PlayerAppearances.displayedFor(player, leagueDataService);
+        String appsStr = displayedApps == 1 ? "1 app" : displayedApps + " apps";
         String desc = teamName + " | " + goalsStr + ", " + assistsStr + " in " + appsStr;
 
         // Prefer team crest over generic player avatar — every player currently

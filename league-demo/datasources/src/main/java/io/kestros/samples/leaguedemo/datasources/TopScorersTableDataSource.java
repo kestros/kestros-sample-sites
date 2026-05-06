@@ -71,7 +71,7 @@ public class TopScorersTableDataSource extends BaseContainerSlingModelDataSource
             new SyntheticTableCell(name, this, "cell", "name-" + pos),
             new SyntheticTableCell(teamName, this, "cell", "club-" + pos),
             new SyntheticTableCell(player.getPosition(), this, "cell", "position-" + pos),
-            new SyntheticTableCell(String.valueOf(player.getAppearances()), this, "cell", "apps-" + pos),
+            new SyntheticTableCell(String.valueOf(PlayerAppearances.displayedFor(player, leagueDataService)), this, "cell", "apps-" + pos),
             new SyntheticTableCell(String.valueOf(player.getGoals()), this, "cell", "goals-" + pos),
             new SyntheticTableCell(String.valueOf(player.getAssists()), this, "cell", "assists-" + pos)
         );
