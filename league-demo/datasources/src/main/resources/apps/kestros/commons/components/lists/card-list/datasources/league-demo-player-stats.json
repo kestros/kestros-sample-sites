@@ -1,7 +1,0 @@
-{
-  "jcr:primaryType": "nt:unstructured",
-  "jcr:title": "Player Stats",
-  "group": "League Demo",
-  "classPath": "io.kestros.samples.leaguedemo.datasources.PlayerStatsCardListDataSource",
-  "container": true
-}
