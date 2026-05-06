@@ -23,7 +23,7 @@
                 <subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="Ten clubs. Over a century of combined history. One league."
+                        text="Profiles, squads and stadium details for every MPL club."
                         variations="[/apps/kestros/commons/components/content/text/lfv2/0.0.1/variations/style/lead]"/>
             </page-header>
             <intro-section

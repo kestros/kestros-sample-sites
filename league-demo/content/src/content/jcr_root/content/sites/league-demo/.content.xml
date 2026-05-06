@@ -137,7 +137,7 @@
                 <subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="Recent results plus the fixtures coming up this weekend."
+                        text="Last weekend's results and what's coming up next."
                         variations="[/apps/kestros/commons/components/content/text/lfv2/0.0.1/variations/style/lead]"/>
                 <match-center-grid
                         jcr:primaryType="nt:unstructured"
@@ -200,7 +200,7 @@
                 <subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="Top stories, match analysis, and the latest from across the MPL."
+                        text="Match reports, previews and reaction."
                         variations="[/apps/kestros/commons/components/content/text/lfv2/0.0.1/variations/style/lead]"/>
                 <news-cards
                         jcr:primaryType="nt:unstructured"
@@ -223,12 +223,13 @@
                 <heading
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/heading"
-                        headingText="League Pulse"
+                        headingText="Title Race &amp; Golden Boot"
                         headingType="h2"/>
                 <subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="Where the title race stands and who's leading the Golden Boot."/>
+                        text="Top of the table and the leading scorers, through the latest matchday."
+                        variations="[/apps/kestros/commons/components/content/text/lfv2/0.0.1/variations/style/lead]"/>
                 <pulse-grid
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/structure/grid"
@@ -293,7 +294,7 @@
                 <heading
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/heading"
-                        headingText="Never Miss a Moment"
+                        headingText="The weekly digest"
                         headingType="h2"/>
                 <newsletter-text
                         jcr:primaryType="nt:unstructured"
@@ -326,7 +327,7 @@
                 <subtitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/content/text"
-                        text="The partners who make the Meridian Premier League possible."/>
+                        text="Official partners of the league."/>
                 <sponsors-cards
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/lists/card-list"
