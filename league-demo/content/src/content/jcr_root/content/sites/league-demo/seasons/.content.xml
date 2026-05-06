@@ -45,7 +45,8 @@
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/lists/card-list"
                         kes:datasource="league-demo-champions"
-                        layout="two-columns"/>
+                        layout="two-columns"
+                        variations="[/apps/kestros/commons/components/lists/card-list/lfv2/0.0.1/variations/style/cards-shadow,/apps/kestros/commons/components/lists/card-list/lfv2/0.0.1/variations/style/cards-hover-lift]"/>
             </champions-section>
 
             <!-- Season Records -->

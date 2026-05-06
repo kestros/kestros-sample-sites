@@ -68,7 +68,8 @@
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/lists/card-list"
                         kes:datasource="league-demo-form-guide"
-                        layout="two-columns"/>
+                        layout="two-columns"
+                        variations="[/apps/kestros/commons/components/lists/card-list/lfv2/0.0.1/variations/style/cards-shadow]"/>
             </form-section>
         </main>
         <footer jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>

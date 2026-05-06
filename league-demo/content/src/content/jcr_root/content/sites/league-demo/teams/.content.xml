@@ -51,7 +51,8 @@
                 <teams-cards
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="/libs/kestros/commons/components/lists/card-list"
-                        kes:datasource="league-demo-teams-list"/>
+                        kes:datasource="league-demo-teams-list"
+                        variations="[/apps/kestros/commons/components/lists/card-list/lfv2/0.0.1/variations/style/cards-shadow,/apps/kestros/commons/components/lists/card-list/lfv2/0.0.1/variations/style/cards-hover-lift]"/>
             </cards-section>
         </main>
         <footer jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
