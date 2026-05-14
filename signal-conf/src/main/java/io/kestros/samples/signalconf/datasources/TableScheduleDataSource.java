@@ -1,5 +1,6 @@
 package io.kestros.samples.signalconf.datasources;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import io.kestros.cms.components.basic.api.KestrosBasicComponentElement;
 import io.kestros.cms.components.basic.api.table.KestrosTable;
 import io.kestros.cms.components.basic.api.table.KestrosTableCell;
@@ -13,12 +14,18 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 
+/**
+ * Sling model datasource that renders the conference schedule for a configured day as a Kestros
+ * table.
+ */
 @Model(adaptables = {SlingHttpServletRequest.class, Resource.class})
+@SuppressFBWarnings("IMC_IMMATURE_CLASS_NO_TOSTRING")
 public class TableScheduleDataSource extends BaseContainerSlingModelDataSource
     implements KestrosTable {
 
@@ -26,14 +33,17 @@ public class TableScheduleDataSource extends BaseContainerSlingModelDataSource
   @org.apache.sling.models.annotations.Optional
   private TagRetrievalService tagRetrievalService;
 
+  @Nullable
   String getDayTag() {
     return getResource().getValueMap().get("dayTag", String.class);
   }
 
+  @Nullable
   String getSessionsPath() {
     return getResource().getValueMap().get("sessionsPath", String.class);
   }
 
+  @Nonnull
   List<BaseContentPage> getSessionsForDay() {
     List<BaseContentPage> sessions = new ArrayList<>();
     String dayTag = getDayTag();
@@ -67,6 +77,7 @@ public class TableScheduleDataSource extends BaseContainerSlingModelDataSource
 
   @Nonnull
   @Override
+  @SuppressFBWarnings({"DE_MIGHT_IGNORE", "REC_CATCH_EXCEPTION"})
   public List<KestrosTableHeader> getHeaderElements() {
     List<KestrosTableHeader> headers = new ArrayList<>();
     try {
@@ -81,6 +92,7 @@ public class TableScheduleDataSource extends BaseContainerSlingModelDataSource
 
   @Nonnull
   @Override
+  @SuppressFBWarnings({"DE_MIGHT_IGNORE", "REC_CATCH_EXCEPTION"})
   public List<KestrosTableRow> getRowElements() {
     List<KestrosTableRow> rows = new ArrayList<>();
     int rowIndex = 0;

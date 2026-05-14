@@ -1,28 +1,36 @@
 package io.kestros.samples.signalconf.datasources;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import io.kestros.cms.components.basic.api.content.AnchorTarget;
 import io.kestros.cms.components.basic.api.content.KestrosButton;
 import io.kestros.cms.components.basic.api.content.KestrosButtonGroup;
 import io.kestros.cms.components.basic.core.BaseContainerSlingModelDataSource;
 import io.kestros.cms.components.basic.core.LinkUtils;
 import io.kestros.cms.components.basic.core.content.button.KestrosButtonImpl;
+import io.kestros.cms.componenttypes.api.models.ComponentVariation;
 import io.kestros.cms.sitebuilding.api.models.BaseComponent;
 import io.kestros.cms.sitebuilding.api.models.BaseContentPage;
-import io.kestros.cms.componenttypes.api.models.ComponentVariation;
 import io.kestros.commons.structuredslingmodels.exceptions.NoValidAncestorException;
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 
+/**
+ * Sling model datasource that renders a button group of session pages associated with the
+ * presenter on the containing page.
+ */
 @Model(adaptables = {SlingHttpServletRequest.class, Resource.class})
+@SuppressFBWarnings("IMC_IMMATURE_CLASS_NO_TOSTRING")
 public class ButtonGroupPresenterSessionsDataSource extends BaseContainerSlingModelDataSource
     implements KestrosButtonGroup {
 
   private BaseContentPage containingPage;
 
+  @Nullable
   BaseContentPage getContainingPage() {
     if (containingPage == null) {
       try {
@@ -37,10 +45,12 @@ public class ButtonGroupPresenterSessionsDataSource extends BaseContainerSlingMo
     return containingPage;
   }
 
+  @Nullable
   String getSessionsPath() {
     return getResource().getValueMap().get("sessionsPath", String.class);
   }
 
+  @Nonnull
   List<BaseContentPage> getPresenterSessions() {
     List<BaseContentPage> sessions = new ArrayList<>();
     String sessionsPath = getSessionsPath();
@@ -74,6 +84,7 @@ public class ButtonGroupPresenterSessionsDataSource extends BaseContainerSlingMo
 
   @Nonnull
   @Override
+  @SuppressFBWarnings({"DE_MIGHT_IGNORE", "REC_CATCH_EXCEPTION"})
   public List<KestrosButton> getButtonsElements() {
     List<KestrosButton> buttons = new ArrayList<>();
     int buttonIndex = 0;
