@@ -1,6 +1,5 @@
 package io.kestros.samples.signalconf.datasources;
 
-import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import io.kestros.cms.components.basic.api.content.KestrosCard;
 import io.kestros.cms.components.basic.api.lists.KestrosCardList;
 import io.kestros.cms.components.basic.core.BaseContainerSlingModelDataSource;
@@ -18,7 +17,6 @@ import org.apache.sling.models.annotations.Model;
  * Sling model datasource that renders a Kestros card list for the configured presenters root page.
  */
 @Model(adaptables = {SlingHttpServletRequest.class, Resource.class})
-@SuppressFBWarnings("IMC_IMMATURE_CLASS_NO_TOSTRING")
 public class CardListPresentersDataSource extends BaseContainerSlingModelDataSource
     implements KestrosCardList {
 
@@ -50,7 +48,6 @@ public class CardListPresentersDataSource extends BaseContainerSlingModelDataSou
 
   @Nonnull
   @Override
-  @SuppressFBWarnings({"DE_MIGHT_IGNORE", "REC_CATCH_EXCEPTION"})
   public List<KestrosCard> getCardElements() {
     List<KestrosCard> cards = new ArrayList<>();
     BaseContentPage root = getRootPage();

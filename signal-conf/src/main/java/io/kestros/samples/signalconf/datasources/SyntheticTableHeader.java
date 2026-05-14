@@ -1,6 +1,5 @@
 package io.kestros.samples.signalconf.datasources;
 
-import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import io.kestros.cms.components.basic.api.exceptions.ComponentConfigurationException;
 import io.kestros.cms.components.basic.api.table.KestrosTableHeader;
 import io.kestros.cms.components.basic.core.BaseSlingModelDataSource;
@@ -11,7 +10,6 @@ import javax.annotation.Nullable;
 /**
  * Synthetic Kestros table header used by signal-conf datasources to render schedule headers.
  */
-@SuppressFBWarnings("IMC_IMMATURE_CLASS_NO_TOSTRING")
 public class SyntheticTableHeader extends BaseSyntheticResource implements KestrosTableHeader {
 
   private final String text;

@@ -1,6 +1,5 @@
 package io.kestros.samples.signalconf.datasources;
 
-import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import io.kestros.cms.components.basic.api.content.AnchorTarget;
 import io.kestros.cms.components.basic.api.content.KestrosButton;
 import io.kestros.cms.components.basic.api.content.KestrosButtonGroup;
@@ -24,7 +23,6 @@ import org.apache.sling.models.annotations.Model;
  * presenter on the containing page.
  */
 @Model(adaptables = {SlingHttpServletRequest.class, Resource.class})
-@SuppressFBWarnings("IMC_IMMATURE_CLASS_NO_TOSTRING")
 public class ButtonGroupPresenterSessionsDataSource extends BaseContainerSlingModelDataSource
     implements KestrosButtonGroup {
 
@@ -84,7 +82,6 @@ public class ButtonGroupPresenterSessionsDataSource extends BaseContainerSlingMo
 
   @Nonnull
   @Override
-  @SuppressFBWarnings({"DE_MIGHT_IGNORE", "REC_CATCH_EXCEPTION"})
   public List<KestrosButton> getButtonsElements() {
     List<KestrosButton> buttons = new ArrayList<>();
     int buttonIndex = 0;

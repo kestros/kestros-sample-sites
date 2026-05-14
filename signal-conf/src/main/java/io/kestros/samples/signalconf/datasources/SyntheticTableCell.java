@@ -1,6 +1,5 @@
 package io.kestros.samples.signalconf.datasources;
 
-import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import io.kestros.cms.components.basic.api.KestrosBasicComponentElement;
 import io.kestros.cms.components.basic.api.exceptions.ComponentConfigurationException;
 import io.kestros.cms.components.basic.api.table.KestrosTableCell;
@@ -14,7 +13,6 @@ import javax.annotation.Nullable;
 /**
  * Synthetic Kestros table cell used by signal-conf datasources to render schedule cells.
  */
-@SuppressFBWarnings("IMC_IMMATURE_CLASS_NO_TOSTRING")
 public class SyntheticTableCell extends BaseContainerSyntheticResource implements KestrosTableCell {
 
   private final String text;
