@@ -1,0 +1,21 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:title": "ACPL Player Last 5",
+  "group": "ACPL",
+  "classPath": "io.kestros.samples.acpl.datasources.PlayerLast5TableDataSource",
+  "container": true,
+  "edit": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "kestros/cms2/dialog",
+    "content": {
+      "jcr:primaryType": "nt:unstructured",
+      "player": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/cms2/fields/general/textfield",
+        "label": "Player slug",
+        "name": "player",
+        "autofocus": false
+      }
+    }
+  }
+}
