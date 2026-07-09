@@ -24,7 +24,7 @@
             </top-navigation>
         </header>
         <main jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area"><titlestrip layout="plain" variations="[acpl-title-strip]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container"><t variations="[text-uppercase,fw-bold]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Atlantic Coast Premier League — Matchweek 18 — Sat 14 Feb"/></titlestrip>
-            <hero variations="[hero-wrap]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/section">
+            <hero variations="[hero-wrap]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/section"><heroimg imagePath="/content/sites/acpl/assets/hero.jpg" altText="Coastal stadium" variations="[hero-img]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/image"/>
                 <container jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
                     <eyebrow variations="[hero-category,text-uppercase]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Atlantic Coast Premier League — Season 2025–26"/>
                     <heading headingText="Where the coast comes to play." headingType="h1" variations="[display-4,fw-bold,text-white]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading"/>
