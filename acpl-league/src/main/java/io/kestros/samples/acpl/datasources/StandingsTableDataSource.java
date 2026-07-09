@@ -30,8 +30,46 @@ public class StandingsTableDataSource extends BaseContainerSlingModelDataSource
   @Optional
   private LeagueDataService leagueDataService;
 
+  private static final String[] ALL_COLUMNS =
+      {"pos", "club", "p", "w", "d", "l", "gf", "ga", "gd", "pts"};
+  private static final String[] ALL_HEADERS =
+      {"#", "Club", "P", "W", "D", "L", "GF", "GA", "GD", "Pts"};
+
   private int getLimit() {
     return getResource().getValueMap().get("limit", 0);
+  }
+
+  /** Field keys to render, in order. Defaults to the full 10-column table. */
+  private String[] getColumnKeys() {
+    final String cols = getResource().getValueMap().get("columns", String.class);
+    return cols != null && !cols.isEmpty() ? cols.split("\\s*,\\s*") : ALL_COLUMNS;
+  }
+
+  /** Header labels, in order. Defaults to the full 10-column labels. */
+  private String[] getHeaderLabels() {
+    final String hdrs = getResource().getValueMap().get("headers", String.class);
+    if (hdrs != null && !hdrs.isEmpty()) {
+      return hdrs.split("\\s*,\\s*");
+    }
+    // derive default headers to match the configured columns
+    final String[] cols = getColumnKeys();
+    if (cols == ALL_COLUMNS) {
+      return ALL_HEADERS;
+    }
+    final String[] out = new String[cols.length];
+    for (int i = 0; i < cols.length; i++) {
+      out[i] = defaultHeaderFor(cols[i]);
+    }
+    return out;
+  }
+
+  private static String defaultHeaderFor(final String col) {
+    for (int i = 0; i < ALL_COLUMNS.length; i++) {
+      if (ALL_COLUMNS[i].equals(col)) {
+        return ALL_HEADERS[i];
+      }
+    }
+    return col;
   }
 
   private List<Map<String, Object>> rows() {
@@ -50,7 +88,7 @@ public class StandingsTableDataSource extends BaseContainerSlingModelDataSource
   @Override
   public List<KestrosTableHeader> getHeaderElements() {
     final List<KestrosTableHeader> headers = new ArrayList<>();
-    final String[] labels = {"#", "Club", "P", "W", "D", "L", "GF", "GA", "GD", "Pts"};
+    final String[] labels = getHeaderLabels();
     for (int i = 0; i < labels.length; i++) {
       try {
         headers.add(new SyntheticTableHeader(labels[i], this, "header", "h-" + i));
@@ -65,21 +103,17 @@ public class StandingsTableDataSource extends BaseContainerSlingModelDataSource
   @Override
   public List<KestrosTableRow> getRowElements() {
     final List<KestrosTableRow> rows = new ArrayList<>();
+    final String[] columns = getColumnKeys();
     int i = 0;
     for (final Map<String, Object> row : rows()) {
       try {
-        final String club = str(row.get("club"));
-        final List<KestrosTableCell> cells = Arrays.asList(
-            cell(str(row.get("pos")), i, 0),
-            cell(leagueDataService.getClubName(club), i, 1),
-            cell(str(row.get("p")), i, 2),
-            cell(str(row.get("w")), i, 3),
-            cell(str(row.get("d")), i, 4),
-            cell(str(row.get("l")), i, 5),
-            cell(str(row.get("gf")), i, 6),
-            cell(str(row.get("ga")), i, 7),
-            cell(str(row.get("gd")), i, 8),
-            cell(str(row.get("pts")), i, 9));
+        final List<KestrosTableCell> cells = new ArrayList<>();
+        for (int c = 0; c < columns.length; c++) {
+          final String value = "club".equals(columns[c])
+              ? leagueDataService.getClubName(str(row.get("club")))
+              : str(row.get(columns[c]));
+          cells.add(cell(value, i, c));
+        }
         rows.add(new SyntheticTableRow(cells, this, "row", "r-" + i));
         i++;
       } catch (final Exception e) {
