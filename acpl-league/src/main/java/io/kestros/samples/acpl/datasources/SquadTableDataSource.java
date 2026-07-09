@@ -40,7 +40,7 @@ public class SquadTableDataSource extends BaseContainerSlingModelDataSource impl
     final String[] labels = {"#", "Name", "Pos", "Age", "Apps", "G", "A"};
     for (int i = 0; i < labels.length; i++) {
       try {
-        headers.add(new SyntheticTableHeader(labels[i], this, "header", "h-" + i));
+        headers.add(new SyntheticTableHeader(labels[i], this, "tableHeader", "h-" + i));
       } catch (final Exception e) {
         // null-safe
       }
@@ -67,7 +67,7 @@ public class SquadTableDataSource extends BaseContainerSlingModelDataSource impl
             cell(str(season.get("apps")), i, 4),
             cell(str(season.get("goals")), i, 5),
             cell(str(season.get("assists")), i, 6));
-        rows.add(new SyntheticTableRow(cells, this, "row", "r-" + i));
+        rows.add(new SyntheticTableRow(cells, this, "tableRow", "r-" + i));
         i++;
       } catch (final Exception e) {
         // null-safe
@@ -84,7 +84,7 @@ public class SquadTableDataSource extends BaseContainerSlingModelDataSource impl
 
   private KestrosTableCell cell(final String text, final int row, final int col)
       throws io.kestros.cms.components.basic.api.exceptions.ComponentConfigurationException {
-    return new SyntheticTableCell(text == null ? "" : text, this, "cell", "c-" + row + "-" + col);
+    return new SyntheticTableCell(text == null ? "" : text, this, "tableCell", "c-" + row + "-" + col);
   }
 
   @SuppressWarnings("unchecked")
