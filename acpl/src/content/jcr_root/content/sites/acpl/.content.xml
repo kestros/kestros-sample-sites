@@ -97,22 +97,22 @@
                 <heading headingText="Latest Stories" headingType="h2" variations="[section-heading]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading"/>
                 <stories variations="[g-4]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/lists/card-list">
                     <story1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/card" description="Harborside United extend their lead at the top with a commanding home win over Cape Rovers.">
-                        <title jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Harborside stretch clear at the summit" headingType="h5"/>
-                        <buttonGroup jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/button-group">
+                        <titleElement jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Harborside stretch clear at the summit" headingType="h5"/>
+                        <buttonGroupElement jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/button-group">
                             <b href="/content/sites/acpl/stories.html" variations="[btn-outline-primary]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/button" text="Read story →"/>
-                        </buttonGroup>
+                        </buttonGroupElement>
                     </story1>
                     <story2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/card" description="Riverside keep the pressure on with a clean-sheet victory on the road at Tideway.">
-                        <title jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Riverside grind out an away win" headingType="h5"/>
-                        <buttonGroup jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/button-group">
+                        <titleElement jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Riverside grind out an away win" headingType="h5"/>
+                        <buttonGroupElement jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/button-group">
                             <b href="/content/sites/acpl/stories.html" variations="[btn-outline-primary]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/button" text="Read story →"/>
-                        </buttonGroup>
+                        </buttonGroupElement>
                     </story2>
                     <story3 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/card" description="Bayport and Harborside share the spoils in a thrilling coastal derby.">
-                        <title jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Coastal derby ends all square" headingType="h5"/>
-                        <buttonGroup jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/button-group">
+                        <titleElement jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Coastal derby ends all square" headingType="h5"/>
+                        <buttonGroupElement jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/button-group">
                             <b href="/content/sites/acpl/stories.html" variations="[btn-outline-primary]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/button" text="Read story →"/>
-                        </buttonGroup>
+                        </buttonGroupElement>
                     </story3>
                 </stories>
             </footer-cta>
