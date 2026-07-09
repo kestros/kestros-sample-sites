@@ -59,6 +59,7 @@
     <module>signal-conf</module>
     <module>league-demo</module>
     <module>acpl</module>
+    <module>acpl-league</module>
     <module>haven-architecture</module>
     <module>launchpad-io</module>
     <module>northstar-financial</module>

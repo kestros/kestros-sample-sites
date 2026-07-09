@@ -1,0 +1,896 @@
+[
+  {
+    "mw": 17,
+    "date": "2026-02-08",
+    "day": "Sun",
+    "home": "albion",
+    "away": "marshall",
+    "kickoff": "14:00",
+    "venue": "Albion Park",
+    "attendance": 12822,
+    "referee": "D. Whitlock",
+    "weather": "4\u00b0C, windy",
+    "played": true,
+    "hg": 2,
+    "ag": 0,
+    "goals": [
+      {
+        "minute": 73,
+        "team": "albion",
+        "scorer": "Otto Moreau",
+        "scorerSlug": "albion-otto-moreau",
+        "note": ""
+      },
+      {
+        "minute": 82,
+        "team": "albion",
+        "scorer": "Sean Lindqvist",
+        "scorerSlug": "albion-sean-lindqvist",
+        "note": "header",
+        "assist": "Felipe Serrano"
+      }
+    ],
+    "cards": [
+      {
+        "minute": 21,
+        "team": "marshall",
+        "player": "Jonas Riley",
+        "card": "yellow"
+      },
+      {
+        "minute": 45,
+        "team": "marshall",
+        "player": "Noah Novak",
+        "card": "yellow"
+      },
+      {
+        "minute": 49,
+        "team": "marshall",
+        "player": "Bastian Osei",
+        "card": "yellow"
+      },
+      {
+        "minute": 60,
+        "team": "marshall",
+        "player": "Nikolai Pryce",
+        "card": "red"
+      },
+      {
+        "minute": 80,
+        "team": "albion",
+        "player": "Caio Kovac",
+        "card": "yellow"
+      }
+    ],
+    "stats": [
+      {
+        "label": "Possession",
+        "h": "62%",
+        "a": "38%",
+        "hp": 62,
+        "ap": 38
+      },
+      {
+        "label": "Shots",
+        "h": "8",
+        "a": "5"
+      },
+      {
+        "label": "Shots on target",
+        "h": "3",
+        "a": "4"
+      },
+      {
+        "label": "Corners",
+        "h": "9",
+        "a": "2"
+      },
+      {
+        "label": "Fouls",
+        "h": "12",
+        "a": "14"
+      },
+      {
+        "label": "Pass accuracy",
+        "h": "79%",
+        "a": "82%"
+      },
+      {
+        "label": "xG",
+        "h": "1.8",
+        "a": "0.5"
+      }
+    ]
+  },
+  {
+    "mw": 17,
+    "date": "2026-02-08",
+    "day": "Sun",
+    "home": "cape-rangers",
+    "away": "oakvale",
+    "kickoff": "14:00",
+    "venue": "The Headland",
+    "attendance": 11329,
+    "referee": "P. Alvarez",
+    "weather": "6\u00b0C, overcast",
+    "played": true,
+    "hg": 1,
+    "ag": 1,
+    "goals": [
+      {
+        "minute": 9,
+        "team": "oakvale",
+        "scorer": "Kenji Tovar",
+        "scorerSlug": "oakvale-kenji-tovar",
+        "note": "free-kick",
+        "assist": "Miles Adekunle"
+      },
+      {
+        "minute": 39,
+        "team": "cape-rangers",
+        "scorer": "Aaron Berg",
+        "scorerSlug": "cape-rangers-aaron-berg",
+        "note": "",
+        "assist": "Gabriel ElAmin"
+      }
+    ],
+    "cards": [
+      {
+        "minute": 4,
+        "team": "cape-rangers",
+        "player": "Nikolai Bramble",
+        "card": "yellow"
+      },
+      {
+        "minute": 44,
+        "team": "oakvale",
+        "player": "Idris Costa",
+        "card": "yellow"
+      },
+      {
+        "minute": 45,
+        "team": "cape-rangers",
+        "player": "Felipe Marchetti",
+        "card": "yellow"
+      },
+      {
+        "minute": 67,
+        "team": "oakvale",
+        "player": "Miles Bex",
+        "card": "yellow"
+      }
+    ],
+    "stats": [
+      {
+        "label": "Possession",
+        "h": "43%",
+        "a": "57%",
+        "hp": 43,
+        "ap": 57
+      },
+      {
+        "label": "Shots",
+        "h": "11",
+        "a": "4"
+      },
+      {
+        "label": "Shots on target",
+        "h": "2",
+        "a": "3"
+      },
+      {
+        "label": "Corners",
+        "h": "3",
+        "a": "7"
+      },
+      {
+        "label": "Fouls",
+        "h": "15",
+        "a": "8"
+      },
+      {
+        "label": "Pass accuracy",
+        "h": "82%",
+        "a": "71%"
+      },
+      {
+        "label": "xG",
+        "h": "1.0",
+        "a": "1.1"
+      }
+    ]
+  },
+  {
+    "mw": 17,
+    "date": "2026-02-08",
+    "day": "Sun",
+    "home": "saint-marys",
+    "away": "northgate",
+    "kickoff": "14:00",
+    "venue": "The Abbey",
+    "attendance": 25191,
+    "referee": "S. Okafor",
+    "weather": "6\u00b0C, overcast",
+    "played": true,
+    "hg": 2,
+    "ag": 0,
+    "goals": [
+      {
+        "minute": 28,
+        "team": "saint-marys",
+        "scorer": "Gabriel Costa",
+        "scorerSlug": "saint-marys-gabriel-costa",
+        "note": "",
+        "assist": "Enzo Riley"
+      },
+      {
+        "minute": 42,
+        "team": "saint-marys",
+        "scorer": "Patrice Moreau",
+        "scorerSlug": "saint-marys-patrice-moreau",
+        "note": "header",
+        "assist": "Mohammed ONeill"
+      }
+    ],
+    "cards": [
+      {
+        "minute": 35,
+        "team": "saint-marys",
+        "player": "Bruno Haddad",
+        "card": "yellow"
+      },
+      {
+        "minute": 72,
+        "team": "northgate",
+        "player": "Gabriel Lowe",
+        "card": "yellow"
+      },
+      {
+        "minute": 76,
+        "team": "northgate",
+        "player": "Marco Dubois",
+        "card": "yellow"
+      },
+      {
+        "minute": 78,
+        "team": "northgate",
+        "player": "Luca Sorensen",
+        "card": "yellow"
+      }
+    ],
+    "stats": [
+      {
+        "label": "Possession",
+        "h": "55%",
+        "a": "45%",
+        "hp": 55,
+        "ap": 45
+      },
+      {
+        "label": "Shots",
+        "h": "10",
+        "a": "7"
+      },
+      {
+        "label": "Shots on target",
+        "h": "7",
+        "a": "4"
+      },
+      {
+        "label": "Corners",
+        "h": "6",
+        "a": "2"
+      },
+      {
+        "label": "Fouls",
+        "h": "13",
+        "a": "13"
+      },
+      {
+        "label": "Pass accuracy",
+        "h": "79%",
+        "a": "85%"
+      },
+      {
+        "label": "xG",
+        "h": "2.0",
+        "a": "0.1"
+      }
+    ]
+  },
+  {
+    "mw": 17,
+    "date": "2026-02-08",
+    "day": "Sun",
+    "home": "riverside",
+    "away": "bridgeport",
+    "kickoff": "15:00",
+    "venue": "River Park",
+    "attendance": 20825,
+    "referee": "M. Fenton",
+    "weather": "6\u00b0C, overcast",
+    "played": true,
+    "hg": 1,
+    "ag": 2,
+    "goals": [
+      {
+        "minute": 43,
+        "team": "bridgeport",
+        "scorer": "Sang-jin Delgado",
+        "scorerSlug": "bridgeport-sang-jin-delgado",
+        "note": "",
+        "assist": "Sacha Marsh"
+      },
+      {
+        "minute": 45,
+        "team": "bridgeport",
+        "scorer": "Gabriel Tovar",
+        "scorerSlug": "bridgeport-gabriel-tovar",
+        "note": "header from corner"
+      },
+      {
+        "minute": 48,
+        "team": "riverside",
+        "scorer": "Stefan Sorensen",
+        "scorerSlug": "riverside-stefan-sorensen",
+        "note": "",
+        "assist": "Viktor Bright"
+      }
+    ],
+    "cards": [
+      {
+        "minute": 2,
+        "team": "riverside",
+        "player": "Mohammed Walsh",
+        "card": "yellow"
+      },
+      {
+        "minute": 38,
+        "team": "riverside",
+        "player": "Tariq Choi",
+        "card": "yellow"
+      },
+      {
+        "minute": 46,
+        "team": "bridgeport",
+        "player": "Gabriel Tovar",
+        "card": "yellow"
+      },
+      {
+        "minute": 70,
+        "team": "riverside",
+        "player": "Hassan Mendes",
+        "card": "yellow"
+      },
+      {
+        "minute": 73,
+        "team": "riverside",
+        "player": "Piotr Bennett",
+        "card": "yellow"
+      }
+    ],
+    "stats": [
+      {
+        "label": "Possession",
+        "h": "44%",
+        "a": "56%",
+        "hp": 44,
+        "ap": 56
+      },
+      {
+        "label": "Shots",
+        "h": "9",
+        "a": "9"
+      },
+      {
+        "label": "Shots on target",
+        "h": "5",
+        "a": "4"
+      },
+      {
+        "label": "Corners",
+        "h": "9",
+        "a": "2"
+      },
+      {
+        "label": "Fouls",
+        "h": "10",
+        "a": "14"
+      },
+      {
+        "label": "Pass accuracy",
+        "h": "75%",
+        "a": "83%"
+      },
+      {
+        "label": "xG",
+        "h": "1.0",
+        "a": "1.9"
+      }
+    ]
+  },
+  {
+    "mw": 17,
+    "date": "2026-02-08",
+    "day": "Sun",
+    "home": "westmoreland",
+    "away": "highland",
+    "kickoff": "15:00",
+    "venue": "Royal Ground",
+    "attendance": 24368,
+    "referee": "L. Caruso",
+    "weather": "9\u00b0C, light rain",
+    "played": true,
+    "hg": 3,
+    "ag": 2,
+    "goals": [
+      {
+        "minute": 3,
+        "team": "highland",
+        "scorer": "Patrice Bramble",
+        "scorerSlug": "highland-patrice-bramble",
+        "note": "penalty",
+        "assist": "Rafael Bianchi"
+      },
+      {
+        "minute": 5,
+        "team": "westmoreland",
+        "scorer": "Nikolai Marchetti",
+        "scorerSlug": "westmoreland-nikolai-marchetti",
+        "note": "header",
+        "assist": "Hakim Ndiaye"
+      },
+      {
+        "minute": 36,
+        "team": "westmoreland",
+        "scorer": "Mohammed Korhonen",
+        "scorerSlug": "westmoreland-mohammed-korhonen",
+        "note": "tap-in"
+      },
+      {
+        "minute": 49,
+        "team": "westmoreland",
+        "scorer": "Hassan Sokolov",
+        "scorerSlug": "westmoreland-hassan-sokolov",
+        "note": "free-kick",
+        "assist": "Yannick Moreau"
+      },
+      {
+        "minute": 84,
+        "team": "highland",
+        "scorer": "Dante Dubois",
+        "scorerSlug": "highland-dante-dubois",
+        "note": ""
+      }
+    ],
+    "cards": [
+      {
+        "minute": 17,
+        "team": "westmoreland",
+        "player": "Rafael Falcone",
+        "card": "yellow"
+      },
+      {
+        "minute": 67,
+        "team": "westmoreland",
+        "player": "Sacha Reid",
+        "card": "yellow"
+      }
+    ],
+    "stats": [
+      {
+        "label": "Possession",
+        "h": "44%",
+        "a": "56%",
+        "hp": 44,
+        "ap": 56
+      },
+      {
+        "label": "Shots",
+        "h": "13",
+        "a": "9"
+      },
+      {
+        "label": "Shots on target",
+        "h": "7",
+        "a": "3"
+      },
+      {
+        "label": "Corners",
+        "h": "3",
+        "a": "7"
+      },
+      {
+        "label": "Fouls",
+        "h": "12",
+        "a": "15"
+      },
+      {
+        "label": "Pass accuracy",
+        "h": "85%",
+        "a": "73%"
+      },
+      {
+        "label": "xG",
+        "h": "2.5",
+        "a": "1.8"
+      }
+    ]
+  },
+  {
+    "mw": 17,
+    "date": "2026-02-08",
+    "day": "Sun",
+    "home": "bayview",
+    "away": "harborside",
+    "kickoff": "16:30",
+    "venue": "Bayview Arena",
+    "attendance": 27084,
+    "referee": "S. Okafor",
+    "weather": "14\u00b0C, clear",
+    "played": true,
+    "hg": 3,
+    "ag": 1,
+    "goals": [
+      {
+        "minute": 25,
+        "team": "bayview",
+        "scorer": "Gabriel Costa",
+        "scorerSlug": "bayview-gabriel-costa",
+        "note": "",
+        "assist": "Eli Pryce"
+      },
+      {
+        "minute": 47,
+        "team": "harborside",
+        "scorer": "Jordan Bex",
+        "scorerSlug": "harborside-jordan-bex",
+        "note": ""
+      },
+      {
+        "minute": 55,
+        "team": "bayview",
+        "scorer": "Noah Falcone",
+        "scorerSlug": "bayview-noah-falcone",
+        "note": "header from corner",
+        "assist": "Noah Serrano"
+      },
+      {
+        "minute": 78,
+        "team": "bayview",
+        "scorer": "Gabriel Costa",
+        "scorerSlug": "bayview-gabriel-costa",
+        "note": "free-kick"
+      }
+    ],
+    "cards": [
+      {
+        "minute": 61,
+        "team": "bayview",
+        "player": "Malik Volkov",
+        "card": "yellow"
+      },
+      {
+        "minute": 66,
+        "team": "harborside",
+        "player": "Caio Mendes",
+        "card": "yellow"
+      }
+    ],
+    "stats": [
+      {
+        "label": "Possession",
+        "h": "44%",
+        "a": "56%",
+        "hp": 44,
+        "ap": 56
+      },
+      {
+        "label": "Shots",
+        "h": "9",
+        "a": "6"
+      },
+      {
+        "label": "Shots on target",
+        "h": "6",
+        "a": "3"
+      },
+      {
+        "label": "Corners",
+        "h": "7",
+        "a": "8"
+      },
+      {
+        "label": "Fouls",
+        "h": "11",
+        "a": "9"
+      },
+      {
+        "label": "Pass accuracy",
+        "h": "83%",
+        "a": "73%"
+      },
+      {
+        "label": "xG",
+        "h": "2.7",
+        "a": "1.0"
+      }
+    ]
+  },
+  {
+    "mw": 16,
+    "date": "2026-01-28",
+    "day": "Wed",
+    "home": "cape-rangers",
+    "away": "albion",
+    "kickoff": "13:00",
+    "venue": "The Headland",
+    "attendance": 9351,
+    "referee": "D. Whitlock",
+    "weather": "4\u00b0C, windy",
+    "played": true,
+    "hg": 4,
+    "ag": 1,
+    "goals": [
+      {
+        "minute": 21,
+        "team": "cape-rangers",
+        "scorer": "Aaron Berg",
+        "scorerSlug": "cape-rangers-aaron-berg",
+        "note": "tap-in",
+        "assist": "Lukas Sorensen"
+      },
+      {
+        "minute": 28,
+        "team": "albion",
+        "scorer": "Felipe Serrano",
+        "scorerSlug": "albion-felipe-serrano",
+        "note": ""
+      },
+      {
+        "minute": 68,
+        "team": "cape-rangers",
+        "scorer": "Kenji ONeill",
+        "scorerSlug": "cape-rangers-kenji-oneill",
+        "note": "penalty"
+      },
+      {
+        "minute": 74,
+        "team": "cape-rangers",
+        "scorer": "Aaron Berg",
+        "scorerSlug": "cape-rangers-aaron-berg",
+        "note": "",
+        "assist": "Stefan Khan"
+      },
+      {
+        "minute": 88,
+        "team": "cape-rangers",
+        "scorer": "Leon Costa",
+        "scorerSlug": "cape-rangers-leon-costa",
+        "note": "free-kick"
+      }
+    ],
+    "cards": [],
+    "stats": [
+      {
+        "label": "Possession",
+        "h": "53%",
+        "a": "47%",
+        "hp": 53,
+        "ap": 47
+      },
+      {
+        "label": "Shots",
+        "h": "16",
+        "a": "4"
+      },
+      {
+        "label": "Shots on target",
+        "h": "5",
+        "a": "4"
+      },
+      {
+        "label": "Corners",
+        "h": "9",
+        "a": "4"
+      },
+      {
+        "label": "Fouls",
+        "h": "14",
+        "a": "7"
+      },
+      {
+        "label": "Pass accuracy",
+        "h": "76%",
+        "a": "82%"
+      },
+      {
+        "label": "xG",
+        "h": "3.9",
+        "a": "1.3"
+      }
+    ]
+  },
+  {
+    "mw": 16,
+    "date": "2026-01-28",
+    "day": "Wed",
+    "home": "saint-marys",
+    "away": "marshall",
+    "kickoff": "16:30",
+    "venue": "The Abbey",
+    "attendance": 21295,
+    "referee": "P. Alvarez",
+    "weather": "18\u00b0C, sunny",
+    "played": true,
+    "hg": 2,
+    "ag": 0,
+    "goals": [
+      {
+        "minute": 57,
+        "team": "saint-marys",
+        "scorer": "Rafael Adekunle",
+        "scorerSlug": "saint-marys-rafael-adekunle",
+        "note": "header"
+      },
+      {
+        "minute": 62,
+        "team": "saint-marys",
+        "scorer": "Jonas Ivanov",
+        "scorerSlug": "saint-marys-jonas-ivanov",
+        "note": "free-kick",
+        "assist": "Enzo Riley"
+      }
+    ],
+    "cards": [
+      {
+        "minute": 21,
+        "team": "saint-marys",
+        "player": "Rafael Adekunle",
+        "card": "yellow"
+      },
+      {
+        "minute": 53,
+        "team": "saint-marys",
+        "player": "Patrice Moreau",
+        "card": "yellow"
+      },
+      {
+        "minute": 63,
+        "team": "saint-marys",
+        "player": "Patrice Park",
+        "card": "yellow"
+      },
+      {
+        "minute": 81,
+        "team": "saint-marys",
+        "player": "Piotr Novak",
+        "card": "red"
+      }
+    ],
+    "stats": [
+      {
+        "label": "Possession",
+        "h": "55%",
+        "a": "45%",
+        "hp": 55,
+        "ap": 45
+      },
+      {
+        "label": "Shots",
+        "h": "12",
+        "a": "4"
+      },
+      {
+        "label": "Shots on target",
+        "h": "7",
+        "a": "2"
+      },
+      {
+        "label": "Corners",
+        "h": "9",
+        "a": "3"
+      },
+      {
+        "label": "Fouls",
+        "h": "6",
+        "a": "12"
+      },
+      {
+        "label": "Pass accuracy",
+        "h": "74%",
+        "a": "78%"
+      },
+      {
+        "label": "xG",
+        "h": "2.0",
+        "a": "0.3"
+      }
+    ]
+  },
+  {
+    "mw": 16,
+    "date": "2026-01-28",
+    "day": "Wed",
+    "home": "riverside",
+    "away": "oakvale",
+    "kickoff": "15:00",
+    "venue": "River Park",
+    "attendance": 25979,
+    "referee": "L. Caruso",
+    "weather": "18\u00b0C, sunny",
+    "played": true,
+    "hg": 2,
+    "ag": 0,
+    "goals": [
+      {
+        "minute": 13,
+        "team": "riverside",
+        "scorer": "Viktor Bright",
+        "scorerSlug": "riverside-viktor-bright",
+        "note": "free-kick"
+      },
+      {
+        "minute": 64,
+        "team": "riverside",
+        "scorer": "Hakim Kovac",
+        "scorerSlug": "riverside-hakim-kovac",
+        "note": "tap-in",
+        "assist": "Viktor Bright"
+      }
+    ],
+    "cards": [
+      {
+        "minute": 36,
+        "team": "riverside",
+        "player": "Rory Adekunle",
+        "card": "yellow"
+      },
+      {
+        "minute": 67,
+        "team": "riverside",
+        "player": "Caio Marchetti",
+        "card": "yellow"
+      }
+    ],
+    "stats": [
+      {
+        "label": "Possession",
+        "h": "40%",
+        "a": "60%",
+        "hp": 40,
+        "ap": 60
+      },
+      {
+        "label": "Shots",
+        "h": "10",
+        "a": "4"
+      },
+      {
+        "label": "Shots on target",
+        "h": "6",
+        "a": "4"
+      },
+      {
+        "label": "Corners",
+        "h": "9",
+        "a": "1"
+      },
+      {
+        "label": "Fouls",
+        "h": "15",
+        "a": "10"
+      },
+      {
+        "label": "Pass accuracy",
+        "h": "79%",
+        "a": "75%"
+      },
+      {
+        "label": "xG",
+        "h": "2.2",
+        "a": "0.2"
+      }
+    ]
+  }
+]
