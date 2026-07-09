@@ -53,7 +53,7 @@
                 <configuration>
                     <instructions>
                         <Sling-Initial-Content>
-                            /apps/kestros/commons/components/content/table;overwrite:=true;path:=/apps/kestros/commons/components/content/table
+                            /apps/kestros/commons/components/content/table/datasources;overwrite:=true;path:=/apps/kestros/commons/components/content/table/datasources
                         </Sling-Initial-Content>
                         <Sling-Model-Packages>io.kestros.samples.acpl</Sling-Model-Packages>
                         <Import-Package>com.fasterxml.jackson.core.type,com.fasterxml.jackson.databind,*</Import-Package>
