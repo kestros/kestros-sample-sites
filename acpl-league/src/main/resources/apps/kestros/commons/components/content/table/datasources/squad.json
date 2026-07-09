@@ -1,0 +1,21 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:title": "ACPL Squad",
+  "group": "ACPL",
+  "classPath": "io.kestros.samples.acpl.datasources.SquadTableDataSource",
+  "container": true,
+  "edit": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "kestros/cms2/dialog",
+    "content": {
+      "jcr:primaryType": "nt:unstructured",
+      "club": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/cms2/fields/general/textfield",
+        "label": "Club slug",
+        "name": "club",
+        "autofocus": false
+      }
+    }
+  }
+}
