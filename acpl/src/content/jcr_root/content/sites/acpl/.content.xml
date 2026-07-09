@@ -27,7 +27,7 @@
             <hero variations="[hero-wrap]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/section"><heroimg imagePath="/content/sites/acpl/assets/hero.jpg" altText="Coastal stadium" variations="[hero-img]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/image"/>
                 <container jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
                     <eyebrow variations="[hero-category,text-uppercase]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Atlantic Coast Premier League — Season 2025–26"/>
-                    <heading headingText="Where the coast comes to play." headingType="h1" variations="[display-4,fw-bold,text-white]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading"/>
+                    <heading headingText="Where the coast comes to play." headingType="h1" variations="[display-4,fw-bold,text-white,hero-headline]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading"/>
                     <subtitle variations="[lead,text-white-50]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Every match, every table, every player — live from the Atlantic Coast Premier League."/>
                     <ctas jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/button-group">
                         <primary href="/content/sites/acpl/standings.html" variations="[btn-secondary,btn-lg]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/button" text="View standings"/>
@@ -96,19 +96,19 @@
             <footer-cta variations="[container,mb-5]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
                 <heading headingText="Latest Stories" headingType="h2" variations="[section-heading]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading"/>
                 <stories variations="[g-4]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/lists/card-list">
-                    <story1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/card" description="Harborside United extend their lead at the top with a commanding home win over Cape Rovers.">
+                    <story1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/card" description="Harborside United extend their lead at the top with a commanding home win over Cape Rovers."><imageElement imagePath="/content/sites/acpl/assets/story-1.jpg" altText="story" variations="[card-img-top]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/image"/>
                         <titleElement jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Harborside stretch clear at the summit" headingType="h5"/>
                         <buttonGroupElement jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/button-group">
                             <b href="/content/sites/acpl/stories.html" variations="[btn-outline-primary]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/button" text="Read story →"/>
                         </buttonGroupElement>
                     </story1>
-                    <story2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/card" description="Riverside keep the pressure on with a clean-sheet victory on the road at Tideway.">
+                    <story2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/card" description="Riverside keep the pressure on with a clean-sheet victory on the road at Tideway."><imageElement imagePath="/content/sites/acpl/assets/story-2.jpg" altText="story" variations="[card-img-top]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/image"/>
                         <titleElement jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Riverside grind out an away win" headingType="h5"/>
                         <buttonGroupElement jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/button-group">
                             <b href="/content/sites/acpl/stories.html" variations="[btn-outline-primary]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/button" text="Read story →"/>
                         </buttonGroupElement>
                     </story2>
-                    <story3 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/card" description="Bayport and Harborside share the spoils in a thrilling coastal derby.">
+                    <story3 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/card" description="Bayport and Harborside share the spoils in a thrilling coastal derby."><imageElement imagePath="/content/sites/acpl/assets/story-3.jpg" altText="story" variations="[card-img-top]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/image"/>
                         <titleElement jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading" headingText="Coastal derby ends all square" headingType="h5"/>
                         <buttonGroupElement jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/button-group">
                             <b href="/content/sites/acpl/stories.html" variations="[btn-outline-primary]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/button" text="Read story →"/>
