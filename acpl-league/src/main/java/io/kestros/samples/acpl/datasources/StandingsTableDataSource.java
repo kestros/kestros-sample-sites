@@ -1,6 +1,7 @@
 package io.kestros.samples.acpl.datasources;
 
 import io.kestros.cms.components.basic.api.KestrosBasicComponentElement;
+import io.kestros.cms.components.basic.api.exceptions.ComponentConfigurationException;
 import io.kestros.cms.components.basic.api.table.KestrosTable;
 import io.kestros.cms.components.basic.api.table.KestrosTableCell;
 import io.kestros.cms.components.basic.api.table.KestrosTableHeader;
@@ -8,7 +9,6 @@ import io.kestros.cms.components.basic.api.table.KestrosTableRow;
 import io.kestros.cms.components.basic.core.BaseContainerSlingModelDataSource;
 import io.kestros.samples.acpl.services.LeagueDataService;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import javax.annotation.Nonnull;
@@ -109,10 +109,13 @@ public class StandingsTableDataSource extends BaseContainerSlingModelDataSource
       try {
         final List<KestrosTableCell> cells = new ArrayList<>();
         for (int c = 0; c < columns.length; c++) {
-          final String value = "club".equals(columns[c])
-              ? leagueDataService.getClubName(str(row.get("club")))
-              : str(row.get(columns[c]));
-          cells.add(cell(value, i, c));
+          if ("club".equals(columns[c])) {
+            cells.add(isRichClub()
+                ? clubCell(str(row.get("club")), i, c)
+                : cell(leagueDataService.getClubName(str(row.get("club"))), i, c));
+          } else {
+            cells.add(cell(str(row.get(columns[c])), i, c));
+          }
         }
         rows.add(new SyntheticTableRow(cells, this, "tableRow", "r-" + i));
         i++;
@@ -130,8 +133,31 @@ public class StandingsTableDataSource extends BaseContainerSlingModelDataSource
   }
 
   private KestrosTableCell cell(final String text, final int row, final int col)
-      throws io.kestros.cms.components.basic.api.exceptions.ComponentConfigurationException {
+      throws ComponentConfigurationException {
     return new SyntheticTableCell(text == null ? "" : text, this, "tableCell", "c-" + row + "-" + col);
+  }
+
+  /** When {@code clubDisplay="rich"} the club column renders a linked crest + abbreviation link. */
+  private boolean isRichClub() {
+    return "rich".equals(getResource().getValueMap().get("clubDisplay", ""));
+  }
+
+  /**
+   * Rich club cell matching the static mock: a linked crest image plus the club's abbreviation as a
+   * link, both pointing at the club's team page. Rendered by the {@code club} table-cell layout; the
+   * {@code clubCell} prefix lets the table node style it independently from the plain cells.
+   */
+  private KestrosTableCell clubCell(final String slug, final int row, final int col)
+      throws ComponentConfigurationException {
+    return new SyntheticClubCell(slug, leagueDataService.getClubShort(slug), siteRoot(),
+        this, "clubCell", "c-" + row + "-" + col);
+  }
+
+  /** League-site root (e.g. {@code /content/sites/acpl}), derived from this datasource's path. */
+  private String siteRoot() {
+    final String path = getResource().getPath();
+    final int i = path.indexOf("/jcr:content");
+    return i > 0 ? path.substring(0, i) : path;
   }
 
   private static String str(final Object o) {

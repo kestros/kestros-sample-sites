@@ -13,13 +13,27 @@ import javax.annotation.Nullable;
 public class SyntheticTableCell extends BaseContainerSyntheticResource implements KestrosTableCell {
 
   private final String text;
+  private final List<KestrosBasicComponentElement> content;
 
   public SyntheticTableCell(@Nonnull String text,
       @Nonnull BaseSlingModelDataSource dataSource,
       @Nonnull String resourcePrefix,
       @Nullable String forcedResourceName) throws ComponentConfigurationException {
+    this(text, new ArrayList<>(), dataSource, resourcePrefix, forcedResourceName);
+  }
+
+  /**
+   * Cell whose visible content is a set of nested component elements (e.g. a linked crest image plus
+   * an abbreviation link) rendered through the cell's content area, instead of plain text.
+   */
+  public SyntheticTableCell(@Nonnull String text,
+      @Nonnull List<KestrosBasicComponentElement> content,
+      @Nonnull BaseSlingModelDataSource dataSource,
+      @Nonnull String resourcePrefix,
+      @Nullable String forcedResourceName) throws ComponentConfigurationException {
     super(dataSource, resourcePrefix, forcedResourceName);
     this.text = text;
+    this.content = content;
   }
 
   @Nullable
@@ -30,6 +44,12 @@ public class SyntheticTableCell extends BaseContainerSyntheticResource implement
   @Nonnull
   @Override
   public List<KestrosBasicComponentElement> getCellContentElements() {
-    return new ArrayList<>();
+    return new ArrayList<>(content);
+  }
+
+  @Nonnull
+  @Override
+  public List<KestrosBasicComponentElement> getChildElements() {
+    return new ArrayList<>(content);
   }
 }
