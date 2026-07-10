@@ -200,22 +200,72 @@ for slug,p in allplayers.items():
         career=dict(apps=cr['apps'],goals=cr['goals'],assists=cr['assists']),
         last5=player_last5(slug,p['club'])))
 
-# stories: 1 match report per matchweek (biggest-margin played game) for current season
+# stories: a mix of match reports, features, previews, an interview and analysis
 stories=[]
-by_mw={}
-for m in cur['matches']:
-    if m['played']: by_mw.setdefault(m['mw'],[]).append(m)
-for mw in sorted(by_mw)[-6:][::-1]:
-    m=max(by_mw[mw], key=lambda x:abs(x['hg']-x['ag']))
+_auth_pool=["Sasha Quinn","Matt Crain","J. Park","D. Lo","Priya Nair","Tom Beckett","R. Okafor"]
+def _auth(seed): return random.Random(seed).choice(_auth_pool)
+def _img(i): return "story-%d.jpg"%((i%3)+1)
+_stand=cur['standings']  # sorted by position
+_scorers=sorted(players_full,key=lambda p:p['season']['goals'],reverse=True)
+_played=[m for m in cur['matches'] if m['played']]
+_latest=max(m['date'] for m in _played)
+_future=sorted([m for m in cur['matches'] if not m['played']],key=lambda x:(x['mw'],x['date']))
+
+# Match reports — biggest-margin game of each of the last 5 played matchweeks
+_by_mw={}
+for m in _played: _by_mw.setdefault(m['mw'],[]).append(m)
+for i,mw in enumerate(sorted(_by_mw)[-5:][::-1]):
+    m=max(_by_mw[mw],key=lambda x:abs(x['hg']-x['ag']))
     win,los,ws,ls=(m['home'],m['away'],m['hg'],m['ag']) if m['hg']>=m['ag'] else (m['away'],m['home'],m['ag'],m['hg'])
-    top=max(m['goals'],key=lambda g:1,default=None) if m['goals'] else None
-    hl=(top['scorer'] if top else "The visitors")
-    stories.append(dict(slug="mw%d-%s-%s"%(mw,win,los), headline="%s see off %s in Matchweek %d"%(clubname[win],clubname[los],mw),
+    hl=m['goals'][0]['scorer'] if m['goals'] else "the visitors"
+    stories.append(dict(slug="mw%d-%s-%s"%(mw,win,los),category="Match Report",featured=False,
+        headline="%s see off %s in Matchweek %d"%(clubname[win],clubname[los],mw),
         dek="%s ran out %d-%d winners at %s, with %s among the scorers."%(clubname[win],ws,ls,m['venue'],hl),
-        author=random.Random(mw).choice(["Sasha Quinn","Matt Crain","J. Park","D. Lo"]), date=m['date'],
-        image="story-%d.jpg"%((mw%3)+1), featured=(mw==max(by_mw)), category="Match Report",
-        body=["%s claimed a %d-%d win over %s."%(clubname[win],ws,ls,clubname[los]),
-              "The result moves them in the table as the season enters its business end."]))
+        author=_auth(mw),date=m['date'],image=_img(i),
+        body=["%s claimed a %d-%d win over %s at %s."%(clubname[win],ws,ls,clubname[los],m['venue']),
+              "The result reshapes the table as the run-in approaches."]))
+
+# Feature (hero) — the title race
+_l=_stand
+stories.append(dict(slug="feature-title-race",category="Feature",featured=True,
+    headline="%s stretch clear at the summit"%clubname[_l[0]['club']],
+    dek="%s lead the way on %d points, but %s and %s are refusing to let the title race settle."%(
+        clubname[_l[0]['club']],_l[0]['pts'],clubname[_l[1]['club']],clubname[_l[2]['club']]),
+    author=_auth(101),date=_latest,image="story-1.jpg",
+    body=["With the business end of the season in view, %s hold a slender advantage at the top of the Atlantic Coast Premier League."%clubname[_l[0]['club']],
+          "Behind them, %s and %s are keeping the pressure on."%(clubname[_l[1]['club']],clubname[_l[2]['club']])]))
+
+# Feature — golden boot
+_ts=_scorers[0]
+stories.append(dict(slug="feature-golden-boot",category="Feature",featured=False,
+    headline="%s leads the Golden Boot race"%_ts['name'],
+    dek="%s of %s tops the scoring charts with %d goals this season."%(_ts['name'],clubname[_ts['club']],_ts['season']['goals']),
+    author=_auth(102),date=_latest,image="story-2.jpg",
+    body=["%s has been the league's standout finisher, with %d goals leaving the striker clear at the top of the charts."%(_ts['name'],_ts['season']['goals'])]))
+
+# Analysis — relegation battle
+_b=_stand[-3:]
+stories.append(dict(slug="analysis-relegation-battle",category="Analysis",featured=False,
+    headline="The fight to beat the drop goes to the wire",
+    dek="%s, %s and %s are locked in a scrap at the foot of the table."%(clubname[_b[0]['club']],clubname[_b[1]['club']],clubname[_b[2]['club']]),
+    author=_auth(103),date=_latest,image="story-3.jpg",
+    body=["Only a handful of points separate the sides caught up in the relegation battle."]))
+
+# Previews — the next three fixtures
+for i,f in enumerate(_future[:3]):
+    stories.append(dict(slug="preview-mw%d-%s-%s"%(f['mw'],f['home'],f['away']),category="Preview",featured=False,
+        headline="Preview: %s vs %s"%(clubname[f['home']],clubname[f['away']]),
+        dek="%s host %s at %s in Matchweek %d, kick-off %s."%(clubname[f['home']],clubname[f['away']],f['venue'],f['mw'],f['kickoff']),
+        author=_auth(200+i),date=f['date'],image=_img(i),
+        body=["%s welcome %s to %s in one of the standout fixtures of Matchweek %d."%(clubname[f['home']],clubname[f['away']],f['venue'],f['mw'])]))
+
+# Interview
+_mgr=next(c['mgr'] for c in clubs if c['slug']==_l[0]['club'])
+stories.append(dict(slug="interview-%s-manager"%_l[0]['club'],category="Interview",featured=False,
+    headline="“We take it one game at a time”: %s on the title run-in"%_mgr,
+    dek="The %s manager reflects on a season that has the club dreaming of the trophy."%clubname[_l[0]['club']],
+    author=_auth(300),date=_latest,image="story-1.jpg",
+    body=["%s sat down with us to talk through the season so far and what comes next for %s."%(_mgr,clubname[_l[0]['club']])]))
 
 W('clubs.json',clubs); W('squads.json',squads); W('players.json',players_full)
 W('standings.json',cur['standings'])
