@@ -61,7 +61,6 @@ public class SquadTableDataSource extends BaseContainerSlingModelDataSource impl
     }
     final String base = siteRoot();
     final String href = base + "/player.html";
-    final String portrait = base + "/assets/player-portrait.jpg";
     int i = 0;
     for (final Map<String, Object> p : leagueDataService.getSquad(getClub())) {
       try {
@@ -69,7 +68,7 @@ public class SquadTableDataSource extends BaseContainerSlingModelDataSource impl
         final String name = str(p.get("name"));
         final List<KestrosTableCell> cells = Arrays.asList(
             rich(str(p.get("num")), "numbold", null, null, null, i, 0),
-            rich("", "portrait", href, portrait, name, i, 1),
+            rich("", "portrait", href, portraitFor(name), name, i, 1),
             rich("", "playerlink", href, null, name, i, 2),
             rich(str(p.get("pos")), "badge", null, null, null, i, 3),
             cell(str(p.get("age")), i, 4),
@@ -94,6 +93,12 @@ public class SquadTableDataSource extends BaseContainerSlingModelDataSource impl
   private KestrosTableCell cell(final String text, final int row, final int col)
       throws ComponentConfigurationException {
     return new SyntheticTableCell(text == null ? "" : text, this, "tableCell", "c-" + row + "-" + col);
+  }
+
+  /** Deterministic placeholder portrait (1 of 20 uniform avatars) for a player, keyed by name. */
+  private String portraitFor(final String name) {
+    final int idx = Math.abs(name.hashCode()) % 20 + 1;
+    return siteRoot() + "/assets/portraits/p" + idx + ".svg";
   }
 
   private KestrosTableCell rich(final String text, final String layout, final String href,
