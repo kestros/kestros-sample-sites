@@ -18,6 +18,17 @@ stories = json.load(open(os.path.join(DATA, "stories.json")))
 clubs = {c["slug"]: c for c in json.load(open(os.path.join(DATA, "clubs.json")))}
 MONTHS = ["", "January", "February", "March", "April", "May", "June",
           "July", "August", "September", "October", "November", "December"]
+LOREM = [
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut "
+    "labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco "
+    "laboris nisi ut aliquip ex ea commodo consequat.",
+    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla "
+    "pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt "
+    "mollit anim id est laborum.",
+    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque "
+    "laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto "
+    "beatae vitae dicta sunt explicabo.",
+]
 
 
 def esc(s):
@@ -77,7 +88,7 @@ def story_page(s):
     paras = "".join(
         f'<p{i} variations="[mb-3]" jcr:primaryType="nt:unstructured" '
         f'sling:resourceType="/libs/kestros/commons/components/content/text" '
-        f'text="{esc(p)}"/>' for i, p in enumerate(s["body"]))
+        f'text="{esc(p)}"/>' for i, p in enumerate(s["body"] + LOREM))
     main = (
         f'<band layout="plain" variations="[bg-primary,text-white,py-4]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">'
         f'<inner layout="plain" variations="[container]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">'
@@ -97,7 +108,11 @@ def story_page(s):
         f'<lead variations="[lead,mb-4]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="{esc(s["dek"])}"/>'
         f'{paras}'
         f'<back href="{SITE}/stories.html" variations="[btn,btn-outline-primary,btn-sm,mt-3]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="← Back to all stories"/>'
-        f'</col></row></wrap>')
+        f'</col></row></wrap>'
+        f'<related layout="plain" variations="[container,my-5,pt-4,border-top]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">'
+        f'<rh variations="[section-heading,mb-4]" headingText="Related Stories" headingType="h2" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading"/>'
+        f'<rl layout="default" kes:datasource="related-stories" story="{slug}" limit="3" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/lists/card-list"/>'
+        f'</related>')
     return (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:kes="http://kestros.io/kes/1.0" '
