@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Generate 20 uniform placeholder player-portrait avatars (SVG, identical 400x400 viewBox).
+"""Generate 20 uniform placeholder player-portrait avatars (SVG, identical 600x800 3:4 viewBox).
 
-Each is a head-and-shoulders silhouette on a solid background, varied by color so squad rows look
-distinct while staying perfectly uniform in size/aspect. Written to the ACPL site assets/portraits.
+3:4 is the conventional headshot aspect for the player profile slot (renders full-height there);
+the squad-row circles center-crop it. Each is a head-and-shoulders silhouette on a solid background,
+varied by color so rows look distinct while staying perfectly uniform in size/aspect.
 """
 import os
 
@@ -22,11 +23,12 @@ PALETTE = [
 
 
 def avatar(bg, fg):
+    # 3:4 portrait (600x800): head upper-centre, shoulders filling the base — headshot framing.
     return (
-        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">\n'
-        f'  <rect width="400" height="400" fill="{bg}"/>\n'
-        f'  <circle cx="200" cy="158" r="74" fill="{fg}"/>\n'
-        f'  <path d="M84 400 C84 300 140 262 200 262 C260 262 316 300 316 400 Z" fill="{fg}"/>\n'
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="600" height="800">\n'
+        f'  <rect width="600" height="800" fill="{bg}"/>\n'
+        f'  <circle cx="300" cy="300" r="150" fill="{fg}"/>\n'
+        f'  <path d="M96 800 C96 560 190 476 300 476 C410 476 504 560 504 800 Z" fill="{fg}"/>\n'
         '</svg>\n')
 
 
