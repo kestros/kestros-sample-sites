@@ -104,6 +104,8 @@ public class StandingsTableDataSource extends BaseContainerSlingModelDataSource
   public List<KestrosTableRow> getRowElements() {
     final List<KestrosTableRow> rows = new ArrayList<>();
     final String[] columns = getColumnKeys();
+    final boolean zones = "true".equals(getResource().getValueMap().get("zones", ""));
+    final int total = leagueDataService == null ? 0 : leagueDataService.getStandings().size();
     int i = 0;
     for (final Map<String, Object> row : rows()) {
       try {
@@ -117,13 +119,39 @@ public class StandingsTableDataSource extends BaseContainerSlingModelDataSource
             cells.add(cell(str(row.get(columns[c])), i, c));
           }
         }
-        rows.add(new SyntheticTableRow(cells, this, "tableRow", "r-" + i));
+        rows.add(new SyntheticTableRow(cells, this, rowPrefix(zones, toInt(row.get("pos")), total),
+            "r-" + i));
         i++;
       } catch (final Exception e) {
         // null-safe: skip a row that fails to build
       }
     }
     return rows;
+  }
+
+  /**
+   * Row prefix used to apply promotion (top 3) / relegation (bottom 2) variations from the table node
+   * ({@code qualifyRowVariations} / {@code relegationRowVariations}), when {@code zones="true"}.
+   */
+  private String rowPrefix(final boolean zones, final int pos, final int total) {
+    if (!zones || pos <= 0) {
+      return "tableRow";
+    }
+    if (pos <= 3) {
+      return "qualifyRow";
+    }
+    if (pos > total - 2) {
+      return "relegationRow";
+    }
+    return "tableRow";
+  }
+
+  private static int toInt(final Object o) {
+    try {
+      return Integer.parseInt(String.valueOf(o));
+    } catch (final Exception e) {
+      return 0;
+    }
   }
 
   @Nonnull
