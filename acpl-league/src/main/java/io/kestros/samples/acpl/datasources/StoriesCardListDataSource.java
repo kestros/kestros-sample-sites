@@ -51,8 +51,9 @@ public class StoriesCardListDataSource extends BaseContainerSlingModelDataSource
       }
       try {
         final String image = base + "/assets/" + str(s.get("image"));
+        final String byline = str(s.get("author")) + " · " + formatDate(str(s.get("date")));
         cards.add(new SyntheticStoryCard(
-            str(s.get("headline")), str(s.get("dek")), image, href, str(s.get("category")),
+            str(s.get("headline")), str(s.get("dek")), image, href, str(s.get("category")), byline,
             this, "card", "story-" + i));
         i++;
       } catch (final Exception e) {
@@ -66,6 +67,16 @@ public class StoriesCardListDataSource extends BaseContainerSlingModelDataSource
   private String siteRoot() {
     final Matcher m = Pattern.compile("^(/content/sites/[^/]+)").matcher(getResource().getPath());
     return m.find() ? m.group(1) : getResource().getPath();
+  }
+
+  /** {@code 2026-02-08} → {@code 8 February 2026}; returns the input unchanged if unparseable. */
+  private static String formatDate(final String iso) {
+    try {
+      return java.time.LocalDate.parse(iso)
+          .format(java.time.format.DateTimeFormatter.ofPattern("d MMMM yyyy", java.util.Locale.ENGLISH));
+    } catch (final Exception e) {
+      return iso;
+    }
   }
 
   private static String str(final Object o) {

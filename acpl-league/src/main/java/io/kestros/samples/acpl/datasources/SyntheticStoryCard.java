@@ -27,9 +27,10 @@ public class SyntheticStoryCard extends BaseContainerSyntheticResource implement
   private final String image;
   private final String href;
   private final String category;
+  private final String byline;
 
   public SyntheticStoryCard(@Nonnull String title, @Nonnull String excerpt, @Nonnull String image,
-      @Nonnull String href, @Nonnull String category,
+      @Nonnull String href, @Nonnull String category, @Nonnull String byline,
       @Nonnull BaseSlingModelDataSource dataSource,
       @Nonnull String resourcePrefix,
       @Nullable String forcedResourceName) throws ComponentConfigurationException {
@@ -39,6 +40,7 @@ public class SyntheticStoryCard extends BaseContainerSyntheticResource implement
     this.image = image;
     this.href = href;
     this.category = category;
+    this.byline = byline;
   }
 
   @Override
@@ -64,6 +66,10 @@ public class SyntheticStoryCard extends BaseContainerSyntheticResource implement
 
   public String getCategory() {
     return category;
+  }
+
+  public String getByline() {
+    return byline;
   }
 
   @Nullable
