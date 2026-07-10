@@ -137,27 +137,44 @@ public class StandingsTableDataSource extends BaseContainerSlingModelDataSource
     return new SyntheticTableCell(text == null ? "" : text, this, "tableCell", "c-" + row + "-" + col);
   }
 
-  /** When {@code clubDisplay="rich"} the club column renders a linked crest + abbreviation link. */
+  /**
+   * Rich club cell modes: {@code rich} (compact widget — crest + abbreviation) or {@code rich-name}
+   * (full table — crest + full club name, bolded).
+   */
   private boolean isRichClub() {
-    return "rich".equals(getResource().getValueMap().get("clubDisplay", ""));
+    return getClubDisplay().startsWith("rich");
+  }
+
+  private String getClubDisplay() {
+    return getResource().getValueMap().get("clubDisplay", "");
   }
 
   /**
-   * Rich club cell matching the static mock: a linked crest image plus the club's abbreviation as a
-   * link, both pointing at the club's team page. Rendered by the {@code club} table-cell layout; the
-   * {@code clubCell} prefix lets the table node style it independently from the plain cells.
+   * Rich club cell matching the static mock: a linked crest image plus a club link, both pointing at
+   * the club's team page. Rendered by the {@code club} table-cell layout; the {@code clubCell} prefix
+   * lets the table node style it independently from the plain cells.
    */
   private KestrosTableCell clubCell(final String slug, final int row, final int col)
       throws ComponentConfigurationException {
-    return new SyntheticClubCell(slug, leagueDataService.getClubShort(slug), siteRoot(),
+    final boolean useName = "rich-name".equals(getClubDisplay());
+    final String label = useName
+        ? leagueDataService.getClubName(slug)
+        : leagueDataService.getClubShort(slug);
+    final String linkClass = useName ? "fw-semibold club-link" : "club-link";
+    return new SyntheticClubCell(slug, label, linkClass, siteRoot(),
         this, "clubCell", "c-" + row + "-" + col);
   }
 
-  /** League-site root (e.g. {@code /content/sites/acpl}), derived from this datasource's path. */
+  /**
+   * League-site root (e.g. {@code /content/sites/acpl}), derived from this datasource's path — the
+   * first three path segments under {@code /content/sites}, so crest/team links are site-absolute
+   * regardless of which page (home vs. an inner page like {@code /standings}) hosts the table.
+   */
   private String siteRoot() {
     final String path = getResource().getPath();
-    final int i = path.indexOf("/jcr:content");
-    return i > 0 ? path.substring(0, i) : path;
+    final java.util.regex.Matcher m =
+        java.util.regex.Pattern.compile("^(/content/sites/[^/]+)").matcher(path);
+    return m.find() ? m.group(1) : path;
   }
 
   private static String str(final Object o) {
