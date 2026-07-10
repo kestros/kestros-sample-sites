@@ -41,7 +41,6 @@ public class StoriesCardListDataSource extends BaseContainerSlingModelDataSource
       return cards;
     }
     final String base = siteRoot();
-    final String href = base + "/stories.html";
     final List<Map<String, Object>> stories = leagueDataService.getStories();
     final int limit = getLimit();
     int i = 0;
@@ -51,6 +50,7 @@ public class StoriesCardListDataSource extends BaseContainerSlingModelDataSource
       }
       try {
         final String image = base + "/assets/" + str(s.get("image"));
+        final String href = base + "/stories/" + str(s.get("slug")) + ".html";
         final String byline = str(s.get("author")) + " · " + formatDate(str(s.get("date")));
         cards.add(new SyntheticStoryCard(
             str(s.get("headline")), str(s.get("dek")), image, href, str(s.get("category")), byline,

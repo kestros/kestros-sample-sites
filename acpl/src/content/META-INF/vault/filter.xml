@@ -2,4 +2,5 @@
 <workspaceFilter version="1.0">
   <filter root="/content/sites/acpl"/>
   <filter root="/content/sites/acpl-static"/>
+  <filter root="/etc/tags/acpl"/>
 </workspaceFilter>
