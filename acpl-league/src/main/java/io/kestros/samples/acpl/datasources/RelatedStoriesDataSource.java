@@ -74,18 +74,34 @@ public class RelatedStoriesDataSource extends BaseContainerSlingModelDataSource
     final Set<String> currentTeams = teamsIn(current, clubs);
     final String base = siteRoot();
     final int limit = getLimit();
-    int i = 0;
+
+    // Prefer stories sharing a club with the current one, then fill with other recent stories, so
+    // the Related Stories section is never empty (e.g. features/analysis with no club in the slug).
+    final List<Map<String, Object>> matched = new ArrayList<>();
+    final List<Map<String, Object>> others = new ArrayList<>();
     for (final Map<String, Object> s : leagueDataService.getStories()) {
       final String slug = str(s.get("slug"));
-      if (slug.equals(current) || i >= limit) {
+      if (slug.equals(current)) {
         continue;
       }
       final Set<String> t = teamsIn(slug, clubs);
       t.retainAll(currentTeams);
-      if (t.isEmpty()) {
-        continue;
+      if (!currentTeams.isEmpty() && !t.isEmpty()) {
+        matched.add(s);
+      } else {
+        others.add(s);
+      }
+    }
+    final List<Map<String, Object>> selected = new ArrayList<>(matched);
+    selected.addAll(others);
+
+    int i = 0;
+    for (final Map<String, Object> s : selected) {
+      if (i >= limit) {
+        break;
       }
       try {
+        final String slug = str(s.get("slug"));
         final String image = base + "/assets/" + str(s.get("image"));
         final String href = base + "/stories/" + slug + ".html";
         final String byline = str(s.get("author")) + " · " + formatDate(str(s.get("date")));
