@@ -221,7 +221,9 @@ W('clubs.json',clubs); W('squads.json',squads); W('players.json',players_full)
 W('standings.json',cur['standings'])
 played=[m for m in cur['matches'] if m['played']]
 W('recentResults.json',list(reversed(sorted(played,key=lambda m:(m['mw'],m['date']))))[:9])
-W('upcomingFixtures.json',[m for m in cur['matches'] if not m['played']][:6])
+_unplayed=[m for m in cur['matches'] if not m['played']]
+_next_weeks=sorted(set(m['mw'] for m in _unplayed))[:5]  # next 5 matchweeks
+W('upcomingFixtures.json',[m for m in _unplayed if m['mw'] in _next_weeks])
 W('matches.json',{k:v['matches'] for k,v in season_out.items()})
 W('seasons.json',{k:dict(standings=v['standings']) for k,v in season_out.items()})
 W('stories.json',stories)
