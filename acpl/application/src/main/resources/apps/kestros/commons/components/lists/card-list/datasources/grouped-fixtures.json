@@ -1,0 +1,8 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:title": "ACPL Fixtures by Matchweek",
+  "group": "ACPL",
+  "classPath": "io.kestros.samples.acpl.application.datasources.GroupedMatchListDataSource",
+  "container": true,
+  "mode": "fixtures"
+}

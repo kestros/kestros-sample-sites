@@ -1,0 +1,7 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:title": "ACPL Head-to-Head",
+  "group": "ACPL",
+  "classPath": "io.kestros.samples.acpl.application.datasources.MatchH2hCardListDataSource",
+  "container": true
+}

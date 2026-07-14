@@ -1,0 +1,7 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:title": "ACPL League Leaders",
+  "group": "ACPL",
+  "classPath": "io.kestros.samples.acpl.application.datasources.LeagueLeadersTableDataSource",
+  "container": true
+}

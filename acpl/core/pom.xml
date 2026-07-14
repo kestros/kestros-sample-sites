@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>io.kestros.cms</groupId>
+        <artifactId>kestros-site-parent</artifactId>
+        <version>0.1.2</version>
+    </parent>
+
+    <groupId>io.kestros.samples</groupId>
+    <artifactId>acpl-core</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>bundle</packaging>
+
+    <name>ACPL — Core</name>
+    <description>ACPL league data service implementation and datasources (reads the generated league JSON).</description>
+
+    <properties>
+        <rootPackage>io.kestros.samples.acpl.core</rootPackage>
+        <bundleCategory>kestros</bundleCategory>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.kestros.samples</groupId>
+            <artifactId>acpl-api</artifactId>
+            <version>${project.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.15.3</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.15.3</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <sourceDirectory>src/main/java</sourceDirectory>
+        <testSourceDirectory>src/test/java</testSourceDirectory>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>maven-bundle-plugin</artifactId>
+                <extensions>true</extensions>
+                <configuration>
+                    <instructions>
+                        <Import-Package>com.fasterxml.jackson.core.type,com.fasterxml.jackson.databind,*</Import-Package>
+                    </instructions>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>installBundle</id>
+        </profile>
+    </profiles>
+
+</project>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:kes="http://kestros.io/kes/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="kes:Page">
+    <jcr:content jcr:primaryType="nt:unstructured" jcr:title="Match Preview" jcr:description="Pre-match page for an unplayed fixture." kes:template="/libs/kestros/commons/base-site-template" kes:theme="/etc/ui-frameworks/acpl-framework/versions/0.0.1/themes/default" sling:resourceType="kestros/commons/components/kestros-base-page">
+        <header jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
+        <main jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
+            
+            <wrap layout="plain" variations="[container,my-5]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+                <row layout="plain" variations="[row]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+                    <col layout="plain" variations="[col-lg-10,mx-auto]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+                        <previewcard layout="plain" variations="[card,border-0,shadow-sm]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+                            <b layout="plain" variations="[card-body,p-4]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+                                <preview layout="match-list" kes:datasource="match-preview" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/lists/card-list"/>
+                            </b>
+                        </previewcard>
+                    </col>
+                </row>
+                <row2 layout="plain" variations="[row,g-4,mt-1]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+                    <col-form layout="plain" variations="[col-lg-6]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+                        <formcard layout="plain" variations="[card,border-0,shadow-sm,h-100]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+                            <b layout="plain" variations="[card-body]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+                                <h variations="[section-heading,mb-3]" headingText="Form — Last 5" headingType="h3" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading"/>
+                                <homerow layout="plain" variations="[d-flex,align-items-center,gap-2,mb-2]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+                                    <l variations="[fw-semibold,small,mb-0]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Home side"/>
+                                    <badges layout="form-row" kes:datasource="team-form" clubAttr="homeTeam" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/lists/card-list"/>
+                                </homerow>
+                                <awayrow layout="plain" variations="[d-flex,align-items-center,gap-2,mb-2]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+                                    <l variations="[fw-semibold,small,mb-0]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Away side"/>
+                                    <badges layout="form-row" kes:datasource="team-form" clubAttr="awayTeam" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/lists/card-list"/>
+                                </awayrow>
+                                <note variations="[text-muted,small,mb-0]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Most recent match on the right."/>
+                            </b>
+                        </formcard>
+                    </col-form>
+                    <col-table layout="plain" variations="[col-lg-6]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+                        <tablecard layout="plain" variations="[card,border-0,shadow-sm,h-100]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+                            <chead layout="plain" variations="[card-header,acpl-card-header]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+                                <t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="How They Stand"/>
+                            </chead>
+                            <cbody layout="plain" variations="[card-body,p-0]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+                                <table variations="[table,table-sm,align-middle,mb-0]" kes:datasource="standings" clubsAttr="homeTeam,awayTeam" columns="pos,club,p,w,d,l,gd,pts" clubDisplay="rich-name" clubCellLayout="club" clubCellVariations="[d-flex,align-items-center,gap-2]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table"/>
+                            </cbody>
+                        </tablecard>
+                    </col-table>
+                </row2>
+                <h2h_h variations="[section-heading,mb-3,mt-4]" headingText="Recent Meetings" headingType="h2" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading"/>
+                <h2hcard layout="plain" variations="[card,border-0,shadow-sm]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+                    <b layout="plain" variations="[card-body,p-0]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+                        <rows layout="match-list" kes:datasource="match-h2h" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/lists/card-list"/>
+                    </b>
+                </h2hcard>
+            </wrap>
+        </main>
+        <footer jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
+    </jcr:content>
+</jcr:root>

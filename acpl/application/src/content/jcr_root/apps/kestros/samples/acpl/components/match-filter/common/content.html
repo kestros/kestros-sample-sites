@@ -1,0 +1,28 @@
+<sly data-sly-use.filter="${'io.kestros.samples.acpl.application.components.MatchFilterComponent'}"/>
+<div class="card border-0 shadow-sm mb-4" data-acpl-match-filter="true">
+    <div class="card-body">
+        <div class="row g-3 align-items-end">
+            <div class="col-md-4">
+                <label class="form-label fw-semibold small text-uppercase" for="acpl-filter-mw">Matchweek</label>
+                <select class="form-select form-select-sm" id="acpl-filter-mw">
+                    <option value="">All matchweeks</option>
+                    <sly data-sly-list.mw="${filter.matchweeks}">
+                        <option value="${mw}">Matchweek ${mw}</option>
+                    </sly>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label class="form-label fw-semibold small text-uppercase" for="acpl-filter-club">Club</label>
+                <select class="form-select form-select-sm" id="acpl-filter-club">
+                    <option value="">All clubs</option>
+                    <sly data-sly-list.club="${filter.clubs}">
+                        <option value="${club.slug}">${club.name}</option>
+                    </sly>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-outline-secondary btn-sm" type="button" id="acpl-filter-clear">Clear filters</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,7 +1,0 @@
-{
-  "jcr:primaryType": "nt:unstructured",
-  "jcr:title": "ACPL Related Stories",
-  "group": "ACPL",
-  "classPath": "io.kestros.samples.acpl.datasources.RelatedStoriesDataSource",
-  "container": true
-}

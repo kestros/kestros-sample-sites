@@ -1,8 +1,0 @@
-{
-  "jcr:primaryType": "nt:unstructured",
-  "jcr:title": "ACPL Results by Matchweek",
-  "group": "ACPL",
-  "classPath": "io.kestros.samples.acpl.datasources.GroupedMatchListDataSource",
-  "container": true,
-  "mode": "results"
-}

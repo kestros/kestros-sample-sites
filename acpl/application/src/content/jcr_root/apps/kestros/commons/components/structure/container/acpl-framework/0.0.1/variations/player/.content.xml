@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:kes="http://kestros.io/kes/1.0" jcr:primaryType="kes:ComponentVariationGroup" jcr:title="Player">
+    <player-stat-card jcr:primaryType="kes:ComponentVariation" jcr:title="player-stat-card" inline="true"/>
+    <col-md-3 jcr:primaryType="kes:ComponentVariation" jcr:title="col-md-3" inline="true"/>
+    <col-md-9 jcr:primaryType="kes:ComponentVariation" jcr:title="col-md-9" inline="true"/>
+    <col-lg-3 jcr:primaryType="kes:ComponentVariation" jcr:title="col-lg-3" inline="true"/>
+    <col-lg-9 jcr:primaryType="kes:ComponentVariation" jcr:title="col-lg-9" inline="true"/>
+    <fs-6 jcr:primaryType="kes:ComponentVariation" jcr:title="fs-6" inline="true"/>
+</jcr:root>

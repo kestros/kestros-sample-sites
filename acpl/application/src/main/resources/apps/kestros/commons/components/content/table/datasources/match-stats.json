@@ -1,0 +1,7 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:title": "ACPL Match Stats",
+  "group": "ACPL",
+  "classPath": "io.kestros.samples.acpl.application.datasources.MatchStatsTableDataSource",
+  "container": true
+}

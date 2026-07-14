@@ -1,0 +1,7 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:title": "ACPL Match Preview Info",
+  "group": "ACPL",
+  "classPath": "io.kestros.samples.acpl.application.datasources.MatchPreviewCardListDataSource",
+  "container": true
+}
