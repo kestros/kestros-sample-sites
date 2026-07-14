@@ -1,7 +1,7 @@
 {
   "harborside": [
     {
-      "slug": "harborside-aiden-marsh",
+      "slug": "aiden-marsh",
       "name": "Aiden Marsh",
       "club": "harborside",
       "pos": "GK",
@@ -11,7 +11,7 @@
       "nationality": "Argentine"
     },
     {
-      "slug": "harborside-diego-lowe",
+      "slug": "diego-lowe",
       "name": "Diego Lowe",
       "club": "harborside",
       "pos": "RB",
@@ -21,7 +21,7 @@
       "nationality": "Italian"
     },
     {
-      "slug": "harborside-bastian-tovar",
+      "slug": "bastian-tovar",
       "name": "Bastian Tovar",
       "club": "harborside",
       "pos": "CB",
@@ -31,7 +31,7 @@
       "nationality": "Senegalese"
     },
     {
-      "slug": "harborside-felipe-adekunle",
+      "slug": "felipe-adekunle",
       "name": "Felipe Adekunle",
       "club": "harborside",
       "pos": "CB",
@@ -41,7 +41,7 @@
       "nationality": "German"
     },
     {
-      "slug": "harborside-sang-jin-choi",
+      "slug": "sang-jin-choi",
       "name": "Sang-jin Choi",
       "club": "harborside",
       "pos": "LB",
@@ -51,7 +51,7 @@
       "nationality": "Italian"
     },
     {
-      "slug": "harborside-hugh-carter",
+      "slug": "hugh-carter",
       "name": "Hugh Carter",
       "club": "harborside",
       "pos": "CDM",
@@ -61,7 +61,7 @@
       "nationality": "Brazilian"
     },
     {
-      "slug": "harborside-yusuf-akin",
+      "slug": "yusuf-akin",
       "name": "Yusuf Akin",
       "club": "harborside",
       "pos": "RW",
@@ -71,7 +71,7 @@
       "nationality": "Turkish"
     },
     {
-      "slug": "harborside-oliver-reid",
+      "slug": "oliver-reid",
       "name": "Oliver Reid",
       "club": "harborside",
       "pos": "CM",
@@ -81,7 +81,7 @@
       "nationality": "Spanish"
     },
     {
-      "slug": "harborside-jordan-bex",
+      "slug": "jordan-bex",
       "name": "Jordan Bex",
       "club": "harborside",
       "pos": "ST",
@@ -91,7 +91,7 @@
       "nationality": "English"
     },
     {
-      "slug": "harborside-mateo-reyes",
+      "slug": "mateo-reyes",
       "name": "Mateo Reyes",
       "club": "harborside",
       "pos": "CAM",
@@ -101,7 +101,7 @@
       "nationality": "Uruguayan"
     },
     {
-      "slug": "harborside-tomas-vela",
+      "slug": "tomas-vela",
       "name": "Tomas Vela",
       "club": "harborside",
       "pos": "LW",
@@ -111,7 +111,7 @@
       "nationality": "French"
     },
     {
-      "slug": "harborside-sven-riley",
+      "slug": "sven-riley",
       "name": "Sven Riley",
       "club": "harborside",
       "pos": "GK",
@@ -121,7 +121,7 @@
       "nationality": "French"
     },
     {
-      "slug": "harborside-kasper-beck",
+      "slug": "kasper-beck",
       "name": "Kasper Beck",
       "club": "harborside",
       "pos": "CM",
@@ -131,7 +131,7 @@
       "nationality": "Korean"
     },
     {
-      "slug": "harborside-lukas-holm",
+      "slug": "lukas-holm",
       "name": "Lukas Holm",
       "club": "harborside",
       "pos": "CB",
@@ -141,7 +141,7 @@
       "nationality": "Russian"
     },
     {
-      "slug": "harborside-marco-russo",
+      "slug": "marco-russo",
       "name": "Marco Russo",
       "club": "harborside",
       "pos": "RB",
@@ -151,7 +151,7 @@
       "nationality": "Senegalese"
     },
     {
-      "slug": "harborside-iv\u00e1n-ramos",
+      "slug": "iv\u00e1n-ramos",
       "name": "Iv\u00e1n Ramos",
       "club": "harborside",
       "pos": "LB",
@@ -161,7 +161,7 @@
       "nationality": "German"
     },
     {
-      "slug": "harborside-theo-bramble",
+      "slug": "theo-bramble",
       "name": "Theo Bramble",
       "club": "harborside",
       "pos": "CM",
@@ -171,7 +171,7 @@
       "nationality": "Senegalese"
     },
     {
-      "slug": "harborside-patrice-ndiaye",
+      "slug": "patrice-ndiaye",
       "name": "Patrice Ndiaye",
       "club": "harborside",
       "pos": "ST",
@@ -181,7 +181,7 @@
       "nationality": "Spanish"
     },
     {
-      "slug": "harborside-niko-petrov",
+      "slug": "niko-petrov",
       "name": "Niko Petrov",
       "club": "harborside",
       "pos": "CAM",
@@ -191,7 +191,7 @@
       "nationality": "Senegalese"
     },
     {
-      "slug": "harborside-eli-whitfield",
+      "slug": "eli-whitfield",
       "name": "Eli Whitfield",
       "club": "harborside",
       "pos": "LW",
@@ -201,7 +201,7 @@
       "nationality": "Brazilian"
     },
     {
-      "slug": "harborside-caio-mendes",
+      "slug": "caio-mendes",
       "name": "Caio Mendes",
       "club": "harborside",
       "pos": "RW",
@@ -211,7 +211,7 @@
       "nationality": "Japanese"
     },
     {
-      "slug": "harborside-stefan-korhonen",
+      "slug": "stefan-korhonen",
       "name": "Stefan Korhonen",
       "club": "harborside",
       "pos": "ST",
@@ -221,7 +221,7 @@
       "nationality": "Argentine"
     },
     {
-      "slug": "harborside-andre-berg",
+      "slug": "andre-berg",
       "name": "Andre Berg",
       "club": "harborside",
       "pos": "CB",
@@ -231,7 +231,7 @@
       "nationality": "Dutch"
     },
     {
-      "slug": "harborside-rory-quinn",
+      "slug": "rory-quinn",
       "name": "Rory Quinn",
       "club": "harborside",
       "pos": "CDM",
@@ -241,7 +241,7 @@
       "nationality": "Russian"
     },
     {
-      "slug": "harborside-kai-osei",
+      "slug": "kai-osei",
       "name": "Kai Osei",
       "club": "harborside",
       "pos": "ST",
@@ -251,7 +251,7 @@
       "nationality": "Brazilian"
     },
     {
-      "slug": "harborside-owen-pryce",
+      "slug": "owen-pryce",
       "name": "Owen Pryce",
       "club": "harborside",
       "pos": "GK",
@@ -263,7 +263,7 @@
   ],
   "albion": [
     {
-      "slug": "albion-diego-marsh",
+      "slug": "diego-marsh",
       "name": "Diego Marsh",
       "club": "albion",
       "pos": "GK",
@@ -273,7 +273,7 @@
       "nationality": "Senegalese"
     },
     {
-      "slug": "albion-gabriel-tovar",
+      "slug": "gabriel-tovar",
       "name": "Gabriel Tovar",
       "club": "albion",
       "pos": "GK",
@@ -283,7 +283,7 @@
       "nationality": "Nigerian"
     },
     {
-      "slug": "albion-caio-kovac",
+      "slug": "caio-kovac",
       "name": "Caio Kovac",
       "club": "albion",
       "pos": "GK",
@@ -293,7 +293,7 @@
       "nationality": "Senegalese"
     },
     {
-      "slug": "albion-eli-khan",
+      "slug": "eli-khan",
       "name": "Eli Khan",
       "club": "albion",
       "pos": "CB",
@@ -303,7 +303,7 @@
       "nationality": "Uruguayan"
     },
     {
-      "slug": "albion-malik-carter",
+      "slug": "malik-carter",
       "name": "Malik Carter",
       "club": "albion",
       "pos": "CB",
@@ -313,7 +313,7 @@
       "nationality": "German"
     },
     {
-      "slug": "albion-adam-sinclair",
+      "slug": "adam-sinclair",
       "name": "Adam Sinclair",
       "club": "albion",
       "pos": "CB",
@@ -323,7 +323,7 @@
       "nationality": "French"
     },
     {
-      "slug": "albion-finn-ivanov",
+      "slug": "finn-ivanov",
       "name": "Finn Ivanov",
       "club": "albion",
       "pos": "CB",
@@ -333,7 +333,7 @@
       "nationality": "Italian"
     },
     {
-      "slug": "albion-stefan-reid",
+      "slug": "stefan-reid",
       "name": "Stefan Reid",
       "club": "albion",
       "pos": "CB",
@@ -343,7 +343,7 @@
       "nationality": "Danish"
     },
     {
-      "slug": "albion-adam-tovar",
+      "slug": "adam-tovar",
       "name": "Adam Tovar",
       "club": "albion",
       "pos": "RB",
@@ -353,7 +353,7 @@
       "nationality": "Japanese"
     },
     {
-      "slug": "albion-iv\u00e1n-sokolov",
+      "slug": "iv\u00e1n-sokolov",
       "name": "Iv\u00e1n Sokolov",
       "club": "albion",
       "pos": "RB",
@@ -363,7 +363,7 @@
       "nationality": "Spanish"
     },
     {
-      "slug": "albion-pavel-pryce",
+      "slug": "pavel-pryce",
       "name": "Pavel Pryce",
       "club": "albion",
       "pos": "LB",
@@ -373,7 +373,7 @@
       "nationality": "Japanese"
     },
     {
-      "slug": "albion-andre-tovar",
+      "slug": "andre-tovar",
       "name": "Andre Tovar",
       "club": "albion",
       "pos": "LB",
@@ -383,7 +383,7 @@
       "nationality": "Korean"
     },
     {
-      "slug": "albion-anton-moreau",
+      "slug": "anton-moreau",
       "name": "Anton Moreau",
       "club": "albion",
       "pos": "CDM",
@@ -393,7 +393,7 @@
       "nationality": "German"
     },
     {
-      "slug": "albion-oliver-russo",
+      "slug": "oliver-russo",
       "name": "Oliver Russo",
       "club": "albion",
       "pos": "CDM",
@@ -403,7 +403,7 @@
       "nationality": "Danish"
     },
     {
-      "slug": "albion-diego-novak",
+      "slug": "diego-novak",
       "name": "Diego Novak",
       "club": "albion",
       "pos": "CDM",
@@ -413,7 +413,7 @@
       "nationality": "Korean"
     },
     {
-      "slug": "albion-leon-silva",
+      "slug": "leon-silva",
       "name": "Leon Silva",
       "club": "albion",
       "pos": "CM",
@@ -423,7 +423,7 @@
       "nationality": "Japanese"
     },
     {
-      "slug": "albion-owen-adekunle",
+      "slug": "owen-adekunle",
       "name": "Owen Adekunle",
       "club": "albion",
       "pos": "CM",
@@ -433,7 +433,7 @@
       "nationality": "French"
     },
     {
-      "slug": "albion-enzo-carter",
+      "slug": "enzo-carter",
       "name": "Enzo Carter",
       "club": "albion",
       "pos": "CM",
@@ -443,7 +443,7 @@
       "nationality": "Brazilian"
     },
     {
-      "slug": "albion-niko-lindqvist",
+      "slug": "niko-lindqvist",
       "name": "Niko Lindqvist",
       "club": "albion",
       "pos": "CM",
@@ -453,7 +453,7 @@
       "nationality": "Uruguayan"
     },
     {
-      "slug": "albion-sean-lindqvist",
+      "slug": "sean-lindqvist",
       "name": "Sean Lindqvist",
       "club": "albion",
       "pos": "CAM",
@@ -463,7 +463,7 @@
       "nationality": "Argentine"
     },
     {
-      "slug": "albion-felipe-serrano",
+      "slug": "felipe-serrano",
       "name": "Felipe Serrano",
       "club": "albion",
       "pos": "CAM",
@@ -473,7 +473,7 @@
       "nationality": "Korean"
     },
     {
-      "slug": "albion-luca-khan",
+      "slug": "luca-khan",
       "name": "Luca Khan",
       "club": "albion",
       "pos": "RW",
@@ -483,7 +483,7 @@
       "nationality": "Russian"
     },
     {
-      "slug": "albion-jonas-holm",
+      "slug": "jonas-holm",
       "name": "Jonas Holm",
       "club": "albion",
       "pos": "RW",
@@ -493,7 +493,7 @@
       "nationality": "Korean"
     },
     {
-      "slug": "albion-otto-moreau",
+      "slug": "otto-moreau",
       "name": "Otto Moreau",
       "club": "albion",
       "pos": "LW",
@@ -503,7 +503,7 @@
       "nationality": "English"
     },
     {
-      "slug": "albion-aaron-reyes",
+      "slug": "aaron-reyes",
       "name": "Aaron Reyes",
       "club": "albion",
       "pos": "LW",
@@ -513,7 +513,7 @@
       "nationality": "French"
     },
     {
-      "slug": "albion-tomas-bianchi",
+      "slug": "tomas-bianchi",
       "name": "Tomas Bianchi",
       "club": "albion",
       "pos": "ST",
@@ -523,7 +523,7 @@
       "nationality": "Dutch"
     },
     {
-      "slug": "albion-idris-riley",
+      "slug": "idris-riley",
       "name": "Idris Riley",
       "club": "albion",
       "pos": "ST",
@@ -533,7 +533,7 @@
       "nationality": "Brazilian"
     },
     {
-      "slug": "albion-yannick-walsh",
+      "slug": "yannick-walsh",
       "name": "Yannick Walsh",
       "club": "albion",
       "pos": "ST",
@@ -545,7 +545,7 @@
   ],
   "cape-rangers": [
     {
-      "slug": "cape-rangers-nikolai-bramble",
+      "slug": "nikolai-bramble",
       "name": "Nikolai Bramble",
       "club": "cape-rangers",
       "pos": "GK",
@@ -555,7 +555,7 @@
       "nationality": "Argentine"
     },
     {
-      "slug": "cape-rangers-diego-berg",
+      "slug": "diego-berg",
       "name": "Diego Berg",
       "club": "cape-rangers",
       "pos": "GK",
@@ -565,7 +565,7 @@
       "nationality": "Nigerian"
     },
     {
-      "slug": "cape-rangers-dante-ashworth",
+      "slug": "dante-ashworth",
       "name": "Dante Ashworth",
       "club": "cape-rangers",
       "pos": "GK",
@@ -575,7 +575,7 @@
       "nationality": "Brazilian"
     },
     {
-      "slug": "cape-rangers-eli-walsh",
+      "slug": "eli-walsh",
       "name": "Eli Walsh",
       "club": "cape-rangers",
       "pos": "CB",
@@ -585,7 +585,7 @@
       "nationality": "French"
     },
     {
-      "slug": "cape-rangers-stefan-bright",
+      "slug": "stefan-bright",
       "name": "Stefan Bright",
       "club": "cape-rangers",
       "pos": "CB",
@@ -595,7 +595,7 @@
       "nationality": "Danish"
     },
     {
-      "slug": "cape-rangers-otto-fischer",
+      "slug": "otto-fischer",
       "name": "Otto Fischer",
       "club": "cape-rangers",
       "pos": "CB",
@@ -605,7 +605,7 @@
       "nationality": "Spanish"
     },
     {
-      "slug": "cape-rangers-lukas-yilmaz",
+      "slug": "lukas-yilmaz",
       "name": "Lukas Yilmaz",
       "club": "cape-rangers",
       "pos": "CB",
@@ -615,7 +615,7 @@
       "nationality": "Dutch"
     },
     {
-      "slug": "cape-rangers-aiden-holm",
+      "slug": "aiden-holm",
       "name": "Aiden Holm",
       "club": "cape-rangers",
       "pos": "CB",
@@ -625,7 +625,7 @@
       "nationality": "Danish"
     },
     {
-      "slug": "cape-rangers-gabriel-reid",
+      "slug": "gabriel-reid",
       "name": "Gabriel Reid",
       "club": "cape-rangers",
       "pos": "RB",
@@ -635,7 +635,7 @@
       "nationality": "Italian"
     },
     {
-      "slug": "cape-rangers-mohammed-ndiaye",
+      "slug": "mohammed-ndiaye",
       "name": "Mohammed Ndiaye",
       "club": "cape-rangers",
       "pos": "RB",
@@ -645,7 +645,7 @@
       "nationality": "Brazilian"
     },
     {
-      "slug": "cape-rangers-kai-reid",
+      "slug": "kai-reid",
       "name": "Kai Reid",
       "club": "cape-rangers",
       "pos": "LB",
@@ -655,7 +655,7 @@
       "nationality": "Brazilian"
     },
     {
-      "slug": "cape-rangers-iv\u00e1n-delgado",
+      "slug": "iv\u00e1n-delgado",
       "name": "Iv\u00e1n Delgado",
       "club": "cape-rangers",
       "pos": "LB",
@@ -665,7 +665,7 @@
       "nationality": "Russian"
     },
     {
-      "slug": "cape-rangers-adam-choi",
+      "slug": "adam-choi",
       "name": "Adam Choi",
       "club": "cape-rangers",
       "pos": "CDM",
@@ -675,7 +675,7 @@
       "nationality": "Korean"
     },
     {
-      "slug": "cape-rangers-felipe-marchetti",
+      "slug": "felipe-marchetti",
       "name": "Felipe Marchetti",
       "club": "cape-rangers",
       "pos": "CDM",
@@ -685,7 +685,7 @@
       "nationality": "Korean"
     },
     {
-      "slug": "cape-rangers-theo-walsh",
+      "slug": "theo-walsh",
       "name": "Theo Walsh",
       "club": "cape-rangers",
       "pos": "CDM",
@@ -695,7 +695,7 @@
       "nationality": "Italian"
     },
     {
-      "slug": "cape-rangers-leon-costa",
+      "slug": "leon-costa",
       "name": "Leon Costa",
       "club": "cape-rangers",
       "pos": "CM",
@@ -705,7 +705,7 @@
       "nationality": "Spanish"
     },
     {
-      "slug": "cape-rangers-sacha-riley",
+      "slug": "sacha-riley",
       "name": "Sacha Riley",
       "club": "cape-rangers",
       "pos": "CM",
@@ -715,7 +715,7 @@
       "nationality": "French"
     },
     {
-      "slug": "cape-rangers-gabriel-elamin",
+      "slug": "gabriel-elamin",
       "name": "Gabriel ElAmin",
       "club": "cape-rangers",
       "pos": "CM",
@@ -725,7 +725,7 @@
       "nationality": "Spanish"
     },
     {
-      "slug": "cape-rangers-lukas-sorensen",
+      "slug": "lukas-sorensen",
       "name": "Lukas Sorensen",
       "club": "cape-rangers",
       "pos": "CM",
@@ -735,7 +735,7 @@
       "nationality": "French"
     },
     {
-      "slug": "cape-rangers-tomas-berg",
+      "slug": "tomas-berg",
       "name": "Tomas Berg",
       "club": "cape-rangers",
       "pos": "CAM",
@@ -745,7 +745,7 @@
       "nationality": "Russian"
     },
     {
-      "slug": "cape-rangers-bastian-marsh",
+      "slug": "bastian-marsh",
       "name": "Bastian Marsh",
       "club": "cape-rangers",
       "pos": "CAM",
@@ -755,7 +755,7 @@
       "nationality": "Dutch"
     },
     {
-      "slug": "cape-rangers-hugh-serrano",
+      "slug": "hugh-serrano",
       "name": "Hugh Serrano",
       "club": "cape-rangers",
       "pos": "RW",
@@ -765,7 +765,7 @@
       "nationality": "Uruguayan"
     },
     {
-      "slug": "cape-rangers-mateo-whitfield",
+      "slug": "mateo-whitfield",
       "name": "Mateo Whitfield",
       "club": "cape-rangers",
       "pos": "RW",
@@ -775,7 +775,7 @@
       "nationality": "German"
     },
     {
-      "slug": "cape-rangers-sacha-bennett",
+      "slug": "sacha-bennett",
       "name": "Sacha Bennett",
       "club": "cape-rangers",
       "pos": "LW",
@@ -785,7 +785,7 @@
       "nationality": "English"
     },
     {
-      "slug": "cape-rangers-samir-costa",
+      "slug": "samir-costa",
       "name": "Samir Costa",
       "club": "cape-rangers",
       "pos": "LW",
@@ -795,7 +795,7 @@
       "nationality": "French"
     },
     {
-      "slug": "cape-rangers-aaron-berg",
+      "slug": "aaron-berg",
       "name": "Aaron Berg",
       "club": "cape-rangers",
       "pos": "ST",
@@ -805,7 +805,7 @@
       "nationality": "French"
     },
     {
-      "slug": "cape-rangers-stefan-khan",
+      "slug": "stefan-khan",
       "name": "Stefan Khan",
       "club": "cape-rangers",
       "pos": "ST",
@@ -815,7 +815,7 @@
       "nationality": "Korean"
     },
     {
-      "slug": "cape-rangers-kenji-oneill",
+      "slug": "kenji-oneill",
       "name": "Kenji ONeill",
       "club": "cape-rangers",
       "pos": "ST",
@@ -827,7 +827,7 @@
   ],
   "saint-marys": [
     {
-      "slug": "saint-marys-yannick-bramble",
+      "slug": "yannick-bramble",
       "name": "Yannick Bramble",
       "club": "saint-marys",
       "pos": "GK",
@@ -837,7 +837,7 @@
       "nationality": "Nigerian"
     },
     {
-      "slug": "saint-marys-patrice-park",
+      "slug": "patrice-park",
       "name": "Patrice Park",
       "club": "saint-marys",
       "pos": "GK",
@@ -847,7 +847,7 @@
       "nationality": "Danish"
     },
     {
-      "slug": "saint-marys-hakim-serrano",
+      "slug": "hakim-serrano",
       "name": "Hakim Serrano",
       "club": "saint-marys",
       "pos": "GK",
@@ -857,7 +857,7 @@
       "nationality": "Italian"
     },
     {
-      "slug": "saint-marys-bruno-haddad",
+      "slug": "bruno-haddad",
       "name": "Bruno Haddad",
       "club": "saint-marys",
       "pos": "CB",
@@ -867,7 +867,7 @@
       "nationality": "Italian"
     },
     {
-      "slug": "saint-marys-niko-serrano",
+      "slug": "niko-serrano",
       "name": "Niko Serrano",
       "club": "saint-marys",
       "pos": "CB",
@@ -877,7 +877,7 @@
       "nationality": "Korean"
     },
     {
-      "slug": "saint-marys-felipe-holm",
+      "slug": "felipe-holm",
       "name": "Felipe Holm",
       "club": "saint-marys",
       "pos": "CB",
@@ -887,7 +887,7 @@
       "nationality": "English"
     },
     {
-      "slug": "saint-marys-dmitri-falcone",
+      "slug": "dmitri-falcone",
       "name": "Dmitri Falcone",
       "club": "saint-marys",
       "pos": "CB",
@@ -897,7 +897,7 @@
       "nationality": "Italian"
     },
     {
-      "slug": "saint-marys-miles-marchetti",
+      "slug": "miles-marchetti",
       "name": "Miles Marchetti",
       "club": "saint-marys",
       "pos": "CB",
@@ -907,7 +907,7 @@
       "nationality": "Nigerian"
     },
     {
-      "slug": "saint-marys-enzo-riley",
+      "slug": "enzo-riley",
       "name": "Enzo Riley",
       "club": "saint-marys",
       "pos": "RB",
@@ -917,7 +917,7 @@
       "nationality": "Brazilian"
     },
     {
-      "slug": "saint-marys-jonas-ivanov",
+      "slug": "jonas-ivanov",
       "name": "Jonas Ivanov",
       "club": "saint-marys",
       "pos": "RB",
@@ -927,7 +927,7 @@
       "nationality": "Japanese"
     },
     {
-      "slug": "saint-marys-noah-marchetti",
+      "slug": "noah-marchetti",
       "name": "Noah Marchetti",
       "club": "saint-marys",
       "pos": "LB",
@@ -937,7 +937,7 @@
       "nationality": "Danish"
     },
     {
-      "slug": "saint-marys-diego-reyes",
+      "slug": "diego-reyes",
       "name": "Diego Reyes",
       "club": "saint-marys",
       "pos": "LB",
@@ -947,7 +947,7 @@
       "nationality": "Nigerian"
     },
     {
-      "slug": "saint-marys-theo-ferreira",
+      "slug": "theo-ferreira",
       "name": "Theo Ferreira",
       "club": "saint-marys",
       "pos": "CDM",
@@ -957,7 +957,7 @@
       "nationality": "Uruguayan"
     },
     {
-      "slug": "saint-marys-caio-riley",
+      "slug": "caio-riley",
       "name": "Caio Riley",
       "club": "saint-marys",
       "pos": "CDM",
@@ -967,7 +967,7 @@
       "nationality": "Japanese"
     },
     {
-      "slug": "saint-marys-piotr-novak",
+      "slug": "piotr-novak",
       "name": "Piotr Novak",
       "club": "saint-marys",
       "pos": "CDM",
@@ -977,7 +977,7 @@
       "nationality": "German"
     },
     {
-      "slug": "saint-marys-tomas-holm",
+      "slug": "tomas-holm",
       "name": "Tomas Holm",
       "club": "saint-marys",
       "pos": "CM",
@@ -987,7 +987,7 @@
       "nationality": "Senegalese"
     },
     {
-      "slug": "saint-marys-mohammed-beck",
+      "slug": "mohammed-beck",
       "name": "Mohammed Beck",
       "club": "saint-marys",
       "pos": "CM",
@@ -997,7 +997,7 @@
       "nationality": "Dutch"
     },
     {
-      "slug": "saint-marys-rafael-park",
+      "slug": "rafael-park",
       "name": "Rafael Park",
       "club": "saint-marys",
       "pos": "CM",
@@ -1007,7 +1007,7 @@
       "nationality": "Senegalese"
     },
     {
-      "slug": "saint-marys-sang-jin-falcone",
+      "slug": "sang-jin-falcone",
       "name": "Sang-jin Falcone",
       "club": "saint-marys",
       "pos": "CM",
@@ -1017,7 +1017,7 @@
       "nationality": "Danish"
     },
     {
-      "slug": "saint-marys-gabriel-costa",
+      "slug": "gabriel-costa",
       "name": "Gabriel Costa",
       "club": "saint-marys",
       "pos": "CAM",
@@ -1027,7 +1027,7 @@
       "nationality": "Italian"
     },
     {
-      "slug": "saint-marys-mohammed-oneill",
+      "slug": "mohammed-oneill",
       "name": "Mohammed ONeill",
       "club": "saint-marys",
       "pos": "CAM",
@@ -1037,7 +1037,7 @@
       "nationality": "Korean"
     },
     {
-      "slug": "saint-marys-stefan-marsh",
+      "slug": "stefan-marsh",
       "name": "Stefan Marsh",
       "club": "saint-marys",
       "pos": "RW",
@@ -1047,7 +1047,7 @@
       "nationality": "Spanish"
     },
     {
-      "slug": "saint-marys-owen-marsh",
+      "slug": "owen-marsh",
       "name": "Owen Marsh",
       "club": "saint-marys",
       "pos": "RW",
@@ -1057,7 +1057,7 @@
       "nationality": "English"
     },
     {
-      "slug": "saint-marys-rafael-adekunle",
+      "slug": "rafael-adekunle",
       "name": "Rafael Adekunle",
       "club": "saint-marys",
       "pos": "LW",
@@ -1067,7 +1067,7 @@
       "nationality": "Brazilian"
     },
     {
-      "slug": "saint-marys-hassan-ferreira",
+      "slug": "hassan-ferreira",
       "name": "Hassan Ferreira",
       "club": "saint-marys",
       "pos": "LW",
@@ -1077,7 +1077,7 @@
       "nationality": "Brazilian"
     },
     {
-      "slug": "saint-marys-gabriel-falcone",
+      "slug": "gabriel-falcone",
       "name": "Gabriel Falcone",
       "club": "saint-marys",
       "pos": "ST",
@@ -1087,7 +1087,7 @@
       "nationality": "German"
     },
     {
-      "slug": "saint-marys-kenji-sokolov",
+      "slug": "kenji-sokolov",
       "name": "Kenji Sokolov",
       "club": "saint-marys",
       "pos": "ST",
@@ -1097,7 +1097,7 @@
       "nationality": "Brazilian"
     },
     {
-      "slug": "saint-marys-patrice-moreau",
+      "slug": "patrice-moreau",
       "name": "Patrice Moreau",
       "club": "saint-marys",
       "pos": "ST",
@@ -1109,7 +1109,7 @@
   ],
   "riverside": [
     {
-      "slug": "riverside-aaron-russo",
+      "slug": "aaron-russo",
       "name": "Aaron Russo",
       "club": "riverside",
       "pos": "GK",
@@ -1119,7 +1119,7 @@
       "nationality": "French"
     },
     {
-      "slug": "riverside-piotr-bennett",
+      "slug": "piotr-bennett",
       "name": "Piotr Bennett",
       "club": "riverside",
       "pos": "GK",
@@ -1129,7 +1129,7 @@
       "nationality": "Senegalese"
     },
     {
-      "slug": "riverside-kai-bramble",
+      "slug": "kai-bramble",
       "name": "Kai Bramble",
       "club": "riverside",
       "pos": "GK",
@@ -1139,7 +1139,7 @@
       "nationality": "Russian"
     },
     {
-      "slug": "riverside-yusuf-riley",
+      "slug": "yusuf-riley",
       "name": "Yusuf Riley",
       "club": "riverside",
       "pos": "CB",
@@ -1149,7 +1149,7 @@
       "nationality": "English"
     },
     {
-      "slug": "riverside-rory-adekunle",
+      "slug": "rory-adekunle",
       "name": "Rory Adekunle",
       "club": "riverside",
       "pos": "CB",
@@ -1159,7 +1159,7 @@
       "nationality": "Korean"
     },
     {
-      "slug": "riverside-stefan-sorensen",
+      "slug": "stefan-sorensen",
       "name": "Stefan Sorensen",
       "club": "riverside",
       "pos": "CB",
@@ -1169,7 +1169,7 @@
       "nationality": "Italian"
     },
     {
-      "slug": "riverside-mohammed-walsh",
+      "slug": "mohammed-walsh",
       "name": "Mohammed Walsh",
       "club": "riverside",
       "pos": "CB",
@@ -1179,7 +1179,7 @@
       "nationality": "Argentine"
     },
     {
-      "slug": "riverside-tariq-choi",
+      "slug": "tariq-choi",
       "name": "Tariq Choi",
       "club": "riverside",
       "pos": "CB",
@@ -1189,7 +1189,7 @@
       "nationality": "German"
     },
     {
-      "slug": "riverside-gabriel-sokolov",
+      "slug": "gabriel-sokolov",
       "name": "Gabriel Sokolov",
       "club": "riverside",
       "pos": "RB",
@@ -1199,7 +1199,7 @@
       "nationality": "German"
     },
     {
-      "slug": "riverside-finn-mendes",
+      "slug": "finn-mendes",
       "name": "Finn Mendes",
       "club": "riverside",
       "pos": "RB",
@@ -1209,7 +1209,7 @@
       "nationality": "German"
     },
     {
-      "slug": "riverside-emil-yilmaz",
+      "slug": "emil-yilmaz",
       "name": "Emil Yilmaz",
       "club": "riverside",
       "pos": "LB",
@@ -1219,7 +1219,7 @@
       "nationality": "Spanish"
     },
     {
-      "slug": "riverside-gabriel-reyes",
+      "slug": "gabriel-reyes",
       "name": "Gabriel Reyes",
       "club": "riverside",
       "pos": "LB",
@@ -1229,7 +1229,7 @@
       "nationality": "English"
     },
     {
-      "slug": "riverside-aaron-larsen",
+      "slug": "aaron-larsen",
       "name": "Aaron Larsen",
       "club": "riverside",
       "pos": "CDM",
@@ -1239,7 +1239,7 @@
       "nationality": "Italian"
     },
     {
-      "slug": "riverside-hugh-choi",
+      "slug": "hugh-choi",
       "name": "Hugh Choi",
       "club": "riverside",
       "pos": "CDM",
@@ -1249,7 +1249,7 @@
       "nationality": "Brazilian"
     },
     {
-      "slug": "riverside-felipe-bramble",
+      "slug": "felipe-bramble",
       "name": "Felipe Bramble",
       "club": "riverside",
       "pos": "CDM",
@@ -1259,7 +1259,7 @@
       "nationality": "Uruguayan"
     },
     {
-      "slug": "riverside-hakim-kovac",
+      "slug": "hakim-kovac",
       "name": "Hakim Kovac",
       "club": "riverside",
       "pos": "CM",
@@ -1269,7 +1269,7 @@
       "nationality": "Argentine"
     },
     {
-      "slug": "riverside-sang-jin-kovac",
+      "slug": "sang-jin-kovac",
       "name": "Sang-jin Kovac",
       "club": "riverside",
       "pos": "CM",
@@ -1279,7 +1279,7 @@
       "nationality": "Spanish"
     },
     {
-      "slug": "riverside-dante-delgado",
+      "slug": "dante-delgado",
       "name": "Dante Delgado",
       "club": "riverside",
       "pos": "CM",
@@ -1289,7 +1289,7 @@
       "nationality": "Uruguayan"
     },
     {
-      "slug": "riverside-owen-novak",
+      "slug": "owen-novak",
       "name": "Owen Novak",
       "club": "riverside",
       "pos": "CM",
@@ -1299,7 +1299,7 @@
       "nationality": "German"
     },
     {
-      "slug": "riverside-rory-berg",
+      "slug": "rory-berg",
       "name": "Rory Berg",
       "club": "riverside",
       "pos": "CAM",
@@ -1309,7 +1309,7 @@
       "nationality": "Korean"
     },
     {
-      "slug": "riverside-oliver-riley",
+      "slug": "oliver-riley",
       "name": "Oliver Riley",
       "club": "riverside",
       "pos": "CAM",
@@ -1319,7 +1319,7 @@
       "nationality": "Senegalese"
     },
     {
-      "slug": "riverside-iv\u00e1n-holm",
+      "slug": "iv\u00e1n-holm",
       "name": "Iv\u00e1n Holm",
       "club": "riverside",
       "pos": "RW",
@@ -1329,7 +1329,7 @@
       "nationality": "Spanish"
     },
     {
-      "slug": "riverside-viktor-bright",
+      "slug": "viktor-bright",
       "name": "Viktor Bright",
       "club": "riverside",
       "pos": "RW",
@@ -1339,7 +1339,7 @@
       "nationality": "Argentine"
     },
     {
-      "slug": "riverside-yannick-nasser",
+      "slug": "yannick-nasser",
       "name": "Yannick Nasser",
       "club": "riverside",
       "pos": "LW",
@@ -1349,7 +1349,7 @@
       "nationality": "Senegalese"
     },
     {
-      "slug": "riverside-hassan-mendes",
+      "slug": "hassan-mendes",
       "name": "Hassan Mendes",
       "club": "riverside",
       "pos": "LW",
@@ -1359,7 +1359,7 @@
       "nationality": "Russian"
     },
     {
-      "slug": "riverside-caio-marchetti",
+      "slug": "caio-marchetti",
       "name": "Caio Marchetti",
       "club": "riverside",
       "pos": "ST",
@@ -1369,7 +1369,7 @@
       "nationality": "Dutch"
     },
     {
-      "slug": "riverside-kenji-quinn",
+      "slug": "kenji-quinn",
       "name": "Kenji Quinn",
       "club": "riverside",
       "pos": "ST",
@@ -1379,7 +1379,7 @@
       "nationality": "Senegalese"
     },
     {
-      "slug": "riverside-rory-dubois",
+      "slug": "rory-dubois",
       "name": "Rory Dubois",
       "club": "riverside",
       "pos": "ST",
@@ -1391,7 +1391,7 @@
   ],
   "westmoreland": [
     {
-      "slug": "westmoreland-kasper-kovac",
+      "slug": "kasper-kovac",
       "name": "Kasper Kovac",
       "club": "westmoreland",
       "pos": "GK",
@@ -1401,7 +1401,7 @@
       "nationality": "German"
     },
     {
-      "slug": "westmoreland-sacha-delgado",
+      "slug": "sacha-delgado",
       "name": "Sacha Delgado",
       "club": "westmoreland",
       "pos": "GK",
@@ -1411,7 +1411,7 @@
       "nationality": "Senegalese"
     },
     {
-      "slug": "westmoreland-leon-bright",
+      "slug": "leon-bright",
       "name": "Leon Bright",
       "club": "westmoreland",
       "pos": "GK",
@@ -1421,7 +1421,7 @@
       "nationality": "Argentine"
     },
     {
-      "slug": "westmoreland-cole-falcone",
+      "slug": "cole-falcone",
       "name": "Cole Falcone",
       "club": "westmoreland",
       "pos": "CB",
@@ -1431,7 +1431,7 @@
       "nationality": "Uruguayan"
     },
     {
-      "slug": "westmoreland-emil-beck",
+      "slug": "emil-beck",
       "name": "Emil Beck",
       "club": "westmoreland",
       "pos": "CB",
@@ -1441,7 +1441,7 @@
       "nationality": "Spanish"
     },
     {
-      "slug": "westmoreland-niko-yilmaz",
+      "slug": "niko-yilmaz",
       "name": "Niko Yilmaz",
       "club": "westmoreland",
       "pos": "CB",
@@ -1451,7 +1451,7 @@
       "nationality": "Dutch"
     },
     {
-      "slug": "westmoreland-gabriel-beck",
+      "slug": "gabriel-beck",
       "name": "Gabriel Beck",
       "club": "westmoreland",
       "pos": "CB",
@@ -1461,7 +1461,7 @@
       "nationality": "Nigerian"
     },
     {
-      "slug": "westmoreland-pavel-vela",
+      "slug": "pavel-vela",
       "name": "Pavel Vela",
       "club": "westmoreland",
       "pos": "CB",
@@ -1471,7 +1471,7 @@
       "nationality": "French"
     },
     {
-      "slug": "westmoreland-marco-delgado",
+      "slug": "marco-delgado",
       "name": "Marco Delgado",
       "club": "westmoreland",
       "pos": "RB",
@@ -1481,7 +1481,7 @@
       "nationality": "Japanese"
     },
     {
-      "slug": "westmoreland-luca-ramos",
+      "slug": "luca-ramos",
       "name": "Luca Ramos",
       "club": "westmoreland",
       "pos": "RB",
@@ -1491,7 +1491,7 @@
       "nationality": "English"
     },
     {
-      "slug": "westmoreland-dmitri-delgado",
+      "slug": "dmitri-delgado",
       "name": "Dmitri Delgado",
       "club": "westmoreland",
       "pos": "LB",
@@ -1501,7 +1501,7 @@
       "nationality": "German"
     },
     {
-      "slug": "westmoreland-hugh-osei",
+      "slug": "hugh-osei",
       "name": "Hugh Osei",
       "club": "westmoreland",
       "pos": "LB",
@@ -1511,7 +1511,7 @@
       "nationality": "Uruguayan"
     },
     {
-      "slug": "westmoreland-nikolai-marchetti",
+      "slug": "nikolai-marchetti",
       "name": "Nikolai Marchetti",
       "club": "westmoreland",
       "pos": "CDM",
@@ -1521,7 +1521,7 @@
       "nationality": "Nigerian"
     },
     {
-      "slug": "westmoreland-andre-mendes",
+      "slug": "andre-mendes",
       "name": "Andre Mendes",
       "club": "westmoreland",
       "pos": "CDM",
@@ -1531,7 +1531,7 @@
       "nationality": "Brazilian"
     },
     {
-      "slug": "westmoreland-hassan-sokolov",
+      "slug": "hassan-sokolov",
       "name": "Hassan Sokolov",
       "club": "westmoreland",
       "pos": "CDM",
@@ -1541,7 +1541,7 @@
       "nationality": "German"
     },
     {
-      "slug": "westmoreland-sacha-reid",
+      "slug": "sacha-reid",
       "name": "Sacha Reid",
       "club": "westmoreland",
       "pos": "CM",
@@ -1551,7 +1551,7 @@
       "nationality": "Russian"
     },
     {
-      "slug": "westmoreland-rafael-falcone",
+      "slug": "rafael-falcone",
       "name": "Rafael Falcone",
       "club": "westmoreland",
       "pos": "CM",
@@ -1561,7 +1561,7 @@
       "nationality": "Italian"
     },
     {
-      "slug": "westmoreland-sean-bennett",
+      "slug": "sean-bennett",
       "name": "Sean Bennett",
       "club": "westmoreland",
       "pos": "CM",
@@ -1571,7 +1571,7 @@
       "nationality": "French"
     },
     {
-      "slug": "westmoreland-anton-lowe",
+      "slug": "anton-lowe",
       "name": "Anton Lowe",
       "club": "westmoreland",
       "pos": "CM",
@@ -1581,7 +1581,7 @@
       "nationality": "Uruguayan"
     },
     {
-      "slug": "westmoreland-miles-elamin",
+      "slug": "miles-elamin",
       "name": "Miles ElAmin",
       "club": "westmoreland",
       "pos": "CAM",
@@ -1591,7 +1591,7 @@
       "nationality": "Russian"
     },
     {
-      "slug": "westmoreland-theo-park",
+      "slug": "theo-park",
       "name": "Theo Park",
       "club": "westmoreland",
       "pos": "CAM",
@@ -1601,7 +1601,7 @@
       "nationality": "Japanese"
     },
     {
-      "slug": "westmoreland-anton-whitfield",
+      "slug": "anton-whitfield",
       "name": "Anton Whitfield",
       "club": "westmoreland",
       "pos": "RW",
@@ -1611,7 +1611,7 @@
       "nationality": "German"
     },
     {
-      "slug": "westmoreland-mohammed-korhonen",
+      "slug": "mohammed-korhonen",
       "name": "Mohammed Korhonen",
       "club": "westmoreland",
       "pos": "RW",
@@ -1621,7 +1621,7 @@
       "nationality": "Spanish"
     },
     {
-      "slug": "westmoreland-hakim-ndiaye",
+      "slug": "hakim-ndiaye",
       "name": "Hakim Ndiaye",
       "club": "westmoreland",
       "pos": "LW",
@@ -1631,7 +1631,7 @@
       "nationality": "Nigerian"
     },
     {
-      "slug": "westmoreland-dante-russo",
+      "slug": "dante-russo",
       "name": "Dante Russo",
       "club": "westmoreland",
       "pos": "LW",
@@ -1641,7 +1641,7 @@
       "nationality": "Dutch"
     },
     {
-      "slug": "westmoreland-yannick-moreau",
+      "slug": "yannick-moreau",
       "name": "Yannick Moreau",
       "club": "westmoreland",
       "pos": "ST",
@@ -1651,7 +1651,7 @@
       "nationality": "Danish"
     },
     {
-      "slug": "westmoreland-patrice-reid",
+      "slug": "patrice-reid",
       "name": "Patrice Reid",
       "club": "westmoreland",
       "pos": "ST",
@@ -1661,7 +1661,7 @@
       "nationality": "Dutch"
     },
     {
-      "slug": "westmoreland-miles-adekunle",
+      "slug": "miles-adekunle",
       "name": "Miles Adekunle",
       "club": "westmoreland",
       "pos": "ST",
@@ -1673,7 +1673,7 @@
   ],
   "bayview": [
     {
-      "slug": "bayview-kenji-nasser",
+      "slug": "kenji-nasser",
       "name": "Kenji Nasser",
       "club": "bayview",
       "pos": "GK",
@@ -1683,7 +1683,7 @@
       "nationality": "Uruguayan"
     },
     {
-      "slug": "bayview-tariq-russo",
+      "slug": "tariq-russo",
       "name": "Tariq Russo",
       "club": "bayview",
       "pos": "GK",
@@ -1693,7 +1693,7 @@
       "nationality": "Nigerian"
     },
     {
-      "slug": "bayview-marco-tovar",
+      "slug": "marco-tovar",
       "name": "Marco Tovar",
       "club": "bayview",
       "pos": "GK",
@@ -1703,7 +1703,7 @@
       "nationality": "German"
     },
     {
-      "slug": "bayview-sacha-lowe",
+      "slug": "sacha-lowe",
       "name": "Sacha Lowe",
       "club": "bayview",
       "pos": "CB",
@@ -1713,7 +1713,7 @@
       "nationality": "Spanish"
     },
     {
-      "slug": "bayview-felipe-bex",
+      "slug": "felipe-bex",
       "name": "Felipe Bex",
       "club": "bayview",
       "pos": "CB",
@@ -1723,7 +1723,7 @@
       "nationality": "Spanish"
     },
     {
-      "slug": "bayview-noah-serrano",
+      "slug": "noah-serrano",
       "name": "Noah Serrano",
       "club": "bayview",
       "pos": "CB",
@@ -1733,7 +1733,7 @@
       "nationality": "Danish"
     },
     {
-      "slug": "bayview-sven-oneill",
+      "slug": "sven-oneill",
       "name": "Sven ONeill",
       "club": "bayview",
       "pos": "CB",
@@ -1743,7 +1743,7 @@
       "nationality": "Uruguayan"
     },
     {
-      "slug": "bayview-malik-osei",
+      "slug": "malik-osei",
       "name": "Malik Osei",
       "club": "bayview",
       "pos": "CB",
@@ -1753,7 +1753,7 @@
       "nationality": "Senegalese"
     },
     {
-      "slug": "bayview-iv\u00e1n-larsen",
+      "slug": "iv\u00e1n-larsen",
       "name": "Iv\u00e1n Larsen",
       "club": "bayview",
       "pos": "RB",
@@ -1763,7 +1763,7 @@
       "nationality": "German"
     },
     {
-      "slug": "bayview-jonas-bianchi",
+      "slug": "jonas-bianchi",
       "name": "Jonas Bianchi",
       "club": "bayview",
       "pos": "RB",
@@ -1773,7 +1773,7 @@
       "nationality": "Danish"
     },
     {
-      "slug": "bayview-eli-pryce",
+      "slug": "eli-pryce",
       "name": "Eli Pryce",
       "club": "bayview",
       "pos": "LB",
@@ -1783,7 +1783,7 @@
       "nationality": "Spanish"
     },
     {
-      "slug": "bayview-tomas-marsh",
+      "slug": "tomas-marsh",
       "name": "Tomas Marsh",
       "club": "bayview",
       "pos": "LB",
@@ -1793,7 +1793,7 @@
       "nationality": "Uruguayan"
     },
     {
-      "slug": "bayview-bastian-dubois",
+      "slug": "bastian-dubois",
       "name": "Bastian Dubois",
       "club": "bayview",
       "pos": "CDM",
@@ -1803,7 +1803,7 @@
       "nationality": "Dutch"
     },
     {
-      "slug": "bayview-otto-marchetti",
+      "slug": "otto-marchetti",
       "name": "Otto Marchetti",
       "club": "bayview",
       "pos": "CDM",
@@ -1813,7 +1813,7 @@
       "nationality": "English"
     },
     {
-      "slug": "bayview-kai-korhonen",
+      "slug": "kai-korhonen",
       "name": "Kai Korhonen",
       "club": "bayview",
       "pos": "CDM",
@@ -1823,7 +1823,7 @@
       "nationality": "Italian"
     },
     {
-      "slug": "bayview-pavel-park",
+      "slug": "pavel-park",
       "name": "Pavel Park",
       "club": "bayview",
       "pos": "CM",
@@ -1833,7 +1833,7 @@
       "nationality": "Italian"
     },
     {
-      "slug": "bayview-malik-volkov",
+      "slug": "malik-volkov",
       "name": "Malik Volkov",
       "club": "bayview",
       "pos": "CM",
@@ -1843,7 +1843,7 @@
       "nationality": "Nigerian"
     },
     {
-      "slug": "bayview-sang-jin-whitfield",
+      "slug": "sang-jin-whitfield",
       "name": "Sang-jin Whitfield",
       "club": "bayview",
       "pos": "CM",
@@ -1853,7 +1853,7 @@
       "nationality": "Dutch"
     },
     {
-      "slug": "bayview-malik-marsh",
+      "slug": "malik-marsh",
       "name": "Malik Marsh",
       "club": "bayview",
       "pos": "CM",
@@ -1863,7 +1863,7 @@
       "nationality": "French"
     },
     {
-      "slug": "bayview-mateo-ivanov",
+      "slug": "mateo-ivanov",
       "name": "Mateo Ivanov",
       "club": "bayview",
       "pos": "CAM",
@@ -1873,7 +1873,7 @@
       "nationality": "Brazilian"
     },
     {
-      "slug": "bayview-otto-ndiaye",
+      "slug": "otto-ndiaye",
       "name": "Otto Ndiaye",
       "club": "bayview",
       "pos": "CAM",
@@ -1883,7 +1883,7 @@
       "nationality": "English"
     },
     {
-      "slug": "bayview-viktor-korhonen",
+      "slug": "viktor-korhonen",
       "name": "Viktor Korhonen",
       "club": "bayview",
       "pos": "RW",
@@ -1893,18 +1893,18 @@
       "nationality": "English"
     },
     {
-      "slug": "bayview-mohammed-walsh",
-      "name": "Mohammed Walsh",
+      "slug": "rory-mendes",
+      "name": "Rory Mendes",
       "club": "bayview",
       "pos": "RW",
       "num": 24,
-      "age": 29,
-      "height": "1.90 m",
-      "nationality": "Danish"
+      "age": 25,
+      "height": "1.79 m",
+      "nationality": "Korean"
     },
     {
-      "slug": "bayview-aaron-riley",
-      "name": "Aaron Riley",
+      "slug": "anton-sorensen",
+      "name": "Anton Sorensen",
       "club": "bayview",
       "pos": "LW",
       "num": 25,
@@ -1913,7 +1913,7 @@
       "nationality": "Brazilian"
     },
     {
-      "slug": "bayview-noah-ramos",
+      "slug": "noah-ramos",
       "name": "Noah Ramos",
       "club": "bayview",
       "pos": "LW",
@@ -1923,39 +1923,39 @@
       "nationality": "Nigerian"
     },
     {
-      "slug": "bayview-gabriel-costa",
-      "name": "Gabriel Costa",
+      "slug": "sean-adekunle",
+      "name": "Sean Adekunle",
       "club": "bayview",
       "pos": "ST",
       "num": 27,
-      "age": 21,
-      "height": "1.94 m",
-      "nationality": "Brazilian"
+      "age": 32,
+      "height": "1.83 m",
+      "nationality": "Italian"
     },
     {
-      "slug": "bayview-noah-falcone",
-      "name": "Noah Falcone",
+      "slug": "adam-kovac",
+      "name": "Adam Kovac",
       "club": "bayview",
       "pos": "ST",
       "num": 28,
-      "age": 27,
-      "height": "1.94 m",
-      "nationality": "French"
+      "age": 26,
+      "height": "1.70 m",
+      "nationality": "Brazilian"
     },
     {
-      "slug": "bayview-gabriel-russo",
-      "name": "Gabriel Russo",
+      "slug": "sean-costa",
+      "name": "Sean Costa",
       "club": "bayview",
       "pos": "ST",
       "num": 29,
-      "age": 19,
-      "height": "1.71 m",
-      "nationality": "Argentine"
+      "age": 34,
+      "height": "1.78 m",
+      "nationality": "German"
     }
   ],
   "highland": [
     {
-      "slug": "highland-nikolai-ivanov",
+      "slug": "nikolai-ivanov",
       "name": "Nikolai Ivanov",
       "club": "highland",
       "pos": "GK",
@@ -1965,7 +1965,7 @@
       "nationality": "Argentine"
     },
     {
-      "slug": "highland-dmitri-serrano",
+      "slug": "dmitri-serrano",
       "name": "Dmitri Serrano",
       "club": "highland",
       "pos": "GK",
@@ -1975,7 +1975,7 @@
       "nationality": "Japanese"
     },
     {
-      "slug": "highland-eli-moreau",
+      "slug": "eli-moreau",
       "name": "Eli Moreau",
       "club": "highland",
       "pos": "GK",
@@ -1985,7 +1985,7 @@
       "nationality": "French"
     },
     {
-      "slug": "highland-kai-dubois",
+      "slug": "kai-dubois",
       "name": "Kai Dubois",
       "club": "highland",
       "pos": "CB",
@@ -1995,7 +1995,7 @@
       "nationality": "Nigerian"
     },
     {
-      "slug": "highland-eli-lowe",
+      "slug": "eli-lowe",
       "name": "Eli Lowe",
       "club": "highland",
       "pos": "CB",
@@ -2005,7 +2005,7 @@
       "nationality": "Dutch"
     },
     {
-      "slug": "highland-noah-tovar",
+      "slug": "noah-tovar",
       "name": "Noah Tovar",
       "club": "highland",
       "pos": "CB",
@@ -2015,7 +2015,7 @@
       "nationality": "Russian"
     },
     {
-      "slug": "highland-patrice-bramble",
+      "slug": "patrice-bramble",
       "name": "Patrice Bramble",
       "club": "highland",
       "pos": "CB",
@@ -2025,7 +2025,7 @@
       "nationality": "Russian"
     },
     {
-      "slug": "highland-felipe-tovar",
+      "slug": "felipe-tovar",
       "name": "Felipe Tovar",
       "club": "highland",
       "pos": "CB",
@@ -2035,7 +2035,7 @@
       "nationality": "Italian"
     },
     {
-      "slug": "highland-hassan-quinn",
+      "slug": "hassan-quinn",
       "name": "Hassan Quinn",
       "club": "highland",
       "pos": "RB",
@@ -2045,7 +2045,7 @@
       "nationality": "Korean"
     },
     {
-      "slug": "highland-sang-jin-walsh",
+      "slug": "sang-jin-walsh",
       "name": "Sang-jin Walsh",
       "club": "highland",
       "pos": "RB",
@@ -2055,7 +2055,7 @@
       "nationality": "Brazilian"
     },
     {
-      "slug": "highland-ravi-moreau",
+      "slug": "ravi-moreau",
       "name": "Ravi Moreau",
       "club": "highland",
       "pos": "LB",
@@ -2065,7 +2065,7 @@
       "nationality": "Danish"
     },
     {
-      "slug": "highland-bastian-korhonen",
+      "slug": "bastian-korhonen",
       "name": "Bastian Korhonen",
       "club": "highland",
       "pos": "LB",
@@ -2075,7 +2075,7 @@
       "nationality": "Senegalese"
     },
     {
-      "slug": "highland-dante-dubois",
+      "slug": "dante-dubois",
       "name": "Dante Dubois",
       "club": "highland",
       "pos": "CDM",
@@ -2085,7 +2085,7 @@
       "nationality": "Russian"
     },
     {
-      "slug": "highland-malik-bianchi",
+      "slug": "malik-bianchi",
       "name": "Malik Bianchi",
       "club": "highland",
       "pos": "CDM",
@@ -2095,7 +2095,7 @@
       "nationality": "Nigerian"
     },
     {
-      "slug": "highland-samir-rahman",
+      "slug": "samir-rahman",
       "name": "Samir Rahman",
       "club": "highland",
       "pos": "CDM",
@@ -2105,7 +2105,7 @@
       "nationality": "Korean"
     },
     {
-      "slug": "highland-felipe-russo",
+      "slug": "felipe-russo",
       "name": "Felipe Russo",
       "club": "highland",
       "pos": "CM",
@@ -2115,7 +2115,7 @@
       "nationality": "English"
     },
     {
-      "slug": "highland-mateo-petrov",
+      "slug": "mateo-petrov",
       "name": "Mateo Petrov",
       "club": "highland",
       "pos": "CM",
@@ -2125,7 +2125,7 @@
       "nationality": "Dutch"
     },
     {
-      "slug": "highland-eli-ashworth",
+      "slug": "eli-ashworth",
       "name": "Eli Ashworth",
       "club": "highland",
       "pos": "CM",
@@ -2135,7 +2135,7 @@
       "nationality": "Korean"
     },
     {
-      "slug": "highland-dmitri-oneill",
+      "slug": "dmitri-oneill",
       "name": "Dmitri ONeill",
       "club": "highland",
       "pos": "CM",
@@ -2145,7 +2145,7 @@
       "nationality": "English"
     },
     {
-      "slug": "highland-felipe-novak",
+      "slug": "felipe-novak",
       "name": "Felipe Novak",
       "club": "highland",
       "pos": "CAM",
@@ -2155,7 +2155,7 @@
       "nationality": "Uruguayan"
     },
     {
-      "slug": "highland-hugh-larsen",
+      "slug": "hugh-larsen",
       "name": "Hugh Larsen",
       "club": "highland",
       "pos": "CAM",
@@ -2165,7 +2165,7 @@
       "nationality": "Russian"
     },
     {
-      "slug": "highland-yannick-elamin",
+      "slug": "yannick-elamin",
       "name": "Yannick ElAmin",
       "club": "highland",
       "pos": "RW",
@@ -2175,7 +2175,7 @@
       "nationality": "Russian"
     },
     {
-      "slug": "highland-adam-osei",
+      "slug": "adam-osei",
       "name": "Adam Osei",
       "club": "highland",
       "pos": "RW",
@@ -2185,7 +2185,7 @@
       "nationality": "Japanese"
     },
     {
-      "slug": "highland-niko-choi",
+      "slug": "niko-choi",
       "name": "Niko Choi",
       "club": "highland",
       "pos": "LW",
@@ -2195,7 +2195,7 @@
       "nationality": "Danish"
     },
     {
-      "slug": "highland-rafael-bianchi",
+      "slug": "rafael-bianchi",
       "name": "Rafael Bianchi",
       "club": "highland",
       "pos": "LW",
@@ -2205,7 +2205,7 @@
       "nationality": "Korean"
     },
     {
-      "slug": "highland-owen-walsh",
+      "slug": "owen-walsh",
       "name": "Owen Walsh",
       "club": "highland",
       "pos": "ST",
@@ -2215,7 +2215,7 @@
       "nationality": "Brazilian"
     },
     {
-      "slug": "highland-aiden-bright",
+      "slug": "aiden-bright",
       "name": "Aiden Bright",
       "club": "highland",
       "pos": "ST",
@@ -2225,7 +2225,7 @@
       "nationality": "Japanese"
     },
     {
-      "slug": "highland-bruno-vidic",
+      "slug": "bruno-vidic",
       "name": "Bruno Vidic",
       "club": "highland",
       "pos": "ST",
@@ -2237,7 +2237,7 @@
   ],
   "bridgeport": [
     {
-      "slug": "bridgeport-ravi-yilmaz",
+      "slug": "ravi-yilmaz",
       "name": "Ravi Yilmaz",
       "club": "bridgeport",
       "pos": "GK",
@@ -2247,7 +2247,7 @@
       "nationality": "Korean"
     },
     {
-      "slug": "bridgeport-aaron-riley",
+      "slug": "aaron-riley",
       "name": "Aaron Riley",
       "club": "bridgeport",
       "pos": "GK",
@@ -2257,7 +2257,7 @@
       "nationality": "Korean"
     },
     {
-      "slug": "bridgeport-finn-nasser",
+      "slug": "finn-nasser",
       "name": "Finn Nasser",
       "club": "bridgeport",
       "pos": "GK",
@@ -2267,7 +2267,7 @@
       "nationality": "English"
     },
     {
-      "slug": "bridgeport-enzo-osei",
+      "slug": "enzo-osei",
       "name": "Enzo Osei",
       "club": "bridgeport",
       "pos": "CB",
@@ -2277,7 +2277,7 @@
       "nationality": "English"
     },
     {
-      "slug": "bridgeport-miles-yilmaz",
+      "slug": "miles-yilmaz",
       "name": "Miles Yilmaz",
       "club": "bridgeport",
       "pos": "CB",
@@ -2287,7 +2287,7 @@
       "nationality": "Korean"
     },
     {
-      "slug": "bridgeport-niko-walsh",
+      "slug": "niko-walsh",
       "name": "Niko Walsh",
       "club": "bridgeport",
       "pos": "CB",
@@ -2297,7 +2297,7 @@
       "nationality": "Nigerian"
     },
     {
-      "slug": "bridgeport-mateo-rahman",
+      "slug": "mateo-rahman",
       "name": "Mateo Rahman",
       "club": "bridgeport",
       "pos": "CB",
@@ -2307,7 +2307,7 @@
       "nationality": "English"
     },
     {
-      "slug": "bridgeport-emil-fischer",
+      "slug": "emil-fischer",
       "name": "Emil Fischer",
       "club": "bridgeport",
       "pos": "CB",
@@ -2317,7 +2317,7 @@
       "nationality": "German"
     },
     {
-      "slug": "bridgeport-cole-elamin",
+      "slug": "cole-elamin",
       "name": "Cole ElAmin",
       "club": "bridgeport",
       "pos": "RB",
@@ -2327,7 +2327,7 @@
       "nationality": "Korean"
     },
     {
-      "slug": "bridgeport-theo-ashworth",
+      "slug": "theo-ashworth",
       "name": "Theo Ashworth",
       "club": "bridgeport",
       "pos": "RB",
@@ -2337,7 +2337,7 @@
       "nationality": "Spanish"
     },
     {
-      "slug": "bridgeport-hugh-kovac",
+      "slug": "hugh-kovac",
       "name": "Hugh Kovac",
       "club": "bridgeport",
       "pos": "LB",
@@ -2347,7 +2347,7 @@
       "nationality": "Spanish"
     },
     {
-      "slug": "bridgeport-sang-jin-delgado",
+      "slug": "sang-jin-delgado",
       "name": "Sang-jin Delgado",
       "club": "bridgeport",
       "pos": "LB",
@@ -2357,7 +2357,7 @@
       "nationality": "Korean"
     },
     {
-      "slug": "bridgeport-theo-serrano",
+      "slug": "theo-serrano",
       "name": "Theo Serrano",
       "club": "bridgeport",
       "pos": "CDM",
@@ -2367,7 +2367,7 @@
       "nationality": "Uruguayan"
     },
     {
-      "slug": "bridgeport-caio-whitfield",
+      "slug": "caio-whitfield",
       "name": "Caio Whitfield",
       "club": "bridgeport",
       "pos": "CDM",
@@ -2377,7 +2377,7 @@
       "nationality": "Russian"
     },
     {
-      "slug": "bridgeport-eli-larsen",
+      "slug": "eli-larsen",
       "name": "Eli Larsen",
       "club": "bridgeport",
       "pos": "CDM",
@@ -2387,7 +2387,7 @@
       "nationality": "Spanish"
     },
     {
-      "slug": "bridgeport-anton-watanabe",
+      "slug": "anton-watanabe",
       "name": "Anton Watanabe",
       "club": "bridgeport",
       "pos": "CM",
@@ -2397,7 +2397,7 @@
       "nationality": "Russian"
     },
     {
-      "slug": "bridgeport-caio-falcone",
+      "slug": "caio-falcone",
       "name": "Caio Falcone",
       "club": "bridgeport",
       "pos": "CM",
@@ -2407,18 +2407,18 @@
       "nationality": "Senegalese"
     },
     {
-      "slug": "bridgeport-leon-costa",
-      "name": "Leon Costa",
+      "slug": "aiden-bianchi",
+      "name": "Aiden Bianchi",
       "club": "bridgeport",
       "pos": "CM",
       "num": 19,
-      "age": 20,
-      "height": "1.95 m",
-      "nationality": "Danish"
+      "age": 29,
+      "height": "1.86 m",
+      "nationality": "Spanish"
     },
     {
-      "slug": "bridgeport-gabriel-tovar",
-      "name": "Gabriel Tovar",
+      "slug": "bastian-sinclair",
+      "name": "Bastian Sinclair",
       "club": "bridgeport",
       "pos": "CM",
       "num": 20,
@@ -2427,7 +2427,7 @@
       "nationality": "Brazilian"
     },
     {
-      "slug": "bridgeport-sacha-marsh",
+      "slug": "sacha-marsh",
       "name": "Sacha Marsh",
       "club": "bridgeport",
       "pos": "CAM",
@@ -2437,7 +2437,7 @@
       "nationality": "Korean"
     },
     {
-      "slug": "bridgeport-diego-ferreira",
+      "slug": "diego-ferreira",
       "name": "Diego Ferreira",
       "club": "bridgeport",
       "pos": "CAM",
@@ -2447,7 +2447,7 @@
       "nationality": "Dutch"
     },
     {
-      "slug": "bridgeport-caio-berg",
+      "slug": "caio-berg",
       "name": "Caio Berg",
       "club": "bridgeport",
       "pos": "RW",
@@ -2457,7 +2457,7 @@
       "nationality": "Brazilian"
     },
     {
-      "slug": "bridgeport-kasper-serrano",
+      "slug": "kasper-serrano",
       "name": "Kasper Serrano",
       "club": "bridgeport",
       "pos": "RW",
@@ -2467,7 +2467,7 @@
       "nationality": "Brazilian"
     },
     {
-      "slug": "bridgeport-rory-holm",
+      "slug": "rory-holm",
       "name": "Rory Holm",
       "club": "bridgeport",
       "pos": "LW",
@@ -2477,7 +2477,7 @@
       "nationality": "Italian"
     },
     {
-      "slug": "bridgeport-miles-whitfield",
+      "slug": "miles-whitfield",
       "name": "Miles Whitfield",
       "club": "bridgeport",
       "pos": "LW",
@@ -2487,7 +2487,7 @@
       "nationality": "Dutch"
     },
     {
-      "slug": "bridgeport-aiden-russo",
+      "slug": "aiden-russo",
       "name": "Aiden Russo",
       "club": "bridgeport",
       "pos": "ST",
@@ -2497,7 +2497,7 @@
       "nationality": "Spanish"
     },
     {
-      "slug": "bridgeport-samir-haddad",
+      "slug": "samir-haddad",
       "name": "Samir Haddad",
       "club": "bridgeport",
       "pos": "ST",
@@ -2507,7 +2507,7 @@
       "nationality": "Danish"
     },
     {
-      "slug": "bridgeport-kai-bright",
+      "slug": "kai-bright",
       "name": "Kai Bright",
       "club": "bridgeport",
       "pos": "ST",
@@ -2519,7 +2519,7 @@
   ],
   "northgate": [
     {
-      "slug": "northgate-sean-bex",
+      "slug": "sean-bex",
       "name": "Sean Bex",
       "club": "northgate",
       "pos": "GK",
@@ -2529,7 +2529,7 @@
       "nationality": "Argentine"
     },
     {
-      "slug": "northgate-luca-sorensen",
+      "slug": "luca-sorensen",
       "name": "Luca Sorensen",
       "club": "northgate",
       "pos": "GK",
@@ -2539,7 +2539,7 @@
       "nationality": "Brazilian"
     },
     {
-      "slug": "northgate-viktor-bennett",
+      "slug": "viktor-bennett",
       "name": "Viktor Bennett",
       "club": "northgate",
       "pos": "GK",
@@ -2549,7 +2549,7 @@
       "nationality": "Uruguayan"
     },
     {
-      "slug": "northgate-stefan-vela",
+      "slug": "stefan-vela",
       "name": "Stefan Vela",
       "club": "northgate",
       "pos": "CB",
@@ -2559,7 +2559,7 @@
       "nationality": "English"
     },
     {
-      "slug": "northgate-finn-dubois",
+      "slug": "finn-dubois",
       "name": "Finn Dubois",
       "club": "northgate",
       "pos": "CB",
@@ -2569,7 +2569,7 @@
       "nationality": "Uruguayan"
     },
     {
-      "slug": "northgate-gabriel-lowe",
+      "slug": "gabriel-lowe",
       "name": "Gabriel Lowe",
       "club": "northgate",
       "pos": "CB",
@@ -2579,7 +2579,7 @@
       "nationality": "Uruguayan"
     },
     {
-      "slug": "northgate-pavel-holm",
+      "slug": "pavel-holm",
       "name": "Pavel Holm",
       "club": "northgate",
       "pos": "CB",
@@ -2589,7 +2589,7 @@
       "nationality": "Italian"
     },
     {
-      "slug": "northgate-bastian-fischer",
+      "slug": "bastian-fischer",
       "name": "Bastian Fischer",
       "club": "northgate",
       "pos": "CB",
@@ -2599,7 +2599,7 @@
       "nationality": "German"
     },
     {
-      "slug": "northgate-viktor-fischer",
+      "slug": "viktor-fischer",
       "name": "Viktor Fischer",
       "club": "northgate",
       "pos": "RB",
@@ -2609,88 +2609,88 @@
       "nationality": "Italian"
     },
     {
-      "slug": "northgate-mateo-whitfield",
-      "name": "Mateo Whitfield",
+      "slug": "stefan-choi",
+      "name": "Stefan Choi",
       "club": "northgate",
       "pos": "RB",
       "num": 10,
       "age": 29,
-      "height": "1.72 m",
-      "nationality": "Danish"
+      "height": "1.92 m",
+      "nationality": "Argentine"
     },
     {
-      "slug": "northgate-enzo-park",
-      "name": "Enzo Park",
+      "slug": "marco-beck",
+      "name": "Marco Beck",
       "club": "northgate",
       "pos": "LB",
       "num": 11,
-      "age": 26,
-      "height": "1.75 m",
-      "nationality": "Italian"
-    },
-    {
-      "slug": "northgate-niko-reid",
-      "name": "Niko Reid",
-      "club": "northgate",
-      "pos": "LB",
-      "num": 12,
-      "age": 33,
-      "height": "1.71 m",
-      "nationality": "German"
-    },
-    {
-      "slug": "northgate-yannick-berg",
-      "name": "Yannick Berg",
-      "club": "northgate",
-      "pos": "CDM",
-      "num": 14,
-      "age": 25,
-      "height": "1.72 m",
+      "age": 19,
+      "height": "1.77 m",
       "nationality": "Korean"
     },
     {
-      "slug": "northgate-oliver-ashworth",
-      "name": "Oliver Ashworth",
+      "slug": "rafael-marsh",
+      "name": "Rafael Marsh",
+      "club": "northgate",
+      "pos": "LB",
+      "num": 12,
+      "age": 34,
+      "height": "1.83 m",
+      "nationality": "Uruguayan"
+    },
+    {
+      "slug": "dante-vela",
+      "name": "Dante Vela",
+      "club": "northgate",
+      "pos": "CDM",
+      "num": 14,
+      "age": 23,
+      "height": "1.94 m",
+      "nationality": "Argentine"
+    },
+    {
+      "slug": "hakim-holm",
+      "name": "Hakim Holm",
       "club": "northgate",
       "pos": "CDM",
       "num": 15,
-      "age": 22,
-      "height": "1.94 m",
-      "nationality": "Nigerian"
+      "age": 21,
+      "height": "1.92 m",
+      "nationality": "Dutch"
     },
     {
-      "slug": "northgate-sang-jin-falcone",
-      "name": "Sang-jin Falcone",
+      "slug": "owen-marchetti",
+      "name": "Owen Marchetti",
       "club": "northgate",
       "pos": "CDM",
       "num": 16,
-      "age": 32,
-      "height": "1.91 m",
-      "nationality": "Brazilian"
+      "age": 31,
+      "height": "1.81 m",
+      "nationality": "Senegalese"
     },
     {
-      "slug": "northgate-dmitri-costa",
-      "name": "Dmitri Costa",
+      "slug": "rafael-vela",
+      "name": "Rafael Vela",
       "club": "northgate",
       "pos": "CM",
       "num": 17,
-      "age": 33,
-      "height": "1.74 m",
-      "nationality": "English"
+      "age": 22,
+      "height": "1.82 m",
+      "nationality": "Italian"
     },
     {
-      "slug": "northgate-ravi-ndiaye",
-      "name": "Ravi Ndiaye",
+      "slug": "tariq-pryce",
+      "name": "Tariq Pryce",
       "club": "northgate",
       "pos": "CM",
       "num": 18,
       "age": 32,
-      "height": "1.81 m",
-      "nationality": "English"
+      "height": "1.82 m",
+      "nationality": "Senegalese"
     },
     {
-      "slug": "northgate-bruno-pryce",
-      "name": "Bruno Pryce",
+      "slug": "owen-larsen",
+      "name": "Owen Larsen",
       "club": "northgate",
       "pos": "CM",
       "num": 19,
@@ -2699,7 +2699,7 @@
       "nationality": "Russian"
     },
     {
-      "slug": "northgate-yusuf-vidic",
+      "slug": "yusuf-vidic",
       "name": "Yusuf Vidic",
       "club": "northgate",
       "pos": "CM",
@@ -2709,18 +2709,18 @@
       "nationality": "Dutch"
     },
     {
-      "slug": "northgate-aiden-bianchi",
-      "name": "Aiden Bianchi",
+      "slug": "felipe-reyes",
+      "name": "Felipe Reyes",
       "club": "northgate",
       "pos": "CAM",
       "num": 21,
-      "age": 21,
-      "height": "1.70 m",
-      "nationality": "French"
+      "age": 32,
+      "height": "1.84 m",
+      "nationality": "German"
     },
     {
-      "slug": "northgate-nikolai-quinn",
-      "name": "Nikolai Quinn",
+      "slug": "miles-rahman",
+      "name": "Miles Rahman",
       "club": "northgate",
       "pos": "CAM",
       "num": 22,
@@ -2729,7 +2729,7 @@
       "nationality": "Russian"
     },
     {
-      "slug": "northgate-hugh-moreau",
+      "slug": "hugh-moreau",
       "name": "Hugh Moreau",
       "club": "northgate",
       "pos": "RW",
@@ -2739,7 +2739,7 @@
       "nationality": "Danish"
     },
     {
-      "slug": "northgate-dmitri-yilmaz",
+      "slug": "dmitri-yilmaz",
       "name": "Dmitri Yilmaz",
       "club": "northgate",
       "pos": "RW",
@@ -2749,7 +2749,7 @@
       "nationality": "Senegalese"
     },
     {
-      "slug": "northgate-otto-tovar",
+      "slug": "otto-tovar",
       "name": "Otto Tovar",
       "club": "northgate",
       "pos": "LW",
@@ -2759,7 +2759,7 @@
       "nationality": "Danish"
     },
     {
-      "slug": "northgate-hakim-volkov",
+      "slug": "hakim-volkov",
       "name": "Hakim Volkov",
       "club": "northgate",
       "pos": "LW",
@@ -2769,7 +2769,7 @@
       "nationality": "German"
     },
     {
-      "slug": "northgate-marco-dubois",
+      "slug": "marco-dubois",
       "name": "Marco Dubois",
       "club": "northgate",
       "pos": "ST",
@@ -2779,7 +2779,7 @@
       "nationality": "Korean"
     },
     {
-      "slug": "northgate-lukas-marchetti",
+      "slug": "lukas-marchetti",
       "name": "Lukas Marchetti",
       "club": "northgate",
       "pos": "ST",
@@ -2789,7 +2789,7 @@
       "nationality": "Japanese"
     },
     {
-      "slug": "northgate-sven-bianchi",
+      "slug": "sven-bianchi",
       "name": "Sven Bianchi",
       "club": "northgate",
       "pos": "ST",
@@ -2801,7 +2801,7 @@
   ],
   "oakvale": [
     {
-      "slug": "oakvale-tomas-sokolov",
+      "slug": "tomas-sokolov",
       "name": "Tomas Sokolov",
       "club": "oakvale",
       "pos": "GK",
@@ -2811,7 +2811,7 @@
       "nationality": "German"
     },
     {
-      "slug": "oakvale-tomas-silva",
+      "slug": "tomas-silva",
       "name": "Tomas Silva",
       "club": "oakvale",
       "pos": "GK",
@@ -2821,7 +2821,7 @@
       "nationality": "French"
     },
     {
-      "slug": "oakvale-idris-costa",
+      "slug": "idris-costa",
       "name": "Idris Costa",
       "club": "oakvale",
       "pos": "GK",
@@ -2831,7 +2831,7 @@
       "nationality": "Korean"
     },
     {
-      "slug": "oakvale-sang-jin-serrano",
+      "slug": "sang-jin-serrano",
       "name": "Sang-jin Serrano",
       "club": "oakvale",
       "pos": "CB",
@@ -2841,7 +2841,7 @@
       "nationality": "Argentine"
     },
     {
-      "slug": "oakvale-miles-bex",
+      "slug": "miles-bex",
       "name": "Miles Bex",
       "club": "oakvale",
       "pos": "CB",
@@ -2851,7 +2851,7 @@
       "nationality": "French"
     },
     {
-      "slug": "oakvale-kenji-tovar",
+      "slug": "kenji-tovar",
       "name": "Kenji Tovar",
       "club": "oakvale",
       "pos": "CB",
@@ -2861,7 +2861,7 @@
       "nationality": "Uruguayan"
     },
     {
-      "slug": "oakvale-enzo-novak",
+      "slug": "enzo-novak",
       "name": "Enzo Novak",
       "club": "oakvale",
       "pos": "CB",
@@ -2871,7 +2871,7 @@
       "nationality": "Danish"
     },
     {
-      "slug": "oakvale-tomas-ndiaye",
+      "slug": "tomas-ndiaye",
       "name": "Tomas Ndiaye",
       "club": "oakvale",
       "pos": "CB",
@@ -2881,7 +2881,7 @@
       "nationality": "French"
     },
     {
-      "slug": "oakvale-piotr-petrov",
+      "slug": "piotr-petrov",
       "name": "Piotr Petrov",
       "club": "oakvale",
       "pos": "RB",
@@ -2891,7 +2891,7 @@
       "nationality": "French"
     },
     {
-      "slug": "oakvale-noah-bianchi",
+      "slug": "noah-bianchi",
       "name": "Noah Bianchi",
       "club": "oakvale",
       "pos": "RB",
@@ -2901,8 +2901,8 @@
       "nationality": "Nigerian"
     },
     {
-      "slug": "oakvale-miles-adekunle",
-      "name": "Miles Adekunle",
+      "slug": "sean-sorensen",
+      "name": "Sean Sorensen",
       "club": "oakvale",
       "pos": "LB",
       "num": 11,
@@ -2911,7 +2911,7 @@
       "nationality": "Dutch"
     },
     {
-      "slug": "oakvale-mateo-nasser",
+      "slug": "mateo-nasser",
       "name": "Mateo Nasser",
       "club": "oakvale",
       "pos": "LB",
@@ -2921,7 +2921,7 @@
       "nationality": "Brazilian"
     },
     {
-      "slug": "oakvale-diego-watanabe",
+      "slug": "diego-watanabe",
       "name": "Diego Watanabe",
       "club": "oakvale",
       "pos": "CDM",
@@ -2931,7 +2931,7 @@
       "nationality": "Italian"
     },
     {
-      "slug": "oakvale-samir-berg",
+      "slug": "samir-berg",
       "name": "Samir Berg",
       "club": "oakvale",
       "pos": "CDM",
@@ -2941,7 +2941,7 @@
       "nationality": "Danish"
     },
     {
-      "slug": "oakvale-aiden-novak",
+      "slug": "aiden-novak",
       "name": "Aiden Novak",
       "club": "oakvale",
       "pos": "CDM",
@@ -2951,7 +2951,7 @@
       "nationality": "Uruguayan"
     },
     {
-      "slug": "oakvale-piotr-akin",
+      "slug": "piotr-akin",
       "name": "Piotr Akin",
       "club": "oakvale",
       "pos": "CM",
@@ -2961,7 +2961,7 @@
       "nationality": "Spanish"
     },
     {
-      "slug": "oakvale-stefan-nasser",
+      "slug": "stefan-nasser",
       "name": "Stefan Nasser",
       "club": "oakvale",
       "pos": "CM",
@@ -2971,7 +2971,7 @@
       "nationality": "Spanish"
     },
     {
-      "slug": "oakvale-aiden-quinn",
+      "slug": "aiden-quinn",
       "name": "Aiden Quinn",
       "club": "oakvale",
       "pos": "CM",
@@ -2981,7 +2981,7 @@
       "nationality": "Nigerian"
     },
     {
-      "slug": "oakvale-patrice-khan",
+      "slug": "patrice-khan",
       "name": "Patrice Khan",
       "club": "oakvale",
       "pos": "CM",
@@ -2991,7 +2991,7 @@
       "nationality": "Argentine"
     },
     {
-      "slug": "oakvale-otto-silva",
+      "slug": "otto-silva",
       "name": "Otto Silva",
       "club": "oakvale",
       "pos": "CAM",
@@ -3001,7 +3001,7 @@
       "nationality": "Brazilian"
     },
     {
-      "slug": "oakvale-aiden-delgado",
+      "slug": "aiden-delgado",
       "name": "Aiden Delgado",
       "club": "oakvale",
       "pos": "CAM",
@@ -3011,7 +3011,7 @@
       "nationality": "Dutch"
     },
     {
-      "slug": "oakvale-emil-russo",
+      "slug": "emil-russo",
       "name": "Emil Russo",
       "club": "oakvale",
       "pos": "RW",
@@ -3021,7 +3021,7 @@
       "nationality": "Japanese"
     },
     {
-      "slug": "oakvale-luca-akin",
+      "slug": "luca-akin",
       "name": "Luca Akin",
       "club": "oakvale",
       "pos": "RW",
@@ -3031,7 +3031,7 @@
       "nationality": "Italian"
     },
     {
-      "slug": "oakvale-malik-quinn",
+      "slug": "malik-quinn",
       "name": "Malik Quinn",
       "club": "oakvale",
       "pos": "LW",
@@ -3041,7 +3041,7 @@
       "nationality": "Uruguayan"
     },
     {
-      "slug": "oakvale-otto-vidic",
+      "slug": "otto-vidic",
       "name": "Otto Vidic",
       "club": "oakvale",
       "pos": "LW",
@@ -3051,7 +3051,7 @@
       "nationality": "Korean"
     },
     {
-      "slug": "oakvale-aaron-nasser",
+      "slug": "aaron-nasser",
       "name": "Aaron Nasser",
       "club": "oakvale",
       "pos": "ST",
@@ -3061,7 +3061,7 @@
       "nationality": "English"
     },
     {
-      "slug": "oakvale-viktor-ferreira",
+      "slug": "viktor-ferreira",
       "name": "Viktor Ferreira",
       "club": "oakvale",
       "pos": "ST",
@@ -3071,7 +3071,7 @@
       "nationality": "Senegalese"
     },
     {
-      "slug": "oakvale-anton-ashworth",
+      "slug": "anton-ashworth",
       "name": "Anton Ashworth",
       "club": "oakvale",
       "pos": "ST",
@@ -3083,7 +3083,7 @@
   ],
   "marshall": [
     {
-      "slug": "marshall-rory-ramos",
+      "slug": "rory-ramos",
       "name": "Rory Ramos",
       "club": "marshall",
       "pos": "GK",
@@ -3093,7 +3093,7 @@
       "nationality": "Argentine"
     },
     {
-      "slug": "marshall-rafael-akin",
+      "slug": "rafael-akin",
       "name": "Rafael Akin",
       "club": "marshall",
       "pos": "GK",
@@ -3103,7 +3103,7 @@
       "nationality": "English"
     },
     {
-      "slug": "marshall-marco-kovac",
+      "slug": "marco-kovac",
       "name": "Marco Kovac",
       "club": "marshall",
       "pos": "GK",
@@ -3113,7 +3113,7 @@
       "nationality": "Dutch"
     },
     {
-      "slug": "marshall-marco-rahman",
+      "slug": "marco-rahman",
       "name": "Marco Rahman",
       "club": "marshall",
       "pos": "CB",
@@ -3123,7 +3123,7 @@
       "nationality": "Dutch"
     },
     {
-      "slug": "marshall-piotr-yilmaz",
+      "slug": "piotr-yilmaz",
       "name": "Piotr Yilmaz",
       "club": "marshall",
       "pos": "CB",
@@ -3133,234 +3133,234 @@
       "nationality": "English"
     },
     {
-      "slug": "marshall-diego-watanabe",
-      "name": "Diego Watanabe",
+      "slug": "emil-reyes",
+      "name": "Emil Reyes",
       "club": "marshall",
       "pos": "CB",
       "num": 6,
-      "age": 34,
-      "height": "1.95 m",
-      "nationality": "Spanish"
-    },
-    {
-      "slug": "marshall-pavel-delgado",
-      "name": "Pavel Delgado",
-      "club": "marshall",
-      "pos": "CB",
-      "num": 7,
       "age": 34,
       "height": "1.89 m",
       "nationality": "Spanish"
     },
     {
-      "slug": "marshall-cole-ivanov",
+      "slug": "cole-ivanov",
       "name": "Cole Ivanov",
       "club": "marshall",
       "pos": "CB",
-      "num": 8,
+      "num": 7,
       "age": 24,
       "height": "1.70 m",
       "nationality": "Argentine"
     },
     {
-      "slug": "marshall-enzo-bright",
+      "slug": "enzo-bright",
       "name": "Enzo Bright",
       "club": "marshall",
-      "pos": "RB",
-      "num": 9,
+      "pos": "CB",
+      "num": 8,
       "age": 22,
       "height": "1.95 m",
       "nationality": "Nigerian"
     },
     {
-      "slug": "marshall-jonas-riley",
+      "slug": "jonas-riley",
       "name": "Jonas Riley",
       "club": "marshall",
       "pos": "RB",
-      "num": 10,
+      "num": 9,
       "age": 21,
       "height": "1.80 m",
       "nationality": "Japanese"
     },
     {
-      "slug": "marshall-marco-korhonen",
+      "slug": "marco-korhonen",
       "name": "Marco Korhonen",
       "club": "marshall",
-      "pos": "LB",
-      "num": 11,
+      "pos": "RB",
+      "num": 10,
       "age": 34,
       "height": "1.71 m",
       "nationality": "Senegalese"
     },
     {
-      "slug": "marshall-sean-fischer",
+      "slug": "sean-fischer",
       "name": "Sean Fischer",
       "club": "marshall",
       "pos": "LB",
-      "num": 12,
+      "num": 11,
       "age": 21,
       "height": "1.87 m",
       "nationality": "Dutch"
     },
     {
-      "slug": "marshall-jordan-walsh",
+      "slug": "jordan-walsh",
       "name": "Jordan Walsh",
       "club": "marshall",
-      "pos": "CDM",
-      "num": 14,
+      "pos": "LB",
+      "num": 12,
       "age": 31,
       "height": "1.71 m",
       "nationality": "Argentine"
     },
     {
-      "slug": "marshall-piotr-marsh",
+      "slug": "piotr-marsh",
       "name": "Piotr Marsh",
       "club": "marshall",
       "pos": "CDM",
-      "num": 15,
+      "num": 14,
       "age": 30,
       "height": "1.91 m",
       "nationality": "Spanish"
     },
     {
-      "slug": "marshall-patrice-korhonen",
+      "slug": "patrice-korhonen",
       "name": "Patrice Korhonen",
       "club": "marshall",
       "pos": "CDM",
-      "num": 16,
+      "num": 15,
       "age": 26,
       "height": "1.79 m",
       "nationality": "Uruguayan"
     },
     {
-      "slug": "marshall-gabriel-ivanov",
+      "slug": "gabriel-ivanov",
       "name": "Gabriel Ivanov",
       "club": "marshall",
-      "pos": "CM",
-      "num": 17,
+      "pos": "CDM",
+      "num": 16,
       "age": 34,
       "height": "1.75 m",
       "nationality": "Argentine"
     },
     {
-      "slug": "marshall-kasper-choi",
+      "slug": "kasper-choi",
       "name": "Kasper Choi",
       "club": "marshall",
       "pos": "CM",
-      "num": 18,
+      "num": 17,
       "age": 28,
       "height": "1.71 m",
       "nationality": "Korean"
     },
     {
-      "slug": "marshall-mohammed-fischer",
+      "slug": "mohammed-fischer",
       "name": "Mohammed Fischer",
       "club": "marshall",
       "pos": "CM",
-      "num": 19,
+      "num": 18,
       "age": 26,
       "height": "1.84 m",
       "nationality": "German"
     },
     {
-      "slug": "marshall-bastian-osei",
+      "slug": "bastian-osei",
       "name": "Bastian Osei",
       "club": "marshall",
       "pos": "CM",
-      "num": 20,
+      "num": 19,
       "age": 19,
       "height": "1.93 m",
       "nationality": "English"
     },
     {
-      "slug": "marshall-noah-novak",
+      "slug": "noah-novak",
       "name": "Noah Novak",
       "club": "marshall",
-      "pos": "CAM",
-      "num": 21,
+      "pos": "CM",
+      "num": 20,
       "age": 24,
       "height": "1.91 m",
       "nationality": "Spanish"
     },
     {
-      "slug": "marshall-niko-russo",
+      "slug": "niko-russo",
       "name": "Niko Russo",
       "club": "marshall",
       "pos": "CAM",
-      "num": 22,
+      "num": 21,
       "age": 20,
       "height": "1.94 m",
       "nationality": "German"
     },
     {
-      "slug": "marshall-emil-vidic",
+      "slug": "emil-vidic",
       "name": "Emil Vidic",
       "club": "marshall",
-      "pos": "RW",
-      "num": 23,
+      "pos": "CAM",
+      "num": 22,
       "age": 34,
       "height": "1.95 m",
       "nationality": "Uruguayan"
     },
     {
-      "slug": "marshall-tomas-haddad",
+      "slug": "tomas-haddad",
       "name": "Tomas Haddad",
       "club": "marshall",
       "pos": "RW",
-      "num": 24,
+      "num": 23,
       "age": 24,
       "height": "1.85 m",
       "nationality": "Spanish"
     },
     {
-      "slug": "marshall-caio-lowe",
+      "slug": "caio-lowe",
       "name": "Caio Lowe",
       "club": "marshall",
-      "pos": "LW",
-      "num": 25,
+      "pos": "RW",
+      "num": 24,
       "age": 29,
       "height": "1.94 m",
       "nationality": "Uruguayan"
     },
     {
-      "slug": "marshall-jordan-yilmaz",
+      "slug": "jordan-yilmaz",
       "name": "Jordan Yilmaz",
       "club": "marshall",
       "pos": "LW",
-      "num": 26,
+      "num": 25,
       "age": 23,
       "height": "1.90 m",
       "nationality": "Nigerian"
     },
     {
-      "slug": "marshall-luca-sinclair",
+      "slug": "luca-sinclair",
       "name": "Luca Sinclair",
       "club": "marshall",
-      "pos": "ST",
-      "num": 27,
+      "pos": "LW",
+      "num": 26,
       "age": 30,
       "height": "1.78 m",
       "nationality": "Russian"
     },
     {
-      "slug": "marshall-kai-reid",
-      "name": "Kai Reid",
+      "slug": "caio-ndiaye",
+      "name": "Caio Ndiaye",
+      "club": "marshall",
+      "pos": "ST",
+      "num": 27,
+      "age": 28,
+      "height": "1.87 m",
+      "nationality": "Senegalese"
+    },
+    {
+      "slug": "owen-bramble",
+      "name": "Owen Bramble",
       "club": "marshall",
       "pos": "ST",
       "num": 28,
       "age": 29,
-      "height": "1.77 m",
+      "height": "1.88 m",
       "nationality": "German"
     },
     {
-      "slug": "marshall-nikolai-pryce",
-      "name": "Nikolai Pryce",
+      "slug": "leon-walsh",
+      "name": "Leon Walsh",
       "club": "marshall",
       "pos": "ST",
       "num": 29,
-      "age": 27,
-      "height": "1.90 m",
-      "nationality": "German"
+      "age": 24,
+      "height": "1.72 m",
+      "nationality": "French"
     }
   ]
 }

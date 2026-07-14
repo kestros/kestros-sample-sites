@@ -52,4 +52,16 @@ public class SyntheticTableCell extends BaseContainerSyntheticResource implement
   public List<KestrosBasicComponentElement> getChildElements() {
     return new ArrayList<>(content);
   }
+
+  private boolean numeric;
+
+  /** Numeric cells right-align in the table system. */
+  public SyntheticTableCell asNumeric() {
+    this.numeric = true;
+    return this;
+  }
+
+  public boolean getNumeric() {
+    return numeric;
+  }
 }

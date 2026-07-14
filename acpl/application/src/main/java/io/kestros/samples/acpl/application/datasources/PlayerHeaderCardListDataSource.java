@@ -39,7 +39,7 @@ public class PlayerHeaderCardListDataSource extends AbstractLeagueCardListDataSo
     try {
       cards.add(new SyntheticPlayerHeaderCard(header.get("name"), header.get("club"),
           header.get("clubHref"), header.get("number"), header.get("pos"), header.get("meta"),
-          header.get("photo"), header.get("base"), this, "playerHeader", "player-header"));
+          header.get("photo"), header.get("base"), this, "playerHeader", "player-header").withClubColor(header.get("clubColor")));
     } catch (final Exception e) {
       // null-safe
     }

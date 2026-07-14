@@ -49,7 +49,11 @@ public class SquadTableDataSource extends BaseContainerSlingModelDataSource
     final String[] labels = {"#", "", "Name", "Pos", "Age", "Apps", "G", "A"};
     for (int i = 0; i < labels.length; i++) {
       try {
-        headers.add(new SyntheticTableHeader(labels[i], this, "tableHeader", "h-" + i));
+        final SyntheticTableHeader h = new SyntheticTableHeader(labels[i], this, "tableHeader", "h-" + i);
+        if (i >= 4) {
+          h.asNumeric();
+        }
+        headers.add(h);
       } catch (final Exception e) {
         // null-safe
       }
@@ -73,10 +77,10 @@ public class SquadTableDataSource extends BaseContainerSlingModelDataSource
             rich("", "portrait", p.get("href"), p.get("portrait"), p.get("name"), p.get("base"), i, 1),
             rich("", "playerlink", p.get("href"), null, p.get("name"), p.get("base"), i, 2),
             rich(p.get("pos"), "badge", null, null, null, p.get("base"), i, 3),
-            cell(p.get("age"), i, 4),
-            cell(p.get("apps"), i, 5),
-            cell(p.get("goals"), i, 6),
-            cell(p.get("assists"), i, 7));
+            cell(p.get("age"), i, 4).asNumeric(),
+            cell(p.get("apps"), i, 5).asNumeric(),
+            cell(p.get("goals"), i, 6).asNumeric(),
+            cell(p.get("assists"), i, 7).asNumeric());
         rows.add(new SyntheticTableRow(cells, this, "tableRow", "r-" + i));
         i++;
       } catch (final Exception e) {
@@ -92,7 +96,7 @@ public class SquadTableDataSource extends BaseContainerSlingModelDataSource
     return new ArrayList<>(getRowElements());
   }
 
-  private KestrosTableCell cell(final String text, final int row, final int col)
+  private SyntheticTableCell cell(final String text, final int row, final int col)
       throws ComponentConfigurationException {
     return new SyntheticTableCell(text == null ? "" : text, this, "tableCell",
         "c-" + row + "-" + col);

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:kes="http://kestros.io/kes/1.0" jcr:primaryType="kes:ComponentVariationGroup" jcr:title="Match">
+    <match-scoreboard jcr:primaryType="kes:ComponentVariation" jcr:title="match-scoreboard" inline="true"/>
+    <match-score jcr:primaryType="kes:ComponentVariation" jcr:title="match-score" inline="true"/>
+    <score-num jcr:primaryType="kes:ComponentVariation" jcr:title="score-num" inline="true"/>
+    <club-name jcr:primaryType="kes:ComponentVariation" jcr:title="club-name" inline="true"/>
+    <formation-col jcr:primaryType="kes:ComponentVariation" jcr:title="formation-col" inline="true"/>
+    <col-md-2 jcr:primaryType="kes:ComponentVariation" jcr:title="col-md-2" inline="true"/>
+    <col-md-6 jcr:primaryType="kes:ComponentVariation" jcr:title="col-md-6" inline="true"/>
+    <text-md-end jcr:primaryType="kes:ComponentVariation" jcr:title="text-md-end" inline="true"/>
+    <text-md-start jcr:primaryType="kes:ComponentVariation" jcr:title="text-md-start" inline="true"/>
+    </jcr:root>

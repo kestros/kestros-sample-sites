@@ -1,0 +1,7 @@
+<div class="d-flex align-items-center gap-2 mb-2 goal-row-line ${properties.side == 'away' ? 'flex-row-reverse text-end' : ''}">
+    <span class="badge bg-light text-dark">${properties.minute}'</span>
+    <img class="goal-portrait" src="${properties.portrait}" alt="" data-sly-test="${properties.portrait}"/>
+    <img class="crest-sm" src="${properties.base}/assets/crests/${properties.teamSlug}.svg" alt="crest"/>
+    <a class="fw-semibold text-decoration-none" href="${properties.href}">${properties.scorer}</a>
+    <span class="text-muted small" data-sly-test="${properties.assist}">(assist: ${properties.assist})</span>
+</div>

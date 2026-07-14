@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          jcr:primaryType="kes:ComponentVariationGroup"
+          jcr:title="Text Alignment"
+          jcr:description=""
+          mutuallyExclusive="{Boolean}true">
+    <text-start jcr:primaryType="kes:ComponentVariation"
+                jcr:title="Left"
+                inline="true"/>
+    <text-center jcr:primaryType="kes:ComponentVariation"
+                 jcr:title="Center"
+                 inline="true"/>
+    <text-end jcr:primaryType="kes:ComponentVariation"
+              jcr:title="Right"
+              inline="true"/>
+</jcr:root>

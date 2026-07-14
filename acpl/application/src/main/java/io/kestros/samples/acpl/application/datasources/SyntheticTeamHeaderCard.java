@@ -16,6 +16,7 @@ public class SyntheticTeamHeaderCard extends AbstractLeagueCard {
   private final String place;
   private final String meta;
   private final String base;
+  private String color = "";
 
   public SyntheticTeamHeaderCard(@Nonnull final String slug, @Nonnull final String name,
       @Nonnull final String place, @Nonnull final String meta, @Nonnull final String base,
@@ -52,5 +53,15 @@ public class SyntheticTeamHeaderCard extends AbstractLeagueCard {
 
   public String getBase() {
     return base;
+  }
+
+  /** Contrast-gated club brand color for the hero keyline. */
+  public SyntheticTeamHeaderCard withColor(final String color) {
+    this.color = color == null ? "" : color;
+    return this;
+  }
+
+  public String getColor() {
+    return color;
   }
 }

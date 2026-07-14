@@ -44,7 +44,11 @@ public class LeagueLeadersTableDataSource extends BaseContainerSlingModelDataSou
     final String[] labels = {"#", "Player", "Club", statLabel};
     for (int i = 0; i < labels.length; i++) {
       try {
-        headers.add(new SyntheticTableHeader(labels[i], this, "tableHeader", "h-" + i));
+        final SyntheticTableHeader h = new SyntheticTableHeader(labels[i], this, "tableHeader", "h-" + i);
+        if (i == 0 || i == 3) {
+          h.asNumeric();
+        }
+        headers.add(h);
       } catch (final Exception e) {
         // null-safe
       }
@@ -65,12 +69,14 @@ public class LeagueLeadersTableDataSource extends BaseContainerSlingModelDataSou
         : playerService.getLeagueLeaders(getStat(), limit, getResource().getPath())) {
       try {
         final List<KestrosTableCell> cells = Arrays.asList(
-            new SyntheticTableCell(String.valueOf(i + 1), this, "tableCell", "c-" + i + "-0"),
+            new SyntheticTableCell(String.valueOf(i + 1), this, "tableCell", "c-" + i + "-0")
+                .asNumeric(),
             new SyntheticRichCell(p.get("name"), "link", p.get("href"), "", p.get("name"),
                 p.get("base"), this, "tableCell", "c-" + i + "-1"),
             new SyntheticClubCell(p.get("clubSlug"), p.get("club"), "club-link", p.get("base"),
                 this, "clubCell", "c-" + i + "-2"),
-            new SyntheticTableCell(p.get("value"), this, "tableCell", "c-" + i + "-3"));
+            new SyntheticTableCell(p.get("value"), this, "tableCell", "c-" + i + "-3")
+                .asNumeric());
         rows.add(new SyntheticTableRow(cells, this, "tableRow", "r-" + i));
         i++;
       } catch (final Exception e) {

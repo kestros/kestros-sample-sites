@@ -24,4 +24,16 @@ public class SyntheticTableHeader extends BaseSyntheticResource implements Kestr
   public String getText() {
     return text;
   }
+
+  private boolean numeric;
+
+  /** Numeric column headers right-align with their cells. */
+  public SyntheticTableHeader asNumeric() {
+    this.numeric = true;
+    return this;
+  }
+
+  public boolean getNumeric() {
+    return numeric;
+  }
 }

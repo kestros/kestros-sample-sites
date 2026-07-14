@@ -18,7 +18,7 @@
         "minute": 28,
         "team": "albion",
         "scorer": "Luca Khan",
-        "scorerSlug": "albion-luca-khan",
+        "scorerSlug": "luca-khan",
         "note": "penalty",
         "assist": "Idris Riley"
       },
@@ -26,14 +26,14 @@
         "minute": 36,
         "team": "albion",
         "scorer": "Idris Riley",
-        "scorerSlug": "albion-idris-riley",
+        "scorerSlug": "idris-riley",
         "note": ""
       },
       {
         "minute": 43,
         "team": "marshall",
-        "scorer": "Tomas Haddad",
-        "scorerSlug": "marshall-tomas-haddad",
+        "scorer": "Caio Lowe",
+        "scorerSlug": "caio-lowe",
         "note": ""
       }
     ],
@@ -53,13 +53,13 @@
       {
         "minute": 56,
         "team": "marshall",
-        "player": "Enzo Bright",
+        "player": "Jonas Riley",
         "card": "yellow"
       },
       {
         "minute": 80,
         "team": "marshall",
-        "player": "Diego Watanabe",
+        "player": "Emil Reyes",
         "card": "red"
       }
     ],
@@ -123,7 +123,7 @@
         "minute": 63,
         "team": "oakvale",
         "scorer": "Emil Russo",
-        "scorerSlug": "oakvale-emil-russo",
+        "scorerSlug": "emil-russo",
         "note": "",
         "assist": "Aaron Nasser"
       },
@@ -131,7 +131,7 @@
         "minute": 67,
         "team": "oakvale",
         "scorer": "Patrice Khan",
-        "scorerSlug": "oakvale-patrice-khan",
+        "scorerSlug": "patrice-khan",
         "note": "",
         "assist": "Piotr Akin"
       },
@@ -139,7 +139,7 @@
         "minute": 70,
         "team": "oakvale",
         "scorer": "Aiden Delgado",
-        "scorerSlug": "oakvale-aiden-delgado",
+        "scorerSlug": "aiden-delgado",
         "note": ""
       }
     ],
@@ -217,7 +217,7 @@
         "minute": 49,
         "team": "saint-marys",
         "scorer": "Mohammed ONeill",
-        "scorerSlug": "saint-marys-mohammed-oneill",
+        "scorerSlug": "mohammed-oneill",
         "note": "volley",
         "assist": "Bruno Haddad"
       },
@@ -225,14 +225,14 @@
         "minute": 52,
         "team": "saint-marys",
         "scorer": "Patrice Moreau",
-        "scorerSlug": "saint-marys-patrice-moreau",
+        "scorerSlug": "patrice-moreau",
         "note": "header from corner"
       },
       {
         "minute": 85,
         "team": "saint-marys",
         "scorer": "Dmitri Falcone",
-        "scorerSlug": "saint-marys-dmitri-falcone",
+        "scorerSlug": "dmitri-falcone",
         "note": "free-kick"
       }
     ],
@@ -310,7 +310,7 @@
         "minute": 68,
         "team": "riverside",
         "scorer": "Iv\u00e1n Holm",
-        "scorerSlug": "riverside-iv\u00e1n-holm",
+        "scorerSlug": "iv\u00e1n-holm",
         "note": ""
       }
     ],
@@ -382,7 +382,7 @@
         "minute": 1,
         "team": "westmoreland",
         "scorer": "Dante Russo",
-        "scorerSlug": "westmoreland-dante-russo",
+        "scorerSlug": "dante-russo",
         "note": "",
         "assist": "Miles Adekunle"
       },
@@ -390,7 +390,7 @@
         "minute": 15,
         "team": "westmoreland",
         "scorer": "Sean Bennett",
-        "scorerSlug": "westmoreland-sean-bennett",
+        "scorerSlug": "sean-bennett",
         "note": "free-kick",
         "assist": "Miles ElAmin"
       },
@@ -398,7 +398,7 @@
         "minute": 67,
         "team": "westmoreland",
         "scorer": "Mohammed Korhonen",
-        "scorerSlug": "westmoreland-mohammed-korhonen",
+        "scorerSlug": "mohammed-korhonen",
         "note": "header"
       }
     ],
@@ -481,8 +481,8 @@
       {
         "minute": 41,
         "team": "bayview",
-        "scorer": "Gabriel Russo",
-        "scorerSlug": "bayview-gabriel-russo",
+        "scorer": "Sean Costa",
+        "scorerSlug": "sean-costa",
         "note": "free-kick",
         "assist": "Sang-jin Whitfield"
       },
@@ -490,7 +490,7 @@
         "minute": 45,
         "team": "harborside",
         "scorer": "Mateo Reyes",
-        "scorerSlug": "harborside-mateo-reyes",
+        "scorerSlug": "mateo-reyes",
         "note": "",
         "assist": "Niko Petrov"
       },
@@ -498,7 +498,7 @@
         "minute": 52,
         "team": "harborside",
         "scorer": "Kai Osei",
-        "scorerSlug": "harborside-kai-osei",
+        "scorerSlug": "kai-osei",
         "note": "penalty",
         "assist": "Stefan Korhonen"
       },
@@ -506,7 +506,7 @@
         "minute": 72,
         "team": "harborside",
         "scorer": "Eli Whitfield",
-        "scorerSlug": "harborside-eli-whitfield",
+        "scorerSlug": "eli-whitfield",
         "note": "",
         "assist": "Marco Russo"
       }
@@ -591,14 +591,14 @@
         "minute": 20,
         "team": "albion",
         "scorer": "Idris Riley",
-        "scorerSlug": "albion-idris-riley",
+        "scorerSlug": "idris-riley",
         "note": "volley"
       },
       {
         "minute": 52,
         "team": "cape-rangers",
         "scorer": "Stefan Khan",
-        "scorerSlug": "cape-rangers-stefan-khan",
+        "scorerSlug": "stefan-khan",
         "note": "header",
         "assist": "Hugh Serrano"
       }
@@ -664,7 +664,7 @@
         "minute": 77,
         "team": "saint-marys",
         "scorer": "Enzo Riley",
-        "scorerSlug": "saint-marys-enzo-riley",
+        "scorerSlug": "enzo-riley",
         "note": "",
         "assist": "Mohammed Beck"
       }
@@ -679,7 +679,7 @@
       {
         "minute": 79,
         "team": "marshall",
-        "player": "Bastian Osei",
+        "player": "Noah Novak",
         "card": "yellow"
       }
     ],
@@ -743,7 +743,7 @@
         "minute": 19,
         "team": "riverside",
         "scorer": "Gabriel Sokolov",
-        "scorerSlug": "riverside-gabriel-sokolov",
+        "scorerSlug": "gabriel-sokolov",
         "note": "",
         "assist": "Rory Dubois"
       },
@@ -751,7 +751,7 @@
         "minute": 48,
         "team": "riverside",
         "scorer": "Yusuf Riley",
-        "scorerSlug": "riverside-yusuf-riley",
+        "scorerSlug": "yusuf-riley",
         "note": ""
       }
     ],

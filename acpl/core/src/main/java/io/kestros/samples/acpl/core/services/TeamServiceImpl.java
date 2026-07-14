@@ -44,6 +44,7 @@ public class TeamServiceImpl extends AbstractDisplayService implements TeamServi
     }
     header.put("meta", meta.toString());
     header.put("base", siteRoot(contextPath));
+    header.put("color", clubKeyline(str(c.get("primary")), str(c.get("secondary"))));
     return header;
   }
 

@@ -1,0 +1,16 @@
+<sly data-sly-use.topNav="${'io.kestros.cms.components.basic.core.navigation.topnav.TopNavigationDataSourceComponent'}"/>
+<nav class="navbar navbar-expand-lg ${topNav.inlineVariations}">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">${topNav.brandName}</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav justify-content-center">
+                <sly data-sly-list.item="${topNav.navigationLinks}">
+                    <sly data-sly-resource="${item}"/>
+                </sly>
+            </ul>
+        </div>
+    </div>
+</nav>

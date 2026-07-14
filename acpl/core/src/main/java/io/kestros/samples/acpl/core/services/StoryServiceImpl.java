@@ -110,7 +110,7 @@ public class StoryServiceImpl extends AbstractDisplayService implements StorySer
     // the Related Stories section is never empty (e.g. features/analysis with no club in the slug).
     final List<Map<String, Object>> matched = new ArrayList<>();
     final List<Map<String, Object>> others = new ArrayList<>();
-    for (final Map<String, Object> s : leagueDataService.getStories()) {
+    for (final Map<String, Object> s : storiesNewestFirst()) {
       final String slug = str(s.get("slug"));
       if (slug.equals(storySlug)) {
         continue;

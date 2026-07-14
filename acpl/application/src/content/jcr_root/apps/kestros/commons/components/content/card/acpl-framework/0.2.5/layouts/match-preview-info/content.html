@@ -1,0 +1,38 @@
+<div class="acpl-page-band">
+    <div class="container">
+        <div class="acpl-crumb d-flex justify-content-start text-start gap-2 small">
+            <a href="${properties.base}.html" class="text-decoration-none">Home</a>
+            <span>/</span>
+            <a href="${properties.base}/schedule.html" class="text-decoration-none">Schedule</a>
+            <span>/</span>
+            <span>${properties.homeName} vs ${properties.awayName}</span>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="match-header text-center mb-4">
+        <div class="row align-items-center g-3">
+            <div class="col-4">
+                <a class="text-decoration-none text-reset" href="${properties.base}/teams/${properties.homeSlug}.html">
+                    <img class="crest-xl mb-2" src="${properties.base}/assets/crests/${properties.homeSlug}.svg" alt="${properties.homeName} crest"/>
+                    <span class="h5 fw-bold d-block">${properties.homeName}</span>
+                </a>
+                <p class="text-muted small mb-0">${properties.homePos} in the table</p>
+            </div>
+            <div class="col-4">
+                <p class="match-preview-vs mb-1">VS</p>
+                <p class="match-preview-ko mb-0">${properties.kickoff}</p>
+            </div>
+            <div class="col-4">
+                <a class="text-decoration-none text-reset" href="${properties.base}/teams/${properties.awaySlug}.html">
+                    <img class="crest-xl mb-2" src="${properties.base}/assets/crests/${properties.awaySlug}.svg" alt="${properties.awayName} crest"/>
+                    <span class="h5 fw-bold d-block">${properties.awayName}</span>
+                </a>
+                <p class="text-muted small mb-0">${properties.awayPos} in the table</p>
+            </div>
+        </div>
+        <p class="text-muted mt-3 mb-1">${properties.date} · ${properties.venue}</p>
+        <p class="text-muted small mb-0" data-sly-test="${properties.referee}">Referee: ${properties.referee}</p>
+        <a class="btn btn-primary btn-sm mt-3" data-sly-test="${properties.previewHref}" href="${properties.previewHref}" role="button">Read the match preview →</a>
+    </div>
+</div>

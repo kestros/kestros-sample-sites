@@ -12,7 +12,7 @@ DATA = os.path.join(BASE, "..", "core", "src", "main", "resources", "data")
 ROOT = os.path.join(BASE, "src", "content", "jcr_root")
 SITE = "/content/sites/acpl"
 TEMPLATE = "/libs/kestros/commons/base-site-template"
-THEME = "/etc/ui-frameworks/acpl-framework/versions/0.0.1/themes/default"
+THEME = "/etc/ui-frameworks/acpl-framework/versions/0.2.11/themes/default"
 
 stories = json.load(open(os.path.join(DATA, "stories.json")))
 clubs = {c["slug"]: c for c in json.load(open(os.path.join(DATA, "clubs.json")))}
@@ -79,7 +79,7 @@ def build_tags():
 
 
 def story_page(s):
-    matchbtn=(f'<mc href="{SITE}/matches/{s["matchId"]}.html" variations="[btn,btn-outline-primary,btn-sm,mt-3,ms-2]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Match centre →"/>'
+    matchbtn=(f'<mc href="{SITE}/matches/{s["matchId"]}.html" variations="[btn,btn-primary,btn-sm,mt-3,ms-2]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Match centre →"/>'
               if s.get("matchId") else "")
     slug = s["slug"]
     cat = s["category"]

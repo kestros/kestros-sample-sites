@@ -37,7 +37,7 @@ public class MatchGoalsCardListDataSource extends AbstractLeagueCardListDataSour
       try {
         cards.add(new SyntheticGoalCard(g.get("minute"), g.get("scorer"), g.get("href"),
             g.get("teamSlug"), g.get("assist"), g.get("base"), g.get("side"), this, "goal",
-            "goal-" + i));
+            "goal-" + i).withPortrait(g.get("portrait")));
         i++;
       } catch (final Exception e) {
         // null-safe

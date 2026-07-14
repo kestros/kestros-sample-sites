@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          jcr:primaryType="kes:ComponentVariationGroup"
+          jcr:title="Shape"
+          jcr:description=""
+          mutuallyExclusive="{Boolean}true">
+    <rounded-circle jcr:primaryType="kes:ComponentVariation"
+                    jcr:title="Circle"
+                    inline="true"/>
+    <img-thumbnail jcr:primaryType="kes:ComponentVariation"
+                   jcr:title="Thumbnail"
+                   inline="true"/>
+</jcr:root>

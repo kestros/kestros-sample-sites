@@ -1,0 +1,26 @@
+<section class="section pt-4 pb-4 acpl-page-head club-keyline" style="${['--club-color: ', properties.clubColor] @ join='', context='styleString'}">
+    <div class="container">
+        <nav class="breadcrumb is-small" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="${properties.base}.html">Home</a></li>
+                <li><a href="${properties.base}/teams.html">Clubs</a></li>
+                <li><a href="${properties.clubHref}">${properties.clubName}</a></li>
+                <li class="is-active"><a aria-current="page">${properties.playerName}</a></li>
+            </ul>
+        </nav>
+        <div class="row g-4 align-items-center mb-4">
+            <div class="col-md-3">
+                <img class="player-portrait img-fluid" src="${properties.photo}" alt="${properties.playerName}"/>
+            </div>
+            <div class="col-md-9">
+                <h1 class="title is-2 mb-1">${properties.playerName}</h1>
+                <p class="subtitle is-5 mb-3"><a href="${properties.clubHref}">${properties.clubName}</a></p>
+                <div class="d-flex align-items-center gap-2 mb-3">
+                    <span class="badge bg-primary fs-6 px-3 py-2">${properties.number}</span>
+                    <span class="badge bg-secondary fs-6 px-3 py-2">${properties.pos}</span>
+                </div>
+                <p class="text-muted mb-0">${properties.meta}</p>
+            </div>
+        </div>
+    </div>
+</section>

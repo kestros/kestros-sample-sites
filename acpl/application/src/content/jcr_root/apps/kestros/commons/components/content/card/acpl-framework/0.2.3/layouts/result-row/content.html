@@ -1,0 +1,16 @@
+<div class="result-row">
+    <div class="result-club">
+        <a href="${properties.base}/teams/${properties.homeSlug}.html"><img src="${properties.base}/assets/crests/${properties.homeSlug}.svg" alt="crest" class="img-fluid crest-sm"/></a>
+        <a href="${properties.base}/teams/${properties.homeSlug}.html" class="d-none d-sm-inline club-link">${properties.homeName}</a>
+        <a href="${properties.base}/teams/${properties.homeSlug}.html" class="d-inline d-sm-none club-link">${properties.homeShort}</a>
+    </div>
+    <div class="text-center">
+        <a href="${properties.matchHref}" class="result-score-box score-link">${properties.mid}</a>
+        <p class="result-date" data-sly-test="${properties.subText}">${properties.subText}</p>
+    </div>
+    <div class="result-club away">
+        <a href="${properties.base}/teams/${properties.awaySlug}.html" class="d-none d-sm-inline club-link">${properties.awayName}</a>
+        <a href="${properties.base}/teams/${properties.awaySlug}.html" class="d-inline d-sm-none club-link">${properties.awayShort}</a>
+        <a href="${properties.base}/teams/${properties.awaySlug}.html"><img src="${properties.base}/assets/crests/${properties.awaySlug}.svg" alt="crest" class="img-fluid crest-sm"/></a>
+    </div>
+</div>

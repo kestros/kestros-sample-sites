@@ -35,9 +35,41 @@ public class SyntheticGoalCard extends AbstractLeagueCard {
     this.side = side;
   }
 
+  private String layoutName = "goal-row";
+  private String portrait = "";
+  private String leftPct = "";
+  private String color = "";
+
   @Override
   public String getLayout() {
-    return "goal-row";
+    return layoutName;
+  }
+
+  /** Timeline rendering: switch layout and carry axis position + club color. */
+  public SyntheticGoalCard asTimelineDot(@Nullable final String leftPct,
+      @Nullable final String color) {
+    this.layoutName = "goal-dot";
+    this.leftPct = leftPct == null ? "" : leftPct;
+    this.color = color == null ? "" : color;
+    return this;
+  }
+
+  /** Scorer portrait for the goals list. */
+  public SyntheticGoalCard withPortrait(final String portrait) {
+    this.portrait = portrait == null ? "" : portrait;
+    return this;
+  }
+
+  public String getPortrait() {
+    return portrait;
+  }
+
+  public String getLeftPct() {
+    return leftPct;
+  }
+
+  public String getColor() {
+    return color;
   }
 
   public String getMinute() {

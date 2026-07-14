@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          jcr:primaryType="kes:UiFramework"
+          jcr:title="ACPL Framework 0.2.1"
+          jcr:description="UI/UX bug round on the Bulma baseline: crest sizing, banner contrast (AA), page headers into containers, breadcrumbs + titles on club pages, squad links, results affordance, zone markers, active nav."
+
+          kes:vendorLibraries="[bulma/1.0.0]"
+/>

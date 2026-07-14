@@ -33,7 +33,8 @@ public class MatchListDataSource extends AbstractLeagueCardListDataSource {
     }
     final boolean fixtures = "fixtures".equals(getResource().getValueMap().get("mode", "results"));
     final int limit = getResource().getValueMap().get("limit", 0);
-    final String layout = fixtures ? "fixture-row" : "result-row";
+    final boolean chip = "true".equals(getResource().getValueMap().get("chip", ""));
+    final String layout = chip ? "score-chip" : (fixtures ? "fixture-row" : "result-row");
     final List<Map<String, String>> rows = fixtures
         ? scheduleService.getUpcomingFixtureRows(contextPath(), limit)
         : scheduleService.getRecentResultRows(contextPath(), limit);
@@ -43,7 +44,7 @@ public class MatchListDataSource extends AbstractLeagueCardListDataSource {
         cards.add(new SyntheticMatchCard(layout, m.get("base"), m.get("href"),
             m.get("homeSlug"), m.get("homeShort"), m.get("homeName"),
             m.get("awaySlug"), m.get("awayShort"), m.get("awayName"),
-            m.get("mid"), this, "card", "match-" + i));
+            m.get("mid"), this, "card", "match-" + i).withGoals(m.get("hg"), m.get("ag")));
         i++;
       } catch (final Exception e) {
         // null-safe: skip a match that fails to build

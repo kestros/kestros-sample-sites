@@ -43,9 +43,10 @@ public class PlayerServiceImpl extends AbstractDisplayService implements PlayerS
         siteRoot(contextPath) + "/teams/" + str(player.get("club")) + ".html");
     header.put("number", "#" + str(player.get("num")));
     header.put("pos", str(player.get("pos")));
-    final StringBuilder meta = new StringBuilder(str(player.get("pos")));
+    // position renders as its own chip in the header — keep it out of the meta line
+    final StringBuilder meta = new StringBuilder();
     if (!str(player.get("age")).isEmpty()) {
-      meta.append(" · Age ").append(str(player.get("age")));
+      meta.append(meta.length() > 0 ? " · " : "").append("Age ").append(str(player.get("age")));
     }
     if (!str(player.get("height")).isEmpty()) {
       meta.append(" · ").append(str(player.get("height")));
@@ -56,6 +57,9 @@ public class PlayerServiceImpl extends AbstractDisplayService implements PlayerS
     header.put("meta", meta.toString());
     header.put("photo", portraitFor(siteRoot(contextPath), name));
     header.put("base", siteRoot(contextPath));
+    final Map<String, Object> clubData = leagueDataService.getClub(str(player.get("club")));
+    header.put("clubColor",
+        clubKeyline(str(clubData.get("primary")), str(clubData.get("secondary"))));
     return header;
   }
 
@@ -71,8 +75,10 @@ public class PlayerServiceImpl extends AbstractDisplayService implements PlayerS
     final String[][] tileDefs = "GK".equals(str(player.get("pos"))) ? GK_STAT_TILES : STAT_TILES;
     for (final String[] tile : tileDefs) {
       final Map<String, String> t = new LinkedHashMap<>();
-      t.put("value", str(season.get(tile[0])));
-      t.put("label", tile[1]);
+      final String value = str(season.get(tile[0]));
+      t.put("value", value);
+      t.put("label", "1".equals(value) && tile[1].endsWith("s")
+          ? tile[1].substring(0, tile[1].length() - 1) : tile[1]);
       tiles.add(t);
     }
     return tiles;

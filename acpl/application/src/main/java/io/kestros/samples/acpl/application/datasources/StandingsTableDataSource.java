@@ -70,7 +70,11 @@ public class StandingsTableDataSource extends BaseContainerSlingModelDataSource
     final String[] labels = getHeaderLabels();
     for (int i = 0; i < labels.length; i++) {
       try {
-        headers.add(new SyntheticTableHeader(labels[i], this, "tableHeader", "h-" + i));
+        final SyntheticTableHeader h = new SyntheticTableHeader(labels[i], this, "tableHeader", "h-" + i);
+        if (i > 1) {
+          h.asNumeric();
+        }
+        headers.add(h);
       } catch (final Exception e) {
         // null-safe: skip a header that fails to build
       }
@@ -98,7 +102,12 @@ public class StandingsTableDataSource extends BaseContainerSlingModelDataSource
             cells.add(clubCell(String.valueOf(row.get("club")), clubDisplay, i, c));
           } else {
             final Object v = row.get(columns[c]);
-            cells.add(cell(v == null ? "" : String.valueOf(v), i, c));
+            final SyntheticTableCell dataCell = cell(v == null ? "" : String.valueOf(v), i, c);
+            if (!"pos".equals(columns[c])) {
+              // rank is a label column (centered), not a right-aligned stat
+              dataCell.asNumeric();
+            }
+            cells.add(dataCell);
           }
         }
         rows.add(new SyntheticTableRow(cells, this,
@@ -160,7 +169,7 @@ public class StandingsTableDataSource extends BaseContainerSlingModelDataSource
     return new ArrayList<>(getRowElements());
   }
 
-  private KestrosTableCell cell(final String text, final int row, final int col)
+  private SyntheticTableCell cell(final String text, final int row, final int col)
       throws ComponentConfigurationException {
     return new SyntheticTableCell(text, this, "tableCell", "c-" + row + "-" + col);
   }

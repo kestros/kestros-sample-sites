@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:kes="http://kestros.io/kes/1.0"
+          jcr:primaryType="kes:ComponentVariationGroup" jcr:title="ACPL">
+    <hero-wrap jcr:primaryType="kes:ComponentVariation" jcr:title="Hero Wrap" inline="true"/>
+</jcr:root>

@@ -68,10 +68,12 @@ public class ScheduleServiceImpl extends AbstractDisplayService implements Sched
         row.put("score", str(m.get("hg")) + " – " + str(m.get("ag")));
         row.put("date", formatDateResult(str(m.get("date"))));
       }
+      row.put("kickoffSort", str(m.get("date")) + " " + str(m.get("kickoff")));
       byWeek.computeIfAbsent(asInt(m.get("mw")), k -> new ArrayList<>()).add(row);
     }
     final List<Map<String, Object>> groups = new ArrayList<>();
     for (final Map.Entry<Integer, List<Map<String, String>>> e : byWeek.entrySet()) {
+      e.getValue().sort((a, b) -> a.get("kickoffSort").compareTo(b.get("kickoffSort")));
       final Map<String, Object> group = new LinkedHashMap<>();
       group.put("matchweek", "Matchweek " + e.getKey());
       group.put("base", base);
@@ -84,7 +86,11 @@ public class ScheduleServiceImpl extends AbstractDisplayService implements Sched
   @Nonnull
   @Override
   public List<Map<String, Object>> getResultsByMatchweek(final String contextPath) {
-    return grouped(leagueDataService.getPlayedMatches(), false, contextPath);
+    // newest matchweek first (owner ruling, 2026-07-14 — reverses the earlier oldest-first order)
+    final List<Map<String, Object>> groups =
+        grouped(leagueDataService.getPlayedMatches(), false, contextPath);
+    java.util.Collections.reverse(groups);
+    return groups;
   }
 
   @Nonnull
@@ -104,9 +110,14 @@ public class ScheduleServiceImpl extends AbstractDisplayService implements Sched
     if (!matches.isEmpty()) {
       widgetWeek = asInt((fixtures ? matches.get(0) : matches.get(0)).get("mw"));
     }
-    for (final Map<String, Object> m : matches) {
+    final List<Map<String, Object>> ordered = new ArrayList<>(matches);
+    ordered.sort((a, b) -> {
+      final int byDate = str(a.get("date")).compareTo(str(b.get("date")));
+      return byDate != 0 ? byDate : str(a.get("kickoff")).compareTo(str(b.get("kickoff")));
+    });
+    for (final Map<String, Object> m : ordered) {
       if (widgetWeek != null && asInt(m.get("mw")) != widgetWeek) {
-        break;
+        continue;
       }
       if (limit > 0 && rows.size() >= limit) {
         break;
@@ -123,6 +134,10 @@ public class ScheduleServiceImpl extends AbstractDisplayService implements Sched
       row.put("mid", fixtures
           ? str(m.get("day")) + " " + str(m.get("kickoff"))
           : str(m.get("hg")) + " – " + str(m.get("ag")));
+      if (!fixtures) {
+        row.put("hg", str(m.get("hg")));
+        row.put("ag", str(m.get("ag")));
+      }
       row.put("href", base + "/matches/" + str(m.get("id")) + ".html");
       row.put("base", base);
       rows.add(row);

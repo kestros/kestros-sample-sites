@@ -16,6 +16,8 @@ public class SyntheticStatBarCard extends AbstractLeagueCard {
   private final String awayValue;
   private final String homePct;
   private final String awayPct;
+  private String homeColor = "";
+  private String awayColor = "";
 
   public SyntheticStatBarCard(@Nonnull final String label, @Nonnull final String homeValue,
       @Nonnull final String awayValue, @Nonnull final String homePct,
@@ -53,5 +55,20 @@ public class SyntheticStatBarCard extends AbstractLeagueCard {
 
   public String getAwayPct() {
     return awayPct;
+  }
+
+  /** Club colors for the bar fills (contrast-gated; away empty = league navy fallback). */
+  public SyntheticStatBarCard withColors(@Nullable final String home, @Nullable final String away) {
+    this.homeColor = home == null ? "" : home;
+    this.awayColor = away == null ? "" : away;
+    return this;
+  }
+
+  public String getHomeColor() {
+    return homeColor;
+  }
+
+  public String getAwayColor() {
+    return awayColor;
   }
 }

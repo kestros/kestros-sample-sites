@@ -18,6 +18,7 @@ public class SyntheticPlayerHeaderCard extends AbstractLeagueCard {
   private final String meta;
   private final String photo;
   private final String base;
+  private String clubColor = "";
 
   private final String clubHref;
 
@@ -73,5 +74,15 @@ public class SyntheticPlayerHeaderCard extends AbstractLeagueCard {
 
   public String getPhoto() {
     return photo;
+  }
+
+  /** Contrast-gated club brand color for the hero keyline. */
+  public SyntheticPlayerHeaderCard withClubColor(final String clubColor) {
+    this.clubColor = clubColor == null ? "" : clubColor;
+    return this;
+  }
+
+  public String getClubColor() {
+    return clubColor;
   }
 }

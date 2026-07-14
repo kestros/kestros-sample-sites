@@ -43,9 +43,17 @@ public class SyntheticStoryCard extends BaseContainerSyntheticResource implement
     this.byline = byline;
   }
 
+  private String layoutOverride;
+
   @Override
   public String getLayout() {
-    return "story-card";
+    return layoutOverride != null ? layoutOverride : "story-card";
+  }
+
+  /** Composition override (e.g. story-lead / story-row on the front page). */
+  public SyntheticStoryCard withLayout(final String layout) {
+    this.layoutOverride = layout;
+    return this;
   }
 
   public String getHeadline() {

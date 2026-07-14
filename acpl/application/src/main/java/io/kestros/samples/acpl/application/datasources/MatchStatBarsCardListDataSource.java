@@ -45,7 +45,8 @@ public class MatchStatBarsCardListDataSource extends AbstractLeagueCardListDataS
     for (final Map<String, String> s : matchService.getMatchStatRows(getParam("match", ""))) {
       try {
         cards.add(new SyntheticStatBarCard(s.get("label"), s.get("h"), s.get("a"),
-            s.get("hPct"), s.get("aPct"), this, "stat", "stat-" + i));
+            s.get("hPct"), s.get("aPct"), this, "stat", "stat-" + i)
+            .withColors(s.get("homeColor"), s.get("awayColor")));
         i++;
       } catch (final Exception e) {
         // null-safe

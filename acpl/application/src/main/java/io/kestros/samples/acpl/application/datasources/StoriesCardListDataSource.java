@@ -36,11 +36,14 @@ public class StoriesCardListDataSource extends AbstractLeagueCardListDataSource 
     final List<Map<String, String>> stories = excludeFeatured
         ? storyService.getStoryCardsExcludingFeatured(contextPath(), limit)
         : storyService.getStoryCards(contextPath(), limit);
+    final boolean leadList = "lead-list".equals(
+        getResource().getValueMap().get("composition", ""));
     int i = 0;
     for (final Map<String, String> s : stories) {
       try {
         cards.add(new SyntheticStoryCard(s.get("headline"), s.get("excerpt"), s.get("image"),
-            s.get("href"), s.get("category"), s.get("byline"), this, "card", "story-" + i));
+            s.get("href"), s.get("category"), s.get("byline"), this, "card", "story-" + i)
+            .withLayout(leadList ? (i == 0 ? "story-lead" : "story-row") : null));
         i++;
       } catch (final Exception e) {
         // null-safe: skip a story that fails to build

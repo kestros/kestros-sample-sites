@@ -1,0 +1,23 @@
+<div class="d-flex gap-2 small mb-3 acpl-crumb">
+    <a href="${properties.base}.html" class="text-muted text-decoration-none">Home</a>
+    <span class="text-muted">/</span>
+    <a href="${properties.base}/teams.html" class="text-muted text-decoration-none">Clubs</a>
+    <span class="text-muted">/</span>
+    <a href="${properties.clubHref}" class="text-muted text-decoration-none">${properties.clubName}</a>
+    <span class="text-muted">/</span>
+    <span class="text-muted">${properties.playerName}</span>
+</div>
+<div class="row g-4 align-items-center mb-4">
+    <div class="col-md-3">
+        <img class="player-portrait img-fluid rounded shadow" src="${properties.photo}" alt="${properties.playerName}"/>
+    </div>
+    <div class="col-md-9">
+        <h1 class="display-5 fw-black mb-1">${properties.playerName}</h1>
+        <p class="lead mb-3"><a class="text-decoration-none" href="${properties.clubHref}">${properties.clubName}</a></p>
+        <div class="d-flex align-items-center gap-2 mb-3">
+            <span class="badge bg-primary fs-6 px-3 py-2">${properties.number}</span>
+            <span class="badge bg-secondary fs-6 px-3 py-2">${properties.pos}</span>
+        </div>
+        <p class="text-muted mb-0">${properties.meta}</p>
+    </div>
+</div>

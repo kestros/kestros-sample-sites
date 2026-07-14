@@ -1,0 +1,6 @@
+<sly data-sly-use.tableCell="${'io.kestros.cms.components.basic.core.content.table.TableCellDataSourceComponent'}"/>
+<sly data-sly-use.includes="/libs/kestros/commons/components/includes.html"/>
+<td class="${tableCell.inlineVariations} ${properties.numeric ? 'is-numeric' : ''}">
+    <sly data-sly-test="${tableCell.text}">${tableCell.text}</sly>
+    <sly data-sly-call="${includes.contentArea}"/>
+</td>

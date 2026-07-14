@@ -1,0 +1,22 @@
+<div class="col-md-6 col-lg-4">
+    <div class="card club-card h-100 border-0 shadow-sm">
+        <div class="card-body">
+            <a class="d-flex align-items-center gap-3 mb-3 text-decoration-none text-reset" href="${properties.href}">
+                <img class="crest-lg" src="${properties.base}/assets/crests/${properties.slug}.svg" alt="${properties.clubName} crest"/>
+                <span>
+                    <span class="h5 fw-bold d-block mb-0">${properties.clubName}</span>
+                    <span class="text-muted small">${properties.city}</span>
+                </span>
+            </a>
+            <div class="d-flex gap-2 mb-3">
+                <span class="badge bg-primary">${properties.pos}</span>
+                <span class="badge bg-light text-dark border">${properties.record}</span>
+            </div>
+            <p class="text-muted small mb-1">${properties.stadium}</p>
+            <p class="text-muted small mb-0">Manager: ${properties.mgr}</p>
+        </div>
+        <div class="card-footer bg-transparent">
+            <a class="btn btn-sm btn-outline-primary" href="${properties.href}" role="button">Club page →</a>
+        </div>
+    </div>
+</div>

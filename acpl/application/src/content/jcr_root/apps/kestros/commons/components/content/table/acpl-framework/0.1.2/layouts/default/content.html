@@ -1,0 +1,15 @@
+<sly data-sly-use.table="${'io.kestros.cms.components.basic.core.content.table.TableDataSourceComponent'}"/>
+<table class="table ${table.inlineVariations}">
+    <thead data-sly-test="${table.headers}">
+        <tr>
+            <sly data-sly-list.header="${table.headers}">
+                <sly data-sly-resource="${header}"/>
+            </sly>
+        </tr>
+    </thead>
+    <tbody>
+        <sly data-sly-list.row="${table.rows}">
+            <sly data-sly-resource="${row}"/>
+        </sly>
+    </tbody>
+</table>

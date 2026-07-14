@@ -1,0 +1,7 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:title": "ACPL Match Timeline",
+  "group": "ACPL",
+  "classPath": "io.kestros.samples.acpl.application.datasources.MatchTimelineCardListDataSource",
+  "container": true
+}

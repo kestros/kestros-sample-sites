@@ -32,6 +32,8 @@ public class SyntheticMatchCard extends BaseContainerSyntheticResource implement
   private final String awayName;
   private final String mid;
   private String subText = "";
+  private String homeGoals = "";
+  private String awayGoals = "";
 
   public SyntheticMatchCard(@Nonnull String layoutName, @Nonnull String base,
       @Nonnull String matchHref, @Nonnull String homeSlug, @Nonnull String homeShort,
@@ -131,5 +133,20 @@ public class SyntheticMatchCard extends BaseContainerSyntheticResource implement
 
   public String getSubText() {
     return subText;
+  }
+
+  /** Per-side goals for chip-style rendering. */
+  public SyntheticMatchCard withGoals(final String hg, final String ag) {
+    this.homeGoals = hg == null ? "" : hg;
+    this.awayGoals = ag == null ? "" : ag;
+    return this;
+  }
+
+  public String getHomeGoals() {
+    return homeGoals;
+  }
+
+  public String getAwayGoals() {
+    return awayGoals;
   }
 }

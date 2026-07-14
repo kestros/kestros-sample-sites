@@ -17,7 +17,7 @@
       "minute": 13,
       "team": "harborside",
       "scorer": "Theo Bramble",
-      "scorerSlug": "harborside-theo-bramble",
+      "scorerSlug": "theo-bramble",
       "note": "",
       "assist": "Jordan Bex"
     },
@@ -25,7 +25,7 @@
       "minute": 19,
       "team": "harborside",
       "scorer": "Iv\u00e1n Ramos",
-      "scorerSlug": "harborside-iv\u00e1n-ramos",
+      "scorerSlug": "iv\u00e1n-ramos",
       "note": "free-kick",
       "assist": "Eli Whitfield"
     },
@@ -33,21 +33,21 @@
       "minute": 41,
       "team": "harborside",
       "scorer": "Marco Russo",
-      "scorerSlug": "harborside-marco-russo",
+      "scorerSlug": "marco-russo",
       "note": ""
     },
     {
       "minute": 83,
       "team": "harborside",
       "scorer": "Eli Whitfield",
-      "scorerSlug": "harborside-eli-whitfield",
+      "scorerSlug": "eli-whitfield",
       "note": "volley"
     },
     {
       "minute": 89,
       "team": "harborside",
       "scorer": "Felipe Adekunle",
-      "scorerSlug": "harborside-felipe-adekunle",
+      "scorerSlug": "felipe-adekunle",
       "note": "penalty"
     }
   ],

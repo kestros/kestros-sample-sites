@@ -1,0 +1,8 @@
+<sly data-sly-use.cardList="${'io.kestros.cms.components.basic.core.lists.cardlist.CardListDataSourceComponent'}"/>
+<div class="row mb-4 ${cardList.inlineVariations}">
+    <sly data-sly-list.card="${cardList.cards}">
+        <div class="col-6 col-sm-4 col-md-3 col-lg-auto mb-3">
+            <sly data-sly-resource="${card}"/>
+        </div>
+    </sly>
+</div>

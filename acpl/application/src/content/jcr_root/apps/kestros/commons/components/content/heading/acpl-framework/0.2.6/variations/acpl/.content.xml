@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:kes="http://kestros.io/kes/1.0" jcr:primaryType="kes:ComponentVariationGroup" jcr:title="ACPL">
+    <fw-bold jcr:primaryType="kes:ComponentVariation" jcr:title="fw-bold" inline="true"/>
+    <text-white jcr:primaryType="kes:ComponentVariation" jcr:title="text-white" inline="true"/>
+    <section-heading jcr:primaryType="kes:ComponentVariation" jcr:title="section-heading" inline="true"/>
+    <h6 jcr:primaryType="kes:ComponentVariation" jcr:title="h6" inline="true"/>
+    <footer-heading jcr:primaryType="kes:ComponentVariation" jcr:title="footer-heading" inline="true"/>
+    <hero-headline jcr:primaryType="kes:ComponentVariation" jcr:title="hero-headline" inline="true"/>
+    <card-title jcr:primaryType="kes:ComponentVariation" jcr:title="card-title" inline="true"/>
+    <h5 jcr:primaryType="kes:ComponentVariation" jcr:title="h5" inline="true"/>
+    <mb-4 jcr:primaryType="kes:ComponentVariation" jcr:title="mb-4" inline="true"/>
+    <mb-1 jcr:primaryType="kes:ComponentVariation" jcr:title="mb-1" inline="true"/>
+    <mb-2 jcr:primaryType="kes:ComponentVariation" jcr:title="mb-2" inline="true"/>
+    <mb-3 jcr:primaryType="kes:ComponentVariation" jcr:title="mb-3" inline="true"/>
+    <h3 jcr:primaryType="kes:ComponentVariation" jcr:title="h3" inline="true"/>
+    <h4 jcr:primaryType="kes:ComponentVariation" jcr:title="h4" inline="true"/>
+    <h1 jcr:primaryType="kes:ComponentVariation" jcr:title="h1" inline="true"/>
+    <h2 jcr:primaryType="kes:ComponentVariation" jcr:title="h2" inline="true"/>
+    <mb-0 jcr:primaryType="kes:ComponentVariation" jcr:title="mb-0" inline="true"/>
+    <team-name jcr:primaryType="kes:ComponentVariation" jcr:title="team-name" inline="true"/>
+    <display-5 jcr:primaryType="kes:ComponentVariation" jcr:title="display-5" inline="true"/>
+    <fw-black jcr:primaryType="kes:ComponentVariation" jcr:title="fw-black" inline="true"/>
+    <mt-4 jcr:primaryType="kes:ComponentVariation" jcr:title="mt-4" inline="true"/>
+</jcr:root>

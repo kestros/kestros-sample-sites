@@ -38,7 +38,7 @@ public class TeamHeaderCardListDataSource extends AbstractLeagueCardListDataSour
     try {
       cards.add(new SyntheticTeamHeaderCard(header.get("slug"), header.get("name"),
           header.get("place"), header.get("meta"), header.get("base"),
-          this, "teamHeader", "team-header"));
+          this, "teamHeader", "team-header").withColor(header.get("color")));
     } catch (final Exception e) {
       // null-safe: skip on build failure
     }

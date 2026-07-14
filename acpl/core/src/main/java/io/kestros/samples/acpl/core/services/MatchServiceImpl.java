@@ -95,9 +95,14 @@ public class MatchServiceImpl extends AbstractDisplayService implements MatchSer
       final String scorerSlug = str(g.get("scorerSlug"));
       row.put("minute", str(g.get("minute")));
       row.put("scorer", str(g.get("scorer")));
+      row.put("portrait", portraitFor(base, str(g.get("scorer"))));
       row.put("href", scorerSlug.isEmpty() ? "" : base + "/players/" + scorerSlug + ".html");
       row.put("teamSlug", str(g.get("team")));
       row.put("side", str(g.get("team")).equals(str(m.get("home"))) ? "home" : "away");
+      final int minute = asInt(g.get("minute"));
+      row.put("leftPct", String.valueOf(Math.min(94, Math.max(6, Math.round(minute * 100f / 95f)))));
+      row.put("color", clubColorOnLight(
+          str(leagueDataService.getClub(str(g.get("team"))).get("primary"))));
       row.put("assist", str(g.get("assist")));
       row.put("base", base);
       rows.add(row);
@@ -206,13 +211,37 @@ public class MatchServiceImpl extends AbstractDisplayService implements MatchSer
       row.put("h", str(s.get("h")));
       row.put("label", str(s.get("label")));
       row.put("a", str(s.get("a")));
-      final int hv = asInt(str(s.get("h")).replace("%", ""));
-      final int av = asInt(str(s.get("a")).replace("%", ""));
+      final float hv = asFloat(str(s.get("h")).replace("%", ""));
+      final float av = asFloat(str(s.get("a")).replace("%", ""));
       final int hPct = (hv + av) == 0 ? 50 : Math.round(100f * hv / (hv + av));
       row.put("hPct", String.valueOf(hPct));
       row.put("aPct", String.valueOf(100 - hPct));
+      row.put("homeColor", homeColor(m));
+      row.put("awayColor", awayColor(m));
       rows.add(row);
     }
     return rows;
+  }
+
+  private float asFloat(final String value) {
+    try {
+      return Float.parseFloat(value);
+    } catch (final NumberFormatException e) {
+      return 0f;
+    }
+  }
+
+  private String homeColor(final Map<String, Object> m) {
+    return clubColorOnLight(str(leagueDataService.getClub(str(m.get("home"))).get("primary")));
+  }
+
+  /** Away color falls back to league navy when the two brands share a hue family. */
+  private String awayColor(final Map<String, Object> m) {
+    final String home = str(leagueDataService.getClub(str(m.get("home"))).get("primary"));
+    final String away = str(leagueDataService.getClub(str(m.get("away"))).get("primary"));
+    if (home.length() == 7 && away.length() == 7 && hueDistance(home, away) < 30) {
+      return "";
+    }
+    return clubColorOnLight(away);
   }
 }

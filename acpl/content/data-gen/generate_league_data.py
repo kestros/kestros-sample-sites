@@ -54,19 +54,21 @@ def harborside_squad():
     out=[]
     for num,pos,nm in HARBORSIDE_SQUAD:
         r=random.Random(SEED+shash(nm)%9999)
-        out.append(dict(slug="harborside-%s"%nm.lower().replace(' ','-'), name=nm, club='harborside', pos=pos,
+        out.append(dict(slug=nm.lower().replace(' ','-'), name=nm, club='harborside', pos=pos,
             num=num, age=r.randint(20,33), height="%.2f m"%r.uniform(1.72,1.94),
             nationality=NAT_HB.get(nm, r.choice(NATS))))
     return out
 
+GLOBAL_NAMES=set(nm for _,_,nm in HARBORSIDE_SQUAD)
+
 def gen_squad(club_slug, off):
-    r=random.Random(SEED+off); used=set(); players=[]; num=1
+    r=random.Random(SEED+off); players=[]; num=1
     for pos,count in POS_LAYOUT:
         for _ in range(count):
             while True:
                 nm="%s %s"%(r.choice(FIRST),r.choice(LAST))
-                if nm not in used: used.add(nm); break
-            players.append(dict(slug="%s-%s"%(club_slug,nm.lower().replace(' ','-')), name=nm, club=club_slug,
+                if nm not in GLOBAL_NAMES: GLOBAL_NAMES.add(nm); break
+            players.append(dict(slug=nm.lower().replace(' ','-'), name=nm, club=club_slug,
                 pos=pos, num=num, age=r.randint(19,34), height="%.2f m"%r.uniform(1.70,1.96),
                 nationality=r.choice(NATS)))
             num+=1
@@ -243,7 +245,7 @@ def player_last5(slug, club):
         opp=m['away'] if m['home']==club else m['home']; ven='H' if m['home']==club else 'A'
         g=sum(1 for x in m['goals'] if x['scorerSlug']==slug); a=sum(1 for x in m['goals'] if x.get('assist')==allplayers[slug]['name'])
         us=m['hg'] if m['home']==club else m['ag']; them=m['ag'] if m['home']==club else m['hg']
-        res=('W' if us>them else 'D' if us==them else 'L')+' %d–%d'%(m['hg'],m['ag'])
+        res=('W' if us>them else 'D' if us==them else 'L')+' %d – %d'%(m['hg'],m['ag'])
         base=random.Random(shash(slug+m['date'])%99999).uniform(5.9,7.4)
         rating=min(9.8, base + 0.7*g + 0.4*a + (0.4 if us>them else -0.3 if us<them else 0.0))
         out.append(dict(opp=opp,venue=ven,mw=m['mw'],id=m['id'],res=res,g=g,a=a,rating=round(rating,1)))

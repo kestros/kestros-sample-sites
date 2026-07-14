@@ -1,0 +1,12 @@
+<div class="card story-card h-100 border-0 shadow-sm">
+    <a href="${properties.href}"><img src="${properties.imageSrc}" alt="${properties.headline}" class="img-fluid card-img-top"/></a>
+    <div class="card-body d-flex flex-column">
+        <p class="section-heading mb-2">${properties.category}</p>
+        <h5 class="card-title fw-bold mb-1">${properties.headline}</h5>
+        <p class="card-text text-muted small mb-auto">${properties.excerpt}</p>
+        <div class="mt-2 pt-2 border-top small text-muted d-flex justify-content-between align-items-center gap-2">
+            <p class="mb-0">${properties.byline}</p>
+            <a class="btn btn-sm btn-outline-primary flex-shrink-0" href="${properties.href}" role="button">Read story →</a>
+        </div>
+    </div>
+</div>

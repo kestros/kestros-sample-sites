@@ -1,0 +1,11 @@
+<div class="stat-bar-row mb-3">
+    <div class="d-flex justify-content-between small fw-semibold mb-1">
+        <span>${properties.homeValue}</span>
+        <span class="text-muted text-uppercase stat-bar-label">${properties.label}</span>
+        <span>${properties.awayValue}</span>
+    </div>
+    <div class="stat-bar d-flex">
+        <div class="stat-bar-home" style="width: ${properties.homePct @ context='number'}%"></div>
+        <div class="stat-bar-away" style="width: ${properties.awayPct @ context='number'}%"></div>
+    </div>
+</div>

@@ -61,6 +61,10 @@ public class AcplPlayerPageFilter extends AbstractDynamicPageFilter {
     }
     final Map<String, String> params = new HashMap<>();
     params.put("player", slug);
+    // the player's club powers the sidebar modules (form, next fixture)
+    if (player.get("club") != null) {
+      params.put("team", String.valueOf(player.get("club")));
+    }
     params.put("dynamicPageTitle", String.valueOf(player.getOrDefault("name", slug)));
     params.put("dynamicPageDescription",
         String.valueOf(leagueDataService.getClubName(String.valueOf(player.get("club")))));
