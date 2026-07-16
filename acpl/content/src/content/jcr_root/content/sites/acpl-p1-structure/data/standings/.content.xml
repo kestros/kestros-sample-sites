@@ -1,10 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
-          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
-          jcr:primaryType="nt:unstructured">
-    <row1 jcr:primaryType="nt:unstructured" pos="1" played="18" gd="+24" pts="42"/>
-    <row2 jcr:primaryType="nt:unstructured" pos="2" played="18" gd="+19" pts="40"/>
-    <row3 jcr:primaryType="nt:unstructured" pos="3" played="18" gd="+12" pts="35"/>
-    <row4 jcr:primaryType="nt:unstructured" pos="4" played="18" gd="+8" pts="31"/>
-    <row5 jcr:primaryType="nt:unstructured" pos="5" played="18" gd="+3" pts="28"/>
+<?xml version='1.0' encoding='UTF-8'?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" jcr:primaryType="nt:unstructured">
+    <row1 jcr:primaryType="nt:unstructured" pos="1" played="18" gd="+24" pts="42" />
+    <row2 jcr:primaryType="nt:unstructured" pos="2" played="18" gd="+19" pts="40" />
+    <row3 jcr:primaryType="nt:unstructured" pos="3" played="18" gd="+12" pts="35" />
+    <row4 jcr:primaryType="nt:unstructured" pos="4" played="18" gd="+8" pts="31" />
+    <row5 jcr:primaryType="nt:unstructured" pos="5" played="18" gd="+3" pts="28" />
 </jcr:root>

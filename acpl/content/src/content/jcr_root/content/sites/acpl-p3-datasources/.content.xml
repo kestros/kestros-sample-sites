@@ -9,7 +9,7 @@
             jcr:primaryType="nt:unstructured"
             jcr:title="ACPL — P3 Bootstrap + datasources"
             kes:template="/libs/kestros/commons/base-site-template"
-            kes:theme="/etc/ui-frameworks/acpl-framework/versions/0.0.1/themes/default"
+            kes:theme="/etc/ui-frameworks/acpl-framework/versions/0.0.2/themes/default"
             publicationStrategy="kestros-single-instance"
             sling:resourceType="kestros/commons/components/kestros-base-page">
         <header jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area">
