@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:kes="http://kestros.io/kes/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="kes:Page">
+  <jcr:content jcr:primaryType="nt:unstructured" jcr:title="Players" jcr:description="League leaders and player profiles." kes:template="/libs/kestros/commons/base-site-template" kes:theme="/etc/ui-frameworks/acpl-framework/versions/0.2.11/themes/default" sling:resourceType="kestros/commons/components/kestros-base-page">
+    <header jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
+    <main jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
+      <band layout="plain" variations="[bg-primary,text-white,py-4]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+        <inner layout="plain" variations="[container]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+          <crumb layout="plain" variations="[d-flex,gap-2,mb-2,small]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+            <hl href="/content/sites/acpl-p3-datasources.html" variations="[text-white-50,text-decoration-none]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Home"/>
+            <sep variations="[text-white-50]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="/"/>
+            <cur variations="[text-white-50]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Players"/>
+          </crumb>
+          <h variations="[h3,fw-bold,mb-2]" headingText="Players" headingType="h1" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading"/>
+          <sub variations="[text-white-50,mb-0]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="This season's league leaders — every name links to a full player profile. Browse complete squads from each club page."/>
+        </inner>
+      </band>
+      <wrap layout="plain" variations="[container,my-5]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+        <row layout="plain" variations="[row,g-4]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+          <col-goals layout="plain" variations="[col-lg-6]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+            <card layout="plain" variations="[card,border-0,shadow-sm,h-100]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+              <chead layout="plain" variations="[card-header,acpl-card-header]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+                <t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Top Scorers"/>
+              </chead>
+              <cbody layout="plain" variations="[card-body,p-0]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+                <table variations="[table,table-hover,align-middle,mb-0]" kes:datasource="league-leaders" stat="goals" limit="10" clubCellLayout="club" clubCellVariations="[d-flex,align-items-center,gap-2]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table"/>
+              </cbody>
+            </card>
+          </col-goals>
+          <col-assists layout="plain" variations="[col-lg-6]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+            <card layout="plain" variations="[card,border-0,shadow-sm,h-100]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+              <chead layout="plain" variations="[card-header,acpl-card-header]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+                <t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Top Assists"/>
+              </chead>
+              <cbody layout="plain" variations="[card-body,p-0]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+                <table variations="[table,table-hover,align-middle,mb-0]" kes:datasource="league-leaders" stat="assists" limit="10" clubCellLayout="club" clubCellVariations="[d-flex,align-items-center,gap-2]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table"/>
+              </cbody>
+            </card>
+          </col-assists>
+        </row>
+        <browse layout="plain" variations="[text-center,mt-4]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+          <b href="/content/sites/acpl-p3-datasources/teams.html" variations="[btn-outline-primary,btn-sm]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/button" text="Browse full squads by club →"/>
+        </browse>
+      </wrap>
+    </main>
+    <footer jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
+  </jcr:content>
+</jcr:root>
