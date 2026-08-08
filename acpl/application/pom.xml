@@ -24,6 +24,14 @@
     </properties>
 
     <dependencies>
+        <!-- Test-scope only: slf4j has no binding in the inherited chain, so a test cannot see a
+             log line without one. Nothing here ships in the bundle. -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.10</version>
+            <scope>test</scope>
+        </dependency>
         <dependency>
             <groupId>io.kestros.samples</groupId>
             <artifactId>acpl-api</artifactId>
