@@ -55,7 +55,7 @@ public class MatchStatsTableDataSource extends BaseContainerSlingModelDataSource
       try {
         headers.add(new SyntheticTableHeader(labels[i], this, "tableHeader", "h-" + i));
       } catch (final Exception e) {
-        LOG.error("MatchStatsTableDataSource: {}", e.getMessage());
+        LOG.error("header cell {} failed; the table will misalign: {}", i, e.getMessage(), e);
         // null-safe
       }
     }
@@ -79,7 +79,7 @@ public class MatchStatsTableDataSource extends BaseContainerSlingModelDataSource
         rows.add(new SyntheticTableRow(cells, this, "tableRow", "r-" + i));
         i++;
       } catch (final Exception e) {
-        LOG.error("MatchStatsTableDataSource: {}", e.getMessage());
+        LOG.error("row skipped: {}", e.getMessage(), e);
         // null-safe
       }
     }

@@ -42,7 +42,7 @@ public class TeamStatsCardListDataSource extends AbstractLeagueCardListDataSourc
             this, "stat", "stat-" + i));
         i++;
       } catch (final Exception e) {
-        LOG.error("TeamStatsCardListDataSource: {}", e.getMessage());
+        LOG.error("row skipped: {}", e.getMessage(), e);
         // null-safe
       }
     }

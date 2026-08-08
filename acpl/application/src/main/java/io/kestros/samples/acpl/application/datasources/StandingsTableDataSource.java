@@ -80,7 +80,7 @@ public class StandingsTableDataSource extends BaseContainerSlingModelDataSource
         }
         headers.add(h);
       } catch (final Exception e) {
-        LOG.error("StandingsTableDataSource: {}", e.getMessage());
+        LOG.error("header cell {} failed; the table will misalign: {}", i, e.getMessage(), e);
         // null-safe: skip a header that fails to build
       }
     }
@@ -119,7 +119,7 @@ public class StandingsTableDataSource extends BaseContainerSlingModelDataSource
             rowPrefix(zones, String.valueOf(row.get("pos"))), "r-" + i));
         i++;
       } catch (final Exception e) {
-        LOG.error("StandingsTableDataSource: {}", e.getMessage());
+        LOG.error("row skipped: {}", e.getMessage(), e);
         // null-safe: skip a row that fails to build
       }
     }

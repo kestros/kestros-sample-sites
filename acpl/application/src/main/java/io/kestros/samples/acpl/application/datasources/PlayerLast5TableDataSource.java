@@ -59,7 +59,7 @@ public class PlayerLast5TableDataSource extends BaseContainerSlingModelDataSourc
         }
         headers.add(h);
       } catch (final Exception e) {
-        LOG.error("PlayerLast5TableDataSource: {}", e.getMessage());
+        LOG.error("header cell {} failed; the table will misalign: {}", i, e.getMessage(), e);
         // null-safe
       }
     }
@@ -90,7 +90,7 @@ public class PlayerLast5TableDataSource extends BaseContainerSlingModelDataSourc
         rows.add(new SyntheticTableRow(cells, this, "tableRow", "r-" + i));
         i++;
       } catch (final Exception e) {
-        LOG.error("PlayerLast5TableDataSource: {}", e.getMessage());
+        LOG.error("row skipped: {}", e.getMessage(), e);
         // null-safe
       }
     }

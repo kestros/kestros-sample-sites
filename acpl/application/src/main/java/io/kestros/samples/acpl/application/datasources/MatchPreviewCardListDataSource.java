@@ -42,7 +42,7 @@ public class MatchPreviewCardListDataSource extends AbstractLeagueCardListDataSo
     try {
       cards.add(new SyntheticMatchPreviewCard(info, this, "preview", "match-preview"));
     } catch (final Exception e) {
-      LOG.error("MatchPreviewCardListDataSource: {}", e.getMessage());
+      LOG.error("element could not be built: {}", e.getMessage(), e);
       // null-safe
     }
     return cards;

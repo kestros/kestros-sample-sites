@@ -40,7 +40,7 @@ public class ClubDirectoryCardListDataSource extends AbstractLeagueCardListDataS
             c.get("stadium"), c.get("mgr"), c.get("pos"), c.get("record"), c.get("base"),
             c.get("href"), this, "club", "club-" + c.get("slug")));
       } catch (final Exception e) {
-        LOG.error("ClubDirectoryCardListDataSource: {}", e.getMessage());
+        LOG.error("row skipped: {}", e.getMessage(), e);
         // null-safe: skip a club that fails to build
       }
     }

@@ -41,7 +41,7 @@ public class TopScorersCardListDataSource extends AbstractLeagueCardListDataSour
             this, "scorer", "scorer-" + i));
         i++;
       } catch (final Exception e) {
-        LOG.error("TopScorersCardListDataSource: {}", e.getMessage());
+        LOG.error("row skipped: {}", e.getMessage(), e);
         // null-safe
       }
     }

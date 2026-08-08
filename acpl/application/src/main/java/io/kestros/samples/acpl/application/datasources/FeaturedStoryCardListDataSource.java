@@ -43,7 +43,7 @@ public class FeaturedStoryCardListDataSource extends AbstractLeagueCardListDataS
       cards.add(new SyntheticFeaturedStoryCard(s.get("headline"), s.get("excerpt"), s.get("image"),
           s.get("href"), s.get("category"), s.get("byline"), this, "featured", "featured-story"));
     } catch (final Exception e) {
-      LOG.error("FeaturedStoryCardListDataSource: {}", e.getMessage());
+      LOG.error("element could not be built: {}", e.getMessage(), e);
       // null-safe
     }
     return cards;

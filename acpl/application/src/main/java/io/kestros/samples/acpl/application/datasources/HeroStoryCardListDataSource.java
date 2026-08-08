@@ -43,7 +43,7 @@ public class HeroStoryCardListDataSource extends AbstractLeagueCardListDataSourc
       cards.add(new SyntheticHeroStoryCard(s.get("headline"), s.get("excerpt"), s.get("image"),
           s.get("href"), s.get("category"), s.get("byline"), this, "hero", "story-hero"));
     } catch (final Exception e) {
-      LOG.error("HeroStoryCardListDataSource: {}", e.getMessage());
+      LOG.error("element could not be built: {}", e.getMessage(), e);
       // null-safe
     }
     return cards;

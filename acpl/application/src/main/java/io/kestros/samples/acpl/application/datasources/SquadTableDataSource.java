@@ -59,7 +59,7 @@ public class SquadTableDataSource extends BaseContainerSlingModelDataSource
         }
         headers.add(h);
       } catch (final Exception e) {
-        LOG.error("SquadTableDataSource: {}", e.getMessage());
+        LOG.error("header cell {} failed; the table will misalign: {}", i, e.getMessage(), e);
         // null-safe
       }
     }
@@ -89,7 +89,7 @@ public class SquadTableDataSource extends BaseContainerSlingModelDataSource
         rows.add(new SyntheticTableRow(cells, this, "tableRow", "r-" + i));
         i++;
       } catch (final Exception e) {
-        LOG.error("SquadTableDataSource: {}", e.getMessage());
+        LOG.error("row skipped: {}", e.getMessage(), e);
         // null-safe
       }
     }

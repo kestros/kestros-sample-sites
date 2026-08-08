@@ -44,7 +44,7 @@ public class MatchGoalsCardListDataSource extends AbstractLeagueCardListDataSour
             "goal-" + i).withPortrait(g.get("portrait")));
         i++;
       } catch (final Exception e) {
-        LOG.error("MatchGoalsCardListDataSource: {}", e.getMessage());
+        LOG.error("row skipped: {}", e.getMessage(), e);
         // null-safe
       }
     }

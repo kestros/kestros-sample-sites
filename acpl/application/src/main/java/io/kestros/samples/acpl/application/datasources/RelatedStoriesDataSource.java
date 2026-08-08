@@ -45,7 +45,7 @@ public class RelatedStoriesDataSource extends AbstractLeagueCardListDataSource {
             s.get("href"), s.get("category"), s.get("byline"), this, "card", "rel-" + i));
         i++;
       } catch (final Exception e) {
-        LOG.error("RelatedStoriesDataSource: {}", e.getMessage());
+        LOG.error("row skipped: {}", e.getMessage(), e);
         // null-safe
       }
     }

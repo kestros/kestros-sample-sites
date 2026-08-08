@@ -49,7 +49,7 @@ public class GroupedMatchListDataSource extends AbstractLeagueCardListDataSource
             (List<Map<String, String>>) week.get("matches"), this, "card", "mw-" + i));
         i++;
       } catch (final Exception e) {
-        LOG.error("GroupedMatchListDataSource: {}", e.getMessage());
+        LOG.error("row skipped: {}", e.getMessage(), e);
         // null-safe: skip a group that fails to build
       }
     }

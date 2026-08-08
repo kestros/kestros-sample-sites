@@ -45,7 +45,7 @@ public class MatchH2hCardListDataSource extends AbstractLeagueCardListDataSource
             .withSubText(m.get("subText")));
         i++;
       } catch (final Exception e) {
-        LOG.error("MatchH2hCardListDataSource: {}", e.getMessage());
+        LOG.error("row skipped: {}", e.getMessage(), e);
         // null-safe
       }
     }

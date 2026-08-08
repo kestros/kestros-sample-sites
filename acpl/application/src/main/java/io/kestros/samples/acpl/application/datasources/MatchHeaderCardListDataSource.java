@@ -46,7 +46,7 @@ public class MatchHeaderCardListDataSource extends AbstractLeagueCardListDataSou
           header.get("base"), this, "matchHeader", "match-header")
           .withReportHref(header.get("reportHref")));
     } catch (final Exception e) {
-      LOG.error("MatchHeaderCardListDataSource: {}", e.getMessage());
+      LOG.error("element could not be built: {}", e.getMessage(), e);
       // null-safe
     }
     return cards;

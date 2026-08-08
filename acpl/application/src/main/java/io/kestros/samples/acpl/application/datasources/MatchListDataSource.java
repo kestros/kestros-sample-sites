@@ -51,7 +51,7 @@ public class MatchListDataSource extends AbstractLeagueCardListDataSource {
             m.get("mid"), this, "card", "match-" + i).withGoals(m.get("hg"), m.get("ag")));
         i++;
       } catch (final Exception e) {
-        LOG.error("MatchListDataSource: {}", e.getMessage());
+        LOG.error("row skipped: {}", e.getMessage(), e);
         // null-safe: skip a match that fails to build
       }
     }

@@ -44,7 +44,7 @@ public class MatchTimelineCardListDataSource extends AbstractLeagueCardListDataS
             "tl-" + i).asTimelineDot(g.get("leftPct"), g.get("color")));
         i++;
       } catch (final Exception e) {
-        LOG.error("MatchTimelineCardListDataSource: {}", e.getMessage());
+        LOG.error("row skipped: {}", e.getMessage(), e);
         // null-safe
       }
     }

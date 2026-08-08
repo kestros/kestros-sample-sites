@@ -54,7 +54,7 @@ public class TeamFormCardListDataSource extends AbstractLeagueCardListDataSource
             badge.get("tip"), this, "form", "form-" + i));
         i++;
       } catch (final Exception e) {
-        LOG.error("TeamFormCardListDataSource: {}", e.getMessage());
+        LOG.error("row skipped: {}", e.getMessage(), e);
         // null-safe
       }
     }

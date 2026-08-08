@@ -43,7 +43,7 @@ public class NextFixtureCardListDataSource extends AbstractLeagueCardListDataSou
           fixture.get("meta"), fixture.get("base"), fixture.get("href"), this, "nextFixture",
           "next-fixture"));
     } catch (final Exception e) {
-      LOG.error("NextFixtureCardListDataSource: {}", e.getMessage());
+      LOG.error("element could not be built: {}", e.getMessage(), e);
       // null-safe
     }
     return cards;

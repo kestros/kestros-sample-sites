@@ -44,7 +44,7 @@ public class TeamHeaderCardListDataSource extends AbstractLeagueCardListDataSour
           header.get("place"), header.get("meta"), header.get("base"),
           this, "teamHeader", "team-header").withColor(header.get("color")));
     } catch (final Exception e) {
-      LOG.error("TeamHeaderCardListDataSource: {}", e.getMessage());
+      LOG.error("element could not be built: {}", e.getMessage(), e);
       // null-safe: skip on build failure
     }
     return cards;

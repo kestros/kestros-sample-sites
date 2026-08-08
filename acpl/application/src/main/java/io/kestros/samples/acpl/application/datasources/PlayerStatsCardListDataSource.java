@@ -43,7 +43,7 @@ public class PlayerStatsCardListDataSource extends AbstractLeagueCardListDataSou
             this, "stat", "pstat-" + i));
         i++;
       } catch (final Exception e) {
-        LOG.error("PlayerStatsCardListDataSource: {}", e.getMessage());
+        LOG.error("row skipped: {}", e.getMessage(), e);
         // null-safe
       }
     }

@@ -42,7 +42,7 @@ public class MatchStatBarsCardListDataSource extends AbstractLeagueCardListDataS
         cards.add(new SyntheticStatLegendCard(header.get("homeName"), header.get("awayName"),
             this, "stat", "stat-legend"));
       } catch (final Exception e) {
-        LOG.error("MatchStatBarsCardListDataSource: {}", e.getMessage());
+        LOG.error("element could not be built: {}", e.getMessage(), e);
         // null-safe
       }
     }
@@ -54,7 +54,7 @@ public class MatchStatBarsCardListDataSource extends AbstractLeagueCardListDataS
             .withColors(s.get("homeColor"), s.get("awayColor")));
         i++;
       } catch (final Exception e) {
-        LOG.error("MatchStatBarsCardListDataSource: {}", e.getMessage());
+        LOG.error("row skipped: {}", e.getMessage(), e);
         // null-safe
       }
     }

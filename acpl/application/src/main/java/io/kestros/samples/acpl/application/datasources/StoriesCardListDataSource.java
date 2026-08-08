@@ -50,7 +50,7 @@ public class StoriesCardListDataSource extends AbstractLeagueCardListDataSource 
             .withLayout(leadList ? (i == 0 ? "story-lead" : "story-row") : null));
         i++;
       } catch (final Exception e) {
-        LOG.error("StoriesCardListDataSource: {}", e.getMessage());
+        LOG.error("row skipped: {}", e.getMessage(), e);
         // null-safe: skip a story that fails to build
       }
     }

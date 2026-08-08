@@ -103,6 +103,8 @@ public class ClubDirectoryCardListDataSourceTest {
     assertEquals(Level.ERROR, appender.list.get(0).getLevel());
     assertTrue("the log line names the cause",
         appender.list.get(0).getFormattedMessage().contains("club row is unreadable"));
+    assertNotNull("the exception travels with the line, so there is a stack trace",
+        appender.list.get(0).getThrowableProxy());
   }
 
   @Test
@@ -118,6 +120,20 @@ public class ClubDirectoryCardListDataSourceTest {
     // assertion read 0 and could not tell the difference between "skipped one row" and "dropped the
     // whole table".
     assertEquals("both failures are logged, so the loop ran twice", 2, appender.list.size());
+  }
+
+  @Test
+  public void testNothingIsLoggedWhenNothingFails() {
+    // The negative control. Both other tests feed only failing rows, so a log line hoisted out of the
+    // catch and into the loop body would keep them green. This one fails if anything logs at all.
+    when(teamService.getClubDirectoryCards(anyString())).thenReturn(
+        new ArrayList<Map<String, String>>());
+
+    final ClubDirectoryCardListDataSource dataSource = adaptDataSource();
+    final List<KestrosCard> cards = dataSource.getCardElements();
+
+    assertTrue("no rows, no cards", cards.isEmpty());
+    assertTrue("and nothing logged", appender.list.isEmpty());
   }
 
   private ClubDirectoryCardListDataSource adaptDataSource() {
