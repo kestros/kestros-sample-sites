@@ -11,6 +11,8 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.Optional;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Top-scorers list for a team-detail page. Thin adapter over {@link TeamService#getTopScorerRows};
@@ -18,6 +20,8 @@ import org.apache.sling.models.annotations.injectorspecific.OSGiService;
  */
 @Model(adaptables = {SlingHttpServletRequest.class, Resource.class})
 public class TopScorersCardListDataSource extends AbstractLeagueCardListDataSource {
+
+  private static final Logger LOG = LoggerFactory.getLogger(TopScorersCardListDataSource.class);
 
   @OSGiService
   @Optional
@@ -37,6 +41,7 @@ public class TopScorersCardListDataSource extends AbstractLeagueCardListDataSour
             this, "scorer", "scorer-" + i));
         i++;
       } catch (final Exception e) {
+        LOG.error("TopScorersCardListDataSource: {}", e.getMessage());
         // null-safe
       }
     }

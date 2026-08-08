@@ -11,6 +11,8 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.Optional;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Compact match list for the home widgets ({@code mode="results"} or {@code "fixtures"}, optional
@@ -19,6 +21,8 @@ import org.apache.sling.models.annotations.injectorspecific.OSGiService;
  */
 @Model(adaptables = {SlingHttpServletRequest.class, Resource.class})
 public class MatchListDataSource extends AbstractLeagueCardListDataSource {
+
+  private static final Logger LOG = LoggerFactory.getLogger(MatchListDataSource.class);
 
   @OSGiService
   @Optional
@@ -47,6 +51,7 @@ public class MatchListDataSource extends AbstractLeagueCardListDataSource {
             m.get("mid"), this, "card", "match-" + i).withGoals(m.get("hg"), m.get("ag")));
         i++;
       } catch (final Exception e) {
+        LOG.error("MatchListDataSource: {}", e.getMessage());
         // null-safe: skip a match that fails to build
       }
     }

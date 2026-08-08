@@ -11,6 +11,8 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.Optional;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Match goals timeline, keyed on the {@code match} route param. Thin adapter over
@@ -19,6 +21,8 @@ import org.apache.sling.models.annotations.injectorspecific.OSGiService;
  */
 @Model(adaptables = {SlingHttpServletRequest.class, Resource.class})
 public class MatchGoalsCardListDataSource extends AbstractLeagueCardListDataSource {
+
+  private static final Logger LOG = LoggerFactory.getLogger(MatchGoalsCardListDataSource.class);
 
   @OSGiService
   @Optional
@@ -40,6 +44,7 @@ public class MatchGoalsCardListDataSource extends AbstractLeagueCardListDataSour
             "goal-" + i).withPortrait(g.get("portrait")));
         i++;
       } catch (final Exception e) {
+        LOG.error("MatchGoalsCardListDataSource: {}", e.getMessage());
         // null-safe
       }
     }

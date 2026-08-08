@@ -18,6 +18,8 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.Optional;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * A player's last-5-matches table. Thin adapter over {@link PlayerService#getLast5Rows}; the player
@@ -27,6 +29,8 @@ import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 @Model(adaptables = {SlingHttpServletRequest.class, Resource.class})
 public class PlayerLast5TableDataSource extends BaseContainerSlingModelDataSource
     implements KestrosTable {
+
+  private static final Logger LOG = LoggerFactory.getLogger(PlayerLast5TableDataSource.class);
 
   @OSGiService
   @Optional
@@ -55,6 +59,7 @@ public class PlayerLast5TableDataSource extends BaseContainerSlingModelDataSourc
         }
         headers.add(h);
       } catch (final Exception e) {
+        LOG.error("PlayerLast5TableDataSource: {}", e.getMessage());
         // null-safe
       }
     }
@@ -85,6 +90,7 @@ public class PlayerLast5TableDataSource extends BaseContainerSlingModelDataSourc
         rows.add(new SyntheticTableRow(cells, this, "tableRow", "r-" + i));
         i++;
       } catch (final Exception e) {
+        LOG.error("PlayerLast5TableDataSource: {}", e.getMessage());
         // null-safe
       }
     }

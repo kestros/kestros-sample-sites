@@ -11,6 +11,8 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.Optional;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Results / fixtures grouped by matchweek ({@code mode} property), ascending. Thin adapter over
@@ -19,6 +21,8 @@ import org.apache.sling.models.annotations.injectorspecific.OSGiService;
  */
 @Model(adaptables = {SlingHttpServletRequest.class, Resource.class})
 public class GroupedMatchListDataSource extends AbstractLeagueCardListDataSource {
+
+  private static final Logger LOG = LoggerFactory.getLogger(GroupedMatchListDataSource.class);
 
   @OSGiService
   @Optional
@@ -45,6 +49,7 @@ public class GroupedMatchListDataSource extends AbstractLeagueCardListDataSource
             (List<Map<String, String>>) week.get("matches"), this, "card", "mw-" + i));
         i++;
       } catch (final Exception e) {
+        LOG.error("GroupedMatchListDataSource: {}", e.getMessage());
         // null-safe: skip a group that fails to build
       }
     }

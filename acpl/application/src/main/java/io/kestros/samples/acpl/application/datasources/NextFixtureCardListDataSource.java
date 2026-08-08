@@ -11,6 +11,8 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.Optional;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Next-fixture card for a team-detail page. Thin adapter over {@link TeamService#getNextFixtureCard};
@@ -18,6 +20,8 @@ import org.apache.sling.models.annotations.injectorspecific.OSGiService;
  */
 @Model(adaptables = {SlingHttpServletRequest.class, Resource.class})
 public class NextFixtureCardListDataSource extends AbstractLeagueCardListDataSource {
+
+  private static final Logger LOG = LoggerFactory.getLogger(NextFixtureCardListDataSource.class);
 
   @OSGiService
   @Optional
@@ -39,6 +43,7 @@ public class NextFixtureCardListDataSource extends AbstractLeagueCardListDataSou
           fixture.get("meta"), fixture.get("base"), fixture.get("href"), this, "nextFixture",
           "next-fixture"));
     } catch (final Exception e) {
+      LOG.error("NextFixtureCardListDataSource: {}", e.getMessage());
       // null-safe
     }
     return cards;

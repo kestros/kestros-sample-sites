@@ -11,6 +11,8 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.Optional;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Current-season statistic tiles for a player-detail page. Thin adapter over
@@ -19,6 +21,8 @@ import org.apache.sling.models.annotations.injectorspecific.OSGiService;
  */
 @Model(adaptables = {SlingHttpServletRequest.class, Resource.class})
 public class PlayerStatsCardListDataSource extends AbstractLeagueCardListDataSource {
+
+  private static final Logger LOG = LoggerFactory.getLogger(PlayerStatsCardListDataSource.class);
 
   @OSGiService
   @Optional
@@ -39,6 +43,7 @@ public class PlayerStatsCardListDataSource extends AbstractLeagueCardListDataSou
             this, "stat", "pstat-" + i));
         i++;
       } catch (final Exception e) {
+        LOG.error("PlayerStatsCardListDataSource: {}", e.getMessage());
         // null-safe
       }
     }

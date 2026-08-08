@@ -18,6 +18,8 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.Optional;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * League-wide leaders table (players index). Thin adapter over
@@ -27,6 +29,8 @@ import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 @Model(adaptables = {SlingHttpServletRequest.class, Resource.class})
 public class LeagueLeadersTableDataSource extends BaseContainerSlingModelDataSource
     implements KestrosTable {
+
+  private static final Logger LOG = LoggerFactory.getLogger(LeagueLeadersTableDataSource.class);
 
   @OSGiService
   @Optional
@@ -50,6 +54,7 @@ public class LeagueLeadersTableDataSource extends BaseContainerSlingModelDataSou
         }
         headers.add(h);
       } catch (final Exception e) {
+        LOG.error("LeagueLeadersTableDataSource: {}", e.getMessage());
         // null-safe
       }
     }
@@ -80,6 +85,7 @@ public class LeagueLeadersTableDataSource extends BaseContainerSlingModelDataSou
         rows.add(new SyntheticTableRow(cells, this, "tableRow", "r-" + i));
         i++;
       } catch (final Exception e) {
+        LOG.error("LeagueLeadersTableDataSource: {}", e.getMessage());
         // null-safe: skip a row that fails to build
       }
     }

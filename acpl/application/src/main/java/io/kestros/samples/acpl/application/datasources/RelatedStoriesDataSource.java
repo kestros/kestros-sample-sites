@@ -11,6 +11,8 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.Optional;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Related-stories card list for a story page (stories sharing a club, backfilled with other recent
@@ -19,6 +21,8 @@ import org.apache.sling.models.annotations.injectorspecific.OSGiService;
  */
 @Model(adaptables = {SlingHttpServletRequest.class, Resource.class})
 public class RelatedStoriesDataSource extends AbstractLeagueCardListDataSource {
+
+  private static final Logger LOG = LoggerFactory.getLogger(RelatedStoriesDataSource.class);
 
   @OSGiService
   @Optional
@@ -41,6 +45,7 @@ public class RelatedStoriesDataSource extends AbstractLeagueCardListDataSource {
             s.get("href"), s.get("category"), s.get("byline"), this, "card", "rel-" + i));
         i++;
       } catch (final Exception e) {
+        LOG.error("RelatedStoriesDataSource: {}", e.getMessage());
         // null-safe
       }
     }

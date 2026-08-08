@@ -11,6 +11,8 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.Optional;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Latest-news card list. Thin adapter over {@link StoryService#getStoryCards}; a {@code limit}
@@ -18,6 +20,8 @@ import org.apache.sling.models.annotations.injectorspecific.OSGiService;
  */
 @Model(adaptables = {SlingHttpServletRequest.class, Resource.class})
 public class StoriesCardListDataSource extends AbstractLeagueCardListDataSource {
+
+  private static final Logger LOG = LoggerFactory.getLogger(StoriesCardListDataSource.class);
 
   @OSGiService
   @Optional
@@ -46,6 +50,7 @@ public class StoriesCardListDataSource extends AbstractLeagueCardListDataSource 
             .withLayout(leadList ? (i == 0 ? "story-lead" : "story-row") : null));
         i++;
       } catch (final Exception e) {
+        LOG.error("StoriesCardListDataSource: {}", e.getMessage());
         // null-safe: skip a story that fails to build
       }
     }

@@ -18,6 +18,8 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.Optional;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Match statistics table (Home / Stat / Away). Thin adapter over
@@ -27,6 +29,8 @@ import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 @Model(adaptables = {SlingHttpServletRequest.class, Resource.class})
 public class MatchStatsTableDataSource extends BaseContainerSlingModelDataSource
     implements KestrosTable {
+
+  private static final Logger LOG = LoggerFactory.getLogger(MatchStatsTableDataSource.class);
 
   @OSGiService
   @Optional
@@ -51,6 +55,7 @@ public class MatchStatsTableDataSource extends BaseContainerSlingModelDataSource
       try {
         headers.add(new SyntheticTableHeader(labels[i], this, "tableHeader", "h-" + i));
       } catch (final Exception e) {
+        LOG.error("MatchStatsTableDataSource: {}", e.getMessage());
         // null-safe
       }
     }
@@ -74,6 +79,7 @@ public class MatchStatsTableDataSource extends BaseContainerSlingModelDataSource
         rows.add(new SyntheticTableRow(cells, this, "tableRow", "r-" + i));
         i++;
       } catch (final Exception e) {
+        LOG.error("MatchStatsTableDataSource: {}", e.getMessage());
         // null-safe
       }
     }

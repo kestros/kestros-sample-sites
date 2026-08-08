@@ -17,6 +17,8 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.Optional;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * League standings table. Thin adapter over {@link StandingsService}; the node configures
@@ -26,6 +28,8 @@ import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 @Model(adaptables = {SlingHttpServletRequest.class, Resource.class})
 public class StandingsTableDataSource extends BaseContainerSlingModelDataSource
     implements KestrosTable {
+
+  private static final Logger LOG = LoggerFactory.getLogger(StandingsTableDataSource.class);
 
   private static final String[] ALL_COLUMNS =
       {"pos", "club", "p", "w", "d", "l", "gf", "ga", "gd", "pts"};
@@ -76,6 +80,7 @@ public class StandingsTableDataSource extends BaseContainerSlingModelDataSource
         }
         headers.add(h);
       } catch (final Exception e) {
+        LOG.error("StandingsTableDataSource: {}", e.getMessage());
         // null-safe: skip a header that fails to build
       }
     }
@@ -114,6 +119,7 @@ public class StandingsTableDataSource extends BaseContainerSlingModelDataSource
             rowPrefix(zones, String.valueOf(row.get("pos"))), "r-" + i));
         i++;
       } catch (final Exception e) {
+        LOG.error("StandingsTableDataSource: {}", e.getMessage());
         // null-safe: skip a row that fails to build
       }
     }

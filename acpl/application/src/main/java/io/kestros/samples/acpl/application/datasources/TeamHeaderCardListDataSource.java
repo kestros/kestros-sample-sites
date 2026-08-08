@@ -11,6 +11,8 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.Optional;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Team-detail header, keyed on the {@code team} route param. Thin adapter over
@@ -19,6 +21,8 @@ import org.apache.sling.models.annotations.injectorspecific.OSGiService;
  */
 @Model(adaptables = {SlingHttpServletRequest.class, Resource.class})
 public class TeamHeaderCardListDataSource extends AbstractLeagueCardListDataSource {
+
+  private static final Logger LOG = LoggerFactory.getLogger(TeamHeaderCardListDataSource.class);
 
   @OSGiService
   @Optional
@@ -40,6 +44,7 @@ public class TeamHeaderCardListDataSource extends AbstractLeagueCardListDataSour
           header.get("place"), header.get("meta"), header.get("base"),
           this, "teamHeader", "team-header").withColor(header.get("color")));
     } catch (final Exception e) {
+      LOG.error("TeamHeaderCardListDataSource: {}", e.getMessage());
       // null-safe: skip on build failure
     }
     return cards;

@@ -11,6 +11,8 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.Optional;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Match-detail header, keyed on the {@code match} route param (featured match when absent). Thin
@@ -19,6 +21,8 @@ import org.apache.sling.models.annotations.injectorspecific.OSGiService;
  */
 @Model(adaptables = {SlingHttpServletRequest.class, Resource.class})
 public class MatchHeaderCardListDataSource extends AbstractLeagueCardListDataSource {
+
+  private static final Logger LOG = LoggerFactory.getLogger(MatchHeaderCardListDataSource.class);
 
   @OSGiService
   @Optional
@@ -42,6 +46,7 @@ public class MatchHeaderCardListDataSource extends AbstractLeagueCardListDataSou
           header.get("base"), this, "matchHeader", "match-header")
           .withReportHref(header.get("reportHref")));
     } catch (final Exception e) {
+      LOG.error("MatchHeaderCardListDataSource: {}", e.getMessage());
       // null-safe
     }
     return cards;
