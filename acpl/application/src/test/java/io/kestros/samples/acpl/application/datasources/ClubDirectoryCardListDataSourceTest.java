@@ -68,20 +68,6 @@ public class ClubDirectoryCardListDataSourceTest {
     logger.detachAppender(appender);
   }
 
-  private Map<String, String> goodClub() {
-    final Map<String, String> club = new HashMap<>();
-    club.put("slug", "harborside");
-    club.put("name", "Harborside United");
-    club.put("city", "Harborside");
-    club.put("stadium", "The Quay");
-    club.put("mgr", "A Manager");
-    club.put("pos", "1");
-    club.put("record", "10-0-0");
-    club.put("base", "/content/acpl");
-    club.put("href", "/content/acpl/teams/harborside.html");
-    return club;
-  }
-
   @SuppressWarnings("unchecked")
   private Map<String, String> throwingClub() {
     final Map<String, String> club = mock(Map.class);
@@ -123,9 +109,17 @@ public class ClubDirectoryCardListDataSourceTest {
   }
 
   @Test
-  public void testNothingIsLoggedWhenNothingFails() {
-    // The negative control. Both other tests feed only failing rows, so a log line hoisted out of the
-    // catch and into the loop body would keep them green. This one fails if anything logs at all.
+  public void testNothingIsLoggedWhenThereAreNoRows() {
+    // What this covers: handed nothing, the datasource is silent. That is all it covers.
+    //
+    // It was added as a negative control against a log line being hoisted out of the catch and into
+    // the loop body - and it CANNOT detect that, because with an empty list the loop body never runs.
+    // A reviewer proved it by mutation: hoisting the log leaves this test green and is caught by
+    // testFailedClubIsLogged instead. The honest label is the one above.
+    //
+    // A control against a SUCCEEDING club is not reachable here: SyntheticClubCard extends
+    // BaseContainerSyntheticResource, which needs an ancestor page sling-mock does not provide
+    // (NoValidAncestorException). That case needs the instance from the card's step 1.
     when(teamService.getClubDirectoryCards(anyString())).thenReturn(
         new ArrayList<Map<String, String>>());
 
