@@ -9,6 +9,12 @@ import java.util.Map;
  */
 public interface LeagueDataService {
 
+  /**
+   * All clubs.
+   *
+   * @return a copy of the club list; mutating it does not affect the service. The club maps inside
+   *     it are still the service's own — do not modify them.
+   */
   List<Map<String, Object>> getClubs();
 
   Map<String, Object> getClub(String slug);
@@ -19,15 +25,36 @@ public interface LeagueDataService {
   /** Convenience: club short code for a slug. */
   String getClubShort(String slug);
 
-  /** Current-season standings, pre-sorted by position. */
+  /**
+   * Current-season standings, pre-sorted by position.
+   *
+   * @return a copy of the standings list; mutating it does not affect the service. The rows inside
+   *     it are still the service's own — do not modify them.
+   */
   List<Map<String, Object>> getStandings();
 
-  /** Current-season recent results, newest first. */
+  /**
+   * Current-season recent results, newest first.
+   *
+   * @return a copy of the results list; mutating it does not affect the service. The rows inside it
+   *     are still the service's own — do not modify them.
+   */
   List<Map<String, Object>> getRecentResults();
 
-  /** Current-season upcoming fixtures. */
+  /**
+   * Current-season upcoming fixtures.
+   *
+   * @return a copy of the fixtures list; mutating it does not affect the service. The rows inside it
+   *     are still the service's own — do not modify them.
+   */
   List<Map<String, Object>> getUpcomingFixtures();
 
+  /**
+   * All players.
+   *
+   * @return a copy of the player list; mutating it does not affect the service. The player maps
+   *     inside it are still the service's own — do not modify them.
+   */
   List<Map<String, Object>> getPlayers();
 
   Map<String, Object> getPlayer(String slug);
@@ -53,10 +80,27 @@ public interface LeagueDataService {
   /** All current-season played matches, ordered by matchweek then date (ascending, matchweek 1 first). */
   List<Map<String, Object>> getPlayedMatches();
 
+  /**
+   * All stories.
+   *
+   * @return a copy of the story list; mutating it does not affect the service. The story maps inside
+   *     it are still the service's own — do not modify them.
+   */
   List<Map<String, Object>> getStories();
 
+  /**
+   * The featured match.
+   *
+   * @return a copy of the featured-match map; mutating it does not affect the service. Its nested
+   *     values are still the service's own — do not modify them.
+   */
   Map<String, Object> getFeaturedMatch();
 
-  /** Played meetings between two clubs across ALL seasons, newest first, up to {@code limit}. */
+  /**
+   * Played meetings between two clubs across ALL seasons, newest first, up to {@code limit}.
+   *
+   * @return fully independent rows, each stamped with its {@code season}. Neither the list nor
+   *     anything nested inside a row is shared with the service.
+   */
   List<Map<String, Object>> getMeetings(String clubA, String clubB, int limit);
 }

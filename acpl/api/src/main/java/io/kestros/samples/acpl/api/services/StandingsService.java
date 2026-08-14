@@ -6,7 +6,13 @@ import java.util.Map;
 /** Display-ready standings data for the standings table datasource. */
 public interface StandingsService {
 
-  /** Standings rows (raw column values), position-ordered, optionally trimmed to the top {@code limit}. */
+  /**
+   * Standings rows (raw column values), position-ordered, optionally trimmed to the top
+   * {@code limit}.
+   *
+   * @return a copy, never a view onto the underlying standings; mutating it does not affect the
+   *     service. The rows inside it are still the service's own — do not modify them.
+   */
   List<Map<String, Object>> getStandingsRows(int limit);
 
   /** Standings rows for the given club slugs only (position order) — mini-table slices. */
