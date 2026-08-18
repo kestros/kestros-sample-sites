@@ -11,6 +11,8 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.Optional;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Player-detail header, keyed on the {@code player} route param. Thin adapter over
@@ -19,6 +21,8 @@ import org.apache.sling.models.annotations.injectorspecific.OSGiService;
  */
 @Model(adaptables = {SlingHttpServletRequest.class, Resource.class})
 public class PlayerHeaderCardListDataSource extends AbstractLeagueCardListDataSource {
+
+  private static final Logger LOG = LoggerFactory.getLogger(PlayerHeaderCardListDataSource.class);
 
   @OSGiService
   @Optional
@@ -41,6 +45,7 @@ public class PlayerHeaderCardListDataSource extends AbstractLeagueCardListDataSo
           header.get("clubHref"), header.get("number"), header.get("pos"), header.get("meta"),
           header.get("photo"), header.get("base"), this, "playerHeader", "player-header").withClubColor(header.get("clubColor")));
     } catch (final Exception e) {
+      LOG.error("element could not be built: {}", e.getMessage(), e);
       // null-safe
     }
     return cards;

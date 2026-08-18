@@ -11,6 +11,8 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.Optional;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Goals as timeline dots on a minutes axis. Thin adapter over
@@ -19,6 +21,8 @@ import org.apache.sling.models.annotations.injectorspecific.OSGiService;
  */
 @Model(adaptables = {SlingHttpServletRequest.class, Resource.class})
 public class MatchTimelineCardListDataSource extends AbstractLeagueCardListDataSource {
+
+  private static final Logger LOG = LoggerFactory.getLogger(MatchTimelineCardListDataSource.class);
 
   @OSGiService
   @Optional
@@ -40,6 +44,7 @@ public class MatchTimelineCardListDataSource extends AbstractLeagueCardListDataS
             "tl-" + i).asTimelineDot(g.get("leftPct"), g.get("color")));
         i++;
       } catch (final Exception e) {
+        LOG.error("row skipped: {}", e.getMessage(), e);
         // null-safe
       }
     }

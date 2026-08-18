@@ -11,6 +11,8 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.Optional;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * The featured story as the home-page hero. Thin adapter over
@@ -19,6 +21,8 @@ import org.apache.sling.models.annotations.injectorspecific.OSGiService;
  */
 @Model(adaptables = {SlingHttpServletRequest.class, Resource.class})
 public class HeroStoryCardListDataSource extends AbstractLeagueCardListDataSource {
+
+  private static final Logger LOG = LoggerFactory.getLogger(HeroStoryCardListDataSource.class);
 
   @OSGiService
   @Optional
@@ -39,6 +43,7 @@ public class HeroStoryCardListDataSource extends AbstractLeagueCardListDataSourc
       cards.add(new SyntheticHeroStoryCard(s.get("headline"), s.get("excerpt"), s.get("image"),
           s.get("href"), s.get("category"), s.get("byline"), this, "hero", "story-hero"));
     } catch (final Exception e) {
+      LOG.error("element could not be built: {}", e.getMessage(), e);
       // null-safe
     }
     return cards;

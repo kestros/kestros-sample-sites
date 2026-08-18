@@ -11,6 +11,8 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.Optional;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Recent-form badges for a team-detail page. Thin adapter over {@link TeamService#getFormBadges};
@@ -18,6 +20,8 @@ import org.apache.sling.models.annotations.injectorspecific.OSGiService;
  */
 @Model(adaptables = {SlingHttpServletRequest.class, Resource.class})
 public class TeamFormCardListDataSource extends AbstractLeagueCardListDataSource {
+
+  private static final Logger LOG = LoggerFactory.getLogger(TeamFormCardListDataSource.class);
 
   @OSGiService
   @Optional
@@ -50,6 +54,7 @@ public class TeamFormCardListDataSource extends AbstractLeagueCardListDataSource
             badge.get("tip"), this, "form", "form-" + i));
         i++;
       } catch (final Exception e) {
+        LOG.error("row skipped: {}", e.getMessage(), e);
         // null-safe
       }
     }

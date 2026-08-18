@@ -11,6 +11,8 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.Optional;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Pre-match info for the match-preview page (unplayed matches). Thin adapter over
@@ -18,6 +20,8 @@ import org.apache.sling.models.annotations.injectorspecific.OSGiService;
  */
 @Model(adaptables = {SlingHttpServletRequest.class, Resource.class})
 public class MatchPreviewCardListDataSource extends AbstractLeagueCardListDataSource {
+
+  private static final Logger LOG = LoggerFactory.getLogger(MatchPreviewCardListDataSource.class);
 
   @OSGiService
   @Optional
@@ -38,6 +42,7 @@ public class MatchPreviewCardListDataSource extends AbstractLeagueCardListDataSo
     try {
       cards.add(new SyntheticMatchPreviewCard(info, this, "preview", "match-preview"));
     } catch (final Exception e) {
+      LOG.error("element could not be built: {}", e.getMessage(), e);
       // null-safe
     }
     return cards;

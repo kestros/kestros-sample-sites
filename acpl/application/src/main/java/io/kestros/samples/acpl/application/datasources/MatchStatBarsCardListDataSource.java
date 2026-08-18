@@ -11,6 +11,8 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.Optional;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Match statistics as mirrored home/away bars. Thin adapter over
@@ -19,6 +21,8 @@ import org.apache.sling.models.annotations.injectorspecific.OSGiService;
  */
 @Model(adaptables = {SlingHttpServletRequest.class, Resource.class})
 public class MatchStatBarsCardListDataSource extends AbstractLeagueCardListDataSource {
+
+  private static final Logger LOG = LoggerFactory.getLogger(MatchStatBarsCardListDataSource.class);
 
   @OSGiService
   @Optional
@@ -38,6 +42,7 @@ public class MatchStatBarsCardListDataSource extends AbstractLeagueCardListDataS
         cards.add(new SyntheticStatLegendCard(header.get("homeName"), header.get("awayName"),
             this, "stat", "stat-legend"));
       } catch (final Exception e) {
+        LOG.error("element could not be built: {}", e.getMessage(), e);
         // null-safe
       }
     }
@@ -49,6 +54,7 @@ public class MatchStatBarsCardListDataSource extends AbstractLeagueCardListDataS
             .withColors(s.get("homeColor"), s.get("awayColor")));
         i++;
       } catch (final Exception e) {
+        LOG.error("row skipped: {}", e.getMessage(), e);
         // null-safe
       }
     }
