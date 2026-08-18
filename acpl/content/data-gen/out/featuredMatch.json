@@ -1,0 +1,102 @@
+{
+  "mw": 13,
+  "date": "2025-12-26",
+  "day": "Fri",
+  "home": "harborside",
+  "away": "oakvale",
+  "kickoff": "17:00",
+  "venue": "Harborside Coliseum",
+  "attendance": 22729,
+  "referee": "L. Caruso",
+  "weather": "6\u00b0C, overcast",
+  "played": true,
+  "hg": 5,
+  "ag": 0,
+  "goals": [
+    {
+      "minute": 13,
+      "team": "harborside",
+      "scorer": "Theo Bramble",
+      "scorerSlug": "theo-bramble",
+      "note": "",
+      "assist": "Jordan Bex"
+    },
+    {
+      "minute": 19,
+      "team": "harborside",
+      "scorer": "Iv\u00e1n Ramos",
+      "scorerSlug": "iv\u00e1n-ramos",
+      "note": "free-kick",
+      "assist": "Eli Whitfield"
+    },
+    {
+      "minute": 41,
+      "team": "harborside",
+      "scorer": "Marco Russo",
+      "scorerSlug": "marco-russo",
+      "note": ""
+    },
+    {
+      "minute": 83,
+      "team": "harborside",
+      "scorer": "Eli Whitfield",
+      "scorerSlug": "eli-whitfield",
+      "note": "volley"
+    },
+    {
+      "minute": 89,
+      "team": "harborside",
+      "scorer": "Felipe Adekunle",
+      "scorerSlug": "felipe-adekunle",
+      "note": "penalty"
+    }
+  ],
+  "cards": [
+    {
+      "minute": 32,
+      "team": "oakvale",
+      "player": "Aiden Novak",
+      "card": "yellow"
+    }
+  ],
+  "stats": [
+    {
+      "label": "Possession",
+      "h": "55%",
+      "a": "45%",
+      "hp": 55,
+      "ap": 45
+    },
+    {
+      "label": "Shots",
+      "h": "15",
+      "a": "5"
+    },
+    {
+      "label": "Shots on target",
+      "h": "6",
+      "a": "1"
+    },
+    {
+      "label": "Corners",
+      "h": "8",
+      "a": "5"
+    },
+    {
+      "label": "Fouls",
+      "h": "15",
+      "a": "7"
+    },
+    {
+      "label": "Pass accuracy",
+      "h": "74%",
+      "a": "70%"
+    },
+    {
+      "label": "xG",
+      "h": "4.4",
+      "a": "0.1"
+    }
+  ],
+  "id": 1337
+}

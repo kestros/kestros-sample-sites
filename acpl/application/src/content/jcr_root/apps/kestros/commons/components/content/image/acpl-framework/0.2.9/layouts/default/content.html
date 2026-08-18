@@ -1,0 +1,7 @@
+<sly data-sly-use.image="${'io.kestros.cms.components.basic.core.content.image.ImageDataSourceComponent'}"/>
+<sly data-sly-test.hasHref="${image.href}">
+    <a href="${image.href @ context='uri'}"><img src="${image.imagePath}" alt="${image.altText}" class="img-fluid ${image.inlineVariations}"/></a>
+</sly>
+<sly data-sly-test="${!hasHref}">
+    <img src="${image.imagePath}" alt="${image.altText}" class="img-fluid ${image.inlineVariations}"/>
+</sly>

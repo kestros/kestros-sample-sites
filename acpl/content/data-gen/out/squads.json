@@ -1,0 +1,3366 @@
+{
+  "harborside": [
+    {
+      "slug": "aiden-marsh",
+      "name": "Aiden Marsh",
+      "club": "harborside",
+      "pos": "GK",
+      "num": 1,
+      "age": 20,
+      "height": "1.88 m",
+      "nationality": "Argentine"
+    },
+    {
+      "slug": "diego-lowe",
+      "name": "Diego Lowe",
+      "club": "harborside",
+      "pos": "RB",
+      "num": 2,
+      "age": 31,
+      "height": "1.91 m",
+      "nationality": "Italian"
+    },
+    {
+      "slug": "bastian-tovar",
+      "name": "Bastian Tovar",
+      "club": "harborside",
+      "pos": "CB",
+      "num": 3,
+      "age": 33,
+      "height": "1.92 m",
+      "nationality": "Senegalese"
+    },
+    {
+      "slug": "felipe-adekunle",
+      "name": "Felipe Adekunle",
+      "club": "harborside",
+      "pos": "CB",
+      "num": 4,
+      "age": 22,
+      "height": "1.92 m",
+      "nationality": "German"
+    },
+    {
+      "slug": "sang-jin-choi",
+      "name": "Sang-jin Choi",
+      "club": "harborside",
+      "pos": "LB",
+      "num": 5,
+      "age": 29,
+      "height": "1.78 m",
+      "nationality": "Italian"
+    },
+    {
+      "slug": "hugh-carter",
+      "name": "Hugh Carter",
+      "club": "harborside",
+      "pos": "CDM",
+      "num": 6,
+      "age": 27,
+      "height": "1.76 m",
+      "nationality": "Brazilian"
+    },
+    {
+      "slug": "yusuf-akin",
+      "name": "Yusuf Akin",
+      "club": "harborside",
+      "pos": "RW",
+      "num": 7,
+      "age": 21,
+      "height": "1.92 m",
+      "nationality": "Turkish"
+    },
+    {
+      "slug": "oliver-reid",
+      "name": "Oliver Reid",
+      "club": "harborside",
+      "pos": "CM",
+      "num": 8,
+      "age": 24,
+      "height": "1.92 m",
+      "nationality": "Spanish"
+    },
+    {
+      "slug": "jordan-bex",
+      "name": "Jordan Bex",
+      "club": "harborside",
+      "pos": "ST",
+      "num": 9,
+      "age": 25,
+      "height": "1.94 m",
+      "nationality": "English"
+    },
+    {
+      "slug": "mateo-reyes",
+      "name": "Mateo Reyes",
+      "club": "harborside",
+      "pos": "CAM",
+      "num": 10,
+      "age": 26,
+      "height": "1.81 m",
+      "nationality": "Uruguayan"
+    },
+    {
+      "slug": "tomas-vela",
+      "name": "Tomas Vela",
+      "club": "harborside",
+      "pos": "LW",
+      "num": 11,
+      "age": 23,
+      "height": "1.79 m",
+      "nationality": "French"
+    },
+    {
+      "slug": "sven-riley",
+      "name": "Sven Riley",
+      "club": "harborside",
+      "pos": "GK",
+      "num": 12,
+      "age": 25,
+      "height": "1.73 m",
+      "nationality": "French"
+    },
+    {
+      "slug": "kasper-beck",
+      "name": "Kasper Beck",
+      "club": "harborside",
+      "pos": "CM",
+      "num": 14,
+      "age": 31,
+      "height": "1.77 m",
+      "nationality": "Korean"
+    },
+    {
+      "slug": "lukas-holm",
+      "name": "Lukas Holm",
+      "club": "harborside",
+      "pos": "CB",
+      "num": 15,
+      "age": 20,
+      "height": "1.88 m",
+      "nationality": "Russian"
+    },
+    {
+      "slug": "marco-russo",
+      "name": "Marco Russo",
+      "club": "harborside",
+      "pos": "RB",
+      "num": 16,
+      "age": 25,
+      "height": "1.94 m",
+      "nationality": "Senegalese"
+    },
+    {
+      "slug": "iv\u00e1n-ramos",
+      "name": "Iv\u00e1n Ramos",
+      "club": "harborside",
+      "pos": "LB",
+      "num": 17,
+      "age": 23,
+      "height": "1.87 m",
+      "nationality": "German"
+    },
+    {
+      "slug": "theo-bramble",
+      "name": "Theo Bramble",
+      "club": "harborside",
+      "pos": "CM",
+      "num": 18,
+      "age": 30,
+      "height": "1.89 m",
+      "nationality": "Senegalese"
+    },
+    {
+      "slug": "patrice-ndiaye",
+      "name": "Patrice Ndiaye",
+      "club": "harborside",
+      "pos": "ST",
+      "num": 19,
+      "age": 31,
+      "height": "1.79 m",
+      "nationality": "Spanish"
+    },
+    {
+      "slug": "niko-petrov",
+      "name": "Niko Petrov",
+      "club": "harborside",
+      "pos": "CAM",
+      "num": 20,
+      "age": 28,
+      "height": "1.88 m",
+      "nationality": "Senegalese"
+    },
+    {
+      "slug": "eli-whitfield",
+      "name": "Eli Whitfield",
+      "club": "harborside",
+      "pos": "LW",
+      "num": 21,
+      "age": 32,
+      "height": "1.79 m",
+      "nationality": "Brazilian"
+    },
+    {
+      "slug": "caio-mendes",
+      "name": "Caio Mendes",
+      "club": "harborside",
+      "pos": "RW",
+      "num": 22,
+      "age": 26,
+      "height": "1.79 m",
+      "nationality": "Japanese"
+    },
+    {
+      "slug": "stefan-korhonen",
+      "name": "Stefan Korhonen",
+      "club": "harborside",
+      "pos": "ST",
+      "num": 23,
+      "age": 20,
+      "height": "1.82 m",
+      "nationality": "Argentine"
+    },
+    {
+      "slug": "andre-berg",
+      "name": "Andre Berg",
+      "club": "harborside",
+      "pos": "CB",
+      "num": 24,
+      "age": 22,
+      "height": "1.79 m",
+      "nationality": "Dutch"
+    },
+    {
+      "slug": "rory-quinn",
+      "name": "Rory Quinn",
+      "club": "harborside",
+      "pos": "CDM",
+      "num": 25,
+      "age": 22,
+      "height": "1.92 m",
+      "nationality": "Russian"
+    },
+    {
+      "slug": "kai-osei",
+      "name": "Kai Osei",
+      "club": "harborside",
+      "pos": "ST",
+      "num": 26,
+      "age": 26,
+      "height": "1.77 m",
+      "nationality": "Brazilian"
+    },
+    {
+      "slug": "owen-pryce",
+      "name": "Owen Pryce",
+      "club": "harborside",
+      "pos": "GK",
+      "num": 27,
+      "age": 30,
+      "height": "1.80 m",
+      "nationality": "Brazilian"
+    }
+  ],
+  "albion": [
+    {
+      "slug": "diego-marsh",
+      "name": "Diego Marsh",
+      "club": "albion",
+      "pos": "GK",
+      "num": 1,
+      "age": 27,
+      "height": "1.86 m",
+      "nationality": "Senegalese"
+    },
+    {
+      "slug": "gabriel-tovar",
+      "name": "Gabriel Tovar",
+      "club": "albion",
+      "pos": "GK",
+      "num": 2,
+      "age": 25,
+      "height": "1.88 m",
+      "nationality": "Nigerian"
+    },
+    {
+      "slug": "caio-kovac",
+      "name": "Caio Kovac",
+      "club": "albion",
+      "pos": "GK",
+      "num": 3,
+      "age": 24,
+      "height": "1.87 m",
+      "nationality": "Senegalese"
+    },
+    {
+      "slug": "eli-khan",
+      "name": "Eli Khan",
+      "club": "albion",
+      "pos": "CB",
+      "num": 4,
+      "age": 20,
+      "height": "1.83 m",
+      "nationality": "Uruguayan"
+    },
+    {
+      "slug": "malik-carter",
+      "name": "Malik Carter",
+      "club": "albion",
+      "pos": "CB",
+      "num": 5,
+      "age": 23,
+      "height": "1.73 m",
+      "nationality": "German"
+    },
+    {
+      "slug": "adam-sinclair",
+      "name": "Adam Sinclair",
+      "club": "albion",
+      "pos": "CB",
+      "num": 6,
+      "age": 34,
+      "height": "1.79 m",
+      "nationality": "French"
+    },
+    {
+      "slug": "finn-ivanov",
+      "name": "Finn Ivanov",
+      "club": "albion",
+      "pos": "CB",
+      "num": 7,
+      "age": 34,
+      "height": "1.86 m",
+      "nationality": "Italian"
+    },
+    {
+      "slug": "stefan-reid",
+      "name": "Stefan Reid",
+      "club": "albion",
+      "pos": "CB",
+      "num": 8,
+      "age": 20,
+      "height": "1.92 m",
+      "nationality": "Danish"
+    },
+    {
+      "slug": "adam-tovar",
+      "name": "Adam Tovar",
+      "club": "albion",
+      "pos": "RB",
+      "num": 9,
+      "age": 33,
+      "height": "1.78 m",
+      "nationality": "Japanese"
+    },
+    {
+      "slug": "iv\u00e1n-sokolov",
+      "name": "Iv\u00e1n Sokolov",
+      "club": "albion",
+      "pos": "RB",
+      "num": 10,
+      "age": 19,
+      "height": "1.86 m",
+      "nationality": "Spanish"
+    },
+    {
+      "slug": "pavel-pryce",
+      "name": "Pavel Pryce",
+      "club": "albion",
+      "pos": "LB",
+      "num": 11,
+      "age": 33,
+      "height": "1.88 m",
+      "nationality": "Japanese"
+    },
+    {
+      "slug": "andre-tovar",
+      "name": "Andre Tovar",
+      "club": "albion",
+      "pos": "LB",
+      "num": 12,
+      "age": 20,
+      "height": "1.72 m",
+      "nationality": "Korean"
+    },
+    {
+      "slug": "anton-moreau",
+      "name": "Anton Moreau",
+      "club": "albion",
+      "pos": "CDM",
+      "num": 14,
+      "age": 27,
+      "height": "1.71 m",
+      "nationality": "German"
+    },
+    {
+      "slug": "oliver-russo",
+      "name": "Oliver Russo",
+      "club": "albion",
+      "pos": "CDM",
+      "num": 15,
+      "age": 30,
+      "height": "1.76 m",
+      "nationality": "Danish"
+    },
+    {
+      "slug": "diego-novak",
+      "name": "Diego Novak",
+      "club": "albion",
+      "pos": "CDM",
+      "num": 16,
+      "age": 20,
+      "height": "1.84 m",
+      "nationality": "Korean"
+    },
+    {
+      "slug": "leon-silva",
+      "name": "Leon Silva",
+      "club": "albion",
+      "pos": "CM",
+      "num": 17,
+      "age": 29,
+      "height": "1.95 m",
+      "nationality": "Japanese"
+    },
+    {
+      "slug": "owen-adekunle",
+      "name": "Owen Adekunle",
+      "club": "albion",
+      "pos": "CM",
+      "num": 18,
+      "age": 32,
+      "height": "1.76 m",
+      "nationality": "French"
+    },
+    {
+      "slug": "enzo-carter",
+      "name": "Enzo Carter",
+      "club": "albion",
+      "pos": "CM",
+      "num": 19,
+      "age": 32,
+      "height": "1.88 m",
+      "nationality": "Brazilian"
+    },
+    {
+      "slug": "niko-lindqvist",
+      "name": "Niko Lindqvist",
+      "club": "albion",
+      "pos": "CM",
+      "num": 20,
+      "age": 30,
+      "height": "1.75 m",
+      "nationality": "Uruguayan"
+    },
+    {
+      "slug": "sean-lindqvist",
+      "name": "Sean Lindqvist",
+      "club": "albion",
+      "pos": "CAM",
+      "num": 21,
+      "age": 29,
+      "height": "1.85 m",
+      "nationality": "Argentine"
+    },
+    {
+      "slug": "felipe-serrano",
+      "name": "Felipe Serrano",
+      "club": "albion",
+      "pos": "CAM",
+      "num": 22,
+      "age": 21,
+      "height": "1.80 m",
+      "nationality": "Korean"
+    },
+    {
+      "slug": "luca-khan",
+      "name": "Luca Khan",
+      "club": "albion",
+      "pos": "RW",
+      "num": 23,
+      "age": 22,
+      "height": "1.78 m",
+      "nationality": "Russian"
+    },
+    {
+      "slug": "jonas-holm",
+      "name": "Jonas Holm",
+      "club": "albion",
+      "pos": "RW",
+      "num": 24,
+      "age": 31,
+      "height": "1.75 m",
+      "nationality": "Korean"
+    },
+    {
+      "slug": "otto-moreau",
+      "name": "Otto Moreau",
+      "club": "albion",
+      "pos": "LW",
+      "num": 25,
+      "age": 21,
+      "height": "1.79 m",
+      "nationality": "English"
+    },
+    {
+      "slug": "aaron-reyes",
+      "name": "Aaron Reyes",
+      "club": "albion",
+      "pos": "LW",
+      "num": 26,
+      "age": 34,
+      "height": "1.80 m",
+      "nationality": "French"
+    },
+    {
+      "slug": "tomas-bianchi",
+      "name": "Tomas Bianchi",
+      "club": "albion",
+      "pos": "ST",
+      "num": 27,
+      "age": 31,
+      "height": "1.73 m",
+      "nationality": "Dutch"
+    },
+    {
+      "slug": "idris-riley",
+      "name": "Idris Riley",
+      "club": "albion",
+      "pos": "ST",
+      "num": 28,
+      "age": 31,
+      "height": "1.80 m",
+      "nationality": "Brazilian"
+    },
+    {
+      "slug": "yannick-walsh",
+      "name": "Yannick Walsh",
+      "club": "albion",
+      "pos": "ST",
+      "num": 29,
+      "age": 19,
+      "height": "1.73 m",
+      "nationality": "Italian"
+    }
+  ],
+  "cape-rangers": [
+    {
+      "slug": "nikolai-bramble",
+      "name": "Nikolai Bramble",
+      "club": "cape-rangers",
+      "pos": "GK",
+      "num": 1,
+      "age": 25,
+      "height": "1.92 m",
+      "nationality": "Argentine"
+    },
+    {
+      "slug": "diego-berg",
+      "name": "Diego Berg",
+      "club": "cape-rangers",
+      "pos": "GK",
+      "num": 2,
+      "age": 29,
+      "height": "1.77 m",
+      "nationality": "Nigerian"
+    },
+    {
+      "slug": "dante-ashworth",
+      "name": "Dante Ashworth",
+      "club": "cape-rangers",
+      "pos": "GK",
+      "num": 3,
+      "age": 32,
+      "height": "1.86 m",
+      "nationality": "Brazilian"
+    },
+    {
+      "slug": "eli-walsh",
+      "name": "Eli Walsh",
+      "club": "cape-rangers",
+      "pos": "CB",
+      "num": 4,
+      "age": 24,
+      "height": "1.75 m",
+      "nationality": "French"
+    },
+    {
+      "slug": "stefan-bright",
+      "name": "Stefan Bright",
+      "club": "cape-rangers",
+      "pos": "CB",
+      "num": 5,
+      "age": 27,
+      "height": "1.75 m",
+      "nationality": "Danish"
+    },
+    {
+      "slug": "otto-fischer",
+      "name": "Otto Fischer",
+      "club": "cape-rangers",
+      "pos": "CB",
+      "num": 6,
+      "age": 34,
+      "height": "1.84 m",
+      "nationality": "Spanish"
+    },
+    {
+      "slug": "lukas-yilmaz",
+      "name": "Lukas Yilmaz",
+      "club": "cape-rangers",
+      "pos": "CB",
+      "num": 7,
+      "age": 27,
+      "height": "1.85 m",
+      "nationality": "Dutch"
+    },
+    {
+      "slug": "aiden-holm",
+      "name": "Aiden Holm",
+      "club": "cape-rangers",
+      "pos": "CB",
+      "num": 8,
+      "age": 25,
+      "height": "1.80 m",
+      "nationality": "Danish"
+    },
+    {
+      "slug": "gabriel-reid",
+      "name": "Gabriel Reid",
+      "club": "cape-rangers",
+      "pos": "RB",
+      "num": 9,
+      "age": 19,
+      "height": "1.81 m",
+      "nationality": "Italian"
+    },
+    {
+      "slug": "mohammed-ndiaye",
+      "name": "Mohammed Ndiaye",
+      "club": "cape-rangers",
+      "pos": "RB",
+      "num": 10,
+      "age": 31,
+      "height": "1.93 m",
+      "nationality": "Brazilian"
+    },
+    {
+      "slug": "kai-reid",
+      "name": "Kai Reid",
+      "club": "cape-rangers",
+      "pos": "LB",
+      "num": 11,
+      "age": 24,
+      "height": "1.93 m",
+      "nationality": "Brazilian"
+    },
+    {
+      "slug": "iv\u00e1n-delgado",
+      "name": "Iv\u00e1n Delgado",
+      "club": "cape-rangers",
+      "pos": "LB",
+      "num": 12,
+      "age": 34,
+      "height": "1.92 m",
+      "nationality": "Russian"
+    },
+    {
+      "slug": "adam-choi",
+      "name": "Adam Choi",
+      "club": "cape-rangers",
+      "pos": "CDM",
+      "num": 14,
+      "age": 33,
+      "height": "1.70 m",
+      "nationality": "Korean"
+    },
+    {
+      "slug": "felipe-marchetti",
+      "name": "Felipe Marchetti",
+      "club": "cape-rangers",
+      "pos": "CDM",
+      "num": 15,
+      "age": 32,
+      "height": "1.73 m",
+      "nationality": "Korean"
+    },
+    {
+      "slug": "theo-walsh",
+      "name": "Theo Walsh",
+      "club": "cape-rangers",
+      "pos": "CDM",
+      "num": 16,
+      "age": 23,
+      "height": "1.79 m",
+      "nationality": "Italian"
+    },
+    {
+      "slug": "leon-costa",
+      "name": "Leon Costa",
+      "club": "cape-rangers",
+      "pos": "CM",
+      "num": 17,
+      "age": 23,
+      "height": "1.86 m",
+      "nationality": "Spanish"
+    },
+    {
+      "slug": "sacha-riley",
+      "name": "Sacha Riley",
+      "club": "cape-rangers",
+      "pos": "CM",
+      "num": 18,
+      "age": 26,
+      "height": "1.95 m",
+      "nationality": "French"
+    },
+    {
+      "slug": "gabriel-elamin",
+      "name": "Gabriel ElAmin",
+      "club": "cape-rangers",
+      "pos": "CM",
+      "num": 19,
+      "age": 34,
+      "height": "1.94 m",
+      "nationality": "Spanish"
+    },
+    {
+      "slug": "lukas-sorensen",
+      "name": "Lukas Sorensen",
+      "club": "cape-rangers",
+      "pos": "CM",
+      "num": 20,
+      "age": 28,
+      "height": "1.92 m",
+      "nationality": "French"
+    },
+    {
+      "slug": "tomas-berg",
+      "name": "Tomas Berg",
+      "club": "cape-rangers",
+      "pos": "CAM",
+      "num": 21,
+      "age": 21,
+      "height": "1.76 m",
+      "nationality": "Russian"
+    },
+    {
+      "slug": "bastian-marsh",
+      "name": "Bastian Marsh",
+      "club": "cape-rangers",
+      "pos": "CAM",
+      "num": 22,
+      "age": 22,
+      "height": "1.80 m",
+      "nationality": "Dutch"
+    },
+    {
+      "slug": "hugh-serrano",
+      "name": "Hugh Serrano",
+      "club": "cape-rangers",
+      "pos": "RW",
+      "num": 23,
+      "age": 27,
+      "height": "1.71 m",
+      "nationality": "Uruguayan"
+    },
+    {
+      "slug": "mateo-whitfield",
+      "name": "Mateo Whitfield",
+      "club": "cape-rangers",
+      "pos": "RW",
+      "num": 24,
+      "age": 22,
+      "height": "1.82 m",
+      "nationality": "German"
+    },
+    {
+      "slug": "sacha-bennett",
+      "name": "Sacha Bennett",
+      "club": "cape-rangers",
+      "pos": "LW",
+      "num": 25,
+      "age": 28,
+      "height": "1.72 m",
+      "nationality": "English"
+    },
+    {
+      "slug": "samir-costa",
+      "name": "Samir Costa",
+      "club": "cape-rangers",
+      "pos": "LW",
+      "num": 26,
+      "age": 24,
+      "height": "1.77 m",
+      "nationality": "French"
+    },
+    {
+      "slug": "aaron-berg",
+      "name": "Aaron Berg",
+      "club": "cape-rangers",
+      "pos": "ST",
+      "num": 27,
+      "age": 33,
+      "height": "1.75 m",
+      "nationality": "French"
+    },
+    {
+      "slug": "stefan-khan",
+      "name": "Stefan Khan",
+      "club": "cape-rangers",
+      "pos": "ST",
+      "num": 28,
+      "age": 25,
+      "height": "1.90 m",
+      "nationality": "Korean"
+    },
+    {
+      "slug": "kenji-oneill",
+      "name": "Kenji ONeill",
+      "club": "cape-rangers",
+      "pos": "ST",
+      "num": 29,
+      "age": 21,
+      "height": "1.86 m",
+      "nationality": "Dutch"
+    }
+  ],
+  "saint-marys": [
+    {
+      "slug": "yannick-bramble",
+      "name": "Yannick Bramble",
+      "club": "saint-marys",
+      "pos": "GK",
+      "num": 1,
+      "age": 31,
+      "height": "1.72 m",
+      "nationality": "Nigerian"
+    },
+    {
+      "slug": "patrice-park",
+      "name": "Patrice Park",
+      "club": "saint-marys",
+      "pos": "GK",
+      "num": 2,
+      "age": 21,
+      "height": "1.89 m",
+      "nationality": "Danish"
+    },
+    {
+      "slug": "hakim-serrano",
+      "name": "Hakim Serrano",
+      "club": "saint-marys",
+      "pos": "GK",
+      "num": 3,
+      "age": 22,
+      "height": "1.72 m",
+      "nationality": "Italian"
+    },
+    {
+      "slug": "bruno-haddad",
+      "name": "Bruno Haddad",
+      "club": "saint-marys",
+      "pos": "CB",
+      "num": 4,
+      "age": 32,
+      "height": "1.80 m",
+      "nationality": "Italian"
+    },
+    {
+      "slug": "niko-serrano",
+      "name": "Niko Serrano",
+      "club": "saint-marys",
+      "pos": "CB",
+      "num": 5,
+      "age": 20,
+      "height": "1.86 m",
+      "nationality": "Korean"
+    },
+    {
+      "slug": "felipe-holm",
+      "name": "Felipe Holm",
+      "club": "saint-marys",
+      "pos": "CB",
+      "num": 6,
+      "age": 28,
+      "height": "1.81 m",
+      "nationality": "English"
+    },
+    {
+      "slug": "dmitri-falcone",
+      "name": "Dmitri Falcone",
+      "club": "saint-marys",
+      "pos": "CB",
+      "num": 7,
+      "age": 34,
+      "height": "1.94 m",
+      "nationality": "Italian"
+    },
+    {
+      "slug": "miles-marchetti",
+      "name": "Miles Marchetti",
+      "club": "saint-marys",
+      "pos": "CB",
+      "num": 8,
+      "age": 31,
+      "height": "1.87 m",
+      "nationality": "Nigerian"
+    },
+    {
+      "slug": "enzo-riley",
+      "name": "Enzo Riley",
+      "club": "saint-marys",
+      "pos": "RB",
+      "num": 9,
+      "age": 30,
+      "height": "1.86 m",
+      "nationality": "Brazilian"
+    },
+    {
+      "slug": "jonas-ivanov",
+      "name": "Jonas Ivanov",
+      "club": "saint-marys",
+      "pos": "RB",
+      "num": 10,
+      "age": 33,
+      "height": "1.75 m",
+      "nationality": "Japanese"
+    },
+    {
+      "slug": "noah-marchetti",
+      "name": "Noah Marchetti",
+      "club": "saint-marys",
+      "pos": "LB",
+      "num": 11,
+      "age": 27,
+      "height": "1.79 m",
+      "nationality": "Danish"
+    },
+    {
+      "slug": "diego-reyes",
+      "name": "Diego Reyes",
+      "club": "saint-marys",
+      "pos": "LB",
+      "num": 12,
+      "age": 20,
+      "height": "1.81 m",
+      "nationality": "Nigerian"
+    },
+    {
+      "slug": "theo-ferreira",
+      "name": "Theo Ferreira",
+      "club": "saint-marys",
+      "pos": "CDM",
+      "num": 14,
+      "age": 22,
+      "height": "1.93 m",
+      "nationality": "Uruguayan"
+    },
+    {
+      "slug": "caio-riley",
+      "name": "Caio Riley",
+      "club": "saint-marys",
+      "pos": "CDM",
+      "num": 15,
+      "age": 24,
+      "height": "1.78 m",
+      "nationality": "Japanese"
+    },
+    {
+      "slug": "piotr-novak",
+      "name": "Piotr Novak",
+      "club": "saint-marys",
+      "pos": "CDM",
+      "num": 16,
+      "age": 26,
+      "height": "1.92 m",
+      "nationality": "German"
+    },
+    {
+      "slug": "tomas-holm",
+      "name": "Tomas Holm",
+      "club": "saint-marys",
+      "pos": "CM",
+      "num": 17,
+      "age": 33,
+      "height": "1.86 m",
+      "nationality": "Senegalese"
+    },
+    {
+      "slug": "mohammed-beck",
+      "name": "Mohammed Beck",
+      "club": "saint-marys",
+      "pos": "CM",
+      "num": 18,
+      "age": 22,
+      "height": "1.72 m",
+      "nationality": "Dutch"
+    },
+    {
+      "slug": "rafael-park",
+      "name": "Rafael Park",
+      "club": "saint-marys",
+      "pos": "CM",
+      "num": 19,
+      "age": 29,
+      "height": "1.93 m",
+      "nationality": "Senegalese"
+    },
+    {
+      "slug": "sang-jin-falcone",
+      "name": "Sang-jin Falcone",
+      "club": "saint-marys",
+      "pos": "CM",
+      "num": 20,
+      "age": 26,
+      "height": "1.79 m",
+      "nationality": "Danish"
+    },
+    {
+      "slug": "gabriel-costa",
+      "name": "Gabriel Costa",
+      "club": "saint-marys",
+      "pos": "CAM",
+      "num": 21,
+      "age": 25,
+      "height": "1.86 m",
+      "nationality": "Italian"
+    },
+    {
+      "slug": "mohammed-oneill",
+      "name": "Mohammed ONeill",
+      "club": "saint-marys",
+      "pos": "CAM",
+      "num": 22,
+      "age": 25,
+      "height": "1.72 m",
+      "nationality": "Korean"
+    },
+    {
+      "slug": "stefan-marsh",
+      "name": "Stefan Marsh",
+      "club": "saint-marys",
+      "pos": "RW",
+      "num": 23,
+      "age": 29,
+      "height": "1.86 m",
+      "nationality": "Spanish"
+    },
+    {
+      "slug": "owen-marsh",
+      "name": "Owen Marsh",
+      "club": "saint-marys",
+      "pos": "RW",
+      "num": 24,
+      "age": 29,
+      "height": "1.91 m",
+      "nationality": "English"
+    },
+    {
+      "slug": "rafael-adekunle",
+      "name": "Rafael Adekunle",
+      "club": "saint-marys",
+      "pos": "LW",
+      "num": 25,
+      "age": 19,
+      "height": "1.82 m",
+      "nationality": "Brazilian"
+    },
+    {
+      "slug": "hassan-ferreira",
+      "name": "Hassan Ferreira",
+      "club": "saint-marys",
+      "pos": "LW",
+      "num": 26,
+      "age": 26,
+      "height": "1.76 m",
+      "nationality": "Brazilian"
+    },
+    {
+      "slug": "gabriel-falcone",
+      "name": "Gabriel Falcone",
+      "club": "saint-marys",
+      "pos": "ST",
+      "num": 27,
+      "age": 26,
+      "height": "1.88 m",
+      "nationality": "German"
+    },
+    {
+      "slug": "kenji-sokolov",
+      "name": "Kenji Sokolov",
+      "club": "saint-marys",
+      "pos": "ST",
+      "num": 28,
+      "age": 29,
+      "height": "1.77 m",
+      "nationality": "Brazilian"
+    },
+    {
+      "slug": "patrice-moreau",
+      "name": "Patrice Moreau",
+      "club": "saint-marys",
+      "pos": "ST",
+      "num": 29,
+      "age": 21,
+      "height": "1.85 m",
+      "nationality": "Spanish"
+    }
+  ],
+  "riverside": [
+    {
+      "slug": "aaron-russo",
+      "name": "Aaron Russo",
+      "club": "riverside",
+      "pos": "GK",
+      "num": 1,
+      "age": 26,
+      "height": "1.89 m",
+      "nationality": "French"
+    },
+    {
+      "slug": "piotr-bennett",
+      "name": "Piotr Bennett",
+      "club": "riverside",
+      "pos": "GK",
+      "num": 2,
+      "age": 19,
+      "height": "1.81 m",
+      "nationality": "Senegalese"
+    },
+    {
+      "slug": "kai-bramble",
+      "name": "Kai Bramble",
+      "club": "riverside",
+      "pos": "GK",
+      "num": 3,
+      "age": 29,
+      "height": "1.81 m",
+      "nationality": "Russian"
+    },
+    {
+      "slug": "yusuf-riley",
+      "name": "Yusuf Riley",
+      "club": "riverside",
+      "pos": "CB",
+      "num": 4,
+      "age": 34,
+      "height": "1.83 m",
+      "nationality": "English"
+    },
+    {
+      "slug": "rory-adekunle",
+      "name": "Rory Adekunle",
+      "club": "riverside",
+      "pos": "CB",
+      "num": 5,
+      "age": 31,
+      "height": "1.78 m",
+      "nationality": "Korean"
+    },
+    {
+      "slug": "stefan-sorensen",
+      "name": "Stefan Sorensen",
+      "club": "riverside",
+      "pos": "CB",
+      "num": 6,
+      "age": 33,
+      "height": "1.81 m",
+      "nationality": "Italian"
+    },
+    {
+      "slug": "mohammed-walsh",
+      "name": "Mohammed Walsh",
+      "club": "riverside",
+      "pos": "CB",
+      "num": 7,
+      "age": 21,
+      "height": "1.72 m",
+      "nationality": "Argentine"
+    },
+    {
+      "slug": "tariq-choi",
+      "name": "Tariq Choi",
+      "club": "riverside",
+      "pos": "CB",
+      "num": 8,
+      "age": 19,
+      "height": "1.82 m",
+      "nationality": "German"
+    },
+    {
+      "slug": "gabriel-sokolov",
+      "name": "Gabriel Sokolov",
+      "club": "riverside",
+      "pos": "RB",
+      "num": 9,
+      "age": 33,
+      "height": "1.78 m",
+      "nationality": "German"
+    },
+    {
+      "slug": "finn-mendes",
+      "name": "Finn Mendes",
+      "club": "riverside",
+      "pos": "RB",
+      "num": 10,
+      "age": 19,
+      "height": "1.91 m",
+      "nationality": "German"
+    },
+    {
+      "slug": "emil-yilmaz",
+      "name": "Emil Yilmaz",
+      "club": "riverside",
+      "pos": "LB",
+      "num": 11,
+      "age": 27,
+      "height": "1.85 m",
+      "nationality": "Spanish"
+    },
+    {
+      "slug": "gabriel-reyes",
+      "name": "Gabriel Reyes",
+      "club": "riverside",
+      "pos": "LB",
+      "num": 12,
+      "age": 27,
+      "height": "1.72 m",
+      "nationality": "English"
+    },
+    {
+      "slug": "aaron-larsen",
+      "name": "Aaron Larsen",
+      "club": "riverside",
+      "pos": "CDM",
+      "num": 14,
+      "age": 26,
+      "height": "1.75 m",
+      "nationality": "Italian"
+    },
+    {
+      "slug": "hugh-choi",
+      "name": "Hugh Choi",
+      "club": "riverside",
+      "pos": "CDM",
+      "num": 15,
+      "age": 30,
+      "height": "1.89 m",
+      "nationality": "Brazilian"
+    },
+    {
+      "slug": "felipe-bramble",
+      "name": "Felipe Bramble",
+      "club": "riverside",
+      "pos": "CDM",
+      "num": 16,
+      "age": 21,
+      "height": "1.71 m",
+      "nationality": "Uruguayan"
+    },
+    {
+      "slug": "hakim-kovac",
+      "name": "Hakim Kovac",
+      "club": "riverside",
+      "pos": "CM",
+      "num": 17,
+      "age": 28,
+      "height": "1.88 m",
+      "nationality": "Argentine"
+    },
+    {
+      "slug": "sang-jin-kovac",
+      "name": "Sang-jin Kovac",
+      "club": "riverside",
+      "pos": "CM",
+      "num": 18,
+      "age": 32,
+      "height": "1.75 m",
+      "nationality": "Spanish"
+    },
+    {
+      "slug": "dante-delgado",
+      "name": "Dante Delgado",
+      "club": "riverside",
+      "pos": "CM",
+      "num": 19,
+      "age": 22,
+      "height": "1.88 m",
+      "nationality": "Uruguayan"
+    },
+    {
+      "slug": "owen-novak",
+      "name": "Owen Novak",
+      "club": "riverside",
+      "pos": "CM",
+      "num": 20,
+      "age": 32,
+      "height": "1.93 m",
+      "nationality": "German"
+    },
+    {
+      "slug": "rory-berg",
+      "name": "Rory Berg",
+      "club": "riverside",
+      "pos": "CAM",
+      "num": 21,
+      "age": 20,
+      "height": "1.95 m",
+      "nationality": "Korean"
+    },
+    {
+      "slug": "oliver-riley",
+      "name": "Oliver Riley",
+      "club": "riverside",
+      "pos": "CAM",
+      "num": 22,
+      "age": 29,
+      "height": "1.75 m",
+      "nationality": "Senegalese"
+    },
+    {
+      "slug": "iv\u00e1n-holm",
+      "name": "Iv\u00e1n Holm",
+      "club": "riverside",
+      "pos": "RW",
+      "num": 23,
+      "age": 27,
+      "height": "1.89 m",
+      "nationality": "Spanish"
+    },
+    {
+      "slug": "viktor-bright",
+      "name": "Viktor Bright",
+      "club": "riverside",
+      "pos": "RW",
+      "num": 24,
+      "age": 34,
+      "height": "1.85 m",
+      "nationality": "Argentine"
+    },
+    {
+      "slug": "yannick-nasser",
+      "name": "Yannick Nasser",
+      "club": "riverside",
+      "pos": "LW",
+      "num": 25,
+      "age": 34,
+      "height": "1.81 m",
+      "nationality": "Senegalese"
+    },
+    {
+      "slug": "hassan-mendes",
+      "name": "Hassan Mendes",
+      "club": "riverside",
+      "pos": "LW",
+      "num": 26,
+      "age": 26,
+      "height": "1.95 m",
+      "nationality": "Russian"
+    },
+    {
+      "slug": "caio-marchetti",
+      "name": "Caio Marchetti",
+      "club": "riverside",
+      "pos": "ST",
+      "num": 27,
+      "age": 29,
+      "height": "1.76 m",
+      "nationality": "Dutch"
+    },
+    {
+      "slug": "kenji-quinn",
+      "name": "Kenji Quinn",
+      "club": "riverside",
+      "pos": "ST",
+      "num": 28,
+      "age": 25,
+      "height": "1.80 m",
+      "nationality": "Senegalese"
+    },
+    {
+      "slug": "rory-dubois",
+      "name": "Rory Dubois",
+      "club": "riverside",
+      "pos": "ST",
+      "num": 29,
+      "age": 31,
+      "height": "1.78 m",
+      "nationality": "Korean"
+    }
+  ],
+  "westmoreland": [
+    {
+      "slug": "kasper-kovac",
+      "name": "Kasper Kovac",
+      "club": "westmoreland",
+      "pos": "GK",
+      "num": 1,
+      "age": 30,
+      "height": "1.83 m",
+      "nationality": "German"
+    },
+    {
+      "slug": "sacha-delgado",
+      "name": "Sacha Delgado",
+      "club": "westmoreland",
+      "pos": "GK",
+      "num": 2,
+      "age": 33,
+      "height": "1.79 m",
+      "nationality": "Senegalese"
+    },
+    {
+      "slug": "leon-bright",
+      "name": "Leon Bright",
+      "club": "westmoreland",
+      "pos": "GK",
+      "num": 3,
+      "age": 25,
+      "height": "1.79 m",
+      "nationality": "Argentine"
+    },
+    {
+      "slug": "cole-falcone",
+      "name": "Cole Falcone",
+      "club": "westmoreland",
+      "pos": "CB",
+      "num": 4,
+      "age": 23,
+      "height": "1.74 m",
+      "nationality": "Uruguayan"
+    },
+    {
+      "slug": "emil-beck",
+      "name": "Emil Beck",
+      "club": "westmoreland",
+      "pos": "CB",
+      "num": 5,
+      "age": 21,
+      "height": "1.80 m",
+      "nationality": "Spanish"
+    },
+    {
+      "slug": "niko-yilmaz",
+      "name": "Niko Yilmaz",
+      "club": "westmoreland",
+      "pos": "CB",
+      "num": 6,
+      "age": 22,
+      "height": "1.92 m",
+      "nationality": "Dutch"
+    },
+    {
+      "slug": "gabriel-beck",
+      "name": "Gabriel Beck",
+      "club": "westmoreland",
+      "pos": "CB",
+      "num": 7,
+      "age": 22,
+      "height": "1.87 m",
+      "nationality": "Nigerian"
+    },
+    {
+      "slug": "pavel-vela",
+      "name": "Pavel Vela",
+      "club": "westmoreland",
+      "pos": "CB",
+      "num": 8,
+      "age": 27,
+      "height": "1.88 m",
+      "nationality": "French"
+    },
+    {
+      "slug": "marco-delgado",
+      "name": "Marco Delgado",
+      "club": "westmoreland",
+      "pos": "RB",
+      "num": 9,
+      "age": 26,
+      "height": "1.70 m",
+      "nationality": "Japanese"
+    },
+    {
+      "slug": "luca-ramos",
+      "name": "Luca Ramos",
+      "club": "westmoreland",
+      "pos": "RB",
+      "num": 10,
+      "age": 29,
+      "height": "1.95 m",
+      "nationality": "English"
+    },
+    {
+      "slug": "dmitri-delgado",
+      "name": "Dmitri Delgado",
+      "club": "westmoreland",
+      "pos": "LB",
+      "num": 11,
+      "age": 19,
+      "height": "1.82 m",
+      "nationality": "German"
+    },
+    {
+      "slug": "hugh-osei",
+      "name": "Hugh Osei",
+      "club": "westmoreland",
+      "pos": "LB",
+      "num": 12,
+      "age": 34,
+      "height": "1.87 m",
+      "nationality": "Uruguayan"
+    },
+    {
+      "slug": "nikolai-marchetti",
+      "name": "Nikolai Marchetti",
+      "club": "westmoreland",
+      "pos": "CDM",
+      "num": 14,
+      "age": 23,
+      "height": "1.76 m",
+      "nationality": "Nigerian"
+    },
+    {
+      "slug": "andre-mendes",
+      "name": "Andre Mendes",
+      "club": "westmoreland",
+      "pos": "CDM",
+      "num": 15,
+      "age": 29,
+      "height": "1.82 m",
+      "nationality": "Brazilian"
+    },
+    {
+      "slug": "hassan-sokolov",
+      "name": "Hassan Sokolov",
+      "club": "westmoreland",
+      "pos": "CDM",
+      "num": 16,
+      "age": 27,
+      "height": "1.80 m",
+      "nationality": "German"
+    },
+    {
+      "slug": "sacha-reid",
+      "name": "Sacha Reid",
+      "club": "westmoreland",
+      "pos": "CM",
+      "num": 17,
+      "age": 34,
+      "height": "1.85 m",
+      "nationality": "Russian"
+    },
+    {
+      "slug": "rafael-falcone",
+      "name": "Rafael Falcone",
+      "club": "westmoreland",
+      "pos": "CM",
+      "num": 18,
+      "age": 28,
+      "height": "1.79 m",
+      "nationality": "Italian"
+    },
+    {
+      "slug": "sean-bennett",
+      "name": "Sean Bennett",
+      "club": "westmoreland",
+      "pos": "CM",
+      "num": 19,
+      "age": 34,
+      "height": "1.74 m",
+      "nationality": "French"
+    },
+    {
+      "slug": "anton-lowe",
+      "name": "Anton Lowe",
+      "club": "westmoreland",
+      "pos": "CM",
+      "num": 20,
+      "age": 29,
+      "height": "1.72 m",
+      "nationality": "Uruguayan"
+    },
+    {
+      "slug": "miles-elamin",
+      "name": "Miles ElAmin",
+      "club": "westmoreland",
+      "pos": "CAM",
+      "num": 21,
+      "age": 24,
+      "height": "1.80 m",
+      "nationality": "Russian"
+    },
+    {
+      "slug": "theo-park",
+      "name": "Theo Park",
+      "club": "westmoreland",
+      "pos": "CAM",
+      "num": 22,
+      "age": 27,
+      "height": "1.76 m",
+      "nationality": "Japanese"
+    },
+    {
+      "slug": "anton-whitfield",
+      "name": "Anton Whitfield",
+      "club": "westmoreland",
+      "pos": "RW",
+      "num": 23,
+      "age": 31,
+      "height": "1.84 m",
+      "nationality": "German"
+    },
+    {
+      "slug": "mohammed-korhonen",
+      "name": "Mohammed Korhonen",
+      "club": "westmoreland",
+      "pos": "RW",
+      "num": 24,
+      "age": 30,
+      "height": "1.73 m",
+      "nationality": "Spanish"
+    },
+    {
+      "slug": "hakim-ndiaye",
+      "name": "Hakim Ndiaye",
+      "club": "westmoreland",
+      "pos": "LW",
+      "num": 25,
+      "age": 23,
+      "height": "1.94 m",
+      "nationality": "Nigerian"
+    },
+    {
+      "slug": "dante-russo",
+      "name": "Dante Russo",
+      "club": "westmoreland",
+      "pos": "LW",
+      "num": 26,
+      "age": 25,
+      "height": "1.72 m",
+      "nationality": "Dutch"
+    },
+    {
+      "slug": "yannick-moreau",
+      "name": "Yannick Moreau",
+      "club": "westmoreland",
+      "pos": "ST",
+      "num": 27,
+      "age": 28,
+      "height": "1.94 m",
+      "nationality": "Danish"
+    },
+    {
+      "slug": "patrice-reid",
+      "name": "Patrice Reid",
+      "club": "westmoreland",
+      "pos": "ST",
+      "num": 28,
+      "age": 34,
+      "height": "1.89 m",
+      "nationality": "Dutch"
+    },
+    {
+      "slug": "miles-adekunle",
+      "name": "Miles Adekunle",
+      "club": "westmoreland",
+      "pos": "ST",
+      "num": 29,
+      "age": 24,
+      "height": "1.75 m",
+      "nationality": "English"
+    }
+  ],
+  "bayview": [
+    {
+      "slug": "kenji-nasser",
+      "name": "Kenji Nasser",
+      "club": "bayview",
+      "pos": "GK",
+      "num": 1,
+      "age": 20,
+      "height": "1.92 m",
+      "nationality": "Uruguayan"
+    },
+    {
+      "slug": "tariq-russo",
+      "name": "Tariq Russo",
+      "club": "bayview",
+      "pos": "GK",
+      "num": 2,
+      "age": 28,
+      "height": "1.95 m",
+      "nationality": "Nigerian"
+    },
+    {
+      "slug": "marco-tovar",
+      "name": "Marco Tovar",
+      "club": "bayview",
+      "pos": "GK",
+      "num": 3,
+      "age": 19,
+      "height": "1.70 m",
+      "nationality": "German"
+    },
+    {
+      "slug": "sacha-lowe",
+      "name": "Sacha Lowe",
+      "club": "bayview",
+      "pos": "CB",
+      "num": 4,
+      "age": 28,
+      "height": "1.88 m",
+      "nationality": "Spanish"
+    },
+    {
+      "slug": "felipe-bex",
+      "name": "Felipe Bex",
+      "club": "bayview",
+      "pos": "CB",
+      "num": 5,
+      "age": 30,
+      "height": "1.85 m",
+      "nationality": "Spanish"
+    },
+    {
+      "slug": "noah-serrano",
+      "name": "Noah Serrano",
+      "club": "bayview",
+      "pos": "CB",
+      "num": 6,
+      "age": 22,
+      "height": "1.85 m",
+      "nationality": "Danish"
+    },
+    {
+      "slug": "sven-oneill",
+      "name": "Sven ONeill",
+      "club": "bayview",
+      "pos": "CB",
+      "num": 7,
+      "age": 27,
+      "height": "1.84 m",
+      "nationality": "Uruguayan"
+    },
+    {
+      "slug": "malik-osei",
+      "name": "Malik Osei",
+      "club": "bayview",
+      "pos": "CB",
+      "num": 8,
+      "age": 26,
+      "height": "1.80 m",
+      "nationality": "Senegalese"
+    },
+    {
+      "slug": "iv\u00e1n-larsen",
+      "name": "Iv\u00e1n Larsen",
+      "club": "bayview",
+      "pos": "RB",
+      "num": 9,
+      "age": 30,
+      "height": "1.83 m",
+      "nationality": "German"
+    },
+    {
+      "slug": "jonas-bianchi",
+      "name": "Jonas Bianchi",
+      "club": "bayview",
+      "pos": "RB",
+      "num": 10,
+      "age": 24,
+      "height": "1.80 m",
+      "nationality": "Danish"
+    },
+    {
+      "slug": "eli-pryce",
+      "name": "Eli Pryce",
+      "club": "bayview",
+      "pos": "LB",
+      "num": 11,
+      "age": 22,
+      "height": "1.76 m",
+      "nationality": "Spanish"
+    },
+    {
+      "slug": "tomas-marsh",
+      "name": "Tomas Marsh",
+      "club": "bayview",
+      "pos": "LB",
+      "num": 12,
+      "age": 34,
+      "height": "1.77 m",
+      "nationality": "Uruguayan"
+    },
+    {
+      "slug": "bastian-dubois",
+      "name": "Bastian Dubois",
+      "club": "bayview",
+      "pos": "CDM",
+      "num": 14,
+      "age": 34,
+      "height": "1.73 m",
+      "nationality": "Dutch"
+    },
+    {
+      "slug": "otto-marchetti",
+      "name": "Otto Marchetti",
+      "club": "bayview",
+      "pos": "CDM",
+      "num": 15,
+      "age": 25,
+      "height": "1.93 m",
+      "nationality": "English"
+    },
+    {
+      "slug": "kai-korhonen",
+      "name": "Kai Korhonen",
+      "club": "bayview",
+      "pos": "CDM",
+      "num": 16,
+      "age": 21,
+      "height": "1.75 m",
+      "nationality": "Italian"
+    },
+    {
+      "slug": "pavel-park",
+      "name": "Pavel Park",
+      "club": "bayview",
+      "pos": "CM",
+      "num": 17,
+      "age": 31,
+      "height": "1.95 m",
+      "nationality": "Italian"
+    },
+    {
+      "slug": "malik-volkov",
+      "name": "Malik Volkov",
+      "club": "bayview",
+      "pos": "CM",
+      "num": 18,
+      "age": 19,
+      "height": "1.83 m",
+      "nationality": "Nigerian"
+    },
+    {
+      "slug": "sang-jin-whitfield",
+      "name": "Sang-jin Whitfield",
+      "club": "bayview",
+      "pos": "CM",
+      "num": 19,
+      "age": 30,
+      "height": "1.73 m",
+      "nationality": "Dutch"
+    },
+    {
+      "slug": "malik-marsh",
+      "name": "Malik Marsh",
+      "club": "bayview",
+      "pos": "CM",
+      "num": 20,
+      "age": 31,
+      "height": "1.86 m",
+      "nationality": "French"
+    },
+    {
+      "slug": "mateo-ivanov",
+      "name": "Mateo Ivanov",
+      "club": "bayview",
+      "pos": "CAM",
+      "num": 21,
+      "age": 29,
+      "height": "1.93 m",
+      "nationality": "Brazilian"
+    },
+    {
+      "slug": "otto-ndiaye",
+      "name": "Otto Ndiaye",
+      "club": "bayview",
+      "pos": "CAM",
+      "num": 22,
+      "age": 22,
+      "height": "1.75 m",
+      "nationality": "English"
+    },
+    {
+      "slug": "viktor-korhonen",
+      "name": "Viktor Korhonen",
+      "club": "bayview",
+      "pos": "RW",
+      "num": 23,
+      "age": 27,
+      "height": "1.80 m",
+      "nationality": "English"
+    },
+    {
+      "slug": "rory-mendes",
+      "name": "Rory Mendes",
+      "club": "bayview",
+      "pos": "RW",
+      "num": 24,
+      "age": 25,
+      "height": "1.79 m",
+      "nationality": "Korean"
+    },
+    {
+      "slug": "anton-sorensen",
+      "name": "Anton Sorensen",
+      "club": "bayview",
+      "pos": "LW",
+      "num": 25,
+      "age": 30,
+      "height": "1.87 m",
+      "nationality": "Brazilian"
+    },
+    {
+      "slug": "noah-ramos",
+      "name": "Noah Ramos",
+      "club": "bayview",
+      "pos": "LW",
+      "num": 26,
+      "age": 19,
+      "height": "1.86 m",
+      "nationality": "Nigerian"
+    },
+    {
+      "slug": "sean-adekunle",
+      "name": "Sean Adekunle",
+      "club": "bayview",
+      "pos": "ST",
+      "num": 27,
+      "age": 32,
+      "height": "1.83 m",
+      "nationality": "Italian"
+    },
+    {
+      "slug": "adam-kovac",
+      "name": "Adam Kovac",
+      "club": "bayview",
+      "pos": "ST",
+      "num": 28,
+      "age": 26,
+      "height": "1.70 m",
+      "nationality": "Brazilian"
+    },
+    {
+      "slug": "sean-costa",
+      "name": "Sean Costa",
+      "club": "bayview",
+      "pos": "ST",
+      "num": 29,
+      "age": 34,
+      "height": "1.78 m",
+      "nationality": "German"
+    }
+  ],
+  "highland": [
+    {
+      "slug": "nikolai-ivanov",
+      "name": "Nikolai Ivanov",
+      "club": "highland",
+      "pos": "GK",
+      "num": 1,
+      "age": 31,
+      "height": "1.85 m",
+      "nationality": "Argentine"
+    },
+    {
+      "slug": "dmitri-serrano",
+      "name": "Dmitri Serrano",
+      "club": "highland",
+      "pos": "GK",
+      "num": 2,
+      "age": 30,
+      "height": "1.78 m",
+      "nationality": "Japanese"
+    },
+    {
+      "slug": "eli-moreau",
+      "name": "Eli Moreau",
+      "club": "highland",
+      "pos": "GK",
+      "num": 3,
+      "age": 22,
+      "height": "1.92 m",
+      "nationality": "French"
+    },
+    {
+      "slug": "kai-dubois",
+      "name": "Kai Dubois",
+      "club": "highland",
+      "pos": "CB",
+      "num": 4,
+      "age": 22,
+      "height": "1.95 m",
+      "nationality": "Nigerian"
+    },
+    {
+      "slug": "eli-lowe",
+      "name": "Eli Lowe",
+      "club": "highland",
+      "pos": "CB",
+      "num": 5,
+      "age": 27,
+      "height": "1.71 m",
+      "nationality": "Dutch"
+    },
+    {
+      "slug": "noah-tovar",
+      "name": "Noah Tovar",
+      "club": "highland",
+      "pos": "CB",
+      "num": 6,
+      "age": 31,
+      "height": "1.76 m",
+      "nationality": "Russian"
+    },
+    {
+      "slug": "patrice-bramble",
+      "name": "Patrice Bramble",
+      "club": "highland",
+      "pos": "CB",
+      "num": 7,
+      "age": 27,
+      "height": "1.93 m",
+      "nationality": "Russian"
+    },
+    {
+      "slug": "felipe-tovar",
+      "name": "Felipe Tovar",
+      "club": "highland",
+      "pos": "CB",
+      "num": 8,
+      "age": 33,
+      "height": "1.80 m",
+      "nationality": "Italian"
+    },
+    {
+      "slug": "hassan-quinn",
+      "name": "Hassan Quinn",
+      "club": "highland",
+      "pos": "RB",
+      "num": 9,
+      "age": 29,
+      "height": "1.73 m",
+      "nationality": "Korean"
+    },
+    {
+      "slug": "sang-jin-walsh",
+      "name": "Sang-jin Walsh",
+      "club": "highland",
+      "pos": "RB",
+      "num": 10,
+      "age": 30,
+      "height": "1.73 m",
+      "nationality": "Brazilian"
+    },
+    {
+      "slug": "ravi-moreau",
+      "name": "Ravi Moreau",
+      "club": "highland",
+      "pos": "LB",
+      "num": 11,
+      "age": 34,
+      "height": "1.78 m",
+      "nationality": "Danish"
+    },
+    {
+      "slug": "bastian-korhonen",
+      "name": "Bastian Korhonen",
+      "club": "highland",
+      "pos": "LB",
+      "num": 12,
+      "age": 27,
+      "height": "1.91 m",
+      "nationality": "Senegalese"
+    },
+    {
+      "slug": "dante-dubois",
+      "name": "Dante Dubois",
+      "club": "highland",
+      "pos": "CDM",
+      "num": 14,
+      "age": 33,
+      "height": "1.91 m",
+      "nationality": "Russian"
+    },
+    {
+      "slug": "malik-bianchi",
+      "name": "Malik Bianchi",
+      "club": "highland",
+      "pos": "CDM",
+      "num": 15,
+      "age": 26,
+      "height": "1.82 m",
+      "nationality": "Nigerian"
+    },
+    {
+      "slug": "samir-rahman",
+      "name": "Samir Rahman",
+      "club": "highland",
+      "pos": "CDM",
+      "num": 16,
+      "age": 20,
+      "height": "1.77 m",
+      "nationality": "Korean"
+    },
+    {
+      "slug": "felipe-russo",
+      "name": "Felipe Russo",
+      "club": "highland",
+      "pos": "CM",
+      "num": 17,
+      "age": 20,
+      "height": "1.93 m",
+      "nationality": "English"
+    },
+    {
+      "slug": "mateo-petrov",
+      "name": "Mateo Petrov",
+      "club": "highland",
+      "pos": "CM",
+      "num": 18,
+      "age": 33,
+      "height": "1.86 m",
+      "nationality": "Dutch"
+    },
+    {
+      "slug": "eli-ashworth",
+      "name": "Eli Ashworth",
+      "club": "highland",
+      "pos": "CM",
+      "num": 19,
+      "age": 34,
+      "height": "1.92 m",
+      "nationality": "Korean"
+    },
+    {
+      "slug": "dmitri-oneill",
+      "name": "Dmitri ONeill",
+      "club": "highland",
+      "pos": "CM",
+      "num": 20,
+      "age": 20,
+      "height": "1.86 m",
+      "nationality": "English"
+    },
+    {
+      "slug": "felipe-novak",
+      "name": "Felipe Novak",
+      "club": "highland",
+      "pos": "CAM",
+      "num": 21,
+      "age": 29,
+      "height": "1.84 m",
+      "nationality": "Uruguayan"
+    },
+    {
+      "slug": "hugh-larsen",
+      "name": "Hugh Larsen",
+      "club": "highland",
+      "pos": "CAM",
+      "num": 22,
+      "age": 31,
+      "height": "1.87 m",
+      "nationality": "Russian"
+    },
+    {
+      "slug": "yannick-elamin",
+      "name": "Yannick ElAmin",
+      "club": "highland",
+      "pos": "RW",
+      "num": 23,
+      "age": 27,
+      "height": "1.78 m",
+      "nationality": "Russian"
+    },
+    {
+      "slug": "adam-osei",
+      "name": "Adam Osei",
+      "club": "highland",
+      "pos": "RW",
+      "num": 24,
+      "age": 24,
+      "height": "1.75 m",
+      "nationality": "Japanese"
+    },
+    {
+      "slug": "niko-choi",
+      "name": "Niko Choi",
+      "club": "highland",
+      "pos": "LW",
+      "num": 25,
+      "age": 23,
+      "height": "1.79 m",
+      "nationality": "Danish"
+    },
+    {
+      "slug": "rafael-bianchi",
+      "name": "Rafael Bianchi",
+      "club": "highland",
+      "pos": "LW",
+      "num": 26,
+      "age": 28,
+      "height": "1.90 m",
+      "nationality": "Korean"
+    },
+    {
+      "slug": "owen-walsh",
+      "name": "Owen Walsh",
+      "club": "highland",
+      "pos": "ST",
+      "num": 27,
+      "age": 26,
+      "height": "1.95 m",
+      "nationality": "Brazilian"
+    },
+    {
+      "slug": "aiden-bright",
+      "name": "Aiden Bright",
+      "club": "highland",
+      "pos": "ST",
+      "num": 28,
+      "age": 31,
+      "height": "1.79 m",
+      "nationality": "Japanese"
+    },
+    {
+      "slug": "bruno-vidic",
+      "name": "Bruno Vidic",
+      "club": "highland",
+      "pos": "ST",
+      "num": 29,
+      "age": 30,
+      "height": "1.81 m",
+      "nationality": "Uruguayan"
+    }
+  ],
+  "bridgeport": [
+    {
+      "slug": "ravi-yilmaz",
+      "name": "Ravi Yilmaz",
+      "club": "bridgeport",
+      "pos": "GK",
+      "num": 1,
+      "age": 19,
+      "height": "1.75 m",
+      "nationality": "Korean"
+    },
+    {
+      "slug": "aaron-riley",
+      "name": "Aaron Riley",
+      "club": "bridgeport",
+      "pos": "GK",
+      "num": 2,
+      "age": 34,
+      "height": "1.86 m",
+      "nationality": "Korean"
+    },
+    {
+      "slug": "finn-nasser",
+      "name": "Finn Nasser",
+      "club": "bridgeport",
+      "pos": "GK",
+      "num": 3,
+      "age": 32,
+      "height": "1.85 m",
+      "nationality": "English"
+    },
+    {
+      "slug": "enzo-osei",
+      "name": "Enzo Osei",
+      "club": "bridgeport",
+      "pos": "CB",
+      "num": 4,
+      "age": 21,
+      "height": "1.76 m",
+      "nationality": "English"
+    },
+    {
+      "slug": "miles-yilmaz",
+      "name": "Miles Yilmaz",
+      "club": "bridgeport",
+      "pos": "CB",
+      "num": 5,
+      "age": 24,
+      "height": "1.74 m",
+      "nationality": "Korean"
+    },
+    {
+      "slug": "niko-walsh",
+      "name": "Niko Walsh",
+      "club": "bridgeport",
+      "pos": "CB",
+      "num": 6,
+      "age": 33,
+      "height": "1.94 m",
+      "nationality": "Nigerian"
+    },
+    {
+      "slug": "mateo-rahman",
+      "name": "Mateo Rahman",
+      "club": "bridgeport",
+      "pos": "CB",
+      "num": 7,
+      "age": 21,
+      "height": "1.92 m",
+      "nationality": "English"
+    },
+    {
+      "slug": "emil-fischer",
+      "name": "Emil Fischer",
+      "club": "bridgeport",
+      "pos": "CB",
+      "num": 8,
+      "age": 22,
+      "height": "1.82 m",
+      "nationality": "German"
+    },
+    {
+      "slug": "cole-elamin",
+      "name": "Cole ElAmin",
+      "club": "bridgeport",
+      "pos": "RB",
+      "num": 9,
+      "age": 31,
+      "height": "1.79 m",
+      "nationality": "Korean"
+    },
+    {
+      "slug": "theo-ashworth",
+      "name": "Theo Ashworth",
+      "club": "bridgeport",
+      "pos": "RB",
+      "num": 10,
+      "age": 28,
+      "height": "1.71 m",
+      "nationality": "Spanish"
+    },
+    {
+      "slug": "hugh-kovac",
+      "name": "Hugh Kovac",
+      "club": "bridgeport",
+      "pos": "LB",
+      "num": 11,
+      "age": 32,
+      "height": "1.94 m",
+      "nationality": "Spanish"
+    },
+    {
+      "slug": "sang-jin-delgado",
+      "name": "Sang-jin Delgado",
+      "club": "bridgeport",
+      "pos": "LB",
+      "num": 12,
+      "age": 29,
+      "height": "1.71 m",
+      "nationality": "Korean"
+    },
+    {
+      "slug": "theo-serrano",
+      "name": "Theo Serrano",
+      "club": "bridgeport",
+      "pos": "CDM",
+      "num": 14,
+      "age": 22,
+      "height": "1.76 m",
+      "nationality": "Uruguayan"
+    },
+    {
+      "slug": "caio-whitfield",
+      "name": "Caio Whitfield",
+      "club": "bridgeport",
+      "pos": "CDM",
+      "num": 15,
+      "age": 29,
+      "height": "1.72 m",
+      "nationality": "Russian"
+    },
+    {
+      "slug": "eli-larsen",
+      "name": "Eli Larsen",
+      "club": "bridgeport",
+      "pos": "CDM",
+      "num": 16,
+      "age": 25,
+      "height": "1.71 m",
+      "nationality": "Spanish"
+    },
+    {
+      "slug": "anton-watanabe",
+      "name": "Anton Watanabe",
+      "club": "bridgeport",
+      "pos": "CM",
+      "num": 17,
+      "age": 27,
+      "height": "1.83 m",
+      "nationality": "Russian"
+    },
+    {
+      "slug": "caio-falcone",
+      "name": "Caio Falcone",
+      "club": "bridgeport",
+      "pos": "CM",
+      "num": 18,
+      "age": 26,
+      "height": "1.84 m",
+      "nationality": "Senegalese"
+    },
+    {
+      "slug": "aiden-bianchi",
+      "name": "Aiden Bianchi",
+      "club": "bridgeport",
+      "pos": "CM",
+      "num": 19,
+      "age": 29,
+      "height": "1.86 m",
+      "nationality": "Spanish"
+    },
+    {
+      "slug": "bastian-sinclair",
+      "name": "Bastian Sinclair",
+      "club": "bridgeport",
+      "pos": "CM",
+      "num": 20,
+      "age": 31,
+      "height": "1.72 m",
+      "nationality": "Brazilian"
+    },
+    {
+      "slug": "sacha-marsh",
+      "name": "Sacha Marsh",
+      "club": "bridgeport",
+      "pos": "CAM",
+      "num": 21,
+      "age": 26,
+      "height": "1.95 m",
+      "nationality": "Korean"
+    },
+    {
+      "slug": "diego-ferreira",
+      "name": "Diego Ferreira",
+      "club": "bridgeport",
+      "pos": "CAM",
+      "num": 22,
+      "age": 23,
+      "height": "1.92 m",
+      "nationality": "Dutch"
+    },
+    {
+      "slug": "caio-berg",
+      "name": "Caio Berg",
+      "club": "bridgeport",
+      "pos": "RW",
+      "num": 23,
+      "age": 28,
+      "height": "1.91 m",
+      "nationality": "Brazilian"
+    },
+    {
+      "slug": "kasper-serrano",
+      "name": "Kasper Serrano",
+      "club": "bridgeport",
+      "pos": "RW",
+      "num": 24,
+      "age": 27,
+      "height": "1.82 m",
+      "nationality": "Brazilian"
+    },
+    {
+      "slug": "rory-holm",
+      "name": "Rory Holm",
+      "club": "bridgeport",
+      "pos": "LW",
+      "num": 25,
+      "age": 23,
+      "height": "1.73 m",
+      "nationality": "Italian"
+    },
+    {
+      "slug": "miles-whitfield",
+      "name": "Miles Whitfield",
+      "club": "bridgeport",
+      "pos": "LW",
+      "num": 26,
+      "age": 31,
+      "height": "1.84 m",
+      "nationality": "Dutch"
+    },
+    {
+      "slug": "aiden-russo",
+      "name": "Aiden Russo",
+      "club": "bridgeport",
+      "pos": "ST",
+      "num": 27,
+      "age": 34,
+      "height": "1.71 m",
+      "nationality": "Spanish"
+    },
+    {
+      "slug": "samir-haddad",
+      "name": "Samir Haddad",
+      "club": "bridgeport",
+      "pos": "ST",
+      "num": 28,
+      "age": 26,
+      "height": "1.81 m",
+      "nationality": "Danish"
+    },
+    {
+      "slug": "kai-bright",
+      "name": "Kai Bright",
+      "club": "bridgeport",
+      "pos": "ST",
+      "num": 29,
+      "age": 32,
+      "height": "1.74 m",
+      "nationality": "Spanish"
+    }
+  ],
+  "northgate": [
+    {
+      "slug": "sean-bex",
+      "name": "Sean Bex",
+      "club": "northgate",
+      "pos": "GK",
+      "num": 1,
+      "age": 30,
+      "height": "1.91 m",
+      "nationality": "Argentine"
+    },
+    {
+      "slug": "luca-sorensen",
+      "name": "Luca Sorensen",
+      "club": "northgate",
+      "pos": "GK",
+      "num": 2,
+      "age": 24,
+      "height": "1.91 m",
+      "nationality": "Brazilian"
+    },
+    {
+      "slug": "viktor-bennett",
+      "name": "Viktor Bennett",
+      "club": "northgate",
+      "pos": "GK",
+      "num": 3,
+      "age": 20,
+      "height": "1.94 m",
+      "nationality": "Uruguayan"
+    },
+    {
+      "slug": "stefan-vela",
+      "name": "Stefan Vela",
+      "club": "northgate",
+      "pos": "CB",
+      "num": 4,
+      "age": 22,
+      "height": "1.79 m",
+      "nationality": "English"
+    },
+    {
+      "slug": "finn-dubois",
+      "name": "Finn Dubois",
+      "club": "northgate",
+      "pos": "CB",
+      "num": 5,
+      "age": 29,
+      "height": "1.78 m",
+      "nationality": "Uruguayan"
+    },
+    {
+      "slug": "gabriel-lowe",
+      "name": "Gabriel Lowe",
+      "club": "northgate",
+      "pos": "CB",
+      "num": 6,
+      "age": 25,
+      "height": "1.79 m",
+      "nationality": "Uruguayan"
+    },
+    {
+      "slug": "pavel-holm",
+      "name": "Pavel Holm",
+      "club": "northgate",
+      "pos": "CB",
+      "num": 7,
+      "age": 24,
+      "height": "1.87 m",
+      "nationality": "Italian"
+    },
+    {
+      "slug": "bastian-fischer",
+      "name": "Bastian Fischer",
+      "club": "northgate",
+      "pos": "CB",
+      "num": 8,
+      "age": 28,
+      "height": "1.93 m",
+      "nationality": "German"
+    },
+    {
+      "slug": "viktor-fischer",
+      "name": "Viktor Fischer",
+      "club": "northgate",
+      "pos": "RB",
+      "num": 9,
+      "age": 27,
+      "height": "1.94 m",
+      "nationality": "Italian"
+    },
+    {
+      "slug": "stefan-choi",
+      "name": "Stefan Choi",
+      "club": "northgate",
+      "pos": "RB",
+      "num": 10,
+      "age": 29,
+      "height": "1.92 m",
+      "nationality": "Argentine"
+    },
+    {
+      "slug": "marco-beck",
+      "name": "Marco Beck",
+      "club": "northgate",
+      "pos": "LB",
+      "num": 11,
+      "age": 19,
+      "height": "1.77 m",
+      "nationality": "Korean"
+    },
+    {
+      "slug": "rafael-marsh",
+      "name": "Rafael Marsh",
+      "club": "northgate",
+      "pos": "LB",
+      "num": 12,
+      "age": 34,
+      "height": "1.83 m",
+      "nationality": "Uruguayan"
+    },
+    {
+      "slug": "dante-vela",
+      "name": "Dante Vela",
+      "club": "northgate",
+      "pos": "CDM",
+      "num": 14,
+      "age": 23,
+      "height": "1.94 m",
+      "nationality": "Argentine"
+    },
+    {
+      "slug": "hakim-holm",
+      "name": "Hakim Holm",
+      "club": "northgate",
+      "pos": "CDM",
+      "num": 15,
+      "age": 21,
+      "height": "1.92 m",
+      "nationality": "Dutch"
+    },
+    {
+      "slug": "owen-marchetti",
+      "name": "Owen Marchetti",
+      "club": "northgate",
+      "pos": "CDM",
+      "num": 16,
+      "age": 31,
+      "height": "1.81 m",
+      "nationality": "Senegalese"
+    },
+    {
+      "slug": "rafael-vela",
+      "name": "Rafael Vela",
+      "club": "northgate",
+      "pos": "CM",
+      "num": 17,
+      "age": 22,
+      "height": "1.82 m",
+      "nationality": "Italian"
+    },
+    {
+      "slug": "tariq-pryce",
+      "name": "Tariq Pryce",
+      "club": "northgate",
+      "pos": "CM",
+      "num": 18,
+      "age": 32,
+      "height": "1.82 m",
+      "nationality": "Senegalese"
+    },
+    {
+      "slug": "owen-larsen",
+      "name": "Owen Larsen",
+      "club": "northgate",
+      "pos": "CM",
+      "num": 19,
+      "age": 32,
+      "height": "1.81 m",
+      "nationality": "Russian"
+    },
+    {
+      "slug": "yusuf-vidic",
+      "name": "Yusuf Vidic",
+      "club": "northgate",
+      "pos": "CM",
+      "num": 20,
+      "age": 29,
+      "height": "1.76 m",
+      "nationality": "Dutch"
+    },
+    {
+      "slug": "felipe-reyes",
+      "name": "Felipe Reyes",
+      "club": "northgate",
+      "pos": "CAM",
+      "num": 21,
+      "age": 32,
+      "height": "1.84 m",
+      "nationality": "German"
+    },
+    {
+      "slug": "miles-rahman",
+      "name": "Miles Rahman",
+      "club": "northgate",
+      "pos": "CAM",
+      "num": 22,
+      "age": 28,
+      "height": "1.85 m",
+      "nationality": "Russian"
+    },
+    {
+      "slug": "hugh-moreau",
+      "name": "Hugh Moreau",
+      "club": "northgate",
+      "pos": "RW",
+      "num": 23,
+      "age": 25,
+      "height": "1.72 m",
+      "nationality": "Danish"
+    },
+    {
+      "slug": "dmitri-yilmaz",
+      "name": "Dmitri Yilmaz",
+      "club": "northgate",
+      "pos": "RW",
+      "num": 24,
+      "age": 23,
+      "height": "1.73 m",
+      "nationality": "Senegalese"
+    },
+    {
+      "slug": "otto-tovar",
+      "name": "Otto Tovar",
+      "club": "northgate",
+      "pos": "LW",
+      "num": 25,
+      "age": 20,
+      "height": "1.72 m",
+      "nationality": "Danish"
+    },
+    {
+      "slug": "hakim-volkov",
+      "name": "Hakim Volkov",
+      "club": "northgate",
+      "pos": "LW",
+      "num": 26,
+      "age": 29,
+      "height": "1.94 m",
+      "nationality": "German"
+    },
+    {
+      "slug": "marco-dubois",
+      "name": "Marco Dubois",
+      "club": "northgate",
+      "pos": "ST",
+      "num": 27,
+      "age": 28,
+      "height": "1.74 m",
+      "nationality": "Korean"
+    },
+    {
+      "slug": "lukas-marchetti",
+      "name": "Lukas Marchetti",
+      "club": "northgate",
+      "pos": "ST",
+      "num": 28,
+      "age": 20,
+      "height": "1.86 m",
+      "nationality": "Japanese"
+    },
+    {
+      "slug": "sven-bianchi",
+      "name": "Sven Bianchi",
+      "club": "northgate",
+      "pos": "ST",
+      "num": 29,
+      "age": 27,
+      "height": "1.79 m",
+      "nationality": "Nigerian"
+    }
+  ],
+  "oakvale": [
+    {
+      "slug": "tomas-sokolov",
+      "name": "Tomas Sokolov",
+      "club": "oakvale",
+      "pos": "GK",
+      "num": 1,
+      "age": 31,
+      "height": "1.87 m",
+      "nationality": "German"
+    },
+    {
+      "slug": "tomas-silva",
+      "name": "Tomas Silva",
+      "club": "oakvale",
+      "pos": "GK",
+      "num": 2,
+      "age": 28,
+      "height": "1.75 m",
+      "nationality": "French"
+    },
+    {
+      "slug": "idris-costa",
+      "name": "Idris Costa",
+      "club": "oakvale",
+      "pos": "GK",
+      "num": 3,
+      "age": 22,
+      "height": "1.75 m",
+      "nationality": "Korean"
+    },
+    {
+      "slug": "sang-jin-serrano",
+      "name": "Sang-jin Serrano",
+      "club": "oakvale",
+      "pos": "CB",
+      "num": 4,
+      "age": 21,
+      "height": "1.85 m",
+      "nationality": "Argentine"
+    },
+    {
+      "slug": "miles-bex",
+      "name": "Miles Bex",
+      "club": "oakvale",
+      "pos": "CB",
+      "num": 5,
+      "age": 23,
+      "height": "1.75 m",
+      "nationality": "French"
+    },
+    {
+      "slug": "kenji-tovar",
+      "name": "Kenji Tovar",
+      "club": "oakvale",
+      "pos": "CB",
+      "num": 6,
+      "age": 33,
+      "height": "1.95 m",
+      "nationality": "Uruguayan"
+    },
+    {
+      "slug": "enzo-novak",
+      "name": "Enzo Novak",
+      "club": "oakvale",
+      "pos": "CB",
+      "num": 7,
+      "age": 21,
+      "height": "1.88 m",
+      "nationality": "Danish"
+    },
+    {
+      "slug": "tomas-ndiaye",
+      "name": "Tomas Ndiaye",
+      "club": "oakvale",
+      "pos": "CB",
+      "num": 8,
+      "age": 25,
+      "height": "1.80 m",
+      "nationality": "French"
+    },
+    {
+      "slug": "piotr-petrov",
+      "name": "Piotr Petrov",
+      "club": "oakvale",
+      "pos": "RB",
+      "num": 9,
+      "age": 32,
+      "height": "1.71 m",
+      "nationality": "French"
+    },
+    {
+      "slug": "noah-bianchi",
+      "name": "Noah Bianchi",
+      "club": "oakvale",
+      "pos": "RB",
+      "num": 10,
+      "age": 20,
+      "height": "1.89 m",
+      "nationality": "Nigerian"
+    },
+    {
+      "slug": "sean-sorensen",
+      "name": "Sean Sorensen",
+      "club": "oakvale",
+      "pos": "LB",
+      "num": 11,
+      "age": 19,
+      "height": "1.74 m",
+      "nationality": "Dutch"
+    },
+    {
+      "slug": "mateo-nasser",
+      "name": "Mateo Nasser",
+      "club": "oakvale",
+      "pos": "LB",
+      "num": 12,
+      "age": 21,
+      "height": "1.81 m",
+      "nationality": "Brazilian"
+    },
+    {
+      "slug": "diego-watanabe",
+      "name": "Diego Watanabe",
+      "club": "oakvale",
+      "pos": "CDM",
+      "num": 14,
+      "age": 27,
+      "height": "1.85 m",
+      "nationality": "Italian"
+    },
+    {
+      "slug": "samir-berg",
+      "name": "Samir Berg",
+      "club": "oakvale",
+      "pos": "CDM",
+      "num": 15,
+      "age": 29,
+      "height": "1.87 m",
+      "nationality": "Danish"
+    },
+    {
+      "slug": "aiden-novak",
+      "name": "Aiden Novak",
+      "club": "oakvale",
+      "pos": "CDM",
+      "num": 16,
+      "age": 27,
+      "height": "1.77 m",
+      "nationality": "Uruguayan"
+    },
+    {
+      "slug": "piotr-akin",
+      "name": "Piotr Akin",
+      "club": "oakvale",
+      "pos": "CM",
+      "num": 17,
+      "age": 27,
+      "height": "1.91 m",
+      "nationality": "Spanish"
+    },
+    {
+      "slug": "stefan-nasser",
+      "name": "Stefan Nasser",
+      "club": "oakvale",
+      "pos": "CM",
+      "num": 18,
+      "age": 28,
+      "height": "1.93 m",
+      "nationality": "Spanish"
+    },
+    {
+      "slug": "aiden-quinn",
+      "name": "Aiden Quinn",
+      "club": "oakvale",
+      "pos": "CM",
+      "num": 19,
+      "age": 28,
+      "height": "1.88 m",
+      "nationality": "Nigerian"
+    },
+    {
+      "slug": "patrice-khan",
+      "name": "Patrice Khan",
+      "club": "oakvale",
+      "pos": "CM",
+      "num": 20,
+      "age": 21,
+      "height": "1.84 m",
+      "nationality": "Argentine"
+    },
+    {
+      "slug": "otto-silva",
+      "name": "Otto Silva",
+      "club": "oakvale",
+      "pos": "CAM",
+      "num": 21,
+      "age": 30,
+      "height": "1.79 m",
+      "nationality": "Brazilian"
+    },
+    {
+      "slug": "aiden-delgado",
+      "name": "Aiden Delgado",
+      "club": "oakvale",
+      "pos": "CAM",
+      "num": 22,
+      "age": 25,
+      "height": "1.94 m",
+      "nationality": "Dutch"
+    },
+    {
+      "slug": "emil-russo",
+      "name": "Emil Russo",
+      "club": "oakvale",
+      "pos": "RW",
+      "num": 23,
+      "age": 33,
+      "height": "1.78 m",
+      "nationality": "Japanese"
+    },
+    {
+      "slug": "luca-akin",
+      "name": "Luca Akin",
+      "club": "oakvale",
+      "pos": "RW",
+      "num": 24,
+      "age": 33,
+      "height": "1.77 m",
+      "nationality": "Italian"
+    },
+    {
+      "slug": "malik-quinn",
+      "name": "Malik Quinn",
+      "club": "oakvale",
+      "pos": "LW",
+      "num": 25,
+      "age": 28,
+      "height": "1.79 m",
+      "nationality": "Uruguayan"
+    },
+    {
+      "slug": "otto-vidic",
+      "name": "Otto Vidic",
+      "club": "oakvale",
+      "pos": "LW",
+      "num": 26,
+      "age": 22,
+      "height": "1.96 m",
+      "nationality": "Korean"
+    },
+    {
+      "slug": "aaron-nasser",
+      "name": "Aaron Nasser",
+      "club": "oakvale",
+      "pos": "ST",
+      "num": 27,
+      "age": 29,
+      "height": "1.79 m",
+      "nationality": "English"
+    },
+    {
+      "slug": "viktor-ferreira",
+      "name": "Viktor Ferreira",
+      "club": "oakvale",
+      "pos": "ST",
+      "num": 28,
+      "age": 33,
+      "height": "1.72 m",
+      "nationality": "Senegalese"
+    },
+    {
+      "slug": "anton-ashworth",
+      "name": "Anton Ashworth",
+      "club": "oakvale",
+      "pos": "ST",
+      "num": 29,
+      "age": 33,
+      "height": "1.80 m",
+      "nationality": "Russian"
+    }
+  ],
+  "marshall": [
+    {
+      "slug": "rory-ramos",
+      "name": "Rory Ramos",
+      "club": "marshall",
+      "pos": "GK",
+      "num": 1,
+      "age": 30,
+      "height": "1.86 m",
+      "nationality": "Argentine"
+    },
+    {
+      "slug": "rafael-akin",
+      "name": "Rafael Akin",
+      "club": "marshall",
+      "pos": "GK",
+      "num": 2,
+      "age": 26,
+      "height": "1.76 m",
+      "nationality": "English"
+    },
+    {
+      "slug": "marco-kovac",
+      "name": "Marco Kovac",
+      "club": "marshall",
+      "pos": "GK",
+      "num": 3,
+      "age": 33,
+      "height": "1.86 m",
+      "nationality": "Dutch"
+    },
+    {
+      "slug": "marco-rahman",
+      "name": "Marco Rahman",
+      "club": "marshall",
+      "pos": "CB",
+      "num": 4,
+      "age": 23,
+      "height": "1.73 m",
+      "nationality": "Dutch"
+    },
+    {
+      "slug": "piotr-yilmaz",
+      "name": "Piotr Yilmaz",
+      "club": "marshall",
+      "pos": "CB",
+      "num": 5,
+      "age": 20,
+      "height": "1.83 m",
+      "nationality": "English"
+    },
+    {
+      "slug": "emil-reyes",
+      "name": "Emil Reyes",
+      "club": "marshall",
+      "pos": "CB",
+      "num": 6,
+      "age": 34,
+      "height": "1.89 m",
+      "nationality": "Spanish"
+    },
+    {
+      "slug": "cole-ivanov",
+      "name": "Cole Ivanov",
+      "club": "marshall",
+      "pos": "CB",
+      "num": 7,
+      "age": 24,
+      "height": "1.70 m",
+      "nationality": "Argentine"
+    },
+    {
+      "slug": "enzo-bright",
+      "name": "Enzo Bright",
+      "club": "marshall",
+      "pos": "CB",
+      "num": 8,
+      "age": 22,
+      "height": "1.95 m",
+      "nationality": "Nigerian"
+    },
+    {
+      "slug": "jonas-riley",
+      "name": "Jonas Riley",
+      "club": "marshall",
+      "pos": "RB",
+      "num": 9,
+      "age": 21,
+      "height": "1.80 m",
+      "nationality": "Japanese"
+    },
+    {
+      "slug": "marco-korhonen",
+      "name": "Marco Korhonen",
+      "club": "marshall",
+      "pos": "RB",
+      "num": 10,
+      "age": 34,
+      "height": "1.71 m",
+      "nationality": "Senegalese"
+    },
+    {
+      "slug": "sean-fischer",
+      "name": "Sean Fischer",
+      "club": "marshall",
+      "pos": "LB",
+      "num": 11,
+      "age": 21,
+      "height": "1.87 m",
+      "nationality": "Dutch"
+    },
+    {
+      "slug": "jordan-walsh",
+      "name": "Jordan Walsh",
+      "club": "marshall",
+      "pos": "LB",
+      "num": 12,
+      "age": 31,
+      "height": "1.71 m",
+      "nationality": "Argentine"
+    },
+    {
+      "slug": "piotr-marsh",
+      "name": "Piotr Marsh",
+      "club": "marshall",
+      "pos": "CDM",
+      "num": 14,
+      "age": 30,
+      "height": "1.91 m",
+      "nationality": "Spanish"
+    },
+    {
+      "slug": "patrice-korhonen",
+      "name": "Patrice Korhonen",
+      "club": "marshall",
+      "pos": "CDM",
+      "num": 15,
+      "age": 26,
+      "height": "1.79 m",
+      "nationality": "Uruguayan"
+    },
+    {
+      "slug": "gabriel-ivanov",
+      "name": "Gabriel Ivanov",
+      "club": "marshall",
+      "pos": "CDM",
+      "num": 16,
+      "age": 34,
+      "height": "1.75 m",
+      "nationality": "Argentine"
+    },
+    {
+      "slug": "kasper-choi",
+      "name": "Kasper Choi",
+      "club": "marshall",
+      "pos": "CM",
+      "num": 17,
+      "age": 28,
+      "height": "1.71 m",
+      "nationality": "Korean"
+    },
+    {
+      "slug": "mohammed-fischer",
+      "name": "Mohammed Fischer",
+      "club": "marshall",
+      "pos": "CM",
+      "num": 18,
+      "age": 26,
+      "height": "1.84 m",
+      "nationality": "German"
+    },
+    {
+      "slug": "bastian-osei",
+      "name": "Bastian Osei",
+      "club": "marshall",
+      "pos": "CM",
+      "num": 19,
+      "age": 19,
+      "height": "1.93 m",
+      "nationality": "English"
+    },
+    {
+      "slug": "noah-novak",
+      "name": "Noah Novak",
+      "club": "marshall",
+      "pos": "CM",
+      "num": 20,
+      "age": 24,
+      "height": "1.91 m",
+      "nationality": "Spanish"
+    },
+    {
+      "slug": "niko-russo",
+      "name": "Niko Russo",
+      "club": "marshall",
+      "pos": "CAM",
+      "num": 21,
+      "age": 20,
+      "height": "1.94 m",
+      "nationality": "German"
+    },
+    {
+      "slug": "emil-vidic",
+      "name": "Emil Vidic",
+      "club": "marshall",
+      "pos": "CAM",
+      "num": 22,
+      "age": 34,
+      "height": "1.95 m",
+      "nationality": "Uruguayan"
+    },
+    {
+      "slug": "tomas-haddad",
+      "name": "Tomas Haddad",
+      "club": "marshall",
+      "pos": "RW",
+      "num": 23,
+      "age": 24,
+      "height": "1.85 m",
+      "nationality": "Spanish"
+    },
+    {
+      "slug": "caio-lowe",
+      "name": "Caio Lowe",
+      "club": "marshall",
+      "pos": "RW",
+      "num": 24,
+      "age": 29,
+      "height": "1.94 m",
+      "nationality": "Uruguayan"
+    },
+    {
+      "slug": "jordan-yilmaz",
+      "name": "Jordan Yilmaz",
+      "club": "marshall",
+      "pos": "LW",
+      "num": 25,
+      "age": 23,
+      "height": "1.90 m",
+      "nationality": "Nigerian"
+    },
+    {
+      "slug": "luca-sinclair",
+      "name": "Luca Sinclair",
+      "club": "marshall",
+      "pos": "LW",
+      "num": 26,
+      "age": 30,
+      "height": "1.78 m",
+      "nationality": "Russian"
+    },
+    {
+      "slug": "caio-ndiaye",
+      "name": "Caio Ndiaye",
+      "club": "marshall",
+      "pos": "ST",
+      "num": 27,
+      "age": 28,
+      "height": "1.87 m",
+      "nationality": "Senegalese"
+    },
+    {
+      "slug": "owen-bramble",
+      "name": "Owen Bramble",
+      "club": "marshall",
+      "pos": "ST",
+      "num": 28,
+      "age": 29,
+      "height": "1.88 m",
+      "nationality": "German"
+    },
+    {
+      "slug": "leon-walsh",
+      "name": "Leon Walsh",
+      "club": "marshall",
+      "pos": "ST",
+      "num": 29,
+      "age": 24,
+      "height": "1.72 m",
+      "nationality": "French"
+    }
+  ]
+}

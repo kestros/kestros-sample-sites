@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          jcr:primaryType="kes:ComponentVariationGroup"
+          jcr:title="Display Heading"
+          jcr:description=""
+          mutuallyExclusive="{Boolean}true">
+    <display-1 jcr:primaryType="kes:ComponentVariation"
+               jcr:title="Display 1"
+               inline="true"/>
+    <display-2 jcr:primaryType="kes:ComponentVariation"
+               jcr:title="Display 2"
+               inline="true"/>
+    <display-3 jcr:primaryType="kes:ComponentVariation"
+               jcr:title="Display 3"
+               inline="true"/>
+    <display-4 jcr:primaryType="kes:ComponentVariation"
+               jcr:title="Display 4"
+               inline="true"/>
+    <display-5 jcr:primaryType="kes:ComponentVariation"
+               jcr:title="Display 5"
+               inline="true"/>
+    <display-6 jcr:primaryType="kes:ComponentVariation"
+               jcr:title="Display 6"
+               inline="true"/>
+</jcr:root>

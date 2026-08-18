@@ -1,0 +1,20 @@
+<sly data-sly-use.topNav="${'io.kestros.cms.components.basic.core.navigation.topnav.TopNavigationDataSourceComponent'}"/>
+<nav class="navbar ${topNav.inlineVariations}" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="${properties.brandHref}">${properties.brandName}</a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="kesNavbarMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="kesNavbarMenu" class="navbar-menu">
+            <div class="navbar-start">
+                <sly data-sly-list.item="${topNav.navigationLinks}">
+                    <sly data-sly-resource="${item}"/>
+                </sly>
+            </div>
+        </div>
+    </div>
+</nav>

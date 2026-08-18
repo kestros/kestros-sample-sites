@@ -1,0 +1,7 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:title": "ACPL Top Scorers",
+  "group": "ACPL",
+  "classPath": "io.kestros.samples.acpl.application.datasources.TopScorersCardListDataSource",
+  "container": true
+}

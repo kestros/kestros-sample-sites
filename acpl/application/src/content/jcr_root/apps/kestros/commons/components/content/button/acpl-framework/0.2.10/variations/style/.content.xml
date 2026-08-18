@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          jcr:primaryType="kes:ComponentVariationGroup"
+          jcr:title="Style"
+          jcr:description=""
+          mutuallyExclusive="{Boolean}true">
+    <btn-primary jcr:primaryType="kes:ComponentVariation"
+                 jcr:title="Primary"
+                 inline="true"/>
+    <btn-secondary jcr:primaryType="kes:ComponentVariation"
+                   jcr:title="Secondary"
+                   inline="true"/>
+    <btn-success jcr:primaryType="kes:ComponentVariation"
+                 jcr:title="Success"
+                 inline="true"/>
+    <btn-danger jcr:primaryType="kes:ComponentVariation"
+                jcr:title="Danger"
+                inline="true"/>
+    <btn-warning jcr:primaryType="kes:ComponentVariation"
+                 jcr:title="Warning"
+                 inline="true"/>
+    <btn-info jcr:primaryType="kes:ComponentVariation"
+              jcr:title="Info"
+              inline="true"/>
+    <btn-light jcr:primaryType="kes:ComponentVariation"
+               jcr:title="Light"
+               inline="true"/>
+    <btn-dark jcr:primaryType="kes:ComponentVariation"
+              jcr:title="Dark"
+              inline="true"/>
+    <btn-link jcr:primaryType="kes:ComponentVariation"
+              jcr:title="Link"
+              inline="true"/>
+</jcr:root>

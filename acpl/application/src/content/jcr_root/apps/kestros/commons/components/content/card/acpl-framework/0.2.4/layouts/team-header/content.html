@@ -1,0 +1,23 @@
+<section class="section pt-4 pb-4 acpl-page-head club-keyline" style="${['--club-color: ', properties.color] @ join='', context='styleString'}">
+    <div class="container">
+        <nav class="breadcrumb is-small" aria-label="breadcrumbs">
+            <ul>
+                <li><a href="${properties.base}.html">Home</a></li>
+                <li><a href="${properties.base}/teams.html">Clubs</a></li>
+                <li class="is-active"><a aria-current="page">${properties.clubName}</a></li>
+            </ul>
+        </nav>
+        <div class="d-flex align-items-center gap-4 mb-4">
+            <img class="crest-xxl" src="${properties.base}/assets/crests/${properties.slug}.svg" alt="${properties.clubName} crest"/>
+            <div>
+                <h1 class="title is-2 mb-1">${properties.clubName}</h1>
+                <p class="subtitle is-6 mb-2">${properties.place}</p>
+                <p class="text-muted mb-2">${properties.meta}</p>
+                <div class="d-flex gap-2">
+                    <a class="button is-small" href="${properties.base}/results.html?club=${properties.slug}">All results →</a>
+                    <a class="button is-small" href="${properties.base}/schedule.html?club=${properties.slug}">Fixtures →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

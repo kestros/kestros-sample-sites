@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:kes="http://kestros.io/kes/1.0" jcr:primaryType="kes:ComponentVariationGroup" jcr:title="ACPL">
+    <flex-shrink-0 jcr:primaryType="kes:ComponentVariation" jcr:title="flex-shrink-0" inline="true"/>
+    <w-100 jcr:primaryType="kes:ComponentVariation" jcr:title="w-100" inline="true"/>
+    <mt-3 jcr:primaryType="kes:ComponentVariation" jcr:title="mt-3" inline="true"/>
+</jcr:root>

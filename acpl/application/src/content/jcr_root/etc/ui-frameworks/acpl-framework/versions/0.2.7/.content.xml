@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          jcr:primaryType="kes:UiFramework"
+          jcr:title="ACPL Framework 0.2.7"
+          jcr:description="Owner-primed audit round: rail card stretching fixed, left-anchored list rows, one numeric-alignment rule via cell flags, ticker payload on mobile, unified match hero, related-story recency, tile pluralization."
+
+          kes:vendorLibraries="[bulma/1.0.0]"
+/>

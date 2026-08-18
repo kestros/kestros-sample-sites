@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:kes="http://kestros.io/kes/1.0" jcr:primaryType="kes:ComponentVariationGroup" jcr:title="ACPL">
+    <text-white jcr:primaryType="kes:ComponentVariation" jcr:title="text-white" inline="true"/>
+    <d-block jcr:primaryType="kes:ComponentVariation" jcr:title="d-block" inline="true"/>
+    <small jcr:primaryType="kes:ComponentVariation" jcr:title="small" inline="true"/>
+    <fw-bold jcr:primaryType="kes:ComponentVariation" jcr:title="fw-bold" inline="true"/>
+    <btn jcr:primaryType="kes:ComponentVariation" jcr:title="btn" inline="true"/>
+    <btn-outline-primary jcr:primaryType="kes:ComponentVariation" jcr:title="btn-outline-primary" inline="true"/>
+    <btn-sm jcr:primaryType="kes:ComponentVariation" jcr:title="btn-sm" inline="true"/>
+    <mt-3 jcr:primaryType="kes:ComponentVariation" jcr:title="mt-3" inline="true"/>
+    <ms-2 jcr:primaryType="kes:ComponentVariation" jcr:title="ms-2" inline="true"/>
+    <btn-primary jcr:primaryType="kes:ComponentVariation" jcr:title="btn-primary" inline="true"/>
+</jcr:root>

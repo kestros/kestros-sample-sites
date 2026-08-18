@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          jcr:primaryType="kes:ComponentVariationGroup"
+          jcr:title="Style"
+          jcr:description=""
+          mutuallyExclusive="{Boolean}false">
+    <table-striped jcr:primaryType="kes:ComponentVariation"
+                   jcr:title="Striped Rows"
+                   inline="true"/>
+    <table-striped-columns jcr:primaryType="kes:ComponentVariation"
+                           jcr:title="Striped Columns"
+                           inline="true"/>
+    <table-bordered jcr:primaryType="kes:ComponentVariation"
+                    jcr:title="Bordered"
+                    inline="true"/>
+    <table-borderless jcr:primaryType="kes:ComponentVariation"
+                      jcr:title="Borderless"
+                      inline="true"/>
+    <table-hover jcr:primaryType="kes:ComponentVariation"
+                 jcr:title="Hover"
+                 inline="true"/>
+</jcr:root>

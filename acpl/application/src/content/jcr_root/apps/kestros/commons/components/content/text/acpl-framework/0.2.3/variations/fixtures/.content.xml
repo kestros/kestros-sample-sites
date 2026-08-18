@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:kes="http://kestros.io/kes/1.0" jcr:primaryType="kes:ComponentVariationGroup" jcr:title="Fixtures">
+    <fixture-date jcr:primaryType="kes:ComponentVariation" jcr:title="fixture-date" inline="true"/>
+    </jcr:root>

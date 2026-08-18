@@ -1,0 +1,7 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:title": "ACPL Team Form",
+  "group": "ACPL",
+  "classPath": "io.kestros.samples.acpl.application.datasources.TeamFormCardListDataSource",
+  "container": true
+}

@@ -1,0 +1,28 @@
+<div class="acpl-mw-group">
+    <h5 class="fw-bold mb-3">${properties.matchweek}</h5>
+    <div class="card border-0 shadow-sm mb-4">
+        <div class="card-body p-0">
+            <sly data-sly-list.m="${properties.matches}">
+                <div class="result-row result-row-full" data-acpl-home="${m.homeSlug}" data-acpl-away="${m.awaySlug}">
+                    <div class="result-club">
+                        <a href="${properties.base}/teams/${m.homeSlug}.html"><img src="${properties.base}/assets/crests/${m.homeSlug}.svg" alt="crest" class="img-fluid crest-md me-2"/></a>
+                        <a href="${properties.base}/teams/${m.homeSlug}.html" class="club-link"><span class="d-none d-sm-inline">${m.homeName}</span><span class="d-inline d-sm-none">${m.homeShort}</span></a>
+                        <p class="small text-muted" title="Won-Drawn-Lost">${m.homeRec}</p>
+                    </div>
+                    <div class="text-center">
+                        <a href="${m.href}" class="result-score-box score-link">${m.score}</a>
+                        <p class="result-date">${m.date}</p>
+                    </div>
+                    <div class="result-club away">
+                        <p class="small text-muted" title="Won-Drawn-Lost">${m.awayRec}</p>
+                        <a href="${properties.base}/teams/${m.awaySlug}.html" class="club-link"><span class="d-none d-sm-inline">${m.awayName}</span><span class="d-inline d-sm-none">${m.awayShort}</span></a>
+                        <a href="${properties.base}/teams/${m.awaySlug}.html"><img src="${properties.base}/assets/crests/${m.awaySlug}.svg" alt="crest" class="img-fluid crest-md"/></a>
+                    </div>
+                    <div class="ms-2">
+                        <a class="button is-small" href="${m.href}" role="button">Report</a>
+                    </div>
+                </div>
+            </sly>
+        </div>
+    </div>
+</div>

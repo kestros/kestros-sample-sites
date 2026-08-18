@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:kes="http://kestros.io/kes/1.0" jcr:primaryType="kes:ComponentVariationGroup" jcr:title="Team">
+    <team-header jcr:primaryType="kes:ComponentVariation" jcr:title="team-header" inline="true"/>
+    <col-lg-auto jcr:primaryType="kes:ComponentVariation" jcr:title="col-lg-auto" inline="true"/>
+    <col-6 jcr:primaryType="kes:ComponentVariation" jcr:title="col-6" inline="true"/>
+    <col-sm-4 jcr:primaryType="kes:ComponentVariation" jcr:title="col-sm-4" inline="true"/>
+    <px-3 jcr:primaryType="kes:ComponentVariation" jcr:title="px-3" inline="true"/>
+    <gap-4 jcr:primaryType="kes:ComponentVariation" jcr:title="gap-4" inline="true"/>
+    </jcr:root>

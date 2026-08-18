@@ -1,0 +1,29 @@
+<div class="acpl-mw-group">
+    <h5 class="fw-bold mb-3">${properties.matchweek}</h5>
+    <div class="card border-0 shadow-sm mb-4">
+        <div class="card-body p-0">
+            <sly data-sly-list.m="${properties.matches}">
+                <div class="fixture-row fixture-row-full" data-acpl-home="${m.homeSlug}" data-acpl-away="${m.awaySlug}">
+                    <div class="fixture-club">
+                        <a href="${properties.base}/teams/${m.homeSlug}.html"><img src="${properties.base}/assets/crests/${m.homeSlug}.svg" alt="crest" class="img-fluid crest-md me-2"/></a>
+                        <a href="${properties.base}/teams/${m.homeSlug}.html" class="fw-semibold club-link">${m.homeName}</a>
+                        <p class="small text-muted">${m.homeRec}</p>
+                    </div>
+                    <p>vs</p>
+                    <div class="fixture-club away">
+                        <p class="small text-muted">${m.awayRec}</p>
+                        <a href="${properties.base}/teams/${m.awaySlug}.html" class="fw-semibold club-link">${m.awayName}</a>
+                        <a href="${properties.base}/teams/${m.awaySlug}.html"><img src="${properties.base}/assets/crests/${m.awaySlug}.svg" alt="crest" class="img-fluid crest-md"/></a>
+                    </div>
+                    <div class="fixture-time">
+                        <p>${m.time}</p>
+                        <p class="fixture-date">KO</p>
+                    </div>
+                    <div class="ms-2">
+                        <a class="btn btn-outline-primary btn-sm" href="${m.href}" role="button">Preview</a>
+                    </div>
+                </div>
+            </sly>
+        </div>
+    </div>
+</div>

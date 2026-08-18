@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:kes="http://kestros.io/kes/1.0" jcr:primaryType="kes:ComponentVariationGroup" jcr:title="ACPL">
+    <lead jcr:primaryType="kes:ComponentVariation" jcr:title="lead" inline="true"/>
+    <hero-category jcr:primaryType="kes:ComponentVariation" jcr:title="hero-category" inline="true"/>
+    <text-white jcr:primaryType="kes:ComponentVariation" jcr:title="text-white" inline="true"/>
+    <text-white-50 jcr:primaryType="kes:ComponentVariation" jcr:title="text-white-50" inline="true"/>
+    <footer-heading jcr:primaryType="kes:ComponentVariation" jcr:title="footer-heading" inline="true"/>
+    <text-uppercase jcr:primaryType="kes:ComponentVariation" jcr:title="text-uppercase" inline="true"/>
+    <fw-bold jcr:primaryType="kes:ComponentVariation" jcr:title="fw-bold" inline="true"/>
+    <opacity-50 jcr:primaryType="kes:ComponentVariation" jcr:title="opacity-50" inline="true"/>
+    <story-category jcr:primaryType="kes:ComponentVariation" jcr:title="story-category" inline="true"/>
+    <text-muted jcr:primaryType="kes:ComponentVariation" jcr:title="text-muted" inline="true"/>
+    <small jcr:primaryType="kes:ComponentVariation" jcr:title="small" inline="true"/>
+    <card-text jcr:primaryType="kes:ComponentVariation" jcr:title="card-text" inline="true"/>
+    <hero-dek jcr:primaryType="kes:ComponentVariation" jcr:title="hero-dek" inline="true"/>
+    <section-heading jcr:primaryType="kes:ComponentVariation" jcr:title="section-heading" inline="true"/>
+    <mb-2 jcr:primaryType="kes:ComponentVariation" jcr:title="mb-2" inline="true"/>
+    <mb-auto jcr:primaryType="kes:ComponentVariation" jcr:title="mb-auto" inline="true"/>
+    <mb-1 jcr:primaryType="kes:ComponentVariation" jcr:title="mb-1" inline="true"/>
+    <mb-0 jcr:primaryType="kes:ComponentVariation" jcr:title="mb-0" inline="true"/>
+    <result-date jcr:primaryType="kes:ComponentVariation" jcr:title="result-date" inline="true"/>
+    <fw-semibold jcr:primaryType="kes:ComponentVariation" jcr:title="fw-semibold" inline="true"/>
+    <d-none jcr:primaryType="kes:ComponentVariation" jcr:title="d-none" inline="true"/>
+    <d-sm-inline jcr:primaryType="kes:ComponentVariation" jcr:title="d-sm-inline" inline="true"/>
+    <d-inline jcr:primaryType="kes:ComponentVariation" jcr:title="d-inline" inline="true"/>
+    <d-sm-none jcr:primaryType="kes:ComponentVariation" jcr:title="d-sm-none" inline="true"/>
+    <form-label jcr:primaryType="kes:ComponentVariation" jcr:title="form-label" inline="true"/>
+    <d-flex jcr:primaryType="kes:ComponentVariation" jcr:title="d-flex" inline="true"/>
+    <fixture-vs jcr:primaryType="kes:ComponentVariation" jcr:title="fixture-vs" inline="true"/>
+    <gap-2 jcr:primaryType="kes:ComponentVariation" jcr:title="gap-2" inline="true"/>
+    <mb-3 jcr:primaryType="kes:ComponentVariation" jcr:title="mb-3" inline="true"/>
+    <mb-4 jcr:primaryType="kes:ComponentVariation" jcr:title="mb-4" inline="true"/>
+    <mt-2 jcr:primaryType="kes:ComponentVariation" jcr:title="mt-2" inline="true"/>
+</jcr:root>

@@ -1,0 +1,7 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:title": "ACPL Featured Story",
+  "group": "ACPL",
+  "classPath": "io.kestros.samples.acpl.application.datasources.FeaturedStoryCardListDataSource",
+  "container": true
+}

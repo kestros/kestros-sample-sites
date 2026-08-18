@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:kes="http://kestros.io/kes/1.0" jcr:primaryType="kes:ComponentVariationGroup" jcr:title="Fixtures">
+    <fixture-vs jcr:primaryType="kes:ComponentVariation" jcr:title="fixture-vs" inline="true"/>
+    <text-decoration-none jcr:primaryType="kes:ComponentVariation" jcr:title="text-decoration-none" inline="true"/>
+    <text-muted jcr:primaryType="kes:ComponentVariation" jcr:title="text-muted" inline="true"/>
+</jcr:root>

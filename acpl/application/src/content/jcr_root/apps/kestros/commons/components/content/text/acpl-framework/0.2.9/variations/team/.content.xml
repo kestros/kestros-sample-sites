@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:kes="http://kestros.io/kes/1.0" jcr:primaryType="kes:ComponentVariationGroup" jcr:title="Team">
+    <team-sub jcr:primaryType="kes:ComponentVariation" jcr:title="team-sub" inline="true"/>
+    <player-stat-val jcr:primaryType="kes:ComponentVariation" jcr:title="player-stat-val" inline="true"/>
+    <player-stat-label jcr:primaryType="kes:ComponentVariation" jcr:title="player-stat-label" inline="true"/>
+    <badge jcr:primaryType="kes:ComponentVariation" jcr:title="badge" inline="true"/>
+    <bg-light jcr:primaryType="kes:ComponentVariation" jcr:title="bg-light" inline="true"/>
+    <text-dark jcr:primaryType="kes:ComponentVariation" jcr:title="text-dark" inline="true"/>
+    <border jcr:primaryType="kes:ComponentVariation" jcr:title="border" inline="true"/>
+    <squad-name jcr:primaryType="kes:ComponentVariation" jcr:title="squad-name" inline="true"/>
+</jcr:root>

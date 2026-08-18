@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          jcr:primaryType="kes:ComponentVariationGroup"
+          jcr:title="Font Weight"
+          jcr:description=""
+          mutuallyExclusive="{Boolean}true">
+    <fw-bolder jcr:primaryType="kes:ComponentVariation"
+               jcr:title="Bolder"
+               inline="true"/>
+    <fw-medium jcr:primaryType="kes:ComponentVariation"
+               jcr:title="Medium"
+               inline="true"/>
+    <fw-normal jcr:primaryType="kes:ComponentVariation"
+               jcr:title="Normal"
+               inline="true"/>
+    <fw-light jcr:primaryType="kes:ComponentVariation"
+              jcr:title="Light"
+              inline="true"/>
+    <fw-lighter jcr:primaryType="kes:ComponentVariation"
+                jcr:title="Lighter"
+                inline="true"/>
+</jcr:root>

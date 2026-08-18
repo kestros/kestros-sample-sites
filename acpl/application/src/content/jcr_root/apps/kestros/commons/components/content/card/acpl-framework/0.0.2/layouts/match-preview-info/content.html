@@ -1,0 +1,32 @@
+<div class="match-header text-center mb-4">
+    <div class="d-flex justify-content-start text-start gap-2 small mb-3 acpl-crumb">
+        <a href="${properties.base}.html" class="text-muted text-decoration-none">Home</a>
+        <span class="text-muted">/</span>
+        <a href="${properties.base}/schedule.html" class="text-muted text-decoration-none">Schedule</a>
+        <span class="text-muted">/</span>
+        <span class="text-muted">${properties.homeName} vs ${properties.awayName}</span>
+    </div>
+    <div class="row align-items-center g-3">
+        <div class="col-4">
+            <a class="text-decoration-none text-reset" href="${properties.base}/teams/${properties.homeSlug}.html">
+                <img class="crest-xl mb-2" src="${properties.base}/assets/crests/${properties.homeSlug}.svg" alt="${properties.homeName} crest"/>
+                <span class="h5 fw-bold d-block">${properties.homeName}</span>
+            </a>
+            <p class="text-muted small mb-0">${properties.homePos} in the table</p>
+        </div>
+        <div class="col-4">
+            <p class="display-6 fw-black mb-1">vs</p>
+            <p class="text-muted small mb-0">Kick-off ${properties.kickoff}</p>
+        </div>
+        <div class="col-4">
+            <a class="text-decoration-none text-reset" href="${properties.base}/teams/${properties.awaySlug}.html">
+                <img class="crest-xl mb-2" src="${properties.base}/assets/crests/${properties.awaySlug}.svg" alt="${properties.awayName} crest"/>
+                <span class="h5 fw-bold d-block">${properties.awayName}</span>
+            </a>
+            <p class="text-muted small mb-0">${properties.awayPos} in the table</p>
+        </div>
+    </div>
+    <p class="text-muted mt-3 mb-1">${properties.date} · ${properties.venue}</p>
+    <p class="text-muted small mb-0" data-sly-test="${properties.referee}">Referee: ${properties.referee}</p>
+    <a class="btn btn-primary btn-sm mt-3" data-sly-test="${properties.previewHref}" href="${properties.previewHref}" role="button">Read the match preview →</a>
+</div>

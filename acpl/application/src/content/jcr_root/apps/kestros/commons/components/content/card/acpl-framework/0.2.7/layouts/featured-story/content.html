@@ -1,0 +1,18 @@
+<div class="card featured-story mb-5">
+    <div class="columns is-gapless is-vcentered m-0">
+        <div class="column is-half">
+            <a href="${properties.href}"><img src="${properties.imageSrc}" alt="${properties.headline}" class="featured-story-img"/></a>
+        </div>
+        <div class="column is-half">
+            <div class="p-5">
+                <p class="is-uppercase has-text-weight-bold is-size-7 mb-2">${properties.category}</p>
+                <h2 class="title is-3 mb-3"><a class="has-text-inherit" href="${properties.href}">${properties.headline}</a></h2>
+                <p class="mb-4">${properties.excerpt}</p>
+                <div class="d-flex justify-content-between align-items-center pt-3 border-top">
+                    <p class="is-size-7 mb-0">${properties.byline}</p>
+                    <a class="button is-link is-small" href="${properties.href}" role="button">Read story →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

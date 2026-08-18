@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          jcr:primaryType="kes:UiFramework"
+          jcr:title="ACPL Framework 0.0.2"
+          jcr:description="ACPL sample-site framework. Bootstrap 5 base with league branding, card and table styling. (Renumbered from 0.0.1 to make room for the bare-Bootstrap baseline.)"
+
+          kes:vendorLibraries="[bootstrap/1.0.0]"
+/>

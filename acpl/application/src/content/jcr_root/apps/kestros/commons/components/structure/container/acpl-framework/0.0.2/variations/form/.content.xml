@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:kes="http://kestros.io/kes/1.0" jcr:primaryType="kes:ComponentVariationGroup" jcr:title="Form">
+    <form-select jcr:primaryType="kes:ComponentVariation" jcr:title="form-select" inline="true"/>
+    <form-select-sm jcr:primaryType="kes:ComponentVariation" jcr:title="form-select-sm" inline="true"/>
+    <align-items-end jcr:primaryType="kes:ComponentVariation" jcr:title="align-items-end" inline="true"/>
+    </jcr:root>

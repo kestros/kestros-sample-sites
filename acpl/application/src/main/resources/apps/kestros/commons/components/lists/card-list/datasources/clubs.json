@@ -1,0 +1,7 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:title": "ACPL Club Directory",
+  "group": "ACPL",
+  "classPath": "io.kestros.samples.acpl.application.datasources.ClubDirectoryCardListDataSource",
+  "container": true
+}

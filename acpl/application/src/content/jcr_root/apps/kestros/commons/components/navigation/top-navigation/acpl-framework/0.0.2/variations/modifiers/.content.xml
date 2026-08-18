@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          jcr:primaryType="kes:ComponentVariationGroup"
+          jcr:title="Modifiers"
+          jcr:description=""
+          mutuallyExclusive="{Boolean}false">
+    <fixed-top jcr:primaryType="kes:ComponentVariation"
+               jcr:title="Fixed Top"
+               inline="true"/>
+    <fixed-bottom jcr:primaryType="kes:ComponentVariation"
+                  jcr:title="Fixed Bottom"
+                  inline="true"/>
+    <sticky-top jcr:primaryType="kes:ComponentVariation"
+                jcr:title="Sticky Top"
+                inline="true"/>
+</jcr:root>
