@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:kes="http://kestros.io/kes/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="kes:Page">
+  <jcr:content jcr:primaryType="nt:unstructured" jcr:title="Matches" jcr:description="Fixtures and results." kes:template="/libs/kestros/commons/base-site-template" kes:theme="/etc/ui-frameworks/acpl-framework/versions/0.1.3/themes/default" sling:resourceType="kestros/commons/components/kestros-base-page">
+    <header jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
+    <main jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
+      <band layout="plain" variations="[bg-primary,text-white,py-4]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+        <inner layout="plain" variations="[container]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+          <crumb layout="plain" variations="[d-flex,gap-2,mb-2,small]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+            <hl href="/content/sites/acpl-p4-bootstrap-versions.html" variations="[text-white-50,text-decoration-none]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Home"/>
+            <sep variations="[text-white-50]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="/"/>
+            <cur variations="[text-white-50]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Matches"/>
+          </crumb>
+          <h variations="[h3,fw-bold,mb-2]" headingText="Matches" headingType="h1" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading"/>
+          <sub variations="[text-white-50,mb-0]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Match pages are linked from every result and fixture across the site."/>
+        </inner>
+      </band>
+      <wrap layout="plain" variations="[container,my-5]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+        <row layout="plain" variations="[row,g-4]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+          <col-results layout="plain" variations="[col-lg-6]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+            <card layout="plain" variations="[card,border-0,shadow-sm,h-100]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+              <chead layout="plain" variations="[card-header,acpl-card-header]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+                <t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Latest Results — Matchweek 17"/>
+              </chead>
+              <cbody layout="plain" variations="[card-body,p-0]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+                <matches layout="match-list" kes:datasource="results" mode="results" limit="6" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/lists/card-list"/>
+              </cbody>
+              <cfoot layout="plain" variations="[card-footer,bg-transparent,text-center]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+                <l href="/content/sites/acpl-p4-bootstrap-versions/results.html" variations="[text-muted,small,text-decoration-none]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="All results →"/>
+              </cfoot>
+            </card>
+          </col-results>
+          <col-fixtures layout="plain" variations="[col-lg-6]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+            <card layout="plain" variations="[card,border-0,shadow-sm,h-100]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+              <chead layout="plain" variations="[card-header,acpl-card-header]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+                <t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Next Up — Matchweek 18"/>
+              </chead>
+              <cbody layout="plain" variations="[card-body,p-0]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+                <matches layout="match-list" kes:datasource="fixtures" mode="fixtures" limit="6" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/lists/card-list"/>
+              </cbody>
+              <cfoot layout="plain" variations="[card-footer,bg-transparent,text-center]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+                <l href="/content/sites/acpl-p4-bootstrap-versions/schedule.html" variations="[text-muted,small,text-decoration-none]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Full schedule →"/>
+              </cfoot>
+            </card>
+          </col-fixtures>
+        </row>
+      </wrap>
+    </main>
+    <footer jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
+  </jcr:content>
+</jcr:root>

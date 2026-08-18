@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:kes="http://kestros.io/kes/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="kes:Site">
+    <jcr:content jcr:description="Atlantic Coast Premier League — bootstrap-classic sample site." jcr:primaryType="nt:unstructured" jcr:title="ACPL — P1 Structure" kes:template="/libs/kestros/commons/base-site-template" kes:theme="/etc/ui-frameworks/empty-framework/versions/0.0.1/themes/default" publicationStrategy="kestros-single-instance" sling:resourceType="kestros/commons/components/kestros-base-page">
+        <header jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area">
+            <top-navigation brandHref="/content/sites/acpl-p1-structure.html" brandName="ACPL" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation">
+                <nav-home href="/content/sites/acpl-p1-structure.html" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation-item" text="Home" />
+                <nav-results href="/content/sites/acpl-p1-structure/results.html" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation-item" text="Results" />
+                <nav-stories href="/content/sites/acpl-p1-structure/stories.html" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation-item" text="Stories" />
+                <nav-schedule href="/content/sites/acpl-p1-structure/schedule.html" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation-item" text="Schedule" />
+                <nav-standings href="/content/sites/acpl-p1-structure/standings.html" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation-item" text="Standings" />
+            </top-navigation>
+        </header>
+        <main jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
+            <titlestrip jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container" />
+            <hero jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/section">
+                <container jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container" />
+            </hero>
+            <dashboard jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+                <row jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+                    <col-fixtures jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container" />
+                    <col-standings jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container" />
+                    <col-results jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container" />
+                </row>
+            </dashboard>
+            <footer-cta jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+                <stories jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+                    <col1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container" />
+                    <col2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container" />
+                    <col3 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container" />
+                </stories>
+            </footer-cta>
+        </main>
+        <footer jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area">
+            <row jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+                <c1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container" />
+                <c2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container" />
+                <c3 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container" />
+            </row>
+        </footer>
+    </jcr:content>
+</jcr:root>

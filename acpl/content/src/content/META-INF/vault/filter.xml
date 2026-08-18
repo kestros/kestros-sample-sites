@@ -2,5 +2,10 @@
 <workspaceFilter version="1.0">
   <filter root="/content/sites/acpl"/>
   <filter root="/content/sites/acpl-static"/>
+  <filter root="/content/sites/acpl-p1-structure"/>
+  <filter root="/content/sites/acpl-p2-bootstrap"/>
+  <filter root="/content/sites/acpl-p3-datasources"/>
+  <filter root="/content/sites/acpl-p4-bootstrap-versions"/>
+  <filter root="/content/sites/acpl-p5-bulma-versions"/>
   <filter root="/etc/tags/acpl"/>
 </workspaceFilter>
