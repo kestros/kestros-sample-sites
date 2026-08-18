@@ -42,6 +42,7 @@ public class LeagueDataServiceImpl implements LeagueDataService {
   private List<Map<String, Object>> stories = Collections.emptyList();
   private Map<String, Object> featuredMatch = Collections.emptyMap();
   private List<Map<String, Object>> matches = Collections.emptyList();
+  private Map<String, Object> matchesBySeason = Collections.emptyMap();
 
   @Activate
   protected void activate() {
@@ -58,18 +59,20 @@ public class LeagueDataServiceImpl implements LeagueDataService {
     }
     stories = readList("stories.json");
     featuredMatch = readMap("featuredMatch.json");
-    matches = loadCurrentSeasonMatches();
+    matchesBySeason = readMap("matches.json");
+    matches = currentSeasonMatches(matchesBySeason);
     LOG.info("LeagueDataService loaded: {} clubs, {} players, {} standings rows, {} stories",
         clubs.size(), players.size(), standings.size(), stories.size());
   }
 
   /**
-   * {@code matches.json} is keyed by season ({@code {"2023-24": [...], "2025-26": [...]}}). Loads the
-   * current (highest-keyed) season's match list; empty if the file is missing or malformed.
+   * {@code matches.json} is keyed by season ({@code {"2023-24": [...], "2025-26": [...]}}). Picks the
+   * current (highest-keyed) season's match list out of an already-parsed map; empty if that map is
+   * empty or malformed. Takes the map rather than reading the file so activation parses the 772KB
+   * {@code matches.json} once.
    */
   @SuppressWarnings("unchecked")
-  private List<Map<String, Object>> loadCurrentSeasonMatches() {
-    final Map<String, Object> bySeasons = readMap("matches.json");
+  private List<Map<String, Object>> currentSeasonMatches(final Map<String, Object> bySeasons) {
     if (bySeasons.isEmpty()) {
       return Collections.emptyList();
     }
@@ -87,7 +90,14 @@ public class LeagueDataServiceImpl implements LeagueDataService {
     return result;
   }
 
-  private InputStream open(final String name) {
+  /**
+   * Opens a bundled data resource by file name. Package-private, not private, so a same-package test
+   * can subclass this service and record which resource each read touched.
+   *
+   * @param name file name under {@code /data}, e.g. {@code matches.json}
+   * @return the resource stream, or {@code null} if there is no such resource
+   */
+  InputStream open(final String name) {
     return getClass().getClassLoader().getResourceAsStream("data/" + name);
   }
 
@@ -118,7 +128,7 @@ public class LeagueDataServiceImpl implements LeagueDataService {
 
   @Override
   public List<Map<String, Object>> getClubs() {
-    return clubs;
+    return new ArrayList<>(clubs);
   }
 
   @Override
@@ -140,22 +150,22 @@ public class LeagueDataServiceImpl implements LeagueDataService {
 
   @Override
   public List<Map<String, Object>> getStandings() {
-    return standings;
+    return new ArrayList<>(standings);
   }
 
   @Override
   public List<Map<String, Object>> getRecentResults() {
-    return recentResults;
+    return new ArrayList<>(recentResults);
   }
 
   @Override
   public List<Map<String, Object>> getUpcomingFixtures() {
-    return upcomingFixtures;
+    return new ArrayList<>(upcomingFixtures);
   }
 
   @Override
   public List<Map<String, Object>> getPlayers() {
-    return players;
+    return new ArrayList<>(players);
   }
 
   @Override
@@ -256,12 +266,12 @@ public class LeagueDataServiceImpl implements LeagueDataService {
 
   @Override
   public List<Map<String, Object>> getStories() {
-    return stories;
+    return new ArrayList<>(stories);
   }
 
   @Override
   public Map<String, Object> getFeaturedMatch() {
-    return featuredMatch;
+    return new LinkedHashMap<>(featuredMatch);
   }
 
   private static int asInt(final Object o) {
@@ -271,8 +281,36 @@ public class LeagueDataServiceImpl implements LeagueDataService {
     try {
       return Integer.parseInt(String.valueOf(o));
     } catch (final NumberFormatException e) {
-      return new ArrayList<>().size();
+      return 0;
     }
+  }
+
+  /**
+   * Recursively copies the maps and lists inside a parsed JSON value, so that nothing handed to a
+   * caller shares a nested container with the cache. Strings, numbers and booleans are immutable and
+   * are passed through.
+   *
+   * @param value a parsed JSON value
+   * @return a value that shares no mutable container with {@code value}
+   */
+  @SuppressWarnings("unchecked")
+  private static Object deepCopy(final Object value) {
+    if (value instanceof Map) {
+      final Map<String, Object> copy = new LinkedHashMap<>();
+      for (final Map.Entry<String, Object> e : ((Map<String, Object>) value).entrySet()) {
+        copy.put(e.getKey(), deepCopy(e.getValue()));
+      }
+      return copy;
+    }
+    if (value instanceof List) {
+      final List<Object> source = (List<Object>) value;
+      final List<Object> copy = new ArrayList<>(source.size());
+      for (final Object o : source) {
+        copy.add(deepCopy(o));
+      }
+      return copy;
+    }
+    return value;
   }
   @SuppressWarnings("unchecked")
   @Nonnull
@@ -280,7 +318,7 @@ public class LeagueDataServiceImpl implements LeagueDataService {
   public List<Map<String, Object>> getMeetings(final String clubA, final String clubB,
       final int limit) {
     final List<Map<String, Object>> meetings = new ArrayList<>();
-    final Map<String, Object> bySeasons = readMap("matches.json");
+    final Map<String, Object> bySeasons = matchesBySeason;
     final List<String> seasons = new ArrayList<>(bySeasons.keySet());
     seasons.sort(Collections.reverseOrder());
     for (final String season : seasons) {
@@ -296,7 +334,7 @@ public class LeagueDataServiceImpl implements LeagueDataService {
         final boolean pair = (clubA.equals(m.get("home")) && clubB.equals(m.get("away")))
             || (clubB.equals(m.get("home")) && clubA.equals(m.get("away")));
         if (pair && Boolean.TRUE.equals(m.get("played"))) {
-          final Map<String, Object> withSeason = new LinkedHashMap<>(m);
+          final Map<String, Object> withSeason = (Map<String, Object>) deepCopy(m);
           withSeason.put("season", season);
           seasonMeetings.add(withSeason);
         }

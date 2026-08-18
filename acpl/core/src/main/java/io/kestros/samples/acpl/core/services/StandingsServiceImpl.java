@@ -22,9 +22,9 @@ public class StandingsServiceImpl extends AbstractDisplayService implements Stan
   public List<Map<String, Object>> getStandingsRows(final int limit) {
     final List<Map<String, Object>> all = leagueDataService.getStandings();
     if (limit > 0 && limit < all.size()) {
-      return all.subList(0, limit);
+      return new ArrayList<>(all.subList(0, limit));
     }
-    return all;
+    return new ArrayList<>(all);
   }
 
   @Nonnull
