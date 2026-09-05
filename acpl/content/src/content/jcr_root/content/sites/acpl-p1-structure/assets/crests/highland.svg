@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" role="img" aria-label="Highland Park">
-  <path d="M20 20 L180 20 L180 130 Q180 200 100 230 Q20 200 20 130 Z" fill="#6CB4EE"/>
-  <path d="M30 30 L170 30 L170 130 Q170 195 100 220 Q30 195 30 130 Z" fill="none" stroke="#FFFFFF" stroke-width="3"/>
-  <text x="100" y="125" text-anchor="middle" font-family="Georgia, serif" font-size="62" font-weight="700" fill="#FFFFFF">HP</text>
-  <line x1="50" y1="150" x2="150" y2="150" stroke="#FFFFFF" stroke-width="2"/>
-  <text x="100" y="178" text-anchor="middle" font-family="Helvetica, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" letter-spacing="2">EST. 1946</text>
-</svg>
