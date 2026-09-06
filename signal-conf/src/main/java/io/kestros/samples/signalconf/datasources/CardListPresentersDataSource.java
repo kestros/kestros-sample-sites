@@ -13,12 +13,16 @@ import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 
+/**
+ * Sling model datasource that renders a Kestros card list for the configured presenters root page.
+ */
 @Model(adaptables = {SlingHttpServletRequest.class, Resource.class})
-public class CardListPresentersDataSource extends BaseContainerSlingModelDataSource implements
-                                                                                    KestrosCardList {
+public class CardListPresentersDataSource extends BaseContainerSlingModelDataSource
+    implements KestrosCardList {
 
   private BaseContentPage rootPage;
 
+  @Nullable
   BaseContentPage getRootPage() {
     if (rootPage == null) {
       String pagesPath = getResource().getValueMap().get("pagesPath", String.class);
@@ -32,6 +36,11 @@ public class CardListPresentersDataSource extends BaseContainerSlingModelDataSou
     return rootPage;
   }
 
+  /**
+   * Read-more text displayed on each card.
+   *
+   * @return read-more text, or {@code null} if not configured.
+   */
   @Nullable
   public String getReadMoreText() {
     return getResource().getValueMap().get("readMoreText", String.class);

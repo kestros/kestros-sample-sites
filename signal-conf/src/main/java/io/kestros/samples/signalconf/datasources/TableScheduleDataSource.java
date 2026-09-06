@@ -13,11 +13,16 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 
+/**
+ * Sling model datasource that renders the conference schedule for a configured day as a Kestros
+ * table.
+ */
 @Model(adaptables = {SlingHttpServletRequest.class, Resource.class})
 public class TableScheduleDataSource extends BaseContainerSlingModelDataSource
     implements KestrosTable {
@@ -26,14 +31,17 @@ public class TableScheduleDataSource extends BaseContainerSlingModelDataSource
   @org.apache.sling.models.annotations.Optional
   private TagRetrievalService tagRetrievalService;
 
+  @Nullable
   String getDayTag() {
     return getResource().getValueMap().get("dayTag", String.class);
   }
 
+  @Nullable
   String getSessionsPath() {
     return getResource().getValueMap().get("sessionsPath", String.class);
   }
 
+  @Nonnull
   List<BaseContentPage> getSessionsForDay() {
     List<BaseContentPage> sessions = new ArrayList<>();
     String dayTag = getDayTag();
