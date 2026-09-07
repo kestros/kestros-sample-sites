@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:kes="http://kestros.io/kes/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="kes:Page">
+    <jcr:content jcr:primaryType="nt:unstructured" jcr:title="Club" kes:template="/libs/kestros/commons/base-site-template" kes:theme="/etc/ui-frameworks/acpl-framework/versions/0.2.11/themes/default" sling:resourceType="kestros/commons/components/kestros-dynamic-page">
+        <header jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
+        <main jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area"><wrap layout="plain" variations="[container,my-5]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container"><h variations="[section-heading,mb-3]" headingText="Club" headingType="h1" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading"/><t variations="[mb-0]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="The slug captured from the URL is rendered as this page's title - read it in the browser tab, or in view-source as the &lt;title&gt; element."/></wrap></main>
+        <footer jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area"/>
+    </jcr:content>
+</jcr:root>
