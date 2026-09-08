@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:kes="http://kestros.io/kes/1.0"
+          jcr:primaryType="kes:VendorLibrary"
+          jcr:title="Bootstrap 1.0.0 (Bootstrap CSS 5.3.8)"
+          jcr:description=""
+          kes:libraryCode="bootstrap-lib"
+/>

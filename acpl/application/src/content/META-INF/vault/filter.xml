@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
     <filter root="/etc/ui-frameworks/acpl-framework"/>
+    <filter root="/etc/vendor-libraries/bootstrap"/>
+    <filter root="/etc/vendor-libraries/bulma"/>
     <filter root="/apps/kestros/samples/acpl"/>
     <filter root="/apps/kestros/commons/components">
         <include pattern="^/apps/kestros/commons/components(/.*/acpl-framework(/.*)?)?$"/>
