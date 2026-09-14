@@ -10,10 +10,22 @@ import java.util.List;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
+/**
+ * Synthetic Kestros table cell used by signal-conf datasources to render schedule cells.
+ */
 public class SyntheticTableCell extends BaseContainerSyntheticResource implements KestrosTableCell {
 
   private final String text;
 
+  /**
+   * Constructs a synthetic table cell.
+   *
+   * @param text cell text.
+   * @param dataSource owning datasource.
+   * @param resourcePrefix resource name prefix used for synthetic naming.
+   * @param forcedResourceName explicit synthetic resource name, may be {@code null}.
+   * @throws ComponentConfigurationException if the synthetic resource cannot be constructed.
+   */
   public SyntheticTableCell(@Nonnull String text,
       @Nonnull BaseSlingModelDataSource dataSource,
       @Nonnull String resourcePrefix,
@@ -22,6 +34,11 @@ public class SyntheticTableCell extends BaseContainerSyntheticResource implement
     this.text = text;
   }
 
+  /**
+   * Returns the cell's text content.
+   *
+   * @return cell text, or {@code null} if none was provided.
+   */
   @Nullable
   public String getText() {
     return text;
