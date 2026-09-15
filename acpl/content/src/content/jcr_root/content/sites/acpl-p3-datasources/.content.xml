@@ -43,7 +43,7 @@
 
                     <column-2 jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
                         <h headingText="Top of the Table" headingType="h3" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading"/>
-                        <table variations="[table,table-sm]" kes:datasource="standings" limit="5" columns="pos,club,p,pts" headers="#,Club,P,Pts" clubDisplay="rich-name" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table"/>
+                        <table variations="[table,table-sm]" kes:datasource="standings" limit="5" columns="pos,club,p,pts" headers="#,Club,P,Pts" clubDisplay="name" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table"/>
                         <all href="/content/sites/acpl-p3-datasources/standings.html" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Full standings"/>
                     </column-2>
 

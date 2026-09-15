@@ -22,8 +22,12 @@ public interface StandingsService {
   String getZone(int pos);
 
   /**
-   * Rich club cell data: slug, label (full name for "rich-name", abbreviation otherwise), linkClass,
-   * base (site root from contextPath).
+   * Club cell data: slug, label, linkClass, base (site root from contextPath).
+   *
+   * <p>The label is the full club name for "name" and "rich-name", and the abbreviation for
+   * anything else. A "rich-*" mode additionally tells the datasource to build a cell for the
+   * {@code club} table-cell layout, which exists from ACPL Framework 0.0.2 on; a page on 0.0.1 asks
+   * for plain "name" so the label renders as ordinary cell text.
    */
   Map<String, String> getClubCell(String slug, String displayMode, String contextPath);
 }
