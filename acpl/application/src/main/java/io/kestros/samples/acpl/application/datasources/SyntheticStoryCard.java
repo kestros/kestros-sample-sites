@@ -28,6 +28,7 @@ public class SyntheticStoryCard extends BaseContainerSyntheticResource implement
   private final String href;
   private final String category;
   private final String byline;
+  private final BaseSlingModelDataSource cardDataSource;
 
   public SyntheticStoryCard(@Nonnull String title, @Nonnull String excerpt, @Nonnull String image,
       @Nonnull String href, @Nonnull String category, @Nonnull String byline,
@@ -41,6 +42,7 @@ public class SyntheticStoryCard extends BaseContainerSyntheticResource implement
     this.href = href;
     this.category = category;
     this.byline = byline;
+    this.cardDataSource = dataSource;
   }
 
   private String layoutOverride;
@@ -83,7 +85,7 @@ public class SyntheticStoryCard extends BaseContainerSyntheticResource implement
   @Nullable
   @Override
   public KestrosHeading getTitleElement() {
-    return null;
+    return LeagueCardElements.heading(title, cardDataSource);
   }
 
   @Nullable
@@ -95,13 +97,13 @@ public class SyntheticStoryCard extends BaseContainerSyntheticResource implement
   @Nullable
   @Override
   public KestrosImage getImageElement() {
-    return null;
+    return LeagueCardElements.image(image, title, href, cardDataSource);
   }
 
   @Nullable
   @Override
   public KestrosButtonGroup getButtonGroupElement() {
-    return null;
+    return LeagueCardElements.buttonGroup("Read more", href, cardDataSource);
   }
 
   @Nonnull
