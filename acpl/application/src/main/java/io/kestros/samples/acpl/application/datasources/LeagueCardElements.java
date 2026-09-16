@@ -16,6 +16,8 @@ import java.util.List;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Builds the title / image / button-group elements that the stock card layout renders.
@@ -26,10 +28,12 @@ import org.apache.commons.lang3.StringUtils;
  * renders {@code getTitle()}, {@code getImage()} and {@code getButtonGroup()}. Those bridge to the
  * three element getters, so a card with the string data but no elements renders as an empty box.
  *
- * <p>Each factory returns null rather than throwing when the element cannot be built, which leaves
- * the card rendering exactly as it did before instead of failing the whole list.
+ * <p>Each factory logs and returns null rather than throwing when the element cannot be built, which
+ * leaves the card rendering exactly as it did before instead of failing the whole list.
  */
 final class LeagueCardElements {
+
+  private static final Logger LOG = LoggerFactory.getLogger(LeagueCardElements.class);
 
   private LeagueCardElements() {
   }
@@ -50,6 +54,7 @@ final class LeagueCardElements {
     try {
       return new KestrosHeadingImpl(text, "h3", dataSource, "title", "titleElement");
     } catch (final ComponentConfigurationException e) {
+      LOG.error("card heading skipped for text '{}': {}", text, e.getMessage(), e);
       return null;
     }
   }
@@ -73,6 +78,7 @@ final class LeagueCardElements {
       return new KestrosImageImpl(imagePath, StringUtils.defaultString(altText), null, null, href,
           null, null, AnchorTarget.SAME_WINDOW, dataSource, "image", "imageElement", null);
     } catch (final ComponentConfigurationException e) {
+      LOG.error("card image skipped for path '{}': {}", imagePath, e.getMessage(), e);
       return null;
     }
   }
@@ -98,6 +104,7 @@ final class LeagueCardElements {
       final List<KestrosButton> buttons = Collections.singletonList(button);
       return new KestrosButtonGroupImpl(buttons, dataSource, "buttonGroup", "buttonGroupElement");
     } catch (final ComponentConfigurationException e) {
+      LOG.error("card button group skipped for href '{}': {}", href, e.getMessage(), e);
       return null;
     }
   }

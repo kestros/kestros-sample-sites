@@ -3,10 +3,15 @@ package io.kestros.samples.acpl.application.datasources;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
+import ch.qos.logback.classic.Level;
+import ch.qos.logback.classic.Logger;
+import ch.qos.logback.classic.spi.ILoggingEvent;
+import ch.qos.logback.core.read.ListAppender;
 import io.kestros.cms.components.basic.api.content.KestrosButtonGroup;
 import io.kestros.cms.components.basic.api.content.KestrosHeading;
 import io.kestros.cms.components.basic.api.content.KestrosImage;
@@ -17,9 +22,11 @@ import io.kestros.cms.uiframeworks.api.models.UiFramework;
 import java.util.ArrayList;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.testing.mock.sling.junit.SlingContext;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
+import org.slf4j.LoggerFactory;
 
 /**
  * The stock card layout renders the title, image and button-group elements rather than
@@ -30,27 +37,68 @@ import org.junit.Test;
  */
 public class LeagueCardElementsTest {
 
+  private static final String CARDS_PATH = "/content/acpl/jcr:content/cards";
+
   @Rule
   public SlingContext context = new SlingContext();
 
   private BaseSlingModelDataSource dataSource;
 
+  private ListAppender<ILoggingEvent> appender;
+
+  private Logger logger;
+
   @Before
   public void setUp() {
-    final Resource resource = context.create().resource("/content/acpl/jcr:content/cards");
-    dataSource = mock(BaseSlingModelDataSource.class);
     // BaseSyntheticResource throws ComponentConfigurationException if any of these is null, and
     // every factory below turns that exception into a null element - so an under-stubbed mock
     // would make the whole test pass for the wrong reason.
-    when(dataSource.getResourceResolver()).thenReturn(context.resourceResolver());
-    when(dataSource.getResource()).thenReturn(resource);
-    when(dataSource.getUiFramework()).thenReturn(mock(UiFramework.class));
-    when(dataSource.getLayout(anyString())).thenReturn("default");
-    when(dataSource.getElementVariations(anyString(), anyString())).thenReturn(new ArrayList<>());
-    when(dataSource.getComponentVariationRetrievalService()).thenReturn(
+    dataSource = workingDataSource();
+
+    logger = (Logger) LoggerFactory.getLogger(LeagueCardElements.class);
+    appender = new ListAppender<>();
+    appender.start();
+    logger.addAppender(appender);
+    logger.setLevel(Level.ERROR);
+  }
+
+  @After
+  public void tearDown() {
+    logger.detachAppender(appender);
+  }
+
+  private BaseSlingModelDataSource workingDataSource() {
+    // Reuse the resource if it is already there: sling-mock refuses to create the same path twice,
+    // and a test that builds both a working and a broken data source calls this method twice.
+    Resource resource = context.resourceResolver().getResource(CARDS_PATH);
+    if (resource == null) {
+      resource = context.create().resource(CARDS_PATH);
+    }
+    final BaseSlingModelDataSource source = mock(BaseSlingModelDataSource.class);
+    when(source.getResourceResolver()).thenReturn(context.resourceResolver());
+    when(source.getResource()).thenReturn(resource);
+    when(source.getUiFramework()).thenReturn(mock(UiFramework.class));
+    when(source.getLayout(anyString())).thenReturn("default");
+    when(source.getElementVariations(anyString(), anyString())).thenReturn(new ArrayList<>());
+    when(source.getComponentVariationRetrievalService()).thenReturn(
         mock(ComponentVariationRetrievalService.class));
-    when(dataSource.getComponentUiFrameworkViewRetrievalService()).thenReturn(
+    when(source.getComponentUiFrameworkViewRetrievalService()).thenReturn(
         mock(ComponentUiFrameworkViewRetrievalService.class));
+    return source;
+  }
+
+  /**
+   * A data source whose layout is null. BaseSyntheticResource:45-49 throws
+   * ComponentConfigurationException when the layout is missing, which is the route into the catch
+   * blocks under test. A wholly unstubbed mock is not usable here - it fails with a
+   * NullPointerException before reaching that check, which the factories do not catch.
+   *
+   * @return A data source that cannot build an element.
+   */
+  private BaseSlingModelDataSource brokenDataSource() {
+    final BaseSlingModelDataSource source = workingDataSource();
+    when(source.getLayout(anyString())).thenReturn(null);
+    return source;
   }
 
   @Test
@@ -129,6 +177,56 @@ public class LeagueCardElementsTest {
 
     assertNotNull("match card heading", upcoming.getTitleElement());
     assertEquals("Ashford Town v Bexley United", upcoming.getTitleElement().getHeadingText());
+  }
+
+  @Test
+  public void testHeadingThatCannotBeBuiltIsLogged() {
+    assertNull("the card still renders, it just has no heading",
+        LeagueCardElements.heading("Ashford Town", brokenDataSource()));
+
+    assertEquals("one failure, one log line", 1, appender.list.size());
+    assertEquals(Level.ERROR, appender.list.get(0).getLevel());
+    assertTrue("the log line names the heading that went missing",
+        appender.list.get(0).getFormattedMessage().contains("Ashford Town"));
+    assertNotNull("the exception travels with the line, so there is a stack trace",
+        appender.list.get(0).getThrowableProxy());
+  }
+
+  @Test
+  public void testImageThatCannotBeBuiltIsLogged() {
+    assertNull(LeagueCardElements.image("/content/acpl/img/ashford.png", "Ashford Town", null,
+        brokenDataSource()));
+
+    assertEquals("one failure, one log line", 1, appender.list.size());
+    assertEquals(Level.ERROR, appender.list.get(0).getLevel());
+    assertTrue("the log line names the image path that went missing",
+        appender.list.get(0).getFormattedMessage().contains("/content/acpl/img/ashford.png"));
+    assertNotNull(appender.list.get(0).getThrowableProxy());
+  }
+
+  @Test
+  public void testButtonGroupThatCannotBeBuiltIsLogged() {
+    assertNull(LeagueCardElements.buttonGroup("Match centre", "/content/acpl/matches/m1.html",
+        brokenDataSource()));
+
+    assertEquals("one failure, one log line", 1, appender.list.size());
+    assertEquals(Level.ERROR, appender.list.get(0).getLevel());
+    assertTrue("the log line names the link that went missing",
+        appender.list.get(0).getFormattedMessage().contains("/content/acpl/matches/m1.html"));
+    assertNotNull(appender.list.get(0).getThrowableProxy());
+  }
+
+  @Test
+  public void testNothingIsLoggedWhenTheElementsBuild() {
+    // A control against the log lines being hoisted out of the catch blocks: with a working data
+    // source all three elements build, so an ERROR here would mean the code logs on success.
+    assertNotNull(LeagueCardElements.heading("Ashford Town", dataSource));
+    assertNotNull(
+        LeagueCardElements.image("/content/acpl/img/ashford.png", "Ashford Town", null, dataSource));
+    assertNotNull(
+        LeagueCardElements.buttonGroup("Match centre", "/content/acpl/matches/m1.html", dataSource));
+
+    assertTrue("nothing failed, so nothing is logged", appender.list.isEmpty());
   }
 
   private SyntheticMatchCard matchCard(final String homeGoals, final String awayGoals)
