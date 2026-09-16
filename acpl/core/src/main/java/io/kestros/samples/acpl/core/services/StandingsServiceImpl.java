@@ -60,12 +60,16 @@ public class StandingsServiceImpl extends AbstractDisplayService implements Stan
   public Map<String, String> getClubCell(final String slug, final String displayMode,
       final String contextPath) {
     final Map<String, String> cell = new LinkedHashMap<>();
-    final boolean useName = "rich-name".equals(displayMode);
+    // "name" and "rich-name" both label with the full club name. They differ in how the cell is
+    // built, not in what it says: "rich-*" goes through the club table-cell layout, which exists
+    // from ACPL Framework 0.0.2 on, so a page on 0.0.1 asks for plain "name".
+    final boolean useName = displayMode != null && displayMode.endsWith("name");
+    final boolean rich = displayMode != null && displayMode.startsWith("rich");
     cell.put("slug", slug);
     cell.put("label", useName
         ? leagueDataService.getClubName(slug)
         : leagueDataService.getClubShort(slug));
-    cell.put("linkClass", useName ? "fw-semibold club-link" : "club-link");
+    cell.put("linkClass", rich && useName ? "fw-semibold club-link" : "club-link");
     cell.put("base", siteRoot(contextPath));
     return cell;
   }

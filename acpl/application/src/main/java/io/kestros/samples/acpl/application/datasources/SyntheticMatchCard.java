@@ -34,6 +34,7 @@ public class SyntheticMatchCard extends BaseContainerSyntheticResource implement
   private String subText = "";
   private String homeGoals = "";
   private String awayGoals = "";
+  private final BaseSlingModelDataSource cardDataSource;
 
   public SyntheticMatchCard(@Nonnull String layoutName, @Nonnull String base,
       @Nonnull String matchHref, @Nonnull String homeSlug, @Nonnull String homeShort,
@@ -53,6 +54,21 @@ public class SyntheticMatchCard extends BaseContainerSyntheticResource implement
     this.awayShort = awayShort;
     this.awayName = awayName;
     this.mid = mid;
+    this.cardDataSource = dataSource;
+  }
+
+  /**
+   * Match-up line the stock card layout renders as the card heading, with the score when the match
+   * has been played.
+   *
+   * @return Card title text.
+   */
+  @Nonnull
+  private String getCardTitleText() {
+    if (!homeGoals.isEmpty() && !awayGoals.isEmpty()) {
+      return homeName + " " + homeGoals + " - " + awayGoals + " " + awayName;
+    }
+    return homeName + " v " + awayName;
   }
 
   @Override
@@ -99,13 +115,13 @@ public class SyntheticMatchCard extends BaseContainerSyntheticResource implement
   @Nullable
   @Override
   public KestrosHeading getTitleElement() {
-    return null;
+    return LeagueCardElements.heading(getCardTitleText(), cardDataSource);
   }
 
   @Nullable
   @Override
   public String getDescription() {
-    return null;
+    return subText.isEmpty() ? null : subText;
   }
 
   @Nullable
@@ -117,7 +133,7 @@ public class SyntheticMatchCard extends BaseContainerSyntheticResource implement
   @Nullable
   @Override
   public KestrosButtonGroup getButtonGroupElement() {
-    return null;
+    return LeagueCardElements.buttonGroup("Match centre", matchHref, cardDataSource);
   }
 
   @Nonnull
