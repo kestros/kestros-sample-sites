@@ -55,7 +55,6 @@
             <scope>provided</scope>
         </dependency>
         <!-- AbstractDynamicPageFilter.getTargetPageContent — added in site-building-core 0.1.7-SNAPSHOT -->
-
         <dependency>
             <groupId>io.kestros.cms</groupId>
             <artifactId>kestros-site-building-core</artifactId>
