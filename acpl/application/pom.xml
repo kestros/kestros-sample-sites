@@ -54,8 +54,8 @@
             <version>0.1.4-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
-        <!-- AbstractDynamicPageFilter. getTargetPageContent moved to it in 0.1.7-SNAPSHOT;
-             the three ACPL filters override it, so 0.1.6-SNAPSHOT no longer compiles. -->
+        <!-- AbstractDynamicPageFilter.getTargetPageContent — added in site-building-core 0.1.7-SNAPSHOT -->
+
         <dependency>
             <groupId>io.kestros.cms</groupId>
             <artifactId>kestros-site-building-core</artifactId>
