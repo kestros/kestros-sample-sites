@@ -139,7 +139,20 @@ public class SyntheticMatchCard extends BaseContainerSyntheticResource implement
   @Nonnull
   @Override
   public List<KestrosBasicComponentElement> getChildElements() {
-    return new ArrayList<>();
+    // Title and button group have to become child resources of the synthetic card: the stock card
+    // layout reads them back through CardStaticDataSource, which looks for children named
+    // titleElement and buttonGroup. Returning an empty list rendered an empty card-body on any
+    // framework without a match-row layout of its own.
+    final List<KestrosBasicComponentElement> children = new ArrayList<>();
+    final KestrosHeading title = getTitleElement();
+    if (title != null) {
+      children.add(title);
+    }
+    final KestrosButtonGroup buttonGroup = getButtonGroupElement();
+    if (buttonGroup != null) {
+      children.add(buttonGroup);
+    }
+    return children;
   }
   /** Optional context line under the score box (e.g. "MW8 · 2025-26" on head-to-head rows). */
   public SyntheticMatchCard withSubText(@Nullable final String subText) {
