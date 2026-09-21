@@ -1,5 +1,6 @@
 package io.kestros.samples.acpl.application.filters;
 
+import io.kestros.cms.sitebuilding.api.filters.DynamicPageFilter;
 import io.kestros.cms.sitebuilding.api.models.BaseSite;
 import io.kestros.cms.sitebuilding.core.filters.AbstractDynamicPageFilter;
 import io.kestros.samples.acpl.api.services.LeagueDataService;
@@ -9,7 +10,6 @@ import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import javax.servlet.Filter;
 import org.apache.sling.api.SlingHttpServletRequest;
-import org.apache.sling.api.resource.Resource;
 import org.apache.sling.servlets.annotations.SlingServletFilter;
 import org.apache.sling.servlets.annotations.SlingServletFilterScope;
 import org.osgi.service.component.annotations.Component;
@@ -18,11 +18,16 @@ import org.osgi.service.component.annotations.ReferenceCardinality;
 import org.osgi.service.component.annotations.ReferencePolicyOption;
 
 /**
- * Dynamic-page filter for match detail pages: {@code /content/sites/<site>/matches/<home>-vs-<away>.html}
- * with no real child page routes to the shared {@code match} template, with the match id exposed as the
- * {@code match} request attribute (read by the match datasources). Modeled on {@link AcplTeamPageFilter}.
+ * Dynamic-page filter for match report pages: {@code /content/sites/<site>/matches/<home>-vs-<away>.html}
+ * with no real child page routes to the page claiming {@code acpl-match}, with the match id exposed as
+ * the {@code match} request attribute (read by the match datasources). Modeled on
+ * {@link AcplTeamPageFilter}.
+ *
+ * <p>A match that has not been played yet is declined here and handled by
+ * {@link AcplMatchPreviewPageFilter}, which dispatches to the page claiming
+ * {@code acpl-match-preview}. One filter type is one page, so the two templates are two filters.
  */
-@Component(service = Filter.class)
+@Component(service = {Filter.class, DynamicPageFilter.class})
 @SlingServletFilter(scope = SlingServletFilterScope.REQUEST,
     pattern = "/content/sites/.*/matches/.*\\.html",
     methods = "GET")
@@ -59,19 +64,13 @@ public class AcplMatchPageFilter extends AbstractDynamicPageFilter {
     if (match == null || match.isEmpty()) {
       return null;
     }
-    final boolean played = Boolean.TRUE.equals(match.get("played"));
-    final String title;
-    if (played) {
-      title = leagueDataService.getClubName(String.valueOf(match.get("home"))) + " "
-          + match.get("hg") + "–" + match.get("ag") + " "
-          + leagueDataService.getClubName(String.valueOf(match.get("away")));
-    } else {
-      title = leagueDataService.getClubName(String.valueOf(match.get("home"))) + " vs "
-          + leagueDataService.getClubName(String.valueOf(match.get("away")));
+    if (!Boolean.TRUE.equals(match.get("played"))) {
+      // an unplayed fixture is AcplMatchPreviewPageFilter's; declining passes it down the chain
+      return null;
     }
-    // read by getTargetPageContent to route played matches to the report template and
-    // unplayed ones to the preview template (extractParameters runs first)
-    request.setAttribute("acplMatchPlayed", played);
+    final String title = leagueDataService.getClubName(String.valueOf(match.get("home"))) + " "
+        + match.get("hg") + "–" + match.get("ag") + " "
+        + leagueDataService.getClubName(String.valueOf(match.get("away")));
     final Map<String, String> params = new HashMap<>();
     params.put("match", matchId);
     params.put("homeTeam", String.valueOf(match.get("home")));
@@ -79,20 +78,5 @@ public class AcplMatchPageFilter extends AbstractDynamicPageFilter {
     params.put("dynamicPageTitle", title);
     params.put("dynamicPageDescription", String.valueOf(match.getOrDefault("venue", "")));
     return params;
-  }
-
-  @Nullable
-  @Override
-  public Resource getTargetPageContent(final BaseSite site, final SlingHttpServletRequest request) {
-    final boolean played = Boolean.TRUE.equals(request.getAttribute("acplMatchPlayed"));
-    Resource matchPage = site.getResource().getChild(played ? "match" : "match-preview");
-    if (matchPage == null) {
-      // fall back to the report template if the preview template is missing
-      matchPage = site.getResource().getChild("match");
-    }
-    if (matchPage == null) {
-      return null;
-    }
-    return matchPage.getChild("jcr:content");
   }
 }
