@@ -1208,3 +1208,21 @@ h1, h2, h3, h4, h5, h6,
 /* The leader should read as the leader. */
 .standings-widget tbody tr:first-child td { background: rgba(23, 110, 98, .06); }
 .standings-widget tbody tr:first-child td:first-child { box-shadow: inset 3px 0 0 var(--acpl-sea); }
+
+/* The page background is hard-coded light (#eef0f3), but Bulma 1.x ships
+   automatic dark mode, so in a dark-mode browser its table tokens flip to a
+   dark surface. The fixture and result rows are forced white above, which
+   left the standings as the only black panel on an otherwise light page.
+   Pin the table to the light surface so all three widgets agree. */
+.standings-widget,
+.standings-widget thead th,
+.standings-widget tbody td,
+.standings-widget tbody tr {
+  background-color: #fff;
+  color: var(--acpl-navy-deep);
+  border-color: rgba(16, 30, 50, .10);
+}
+.standings-widget thead th { background-color: #f7f8fa; color: #5b6370; }
+.standings-widget tbody td:first-child { color: #7a828c; }
+.standings-widget tbody tr:first-child td { background-color: rgba(23, 110, 98, .07); }
+.standings-widget tbody tr:hover td { background-color: #fafbfc; }
