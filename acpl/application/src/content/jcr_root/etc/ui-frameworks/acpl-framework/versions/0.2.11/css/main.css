@@ -1192,3 +1192,19 @@ h1, h2, h3, h4, h5, h6,
 .acpl-footer h1, .acpl-footer h2, .acpl-footer h3,
 .acpl-footer h4, .acpl-footer h5, .acpl-footer h6,
 .acpl-footer .column > h3 { color: #fff; }
+
+/* The standings sat between two widgets whose rows carry crests, bold
+   sea-green club names and bold scores, while its own rows were plain grey
+   text and grey numerals — a spreadsheet between two designed modules.
+   Match their voice. */
+.standings-widget tbody td { color: var(--acpl-navy-deep); font-size: .98rem; }
+.standings-widget tbody td:nth-child(2) { font-weight: 700; }
+.standings-widget tbody td:last-child { font-weight: 800; font-size: 1.02rem; }
+.standings-widget tbody td:first-child {
+  color: var(--bulma-text-weak, #7a828c);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+/* The leader should read as the leader. */
+.standings-widget tbody tr:first-child td { background: rgba(23, 110, 98, .06); }
+.standings-widget tbody tr:first-child td:first-child { box-shadow: inset 3px 0 0 var(--acpl-sea); }
