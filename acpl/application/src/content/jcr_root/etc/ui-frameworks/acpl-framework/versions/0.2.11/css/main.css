@@ -1178,3 +1178,17 @@ h2 { font-size: 1.9rem; letter-spacing: -.02em; }
    Negative margins alone, with the element left to fill what they open up. */
 html { overflow-x: hidden; }
 .hero-wrap { width: auto; max-width: none; }
+
+/* Headings were --bulma-text-strong, a mid grey, on the #eef0f3 grey field:
+   grey on grey. Section and widget headings take the league navy, which is
+   near-black against the field. */
+h1, h2, h3, h4, h5, h6,
+.column > h3 {
+  color: var(--acpl-navy-deep);
+}
+
+/* The footer sits on that same navy, so its headings must stay white. This
+   has to come after the rule above. */
+.acpl-footer h1, .acpl-footer h2, .acpl-footer h3,
+.acpl-footer h4, .acpl-footer h5, .acpl-footer h6,
+.acpl-footer .column > h3 { color: #fff; }
