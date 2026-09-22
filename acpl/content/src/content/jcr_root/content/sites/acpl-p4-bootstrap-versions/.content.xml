@@ -14,7 +14,7 @@
             sling:resourceType="kestros/commons/components/kestros-base-page">
         <header jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area">
             <top-navigation brandHref="/content/sites/acpl-p4-bootstrap-versions.html" brandName="ACPL"
-                    variations="[navbar-dark,bg-dark,sticky-top]"
+                    variations="[navbar-dark,acpl-navbar,sticky-top]"
                     jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation">
                 <nav-home href="/content/sites/acpl-p4-bootstrap-versions.html" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation-item" text="Home"/>
                 <nav-results href="/content/sites/acpl-p4-bootstrap-versions/results.html" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/navigation/top-navigation-item" text="Results"/>
@@ -26,65 +26,67 @@
         </header>
         <main jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
 
-            <hero jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+            <hero variations="[py-4]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
                 <hero-heading headingText="Matchweek 18" headingType="h1" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading"/>
-                <featured kes:datasource="hero-story" limit="1" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/lists/card-list"/>
+                <featured kes:datasource="hero-story" limit="1" layout="match-list" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/lists/card-list"/>
             </hero>
 
-            <dashboard jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
-                <dashboard-heading headingText="Around the League" headingType="h2" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading"/>
+            <dashboard variations="[py-5]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+                <dashboard-heading variations="[mb-4]" headingText="Around the League" headingType="h2" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading"/>
                 <grid layout="33-33-33" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/grid">
 
                     <column-1 jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
-                        <h headingText="Upcoming Fixtures" headingType="h3" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading"/>
-                        <matches kes:datasource="fixtures" mode="fixtures" limit="6" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/lists/card-list"/>
-                        <all href="/content/sites/acpl-p4-bootstrap-versions/schedule.html" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Full schedule"/>
+                        <h variations="[mb-3]" headingText="Upcoming Fixtures" headingType="h3" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading"/>
+                        <matches kes:datasource="fixtures" mode="fixtures" limit="6" layout="match-list" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/lists/card-list"/>
+                        <all variations="[d-inline-block,mt-3]" href="/content/sites/acpl-p4-bootstrap-versions/schedule.html" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Full schedule"/>
                     </column-1>
 
                     <column-2 jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
-                        <h headingText="Top of the Table" headingType="h3" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading"/>
-                        <table variations="[table,table-sm]" kes:datasource="standings" limit="5" columns="pos,club,p,pts" headers="#,Club,P,Pts" clubDisplay="name" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table"/>
-                        <all href="/content/sites/acpl-p4-bootstrap-versions/standings.html" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Full standings"/>
+                        <h variations="[mb-3]" headingText="Top of the Table" headingType="h3" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading"/>
+                        <table variations="[table-sm,standings-widget]" kes:datasource="standings" limit="5" columns="pos,club,p,pts" headers="#,Club,P,Pts" clubDisplay="name" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/table"/>
+                        <all variations="[d-inline-block,mt-3]" href="/content/sites/acpl-p4-bootstrap-versions/standings.html" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Full standings"/>
                     </column-2>
 
                     <column-3 jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
-                        <h headingText="Recent Results" headingType="h3" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading"/>
-                        <matches kes:datasource="results" mode="results" limit="6" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/lists/card-list"/>
-                        <all href="/content/sites/acpl-p4-bootstrap-versions/results.html" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Matchweek 17 results"/>
+                        <h variations="[mb-3]" headingText="Recent Results" headingType="h3" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading"/>
+                        <matches kes:datasource="results" mode="results" limit="6" layout="match-list" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/lists/card-list"/>
+                        <all variations="[d-inline-block,mt-3]" href="/content/sites/acpl-p4-bootstrap-versions/results.html" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Matchweek 17 results"/>
                     </column-3>
 
                 </grid>
             </dashboard>
 
-            <stories jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
-                <stories-heading headingText="Latest Stories" headingType="h2" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading"/>
+            <stories variations="[py-5]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+                <stories-heading variations="[mb-4]" headingText="Latest Stories" headingType="h2" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading"/>
                 <latest kes:datasource="stories" limit="3" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/lists/card-list"/>
                 <allstories href="/content/sites/acpl-p4-bootstrap-versions/stories.html" variations="[btn-primary]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/button" text="All stories"/>
             </stories>
 
         </main>
         <footer jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/inherited-content-area">
-            <wrap variations="[py-4]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+            <wrap variations="[container-fluid,py-5,acpl-footer]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
+                <inner variations="[container]" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/container">
                 <grid layout="33-33-33" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/structure/grid">
                     <column-1 jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
-                        <h headingText="Atlantic Coast Premier League" headingType="h3" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading"/>
+                        <h variations="[mb-3]" headingText="Atlantic Coast Premier League" headingType="h3" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading"/>
                         <t jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="© 2026 Atlantic Coast Premier League"/>
                         <t2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Where the coast comes to play."/>
                     </column-1>
                     <column-2 jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
-                        <h headingText="Quick Links" headingType="h3" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading"/>
-                        <l0 href="/content/sites/acpl-p4-bootstrap-versions/results.html" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Results"/>
-                        <l1 href="/content/sites/acpl-p4-bootstrap-versions/standings.html" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Standings"/>
-                        <l2 href="/content/sites/acpl-p4-bootstrap-versions/stories.html" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Stories"/>
-                        <l3 href="/content/sites/acpl-p4-bootstrap-versions/schedule.html" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Schedule"/>
-                        <l4 href="/content/sites/acpl-p4-bootstrap-versions/teams.html" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Clubs"/>
+                        <h variations="[mb-3]" headingText="Quick Links" headingType="h3" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading"/>
+                        <l0 variations="[d-block]" href="/content/sites/acpl-p4-bootstrap-versions/results.html" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Results"/>
+                        <l1 variations="[d-block]" href="/content/sites/acpl-p4-bootstrap-versions/standings.html" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Standings"/>
+                        <l2 variations="[d-block]" href="/content/sites/acpl-p4-bootstrap-versions/stories.html" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Stories"/>
+                        <l3 variations="[d-block]" href="/content/sites/acpl-p4-bootstrap-versions/schedule.html" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Schedule"/>
+                        <l4 variations="[d-block]" href="/content/sites/acpl-p4-bootstrap-versions/teams.html" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/link" text="Clubs"/>
                     </column-2>
                     <column-3 jcr:primaryType="nt:unstructured" sling:resourceType="kestros/commons/components/content-area">
-                        <h headingText="Official Partners" headingType="h3" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading"/>
+                        <h variations="[mb-3]" headingText="Official Partners" headingType="h3" jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/heading"/>
                         <p1 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="CoastSport Media · Atlantic Bank · Tidal Energy"/>
                         <p2 jcr:primaryType="nt:unstructured" sling:resourceType="/libs/kestros/commons/components/content/text" text="Harbour Breweries · SkyBet"/>
                     </column-3>
                 </grid>
+                </inner>
             </wrap>
         </footer>
         <dynamic-routes jcr:primaryType="kes:DynamicRoutes">
