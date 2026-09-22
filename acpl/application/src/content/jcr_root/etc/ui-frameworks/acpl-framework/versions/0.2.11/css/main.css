@@ -252,7 +252,6 @@ body > .container { flex-grow: 0; }
 :root { --bulma-primary-l: 29%; }
 
 /* A6: standings zones — markers on rows, matching swatches in the legend */
-.table-borderless td.table-borderless td
 /* A12: section headings govern their sections */
 .section-heading { font-size: 1.3rem; font-weight: 700; margin-bottom: .75rem; }
 
@@ -424,7 +423,6 @@ body { font-variant-numeric: tabular-nums lining-nums; }
 .table-acpl td:last-child { font-weight: 600; }
 .table-acpl td a { color: var(--acpl-navy); font-weight: 500; }
 .table-acpl td a:hover { color: var(--acpl-sea); }
-tr.standings-qualify, tr
 /* ---- home table widget: numbers right-aligned ---- */
 .standings-widget th:nth-child(n+3), .standings-widget td:nth-child(n+3) { text-align: right; }
 
@@ -490,7 +488,6 @@ tr.standings-qualify, tr
    ========================================================================== */
 
 /* ---- standings: washes fully replace the edge ticks ---- */
-tdtd
 /* ---- scores are data, not links: navy token, sea only on hover ---- */
 .result-score-box, a.result-score-box, .score-link { color: var(--acpl-navy) !important; }
 a.result-score-box:hover, .score-link:hover { color: var(--acpl-sea) !important; }
@@ -906,4 +903,215 @@ td.standings-relegation { background: rgba(157,37,49,.10) !important; border: 0 
   .hero-wrap { min-height: 320px; }
   .hero-headline { font-size: 1.55rem; }
   .hero-dek { font-size: .92rem; }
+}
+
+/* ===========================================================================
+   0.2.11 audit pass — 2026-09-22.
+
+   Bulma bundles minireset, which flattens every heading to 100%/normal and
+   strips margins from p and h1-h6. Bootstrap supplies that typography for
+   free, so content authored against the Bootstrap vocabulary loses its whole
+   hierarchy the moment it renders here. The layout shim earlier in this file
+   scoped itself to "grid/flex/spacing/alignment only — no colors, borders,
+   fonts", which is precisely the gap this section closes.
+   =========================================================================== */
+
+/* --- Typography ---------------------------------------------------------- */
+
+/* Element selectors, not :where(). minireset's h1..h6 rule is an element
+   selector at 0,0,1 and would beat a zero-specificity one. Component rules
+   such as .story-lead h3 still win over these. */
+h1 { font-size: 2.25rem; }
+h2 { font-size: 1.9rem; letter-spacing: -.02em; }
+h3 { font-size: 1.2rem; }
+h4 { font-size: 1.05rem; }
+h5 { font-size: 1rem; }
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -.01em;
+  /* --bulma-text-strong is a mid grey on the #eef0f3 field: grey on grey. */
+  color: var(--acpl-navy-deep);
+}
+p:not(:last-child) { margin-bottom: 1rem; }
+
+/* --- Spacing scale ------------------------------------------------------- */
+
+/* The shim maps the Bootstrap step names onto Bulma's numeric scale, which is
+   half to two thirds of Bootstrap's at these steps. It already hand-corrected
+   .mb-5 and .my-5; this finishes that decision. */
+.py-5 { padding-top: 3rem !important; padding-bottom: 3rem !important; }
+.py-4 { padding-top: 1.5rem !important; padding-bottom: 1.5rem !important; }
+.mb-4 { margin-bottom: 1.5rem !important; }
+.mb-3 { margin-bottom: 1rem !important; }
+.mt-3 { margin-top: 1rem !important; }
+
+/* Bulma's .container carries no horizontal padding — it expects to sit inside
+   .section { padding: 3rem 1.5rem }, which this markup never emits. */
+.container { padding-left: 1rem; padding-right: 1rem; }
+.container .container { padding-left: 0; padding-right: 0; }
+.columns { --bulma-column-gap: 1.25rem; }
+
+/* margin-top does nothing on a non-replaced inline element. */
+a.mt-3 { display: inline-block; }
+.column > a.mt-3 { margin-top: .85rem !important; font-weight: 600; }
+
+/* --- Masthead and hero --------------------------------------------------- */
+
+/* The hero is authored inside a .container, so it rendered as a boxed panel
+   with page background either side. Negative margins alone: a 100vw width
+   includes the scrollbar gutter and leaves every band below it short on the
+   right. The container goes back INSIDE the overlay so the headline still
+   lines up with the sections below. */
+html { overflow-x: hidden; }
+.hero-wrap {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: auto;
+  max-width: none;
+  min-height: 560px;
+}
+.hero-overlay {
+  padding: 4.5rem 0 3.25rem;
+  background: linear-gradient(to top, rgba(4, 12, 24, .92) 0%,
+                                       rgba(4, 12, 24, .70) 38%,
+                                       rgba(4, 12, 24, .10) 100%);
+}
+.hero-overlay > .container {
+  max-width: 1344px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+.hero-block { max-width: 46rem; }
+.hero-headline { font-size: clamp(2.2rem, 4vw, 3.4rem); line-height: 1.02; }
+.hero-dek { font-size: 1.05rem; line-height: 1.5; max-width: 40rem; }
+.hero-wrap img.hero-img { opacity: .72; filter: grayscale(.15) contrast(1.06); }
+
+/* "Matchweek 18" is authored as a bare <h1> above the hero. It is a label for
+   what follows, not a page title, and with the hero full-bleed it was left
+   stranded in a thin strip of page background. It sits on the masthead band. */
+.container.py-4 { padding-top: 0 !important; padding-bottom: 0 !important; }
+.container.py-4 > h1:first-child {
+  margin: 0;
+  padding: .85rem 0 .7rem;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, .72);
+  background: var(--acpl-navy-deep);
+  position: relative;
+  z-index: 3;
+}
+.container.py-4 > h1:first-child::before {
+  content: "";
+  position: absolute;
+  inset: 0 calc(50% - 50vw);
+  background: var(--acpl-navy-deep);
+  z-index: -1;
+}
+
+/* --- The three "Around the League" widgets ------------------------------- */
+
+/* Widget headings were quieter than the club names beneath them, so the
+   hierarchy read upside down. */
+.column > h3 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  padding-bottom: .6rem;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid var(--acpl-sea);
+}
+
+/* The 0.2.6 round introduced a grey field with "white module surfaces", but
+   its surface rules are all scoped to .card and these widgets emit none. */
+.fixture-row, .result-row { background: #fff; }
+.fixture-row:first-of-type, .result-row:first-of-type {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.fixture-row:last-of-type, .result-row:last-of-type {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom: 0;
+}
+
+/* The standings sat between two crest-led widgets as plain grey text and grey
+   numerals. Bulma 1.x also ships automatic dark mode, so in a dark-mode
+   browser its table tokens flip and this was the only dark panel on an
+   otherwise hard-coded-light page. Pinned to the same surface and voice. */
+.standings-widget { border-radius: 6px; overflow: hidden; }
+.standings-widget,
+.standings-widget tbody td,
+.standings-widget tbody tr {
+  background-color: #fff;
+  color: var(--acpl-navy-deep);
+  border-color: rgba(16, 30, 50, .10);
+}
+.standings-widget thead th {
+  background-color: #f7f8fa;
+  color: #5b6370;
+  font-size: .68rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: .7rem .9rem;
+  border-bottom: 1px solid rgba(16, 30, 50, .10);
+}
+.standings-widget tbody td {
+  padding: .78rem .9rem;
+  font-size: .98rem;
+  border-bottom: 1px solid rgba(16, 30, 50, .10);
+}
+.standings-widget tbody tr:last-child td { border-bottom: 0; }
+.standings-widget tbody td:nth-child(2) { font-weight: 700; }
+.standings-widget tbody td:last-child { font-weight: 800; font-size: 1.02rem; }
+.standings-widget tbody td:first-child {
+  color: #7a828c;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.standings-widget tbody tr:first-child td { background-color: rgba(23, 110, 98, .07); }
+.standings-widget tbody tr:first-child td:first-child {
+  box-shadow: inset 3px 0 0 var(--acpl-sea);
+}
+
+/* One hover for all three widgets, or none. */
+.fixture-row:hover,
+.result-row:hover,
+.standings-widget tbody tr:hover td { background-color: #fafbfc; }
+
+/* --- Calls to action ----------------------------------------------------- */
+
+/* .btn-primary is sea green; .btn-outline-primary fell through to a neutral
+   grey chip, so the two CTA voices disagreed. */
+.btn-outline-primary {
+  color: var(--acpl-sea);
+  border-color: var(--acpl-sea);
+  background-color: transparent;
+}
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: var(--acpl-sea);
+  border-color: var(--acpl-sea);
+}
+
+/* --- Footer -------------------------------------------------------------- */
+
+/* Stated last: the footer's headings are inside .column too, and sit on the
+   navy band, so they must not take the widget-label ink. */
+.acpl-footer h1, .acpl-footer h2, .acpl-footer h3,
+.acpl-footer h4, .acpl-footer h5, .acpl-footer h6,
+.acpl-footer .column > h3 {
+  color: #fff;
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  border-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: .9rem;
 }
