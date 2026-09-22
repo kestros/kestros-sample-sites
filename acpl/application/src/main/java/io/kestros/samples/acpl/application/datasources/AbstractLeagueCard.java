@@ -100,9 +100,30 @@ public abstract class AbstractLeagueCard extends BaseContainerSyntheticResource
     return LeagueCardElements.buttonGroup(getCardLinkText(), getCardHref(), cardDataSource);
   }
 
+  /**
+   * Title, image and button group, so they become child resources of the synthetic card.
+   *
+   * <p>The stock card layout reads them back through {@code CardStaticDataSource}, which looks for
+   * child resources named {@code titleElement}, {@code imageElement} and {@code buttonGroup}. An
+   * empty list here meant a card on a framework with no layout of its own rendered an empty
+   * {@code card-body} — the elements existed on this object and never reached the resource.
+   */
   @Nonnull
   @Override
   public List<KestrosBasicComponentElement> getChildElements() {
-    return new ArrayList<>();
+    final List<KestrosBasicComponentElement> children = new ArrayList<>();
+    final KestrosHeading title = getTitleElement();
+    if (title != null) {
+      children.add(title);
+    }
+    final KestrosImage image = getImageElement();
+    if (image != null) {
+      children.add(image);
+    }
+    final KestrosButtonGroup buttonGroup = getButtonGroupElement();
+    if (buttonGroup != null) {
+      children.add(buttonGroup);
+    }
+    return children;
   }
 }
