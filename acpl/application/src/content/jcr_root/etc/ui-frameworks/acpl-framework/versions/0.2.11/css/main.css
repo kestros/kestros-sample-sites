@@ -1155,3 +1155,26 @@ h2 { font-size: 1.9rem; letter-spacing: -.02em; }
   background: var(--acpl-navy-deep);
   z-index: -1;
 }
+
+/* The .column > h3 rule above is later in the file than the footer heading
+   rule, and the footer's three headings are also inside .column, so they
+   inherited the dark ink meant for the widget labels and became navy text on
+   a navy band. Restate them last. */
+.acpl-footer .column > h3,
+.acpl-footer h1, .acpl-footer h2, .acpl-footer h3,
+.acpl-footer h4, .acpl-footer h5, .acpl-footer h6 {
+  color: #fff;
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  border-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: .9rem;
+}
+
+/* 100vw includes the scrollbar gutter, so a full-bleed built from it is wider
+   than the visible page and every band below it stops short on the right.
+   Negative margins alone, with the element left to fill what they open up. */
+html { overflow-x: hidden; }
+.hero-wrap { width: auto; max-width: none; }
