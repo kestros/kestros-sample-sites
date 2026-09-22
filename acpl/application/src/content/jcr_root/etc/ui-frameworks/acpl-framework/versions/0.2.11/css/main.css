@@ -1016,3 +1016,35 @@ a.mt-3 { display: inline-block; }
   color: var(--bulma-text-weak, #6b7280);
   margin-bottom: .6rem;
 }
+
+/* ---------------------------------------------------------------------------
+   Hero composition and page rhythm, 0.2.11 audit pass 2.
+   --------------------------------------------------------------------------- */
+
+/* The hero was a short band with the text sitting low-left in a wide empty
+   field. Taller, with the copy constrained to a readable measure so it reads
+   as a composed lede rather than a caption stranded in a corner. */
+.hero-wrap { min-height: 520px; }
+.hero-overlay { padding: 4rem 0 3rem; }
+.hero-block { max-width: 46rem; }
+.hero-headline { font-size: clamp(2.2rem, 4vw, 3.4rem); line-height: 1.02; }
+.hero-dek { font-size: 1.05rem; line-height: 1.5; max-width: 40rem; }
+
+/* The image was washed out to near-flat navy. Let the photograph carry the
+   panel and put the legibility in the scrim, not in the opacity. */
+.hero-wrap img.hero-img { opacity: .72; filter: grayscale(.15) contrast(1.06); }
+.hero-overlay {
+  background: linear-gradient(to top, rgba(4, 12, 24, .92) 0%,
+                                       rgba(4, 12, 24, .70) 38%,
+                                       rgba(4, 12, 24, .10) 100%);
+}
+
+/* Page rhythm. The gap between the hero and the first section was far larger
+   than the gap between the sections themselves, so the page read as two
+   unrelated halves. Even it out and give the widget columns real gutters. */
+.container.py-4 { padding-bottom: 0 !important; }
+.columns { --bulma-column-gap: 1.25rem; }
+
+/* "Full schedule" and "Matchweek 17 results" floated detached below their
+   lists. Tie them to the widget they belong to. */
+.column > a.mt-3 { margin-top: .85rem !important; font-weight: 600; }
