@@ -1048,3 +1048,48 @@ a.mt-3 { display: inline-block; }
 /* "Full schedule" and "Matchweek 17 results" floated detached below their
    lists. Tie them to the widget they belong to. */
 .column > a.mt-3 { margin-top: .85rem !important; font-weight: 600; }
+
+/* ---------------------------------------------------------------------------
+   0.2.11 audit pass 3.
+   --------------------------------------------------------------------------- */
+
+/* The nested-container reset above zeroed the hero's inner padding, so the
+   kicker, headline and dek sat hard against the left edge of the hero panel
+   with no inset at all. The inset belongs to the overlay, which is inside the
+   panel, not to the container. */
+.hero-overlay { padding: 4rem 2.5rem 3rem; }
+.hero-overlay > .container { padding-left: 0; padding-right: 0; }
+
+/* Widget headings were the same voice as body copy at a slightly larger size,
+   so they did not read as labels for the lists beneath them. Sports tables
+   label their modules; this is that idiom — small, tracked, uppercase, with a
+   rule tying the label to its content. */
+.column > h3 {
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--bulma-text-strong);
+  padding-bottom: .55rem;
+  margin-bottom: .9rem;
+  border-bottom: 2px solid var(--acpl-sea);
+}
+
+/* The standings table sat on a white card with no internal padding and a
+   cramped header, so it read as a bare spreadsheet next to two properly
+   spaced lists. Match the row rhythm of the fixture and result rows. */
+.standings-widget { border-radius: 6px; overflow: hidden; }
+.standings-widget thead th {
+  font-size: .68rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: .7rem .9rem;
+  background: #f7f8fa;
+  border-bottom: 1px solid var(--bulma-border);
+}
+.standings-widget tbody td {
+  padding: .78rem .9rem;
+  border-bottom: 1px solid var(--bulma-border);
+}
+.standings-widget tbody tr:last-child td { border-bottom: 0; }
+.standings-widget tbody tr:hover { background: #fafbfc; }
