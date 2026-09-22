@@ -252,7 +252,6 @@ body > .container { flex-grow: 0; }
 :root { --bulma-primary-l: 29%; }
 
 /* A6: standings zones — markers on rows, matching swatches in the legend */
-.table-borderless td.table-borderless td
 /* A12: section headings govern their sections */
 .section-heading { font-size: 1.3rem; font-weight: 700; margin-bottom: .75rem; }
 
@@ -424,7 +423,6 @@ body { font-variant-numeric: tabular-nums lining-nums; }
 .table-acpl td:last-child { font-weight: 600; }
 .table-acpl td a { color: var(--acpl-navy); font-weight: 500; }
 .table-acpl td a:hover { color: var(--acpl-sea); }
-tr.standings-qualify, tr
 /* ---- home table widget: numbers right-aligned ---- */
 .standings-widget th:nth-child(n+3), .standings-widget td:nth-child(n+3) { text-align: right; }
 
@@ -490,7 +488,6 @@ tr.standings-qualify, tr
    ========================================================================== */
 
 /* ---- standings: washes fully replace the edge ticks ---- */
-tdtd
 /* ---- scores are data, not links: navy token, sea only on hover ---- */
 .result-score-box, a.result-score-box, .score-link { color: var(--acpl-navy) !important; }
 a.result-score-box:hover, .score-link:hover { color: var(--acpl-sea) !important; }
@@ -906,4 +903,73 @@ td.standings-relegation { background: rgba(157,37,49,.10) !important; border: 0 
   .hero-wrap { min-height: 320px; }
   .hero-headline { font-size: 1.55rem; }
   .hero-dek { font-size: .92rem; }
+}
+
+/* ===========================================================================
+   0.2.11 audit pass — restore what Bulma's reset removes.
+
+   Bulma bundles minireset, which flattens every heading to 100%/normal and
+   strips margins from p, ul, ol and h1-h6. Bootstrap supplies that typography
+   for free, so content authored against the Bootstrap vocabulary loses its
+   entire hierarchy the moment it renders on this framework. The layout shim
+   above deliberately scoped itself to "grid/flex/spacing/alignment only — no
+   colors, borders, fonts", which is exactly the gap: it bridges the class
+   names and leaves the typography deleted.
+   =========================================================================== */
+
+/* Headings. Scoped with :where() so specificity stays at 0 and every existing
+   component rule — .hero-headline, .story-card .card-title, .acpl-page-head h1,
+   .acpl-mw-group h5, .story-lead h3, .story-row h4 — still wins without
+   needing !important. */
+:where(h1) { font-size: 2.25rem; }
+:where(h2) { font-size: 1.75rem; }
+:where(h3) { font-size: 1.35rem; }
+:where(h4) { font-size: 1.15rem; }
+:where(h5) { font-size: 1.05rem; }
+:where(h1, h2, h3, h4, h5, h6) {
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -.01em;
+  color: var(--bulma-text-strong);
+}
+
+/* Paragraph rhythm. minireset zeroes p margins and nothing outside .content
+   restores them, so consecutive paragraphs butt together — visible in the
+   footer, where the copyright line and the tagline share a baseline gap of 0. */
+:where(p:not(:last-child)) { margin-bottom: 1rem; }
+
+/* Spacing scale. The shim maps the Bootstrap step names onto Bulma's numeric
+   scale, which is half to two thirds of Bootstrap's at these steps, so every
+   section renders squeezed. The shim already hand-corrected .mb-5 and .my-5 to
+   Bootstrap values; this finishes that decision rather than starting a new one. */
+.py-5 { padding-top: 3rem !important; padding-bottom: 3rem !important; }
+.py-4 { padding-top: 1.5rem !important; padding-bottom: 1.5rem !important; }
+.mb-4 { margin-bottom: 1.5rem !important; }
+.mb-3 { margin-bottom: 1rem !important; }
+.mt-3 { margin-top: 1rem !important; }
+
+/* Container gutters. Bulma's .container carries no horizontal padding at all —
+   it expects to sit inside .section { padding: 3rem 1.5rem }, which this markup
+   never emits. Without this the hero headline sits flush against the panel edge
+   and, below 1024px where .container is width:100%, the whole page runs into
+   the browser chrome. The nested reset stops the hero's inner container from
+   double-insetting. */
+.container { padding-left: 1rem; padding-right: 1rem; }
+.container .container { padding-left: 0; padding-right: 0; }
+
+/* margin-top does nothing on a non-replaced inline element, so the "Full
+   schedule" / "Full standings" links sit flush against the last row. */
+a.mt-3 { display: inline-block; }
+
+/* The two call-to-action voices must match: .btn-primary is sea green and
+   .btn-outline-primary was falling through to a neutral grey chip. */
+.btn-outline-primary {
+  color: var(--acpl-sea);
+  border-color: var(--acpl-sea);
+  background-color: transparent;
+}
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: var(--acpl-sea);
+  border-color: var(--acpl-sea);
 }
