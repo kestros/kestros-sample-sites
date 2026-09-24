@@ -15,6 +15,26 @@
         "label": "Row limit (0 = all)",
         "name": "limit",
         "autofocus": false
+      },
+      "clubDisplay": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "kestros/cms2/fields/general/selectfield",
+        "label": "Club display",
+        "name": "clubDisplay",
+        "options": {
+          "jcr:primaryType": "nt:unstructured",
+          "name": {
+            "jcr:primaryType": "nt:unstructured",
+            "text": "Name",
+            "value": "name",
+            "selected": true
+          },
+          "rich-name": {
+            "jcr:primaryType": "nt:unstructured",
+            "text": "Name with crest",
+            "value": "rich-name"
+          }
+        }
       }
     }
   }
