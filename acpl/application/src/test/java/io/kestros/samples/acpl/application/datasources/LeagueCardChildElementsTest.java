@@ -103,4 +103,35 @@ public class LeagueCardChildElementsTest {
     assertEquals("only the button group survives", 1, children.size());
     assertSame(buttonGroup, children.get(0));
   }
+
+  @Test
+  public void testStoryCardHandsOutTitleImageAndButtonGroup() {
+    // SyntheticStoryCard (and the hero / featured cards that extend it) does not extend
+    // AbstractLeagueCard either; its empty list left p3's stock cards without headline or image.
+    final SyntheticStoryCard card = mock(SyntheticStoryCard.class, CALLS_REAL_METHODS);
+    doReturn(heading).when(card).getTitleElement();
+    doReturn(image).when(card).getImageElement();
+    doReturn(buttonGroup).when(card).getButtonGroupElement();
+
+    final List<KestrosBasicComponentElement> children = card.getChildElements();
+
+    assertEquals("title, image and button group are all children", 3, children.size());
+    assertSame(heading, children.get(0));
+    assertSame(image, children.get(1));
+    assertSame(buttonGroup, children.get(2));
+  }
+
+  @Test
+  public void testStoryCardOmitsAMissingImage() {
+    final SyntheticStoryCard card = mock(SyntheticStoryCard.class, CALLS_REAL_METHODS);
+    doReturn(heading).when(card).getTitleElement();
+    doReturn(null).when(card).getImageElement();
+    doReturn(buttonGroup).when(card).getButtonGroupElement();
+
+    final List<KestrosBasicComponentElement> children = card.getChildElements();
+
+    assertEquals("title and button group survive", 2, children.size());
+    assertSame(heading, children.get(0));
+    assertSame(buttonGroup, children.get(1));
+  }
 }
