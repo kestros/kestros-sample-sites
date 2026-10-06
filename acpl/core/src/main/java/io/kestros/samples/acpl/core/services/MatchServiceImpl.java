@@ -95,7 +95,7 @@ public class MatchServiceImpl extends AbstractDisplayService implements MatchSer
       final String scorerSlug = str(g.get("scorerSlug"));
       row.put("minute", str(g.get("minute")));
       row.put("scorer", str(g.get("scorer")));
-      row.put("portrait", portraitFor(base, str(g.get("scorer"))));
+      row.put("portrait", portraitFor(str(g.get("scorer"))));
       row.put("href", scorerSlug.isEmpty() ? "" : base + "/players/" + scorerSlug + ".html");
       row.put("teamSlug", str(g.get("team")));
       row.put("side", str(g.get("team")).equals(str(m.get("home"))) ? "home" : "away");

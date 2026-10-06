@@ -5,7 +5,7 @@
             <sly data-sly-list.m="${properties.matches}">
                 <div class="fixture-row fixture-row-full" data-acpl-home="${m.homeSlug}" data-acpl-away="${m.awaySlug}">
                     <div class="fixture-club">
-                        <a href="${properties.base}/teams/${m.homeSlug}.html"><img src="${properties.base}/assets/crests/${m.homeSlug}.svg" alt="crest" class="img-fluid crest-md me-2"/></a>
+                        <a href="${properties.base}/teams/${m.homeSlug}.html"><img src="/content/sites/acpl/assets/crests/${m.homeSlug}.svg" alt="crest" class="img-fluid crest-md me-2"/></a>
                         <a href="${properties.base}/teams/${m.homeSlug}.html" class="fw-semibold club-link">${m.homeName}</a>
                         <p class="small text-muted">${m.homeRec}</p>
                     </div>
@@ -13,7 +13,7 @@
                     <div class="fixture-club away">
                         <p class="small text-muted">${m.awayRec}</p>
                         <a href="${properties.base}/teams/${m.awaySlug}.html" class="fw-semibold club-link">${m.awayName}</a>
-                        <a href="${properties.base}/teams/${m.awaySlug}.html"><img src="${properties.base}/assets/crests/${m.awaySlug}.svg" alt="crest" class="img-fluid crest-md"/></a>
+                        <a href="${properties.base}/teams/${m.awaySlug}.html"><img src="/content/sites/acpl/assets/crests/${m.awaySlug}.svg" alt="crest" class="img-fluid crest-md"/></a>
                     </div>
                     <div class="fixture-time">
                         <p>${m.time}</p>

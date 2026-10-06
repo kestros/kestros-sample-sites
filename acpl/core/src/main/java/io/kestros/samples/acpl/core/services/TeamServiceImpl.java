@@ -88,7 +88,7 @@ public class TeamServiceImpl extends AbstractDisplayService implements TeamServi
         row.put("goals", "");
         row.put("assists", "");
       }
-      row.put("portrait", portraitFor(base, name));
+      row.put("portrait", portraitFor(name));
       row.put("href", base + "/players/" + str(p.get("slug")) + ".html");
       row.put("base", base);
       rows.add(row);

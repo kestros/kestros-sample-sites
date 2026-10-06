@@ -23,7 +23,7 @@ public class StoryServiceImpl extends AbstractDisplayService implements StorySer
     final Map<String, String> card = new LinkedHashMap<>();
     card.put("headline", str(s.get("headline")));
     card.put("excerpt", str(s.get("dek")));
-    card.put("image", base + "/assets/" + str(s.get("image")));
+    card.put("image", ASSETS + "/" + str(s.get("image")));
     card.put("href", base + "/stories/" + str(s.get("slug")) + ".html");
     card.put("category", str(s.get("category")));
     card.put("byline", str(s.get("author")) + " · " + formatDateLong(str(s.get("date"))));
