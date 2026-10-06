@@ -55,7 +55,7 @@ public class PlayerServiceImpl extends AbstractDisplayService implements PlayerS
       meta.append(" · ").append(str(player.get("nationality")));
     }
     header.put("meta", meta.toString());
-    header.put("photo", portraitFor(siteRoot(contextPath), name));
+    header.put("photo", portraitFor(name));
     header.put("base", siteRoot(contextPath));
     final Map<String, Object> clubData = leagueDataService.getClub(str(player.get("club")));
     header.put("clubColor",
