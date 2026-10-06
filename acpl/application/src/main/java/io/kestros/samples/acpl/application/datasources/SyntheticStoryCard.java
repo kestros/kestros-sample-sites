@@ -17,8 +17,9 @@ import javax.annotation.Nullable;
  * A news "story" card rendered through the {@code story-card} card layout. Title / excerpt / image /
  * href / category are plain strings that serialize into the synthetic resource value map, so the
  * layout reads them as {@code properties.title} etc. (avoiding the data-source re-adaptation that
- * loses Java-side child elements). The {@link KestrosCard} element getters are unused by that layout
- * and return {@code null}.
+ * loses Java-side child elements). On a framework version with no story layout (p3's 0.0.1) the
+ * stock card renders it instead, and reads the title, image and button group back as child
+ * resources; see {@link #getChildElements()}.
  */
 public class SyntheticStoryCard extends BaseContainerSyntheticResource implements KestrosCard {
 
@@ -106,9 +107,29 @@ public class SyntheticStoryCard extends BaseContainerSyntheticResource implement
     return LeagueCardElements.buttonGroup("Read more", href, cardDataSource);
   }
 
+  /**
+   * Title, image and button group, so they become child resources of the synthetic card.
+   *
+   * <p>Same gap {@link AbstractLeagueCard#getChildElements()} closed for the league cards: an empty
+   * list meant the stock card on a framework with no story layout showed only the excerpt and an
+   * unlabelled button, with no headline or image (#253).
+   */
   @Nonnull
   @Override
   public List<KestrosBasicComponentElement> getChildElements() {
-    return new ArrayList<>();
+    final List<KestrosBasicComponentElement> children = new ArrayList<>();
+    final KestrosHeading heading = getTitleElement();
+    if (heading != null) {
+      children.add(heading);
+    }
+    final KestrosImage cardImage = getImageElement();
+    if (cardImage != null) {
+      children.add(cardImage);
+    }
+    final KestrosButtonGroup buttonGroup = getButtonGroupElement();
+    if (buttonGroup != null) {
+      children.add(buttonGroup);
+    }
+    return children;
   }
 }
