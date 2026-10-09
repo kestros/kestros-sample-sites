@@ -1,22 +1,73 @@
 package io.kestros.samples.league.api.models;
 
 import java.util.List;
+import javax.annotation.Nonnull;
 
+/**
+ * Sling model interface representing a sports team in the league demo.
+ */
 public interface Team {
 
-    String getId();
+  /**
+   * Unique identifier for the team.
+   *
+   * @return team identifier.
+   */
+  @Nonnull
+  String getId();
 
-    String getName();
+  /**
+   * Full display name of the team.
+   *
+   * @return team name.
+   */
+  @Nonnull
+  String getName();
 
-    String getShortName();
+  /**
+   * Short form name (typically used for compact displays).
+   *
+   * @return short team name.
+   */
+  @Nonnull
+  String getShortName();
 
-    String getLogoUrl();
+  /**
+   * URL to the team logo image.
+   *
+   * @return logo URL.
+   */
+  @Nonnull
+  String getLogoUrl();
 
-    String getCity();
+  /**
+   * City the team is based in.
+   *
+   * @return city name.
+   */
+  @Nonnull
+  String getCity();
 
-    String getStadium();
+  /**
+   * Stadium or home venue for the team.
+   *
+   * @return stadium name.
+   */
+  @Nonnull
+  String getStadium();
 
-    int getFounded();
+  /**
+   * Year the team was founded.
+   *
+   * @return founding year.
+   */
+  int getFounded();
 
-    List<String> getPlayerIds();
+  /**
+   * Identifiers for all players associated with the team.
+   *
+   * @return list of player identifiers.
+   */
+  @Nonnull
+  List<String> getPlayerIds();
 }

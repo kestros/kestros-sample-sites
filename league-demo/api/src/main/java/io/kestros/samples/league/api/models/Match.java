@@ -1,24 +1,85 @@
 package io.kestros.samples.league.api.models;
 
+import javax.annotation.Nonnull;
+
+/**
+ * Sling model interface representing a scheduled or played match between two teams.
+ */
 public interface Match {
 
-    String getId();
+  /**
+   * Unique identifier for the match.
+   *
+   * @return match identifier.
+   */
+  @Nonnull
+  String getId();
 
-    String getHomeTeamId();
+  /**
+   * Identifier of the home team.
+   *
+   * @return home team identifier.
+   */
+  @Nonnull
+  String getHomeTeamId();
 
-    String getAwayTeamId();
+  /**
+   * Identifier of the away team.
+   *
+   * @return away team identifier.
+   */
+  @Nonnull
+  String getAwayTeamId();
 
-    int getHomeScore();
+  /**
+   * Score for the home team.
+   *
+   * @return home score.
+   */
+  int getHomeScore();
 
-    int getAwayScore();
+  /**
+   * Score for the away team.
+   *
+   * @return away score.
+   */
+  int getAwayScore();
 
-    int getMatchday();
+  /**
+   * Matchday (round) number within the season.
+   *
+   * @return matchday number.
+   */
+  int getMatchday();
 
-    String getSeasonId();
+  /**
+   * Identifier of the season the match belongs to.
+   *
+   * @return season identifier.
+   */
+  @Nonnull
+  String getSeasonId();
 
-    String getDate();
+  /**
+   * Date the match is scheduled for or was played on.
+   *
+   * @return date string.
+   */
+  @Nonnull
+  String getDate();
 
-    String getVenue();
+  /**
+   * Venue where the match is held.
+   *
+   * @return venue name.
+   */
+  @Nonnull
+  String getVenue();
 
-    boolean isPlayed();
+  /**
+   * Whether the match has been played.
+   *
+   * @return {@code true} if the match has been played.
+   */
+  boolean isPlayed();
 }
