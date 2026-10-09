@@ -1,6 +1,0 @@
-{
-  "jcr:primaryType": "sling:OrderedFolder",
-  "include": [
-    "variables.less"
-  ]
-}

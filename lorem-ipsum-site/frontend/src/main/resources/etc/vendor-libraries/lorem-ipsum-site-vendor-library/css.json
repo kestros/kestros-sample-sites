@@ -1,4 +1,0 @@
-{
-  "jcr:primaryType": "sling:OrderedFolder",
-  "include": ["lorem-ipsum-sample-site-library.less"]
-}
