@@ -1,5 +1,6 @@
 package io.kestros.samples.acpl.core.services;
 
+import io.kestros.samples.acpl.api.sites.AcplSitePaths;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
@@ -17,7 +18,7 @@ abstract class AbstractDisplayService {
    * once published. Matching only the first sent every link on a published page to the component's
    * own path ({@code .../jcr:content/.../teams/<club>.html}), which 404s (#1624).
    */
-  private static final Pattern SITE_ROOT = Pattern.compile("^(/(?:content|public)/sites/[^/]+)");
+  private static final Pattern SITE_ROOT = Pattern.compile("^(" + AcplSitePaths.SITES + "/[^/]+)");
 
   /**
    * The one image folder every ACPL site reads from. Images used to be resolved under each site's
