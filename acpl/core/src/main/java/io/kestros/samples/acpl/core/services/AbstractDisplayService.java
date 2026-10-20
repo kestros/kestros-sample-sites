@@ -12,7 +12,12 @@ import java.util.regex.Pattern;
  */
 abstract class AbstractDisplayService {
 
-  private static final Pattern SITE_ROOT = Pattern.compile("^(/content/sites/[^/]+)");
+  /**
+   * A site lives under {@code /content/sites} while it is authored and under {@code /public/sites}
+   * once published. Matching only the first sent every link on a published page to the component's
+   * own path ({@code .../jcr:content/.../teams/<club>.html}), which 404s (#1624).
+   */
+  private static final Pattern SITE_ROOT = Pattern.compile("^(/(?:content|public)/sites/[^/]+)");
 
   /**
    * The one image folder every ACPL site reads from. Images used to be resolved under each site's
@@ -21,7 +26,10 @@ abstract class AbstractDisplayService {
    */
   protected static final String ASSETS = "/content/sites/acpl/assets";
 
-  /** League-site root (e.g. {@code /content/sites/acpl}) from any content path within the site. */
+  /**
+   * League-site root (e.g. {@code /content/sites/acpl}, or {@code /public/sites/acpl} on a published
+   * page) from any path within the site.
+   */
   protected String siteRoot(final String contextPath) {
     final Matcher m = SITE_ROOT.matcher(contextPath == null ? "" : contextPath);
     return m.find() ? m.group(1) : (contextPath == null ? "" : contextPath);
