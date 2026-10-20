@@ -19,7 +19,7 @@ abstract class AbstractDisplayService {
    * own root, so each of six sites shipped a copy, and a site built by the authoring suite pointed
    * at a copy that did not exist (#251).
    */
-  protected static final String ASSETS = "/content/sites/acpl/assets";
+  protected static final String ASSETS = "/content/assets/acpl";
 
   /** League-site root (e.g. {@code /content/sites/acpl}) from any content path within the site. */
   protected String siteRoot(final String contextPath) {
