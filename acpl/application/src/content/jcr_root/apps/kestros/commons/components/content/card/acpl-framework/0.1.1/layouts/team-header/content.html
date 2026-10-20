@@ -1,4 +1,4 @@
-<sly data-sly-use.acplAssets="${'io.kestros.samples.acpl.application.components.AcplAssets'}"/>
+<sly data-sly-test.acplAssets="${'/public/' in request.requestURI ? '/public/assets/acpl' : '/content/assets/acpl'}"/>
 <div class="team-header">
     <div class="container">
         <div class="d-flex gap-2 small mb-2 acpl-crumb">
@@ -9,7 +9,7 @@
             <span class="text-white-50">${properties.clubName}</span>
         </div>
         <div class="d-flex align-items-center gap-4">
-            <img class="crest-xxl" src="${acplAssets.root}/crests/${properties.slug}.svg" alt="${properties.clubName} crest"/>
+            <img class="crest-xxl" src="${acplAssets}/crests/${properties.slug}.svg" alt="${properties.clubName} crest"/>
             <div>
                 <h1 class="team-name mb-1">${properties.clubName}</h1>
                 <p class="team-sub mb-1">${properties.place}</p>

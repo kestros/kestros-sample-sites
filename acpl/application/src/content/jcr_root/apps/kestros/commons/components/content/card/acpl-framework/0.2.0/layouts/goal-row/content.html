@@ -1,7 +1,7 @@
-<sly data-sly-use.acplAssets="${'io.kestros.samples.acpl.application.components.AcplAssets'}"/>
+<sly data-sly-test.acplAssets="${'/public/' in request.requestURI ? '/public/assets/acpl' : '/content/assets/acpl'}"/>
 <div class="d-flex align-items-center gap-2 mb-2 ${properties.side == 'away' ? 'flex-row-reverse text-end' : ''}">
     <span class="badge bg-light text-dark">${properties.minute}'</span>
-    <img class="crest-sm" src="${acplAssets.root}/crests/${properties.teamSlug}.svg" alt="crest"/>
+    <img class="crest-sm" src="${acplAssets}/crests/${properties.teamSlug}.svg" alt="crest"/>
     <a class="fw-semibold text-decoration-none" href="${properties.href}">${properties.scorer}</a>
     <span class="text-muted small" data-sly-test="${properties.assist}">(assist: ${properties.assist})</span>
 </div>
