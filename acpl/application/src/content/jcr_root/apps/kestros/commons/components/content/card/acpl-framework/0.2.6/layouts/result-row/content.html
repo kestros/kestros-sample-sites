@@ -1,6 +1,7 @@
+<sly data-sly-use.acplAssets="${'io.kestros.samples.acpl.application.components.AcplAssets'}"/>
 <div class="result-row">
     <div class="result-club">
-        <a href="${properties.base}/teams/${properties.homeSlug}.html"><img src="/content/assets/acpl/crests/${properties.homeSlug}.svg" alt="crest" class="img-fluid crest-sm"/></a>
+        <a href="${properties.base}/teams/${properties.homeSlug}.html"><img src="${acplAssets.root}/crests/${properties.homeSlug}.svg" alt="crest" class="img-fluid crest-sm"/></a>
         <a href="${properties.base}/teams/${properties.homeSlug}.html" class="club-link">${properties.homeShort}</a>
     </div>
     <div class="text-center">
@@ -9,6 +10,6 @@
     </div>
     <div class="result-club away">
         <a href="${properties.base}/teams/${properties.awaySlug}.html" class="club-link">${properties.awayShort}</a>
-        <a href="${properties.base}/teams/${properties.awaySlug}.html"><img src="/content/assets/acpl/crests/${properties.awaySlug}.svg" alt="crest" class="img-fluid crest-sm"/></a>
+        <a href="${properties.base}/teams/${properties.awaySlug}.html"><img src="${acplAssets.root}/crests/${properties.awaySlug}.svg" alt="crest" class="img-fluid crest-sm"/></a>
     </div>
 </div>

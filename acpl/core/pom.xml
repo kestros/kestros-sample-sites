@@ -55,6 +55,11 @@
                 <configuration>
                     <instructions>
                         <Import-Package>com.fasterxml.jackson.core.type,com.fasterxml.jackson.databind,*</Import-Package>
+                        <!-- Implementations only; nothing outside this bundle imports them. Exporting
+                             the package made the bundle import it from itself too, so an update
+                             without a package refresh kept serving the previous revision's classes. -->
+                        <Private-Package>io.kestros.samples.acpl.core.*</Private-Package>
+                        <Export-Package>!*</Export-Package>
                     </instructions>
                 </configuration>
             </plugin>

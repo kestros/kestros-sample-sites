@@ -1,3 +1,4 @@
+<sly data-sly-use.acplAssets="${'io.kestros.samples.acpl.application.components.AcplAssets'}"/>
 <section class="section pt-4 pb-4 acpl-page-head club-keyline" style="${['--club-color: ', properties.color] @ join='', context='styleString'}">
     <div class="container">
         <nav class="breadcrumb is-small" aria-label="breadcrumbs">
@@ -8,7 +9,7 @@
             </ul>
         </nav>
         <div class="d-flex align-items-center gap-4 mb-4">
-            <img class="crest-xxl" src="/content/assets/acpl/crests/${properties.slug}.svg" alt="${properties.clubName} crest"/>
+            <img class="crest-xxl" src="${acplAssets.root}/crests/${properties.slug}.svg" alt="${properties.clubName} crest"/>
             <div>
                 <h1 class="title is-2 mb-1">${properties.clubName}</h1>
                 <p class="subtitle is-6 mb-2">${properties.place}</p>

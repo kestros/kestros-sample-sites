@@ -1,3 +1,4 @@
+<sly data-sly-use.acplAssets="${'io.kestros.samples.acpl.application.components.AcplAssets'}"/>
 <div class="acpl-page-band">
     <div class="container">
         <div class="acpl-crumb d-flex justify-content-start text-start gap-2 small">
@@ -14,7 +15,7 @@
         <div class="row align-items-center g-3">
             <div class="col-4">
                 <a class="text-decoration-none text-reset" href="${properties.base}/teams/${properties.homeSlug}.html">
-                    <img class="crest-xl mb-2" src="/content/assets/acpl/crests/${properties.homeSlug}.svg" alt="${properties.homeName} crest"/>
+                    <img class="crest-xl mb-2" src="${acplAssets.root}/crests/${properties.homeSlug}.svg" alt="${properties.homeName} crest"/>
                     <span class="h5 fw-bold d-block">${properties.homeName}</span>
                 </a>
                 <p class="text-muted small mb-0">${properties.homePos} in the table</p>
@@ -25,7 +26,7 @@
             </div>
             <div class="col-4">
                 <a class="text-decoration-none text-reset" href="${properties.base}/teams/${properties.awaySlug}.html">
-                    <img class="crest-xl mb-2" src="/content/assets/acpl/crests/${properties.awaySlug}.svg" alt="${properties.awayName} crest"/>
+                    <img class="crest-xl mb-2" src="${acplAssets.root}/crests/${properties.awaySlug}.svg" alt="${properties.awayName} crest"/>
                     <span class="h5 fw-bold d-block">${properties.awayName}</span>
                 </a>
                 <p class="text-muted small mb-0">${properties.awayPos} in the table</p>

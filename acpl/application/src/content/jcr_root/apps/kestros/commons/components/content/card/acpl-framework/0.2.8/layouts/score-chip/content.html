@@ -1,11 +1,12 @@
+<sly data-sly-use.acplAssets="${'io.kestros.samples.acpl.application.components.AcplAssets'}"/>
 <a class="score-chip" href="${properties.matchHref}">
     <span class="tag-line">FT</span>
     <span class="line">
-        <span class="club"><img src="/content/assets/acpl/crests/${properties.homeSlug}.svg" alt=""/>${properties.homeShort}</span>
+        <span class="club"><img src="${acplAssets.root}/crests/${properties.homeSlug}.svg" alt=""/>${properties.homeShort}</span>
         <span class="pts">${properties.homeGoals}</span>
     </span>
     <span class="line">
-        <span class="club"><img src="/content/assets/acpl/crests/${properties.awaySlug}.svg" alt=""/>${properties.awayShort}</span>
+        <span class="club"><img src="${acplAssets.root}/crests/${properties.awaySlug}.svg" alt=""/>${properties.awayShort}</span>
         <span class="pts">${properties.awayGoals}</span>
     </span>
 </a>

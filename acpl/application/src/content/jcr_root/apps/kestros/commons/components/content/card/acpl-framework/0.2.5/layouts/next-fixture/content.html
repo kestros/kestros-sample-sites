@@ -1,6 +1,7 @@
+<sly data-sly-use.acplAssets="${'io.kestros.samples.acpl.application.components.AcplAssets'}"/>
 <div>
     <a class="d-flex align-items-center gap-2 mb-2 text-decoration-none" href="${properties.base}/teams/${properties.oppSlug}.html">
-        <img class="crest-sm" src="/content/assets/acpl/crests/${properties.oppSlug}.svg" alt="${properties.oppName} crest"/>
+        <img class="crest-sm" src="${acplAssets.root}/crests/${properties.oppSlug}.svg" alt="${properties.oppName} crest"/>
         <span class="fw-semibold mb-0">${properties.oppName}</span>
     </a>
     <p class="text-muted small mb-2">${properties.meta}</p>
