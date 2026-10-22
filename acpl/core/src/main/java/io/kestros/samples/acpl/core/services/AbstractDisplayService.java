@@ -1,5 +1,7 @@
 package io.kestros.samples.acpl.core.services;
 
+import io.kestros.samples.acpl.api.assets.AcplAssetPaths;
+
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
@@ -15,11 +17,12 @@ abstract class AbstractDisplayService {
   private static final Pattern SITE_ROOT = Pattern.compile("^(/content/sites/[^/]+)");
 
   /**
-   * The one image folder every ACPL site reads from. Images used to be resolved under each site's
-   * own root, so each of six sites shipped a copy, and a site built by the authoring suite pointed
-   * at a copy that did not exist (#251).
+   * The ACPL image root for a render of {@code contextPath}: the shared set in the asset library,
+   * or its published copy when the page renders under {@code /public} (#251, #1623).
    */
-  protected static final String ASSETS = "/content/sites/acpl/assets";
+  protected static String assetRoot(final String contextPath) {
+    return AcplAssetPaths.root(contextPath);
+  }
 
   /** League-site root (e.g. {@code /content/sites/acpl}) from any content path within the site. */
   protected String siteRoot(final String contextPath) {
@@ -71,9 +74,9 @@ abstract class AbstractDisplayService {
   }
 
   /** Deterministic placeholder portrait (1 of 20 uniform avatars), keyed by player name. */
-  protected static String portraitFor(final String name) {
+  protected static String portraitFor(final String name, final String contextPath) {
     final int idx = Math.abs(name.hashCode()) % 20 + 1;
-    return ASSETS + "/portraits/p" + idx + ".svg";
+    return assetRoot(contextPath) + "/portraits/p" + idx + ".svg";
   }
 
   protected static String str(final Object o) {
