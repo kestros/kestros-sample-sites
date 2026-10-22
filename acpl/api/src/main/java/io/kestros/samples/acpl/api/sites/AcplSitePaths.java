@@ -2,7 +2,7 @@ package io.kestros.samples.acpl.api.sites;
 
 /**
  * Where an ACPL site lives. A site is authored under {@code /content/sites/<site>} and published
- * to {@code /public/sites/<site>}; every site-root match in ACPL code accepts both (#1624, #1626).
+ * to {@code /public/sites/<site>}; every site-root match in ACPL code accepts both.
  */
 public final class AcplSitePaths {
 

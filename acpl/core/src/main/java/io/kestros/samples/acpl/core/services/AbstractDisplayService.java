@@ -16,7 +16,7 @@ abstract class AbstractDisplayService {
   /**
    * A site lives under {@code /content/sites} while it is authored and under {@code /public/sites}
    * once published. Matching only the first sent every link on a published page to the component's
-   * own path ({@code .../jcr:content/.../teams/<club>.html}), which 404s (#1624).
+   * own path ({@code .../jcr:content/.../teams/<club>.html}), which 404s.
    */
   private static final Pattern SITE_ROOT = Pattern.compile("^(" + AcplSitePaths.SITES + "/[^/]+)");
 

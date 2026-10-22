@@ -8,7 +8,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 /**
- * Covers card #1624: the site root every ACPL link is built from.
+ * Covers the site root every ACPL link is built from.
  *
  * <p>A published page renders from {@code /public/sites/<site>}, not {@code /content/sites/<site>}.
  * The site root used to be matched against {@code /content/sites/} only, so on a published page it
