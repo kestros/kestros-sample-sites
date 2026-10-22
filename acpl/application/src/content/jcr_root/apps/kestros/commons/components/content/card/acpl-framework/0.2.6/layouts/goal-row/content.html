@@ -1,4 +1,4 @@
-<sly data-sly-test.acplAssets="${'/public/' in request.requestURI ? '/public/assets/acpl' : '/content/assets/acpl'}"/>
+<sly data-sly-use.acplAssetRoot="io.kestros.samples.acpl.application.components.AcplAssetRoot" data-sly-test.acplAssets="${acplAssetRoot.path}"/>
 <div class="d-flex align-items-center gap-2 mb-2 ${properties.side == 'away' ? 'flex-row-reverse text-end' : ''}">
     <span class="badge bg-light text-dark">${properties.minute}'</span>
     <img class="crest-sm" src="${acplAssets}/crests/${properties.teamSlug}.svg" alt="crest"/>

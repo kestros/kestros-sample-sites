@@ -1,4 +1,4 @@
-<sly data-sly-test.acplAssets="${'/public/' in request.requestURI ? '/public/assets/acpl' : '/content/assets/acpl'}"/>
+<sly data-sly-use.acplAssetRoot="io.kestros.samples.acpl.application.components.AcplAssetRoot" data-sly-test.acplAssets="${acplAssetRoot.path}"/>
 <div class="team-header">
     <div class="container">
         <div class="d-flex gap-2 small mb-2 acpl-crumb">

@@ -1,4 +1,4 @@
-<sly data-sly-test.acplAssets="${'/public/' in request.requestURI ? '/public/assets/acpl' : '/content/assets/acpl'}"/>
+<sly data-sly-use.acplAssetRoot="io.kestros.samples.acpl.application.components.AcplAssetRoot" data-sly-test.acplAssets="${acplAssetRoot.path}"/>
 <div>
     <a class="d-flex align-items-center gap-2 mb-2 text-decoration-none" href="${properties.base}/teams/${properties.oppSlug}.html">
         <img class="crest-sm" src="${acplAssets}/crests/${properties.oppSlug}.svg" alt="${properties.oppName} crest"/>
