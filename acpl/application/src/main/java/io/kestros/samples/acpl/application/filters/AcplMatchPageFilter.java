@@ -29,7 +29,7 @@ import org.osgi.service.component.annotations.ReferencePolicyOption;
  */
 @Component(service = {Filter.class, DynamicPageFilter.class})
 @SlingServletFilter(scope = SlingServletFilterScope.REQUEST,
-    pattern = "/content/sites/.*/matches/.*\\.html",
+    pattern = "/content/sites/.*/matches/(.*\\.html|[^.]*)",
     methods = "GET")
 public class AcplMatchPageFilter extends AbstractDynamicPageFilter {
 
