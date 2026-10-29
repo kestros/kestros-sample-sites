@@ -133,8 +133,10 @@ final class LeagueCardElements {
         if (StringUtils.isBlank(href)) {
           continue;
         }
+        // Each button needs its own resource name: under one shared name the synthetic children
+        // collapse and the group renders only its first match.
         buttons.add(new KestrosButtonImpl(matchLabel(m), href, null, AnchorTarget.SAME_WINDOW,
-            null, null, null, null, false, dataSource, "button", "buttonElement"));
+            null, null, null, null, false, dataSource, "button", "buttonElement-" + buttons.size()));
       }
       if (buttons.isEmpty()) {
         return null;
