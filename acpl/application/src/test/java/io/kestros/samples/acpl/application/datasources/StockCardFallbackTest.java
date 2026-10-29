@@ -123,6 +123,15 @@ public class StockCardFallbackTest {
   }
 
   @Test
+  public void testStandingsClubCellCarriesTheClubNameAsItsText() throws Exception {
+    // The stock table cell prints only getText(); an empty text left the p3 club column blank.
+    final SyntheticClubCell cell = new SyntheticClubCell("harborside", "Harborside United",
+        "text-reset", BASE, dataSource, "clubCell", "c-0-1");
+
+    assertEquals("Harborside United", cell.getText());
+  }
+
+  @Test
   public void testMatchLabelToleratesMissingNames() {
     assertEquals(" v ", LeagueCardElements.matchLabel(new LinkedHashMap<>()));
   }

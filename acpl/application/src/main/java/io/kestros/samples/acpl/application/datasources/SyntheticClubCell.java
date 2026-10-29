@@ -25,7 +25,9 @@ public class SyntheticClubCell extends SyntheticTableCell {
       @Nonnull BaseSlingModelDataSource dataSource,
       @Nonnull String resourcePrefix,
       @Nullable String forcedResourceName) throws ComponentConfigurationException {
-    super("", dataSource, resourcePrefix, forcedResourceName);
+    // The label doubles as the cell text: a framework with no club layout (ACPL Framework 0.0.1 on
+    // p3) renders the stock cell, which prints only the text - an empty club column before #1262.
+    super(label == null ? "" : label, dataSource, resourcePrefix, forcedResourceName);
     this.slug = slug;
     this.label = label;
     this.linkClass = linkClass;
