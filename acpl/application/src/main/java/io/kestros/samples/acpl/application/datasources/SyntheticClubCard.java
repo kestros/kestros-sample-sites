@@ -8,7 +8,7 @@ import io.kestros.cms.components.basic.api.content.KestrosImage;
 import io.kestros.cms.components.basic.api.exceptions.ComponentConfigurationException;
 import io.kestros.cms.components.basic.core.BaseContainerSyntheticResource;
 import io.kestros.cms.components.basic.core.BaseSlingModelDataSource;
-import java.util.Collections;
+import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -16,7 +16,8 @@ import javax.annotation.Nullable;
 /**
  * A club-directory card for the /teams index, rendered by the {@code club-card} card layout. All
  * values are display-ready strings serialized into the synthetic resource value map
- * ({@code properties.clubName} etc.). {@link KestrosCard} element getters are unused and return null.
+ * ({@code properties.clubName} etc.). The title and button-group elements are for frameworks with
+ * no club-card layout, which fall through to the stock card layout.
  */
 public class SyntheticClubCard extends BaseContainerSyntheticResource implements KestrosCard {
 
@@ -29,6 +30,7 @@ public class SyntheticClubCard extends BaseContainerSyntheticResource implements
   private final String record;
   private final String base;
   private final String href;
+  private final BaseSlingModelDataSource cardDataSource;
 
   public SyntheticClubCard(@Nonnull final String slug, @Nonnull final String clubName,
       @Nonnull final String city, @Nonnull final String stadium, @Nonnull final String mgr,
@@ -46,6 +48,7 @@ public class SyntheticClubCard extends BaseContainerSyntheticResource implements
     this.record = record;
     this.base = base;
     this.href = href;
+    this.cardDataSource = dataSource;
   }
 
   @Override
@@ -92,7 +95,7 @@ public class SyntheticClubCard extends BaseContainerSyntheticResource implements
   @Nullable
   @Override
   public KestrosHeading getTitleElement() {
-    return null;
+    return LeagueCardElements.heading(clubName, cardDataSource);
   }
 
   @Nullable
@@ -110,12 +113,24 @@ public class SyntheticClubCard extends BaseContainerSyntheticResource implements
   @Nullable
   @Override
   public KestrosButtonGroup getButtonGroupElement() {
-    return null;
+    return LeagueCardElements.buttonGroup("Club page", href, cardDataSource);
   }
 
   @Nonnull
   @Override
   public List<KestrosBasicComponentElement> getChildElements() {
-    return Collections.emptyList();
+    // The stock card layout - all a framework without a club-card layout has, such as ACPL
+    // Framework 0.0.1 on p3 - reads the title and button group back as child resources. With no
+    // children every club rendered as an empty card-body (#1262).
+    final List<KestrosBasicComponentElement> children = new ArrayList<>();
+    final KestrosHeading title = getTitleElement();
+    if (title != null) {
+      children.add(title);
+    }
+    final KestrosButtonGroup buttonGroup = getButtonGroupElement();
+    if (buttonGroup != null) {
+      children.add(buttonGroup);
+    }
+    return children;
   }
 }
