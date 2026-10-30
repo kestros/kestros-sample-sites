@@ -44,13 +44,12 @@
 
     <profiles>
         <profile>
-            <id>installBundle</id>
+            <id>installPackage</id>
             <build>
                 <plugins>
                     <plugin>
                         <groupId>io.wcm.maven.plugins</groupId>
                         <artifactId>wcmio-content-package-maven-plugin</artifactId>
-                        <version>2.2.2</version>
                         <executions>
                             <execution>
                                 <goals>
@@ -58,6 +57,15 @@
                                 </goals>
                             </execution>
                         </executions>
+                        <configuration>
+                            <serviceURL>
+                                ${sling.protocol}://${sling.host}:${sling.port}/bin/cpm/package.service.html
+                            </serviceURL>
+                            <userId>${sling.username}</userId>
+                            <password>${sling.password}</password>
+                            <packageFile>target/${project.artifactId}-${project.version}.zip
+                            </packageFile>
+                        </configuration>
                     </plugin>
                 </plugins>
             </build>
