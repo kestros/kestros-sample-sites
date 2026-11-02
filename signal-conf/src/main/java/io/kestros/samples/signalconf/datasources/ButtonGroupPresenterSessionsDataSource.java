@@ -6,23 +6,29 @@ import io.kestros.cms.components.basic.api.content.KestrosButtonGroup;
 import io.kestros.cms.components.basic.core.BaseContainerSlingModelDataSource;
 import io.kestros.cms.components.basic.core.LinkUtils;
 import io.kestros.cms.components.basic.core.content.button.KestrosButtonImpl;
+import io.kestros.cms.componenttypes.api.models.ComponentVariation;
 import io.kestros.cms.sitebuilding.api.models.BaseComponent;
 import io.kestros.cms.sitebuilding.api.models.BaseContentPage;
-import io.kestros.cms.componenttypes.api.models.ComponentVariation;
 import io.kestros.commons.structuredslingmodels.exceptions.NoValidAncestorException;
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 
+/**
+ * Sling model datasource that renders a button group of session pages associated with the
+ * presenter on the containing page.
+ */
 @Model(adaptables = {SlingHttpServletRequest.class, Resource.class})
 public class ButtonGroupPresenterSessionsDataSource extends BaseContainerSlingModelDataSource
     implements KestrosButtonGroup {
 
   private BaseContentPage containingPage;
 
+  @Nullable
   BaseContentPage getContainingPage() {
     if (containingPage == null) {
       try {
@@ -37,10 +43,12 @@ public class ButtonGroupPresenterSessionsDataSource extends BaseContainerSlingMo
     return containingPage;
   }
 
+  @Nullable
   String getSessionsPath() {
     return getResource().getValueMap().get("sessionsPath", String.class);
   }
 
+  @Nonnull
   List<BaseContentPage> getPresenterSessions() {
     List<BaseContentPage> sessions = new ArrayList<>();
     String sessionsPath = getSessionsPath();
