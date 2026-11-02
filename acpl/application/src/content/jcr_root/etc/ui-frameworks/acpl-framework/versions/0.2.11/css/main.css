@@ -950,6 +950,10 @@ p:not(:last-child) { margin-bottom: 1rem; }
    .section { padding: 3rem 1.5rem }, which this markup never emits. */
 .container { padding-left: 1rem; padding-right: 1rem; }
 .container .container { padding-left: 0; padding-right: 0; }
+/* The fluid container layout emits Bootstrap's .container-fluid, which Bulma
+   has no rule for. :not(.container) keeps it off the footer, which carries
+   both classes and stays boxed by Bulma's .container. */
+.container-fluid:not(.container) { width: 100%; padding-left: 1rem; padding-right: 1rem; }
 .columns { --bulma-column-gap: 1.25rem; }
 
 /* margin-top does nothing on a non-replaced inline element. */
