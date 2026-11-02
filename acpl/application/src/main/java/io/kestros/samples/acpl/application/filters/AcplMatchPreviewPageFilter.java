@@ -4,6 +4,7 @@ import io.kestros.cms.sitebuilding.api.filters.DynamicPageFilter;
 import io.kestros.cms.sitebuilding.api.models.BaseSite;
 import io.kestros.cms.sitebuilding.core.filters.AbstractDynamicPageFilter;
 import io.kestros.samples.acpl.api.services.LeagueDataService;
+import io.kestros.samples.acpl.api.sites.AcplSitePaths;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.Nonnull;
@@ -28,7 +29,7 @@ import org.osgi.service.component.annotations.ReferencePolicyOption;
  */
 @Component(service = {Filter.class, DynamicPageFilter.class})
 @SlingServletFilter(scope = SlingServletFilterScope.REQUEST,
-    pattern = "/content/sites/.*/matches/.*\\.html",
+    pattern = AcplSitePaths.SITES + "/.*/matches/.*\\.html",
     methods = "GET")
 public class AcplMatchPreviewPageFilter extends AbstractDynamicPageFilter {
 
