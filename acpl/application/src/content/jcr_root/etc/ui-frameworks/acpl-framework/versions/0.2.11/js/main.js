@@ -3,7 +3,7 @@
   var brand = document.querySelector('.navbar-brand');
   if (brand && (!brand.href || brand.getAttribute('href') === '#')) {
     var path = window.location.pathname;
-    var siteRoot = path.match(/^(\/content\/sites\/[^/]+)/);
+    var siteRoot = path.match(/^(\/(?:content|public)\/sites\/[^/]+)/);
     if (siteRoot) {
       brand.setAttribute('href', siteRoot[1] + '.html');
     }
