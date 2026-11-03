@@ -29,8 +29,8 @@ import org.junit.Test;
  * no ACPL card layout of its own - ACPL Framework 0.0.1 on p3 - where the stock card layout draws
  * only the title and button group it finds as child resources.
  *
- * <p>Every assertion below fails against the code before #1262: both cards returned no elements
- * and no children, so p3 rendered 17 results, 5 fixtures and 12 clubs as empty card bodies.
+ * <p>Every assertion below fails against the code without the fallback: both cards returned no
+ * elements and no children, so p3 rendered 17 results, 5 fixtures and 12 clubs as empty card bodies.
  */
 public class StockCardFallbackTest {
 

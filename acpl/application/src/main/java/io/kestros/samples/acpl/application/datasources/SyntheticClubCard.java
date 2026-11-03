@@ -8,6 +8,7 @@ import io.kestros.cms.components.basic.api.content.KestrosImage;
 import io.kestros.cms.components.basic.api.exceptions.ComponentConfigurationException;
 import io.kestros.cms.components.basic.core.BaseContainerSyntheticResource;
 import io.kestros.cms.components.basic.core.BaseSlingModelDataSource;
+import io.kestros.samples.acpl.api.assets.AcplAssetPaths;
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.Nonnull;
@@ -20,6 +21,9 @@ import javax.annotation.Nullable;
  * no club-card layout, which fall through to the stock card layout.
  */
 public class SyntheticClubCard extends BaseContainerSyntheticResource implements KestrosCard {
+
+  /** Path of the data source rendering this card; decides its image root. */
+  private final String renderPath;
 
   private final String slug;
   private final String clubName;
@@ -39,6 +43,7 @@ public class SyntheticClubCard extends BaseContainerSyntheticResource implements
       @Nonnull final String resourcePrefix, @Nullable final String forcedResourceName)
       throws ComponentConfigurationException {
     super(dataSource, resourcePrefix, forcedResourceName);
+    this.renderPath = dataSource.getResource().getPath();
     this.slug = slug;
     this.clubName = clubName;
     this.city = city;
@@ -88,6 +93,17 @@ public class SyntheticClubCard extends BaseContainerSyntheticResource implements
     return base;
   }
 
+  /**
+   * Image root for this card's render, read by the card layouts as {@code properties.assetRoot}:
+   * the asset library, or its published copy when the card renders under {@code /public/} (#1623).
+   *
+   * @return Image root path.
+   */
+  @Nonnull
+  public String getAssetRoot() {
+    return AcplAssetPaths.root(renderPath);
+  }
+
   public String getHref() {
     return href;
   }
@@ -121,7 +137,7 @@ public class SyntheticClubCard extends BaseContainerSyntheticResource implements
   public List<KestrosBasicComponentElement> getChildElements() {
     // The stock card layout - all a framework without a club-card layout has, such as ACPL
     // Framework 0.0.1 on p3 - reads the title and button group back as child resources. With no
-    // children every club rendered as an empty card-body (#1262).
+    // children every club rendered as an empty card-body.
     final List<KestrosBasicComponentElement> children = new ArrayList<>();
     final KestrosHeading title = getTitleElement();
     if (title != null) {

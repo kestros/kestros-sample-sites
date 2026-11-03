@@ -26,7 +26,7 @@ public class SyntheticClubCell extends SyntheticTableCell {
       @Nonnull String resourcePrefix,
       @Nullable String forcedResourceName) throws ComponentConfigurationException {
     // The label doubles as the cell text: a framework with no club layout (ACPL Framework 0.0.1 on
-    // p3) renders the stock cell, which prints only the text - an empty club column before #1262.
+    // p3) renders the stock cell, which prints only the text - otherwise an empty club column.
     super(label == null ? "" : label, dataSource, resourcePrefix, forcedResourceName);
     this.slug = slug;
     this.label = label;
