@@ -19,7 +19,7 @@ import org.osgi.service.component.annotations.ReferencePolicyOption;
 
 @Component(service = {Filter.class, DynamicPageFilter.class})
 @SlingServletFilter(scope = SlingServletFilterScope.REQUEST,
-    pattern = "/content/sites/.*/seasons/.*\\.html",
+    pattern = "/content/sites/.*/seasons/(.*\\.html|[^.]*)",
     methods = "GET")
 public class LeagueSeasonPageFilter extends AbstractDynamicPageFilter {
 
