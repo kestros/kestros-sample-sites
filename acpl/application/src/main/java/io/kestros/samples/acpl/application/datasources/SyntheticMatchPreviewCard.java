@@ -8,6 +8,7 @@ import io.kestros.cms.components.basic.api.content.KestrosImage;
 import io.kestros.cms.components.basic.api.exceptions.ComponentConfigurationException;
 import io.kestros.cms.components.basic.core.BaseContainerSyntheticResource;
 import io.kestros.cms.components.basic.core.BaseSlingModelDataSource;
+import io.kestros.samples.acpl.api.assets.AcplAssetPaths;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
@@ -21,12 +22,16 @@ import javax.annotation.Nullable;
  */
 public class SyntheticMatchPreviewCard extends BaseContainerSyntheticResource implements KestrosCard {
 
+  /** Path of the data source rendering this card; decides its image root. */
+  private final String renderPath;
+
   private final Map<String, String> info;
 
   public SyntheticMatchPreviewCard(@Nonnull final Map<String, String> info,
       @Nonnull final BaseSlingModelDataSource dataSource, @Nonnull final String resourcePrefix,
       @Nullable final String forcedResourceName) throws ComponentConfigurationException {
     super(dataSource, resourcePrefix, forcedResourceName);
+    this.renderPath = dataSource.getResource().getPath();
     this.info = info;
   }
 
@@ -37,6 +42,17 @@ public class SyntheticMatchPreviewCard extends BaseContainerSyntheticResource im
 
   public String getBase() {
     return info.getOrDefault("base", "");
+  }
+
+  /**
+   * Image root for this card's render, read by the card layouts as {@code properties.assetRoot}:
+   * the asset library, or its published copy when the card renders under {@code /public/} (#1623).
+   *
+   * @return Image root path.
+   */
+  @Nonnull
+  public String getAssetRoot() {
+    return AcplAssetPaths.root(renderPath);
   }
 
   public String getHomeSlug() {
