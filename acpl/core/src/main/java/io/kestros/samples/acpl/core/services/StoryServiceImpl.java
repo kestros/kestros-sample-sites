@@ -19,11 +19,12 @@ public class StoryServiceImpl extends AbstractDisplayService implements StorySer
   @Reference
   private LeagueDataService leagueDataService;
 
-  private Map<String, String> card(final Map<String, Object> s, final String base) {
+  private Map<String, String> card(final Map<String, Object> s, final String base,
+      final String contextPath) {
     final Map<String, String> card = new LinkedHashMap<>();
     card.put("headline", str(s.get("headline")));
     card.put("excerpt", str(s.get("dek")));
-    card.put("image", ASSETS + "/" + str(s.get("image")));
+    card.put("image", assetRoot(contextPath) + "/" + str(s.get("image")));
     card.put("href", base + "/stories/" + str(s.get("slug")) + ".html");
     card.put("category", str(s.get("category")));
     card.put("byline", str(s.get("author")) + " · " + formatDateLong(str(s.get("date"))));
@@ -46,7 +47,7 @@ public class StoryServiceImpl extends AbstractDisplayService implements StorySer
       if (limit > 0 && cards.size() >= limit) {
         break;
       }
-      cards.add(card(s, base));
+      cards.add(card(s, base, contextPath));
     }
     return cards;
   }
@@ -65,7 +66,7 @@ public class StoryServiceImpl extends AbstractDisplayService implements StorySer
       if (str(s.get("slug")).equals(featuredSlug)) {
         continue;
       }
-      cards.add(card(s, base));
+      cards.add(card(s, base, contextPath));
     }
     return cards;
   }
@@ -92,7 +93,7 @@ public class StoryServiceImpl extends AbstractDisplayService implements StorySer
         .filter(s -> Boolean.TRUE.equals(s.get("featured")))
         .findFirst()
         .orElse(stories.get(0));
-    return card(story, siteRoot(contextPath));
+    return card(story, siteRoot(contextPath), contextPath);
   }
 
   @Nonnull
@@ -131,7 +132,7 @@ public class StoryServiceImpl extends AbstractDisplayService implements StorySer
       if (limit > 0 && cards.size() >= limit) {
         break;
       }
-      cards.add(card(s, base));
+      cards.add(card(s, base, contextPath));
     }
     return cards;
   }

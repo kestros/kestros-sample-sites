@@ -11,8 +11,10 @@ import io.kestros.cms.components.basic.core.content.button.KestrosButtonImpl;
 import io.kestros.cms.components.basic.core.content.buttongroup.KestrosButtonGroupImpl;
 import io.kestros.cms.components.basic.core.content.heading.KestrosHeadingImpl;
 import io.kestros.cms.components.basic.core.content.image.KestrosImageImpl;
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Map;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import org.apache.commons.lang3.StringUtils;
@@ -107,5 +109,61 @@ final class LeagueCardElements {
       LOG.error("card button group skipped for href '{}': {}", href, e.getMessage(), e);
       return null;
     }
+  }
+
+  /**
+   * One button per match, each labelled with the match and pointing at its match centre, or null
+   * when no match has a link. Matches are the row maps of a matchweek group ({@code homeName},
+   * {@code awayName}, {@code href}, and {@code score} for a result or {@code time} for a fixture).
+   *
+   * @param matches matchweek rows
+   * @param dataSource data source the card was built by
+   * @return Button group element or null.
+   */
+  @Nullable
+  static KestrosButtonGroup matchButtons(@Nullable final List<Map<String, String>> matches,
+      @Nonnull final BaseSlingModelDataSource dataSource) {
+    if (matches == null) {
+      return null;
+    }
+    try {
+      final List<KestrosButton> buttons = new ArrayList<>();
+      for (final Map<String, String> m : matches) {
+        final String href = m.get("href");
+        if (StringUtils.isBlank(href)) {
+          continue;
+        }
+        // Each button needs its own resource name: under one shared name the synthetic children
+        // collapse and the group renders only its first match.
+        buttons.add(new KestrosButtonImpl(matchLabel(m), href, null, AnchorTarget.SAME_WINDOW,
+            null, null, null, null, false, dataSource, "button", "buttonElement-" + buttons.size()));
+      }
+      if (buttons.isEmpty()) {
+        return null;
+      }
+      return new KestrosButtonGroupImpl(buttons, dataSource, "buttonGroup", "buttonGroupElement");
+    } catch (final ComponentConfigurationException e) {
+      LOG.error("matchweek button group skipped for {} matches: {}", matches.size(),
+          e.getMessage(), e);
+      return null;
+    }
+  }
+
+  /**
+   * "Home 2 – 1 Away" for a result, "Home v Away · 15:00" for a fixture.
+   *
+   * @param m matchweek row
+   * @return Match label.
+   */
+  @Nonnull
+  static String matchLabel(@Nonnull final Map<String, String> m) {
+    final String home = StringUtils.defaultString(m.get("homeName"));
+    final String away = StringUtils.defaultString(m.get("awayName"));
+    final String score = m.get("score");
+    if (StringUtils.isNotBlank(score)) {
+      return home + " " + score + " " + away;
+    }
+    final String time = m.get("time");
+    return home + " v " + away + (StringUtils.isNotBlank(time) ? " · " + time : "");
   }
 }

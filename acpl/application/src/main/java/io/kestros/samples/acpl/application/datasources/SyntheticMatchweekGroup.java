@@ -8,6 +8,7 @@ import io.kestros.cms.components.basic.api.content.KestrosImage;
 import io.kestros.cms.components.basic.api.exceptions.ComponentConfigurationException;
 import io.kestros.cms.components.basic.core.BaseContainerSyntheticResource;
 import io.kestros.cms.components.basic.core.BaseSlingModelDataSource;
+import io.kestros.samples.acpl.api.assets.AcplAssetPaths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -23,11 +24,15 @@ import javax.annotation.Nullable;
  */
 public class SyntheticMatchweekGroup extends BaseContainerSyntheticResource implements KestrosCard {
 
+  /** Path of the data source rendering this card; decides its image root. */
+  private final String renderPath;
+
   private final String layoutName;
   private final String matchweek;
   private final String base;
   private final String matchHref;
   private final List<Map<String, String>> matches;
+  private final BaseSlingModelDataSource cardDataSource;
 
   public SyntheticMatchweekGroup(@Nonnull String layoutName, @Nonnull String matchweek,
       @Nonnull String base, @Nonnull String matchHref,
@@ -36,11 +41,13 @@ public class SyntheticMatchweekGroup extends BaseContainerSyntheticResource impl
       @Nonnull String resourcePrefix,
       @Nullable String forcedResourceName) throws ComponentConfigurationException {
     super(dataSource, resourcePrefix, forcedResourceName);
+    this.renderPath = dataSource.getResource().getPath();
     this.layoutName = layoutName;
     this.matchweek = matchweek;
     this.base = base;
     this.matchHref = matchHref;
     this.matches = matches;
+    this.cardDataSource = dataSource;
   }
 
   @Override
@@ -56,6 +63,17 @@ public class SyntheticMatchweekGroup extends BaseContainerSyntheticResource impl
     return base;
   }
 
+  /**
+   * Image root for this card's render, read by the card layouts as {@code properties.assetRoot}:
+   * the asset library, or its published copy when the card renders under {@code /public/} (#1623).
+   *
+   * @return Image root path.
+   */
+  @Nonnull
+  public String getAssetRoot() {
+    return AcplAssetPaths.root(renderPath);
+  }
+
   public String getMatchHref() {
     return matchHref;
   }
@@ -67,7 +85,7 @@ public class SyntheticMatchweekGroup extends BaseContainerSyntheticResource impl
   @Nullable
   @Override
   public KestrosHeading getTitleElement() {
-    return null;
+    return LeagueCardElements.heading(matchweek, cardDataSource);
   }
 
   @Nullable
@@ -85,12 +103,24 @@ public class SyntheticMatchweekGroup extends BaseContainerSyntheticResource impl
   @Nullable
   @Override
   public KestrosButtonGroup getButtonGroupElement() {
-    return null;
+    return LeagueCardElements.matchButtons(matches, cardDataSource);
   }
 
   @Nonnull
   @Override
   public List<KestrosBasicComponentElement> getChildElements() {
-    return new ArrayList<>();
+    // The stock card layout - all a framework without a results-group layout has, such as ACPL
+    // Framework 0.0.1 on p3 - reads the title and button group back as child resources. With no
+    // children every matchweek rendered as an empty card-body.
+    final List<KestrosBasicComponentElement> children = new ArrayList<>();
+    final KestrosHeading title = getTitleElement();
+    if (title != null) {
+      children.add(title);
+    }
+    final KestrosButtonGroup buttonGroup = getButtonGroupElement();
+    if (buttonGroup != null) {
+      children.add(buttonGroup);
+    }
+    return children;
   }
 }

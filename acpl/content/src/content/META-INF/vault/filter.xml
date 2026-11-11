@@ -7,5 +7,6 @@
   <filter root="/content/sites/acpl-p3-datasources"/>
   <filter root="/content/sites/acpl-p4-bootstrap-versions"/>
   <filter root="/content/sites/acpl-p5-bulma-versions"/>
+  <filter root="/content/assets/acpl"/>
   <filter root="/etc/tags/acpl"/>
 </workspaceFilter>
